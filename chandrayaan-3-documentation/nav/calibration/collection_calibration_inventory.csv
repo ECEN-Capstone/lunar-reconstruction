@@ -1,0 +1,8 @@
+P,urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_left_gain.txt::1.0
+P,urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_left_gain_offset.txt::1.0
+P,urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_left_offset.txt::1.0
+P,urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_right_gain.txt::1.0
+P,urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_right_gain_offset.txt::1.0
+P,urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_right_offset.txt::1.0
+P,urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_left_cahv.txt::1.0
+P,urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_right_cahv.txt::1.0

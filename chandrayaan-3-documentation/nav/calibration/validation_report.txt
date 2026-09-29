@@ -1,0 +1,47 @@
+PDS Validate Tool Report
+
+Configuration:
+   Version                       1.14.0
+   Date                          2024-07-01T08:42:44Z
+   Core Schemas                  [PDS4_PDS_1B00.xsd]
+   Core Schematrons              [PDS4_PDS_1B00.sch]
+   Model Version                 1B00
+
+Parameters:
+   Targets                       [file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_left_cahv.xml, file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_left_gain_offset.xml, file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_left_gain.xml, file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_left_offset.xml, file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_right_cahv.xml, file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_right_gain_offset.xml, file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_right_gain.xml, file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_right_offset.xml, file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/collection_calibration_inventory.xml]
+   Severity Level                ERROR
+   Recurse Directories           true
+   File Filters Used             [*.xml, *.XML]
+   Force Mode                    off
+   Data Content Validation       on
+   Max Errors                    100000
+
+
+
+Product Level Validation Results
+
+  PASS: file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_left_cahv.xml
+
+  PASS: file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_left_gain_offset.xml
+
+  PASS: file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_left_gain.xml
+
+  PASS: file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_left_offset.xml
+
+  PASS: file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_right_cahv.xml
+
+  PASS: file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_right_gain_offset.xml
+
+  PASS: file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_right_gain.xml
+
+  PASS: file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/ch3_nav_right_offset.xml
+
+  PASS: file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_4_0/nav/calibration/collection_calibration_inventory.xml
+
+Summary:
+
+  0 error(s)
+  0 warning(s)
+
+
+End of Report

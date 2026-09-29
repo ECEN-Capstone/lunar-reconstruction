@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<Product_Bundle xmlns="http://pds.nasa.gov/pds4/pds/v1"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:isro:isda:ch3_chr.nav</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>Chandrayaan-3 Rover NavCam Mobility Experiment</title>
+        <information_model_version>1.11.0.0</information_model_version>
+        <product_class>Product_Bundle</product_class>
+        <Citation_Information>
+            <author_list>isro,issdc,sac</author_list>
+            <publication_year>2024</publication_year>
+            <description>Chandrayaan-3 Rover NavCam Instrument Data Products</description>
+        </Citation_Information>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2024-01-24</modification_date>
+                <version_id>1.0</version_id>
+                <description>Peer reviewed version of the Chandrayaan-3 Rover NavCam instrument data products bundle</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Context_Area>
+        <Time_Coordinates>
+            <start_date_time>2023-08-23Z</start_date_time>
+            <stop_date_time>2023-09-02Z</stop_date_time>
+        </Time_Coordinates>
+        <Investigation_Area>
+            <name>Chandrayaan-3</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:isro:isda:ch3_chr:context:mission</lid_reference>
+                <reference_type>bundle_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <name>Chandrayaan-3</name>
+            <Observing_System_Component>
+                <name>Chandrayaan-3 Rover Module</name>
+                <type>Spacecraft</type>
+                <Internal_Reference>
+                    <lid_reference>urn:isro:isda:ch3_chr:context:inst_host_spacecraft</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>Navigational Camera</name>
+                <type>Instrument</type>
+                <Internal_Reference>
+                    <lid_reference>urn:isro:isda:ch3_chr:context:inst_nav</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+	</Observing_System>
+        <Target_Identification>
+            <name>Moon</name>
+            <type>Satellite</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:satellite.earth.moon</lid_reference>
+                <reference_type>data_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+    </Context_Area>
+    <Bundle>
+        <bundle_type>Archive</bundle_type>
+    </Bundle>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:isro:isda:ch3_chr.nav:calibration</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_calibration_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:isro:isda:ch3_chr.nav:data</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_data_collection</reference_type>
+    </Bundle_Member_Entry>
+    <Bundle_Member_Entry>
+        <lid_reference>urn:isro:isda:ch3_chr.nav:document</lid_reference>
+        <member_status>Primary</member_status>
+        <reference_type>bundle_has_document_collection</reference_type>
+    </Bundle_Member_Entry>
+</Product_Bundle>

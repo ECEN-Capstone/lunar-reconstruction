@@ -1,0 +1,31 @@
+PDS Validate Tool Report
+
+Configuration:
+   Version                       1.14.0
+   Date                          2024-06-13T04:44:04Z
+   Core Schemas                  [PDS4_PDS_1B00.xsd]
+   Core Schematrons              [PDS4_PDS_1B00.sch]
+   Model Version                 1B00
+
+Parameters:
+   Targets                       [file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_3_0/nav/bundle_nav.xml]
+   Severity Level                ERROR
+   Recurse Directories           true
+   File Filters Used             [*.xml, *.XML]
+   Force Mode                    off
+   Data Content Validation       on
+   Max Errors                    100000
+
+
+
+Product Level Validation Results
+
+  PASS: file:/data1/ch3/dpgs/archive/lta/peer_review/lta_after_review_3_0/nav/bundle_nav.xml
+
+Summary:
+
+  0 error(s)
+  0 warning(s)
+
+
+End of Report
