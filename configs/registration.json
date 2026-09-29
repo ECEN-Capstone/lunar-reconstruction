@@ -1,0 +1,17 @@
+{
+  "temporal_window": 3,
+  "retrieval_top_k": 3,
+  "retrieval_minimum_orb_matches": 25,
+  "minimum_correspondences": 30,
+  "minimum_pnp_inliers": 20,
+  "minimum_inlier_fraction": 0.5,
+  "ransac_reprojection_px": 2.0,
+  "heldout_median_px": 2.0,
+  "heldout_p90_px": 4.0,
+  "minimum_depth_checks": 8,
+  "median_relative_3d_error": 0.03,
+  "minimum_feature_span_px": 120,
+  "voxel_size_baselines": 0.025,
+  "point_stride": 2,
+  "random_seed": 42
+}

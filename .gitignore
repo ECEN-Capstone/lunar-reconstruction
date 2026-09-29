@@ -1,1 +1,4 @@
 chandrayaan-3-navcam-sorted/
+.venv/
+__pycache__/
+artifacts/
