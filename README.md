@@ -2,7 +2,7 @@
 
 Conventional CAHV stereo geometry, OpenCV SGBM, conservative point clouds and local meshes, plus validated local camera registration and voxel fusion. Original mission inputs are never modified.
 
-**Outputs use the camera files' original length units. Their conversion to metres is not documented in this archive. Do not import these meshes into a metre-based rover simulator without resolving that scale and the gravity frame.** Read [RECONSTRUCTION_REPORT.md](RECONSTRUCTION_REPORT.md) for evidence, experiment results and limitations.
+**Legacy outputs retain the camera files' original units, now interpreted as millimetres using the mission Navcam paper. New `terrain_*_m.obj` outputs are already in metres.** The [terrain completion pilot](TERRAIN_COMPLETION.md) adds relaxed stereo and labelled hole filling for simulation. Gravity alignment, acquisition motion and absolute accuracy remain unverified. Read [RECONSTRUCTION_REPORT.md](RECONSTRUCTION_REPORT.md) for the earlier conservative experiments; its unresolved-unit statements predate the paper evidence.
 
 ## Environment
 
@@ -48,7 +48,7 @@ Run names must be new: scripts refuse to overwrite existing experiment directori
 - [Representative multi-frame fusion](artifacts/runs/r12_registration/component_obs_029/fusion_views.png) and [supported fused PLY](artifacts/runs/r12_registration/component_obs_029/cloud_multiview_supported_calibration_units.ply).
 - [Registration and component results](artifacts/runs/r12_registration/components.json); component folders include trajectories, clouds, and observed-triangle mesh unions.
 
-There are 50 filtered frame clouds and local meshes, six fused components, and six rejected candidate pairs. Physical units and acquisition stationarity remain unresolved; these are not certified metric simulator assets.
+There are 50 filtered frame clouds and local meshes, six fused components, and six rejected candidate pairs. The newer three-scene completion pilot adds nine metre-scale OBJ variants; see [results and limitations](TERRAIN_COMPLETION.md). These remain experimental simulator surfaces, with acquisition stationarity and gravity alignment unresolved.
 
 ## Configuration
 

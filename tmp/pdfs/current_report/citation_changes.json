@@ -1,0 +1,44 @@
+[
+  {
+    "page": 2,
+    "old": "For the first pipeline, I initially developed a system to generate SAM2 masks of rocks and",
+    "new": "For the first pipeline, I initially developed a system to generate SAM2 [1] masks of rocks and",
+    "original_lines": 1,
+    "new_lines": 1
+  },
+  {
+    "page": 4,
+    "old": "Once the team decided to pivot to direct terrain reconstruction from Chandrayaan-3 stereo",
+    "new": "Once the team decided to pivot to direct terrain reconstruction from Chandrayaan-3 [2] stereo",
+    "original_lines": 1,
+    "new_lines": 1
+  },
+  {
+    "page": 4,
+    "old": "examined. These models encode the camera centers and projection vectors.",
+    "new": "examined. These models encode the camera centers and projection vectors [2].",
+    "original_lines": 1,
+    "new_lines": 1
+  },
+  {
+    "page": 5,
+    "old": "Camera projection is derived from the CAHV parameters found in Chandrayaan-3 documentation. Rectification transforms the two images into a common viewing geometry so that corresponding points lie approximately on the same image row. After rectification, disparity represents the horizontal separation between corresponding points. Depth is calculated using",
+    "new": "Camera projection is derived from the CAHV parameters found in Chandrayaan-3 documentation. Rectification transforms the two images into a common viewing geometry so that corresponding points lie approximately on the same image row [3]. After rectification, disparity represents the horizontal separation between corresponding points. Depth is calculated using",
+    "original_lines": 4,
+    "new_lines": 5
+  },
+  {
+    "page": 5,
+    "old": "where Z is depth, f is focal length, B is the stereo baseline, and d is disparity.",
+    "new": "where Z is depth, f is focal length, B is the stereo baseline, and d is disparity [4].",
+    "original_lines": 1,
+    "new_lines": 1
+  },
+  {
+    "page": 5,
+    "old": "Dense matching uses OpenCV\u2019s StereoSGBM implementation. Experiments were completed to compare raw imagery, radiometrically calibrated imagery, and contrast enhancement. On one observation (Observation 003), the initial raw run retained 123,115 points, while the calibrated run retained 148,250. Contrast enhancement retained 129,904. These comparisons show differences in coverage, but increased point count alone does not establish improved accuracy. For example, radiometric processing can obscure the appearance of clipped raw pixels without restoring information lost during acquisition.",
+    "new": "Dense matching uses OpenCV\u2019s StereoSGBM implementation [5]. Experiments were completed to compare raw imagery, radiometrically calibrated imagery, and contrast enhancement. On one observation (Observation 003), the initial raw run retained 123,115 points, while the calibrated run retained 148,250. Contrast enhancement retained 129,904. These comparisons show differences in coverage, but increased point count alone does not establish improved accuracy. For example, radiometric processing can obscure the appearance of clipped raw pixels without restoring information lost during acquisition.",
+    "original_lines": 7,
+    "new_lines": 7
+  }
+]

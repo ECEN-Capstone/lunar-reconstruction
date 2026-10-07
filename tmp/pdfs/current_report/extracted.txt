@@ -1,0 +1,296 @@
+--- PAGE 1 ---
+ 
+ 
+ 
+ 
+ 
+ECEN 403(H) Individual Written Technical 
+Report 
+ 
+Name: Rylee Hunt 
+ 
+UIN: 234001505 
+ 
+Professor: Zhiwen Fan 
+ 
+October 1 2026 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+--- PAGE 2 ---
+Abstract 
+Our capstone project investigates how lunar imagery can support terrain reconstruction and 
+rover navigation evaluation. My work has focused on preparing image information and 
+developing the reconstruction portion of the workflow. I first generated SAM2 masks for the 
+team’s initial pipeline, which is now planned as a backup pipeline. At my advisor’s request, I 
+then used Astra as a development tool to construct a more robust reconstruction pipeline using 
+the available Chandrayaan-3 imagery and calibration records. The resulting implementation 
+performs stereo reconstruction, conservative filtering, local meshing, and registration where 
+observations provide sufficient overlap. The final filtered batch produced 50 local point clouds 
+and 50 partial meshes containing approximately 4.97 million per-frame points, while registration 
+accepted 17 of 129 candidate links. Numerical and reproducibility tests support implementation 
+correctness, but external validation of physical terrain accuracy has not been fully completed. 
+The reconstructed surfaces also remain incomplete because the source imagery does not 
+provide continuous coverage.  This report describes my contribution, current progress, 
+remaining limitations, and the next steps needed to connect reconstruction to the team’s 
+navigation work. 
+Project Context and Personal Contribution 
+The team’s overall objective is to develop a real-to-simulation workflow that connects lunar 
+imagery to terrain reconstruction and eventually to rover navigation experiments. Each stage 
+depends on the previous stage producing acceptable outputs. A navigation experiment requires 
+more than a visually convincing terrain model; the simulated terrain must meaningfully represent 
+the geometry of the actual lunar environment. My reconstruction work addresses this 
+requirement by converting available lunar imagery into geometry that can eventually be 
+evaluated and incorporated into simulation. 
+ 
+My contributions so far have developed in two stages, one for our initial reconstruction pipeline 
+concept, and the other for our current concept. Our initial pipeline concept used statistics 
+describing lunar terrain, such as the frequency, size, and spatial relationships of rocks and 
+craters, together with low-fidelity orbital elevation data to create generated terrain that is 
+informed by, but not identical to, real lunar terrain. After some discussion, we pivoted to 
+attempting to directly generate meshes from Chandrayaan-3 stereo images only, and the 
+statistically informed pipeline became our backup.  
+ 
+For the first pipeline, I initially developed a system to generate SAM2 masks of rocks and 
+craters in the Chandrayaan-3 images; this allowed us to know where rocks and craters were 
+located within the images, and, combined with depth data from stereo reconstruction, we could 
+determine the size of the objects and their spatial relationships to one another. After 
+reevaluating our pipeline and pivoting to direct reconstruction, I was instructed to use Astra as a 
+tool to aid in reconstructing a robust pipeline. Once this pipeline was completed, its geometric 
+assumptions and intermediate results were examined. 
+
+
+--- PAGE 3 ---
+Initial Work: Mask Generation Using SAM2 
+My first technical contribution was SAM2 mask generation for the first pipeline design, which is 
+detailed in Figure 1. As previously mentioned, the first pipeline focused on plausible terrain 
+generation and not direct reconstruction; as such, statistics on the frequencies of different sized 
+features would need to be collected. The original feature-processing plan included SAM2 
+labeling, human classification, conversion to YOLO labels, and YOLOv8 training. Following 
+advisor feedback to keep feature detection simple, I pivoted solely to generating masks with 
+SAM2 without later YOLOv8 training. Initial exploration and tuning yielded results such as what 
+is shown in Figure 2. 
+ 
+In the current state, crater-like regions were segmented out and masked due to shadow 
+contrast, but rocks, especially small ones, posed a challenge because they blended into the 
+surrounding terrain. Since the team decided to pivot to direct terrain reconstruction, work on 
+mask generation and feature statistics has been put on hiatus; however, it remains in a stable 
+state as a backup in the case that the team needs to pivot back to this pipeline. In that case, 
+mask generation would need to be tuned to more accurately mask out craters and rocks, and 
+then the verified feature masks would be associated with stereo geometry. Once sizes and 
+spatial relationships were established, statistics would be generated that could feed a terrain 
+generation model.  
+ 
+ 
+Figure 1. Initial terrain generation pipeline proposal. 
+ 
+
+
+--- PAGE 4 ---
+ 
+Figure 2. Example SAM2 segmentation on Chandrayaan-3 surface imagery. 
+Dataset Investigation and Assumptions 
+Once the team decided to pivot to direct terrain reconstruction from Chandrayaan-3 stereo 
+images only, a more thorough investigation of the dataset was conducted to determine feasibility 
+of reconstruction and the ideal approach. The image dataset contained 56 candidate 
+observations, each represented by raw and radiometrically calibrated left and right images, for 
+224 images total. Each image was 1024 by 1024 pixels and contained 8-bit monochrome data. 
+Observations were sparse still imagery rather than continuous video; observations spanned 
+August 23 through September 2, 2023, with a median gap of 3 hours 24 minutes between 
+observations. The CAHV camera models supplied in Chandrayaan-3 documentation were also 
+examined. These models encode the camera centers and projection vectors.  
+ 
+There were several initial limitations identified. Firstly, individual images lacked XML labels, and 
+available documentation did not provide a complete per-image pose stream. Raw images also 
+sometimes included severe saturation, shadows, and glare, which could limit recoverable 
+information even when processed successfully.  
+ 
+Observation timing was also a significant consideration. Candidate left and right images were 
+typically separated by approximately 30 to 43 seconds. The fixed camera geometry supplied in 
+Chandrayaan-3 documentation can thus only be used under an assumption that the rover was 
+stationary during this time. Good image alignment provides some support for this assumption, 
+but it cannot completely rule out rover motion. For example, translation parallel to the camera 
+baseline could change the depth scale without producing a corresponding vertical epipolar error. 
+Therefore, there is a physical uncertainty that can’t be accounted for simply by improving the 
+pipeline’s ability to match features; however, in the future, this uncertainty may be able to be 
+resolved through discovery of additional Chandrayaan-3 documentation or contact with the 
+Chandrayaan-3 team. 
+
+
+--- PAGE 5 ---
+Reconstruction Pipeline and Experimental 
+Development 
+The new reconstruction pipeline follows a conventional stereo reconstruction sequence: camera 
+model interpretation, image rectification, disparity estimation, depth calculation, filtering, point 
+cloud export, and local meshing. It then attempts registration between observations with 
+sufficient shared features.  
+ 
+Camera projection is derived from the CAHV parameters found in Chandrayaan-3 
+documentation. Rectification transforms the two images into a common viewing geometry so 
+that corresponding points lie approximately on the same image row. After rectification, disparity 
+represents the horizontal separation between corresponding points. Depth is calculated using  
+ 
+​
+​
+​
+​
+​
+​
+​
+​
+​
+Equation 1 
+𝑍= 𝑓𝐵
+𝑑
+ 
+where Z is depth, f is focal length, B is the stereo baseline, and d is disparity. 
+ 
+Dense matching uses OpenCV’s StereoSGBM implementation. Experiments were completed to 
+compare raw imagery, radiometrically calibrated imagery, and contrast enhancement. On one 
+observation (Observation 003), the initial raw run retained 123,115 points, while the calibrated 
+run retained 148,250. Contrast enhancement retained 129,904. These comparisons show 
+differences in coverage, but increased point count alone does not establish improved accuracy. 
+For example, radiometric processing can obscure the appearance of clipped raw pixels without 
+restoring information lost during acquisition. 
+ 
+
+
+--- PAGE 6 ---
+ 
+Figure 3. Stereo reconstruction on Observation 003 using radiometrically calibrated imagery. 
+ 
+The original 256-disparity configuration limited reconstruction of nearby terrain; to combat this, a 
+wider 512-disparity configuration was adopted. For example, on one observation (Observation 
+029), the wider disparity configuration increased retained points from 99,390 to 134,544, a 
+35.37% increase, while image coverage rose from 9.48% to 12.83%. Of the retained points in 
+the wider run, 14,960 had disparities of at least 256 pixels, demonstrating recovery beyond the 
+original search range. The validity and disparity panels show where this additional support 
+occurred. However, the wider configuration also introduced image padding and adjusted filtering 
+thresholds, so the overall increase cannot be attributed solely to search width. These results 
+demonstrate increased reconstruction coverage, not independently verified improvements in 
+geometric accuracy.  
+ 
+
+
+--- PAGE 7 ---
+ 
+Figure 4. Observation 029 reconstructed using the 256-disparity configuration. 
+ 
+ 
+ 
+Figure 5. Observation 029 reconstructed using the 512-disparity configuration. 
+ 
+ 
+
+
+--- PAGE 8 ---
+Reliability checks compare left-to-right and right-to-left disparities and reject pixels that disagree 
+by more than one adjacent pixel. Additional masks exclude unreliable raw intensity regions and 
+regions of weak texture. Final filtering removes unsupported borders, isolated regions, and 
+areas with inconsistent disparity. This trades coverage for stronger local support; however, it can 
+also remove genuine small terrain features, so the filtered output is not a complete obstacle 
+inventory. 
+ 
+Local meshing connects nearby supported samples while rejecting triangles that cross 
+excessive depth changes or long edges. It does not fill gaps with generated surfaces. This 
+preserves a useful distinction between terrain supported by observations and terrain that would 
+have to be inferred. The resulting meshes are partial surfaces; open boundaries and holes are 
+expected consequences of the available evidence. 
+ 
+Registration extends reconstruction beyond individual image pairs. Feature correspondences 
+and source stereo depth support pose estimation between candidate observations. A held-out 
+subset of correspondences evaluates reprojection after fitting, while target stereo depth 
+provides another consistency check. Only accepted links contribute to connected components. 
+Disconnected observations remain separate instead of receiving invented positions in a global 
+map. 
+Current Results and Scope of Validation 
+The final filtered batch contains 50 local point clouds and 50 partial meshes from 56 candidate 
+observations. It totals 4,969,574 per-frame points and 508,095 local mesh triangles, with 
+median coverage of 10.03%. These totals include overlapping observations. They are not 
+counts of unique points in a single global terrain model. Six candidates were rejected because 
+the available evidence failed the geometric or image-quality criteria.  
+ 
+Registration tested 129 candidate links and accepted 17, producing six multi-frame components 
+and leaving 31 observations isolated. These results establish that some local overlap supports 
+registration while also showing why the current archive does not support a continuous global 
+reconstruction under the implemented criteria. The registered meshes combine existing 
+observed triangles; they retain holes and may contain overlapping faces.  
+ 
+It was found that there was maximum vertical round-trip error of approximately 5.68 × 10-13 
+pixels and maximum three-dimensional round-trip error of 2.18 × 10-11 mm. A synthetic image 
+pair with a known 24-pixel shift returned the expected disparity signs. These small errors 
+support implementation correctness on the constructed tests. 
+ 
+Export and reproducibility checks address the reliability of the saved artifacts. A repeated 
+baseline run reproduced the original left and right disparity, depth, and XYZ arrays exactly, 
+including invalid value locations. This confirms that results are reproducible.  
+ 
+
+
+--- PAGE 9 ---
+Together, these results support an operational and auditable reconstruction pipeline. However, 
+they do not establish that the results are simulation-ready. We will need to devise methodology 
+to fill gaps and validate the completed terrain prior to considering the results simulation-ready. 
+Relationship to Overall Team Progress 
+The team’s navigation work currently supplies a complementary simulation baseline. The 
+navigation team successfully set up ROS2 Jazzy and Gazebo Harmonic; they used them to 
+complete three fixed rover routes with final goal errors of approximately 0.277–0.298 meters 
+and no recorded obstacle contacts. Additionally, fault injection cases resulted in appropriate stop 
+outcomes. The navigation team also reports passing stationary RGB-D interface tests at optical 
+distances of 1, 2, and 4 meters. These results are promising and indicate that we are on track to 
+integrate the reconstructed 3D terrain into the environment when it is ready. 
+ 
+The current navigation tests use a known obstacle map and have access to ground-truth 
+odometry. The next steps on the navigation side will be to insert the reconstructed lunar terrain 
+into the simulation so the project can demonstrate camera-driven navigation across 
+reconstructed terrain. My immediate integration responsibility concerns the terrain side of that 
+connection. 
+Next Steps and Acceptance Criteria 
+For our primary pipeline (direct terrain reconstruction), the first priority is external validation. A 
+measured target or trusted terrain reference is needed to evaluate physical error. Registration 
+should also be assessed with attention to duplicate images and whether apparently repeated 
+support provides genuinely independent geometry. Once the primary pipeline is validated, 
+additional steps will most likely be required to fill holes and unknown regions. Additional 
+investigation and discussion is necessary to determine how. 
+ 
+For the simulation, I will work with the navigation and integration teams on one selected local 
+mesh initially. Acceptance will require a documented origin, axis convention, scale, gravity 
+alignment, and sufficient mesh quality. Visual and collision geometry will also need to be 
+reviewed. Successful file import will be a compatibility check, not the final acceptance criterion. 
+Once this mesh is prepared and properly set up within a Gazebo world, the navigation team can 
+begin experiments. While they are working with the first approved mesh, I will prepare additional 
+high-fidelity meshes to be used while factoring in their feedback. 
+ 
+For the backup pipeline, the next step is to fine tune the approach to identify smaller features 
+and then review and classify a representative set of SAM2 mask proposals. Evaluation will 
+record missed objects, incorrect masks, mask quality, and duplicate proposals. After this review, 
+accepted masks will be associated with valid stereo depth and used to generate statistics for the 
+terrain generator. However, development of this alternate pipeline will remain on hiatus unless it 
+is needed. 
+
+
+--- PAGE 10 ---
+Conclusion 
+My work progressed from SAM2 mask generation for a terrain generation pipeline to 
+development of an auditable stereo reconstruction workflow. The present implementation 
+produces supported local geometry, records rejected cases, and passes specific numerical, 
+consistency, and reproducibility checks. Its main remaining limitations concern acquisition 
+motion and incomplete surfaces. Resolving those limitations is the necessary next step toward 
+terrain that can support meaningful rover navigation evaluation. 

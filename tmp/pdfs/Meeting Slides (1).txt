@@ -1,0 +1,400 @@
+--- PAGE 1 ---
+Weekly Capstone Update
+Week of 9/23/2026 - 9/30/2026
+Rylee Hunt, Alejandro Laverde, Jonathan Liu, Arjun Madana, Austin Salmon
+STATUS: NOT READY FOR REVIEW 
+
+--- PAGE 2 ---
+This Week: Priority To-Dos
+● Show raw lunar-data samples: stereo coverage, sequence length, and lighting 
+variation.
+● Normalize lighting; attempt a 3D mesh/point-cloud reconstruction; cross-check the 
+result with Claude Code.
+● Verify whether the XML positioning archive provides camera intrinsics, extrinsics, 
+and stereo-baseline data.
+● Catalog lunar datasets: usable video-sequence counts, camera metadata, and 
+dense-overlap availability.
+● Survey prior 3D lunar-terrain augmentation work before implementing 
+rock/crater-based augmentation.
+● Identify a physical platform for testing, potentially through Dr. Majji or Dr. Ambrose.
+● Continue simulation sensor development and integration
+
+--- PAGE 3 ---
+Environment Team Update
+
+--- PAGE 4 ---
+NavCam archive: size and cadence
+● 56 labeled NavCam stereo jobs; calibrated left/right images for all 56.
+● Raw PNGs: 56 left and 55 right; one raw right frame is absent.
+● Separate Rover Imager archive: 33 monocular frames; no supplied RI stereo 
+calibration.
+● Aug 23–Sep 2, 2023 (11 days); median gap between jobs is 3 h 24 min. No 
+continuous video in this subset.
+
+--- PAGE 5 ---
+Raw NavCam stereo pair
+Aug 31, 2023 raw frames: left 08:13:01.917 UTC; right 08:13:45.118 UTC (43.20 s apart). Shared rocks give strong 
+visual overlap. Preliminary screen: 98 RANSAC inliers at half resolution and 0.39 px median CAHV epipolar error; depth 
+remains unvalidated. 
+
+--- PAGE 6 ---
+Three overlapping viewpoints
+Sep 1, 2023 raw left frames, left to right: 18:33:31, 18:41:15, 18:46:40 UTC (13 min 09 s). Each has a raw right frame 
+about 40 s later. The shadowed depression and rocks persist across views: sparse overlap, not video. 
+
+--- PAGE 7 ---
+Camera information in the archive
+● Separate left/right CAHV models and radiometric LUTs are supplied; PDS4 
+labels record timing, gain, and exposure.
+● CAHV camera centers are 242.06 model units apart, consistent with the 
+published 240 mm stereo baseline.
+● Published specs: 1024 × 1024 pixels, 21 mm focal length, and 39° field of 
+view (ISRO LPSC 2024).
+● Calibrated PNGs are radiometric, not stereo rectified; per-frame rover pose 
+and scene footprints are not supplied.
+
+--- PAGE 8 ---
+What is usable now?
+● 48/56 pairs pass a preliminary screen (≥30 RANSAC inliers; <1.5 px median 
+CAHV epipolar error). Candidate count only; no validated depth.
+● Seven time-adjacent links within 30 min show matchable overlap; five connect 
+jobs that also pass the stereo screen.
+● Left/right captures are 29.96–43.26 s apart (median 40.57 s). Rover motion 
+during each pair still needs checking.
+● Label anomalies require image checks. A Sep 1 05:54 pair has 678 matches 
+but ~29.7 px CAHV error: feature count alone can mislead.
+
+--- PAGE 9 ---
+Astra Reconstruction 
+Progress
+The following slides contain a summary; you can find more detailed information about the results 
+of this first pass in the markdown files in our lunar reconstruction repo 
+(https://github.com/ECEN-Capstone/lunar-reconstruction).
+
+--- PAGE 10 ---
+Lunar stereo reconstruction results 
+● 56 candidate stereo observations evaluated
+● 50 produced supported 3D reconstructions
+● 4.97 million filtered per-frame points
+● 50 partial terrain meshes with 508,095 observed triangles
+● Six pairs were rejected because the imagery did not support reliable geometry
+
+
+--- PAGE 11 ---
+Local multi-frame terrain reconstruction 
+● 129 possible registration links tested
+● 17 passed geometric validation
+● Six local multi-frame components created
+● 31 frames remained isolated
+● 53,790 fused voxels were observed by at least two frames
+
+
+--- PAGE 12 ---
+What prevents simulator-ready terrain? 
+Current blockers
+● Camera baseline is 242.059 calibration units, but the archive does not define the physical unit (most 
+likely mm, but not guaranteed)
+● Left and right images were taken about 30–43 seconds apart
+● Rover motion during that interval is not documented
+● Per-image pose and gravity orientation are unavailable
+● Shadows and low-texture areas leave real holes in the terrain
+● No surveyed ground truth exists for absolute accuracy validation
+What is still needed
+1. Confirm the CAHV camera-center units and coordinate frame
+2. Obtain stationarity confirmation or motion telemetry
+3. Obtain complete per-image metadata and attitude information
+4. Validate scale and error against a known target or trusted DEM
+5. Convert the verified result into gravity-aligned, collision-ready simulator terrain
+
+
+--- PAGE 13 ---
+Largest registered observed surface mesh
+
+
+--- PAGE 14 ---
+Navigation Team Update
+
+--- PAGE 15 ---
+Continued Work on RGB-D and Stereo Nav Pipeline
+● 
+
+--- PAGE 16 ---
+ARCHIVED WEEKS
+
+--- PAGE 17 ---
+Weekly Capstone Update
+Week of 9/14/2026 - 9/20/2026
+Rylee Hunt, Alejandro Laverde, Jonathan Liu, Arjun Madana, Austin Salmon
+STATUS: READY FOR REVIEW 
+
+--- PAGE 18 ---
+Work Division
+● Environment Team
+○ Rylee
+■ Feature identification and classification pipeline
+■ Figuring out format for environment analysis output / terrain generator input
+○ Jonathan
+■ Stereo geometry and approximate-depth pipeline
+■ Figuring out format for environment analysis output / terrain generator input
+● Integration Team
+○ Alejandro
+■ System integration & architecture
+■ Figuring out format for environment analysis output / terrain generator input
+● Navigation Team
+○ Arjun
+■ Set up ROS2 environment and initial navigation
+■ Helped brainstorm ideas for generator model
+○ Austin
+■ Set up Gazebo sim, rover, and environment
+
+--- PAGE 19 ---
+Environment Team Update
+
+--- PAGE 20 ---
+
+
+--- PAGE 21 ---
+Stereo Extraction
+● Selected 10 candidate sequential left/right groups w/ sufficient visual overlap
+● Implemented SIFT feature detection and matching
+● Added Lowe’s ratio test and RANSAC geometric filtering
+● Added horizontal-displacement and vertical-residual diagnostics
+
+--- PAGE 22 ---
+Sample Outputs
+RANSAC-filtered SIFT correspondences between candidate sequential left/right NavCam images captured 43.20 
+seconds apart. Of 1,568 matches, 1,491 were inliers (95.1%). Median horizontal displacement was 95.36 px, while the 
+5.24 px median vertical residual indicates that rectification and rover-motion validation are required before reliable depth 
+estimation. 
+
+--- PAGE 23 ---
+Stereo Depth Status & Blockers
+● Missing Camera Intrinsics
+○ Missing official camera intrinsics, distortion values, and CAHV vectors. Cannot yet convert 
+displacement to metric depth.
+● Capture-Time Gap
+○ Candidate left/right images are 30–43s apart without confirmation that the rover remained 
+stationary between shots.
+● Current Capabilities
+○ Currently able to derive feature correspondences, epipolar geometry, and relative 
+displacement.
+● Pending Metrics
+○ Not yet able to extract accurate metric depth, rock dimensions, rocks per square meter, metric 
+spacing, or slopes.
+
+--- PAGE 24 ---
+Key Questions for Stereo Depth
+● Is there any way for us to obtain the official NavCam calibration data?
+● Do the 30-43 second gaps represent the actual image capture times, and how 
+can we confirm the rover remained stationary?
+● Should we use the published focal length and 0.24 m baseline to produce 
+approximate metric depth, or keep the results as relative depth?
+○ Can potentially build nominal camera model w/ configurable values, and produce approximate 
+metric depth rather than calibrated metric depth
+● If accurate metric depth is impossible, would relative depth and apparent 
+rock-size distributions still be useful inputs for the terrain generator?
+
+--- PAGE 25 ---
+Published NavCam Specifications
+● Published Values:
+○ Image resolution: 1024 × 1024 pixels
+○ Pixel size: 15 μm
+○ Focal length: 21 mm
+○ Stereo baseline: 240 mm
+○ Field of view: 39° × 39°
+● Source: Iyer et al., LPSC 2024, Abstract 1180
+
+--- PAGE 26 ---
+Derived Values & Assumptions
+● Nominal camera model:
+○ fx, fy ≈ 1400 px (derived)
+○ cx, cy ≈ 511.5 px (assumed image center)
+○ Skew = 0; distortion = 0 initially (assumed)
+○ Metric scale uses the published 0.240 m baseline
+○ Rover assumed stationary during left/right capture
+● All parameters remain configurable.
+
+--- PAGE 27 ---
+Feature Identification + Classification
+● Designed a pipeline for feature detection (detailed on the next slide)
+● Using a Jetson Orin Nano; hardware just came in. Working on setup.
+
+--- PAGE 28 ---
+Progress
+Feature Detection & Classification Pipeline
+● Setting pipeline up on Jetson Orin Nano.
+● Will complete feature classification on Chandrayaan-3 images early this week.
+
+--- PAGE 29 ---
+Progress by 9/23
+● As per feedback, pivoting away 
+from training YOLOv8 and just 
+using SAM2 to generate masks.
+● Currently tuning settings – so far, 
+generated masks of craters, but 
+having trouble masking small rocks 
+because they blend into the 
+environment
+
+
+--- PAGE 30 ---
+Key Questions for Feature Identification / Classification
+● Would it be useful to generalize this pipeline beyond Chandrayaan-3 data so 
+we can add images from other areas near the LSP later on?
+
+--- PAGE 31 ---
+Integration Team Update
+
+--- PAGE 32 ---
+Inputs for Terrain Generator
+Context: Based on knowing where the object is in the image and where it is in 3D 
+space relative to the camera, we can classify its size.
+Objective: We need to figure out how to record the distribution of the rocks relative 
+to each other + other important info in a way the generator will be able to 
+understand.
+
+
+--- PAGE 33 ---
+Inputs for Terrain Generator
+● Feature Count – Records total instance count of detected terrain objects per 
+standardized area.
+● Feature Size – Classifies dimension metrics derived from camera distance 
+and 3D positioning.
+● Spatial Distribution – Maps relative distances and spatial arrangement 
+between surface entities.
+
+
+--- PAGE 34 ---
+Proposed Approach
+● 2D Feature Representation – For each image, we generate a representative 
+2D map of how all features are oriented in space.
+● Neural Associations – We could use a neural network or an encoder model to 
+learn associations between various features and generate new maps.
+
+--- PAGE 35 ---
+Ideas for Generating New Terrain Based On Data
+1) Train a diffusion model on lunar feature maps to learn the spatial patterns of 
+craters, rocks, slopes, and surface roughness. The model will generate 
+multiple realistic terrain-map variations while preserving the overall structure 
+of the original map.
+2) Represent lunar terrain features as discrete tokens and train a 
+Transformer-based encoder-decoder model to learn how those features are 
+spatially related. The model would then generate new terrain maps by 
+predicting plausible feature arrangements based on patterns learned from the 
+original maps.
+FEEDBACK REQUEST: Do either of these ideas seem plausible, or would you 
+prefer us to follow a different approach to generate terrain from our known data?
+
+--- PAGE 36 ---
+Key Questions
+● Stereo to Flat Map Projection
+○ Would it be a good idea to focus on making a stereo image to flat map projection pipeline so 
+that we can decouple the statistical modeling from the image processing, and easily change 
+our minds about the statistical modeling later, not worrying about the image processing 
+anymore?
+● Terrain Distribution Model
+○ Are the ideas listed on the previous slide plausible, and which approach is best?
+
+--- PAGE 37 ---
+Navigation Team Update
+
+--- PAGE 38 ---
+Navigation Team Progress
+● ROS2 & Docker Setup – Configured development container environment for 
+reliable node deployment.
+○ Includes full Gazebo simulation engine integration.
+● Simulation Environment – Constructed virtual testing arena for initial algorithm 
+validation.
+○ Features basic geometry terrain and a functional rover model.
+● Path Navigation – Implemented core guidance systems for autonomous 
+movement.
+○ Rover actively navigates environment and follows preset paths.
+
+--- PAGE 39 ---
+Gazebo Environment
+Gazebo Environment with NASA’s Open Source LEO Rover
+
+
+--- PAGE 40 ---
+Gazebo Environment
+Links to a video in google drive
+
+--- PAGE 41 ---
+Proposed Next Steps
+
+--- PAGE 42 ---
+Next Steps
+● Environment
+○ Complete pipeline and integrate stereo reconstruction with identified/masked features
+○ Make a birds-eye-view 2D reconstruction of the features relative to one another
+● Integration
+○ Select generator model
+○ Solidify generator input/output formats
+● Navigation
+○ Implement simulated sensors
+○ Add a navigation algorithm
+
+--- PAGE 43 ---
+Weekly Capstone Meeting
+9/3/2026
+Rylee Hunt, Alejandro Laverde, Jonathan Liu, Arjun Madana, Austin Salmon 
+
+--- PAGE 44 ---
+Open topics from the previous period
+● The project scope has evolved from multimodal terrain sensing toward a 
+real-to-sim navigation pipeline. 
+● We would still like physical hardware in this process
+● For professors - suggestions on where hardware could contribute most 
+effectively within our current scope?
+○ Consider schedule, funding
+
+--- PAGE 45 ---
+High-level project plan
+● Select datasets, reconstruction methods, navigation approach, interfaces, and 
+evaluate metrics
+● Generate terrain based on Vikram landing-site data
+○ 0.30m Chandrayaan-2 elevation model for coarse terrain geometry
+○ Compute stereo depth from selected Chandrayaan-3 NavCam pairs
+○ Extract rover-scale statistics
+○ Fill in sub-resolution details using generator, with physically-based regolith material and sun 
+angle as parameter
+● Build baseline learning-based navigation system in simulation
+
+--- PAGE 46 ---
+High-level project plan (continued)
+● Train and test navigation using reconstructed environment
+○ Measure reconstruction quality and navigation performance
+● Evaluate the system on unseen simulated environments and different 
+illumination conditions
+● Test navigation pipeline using physical rover platform in representative 
+real-world terrain (stretch)
+
+--- PAGE 47 ---
+Progress since last meeting
+ ● Initial role delegation
+○ Jonathan + Rylee - Lunar geometry and terrain-statistics extraction
+○ Arjun + Austin - Navigation system
+○ Alejandro - Interface
+● Setup of tools 
+○ Notion
+○ Docker container w/ ROS2 
+○ Gazebo
+● Discussed final project scope
+● Obtained visual data from Chandrayaan-3 Rover
+○ Navigation camera
+○ Imager
+
+
+--- PAGE 48 ---
+Action items for next period 
+● Establish and solidify project scope
+● Finalize recurring meeting time and cadence
+● Start technical work
+○ Jonathan + Rylee
+■ Translate select NavCam pairs into stereo depth statistics
+■ Produce rock size histogram
+○ Image-to-Sim pipeline setup
+○ Arjun + Austin
+■ Establish initial rover navigation in Gazebo on crude procedural surface
+○ Alejandro
+■ Terrain-generator configuration parameters for interface
