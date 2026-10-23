@@ -1,0 +1,72 @@
+{
+  "units": "metres; input CAHV positions interpreted as mm",
+  "unit_evidence": "Iyer et al., LPSC 2024 abstract 1180, nominal Navcam baseline 240 mm; calibrated baseline 242.0594 mm",
+  "frame": "CAHV rover-local frame, inverse rectification plus left C; nominal Z up; actual gravity unverified",
+  "interpolation": "Linear Delaunay interpolation of median occupied grid cells; no extrapolation outside support convex hull",
+  "labels": {
+    "0": "outside footprint",
+    "1": "original stereo median",
+    "2": "relaxed stereo median, spatially gated",
+    "3": "interpolated <= balanced radius from support",
+    "4": "larger interpolation / simulation assumption"
+  },
+  "config": {
+    "observations": [
+      "obs_003",
+      "obs_029",
+      "obs_034"
+    ],
+    "grid_m": 0.05,
+    "forward_bounds_m": [
+      0.75,
+      6.0
+    ],
+    "lateral_bounds_m": [
+      -2.0,
+      2.0
+    ],
+    "minimum_points_per_cell": 2,
+    "relaxed_anchor_distance_m": 0.2,
+    "relaxed_height_tolerance_m": 0.04,
+    "relaxed_slope_envelope_deg": 35.0,
+    "balanced_fill_distance_m": 0.25,
+    "extended_fill_distance_m": 0.5,
+    "holdout_radii_m": [
+      0.05,
+      0.125,
+      0.25,
+      0.5
+    ],
+    "holdout_patches_per_radius": 16,
+    "seed": 42,
+    "stereo_overrides": {
+      "block_size": 7,
+      "uniqueness_ratio": 5,
+      "speckle_window_size": 50,
+      "lr_threshold_px": 2.0,
+      "texture_std_threshold": 1.0,
+      "mesh_max_relative_depth_jump": 0.05,
+      "mesh_max_edge_baselines": 0.5
+    },
+    "support_overrides": {
+      "maximum_median_disparity_difference_px": 3.0,
+      "minimum_valid_neighbors": 5,
+      "minimum_component_pixels": 50
+    }
+  },
+  "inputs": [
+    {
+      "path": "artifacts\\runs\\r11_filtered_batch\\obs_003",
+      "xyz_sha256": "8678b12044f4e28055b149fe17af3935dcca61347a4deca52a435289e32c5ffb"
+    }
+  ],
+  "limitations": [
+    "spatial holdouts are not independent lunar ground truth",
+    "interpolation can erase unseen rocks and craters; smooth does not mean safe",
+    "5 cm grid spacing is not an accuracy claim",
+    "single-valued height surface cannot represent overhangs",
+    "convex hull can bridge disconnected patches and occlusions in simulation mode",
+    "surface is open at perimeter; not a watertight solid; simulator collision untested",
+    "stereo acquisition motion and per-frame attitude remain unresolved"
+  ]
+}

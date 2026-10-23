@@ -1,0 +1,44 @@
+{
+  "component": "component_obs_044",
+  "vertices": 65792,
+  "triangles": 55682,
+  "sources": [
+    {
+      "observation": "obs_044",
+      "vertex_start": 0,
+      "vertex_count": 13835,
+      "face_count": 8764
+    },
+    {
+      "observation": "obs_047",
+      "vertex_start": 13835,
+      "vertex_count": 19871,
+      "face_count": 19653
+    },
+    {
+      "observation": "obs_046",
+      "vertex_start": 33706,
+      "vertex_count": 13646,
+      "face_count": 10825
+    },
+    {
+      "observation": "obs_048",
+      "vertex_start": 47352,
+      "vertex_count": 11015,
+      "face_count": 11794
+    },
+    {
+      "observation": "obs_045",
+      "vertex_start": 58367,
+      "vertex_count": 7425,
+      "face_count": 4646
+    }
+  ],
+  "limitations": [
+    "overlapping triangles retained",
+    "holes unfilled",
+    "not watertight",
+    "not metric certified",
+    "not collision ready"
+  ]
+}

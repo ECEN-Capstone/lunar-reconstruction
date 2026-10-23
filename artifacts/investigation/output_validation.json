@@ -1,0 +1,734 @@
+{
+  "ply_checks": [
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_001/local_mesh_calibration_units.ply",
+      "vertices": 2020,
+      "faces": 1856,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_001/points_calibration_units.ply",
+      "vertices": 18045,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_002/local_mesh_calibration_units.ply",
+      "vertices": 1625,
+      "faces": 503,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_002/points_calibration_units.ply",
+      "vertices": 14890,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_003/local_mesh_calibration_units.ply",
+      "vertices": 7783,
+      "faces": 6671,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_003/points_calibration_units.ply",
+      "vertices": 69844,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_004/local_mesh_calibration_units.ply",
+      "vertices": 11222,
+      "faces": 10995,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_004/points_calibration_units.ply",
+      "vertices": 100634,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_005/local_mesh_calibration_units.ply",
+      "vertices": 17269,
+      "faces": 16038,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_005/points_calibration_units.ply",
+      "vertices": 155546,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_006/local_mesh_calibration_units.ply",
+      "vertices": 9503,
+      "faces": 7595,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_006/points_calibration_units.ply",
+      "vertices": 85296,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_007/local_mesh_calibration_units.ply",
+      "vertices": 6811,
+      "faces": 6732,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_007/points_calibration_units.ply",
+      "vertices": 61289,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_008/local_mesh_calibration_units.ply",
+      "vertices": 4085,
+      "faces": 4546,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_008/points_calibration_units.ply",
+      "vertices": 36778,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_009/local_mesh_calibration_units.ply",
+      "vertices": 11953,
+      "faces": 12662,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_009/points_calibration_units.ply",
+      "vertices": 107405,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_010/local_mesh_calibration_units.ply",
+      "vertices": 20175,
+      "faces": 16879,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_010/points_calibration_units.ply",
+      "vertices": 181768,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_011/local_mesh_calibration_units.ply",
+      "vertices": 3073,
+      "faces": 2617,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_011/points_calibration_units.ply",
+      "vertices": 27707,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_012/local_mesh_calibration_units.ply",
+      "vertices": 15222,
+      "faces": 11229,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_012/points_calibration_units.ply",
+      "vertices": 136851,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_013/local_mesh_calibration_units.ply",
+      "vertices": 11435,
+      "faces": 6868,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_013/points_calibration_units.ply",
+      "vertices": 103023,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_014/local_mesh_calibration_units.ply",
+      "vertices": 12192,
+      "faces": 7664,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_014/points_calibration_units.ply",
+      "vertices": 109123,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_016/local_mesh_calibration_units.ply",
+      "vertices": 1294,
+      "faces": 1168,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_016/points_calibration_units.ply",
+      "vertices": 11562,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_017/local_mesh_calibration_units.ply",
+      "vertices": 18640,
+      "faces": 18065,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_017/points_calibration_units.ply",
+      "vertices": 167836,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_018/local_mesh_calibration_units.ply",
+      "vertices": 12094,
+      "faces": 10370,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_018/points_calibration_units.ply",
+      "vertices": 108384,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_019/local_mesh_calibration_units.ply",
+      "vertices": 20905,
+      "faces": 19105,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_019/points_calibration_units.ply",
+      "vertices": 187766,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_020/local_mesh_calibration_units.ply",
+      "vertices": 11868,
+      "faces": 9639,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_020/points_calibration_units.ply",
+      "vertices": 107236,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_021/local_mesh_calibration_units.ply",
+      "vertices": 8835,
+      "faces": 7104,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_021/points_calibration_units.ply",
+      "vertices": 79716,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_022/local_mesh_calibration_units.ply",
+      "vertices": 9512,
+      "faces": 5540,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_022/points_calibration_units.ply",
+      "vertices": 85894,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_023/local_mesh_calibration_units.ply",
+      "vertices": 13571,
+      "faces": 8791,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_023/points_calibration_units.ply",
+      "vertices": 122017,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_024/local_mesh_calibration_units.ply",
+      "vertices": 8021,
+      "faces": 6128,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_024/points_calibration_units.ply",
+      "vertices": 72020,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_025/local_mesh_calibration_units.ply",
+      "vertices": 11078,
+      "faces": 9140,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_025/points_calibration_units.ply",
+      "vertices": 100072,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_026/local_mesh_calibration_units.ply",
+      "vertices": 7584,
+      "faces": 5622,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_026/points_calibration_units.ply",
+      "vertices": 68614,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_027/local_mesh_calibration_units.ply",
+      "vertices": 16025,
+      "faces": 17012,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_027/points_calibration_units.ply",
+      "vertices": 143195,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_028/local_mesh_calibration_units.ply",
+      "vertices": 18274,
+      "faces": 20367,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_028/points_calibration_units.ply",
+      "vertices": 164417,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_029/local_mesh_calibration_units.ply",
+      "vertices": 12141,
+      "faces": 15729,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_029/points_calibration_units.ply",
+      "vertices": 109175,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_030/local_mesh_calibration_units.ply",
+      "vertices": 16319,
+      "faces": 18694,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_030/points_calibration_units.ply",
+      "vertices": 146589,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_031/local_mesh_calibration_units.ply",
+      "vertices": 16784,
+      "faces": 19242,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_031/points_calibration_units.ply",
+      "vertices": 150684,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_033/local_mesh_calibration_units.ply",
+      "vertices": 12997,
+      "faces": 13213,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_033/points_calibration_units.ply",
+      "vertices": 116766,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_034/local_mesh_calibration_units.ply",
+      "vertices": 28637,
+      "faces": 31359,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_034/points_calibration_units.ply",
+      "vertices": 257590,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_035/local_mesh_calibration_units.ply",
+      "vertices": 15855,
+      "faces": 20479,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_035/points_calibration_units.ply",
+      "vertices": 142576,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_038/local_mesh_calibration_units.ply",
+      "vertices": 1727,
+      "faces": 1636,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_038/points_calibration_units.ply",
+      "vertices": 15770,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_039/local_mesh_calibration_units.ply",
+      "vertices": 2582,
+      "faces": 2961,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_039/points_calibration_units.ply",
+      "vertices": 23207,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_040/local_mesh_calibration_units.ply",
+      "vertices": 7305,
+      "faces": 8622,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_040/points_calibration_units.ply",
+      "vertices": 65423,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_041/local_mesh_calibration_units.ply",
+      "vertices": 13924,
+      "faces": 21854,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_041/points_calibration_units.ply",
+      "vertices": 124936,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_042/local_mesh_calibration_units.ply",
+      "vertices": 5024,
+      "faces": 2634,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_042/points_calibration_units.ply",
+      "vertices": 44993,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_044/local_mesh_calibration_units.ply",
+      "vertices": 13835,
+      "faces": 8764,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_044/points_calibration_units.ply",
+      "vertices": 124564,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_045/local_mesh_calibration_units.ply",
+      "vertices": 7425,
+      "faces": 4646,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_045/points_calibration_units.ply",
+      "vertices": 66899,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_046/local_mesh_calibration_units.ply",
+      "vertices": 13646,
+      "faces": 10825,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_046/points_calibration_units.ply",
+      "vertices": 122839,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_047/local_mesh_calibration_units.ply",
+      "vertices": 19871,
+      "faces": 19653,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_047/points_calibration_units.ply",
+      "vertices": 178900,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_048/local_mesh_calibration_units.ply",
+      "vertices": 11015,
+      "faces": 11794,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_048/points_calibration_units.ply",
+      "vertices": 99196,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_049/local_mesh_calibration_units.ply",
+      "vertices": 5590,
+      "faces": 3559,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_049/points_calibration_units.ply",
+      "vertices": 50421,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_051/local_mesh_calibration_units.ply",
+      "vertices": 14496,
+      "faces": 8447,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_051/points_calibration_units.ply",
+      "vertices": 130791,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_052/local_mesh_calibration_units.ply",
+      "vertices": 11364,
+      "faces": 7219,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_052/points_calibration_units.ply",
+      "vertices": 102259,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_053/local_mesh_calibration_units.ply",
+      "vertices": 13671,
+      "faces": 9385,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_053/points_calibration_units.ply",
+      "vertices": 122953,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_054/local_mesh_calibration_units.ply",
+      "vertices": 2283,
+      "faces": 1789,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_054/points_calibration_units.ply",
+      "vertices": 20653,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_055/local_mesh_calibration_units.ply",
+      "vertices": 1055,
+      "faces": 683,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_055/points_calibration_units.ply",
+      "vertices": 9666,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_056/local_mesh_calibration_units.ply",
+      "vertices": 12917,
+      "faces": 14002,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r11_filtered_batch/obs_056/points_calibration_units.ply",
+      "vertices": 115796,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_003/cloud_all_observed_calibration_units.ply",
+      "vertices": 24019,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_003/cloud_multiview_supported_calibration_units.ply",
+      "vertices": 6234,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_003/mesh_observed_union_calibration_units.ply",
+      "vertices": 19005,
+      "faces": 17666,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_005/cloud_all_observed_calibration_units.ply",
+      "vertices": 55830,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_005/cloud_multiview_supported_calibration_units.ply",
+      "vertices": 3895,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_005/mesh_observed_union_calibration_units.ply",
+      "vertices": 26772,
+      "faces": 23633,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_010/cloud_all_observed_calibration_units.ply",
+      "vertices": 90954,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_010/cloud_multiview_supported_calibration_units.ply",
+      "vertices": 8659,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_010/mesh_observed_union_calibration_units.ply",
+      "vertices": 59024,
+      "faces": 42640,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_029/cloud_all_observed_calibration_units.ply",
+      "vertices": 51544,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_029/cloud_multiview_supported_calibration_units.ply",
+      "vertices": 21591,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_029/mesh_observed_union_calibration_units.ply",
+      "vertices": 45244,
+      "faces": 53665,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_044/cloud_all_observed_calibration_units.ply",
+      "vertices": 136699,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_044/cloud_multiview_supported_calibration_units.ply",
+      "vertices": 2277,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_044/mesh_observed_union_calibration_units.ply",
+      "vertices": 65792,
+      "faces": 55682,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_051/cloud_all_observed_calibration_units.ply",
+      "vertices": 67831,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_051/cloud_multiview_supported_calibration_units.ply",
+      "vertices": 11134,
+      "faces": 0,
+      "finite": true
+    },
+    {
+      "path": "artifacts/runs/r12_registration/component_obs_051/mesh_observed_union_calibration_units.ply",
+      "vertices": 39531,
+      "faces": 25051,
+      "finite": true
+    }
+  ],
+  "source_files_rehashed": 255,
+  "changed_source_files": [],
+  "obs_003": {
+    "vertices": 7783,
+    "triangles": 6671,
+    "minimum_triangle_area_calibration_units_squared": 1.2388100624084473
+  },
+  "obs_029": {
+    "vertices": 12141,
+    "triangles": 15729,
+    "minimum_triangle_area_calibration_units_squared": 1.201022744178772
+  },
+  "obs_034": {
+    "vertices": 28637,
+    "triangles": 31359,
+    "minimum_triangle_area_calibration_units_squared": 1.2061055898666382
+  },
+  "obs_040": {
+    "vertices": 7305,
+    "triangles": 8622,
+    "minimum_triangle_area_calibration_units_squared": 1.916912317276001
+  }
+}

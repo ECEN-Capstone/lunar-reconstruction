@@ -1,0 +1,47 @@
+{
+  "source": "artifacts\\runs\\r15_terrain_completion\\obs_034\\terrain_extended_m.obj",
+  "source_sha256": "44862e08735d87cc41bcd66fd7ffe566a0539a3f7a2fc4687a85f3624d3f5684",
+  "original_boundary_edges": 324,
+  "artificial_base_z_m": -0.41208239999999996,
+  "base_clearance_m": 0.15,
+  "original_top_geometry_unchanged": true,
+  "obj": {
+    "vertices": 8882,
+    "triangles": 17760,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "nonmanifold_vertices": 0,
+    "connected_components": 1,
+    "euler_characteristic": 2,
+    "consistent_outward_winding": true,
+    "enclosed_volume_m3": 4.125266737499996,
+    "dimensions_m": [
+      5.199999999999999,
+      3.7,
+      0.8562137
+    ]
+  },
+  "stl": {
+    "vertices": 8882,
+    "triangles": 17760,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "nonmanifold_vertices": 0,
+    "connected_components": 1,
+    "euler_characteristic": 2,
+    "consistent_outward_winding": true,
+    "enclosed_volume_m3": 4.125266599502854,
+    "dimensions_m": [
+      5.199999928474426,
+      3.700000047683716,
+      0.8562137186527252
+    ]
+  },
+  "added_geometry": "Vertical walls on every perimeter edge and planar underside",
+  "limitations": [
+    "Top still includes previously inferred terrain",
+    "Units are metres; STL format itself has no standard unit field",
+    "Nominal rover-local frame, gravity unverified",
+    "No validation in the user viewer or Gazebo"
+  ]
+}

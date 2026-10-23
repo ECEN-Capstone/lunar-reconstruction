@@ -1,0 +1,139 @@
+{
+  "config": {
+    "family": "NC",
+    "preprocessing": "none",
+    "interpretation": "literal",
+    "min_disparity": 0,
+    "num_disparities": 512,
+    "pad_search": true,
+    "raw_quality_mask": true,
+    "block_size": 5,
+    "uniqueness_ratio": 15,
+    "speckle_window_size": 100,
+    "speckle_range": 2,
+    "lr_threshold_px": 1.0,
+    "min_valid_disparity_px": 16.0,
+    "dark_threshold": 5,
+    "saturated_threshold": 250,
+    "texture_std_threshold": 2.0,
+    "texture_window": 7,
+    "mesh_stride": 3,
+    "mesh_max_relative_depth_jump": 0.02,
+    "mesh_max_edge_baselines": 0.25,
+    "clahe_clip_limit": 2.0,
+    "clahe_grid": 8,
+    "random_seed": 42
+  },
+  "observation": {
+    "observation_id": "obs_014",
+    "source_station_code": "kru",
+    "sequence_id": "013",
+    "left_timestamp": "20230829T0059424569",
+    "right_timestamp": "20230829T0100242219",
+    "right_minus_left_seconds": "41.7650",
+    "ncl_left_path": "NC_family/left_NCL/ch3_nav_ncl_20230829T0059424569_d_img_kru_013.png",
+    "ncr_right_path": "NC_family/right_NCR/ch3_nav_ncr_20230829T0100242219_d_img_kru_013.png",
+    "nrl_left_path": "NR_family/left_NRL/ch3_nav_nrl_20230829T0059424569_d_img_kru_013.png",
+    "nrr_right_path": "NR_family/right_NRR/ch3_nav_nrr_20230829T0100242219_d_img_kru_013.png"
+  },
+  "inputs": [
+    {
+      "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230829T0059424569_d_img_kru_013.png",
+      "sha256": "1a4e0b5857b424c186cdf02d6792c13c6ad2416cbf6cbcd78469ab81dc4216b7"
+    },
+    {
+      "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230829T0100242219_d_img_kru_013.png",
+      "sha256": "ca5d6dabea59b39834e7ab3783d47539812f92904fbd678fe4ca20f6e3403710"
+    }
+  ],
+  "K": [
+    [
+      1400.9789644404393,
+      0.0,
+      511.5
+    ],
+    [
+      0.0,
+      1400.9789644404393,
+      511.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "R_rectified_from_source": [
+    [
+      0.03450797625756923,
+      -0.9993922186638111,
+      -0.0049389117052461564
+    ],
+    [
+      -0.170613872981812,
+      -0.0010216658318114892,
+      -0.9853374358792394
+    ],
+    [
+      0.9847335202585281,
+      0.034844647697362195,
+      -0.17054543267438607
+    ]
+  ],
+  "baseline_calibration_units": 242.0593991850738,
+  "homographies": [
+    [
+      [
+        0.9759112143547086,
+        0.005287688900982702,
+        64.52177457227003
+      ],
+      [
+        -0.007000672227424688,
+        0.9880812332707344,
+        29.55056272200632
+      ],
+      [
+        -2.1556595553916294e-05,
+        5.186189823799357e-06,
+        0.9942215043315519
+      ]
+    ],
+    [
+      [
+        0.9763341690848465,
+        -0.010989527955606667,
+        49.4435048379635
+      ],
+      [
+        -0.0022438109741716988,
+        0.9816919239111567,
+        33.910942919501935
+      ],
+      [
+        -1.4171159952052389e-05,
+        -5.116043762223503e-06,
+        0.9932747785587357
+      ]
+    ]
+  ],
+  "units": "source CAHV center units, physical unit unavailable",
+  "frame": "origin left camera center; x toward right center; y down; z forward",
+  "metric_certified": false,
+  "assumptions": [
+    "stationary rig between left/right acquisition",
+    "linear CAHV applicable to imagery; residual distortion unmodelled"
+  ],
+  "python": "3.12.14",
+  "opencv": "5.0.0",
+  "numpy": "2.3.5",
+  "parent_run": "artifacts/runs/r08_quality_batch/obs_014",
+  "support_filter": {
+    "source_border_px": 16,
+    "minimum_disparity_px": 32,
+    "median_window": 5,
+    "maximum_median_disparity_difference_px": 2,
+    "minimum_valid_neighbors": 8,
+    "minimum_component_pixels": 200
+  }
+}

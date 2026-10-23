@@ -1,0 +1,139 @@
+{
+  "config": {
+    "family": "NC",
+    "preprocessing": "none",
+    "interpretation": "literal",
+    "min_disparity": 0,
+    "num_disparities": 512,
+    "pad_search": true,
+    "raw_quality_mask": true,
+    "block_size": 7,
+    "uniqueness_ratio": 5,
+    "speckle_window_size": 50,
+    "speckle_range": 2,
+    "lr_threshold_px": 2.0,
+    "min_valid_disparity_px": 16.0,
+    "dark_threshold": 5,
+    "saturated_threshold": 250,
+    "texture_std_threshold": 1.0,
+    "texture_window": 7,
+    "mesh_stride": 3,
+    "mesh_max_relative_depth_jump": 0.05,
+    "mesh_max_edge_baselines": 0.5,
+    "clahe_clip_limit": 2.0,
+    "clahe_grid": 8,
+    "random_seed": 42
+  },
+  "observation": {
+    "observation_id": "obs_029",
+    "source_station_code": "gnh",
+    "sequence_id": "030",
+    "left_timestamp": "20230830T2301162535",
+    "right_timestamp": "20230830T2301563822",
+    "right_minus_left_seconds": "40.1287",
+    "ncl_left_path": "NC_family/left_NCL/ch3_nav_ncl_20230830T2301162535_d_img_gnh_030.png",
+    "ncr_right_path": "NC_family/right_NCR/ch3_nav_ncr_20230830T2301563822_d_img_gnh_030.png",
+    "nrl_left_path": "NR_family/left_NRL/ch3_nav_nrl_20230830T2301162535_d_img_gnh_030.png",
+    "nrr_right_path": "NR_family/right_NRR/ch3_nav_nrr_20230830T2301563822_d_img_gnh_030.png"
+  },
+  "inputs": [
+    {
+      "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230830T2301162535_d_img_gnh_030.png",
+      "sha256": "eb7818c2fa559a30a690ea9317bc1379b8492dd49a564f939d46873383b7fb20"
+    },
+    {
+      "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230830T2301563822_d_img_gnh_030.png",
+      "sha256": "81d5e3d091691dc01f4ca5f058db4f26bc772608def2340cdb18fd33b1912b53"
+    }
+  ],
+  "K": [
+    [
+      1400.9789644404393,
+      0.0,
+      511.5
+    ],
+    [
+      0.0,
+      1400.9789644404393,
+      511.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "R_rectified_from_source": [
+    [
+      0.03450797625756923,
+      -0.9993922186638111,
+      -0.0049389117052461564
+    ],
+    [
+      -0.170613872981812,
+      -0.0010216658318114892,
+      -0.9853374358792394
+    ],
+    [
+      0.9847335202585281,
+      0.034844647697362195,
+      -0.17054543267438607
+    ]
+  ],
+  "baseline_calibration_units": 242.0593991850738,
+  "homographies": [
+    [
+      [
+        0.9759112143547086,
+        0.005287688900982702,
+        64.52177457227003
+      ],
+      [
+        -0.007000672227424688,
+        0.9880812332707344,
+        29.55056272200632
+      ],
+      [
+        -2.1556595553916294e-05,
+        5.186189823799357e-06,
+        0.9942215043315519
+      ]
+    ],
+    [
+      [
+        0.9763341690848465,
+        -0.010989527955606667,
+        49.4435048379635
+      ],
+      [
+        -0.0022438109741716988,
+        0.9816919239111567,
+        33.910942919501935
+      ],
+      [
+        -1.4171159952052389e-05,
+        -5.116043762223503e-06,
+        0.9932747785587357
+      ]
+    ]
+  ],
+  "units": "source CAHV center units, physical unit unavailable",
+  "frame": "origin left camera center; x toward right center; y down; z forward",
+  "metric_certified": false,
+  "assumptions": [
+    "stationary rig between left/right acquisition",
+    "linear CAHV applicable to imagery; residual distortion unmodelled"
+  ],
+  "python": "3.12.14",
+  "opencv": "5.0.0",
+  "numpy": "2.3.5",
+  "parent_run": "artifacts/runs/r15_terrain_completion/obs_029/relaxed_stereo",
+  "support_filter": {
+    "source_border_px": 16,
+    "minimum_disparity_px": 32,
+    "median_window": 5,
+    "maximum_median_disparity_difference_px": 3.0,
+    "minimum_valid_neighbors": 5,
+    "minimum_component_pixels": 50
+  }
+}

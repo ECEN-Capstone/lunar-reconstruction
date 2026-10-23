@@ -1,0 +1,18 @@
+[
+  {
+    "image": "obs_034_closed_obj.png",
+    "source_obj": "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\closed_terrain\\obs_034\\terrain_closed_m.obj",
+    "source_sha256": "c7e966890cfe311e8718c069553cccd9d42eee1d54b9e13e7d902295daef38a1",
+    "triangles": 17760,
+    "vertices": 8882,
+    "note": "Rendered all OBJ triangles without geometry changes. Colours indicate relative surface height, not image texture."
+  },
+  {
+    "image": "component_obs_044_closed_obj.png",
+    "source_obj": "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\largest_terrain\\component_obs_044\\closed\\terrain_closed_m.obj",
+    "source_sha256": "88d8c09f1b0d63fd19f6e44cd9c276a84aa9b8e80d9808c3b98a27090b8e92ee",
+    "triangles": 123596,
+    "vertices": 61800,
+    "note": "Rendered all OBJ triangles without geometry changes. Colours indicate relative surface height, not image texture."
+  }
+]

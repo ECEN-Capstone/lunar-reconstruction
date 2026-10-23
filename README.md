@@ -4,7 +4,42 @@ Conventional CAHV stereo geometry, OpenCV SGBM, conservative point clouds and lo
 
 **Legacy outputs retain the camera files' original units, now interpreted as millimetres using the mission Navcam paper. New `terrain_*_m.obj` outputs are already in metres.** The [terrain completion pilot](TERRAIN_COMPLETION.md) adds relaxed stereo and labelled hole filling for simulation. Gravity alignment, acquisition motion and absolute accuracy remain unverified. Read [RECONSTRUCTION_REPORT.md](RECONSTRUCTION_REPORT.md) for the earlier conservative experiments; its unresolved-unit statements predate the paper evidence.
 
-## Environment
+## Get the data and results
+
+This repository includes mission inputs, reconstruction artifacts, and completed terrain outputs using **Git LFS**. Install Git LFS before cloning. The complete working data is approximately **5.4 GiB**; LFS download bandwidth is charged to the repository owner's allowance. Preserve the mission-provider notices and source provenance with any further distribution. See [GitHub's LFS billing documentation](https://docs.github.com/en/billing/concepts/product-billing/git-lfs) for current allowances.
+
+```powershell
+git lfs install
+git clone git@github.com:ECEN-Capstone/lunar-reconstruction.git
+cd lunar-reconstruction
+git lfs pull
+```
+
+For an existing clone, run `git lfs install`, `git pull --ff-only`, then `git lfs pull`. A three-line file beginning with `version https://git-lfs.github.com/spec/v1` is an LFS pointer: download its content with `git lfs pull` before opening it as an image or mesh. Prefer a Git/LFS clone over GitHub's Download ZIP, whose inclusion of LFS content depends on repository settings.
+
+To download only the completed terrain assets, first clone without fetching LFS content, then request those folders:
+
+```powershell
+$env:GIT_LFS_SKIP_SMUDGE = "1"
+git clone git@github.com:ECEN-Capstone/lunar-reconstruction.git
+Remove-Item Env:\GIT_LFS_SKIP_SMUDGE
+cd lunar-reconstruction
+git lfs pull --include="output/closed_terrain/**,output/largest_terrain/**,output/completed_terrain_renders/**" --exclude=""
+```
+
+Useful starting points:
+
+- [Obs 034 closed OBJ](output/closed_terrain/obs_034/terrain_closed_m.obj).
+- [Obs 044 component closed OBJ](output/largest_terrain/component_obs_044/closed/terrain_closed_m.obj), combining observations 044 through 048.
+- [Completed terrain renders](output/completed_terrain_renders/).
+- [Generated-stereo experiment report](output/generated_stereo_trial/REPORT.md) and [uber relaxed results](output/uber_relaxed/REPORT.md).
+- [Slide figures and copy](output/generated_stereo_slide_pack/).
+
+The closed terrain OBJ files use metres. Legacy `*_calibration_units` files use millimetres; generated-stereo diagnostic meshes use arbitrary baseline units. Completion includes inferred terrain and artificial walls/base; closed topology does not establish physical accuracy or flight readiness.
+
+Source code, JSON configuration, metadata, and Markdown reports use ordinary Git. Numerical arrays, meshes, image assets, archives, and large calibration tables use LFS. `.venv`, Python caches, secrets files, and new scratch files under `tmp/` remain excluded. Existing tracked scratch files predate this setup.
+
+## Python environment
 
 Python 3.12 was used. In PowerShell from this repository:
 
@@ -61,6 +96,10 @@ Use `--family NR` or `--family NC` and `--preprocessing none` or `--preprocessin
 
 ## Repository map
 
-`chandrayaan-3-navcam-sorted/` holds 56 candidate pairs in raw NR and calibrated NC families. `stereo_pairs.csv` maps filenames; acquisition time and mobility ID together matter. `chandrayaan-3-documentation/nav/` holds calibration and PDS4 documentation. `reconstruction/` is the implementation; `configs/` holds reproducible settings; `artifacts/investigation/` and `artifacts/runs/` hold local results. Images, environments and generated artifacts are ignored by Git; source code, configs, report and README are tracked deliverables. Preserve the local artifacts separately when moving this repository.
+Uber relaxed generated-stereo sweep: [results](output/uber_relaxed/REPORT.md), [textured OBJ bundle](output/uber_relaxed/uber_relaxed_meshes.zip), [settings](configs/uber_relaxed.json). Run `python -m reconstruction.uber_relaxed --output output/uber_relaxed_new` to reproduce. Includes extreme filter relaxation and an empirical right-image row correction; all coordinates are arbitrary baseline units. Production settings are unchanged.
+
+Generated stereo experiment: [report and results](output/generated_stereo_trial/REPORT.md), [split-image ZIP](output/generated_stereo_trial/split_stereo_images.zip). Both supplied generated pairs fail the original camera geometry gate. The [runner](reconstruction/generated_stereo_trial.py) preserves native splits, makes 1024-pixel analysis copies, tests real controls, and exports explicitly invalid-geometry dense diagnostics without weakening production rejection. [Artifact checks](reconstruction/check_generated_trial.py) verify splits, source hashes, diagnostic exports, and exact real-control reproduction.
+
+`chandrayaan-3-navcam-sorted/` holds 56 candidate pairs in raw NR and calibrated NC families. Its `stereo_pairs.csv` maps filenames; acquisition time and mobility ID together matter. `chandrayaan-3-documentation/nav/` holds calibration and PDS4 documentation. `reconstruction/` is the implementation; `configs/` holds reproducible settings; `artifacts/investigation/` and `artifacts/runs/` hold the saved experiment results. Mission images and generated artifacts are versioned with Git LFS as described above; local environments and caches are excluded.
 
 The dataset includes a mission-provider redistribution notice in the quick guide and SIS. Keep source-data provenance with capstone deliverables.

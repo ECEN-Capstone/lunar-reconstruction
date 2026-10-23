@@ -1,0 +1,56 @@
+{
+  "left_cahv": "calibration/ch3_nav_left_cahv.txt",
+  "right_cahv": "calibration/ch3_nav_right_cahv.txt",
+  "settings": {
+    "analysis_shape_wh": [
+      1024,
+      1024
+    ],
+    "max_sift_features": 10000,
+    "descriptor_ratio": 0.75,
+    "opencv_threads": 2,
+    "rng_seed": 426
+  },
+  "pairs": [
+    {
+      "name": "real_A",
+      "left": {
+        "path": "inputs/ch3_nav_ncl_20230901T2225595662_d_img_d32_044.png"
+      },
+      "right": {
+        "path": "inputs/ch3_nav_ncr_20230901T2226391343_d_img_d32_044.png"
+      }
+    },
+    {
+      "name": "real_C",
+      "left": {
+        "path": "inputs/ch3_nav_ncl_20230901T2233168936_d_img_d32_044.png"
+      },
+      "right": {
+        "path": "inputs/ch3_nav_ncr_20230901T2233572231_d_img_d32_044.png"
+      }
+    },
+    {
+      "name": "synthetic_trial_1",
+      "left": {
+        "path": "generated/stereo_trial_1.png",
+        "panel": "left_half"
+      },
+      "right": {
+        "path": "generated/stereo_trial_1.png",
+        "panel": "right_half"
+      }
+    },
+    {
+      "name": "synthetic_trial_2",
+      "left": {
+        "path": "generated/stereo_trial_2.png",
+        "panel": "left_half"
+      },
+      "right": {
+        "path": "generated/stereo_trial_2.png",
+        "panel": "right_half"
+      }
+    }
+  ]
+}

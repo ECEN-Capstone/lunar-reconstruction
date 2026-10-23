@@ -1,0 +1,13 @@
+{
+  "frames": [
+    "obs_010",
+    "obs_012",
+    "obs_014",
+    "obs_013"
+  ],
+  "input_points": 132680,
+  "voxel_size_calibration_units": 6.051484979626846,
+  "fused_voxels": 90954,
+  "multiview_supported_voxels": 8659,
+  "metric_certified": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "mesh_count": 14,
+  "checks": [
+    "input SHA-256 unchanged",
+    "OBJ positions, indices and counts",
+    "texture coordinate counts and range",
+    "saved mask counts",
+    "connected component statistics",
+    "ZIP CRC and exact asset bytes"
+  ],
+  "zip_sha256": "986fdbd04dc3eb3a40a0854a11c6d10122f71dd1f084d5e361be7b8714a9581f"
+}

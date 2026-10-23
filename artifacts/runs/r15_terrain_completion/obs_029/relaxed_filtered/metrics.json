@@ -1,0 +1,13 @@
+{
+  "observation": "relaxed_stereo",
+  "input_points": 158358,
+  "valid_points": 139632,
+  "valid_fraction": 0.1331634521484375,
+  "mesh_vertices": 15473,
+  "mesh_faces": 19495,
+  "depth_percentiles_calibration_units": [
+    960.0937896728516,
+    2869.340087890625,
+    6018.438891601446
+  ]
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "frames": [
+      "obs_001"
+    ],
+    "status": "unregistered_single_frame"
+  },
+  {
+    "frames": [
+      "obs_002"
+    ],
+    "status": "unregistered_single_frame"
+  },
+  {
+    "frames": [
+      "obs_003",
+      "obs_004"
+    ],
+    "input_points": 56941,
+    "voxel_size_calibration_units": 6.051484979626846,
+    "fused_voxels": 29032,
+    "multiview_supported_voxels": 9334,
+    "metric_certified": false
+  },
+  {
+    "frames": [
+      "obs_005",
+      "obs_006"
+    ],
+    "input_points": 76544,
+    "voxel_size_calibration_units": 6.051484979626846,
+    "fused_voxels": 69160,
+    "multiview_supported_voxels": 5550,
+    "metric_certified": false
+  },
+  {
+    "frames": [
+      "obs_007"
+    ],
+    "status": "unregistered_single_frame"
+  },
+  {
+    "frames": [
+      "obs_008"
+    ],
+    "status": "unregistered_single_frame"
+  },
+  {
+    "frames": [
+      "obs_009"
+    ],
+    "status": "unregistered_single_frame"
+  },
+  {
+    "frames": [
+      "obs_010",
+      "obs_012"
+    ],
+    "input_points": 91099,
+    "voxel_size_calibration_units": 6.051484979626846,
+    "fused_voxels": 61054,
+    "multiview_supported_voxels": 1913,
+    "metric_certified": false
+  },
+  {
+    "frames": [
+      "obs_011"
+    ],
+    "status": "unregistered_single_frame"
+  }
+]

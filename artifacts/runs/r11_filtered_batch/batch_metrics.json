@@ -1,0 +1,652 @@
+[
+  {
+    "observation": "obs_001",
+    "input_points": 30228,
+    "valid_points": 18045,
+    "valid_fraction": 0.01720905303955078,
+    "mesh_vertices": 2020,
+    "mesh_faces": 1856,
+    "depth_percentiles_calibration_units": [
+      778.2446899414062,
+      1801.4349365234375,
+      2668.661376953124
+    ]
+  },
+  {
+    "observation": "obs_002",
+    "input_points": 25327,
+    "valid_points": 14890,
+    "valid_fraction": 0.014200210571289062,
+    "mesh_vertices": 1625,
+    "mesh_faces": 503,
+    "depth_percentiles_calibration_units": [
+      3507.38330078125,
+      5846.89892578125,
+      9637.5166015625
+    ]
+  },
+  {
+    "observation": "obs_003",
+    "input_points": 99934,
+    "valid_points": 69844,
+    "valid_fraction": 0.06660842895507812,
+    "mesh_vertices": 7783,
+    "mesh_faces": 6671,
+    "depth_percentiles_calibration_units": [
+      966.8428344726562,
+      2329.7216796875,
+      4914.78466796875
+    ]
+  },
+  {
+    "observation": "obs_004",
+    "input_points": 127472,
+    "valid_points": 100634,
+    "valid_fraction": 0.09597206115722656,
+    "mesh_vertices": 11222,
+    "mesh_faces": 10995,
+    "depth_percentiles_calibration_units": [
+      1009.2860717773438,
+      2266.467041015625,
+      4844.5732421875
+    ]
+  },
+  {
+    "observation": "obs_005",
+    "input_points": 188387,
+    "valid_points": 155546,
+    "valid_fraction": 0.14834022521972656,
+    "mesh_vertices": 17269,
+    "mesh_faces": 16038,
+    "depth_percentiles_calibration_units": [
+      5133.32275390625,
+      7392.26416015625,
+      9452.826171875
+    ]
+  },
+  {
+    "observation": "obs_006",
+    "input_points": 117624,
+    "valid_points": 85296,
+    "valid_fraction": 0.0813446044921875,
+    "mesh_vertices": 9503,
+    "mesh_faces": 7595,
+    "depth_percentiles_calibration_units": [
+      6773.93505859375,
+      8233.5693359375,
+      9706.4794921875
+    ]
+  },
+  {
+    "observation": "obs_007",
+    "input_points": 90092,
+    "valid_points": 61289,
+    "valid_fraction": 0.058449745178222656,
+    "mesh_vertices": 6811,
+    "mesh_faces": 6732,
+    "depth_percentiles_calibration_units": [
+      6825.05908203125,
+      8271.22265625,
+      9723.875
+    ]
+  },
+  {
+    "observation": "obs_008",
+    "input_points": 64600,
+    "valid_points": 36778,
+    "valid_fraction": 0.03507423400878906,
+    "mesh_vertices": 4085,
+    "mesh_faces": 4546,
+    "depth_percentiles_calibration_units": [
+      869.378582763672,
+      2220.09912109375,
+      2709.1006591796895
+    ]
+  },
+  {
+    "observation": "obs_009",
+    "input_points": 125376,
+    "valid_points": 107405,
+    "valid_fraction": 0.10242938995361328,
+    "mesh_vertices": 11953,
+    "mesh_faces": 12662,
+    "depth_percentiles_calibration_units": [
+      1319.5335693359375,
+      3007.71728515625,
+      5047.369140625
+    ]
+  },
+  {
+    "observation": "obs_010",
+    "input_points": 208190,
+    "valid_points": 181768,
+    "valid_fraction": 0.17334747314453125,
+    "mesh_vertices": 20175,
+    "mesh_faces": 16879,
+    "depth_percentiles_calibration_units": [
+      807.7894897460938,
+      2667.611572265625,
+      6186.912109375
+    ]
+  },
+  {
+    "observation": "obs_011",
+    "input_points": 61403,
+    "valid_points": 27707,
+    "valid_fraction": 0.02642345428466797,
+    "mesh_vertices": 3073,
+    "mesh_faces": 2617,
+    "depth_percentiles_calibration_units": [
+      933.9418457031251,
+      1880.735595703125,
+      3024.482666015625
+    ]
+  },
+  {
+    "observation": "obs_012",
+    "input_points": 156028,
+    "valid_points": 136851,
+    "valid_fraction": 0.13051128387451172,
+    "mesh_vertices": 15222,
+    "mesh_faces": 11229,
+    "depth_percentiles_calibration_units": [
+      1098.1424560546875,
+      3386.967529296875,
+      6698.6689453125
+    ]
+  },
+  {
+    "observation": "obs_013",
+    "input_points": 124319,
+    "valid_points": 103023,
+    "valid_fraction": 0.0982503890991211,
+    "mesh_vertices": 11435,
+    "mesh_faces": 6868,
+    "depth_percentiles_calibration_units": [
+      1269.2215576171875,
+      4186.66845703125,
+      7273.35400390625
+    ]
+  },
+  {
+    "observation": "obs_014",
+    "input_points": 131230,
+    "valid_points": 109123,
+    "valid_fraction": 0.10406780242919922,
+    "mesh_vertices": 12192,
+    "mesh_faces": 7664,
+    "depth_percentiles_calibration_units": [
+      939.71630859375,
+      3768.00146484375,
+      7244.2216796875
+    ]
+  },
+  {
+    "observation": "obs_016",
+    "input_points": 43050,
+    "valid_points": 11562,
+    "valid_fraction": 0.011026382446289062,
+    "mesh_vertices": 1294,
+    "mesh_faces": 1168,
+    "depth_percentiles_calibration_units": [
+      750.058349609375,
+      1174.4420166015625,
+      1500.11669921875
+    ]
+  },
+  {
+    "observation": "obs_017",
+    "input_points": 213383,
+    "valid_points": 167836,
+    "valid_fraction": 0.16006088256835938,
+    "mesh_vertices": 18640,
+    "mesh_faces": 18065,
+    "depth_percentiles_calibration_units": [
+      982.4229736328125,
+      3161.959228515625,
+      8709.3447265625
+    ]
+  },
+  {
+    "observation": "obs_018",
+    "input_points": 145338,
+    "valid_points": 108384,
+    "valid_fraction": 0.103363037109375,
+    "mesh_vertices": 12094,
+    "mesh_faces": 10370,
+    "depth_percentiles_calibration_units": [
+      844.7644653320312,
+      1794.8798828125,
+      7886.5146484375
+    ]
+  },
+  {
+    "observation": "obs_019",
+    "input_points": 222166,
+    "valid_points": 187766,
+    "valid_fraction": 0.17906761169433594,
+    "mesh_vertices": 20905,
+    "mesh_faces": 19105,
+    "depth_percentiles_calibration_units": [
+      986.1726684570312,
+      3648.9052734375,
+      9290.9619140625
+    ]
+  },
+  {
+    "observation": "obs_020",
+    "input_points": 154227,
+    "valid_points": 107236,
+    "valid_fraction": 0.10226821899414062,
+    "mesh_vertices": 11868,
+    "mesh_faces": 9639,
+    "depth_percentiles_calibration_units": [
+      817.1569213867188,
+      2307.9208984375,
+      9974.12109375
+    ]
+  },
+  {
+    "observation": "obs_021",
+    "input_points": 127437,
+    "valid_points": 79716,
+    "valid_fraction": 0.07602310180664062,
+    "mesh_vertices": 8835,
+    "mesh_faces": 7104,
+    "depth_percentiles_calibration_units": [
+      775.9076538085938,
+      1591.646240234375,
+      6748.6591796875
+    ]
+  },
+  {
+    "observation": "obs_022",
+    "input_points": 137654,
+    "valid_points": 85894,
+    "valid_fraction": 0.08191490173339844,
+    "mesh_vertices": 9512,
+    "mesh_faces": 5540,
+    "depth_percentiles_calibration_units": [
+      1269.5184326171875,
+      3826.461181640625,
+      9371.1953125
+    ]
+  },
+  {
+    "observation": "obs_023",
+    "input_points": 162606,
+    "valid_points": 122017,
+    "valid_fraction": 0.1163644790649414,
+    "mesh_vertices": 13571,
+    "mesh_faces": 8791,
+    "depth_percentiles_calibration_units": [
+      785.1138916015625,
+      3007.71728515625,
+      8014.65576171875
+    ]
+  },
+  {
+    "observation": "obs_024",
+    "input_points": 118171,
+    "valid_points": 72020,
+    "valid_fraction": 0.06868362426757812,
+    "mesh_vertices": 8021,
+    "mesh_faces": 6128,
+    "depth_percentiles_calibration_units": [
+      1967.33935546875,
+      3676.098876953125,
+      8681.4755859375
+    ]
+  },
+  {
+    "observation": "obs_025",
+    "input_points": 141266,
+    "valid_points": 100072,
+    "valid_fraction": 0.09543609619140625,
+    "mesh_vertices": 11078,
+    "mesh_faces": 9140,
+    "depth_percentiles_calibration_units": [
+      715.7264404296875,
+      1824.45263671875,
+      7055.8154296875
+    ]
+  },
+  {
+    "observation": "obs_026",
+    "input_points": 99240,
+    "valid_points": 68614,
+    "valid_fraction": 0.06543540954589844,
+    "mesh_vertices": 7584,
+    "mesh_faces": 5622,
+    "depth_percentiles_calibration_units": [
+      810.9284057617188,
+      3498.337890625,
+      8983.314453125
+    ]
+  },
+  {
+    "observation": "obs_027",
+    "input_points": 178298,
+    "valid_points": 143195,
+    "valid_fraction": 0.13656139373779297,
+    "mesh_vertices": 16025,
+    "mesh_faces": 17012,
+    "depth_percentiles_calibration_units": [
+      732.935546875,
+      1787.783203125,
+      6346.107421875
+    ]
+  },
+  {
+    "observation": "obs_028",
+    "input_points": 189926,
+    "valid_points": 164417,
+    "valid_fraction": 0.1568002700805664,
+    "mesh_vertices": 18274,
+    "mesh_faces": 20367,
+    "depth_percentiles_calibration_units": [
+      806.7086181640625,
+      2052.1640625,
+      4848.90283203125
+    ]
+  },
+  {
+    "observation": "obs_029",
+    "input_points": 126396,
+    "valid_points": 109175,
+    "valid_fraction": 0.10411739349365234,
+    "mesh_vertices": 12141,
+    "mesh_faces": 15729,
+    "depth_percentiles_calibration_units": [
+      1051.33154296875,
+      3423.294677734375,
+      5834.32470703125
+    ]
+  },
+  {
+    "observation": "obs_030",
+    "input_points": 169284,
+    "valid_points": 146589,
+    "valid_fraction": 0.13979816436767578,
+    "mesh_vertices": 16319,
+    "mesh_faces": 18694,
+    "depth_percentiles_calibration_units": [
+      1283.0272216796875,
+      2872.3779296875,
+      6474.84716796875
+    ]
+  },
+  {
+    "observation": "obs_031",
+    "input_points": 172819,
+    "valid_points": 150684,
+    "valid_fraction": 0.14370346069335938,
+    "mesh_vertices": 16784,
+    "mesh_faces": 19242,
+    "depth_percentiles_calibration_units": [
+      1282.11767578125,
+      2854.24609375,
+      6421.20947265625
+    ]
+  },
+  {
+    "observation": "obs_033",
+    "input_points": 164258,
+    "valid_points": 116766,
+    "valid_fraction": 0.11135673522949219,
+    "mesh_vertices": 12997,
+    "mesh_faces": 13213,
+    "depth_percentiles_calibration_units": [
+      807.6692504882812,
+      2661.070068359375,
+      9689.146484375
+    ]
+  },
+  {
+    "observation": "obs_034",
+    "input_points": 289122,
+    "valid_points": 257590,
+    "valid_fraction": 0.24565696716308594,
+    "mesh_vertices": 28637,
+    "mesh_faces": 31359,
+    "depth_percentiles_calibration_units": [
+      846.2136840820312,
+      4582.70458984375,
+      7663.7314453125
+    ]
+  },
+  {
+    "observation": "obs_035",
+    "input_points": 161602,
+    "valid_points": 142576,
+    "valid_fraction": 0.1359710693359375,
+    "mesh_vertices": 15855,
+    "mesh_faces": 20479,
+    "depth_percentiles_calibration_units": [
+      1636.7789306640625,
+      3114.765869140625,
+      6280.00244140625
+    ]
+  },
+  {
+    "observation": "obs_038",
+    "input_points": 24381,
+    "valid_points": 15770,
+    "valid_fraction": 0.015039443969726562,
+    "mesh_vertices": 1727,
+    "mesh_faces": 1636,
+    "depth_percentiles_calibration_units": [
+      1905.169189453125,
+      4788.98681640625,
+      6360.9873046875
+    ]
+  },
+  {
+    "observation": "obs_039",
+    "input_points": 31608,
+    "valid_points": 23207,
+    "valid_fraction": 0.022131919860839844,
+    "mesh_vertices": 2582,
+    "mesh_faces": 2961,
+    "depth_percentiles_calibration_units": [
+      2120.3291015625,
+      3564.994873046875,
+      5061.49462890625
+    ]
+  },
+  {
+    "observation": "obs_040",
+    "input_points": 77024,
+    "valid_points": 65423,
+    "valid_fraction": 0.062392234802246094,
+    "mesh_vertices": 7305,
+    "mesh_faces": 8622,
+    "depth_percentiles_calibration_units": [
+      1314.737548828125,
+      2852.74560546875,
+      5212.22119140625
+    ]
+  },
+  {
+    "observation": "obs_041",
+    "input_points": 138596,
+    "valid_points": 124936,
+    "valid_fraction": 0.11914825439453125,
+    "mesh_vertices": 13924,
+    "mesh_faces": 21854,
+    "depth_percentiles_calibration_units": [
+      2078.10107421875,
+      2626.293212890625,
+      4532.93408203125
+    ]
+  },
+  {
+    "observation": "obs_042",
+    "input_points": 80838,
+    "valid_points": 44993,
+    "valid_fraction": 0.042908668518066406,
+    "mesh_vertices": 5024,
+    "mesh_faces": 2634,
+    "depth_percentiles_calibration_units": [
+      934.8590698242188,
+      7302.72119140625,
+      10029.4306640625
+    ]
+  },
+  {
+    "observation": "obs_044",
+    "input_points": 169290,
+    "valid_points": 124564,
+    "valid_fraction": 0.11879348754882812,
+    "mesh_vertices": 13835,
+    "mesh_faces": 8764,
+    "depth_percentiles_calibration_units": [
+      3100.7927612304698,
+      5781.48486328125,
+      9103.896484375
+    ]
+  },
+  {
+    "observation": "obs_045",
+    "input_points": 96678,
+    "valid_points": 66899,
+    "valid_fraction": 0.06379985809326172,
+    "mesh_vertices": 7425,
+    "mesh_faces": 4646,
+    "depth_percentiles_calibration_units": [
+      2546.066357421875,
+      6272.7421875,
+      9847.408203125
+    ]
+  },
+  {
+    "observation": "obs_046",
+    "input_points": 168888,
+    "valid_points": 122839,
+    "valid_fraction": 0.11714839935302734,
+    "mesh_vertices": 13646,
+    "mesh_faces": 10825,
+    "depth_percentiles_calibration_units": [
+      2895.369384765625,
+      4870.666015625,
+      7897.994140625
+    ]
+  },
+  {
+    "observation": "obs_047",
+    "input_points": 228349,
+    "valid_points": 178900,
+    "valid_fraction": 0.17061233520507812,
+    "mesh_vertices": 19871,
+    "mesh_faces": 19653,
+    "depth_percentiles_calibration_units": [
+      2628.838134765625,
+      4681.5546875,
+      8653.783203125
+    ]
+  },
+  {
+    "observation": "obs_048",
+    "input_points": 122418,
+    "valid_points": 99196,
+    "valid_fraction": 0.09460067749023438,
+    "mesh_vertices": 11015,
+    "mesh_faces": 11794,
+    "depth_percentiles_calibration_units": [
+      1558.2774658203125,
+      3845.4443359375,
+      8271.22265625
+    ]
+  },
+  {
+    "observation": "obs_049",
+    "input_points": 107824,
+    "valid_points": 50421,
+    "valid_fraction": 0.04808521270751953,
+    "mesh_vertices": 5590,
+    "mesh_faces": 3559,
+    "depth_percentiles_calibration_units": [
+      719.7137451171875,
+      1853.115478515625,
+      10029.4306640625
+    ]
+  },
+  {
+    "observation": "obs_051",
+    "input_points": 171806,
+    "valid_points": 130791,
+    "valid_fraction": 0.12473201751708984,
+    "mesh_vertices": 14496,
+    "mesh_faces": 8447,
+    "depth_percentiles_calibration_units": [
+      1704.388916015625,
+      4987.060546875,
+      9306.8984375
+    ]
+  },
+  {
+    "observation": "obs_052",
+    "input_points": 146310,
+    "valid_points": 102259,
+    "valid_fraction": 0.09752178192138672,
+    "mesh_vertices": 11364,
+    "mesh_faces": 7219,
+    "depth_percentiles_calibration_units": [
+      1667.462158203125,
+      4861.9375,
+      9058.30078125
+    ]
+  },
+  {
+    "observation": "obs_053",
+    "input_points": 168937,
+    "valid_points": 122953,
+    "valid_fraction": 0.11725711822509766,
+    "mesh_vertices": 13671,
+    "mesh_faces": 9385,
+    "depth_percentiles_calibration_units": [
+      1079.3558349609375,
+      4525.373046875,
+      8865.8857421875
+    ]
+  },
+  {
+    "observation": "obs_054",
+    "input_points": 53956,
+    "valid_points": 20653,
+    "valid_fraction": 0.01969623565673828,
+    "mesh_vertices": 2283,
+    "mesh_faces": 1789,
+    "depth_percentiles_calibration_units": [
+      756.8590087890625,
+      1260.3768310546875,
+      9992.490234375
+    ]
+  },
+  {
+    "observation": "obs_055",
+    "input_points": 29469,
+    "valid_points": 9666,
+    "valid_fraction": 0.009218215942382812,
+    "mesh_vertices": 1055,
+    "mesh_faces": 683,
+    "depth_percentiles_calibration_units": [
+      2077.305419921875,
+      2549.775390625,
+      10276.3671875
+    ]
+  },
+  {
+    "observation": "obs_056",
+    "input_points": 141147,
+    "valid_points": 115796,
+    "valid_fraction": 0.11043167114257812,
+    "mesh_vertices": 12917,
+    "mesh_faces": 14002,
+    "depth_percentiles_calibration_units": [
+      786.1376342773438,
+      2388.169921875,
+      6413.61962890625
+    ]
+  }
+]

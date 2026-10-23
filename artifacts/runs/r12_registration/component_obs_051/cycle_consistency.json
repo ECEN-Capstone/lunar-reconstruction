@@ -1,0 +1,20 @@
+[
+  {
+    "source": "obs_051",
+    "target": "obs_052",
+    "rotation_degrees": 0.0,
+    "translation_calibration_units": 7.105427357601002e-15
+  },
+  {
+    "source": "obs_051",
+    "target": "obs_053",
+    "rotation_degrees": 0.0,
+    "translation_calibration_units": 1.591302455776226e-14
+  },
+  {
+    "source": "obs_052",
+    "target": "obs_053",
+    "rotation_degrees": 0.029913979379680756,
+    "translation_calibration_units": 0.3341726471447966
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "source": "obs_044",
+    "target": "obs_046",
+    "rotation_degrees": 0.0,
+    "translation_calibration_units": 1.214175959108492e-13
+  },
+  {
+    "source": "obs_044",
+    "target": "obs_047",
+    "rotation_degrees": 0.0,
+    "translation_calibration_units": 1.156679772130055e-13
+  },
+  {
+    "source": "obs_045",
+    "target": "obs_048",
+    "rotation_degrees": 0.0,
+    "translation_calibration_units": 1.2741568753276977e-13
+  },
+  {
+    "source": "obs_046",
+    "target": "obs_047",
+    "rotation_degrees": 0.08341514477713527,
+    "translation_calibration_units": 2.764640218369758
+  },
+  {
+    "source": "obs_047",
+    "target": "obs_048",
+    "rotation_degrees": 0.0,
+    "translation_calibration_units": 1.172429156643425e-13
+  }
+]

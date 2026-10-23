@@ -1,0 +1,169 @@
+PAGE 1
+1 
+ 
+Chandrayaan-3 Rover NavCam PDS4 Data Products Quick User Manual 
+ 
+1. Archive Structure 
+ 
+1.1. Mission Archive Structure 
+ 
+At mission level, data is organized as mission id wise bundle. The mission id  (ch3-> chandrayaan-3) wise 
+bundle at next level is organized based on the instrument host id (chr-> chandrayaan rover) wise bundle. 
+The instrument host id  (nav->navigational camera ) bundle at next level is organized based on the 
+mission phase id  (nop->normal operations phase) . Each mission phase id is having instrument id wise 
+collection. Below figure shows the mission archive structure.  
+ 
+ 
+1.2. Instrument Archive Structure 
+ 
+Under each instrument wise data collection, data is organized under each directory defined by PDS4. 
+Data is organized based on the levels of data processing and data products definitions. Data products is 
+organized into year, month and day wise as yyyymmdd. The year month and day wise directory contains 
+PDS4 data products including PDS4 Label products. Below Figures shows the detail of nav instrument 
+wise collection structure.  
+  
+nav
+data
+raw yyyymmdd Data Product
+calibrated yyyymmdd Data Product
+calibration
+document
+isda_archive ch3 chr
+context
+xml_schema
+nop nav
+PAGE 2
+2 
+ 
+2. Data Products Description 
+ 
+The PDS4 Data Products for NavCam are defined based on the defined data processing levels as Raw and 
+Calibrated data products . For each payload observation, PDS4 data products are generated (based on 
+product id & sensor id derived from file name (section 3)) and organized under year month day wise 
+collection directory defined under instrument collection structure shown in section 1.2. Below Figure 
+shows the structure of NavCam Raw and Calibrated Data Product file. 
+ 
+Raw Data Products contains raw data withou t any correction. Calibrated Data Products contains 
+radiometrically corrected data along with the refined corner coordinates . Below table shows the details 
+of individual data products (with the data formats) for both raw and calibrated. 
+PDS4 Data 
+Product Levels 
+PDS4 Data 
+Products 
+Data Formats Description Visualization tools available 
+ 
+ 
+ 
+Raw 
+Data Raw Image PNG  The PDS Raw data in png 
+format 
+Any image viewer can be used 
+to load the png file, so no need 
+to load label file using PDS4 
+Viewer 
+Data Raw Label XML The PDS Label Product 
+contains description about 
+the Raw Product. 
+PDS4 Viewer 
+ 
+ 
+ 
+Calibrated 
+Data Calibrated 
+Image 
+PNG  The PDS Radiometrically 
+corrected data in png 
+format 
+Any image viewer can be used 
+to load the png file, so no need 
+to load label file using PDS4 
+Viewer 
+ Data Calibrated 
+Label 
+XML The PDS Label Product 
+contains description about 
+the Calibrated Product. 
+PDS4 Viewer 
+
+PAGE 3
+3 
+ 
+ 
+3. File Naming Conventions & Formats 
+This section describes the naming convention used for science data file s for the Chandrayaan-3 mission. 
+below shows the detail description about the following file naming conventions designed for the data 
+products. 
+ch3_<nav>_<mtc>_<YYYYMMDDTHHMMSSsss>_<p>_<prd>_<stn>_mob.fff 
+Code Description 
+ch3 It denotes the Mission name whose value is fixed as ch3 
+nav It denotes the Instrument id whose value is fixed as nav 
+m It denotes the mission phase name, it can have following value 
+= e (refers to the Earth Bound Phase - ebp) 
+= n (refers to the Normal Operations Phase - nop) 
+t It denotes the data type; it can have following values: 
+= r (it denotes raw data) 
+= c (It denotes calibrated data) 
+= d (It denotes derived data) 
+c It denotes the imaging mode/camera id/band. It can be one of the 
+following: 
+= l (it denotes left camera of NavCam) 
+= r (it denotes right camera of NavCam) 
+YYYYMMDDTHHMMSSssss It denotes the observation/imaging start time in format 
+[YYYYMMDDTHHMMSSsss] 
+YYYY = stand for year 
+MM = stand for month in MM format 
+DD = stand for day in DD format 
+T = stand for time. 
+HH = stand for hour in HH format 
+MM = stand for minute in MM format 
+SSS = stand for seconds in SS format 
+ssss = stand for nanosecond in ssss format 
+p It denotes the PDS Data Products categories. It value can be any  
+of the following: 
+= d (It denotes data products under data directory) 
+= b (it denotes browse data products under browse directory) 
+= g (it denotes gridded data products under geometry directory)  
+PAGE 4
+4 
+ 
+prd It denotes the PDS Data Product Name. It value can be any 
+of the following: 
+= img (It denotes the image data product) 
+= brw (It denotes the browse data product) 
+= grd (It denotes the gridded data product) 
+= dtm (it denotes DTM derived product) 
+= oth (it denotes Ortho derived product) 
+stn It denotes the station id from which data was acquired. It value 
+can be any of the following: 
+= d32 (ISSDC Bangalore) 
+= d18 (ISSDC Bangalore) 
+= gds (Gold Stone USA) 
+= cnb (Canberra, Australia ) 
+mob 
+ 
+Rover mobility id given by the mission team 
+fff It denotes the standard file type extension. It can have any one of  
+the following values: 
+= png (PDS Image Data File) 
+= xml (PDS Detached Label File) 
+= png (PDS Browse Data File) 
+= csv (PDS Geometry Data File) 
+= tif (PDS Geo tiff data) 
+ 
+Below table shows sample file naming, data formats for the instruments mentioned in the above table.  
+ 
+Instrument File Name Data Formats 
+NAV Left ch3_nav_ncr_20230824T1415420000_d_img_d32_002.png 
+ch3_nav_ncr_20230824T1415420000_d_img_d32_002.xml 
+PNG 
+XML 
+NAV Right ch3_nav_ncl_20230824T1415110000_d_img_d32_002.png 
+ch3_nav_ncl_20230824T1415110000_d_img_d32_002.xml 
+PNG 
+XML 
+ 
+4. Data Disclaimer 
+It is to bring to the notice of the user that the Department of Space/Indian Space Research Organization 
+(DOS/ISRO) is n ot responsible for any dispute/disrepute that may arise due to the use of this dataset. 
+The user should neither redistribute the data to third party nor it be used for any commercial purpose 
+without the knowledge of Department of Space/Indian Space Research Organization (DOS/ISRO). 

@@ -1,0 +1,4026 @@
+[
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230823T1801171121_d_img_d32_001.png",
+    "bytes": 583004,
+    "sha256": "d792ed231d0b7fdfbb2418dec384ba06f098b6de53879bbcc0e7787a83756150",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 99.31842136383057,
+    "dark_fraction": 1.1444091796875e-05,
+    "saturated_fraction": 7.2479248046875e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230824T1415115229_d_img_d32_002.png",
+    "bytes": 653719,
+    "sha256": "78f762d20ee19378f6af49c84f0da8a9beed40f26849dd335d8e6d4831117588",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 103.88449764251709,
+    "dark_fraction": 2.09808349609375e-05,
+    "saturated_fraction": 7.62939453125e-06
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230825T1040153807_d_img_d32_003.png",
+    "bytes": 563321,
+    "sha256": "5d5a16ef476f0ce8f33118258dffc4606fb0fdb914b3063b6981a4a93da2a9e3",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 23,
+    "max": 181,
+    "mean": 54.174349784851074,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230825T1429025593_d_img_d32_003.png",
+    "bytes": 631887,
+    "sha256": "3326f8b0dee767d5820ef67991ce7a0e95ff091de2791c1d920aec5aa86600c9",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 239,
+    "mean": 80.59990787506104,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230825T1951116473_d_img_kru_003.png",
+    "bytes": 560600,
+    "sha256": "7035d790387e61c3e73efb191c820a41b5ef761cb6a5b2d368b2f12fea9d86ef",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 248,
+    "mean": 67.05746746063232,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230826T1415013468_d_img_d32_004.png",
+    "bytes": 597592,
+    "sha256": "424149900bb539b77c4365ed9cf6e81633cada5f5850a8e33c73a224074be01b",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 101.02153015136719,
+    "dark_fraction": 6.580352783203125e-05,
+    "saturated_fraction": 6.866455078125e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230826T1910175356_d_img_gnh_005.png",
+    "bytes": 537532,
+    "sha256": "2c1c95802435d35a800c0970c7a388d321813f8de5a1ba270b644cc2692d88f9",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 237,
+    "mean": 55.65735340118408,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230827T0344528296_d_img_bl1_006.png",
+    "bytes": 528916,
+    "sha256": "3a664d4a33a5fb9c98c5db723b8fb6b61fee2f72e2b231ca69e41e054681dbc3",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 21,
+    "max": 241,
+    "mean": 48.54335021972656,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230827T1810173096_d_img_d32_008.png",
+    "bytes": 588825,
+    "sha256": "a2b8562dc377782c7bb6bf4a24889e66a7d8376102a0e0478d3224bc62d6e63f",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 231,
+    "mean": 99.0962781906128,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230827T2210172456_d_img_gnh_008.png",
+    "bytes": 609440,
+    "sha256": "45df8e5c264e8f07ed6a48cc9d11b7d61462f8b71c36806590c13dd44b51b30c",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 232,
+    "mean": 86.3045883178711,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230828T0555552932_d_img_d32_010.png",
+    "bytes": 636181,
+    "sha256": "f4ae9695142a876f95bef09a3848fe61110526193b020d5c90f8aa9ac41cb40b",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 251,
+    "mean": 94.48303604125977,
+    "dark_fraction": 3.814697265625e-06,
+    "saturated_fraction": 2.86102294921875e-06
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230828T1732047656_d_img_d32_013.png",
+    "bytes": 499231,
+    "sha256": "fffcbb91b3df26ec04c01889914e8af982414d4e3d2582cc070468de7546c390",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 23,
+    "max": 216,
+    "mean": 63.288302421569824,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230828T2026064296_d_img_gnh_014.png",
+    "bytes": 620016,
+    "sha256": "449e2a18dc00a55bbaffb8b43ba199b56e2079c144692d33e79f6abc57838844",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 240,
+    "mean": 97.20578193664551,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230829T0059424569_d_img_kru_013.png",
+    "bytes": 599331,
+    "sha256": "1a4e0b5857b424c186cdf02d6792c13c6ad2416cbf6cbcd78469ab81dc4216b7",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 224,
+    "mean": 86.21030044555664,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230829T0528081571_d_img_nno_015.png",
+    "bytes": 451779,
+    "sha256": "7fea381486951b3600137d9401866105838eb5967dd08d5080fc38e8d3666dfa",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 166.34719562530518,
+    "dark_fraction": 0.0005092620849609375,
+    "saturated_fraction": 0.0008840560913085938
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230829T0537587495_d_img_d32_015.png",
+    "bytes": 589011,
+    "sha256": "86e66541d57508dd6348e81e8fae7feefafc96c9c9717e0dfd99767e84c65c29",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 65.16748905181885,
+    "dark_fraction": 0.00024700164794921875,
+    "saturated_fraction": 0.000396728515625
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230829T1712052122_d_img_d32_016.png",
+    "bytes": 610347,
+    "sha256": "6d94ae49a93e6bbd5f5082664b6c6c7fef6ecbf0426f7eba18c4b021919bfc65",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 215,
+    "mean": 71.23292064666748,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230829T1712052122_d_img_d32_021.png",
+    "bytes": 570640,
+    "sha256": "552f3377f47ef294a64de956f357ed75b8acbd6bdf2eed828d9a0df5f481cb5e",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 209,
+    "mean": 60.808685302734375,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230829T1915529319_d_img_d32_021.png",
+    "bytes": 636556,
+    "sha256": "179a171436eed36cc4571f4f82c5b94c4fa4933d94ea2b8f44f8d49159dbe711",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 219,
+    "mean": 85.06709098815918,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230829T2211041576_d_img_d32_022.png",
+    "bytes": 645875,
+    "sha256": "bbe3b4361c94e047817cb910876db0c56fe167a209024f18f14f564c052d6987",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 231,
+    "mean": 93.9116621017456,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230829T2326016296_d_img_gnh_025.png",
+    "bytes": 642635,
+    "sha256": "fa8a929ba394dc08fc3c2a911ff803d7d9a5f63cd7c15246a685d23ebae3fa4f",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 231,
+    "mean": 69.84502696990967,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230830T0201159336_d_img_gnh_024.png",
+    "bytes": 666105,
+    "sha256": "d50dc37848036421ba301d95d568eb279b207d620629264af4e80e5a552444d5",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 254,
+    "mean": 71.83376121520996,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 1.049041748046875e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230830T0411412160_d_img_kru_027.png",
+    "bytes": 658143,
+    "sha256": "d2140ab70371282ba136c5a938ed8ea7a084dbfa11956a20e0928fbd5bb8bd9b",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 21,
+    "max": 230,
+    "mean": 66.28879165649414,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230830T0500344616_d_img_nno_026.png",
+    "bytes": 584863,
+    "sha256": "63dfdf1d5c844a1702cc1f95ecb7ca16956177d13061e2eaaf477629ffedbd84",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 23,
+    "max": 237,
+    "mean": 72.8158130645752,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230830T1142592296_d_img_nno_029.png",
+    "bytes": 567277,
+    "sha256": "a8c9bb2dc11b854dc4a77fc9c647f62994734d6d1e688a353c35ef010ab0d6f0",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 58.7586727142334,
+    "dark_fraction": 0.39554309844970703,
+    "saturated_fraction": 0.0020399093627929688
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230830T1430486696_d_img_d32_024.png",
+    "bytes": 612990,
+    "sha256": "4b9d999a473376ca86fe55f641857dd554d74762492400fd813e73416a512f1c",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 247,
+    "mean": 67.46793270111084,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230830T1443301356_d_img_d32_031.png",
+    "bytes": 657002,
+    "sha256": "d59b5abb2d62e3b8d23728cedce9ad34eee7a6e476e933398f1af9f9fc91a652",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 225,
+    "mean": 83.19883346557617,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230830T1928548136_d_img_d32_032.png",
+    "bytes": 642373,
+    "sha256": "72fcade346c06e6a38dfcbdd8ab464e01b80529c69e4c7c977d085b5b7a67615",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 222,
+    "mean": 72.95360851287842,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230830T2301162535_d_img_gnh_030.png",
+    "bytes": 644401,
+    "sha256": "eb7818c2fa559a30a690ea9317bc1379b8492dd49a564f939d46873383b7fb20",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 25,
+    "max": 235,
+    "mean": 94.3770055770874,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230831T0100412456_d_img_gnh_024.png",
+    "bytes": 659379,
+    "sha256": "e746247c40a96911b33be402b0f0adaa3d5bd7d52f7ecb6be8ddc961ae56713a",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 243,
+    "mean": 102.38650703430176,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230831T0100412456_d_img_gnh_031.png",
+    "bytes": 655165,
+    "sha256": "e679275445ccfe294c08fdc5d7357bf484f6778c8a7438d09b2643887293b22b",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 241,
+    "mean": 101.06211376190186,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230831T0505275813_d_img_kru_035.png",
+    "bytes": 427152,
+    "sha256": "86b9f03945f656b1ff6c3981eea03a28bbbf1655064cd4a1fd2c32bf5a2100f3",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 181.08384227752686,
+    "dark_fraction": 0.0008831024169921875,
+    "saturated_fraction": 0.001331329345703125
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230831T0813019172_d_img_kru_036.png",
+    "bytes": 713096,
+    "sha256": "13eb9d68e762b0b9ca90740e81008b8215a8b321cf0bba9603ece017f363e8bf",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 23,
+    "max": 240,
+    "mean": 84.18866348266602,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230831T1304316922_d_img_nno_037.png",
+    "bytes": 660202,
+    "sha256": "fa83d076b51b49e2bd78730323bbe24d69d4fc16f226ced2480216a128259ab5",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 25,
+    "max": 240,
+    "mean": 83.5777359008789,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230831T1648126376_d_img_d32_038.png",
+    "bytes": 714427,
+    "sha256": "999c4c44b016e54aaec2a9a36a9951f1271dbbf975aad3028a8dee44fbbf95f9",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 124.6597843170166,
+    "dark_fraction": 2.86102294921875e-06,
+    "saturated_fraction": 0.00017452239990234375
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230831T2136041891_d_img_d32_039.png",
+    "bytes": 424814,
+    "sha256": "b3e2f56023715ae7710376ec776ecc6479c5ff835cdec8b98f3bef78728f2c02",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 232,
+    "mean": 94.48354053497314,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230831T2142009893_d_img_d32_029.png",
+    "bytes": 446590,
+    "sha256": "53dae1776f8aa232c848e7c1129eda92f0509753177ab85dfca21428f02a825f",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 23,
+    "max": 238,
+    "mean": 101.55390071868896,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230831T2147105576_d_img_d32_031.png",
+    "bytes": 545226,
+    "sha256": "74057008463dacebbe23bd5430ae5aab63512473915c35f6c7c99b7eaf946d74",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 230,
+    "mean": 108.72510242462158,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230901T0129543336_d_img_gnh_040.png",
+    "bytes": 547675,
+    "sha256": "08b7c37c6a7986cd0312ebe9830f800e973cc4fafb755eaa0e3de3446ba4386a",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 245,
+    "mean": 100.97223091125488,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230901T0135213735_d_img_gnh_040.png",
+    "bytes": 582999,
+    "sha256": "d10598fc7649706f3632dbe5418e962bd86cc5364403e9af5dbe3ac2d1b9321a",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 234,
+    "mean": 93.68558025360107,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230901T0213409576_d_img_gnh_040.png",
+    "bytes": 611478,
+    "sha256": "0dcef08f34fc188e9aff0b6c0db2accc287dc55af7204ca5bbe5848672b552c4",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 233,
+    "mean": 82.03370571136475,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230901T0550086695_d_img_gnh_041.png",
+    "bytes": 689957,
+    "sha256": "333f609a87718a2d6d64ba112ae2d0c64950d3ce7601cbf86c9a77a04f07ae4d",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 236,
+    "mean": 86.9266767501831,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230901T0554005416_d_img_nno_042.png",
+    "bytes": 690140,
+    "sha256": "e58dd85a6f791f9d629503d3b5af3710258dc5609fb6f9935c2acc40978f7b4d",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 255,
+    "mean": 85.4451150894165,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 3.0517578125e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230901T1301408296_d_img_d32_042.png",
+    "bytes": 584988,
+    "sha256": "52da2f9e01de6fa4d636aada9106283926f073ffb9277a841f17a7ea2c4fca7d",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 244,
+    "mean": 73.38173389434814,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230901T1312556972_d_img_nno_041.png",
+    "bytes": 520019,
+    "sha256": "95167512909650963fbcae23b907e9a86afbca925b77f8d37b39a8fbabced829",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 57.71791362762451,
+    "dark_fraction": 0.0002040863037109375,
+    "saturated_fraction": 0.00039768218994140625
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230901T1833314856_d_img_d32_043.png",
+    "bytes": 648207,
+    "sha256": "ae8f6c10486a200403940ccaf85db47e4544f702bfed0478219d0f56f685c4ad",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 252,
+    "mean": 96.71417617797852,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 1.9073486328125e-06
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230901T1841159976_d_img_d32_034.png",
+    "bytes": 642867,
+    "sha256": "c1cee9f95c1080af30901427cc4b4f39d4483fc63944867bab86fe12caacfe0e",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 240,
+    "mean": 80.82162475585938,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230901T1846409360_d_img_d32_044.png",
+    "bytes": 560622,
+    "sha256": "4b30959e34b6634f1b575609108ab2882830bd6975c4abb9a50f5c6315aae8d7",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 3,
+    "max": 247,
+    "mean": 58.19535160064697,
+    "dark_fraction": 5.7220458984375e-06,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230901T2225595662_d_img_d32_044.png",
+    "bytes": 573176,
+    "sha256": "4ef0615f2d8c928d7093198505a1bbb950f444cb742e9117ee592d66fa5bef56",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 233,
+    "mean": 67.14661884307861,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230901T2233168936_d_img_d32_044.png",
+    "bytes": 533878,
+    "sha256": "0bb4537940bb3310d5920da61f1815cd16cc77e209ed14d8d335d7943ad1f5bc",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 21,
+    "max": 237,
+    "mean": 71.24944591522217,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230902T0157006160_d_img_gnh_045.png",
+    "bytes": 626988,
+    "sha256": "594d41d542ca47ad3e059d0d706332ed7fedc53383c0aa85cdaa5c267d889f37",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 234,
+    "mean": 67.75722789764404,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230902T0202579496_d_img_gnh_037.png",
+    "bytes": 647929,
+    "sha256": "b32b4c1f7a6393f50ef8986cff78fd7e53c9305465986d73d3c210f2b4ae444c",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 237,
+    "mean": 86.0076732635498,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230902T0202579496_d_img_gnh_045.png",
+    "bytes": 624537,
+    "sha256": "78bca58786f9678903de4754d46ac1d0a61383f628224f7c7e9ed7637cc12631",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 24,
+    "max": 225,
+    "mean": 75.7086877822876,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230902T0602577575_d_img_gnh_046.png",
+    "bytes": 574606,
+    "sha256": "d13dbc8397d88df8dfc7a310c9be618d48f1cfc74eadaa068addbc28b3dc22f0",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 22,
+    "max": 254,
+    "mean": 91.31658267974854,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 6.198883056640625e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230902T0617542696_d_img_gnh_038.png",
+    "bytes": 571299,
+    "sha256": "32a9cabb1376c3a70b444c6673d1dc0117ff87f99d723bd345e264c58c2d3227",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 21,
+    "max": 202,
+    "mean": 44.52427005767822,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/left_NCL/ch3_nav_ncl_20230902T0858238377_d_img_nno_047.png",
+    "bytes": 603635,
+    "sha256": "7ee3d6e0c89ce9565cf965e8ccf014b0053749b9c6281cef5d092fa638a0a827",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 23,
+    "max": 212,
+    "mean": 70.13168048858643,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230823T1801572401_d_img_d32_001.png",
+    "bytes": 615097,
+    "sha256": "bd6cebbd953574fb4df207e7e8a7974333d0595837e63c2312b73f8d3878a8d4",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 1,
+    "max": 255,
+    "mean": 92.4010705947876,
+    "dark_fraction": 4.76837158203125e-06,
+    "saturated_fraction": 3.62396240234375e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230824T1415423708_d_img_d32_002.png",
+    "bytes": 660134,
+    "sha256": "4222022f0aaa53ad3b212b9a3283e2c28327b978c00064f1e3ad15375f782717",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 251,
+    "mean": 88.9252700805664,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 9.5367431640625e-07
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230825T1040453409_d_img_d32_003.png",
+    "bytes": 571980,
+    "sha256": "bb7b2d2138b7f0801bc2c66750f44e7272a2cdfae15761dcb072988949bc3a03",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 193,
+    "mean": 51.62051296234131,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230825T1429334084_d_img_d32_003.png",
+    "bytes": 635798,
+    "sha256": "e047beee5330376bad27617a041f59c29f96b34d2f30d74ace77702b97e604f9",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 228,
+    "mean": 74.90859317779541,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230825T1951424965_d_img_kru_003.png",
+    "bytes": 571583,
+    "sha256": "48b1f43606f534b5b9613a73230874f5a424fff245ae677ec0c7824b483a02f8",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 213,
+    "mean": 64.02851390838623,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230826T1415321959_d_img_d32_004.png",
+    "bytes": 605729,
+    "sha256": "0ba8bbdc518b3345e76f81268b8fec62aa660e6dead4ebc270bdc5b926a0c9dc",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 3,
+    "max": 252,
+    "mean": 94.49266147613525,
+    "dark_fraction": 4.76837158203125e-06,
+    "saturated_fraction": 3.814697265625e-06
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230826T1910571826_d_img_gnh_005.png",
+    "bytes": 543378,
+    "sha256": "5b7533e523c0db698a6172a5d517a26bba60d1662ab850c1344c561af6f3a803",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 253,
+    "mean": 50.42018413543701,
+    "dark_fraction": 2.193450927734375e-05,
+    "saturated_fraction": 1.1444091796875e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230827T0345344591_d_img_bl1_006.png",
+    "bytes": 545978,
+    "sha256": "f6f8a940c0b4f9198af4c65a1575b10525b573f3f3d737e52be6bc464a0e5eb2",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 243,
+    "mean": 50.078250885009766,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230827T1810585259_d_img_d32_008.png",
+    "bytes": 595004,
+    "sha256": "f7e92797c11fe69336e6a6cd60ad0962ede6a187a0ea5efd9a39fed870b7f5a7",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 210,
+    "mean": 89.38713455200195,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230827T2210573742_d_img_gnh_008.png",
+    "bytes": 617797,
+    "sha256": "a0921fa1596506239e7edad1ce555c2d40ece2eb33cd8bb0fd959df19ddc4862",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 241,
+    "mean": 83.33944320678711,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230828T0556384939_d_img_d32_010.png",
+    "bytes": 636255,
+    "sha256": "3d8a2e0ed90d882862525cfbde99bdade1af78de7b8095bf698ad76a09cf50ff",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 253,
+    "mean": 86.30056762695312,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 1.1444091796875e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230828T1732459183_d_img_d32_013.png",
+    "bytes": 535158,
+    "sha256": "3e6263840ace30430972e3e73beb1bde9eca3863082385d37b241822e15b3b65",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 208,
+    "mean": 64.56921768188477,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230828T2026475822_d_img_gnh_014.png",
+    "bytes": 634091,
+    "sha256": "fdb291636a532edd1f031cc1ea8ce7b77bfd819f0733d9bae62efb70a88c8945",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 217,
+    "mean": 93.31218719482422,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230829T0100242219_d_img_kru_013.png",
+    "bytes": 612355,
+    "sha256": "ca5d6dabea59b39834e7ab3783d47539812f92904fbd678fe4ca20f6e3403710",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 209,
+    "mean": 80.46189403533936,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230829T0528513579_d_img_nno_015.png",
+    "bytes": 582936,
+    "sha256": "6aeeedd7cdfd4d5993f095cee9a47927f7bd1c89902613790afb720f4b4e920f",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 102.28580951690674,
+    "dark_fraction": 0.0017900466918945312,
+    "saturated_fraction": 0.00091552734375
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230829T0538419499_d_img_d32_015.png",
+    "bytes": 589165,
+    "sha256": "bf867bf586e125a82bcff288fdb30091bb77f3a85a9ddb0662a864d881269ea1",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 244,
+    "mean": 61.38624668121338,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230829T1712461102_d_img_d32_016.png",
+    "bytes": 625334,
+    "sha256": "5767f7ef18b3b8887daad9937e4a81e8efb7e974e93a95bb45b51c1de964a571",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 17,
+    "max": 192,
+    "mean": 66.70788764953613,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230829T1712461102_d_img_d32_021.png",
+    "bytes": 579251,
+    "sha256": "7c568162a776bfafc7a4b577fccb48420c24bd18b0bda1b19ca368fbf781c31f",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 197,
+    "mean": 56.30035877227783,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230829T1916352939_d_img_d32_021.png",
+    "bytes": 648155,
+    "sha256": "c4a4aed15d192cc4a8b985d109ec0de58051db8e046467ea2bce48f06b2746bd",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 18,
+    "max": 212,
+    "mean": 79.69074153900146,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230829T2211446062_d_img_d32_022.png",
+    "bytes": 653503,
+    "sha256": "314c753446bcc63bbbbb3aa8149efaec1cf93b2ae3962604c951a04a7aa2f5b8",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 220,
+    "mean": 87.48986721038818,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230829T2326417583_d_img_gnh_025.png",
+    "bytes": 651830,
+    "sha256": "09cc11fd5bcd6660eb8dd443f4f32e3d37e5c2baeeb5f96dd17ce3b0eaa94e06",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 235,
+    "mean": 65.70004272460938,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230830T0201566228_d_img_gnh_024.png",
+    "bytes": 668699,
+    "sha256": "ba7915a595b35dae0fd7589e1a4ba6fbad5e9bc7a283e63c3b76654b68cd7a4d",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 224,
+    "mean": 67.0988998413086,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230830T0412211503_d_img_kru_027.png",
+    "bytes": 662191,
+    "sha256": "259e77db3dc41f5a3104c9435cc1f6ddb1815c6239b2c04f6f86203fa63c3b46",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 233,
+    "mean": 60.88992214202881,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230830T0501145903_d_img_nno_026.png",
+    "bytes": 596323,
+    "sha256": "68dccdb69886c6b2d4ddf42a0164cdff675cbb54f61d5b503eef89ed990db917",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 202,
+    "mean": 67.27471828460693,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230830T1143393582_d_img_nno_029.png",
+    "bytes": 537380,
+    "sha256": "520a6396cfc313564f405c7137c97541dfc3a32cf7ec79c2bfa5c197174dd5bf",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 51.19101333618164,
+    "dark_fraction": 0.44725704193115234,
+    "saturated_fraction": 0.0011119842529296875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230830T1431298859_d_img_d32_024.png",
+    "bytes": 615127,
+    "sha256": "2f7e7224276c630e4c571e985c22ba529147f9f2d69df2d3002ddbe7869b917f",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 200,
+    "mean": 61.00582218170166,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230830T1444101423_d_img_d32_031.png",
+    "bytes": 640769,
+    "sha256": "0e68a0bb3eee3609c54360ed99b45a87c71ebcf2d4469f590d249ed7ef37ba93",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 206,
+    "mean": 67.9532823562622,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230830T1929359663_d_img_d32_032.png",
+    "bytes": 655862,
+    "sha256": "5aeb3e2af5ab4d188e7e51a012a1283f6bda3921e890a047b8ccf6850cef15a3",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 214,
+    "mean": 71.79986667633057,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230830T2301563822_d_img_gnh_030.png",
+    "bytes": 646611,
+    "sha256": "81d5e3d091691dc01f4ca5f058db4f26bc772608def2340cdb18fd33b1912b53",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 239,
+    "mean": 85.98586177825928,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230831T0101223983_d_img_gnh_024.png",
+    "bytes": 668185,
+    "sha256": "2acd00e7358f50d5d513927fd32ae4377e5ad5a0f95660b9d9ebe2f80ca55285",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 224,
+    "mean": 94.00750923156738,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230831T0101223983_d_img_gnh_031.png",
+    "bytes": 668185,
+    "sha256": "2acd00e7358f50d5d513927fd32ae4377e5ad5a0f95660b9d9ebe2f80ca55285",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 224,
+    "mean": 94.00750923156738,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230831T0506086702_d_img_kru_035.png",
+    "bytes": 471584,
+    "sha256": "ae57ea40777375ebd1a6dc3e2532ee5dca18aacc43e03dbcaa9a0bd2fc2a005a",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 191.49828433990479,
+    "dark_fraction": 0.0021419525146484375,
+    "saturated_fraction": 0.0020732879638671875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230831T0813451179_d_img_kru_036.png",
+    "bytes": 720737,
+    "sha256": "5ed19df94c7c05a221f06a79b69131505ae9586052de721313e746d6a61202ac",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 18,
+    "max": 228,
+    "mean": 82.51614284515381,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230831T1305142699_d_img_nno_037.png",
+    "bytes": 699570,
+    "sha256": "fe46437b9a687427be1eb073c72412ba1db83a9a27e70a708ef0e2f7364eba92",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 97.1295576095581,
+    "dark_fraction": 1.9073486328125e-06,
+    "saturated_fraction": 4.673004150390625e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230831T1648537902_d_img_d32_038.png",
+    "bytes": 711621,
+    "sha256": "d1869a3847a729029e7b368d3017b27e40d385b466c360cac7e600e419544f93",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 17,
+    "max": 228,
+    "mean": 108.86172103881836,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230831T2136473900_d_img_d32_039.png",
+    "bytes": 473545,
+    "sha256": "6fd07408f2e92e172fa874e06a7508c3969e45f72a9f9edd6f1d15712b1170d5",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 223,
+    "mean": 106.80463027954102,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230831T2142431659_d_img_d32_029.png",
+    "bytes": 423836,
+    "sha256": "632d0fc0cbc33ffc96fbc660511c9b6e152eaacc720d6e9f6414a714241be314",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 244,
+    "mean": 92.08664512634277,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230831T2147517102_d_img_d32_031.png",
+    "bytes": 518148,
+    "sha256": "3a79b59df3074f81d7d4e05f3d2a1bb8608c167b8377365c111b991b65c8fbfb",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 219,
+    "mean": 82.03244209289551,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230901T0130375979_d_img_gnh_040.png",
+    "bytes": 522426,
+    "sha256": "4af584696b200ba5a64a733fd1f0b9e2febfe038705663238a857fc85d9e25fd",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 212,
+    "mean": 77.24029159545898,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230901T0136046379_d_img_gnh_040.png",
+    "bytes": 598187,
+    "sha256": "2da29a1d8154f8129a1e86513548050ab46d2fa0e0c70c93a505105010b04ecf",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 205,
+    "mean": 82.87539196014404,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230901T0214218628_d_img_gnh_040.png",
+    "bytes": 612126,
+    "sha256": "45b02eed4f56f3e80e71894a12ab9511a753e10c147a79b66fd631454c7e8a26",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 208,
+    "mean": 75.0242395401001,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230901T0550487983_d_img_gnh_041.png",
+    "bytes": 675878,
+    "sha256": "e36fddd4c7f0355b7bef5afa37c2d0d94f0cc70212eade41708a419d85d58e01",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 208,
+    "mean": 71.73198699951172,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230901T0554406703_d_img_nno_042.png",
+    "bytes": 678138,
+    "sha256": "78c8879cbd372500fcd9135fedcb85599026850cbbeaa580889068bba81be197",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 230,
+    "mean": 71.5929536819458,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230901T1302209583_d_img_d32_042.png",
+    "bytes": 596808,
+    "sha256": "2ba1dfeb41d3c38bc7f2f2b0fbe7778ee28a3e7258d853f66777b3cc81282264",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 66.83707904815674,
+    "dark_fraction": 4.76837158203125e-06,
+    "saturated_fraction": 9.5367431640625e-06
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230901T1313351983_d_img_nno_041.png",
+    "bytes": 539596,
+    "sha256": "851a470301255ad001e297f0eda9656b8616e7fa2313af87312cd81b7c38aeb1",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 234,
+    "mean": 52.45836067199707,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230901T1834116143_d_img_d32_043.png",
+    "bytes": 657096,
+    "sha256": "6919770d22699e39df0138f711ba2e537526115177fd33ed4a2cc24026902d5d",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 222,
+    "mean": 86.59457015991211,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230901T1841561263_d_img_d32_034.png",
+    "bytes": 660515,
+    "sha256": "a24aa3a9d7a4d1b0b27a47fd66479cf9824a8c429eb866c989a621ba640058e8",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 224,
+    "mean": 74.86874485015869,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230901T1847202223_d_img_d32_044.png",
+    "bytes": 581918,
+    "sha256": "1d280cedb579a5a6e442737829c69e0a1241d696448d8b46d9aa9f38acb116db",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 208,
+    "mean": 53.4229621887207,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230901T2226391343_d_img_d32_044.png",
+    "bytes": 598083,
+    "sha256": "230a7bd38d37c53639573167eb7117537e0cc38dba8172ff906e7d5cfd729cf3",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 247,
+    "mean": 66.75646114349365,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230901T2233572231_d_img_d32_044.png",
+    "bytes": 539726,
+    "sha256": "5cac3e67f325d91b475033e71432810be0b7d5350b971096d3d7b71acf0fb338",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 230,
+    "mean": 66.26239109039307,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230902T0157401903_d_img_gnh_045.png",
+    "bytes": 629462,
+    "sha256": "9735dc58943930a6f3261a03e1608183b7b53c215f1e135a92e558e9ec3917a3",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 215,
+    "mean": 59.74519634246826,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230902T0203387831_d_img_gnh_037.png",
+    "bytes": 653155,
+    "sha256": "35c232a280650f5be3f8e9d192ee52f7d34cd77b731ffc1d45d07489039968c2",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 219,
+    "mean": 79.44266128540039,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230902T0203387831_d_img_gnh_045.png",
+    "bytes": 631539,
+    "sha256": "dcb31539d58fa008c53a5c6318db7fd1c2a624d5876c500962cbb51cf932b7e2",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 210,
+    "mean": 71.4149580001831,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230902T0603378862_d_img_gnh_046.png",
+    "bytes": 510673,
+    "sha256": "2bcf98fd6143ca45fdcbd26da1e498916107b94c69d49b6e979037f8ea1ad9ea",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 204,
+    "mean": 67.08211326599121,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230902T0618343982_d_img_gnh_038.png",
+    "bytes": 550310,
+    "sha256": "ddedc0ec214d8b3b8776fd0b421781b295b3abdf783c7190b1cce60c30918db4",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 15,
+    "max": 168,
+    "mean": 37.444552421569824,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NC_family/right_NCR/ch3_nav_ncr_20230902T0859039663_d_img_nno_047.png",
+    "bytes": 627176,
+    "sha256": "0a2c954801f5877859f7c6c7106e322a725ab1546c3f317e8d0600602b3627a8",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 16,
+    "max": 210,
+    "mean": 70.30524826049805,
+    "dark_fraction": 0.0,
+    "saturated_fraction": 0.0
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230823T1801171121_d_img_d32_001.png",
+    "bytes": 361309,
+    "sha256": "fec5b52fcc99c57a46a25c7b2bd703292400a31d806ea627bc22cb923b097af0",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 139.09588432312012,
+    "dark_fraction": 0.20566654205322266,
+    "saturated_fraction": 0.42299747467041016
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230824T1415115229_d_img_d32_002.png",
+    "bytes": 570023,
+    "sha256": "a2ef03cca0f334effdc9a31f329f578df9e98f2584068e4762cf011a198d9a50",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 117.07905769348145,
+    "dark_fraction": 0.3237781524658203,
+    "saturated_fraction": 0.1614370346069336
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230825T1040153807_d_img_d32_003.png",
+    "bytes": 538421,
+    "sha256": "11d5a91cfd5027fc9dbe2027d39b31deaf93160015abc294dc0d694a8fb0837e",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 35.32396221160889,
+    "dark_fraction": 0.37410736083984375,
+    "saturated_fraction": 3.24249267578125e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230825T1429025593_d_img_d32_003.png",
+    "bytes": 622357,
+    "sha256": "827f6738b456270c778a55893be6183186db450cc083c558329d86a79fca53fd",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 78.39847660064697,
+    "dark_fraction": 0.2812232971191406,
+    "saturated_fraction": 0.00261688232421875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230825T1951116473_d_img_kru_003.png",
+    "bytes": 518444,
+    "sha256": "8884dc173f911618865311c0d03dda57b38f7f45be8948a976f018f7d2f533f9",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 56.85424327850342,
+    "dark_fraction": 0.38232421875,
+    "saturated_fraction": 0.000396728515625
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230826T1415013468_d_img_d32_004.png",
+    "bytes": 532567,
+    "sha256": "034b934126d990b4cade9c574e5f59532ff9af13b9db7624f7ed16b5eb0713e1",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 112.08441638946533,
+    "dark_fraction": 0.3183927536010742,
+    "saturated_fraction": 0.11281490325927734
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230826T1910175356_d_img_gnh_005.png",
+    "bytes": 467296,
+    "sha256": "a07c10a63ed4467b3c7afd5fa94597d49698cb2bc5febb043db1a47fe3233d8c",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 38.13408660888672,
+    "dark_fraction": 0.44893360137939453,
+    "saturated_fraction": 0.00045299530029296875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230827T0344528296_d_img_bl1_006.png",
+    "bytes": 421739,
+    "sha256": "26cd3d2b091c69466996badd96d070b31546976fd3d419a633779caad9353960",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 27.49489402770996,
+    "dark_fraction": 0.5677585601806641,
+    "saturated_fraction": 0.0001926422119140625
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230827T1810173096_d_img_d32_008.png",
+    "bytes": 576194,
+    "sha256": "d57d3c64a29f769869e1cfa284c28226939dba4aab4b38f832f08451dc17015e",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 107.07397270202637,
+    "dark_fraction": 0.28583526611328125,
+    "saturated_fraction": 0.004863739013671875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230827T2210172456_d_img_gnh_008.png",
+    "bytes": 602658,
+    "sha256": "dfe384ddf20fdf5311ba42859ce50a0e8a6157cbc0fb31be1fcf914413d4f2d7",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 87.11017894744873,
+    "dark_fraction": 0.2669506072998047,
+    "saturated_fraction": 0.0020418167114257812
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230828T0555552932_d_img_d32_010.png",
+    "bytes": 620553,
+    "sha256": "85c9ea1987132a2cb0af58f4d2c6314532fc8bae029e612e326611a94a56b33e",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 100.12718868255615,
+    "dark_fraction": 0.2757301330566406,
+    "saturated_fraction": 0.021811485290527344
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230828T1732047656_d_img_d32_013.png",
+    "bytes": 405163,
+    "sha256": "06d09004cb8b0f777cfa0c077bbd2ca32d2a2069dfa49976b35b38bc8d044687",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 50.85504341125488,
+    "dark_fraction": 0.49852561950683594,
+    "saturated_fraction": 0.00021076202392578125
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230828T2026064296_d_img_gnh_014.png",
+    "bytes": 601478,
+    "sha256": "8687f80ce2322f45dbd669caa8433d565254d207c9d01d1914046f84565b7d2a",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 104.86214923858643,
+    "dark_fraction": 0.26689624786376953,
+    "saturated_fraction": 0.03280353546142578
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230829T0059424569_d_img_kru_013.png",
+    "bytes": 587994,
+    "sha256": "740ca3ca1421a63180634ccbe6b46f8ca90617315dfdb9ec33d5a340d2eadfb7",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 86.13261795043945,
+    "dark_fraction": 0.2727622985839844,
+    "saturated_fraction": 0.003131866455078125
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230829T0528081571_d_img_nno_015.png",
+    "bytes": 170172,
+    "sha256": "55a089106235ade129ff300df8fa8cb85334feb87837935f789bd988095d4235",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 239.26136875152588,
+    "dark_fraction": 2.288818359375e-05,
+    "saturated_fraction": 0.7832918167114258
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230829T0537587495_d_img_d32_015.png",
+    "bytes": 555839,
+    "sha256": "ca26d0591806e8db015a79547ff36a07d12d81d2e64265facd1ae19c0817477f",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 59.83927822113037,
+    "dark_fraction": 0.3431415557861328,
+    "saturated_fraction": 0.014147758483886719
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230829T1712052122_d_img_d32_016.png",
+    "bytes": 613847,
+    "sha256": "40a18687262879376024b6fd376281dc44dfa31830020a3ab631ec5c9c8f5068",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 62.33539867401123,
+    "dark_fraction": 0.2534341812133789,
+    "saturated_fraction": 9.441375732421875e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230829T1712052122_d_img_d32_021.png",
+    "bytes": 517941,
+    "sha256": "ecbbbf37a5e3de4b8ec2ab58eeaa441c79ca5f06da101c0641086c83ffa85ba0",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 47.17935562133789,
+    "dark_fraction": 0.4135599136352539,
+    "saturated_fraction": 6.29425048828125e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230829T1915529319_d_img_d32_021.png",
+    "bytes": 663915,
+    "sha256": "467e091cfc7548748bade609aa21723edffe001f457b0107a9d35c1f263de453",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 83.97628784179688,
+    "dark_fraction": 0.1804666519165039,
+    "saturated_fraction": 0.0007419586181640625
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230829T2211041576_d_img_d32_022.png",
+    "bytes": 650374,
+    "sha256": "e022970ffa5f7a9989fe735e9164e390a90faf0f2cef3359f574fbbec5c79e00",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 98.85568523406982,
+    "dark_fraction": 0.23174476623535156,
+    "saturated_fraction": 0.01023101806640625
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230829T2326016296_d_img_gnh_025.png",
+    "bytes": 606884,
+    "sha256": "0ac6d5b2b776acb0fc8991225c247b9577b28052ffcdb4840cc3ec3ecaa600f1",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 62.19460678100586,
+    "dark_fraction": 0.35111045837402344,
+    "saturated_fraction": 0.0025081634521484375
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230830T0201159336_d_img_gnh_024.png",
+    "bytes": 672746,
+    "sha256": "2f951da634596675dac3ae12eb193555ada6de955c6e97a524983f2be79fa24c",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 63.249874114990234,
+    "dark_fraction": 0.24708271026611328,
+    "saturated_fraction": 0.005225181579589844
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230830T0411412160_d_img_kru_027.png",
+    "bytes": 616585,
+    "sha256": "7940b0cf3bd75d732a928b11d282264479faca2e247103fe4e5f17f3f0899aae",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 56.81344985961914,
+    "dark_fraction": 0.3522624969482422,
+    "saturated_fraction": 0.0024957656860351562
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230830T0500344616_d_img_nno_026.png",
+    "bytes": 540618,
+    "sha256": "63282cc2d521cef81fa6bd360bf0b862175c7a5c87ac6d4565d04b45cfdfb449",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 66.2352180480957,
+    "dark_fraction": 0.3737001419067383,
+    "saturated_fraction": 0.004414558410644531
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230830T1142592296_d_img_nno_029.png",
+    "bytes": 567277,
+    "sha256": "a8c9bb2dc11b854dc4a77fc9c647f62994734d6d1e688a353c35ef010ab0d6f0",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 58.7586727142334,
+    "dark_fraction": 0.39554309844970703,
+    "saturated_fraction": 0.0020399093627929688
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230830T1430486696_d_img_d32_024.png",
+    "bytes": 579717,
+    "sha256": "293e570fca638c46c8157edbb713776f77b545124edc7d92506d6e716be6ea2a",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 57.91837406158447,
+    "dark_fraction": 0.3456764221191406,
+    "saturated_fraction": 0.002613067626953125
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230830T1443301356_d_img_d32_031.png",
+    "bytes": 646789,
+    "sha256": "e61c1899a2ce0c6107d9396fa8a1cc9d8cd1628248dc38f4b5c868a1f7a8c243",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 83.75136852264404,
+    "dark_fraction": 0.28056907653808594,
+    "saturated_fraction": 0.0025310516357421875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230830T1928548136_d_img_d32_032.png",
+    "bytes": 582247,
+    "sha256": "2d131fe23bef0b77cd72f519a2c9fe321963f93a9f00f58f3a79478e36c6f747",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 66.72173023223877,
+    "dark_fraction": 0.3842134475708008,
+    "saturated_fraction": 0.004405975341796875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230830T2301162535_d_img_gnh_030.png",
+    "bytes": 628528,
+    "sha256": "6062cb2c5da29580acc3720f65af078ae6753da4f7e6e4892c097d5c88ae69a4",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 99.32161617279053,
+    "dark_fraction": 0.27657318115234375,
+    "saturated_fraction": 0.01531982421875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230831T0100412456_d_img_gnh_024.png",
+    "bytes": 625172,
+    "sha256": "82b6276f80685ab19f281d350654f0f2f0f604399503f2fc084e614442f5e0c3",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 111.99035739898682,
+    "dark_fraction": 0.2803382873535156,
+    "saturated_fraction": 0.04545116424560547
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230831T0100412456_d_img_gnh_031.png",
+    "bytes": 619249,
+    "sha256": "8cfe1045d5f7bc7e80ec847055bab3e2e5669addb173713dd3abbd6068f2fc1d",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 110.9945764541626,
+    "dark_fraction": 0.28682899475097656,
+    "saturated_fraction": 0.04471778869628906
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230831T0505275813_d_img_kru_035.png",
+    "bytes": 77397,
+    "sha256": "2d7aa6ee2e3b0a65bd0926e536d90787e276cc1bde7627b085c0f524f1116f40",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 249.36333084106445,
+    "dark_fraction": 2.288818359375e-05,
+    "saturated_fraction": 0.9012346267700195
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230831T0813019172_d_img_kru_036.png",
+    "bytes": 732456,
+    "sha256": "d9ea061a715936746a0fc1ab3a16aebf32c7e9ef8dd083d75de527b8b2cbd21d",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 83.20787334442139,
+    "dark_fraction": 0.19465923309326172,
+    "saturated_fraction": 0.008229255676269531
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230831T1304316922_d_img_nno_037.png",
+    "bytes": 684915,
+    "sha256": "8835bc976ac957199e12373a9d2b2e1c38d287935e275198d28d98c6908897c0",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 81.98598003387451,
+    "dark_fraction": 0.18825531005859375,
+    "saturated_fraction": 0.0027217864990234375
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230831T1648126376_d_img_d32_038.png",
+    "bytes": 753669,
+    "sha256": "42920cf18e87468c14048b598dc01926af93867f4520cc5125dc547445ce0dde",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 144.5878391265869,
+    "dark_fraction": 0.10558795928955078,
+    "saturated_fraction": 0.05685901641845703
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230831T2136041891_d_img_d32_039.png",
+    "bytes": 168144,
+    "sha256": "b7ddc2493850ba5065df484bda4eae612814b6dc782b9623e351a0bfa371ccac",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 103.43474674224854,
+    "dark_fraction": 0.5587978363037109,
+    "saturated_fraction": 0.2902183532714844
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230831T2142009893_d_img_d32_029.png",
+    "bytes": 188285,
+    "sha256": "1222abe82382f25ead2677d74dcb6e1fcd7cb768df1840a8b61a3a6db2978f7c",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 113.49902725219727,
+    "dark_fraction": 0.5142087936401367,
+    "saturated_fraction": 0.3092021942138672
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230831T2147105576_d_img_d32_031.png",
+    "bytes": 393013,
+    "sha256": "146f3dac2eb05381a35a7b5d918daf965f273e81b6aea223984c04d6b2b0d8e9",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 127.26221084594727,
+    "dark_fraction": 0.3811807632446289,
+    "saturated_fraction": 0.2342977523803711
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230901T0129543336_d_img_gnh_040.png",
+    "bytes": 416100,
+    "sha256": "a591cc79b155f8092d79a1dbb776ddda812ef077a32b075a29947a6766390321",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 113.7607250213623,
+    "dark_fraction": 0.4143085479736328,
+    "saturated_fraction": 0.16759872436523438
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230901T0135213735_d_img_gnh_040.png",
+    "bytes": 513750,
+    "sha256": "479cde228ef4f6e93a9fe2aafd1bad6b8f277b176ee68d052dcfc8ccfd4f0550",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 98.45723915100098,
+    "dark_fraction": 0.3977775573730469,
+    "saturated_fraction": 0.02644824981689453
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230901T0213409576_d_img_gnh_040.png",
+    "bytes": 567590,
+    "sha256": "964c6cea5b2c61d7496421c0ca0e19888101b015b46ddb0a9d53425223acdb45",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 81.80924415588379,
+    "dark_fraction": 0.3408975601196289,
+    "saturated_fraction": 0.020032882690429688
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230901T0550086695_d_img_gnh_041.png",
+    "bytes": 717619,
+    "sha256": "06d494ec54b636616960f10622e53f745161f476bd872df2c1c7099dfdd263d5",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 87.88477802276611,
+    "dark_fraction": 0.1810750961303711,
+    "saturated_fraction": 0.011994361877441406
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230901T0554005416_d_img_nno_042.png",
+    "bytes": 715129,
+    "sha256": "aa665b955250302869734c8af78f65e717c644188d97e35c2b5827c6cb0d5783",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 85.4325008392334,
+    "dark_fraction": 0.1907949447631836,
+    "saturated_fraction": 0.012113571166992188
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230901T1301408296_d_img_d32_042.png",
+    "bytes": 543897,
+    "sha256": "916178441b95243fc5270ebdab7cfddebc22d1efd86d6fcbe4ce2dd6d1736718",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 67.52076625823975,
+    "dark_fraction": 0.35155391693115234,
+    "saturated_fraction": 0.004166603088378906
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230901T1312556972_d_img_nno_041.png",
+    "bytes": 454370,
+    "sha256": "110e51d9a55f9cac22dd61ae657017fbe6e110f10d9fe1dd64c849f307298956",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 45.64470863342285,
+    "dark_fraction": 0.44754695892333984,
+    "saturated_fraction": 0.0058441162109375
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230901T1833314856_d_img_d32_043.png",
+    "bytes": 645518,
+    "sha256": "831714865eeb4579cd07016b5eff4f50ff02f4e124c34608e152c5a3b1b43622",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 104.47044944763184,
+    "dark_fraction": 0.23550891876220703,
+    "saturated_fraction": 0.026887893676757812
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230901T1841159976_d_img_d32_034.png",
+    "bytes": 633175,
+    "sha256": "f74cff6c8ab5a7ae1ed5a632c2bbbcc46ca69b86f45559f21895173eea61a8fd",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 78.06982612609863,
+    "dark_fraction": 0.2588615417480469,
+    "saturated_fraction": 0.005463600158691406
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230901T1846409360_d_img_d32_044.png",
+    "bytes": 492724,
+    "sha256": "d7c4be6306c8e340bbf20235a9345660756018469b44267278ec9daf1117c886",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 41.38026714324951,
+    "dark_fraction": 0.4357328414916992,
+    "saturated_fraction": 0.0006923675537109375
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230901T2225595662_d_img_d32_044.png",
+    "bytes": 525305,
+    "sha256": "7dcea0d2cfe93583e7c4b3d5cdfaeb8a01823e0de33bf654c27517ae5cc6a5df",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 57.379910469055176,
+    "dark_fraction": 0.38163280487060547,
+    "saturated_fraction": 0.0008745193481445312
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230901T2233168936_d_img_d32_044.png",
+    "bytes": 438722,
+    "sha256": "390673fafc64b19e311e2ad290686136375d10b2419b04a110acd421fbda0ecf",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 63.834455490112305,
+    "dark_fraction": 0.48694705963134766,
+    "saturated_fraction": 0.0042572021484375
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230902T0157006160_d_img_gnh_045.png",
+    "bytes": 603770,
+    "sha256": "c66bfdb49641655c76f947d05d703460498fed7ac8f8786459b22aeab7707c87",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 58.1668586730957,
+    "dark_fraction": 0.3232393264770508,
+    "saturated_fraction": 0.00055694580078125
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230902T0202579496_d_img_gnh_037.png",
+    "bytes": 629085,
+    "sha256": "81481c68892bfd5f7462ed23f6bdffa55cc150b2e11e49d0ef734764150c43b3",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 86.84883117675781,
+    "dark_fraction": 0.2947998046875,
+    "saturated_fraction": 0.00951385498046875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230902T0202579496_d_img_gnh_045.png",
+    "bytes": 604358,
+    "sha256": "051880e93d3770487d3b52f20cb5bcef563ef29dab1f80f0bfa4d62a3f9d747e",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 70.20651149749756,
+    "dark_fraction": 0.3124713897705078,
+    "saturated_fraction": 0.001018524169921875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230902T0602577575_d_img_gnh_046.png",
+    "bytes": 497730,
+    "sha256": "9b1ed1306299152c112d576fbfebc2a6a399abcbef5a83d101260af567c0471b",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 98.37192153930664,
+    "dark_fraction": 0.3700428009033203,
+    "saturated_fraction": 0.07644462585449219
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230902T0617542696_d_img_gnh_038.png",
+    "bytes": 473367,
+    "sha256": "78c37c36cb0333ffe4fabc5a71dd3addc64442dda2a2a076cf32d7ae7eb3e22c",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 20.997143745422363,
+    "dark_fraction": 0.5603199005126953,
+    "saturated_fraction": 5.91278076171875e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230902T0858238377_d_img_nno_047.png",
+    "bytes": 551841,
+    "sha256": "1fcec8391c826a73a8f929af16f8c36ade78f333ee5994b37b8e30a053d7a2e5",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 62.35963153839111,
+    "dark_fraction": 0.3925809860229492,
+    "saturated_fraction": 0.00027751922607421875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230823T1801572401_d_img_d32_001.png",
+    "bytes": 388955,
+    "sha256": "b4f616b434acc56cc9fd5eab0ae527ba0ce47a6b6279c003263eb7685705af1b",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 121.92725944519043,
+    "dark_fraction": 0.26641273498535156,
+    "saturated_fraction": 0.3636484146118164
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230824T1415423708_d_img_d32_002.png",
+    "bytes": 595775,
+    "sha256": "7f70386f889d44059568b38b208989d93957ecd5c655151d2368d3328a410982",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 99.31885814666748,
+    "dark_fraction": 0.3515663146972656,
+    "saturated_fraction": 0.0905303955078125
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230825T1040453409_d_img_d32_003.png",
+    "bytes": 543531,
+    "sha256": "97aeb1bf59a8722fc26daabada2896be6fd20d78985abb38ff712ebd123f9ffe",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 37.67948532104492,
+    "dark_fraction": 0.37424182891845703,
+    "saturated_fraction": 6.67572021484375e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230825T1429334084_d_img_d32_003.png",
+    "bytes": 620735,
+    "sha256": "9ca3fc4bcfd3f8d7a3f60c5cfed9e77f69c806d2535fa1e775280f91742e8c1a",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 75.4540433883667,
+    "dark_fraction": 0.29499053955078125,
+    "saturated_fraction": 0.0028085708618164062
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230825T1951424965_d_img_kru_003.png",
+    "bytes": 528763,
+    "sha256": "8b24a0360ca0aac128ca28fbd8898766786f2044bdd4a8bc861d23db3ecd236d",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 58.96378803253174,
+    "dark_fraction": 0.38129425048828125,
+    "saturated_fraction": 0.0006265640258789062
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230826T1415321959_d_img_d32_004.png",
+    "bytes": 544949,
+    "sha256": "642f79ac0ccc9daf27b1f6023db9767a61dd5afd39abfbfec91ed1cefc40b24f",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 108.35785865783691,
+    "dark_fraction": 0.32512855529785156,
+    "saturated_fraction": 0.09853839874267578
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230826T1910571826_d_img_gnh_005.png",
+    "bytes": 462122,
+    "sha256": "1c035b1862f4ce9ad48dfbbebea015c2d5b4af5911994185d904618fbde21aaa",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 36.33909225463867,
+    "dark_fraction": 0.46969032287597656,
+    "saturated_fraction": 0.00026035308837890625
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230827T0345344591_d_img_bl1_006.png",
+    "bytes": 494260,
+    "sha256": "efd9fe758ce7c4975a2f98a5ba4319c1d3157ab0ae34ce10d5b18d2df3ebdcb5",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 35.68053722381592,
+    "dark_fraction": 0.41956329345703125,
+    "saturated_fraction": 0.00015163421630859375
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230827T1810585259_d_img_d32_008.png",
+    "bytes": 578008,
+    "sha256": "e86343ae0a4ae618bd5f3404bf125c2883f83280aa5f72cdd5e0bffc1c9776ac",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 98.49252796173096,
+    "dark_fraction": 0.2983713150024414,
+    "saturated_fraction": 0.004395484924316406
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230827T2210573742_d_img_gnh_008.png",
+    "bytes": 613006,
+    "sha256": "37729d58a222958e4335812acaedbe82947caab1c2b4efae609cdbb20d2c9c45",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 88.42152881622314,
+    "dark_fraction": 0.26180553436279297,
+    "saturated_fraction": 0.0026845932006835938
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230828T0556384939_d_img_d32_010.png",
+    "bytes": 618890,
+    "sha256": "c173a61141c5fb8364cb85c2bfad00d7a85398295a352f05c6f59b78a7a20e84",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 93.903639793396,
+    "dark_fraction": 0.2866325378417969,
+    "saturated_fraction": 0.015480995178222656
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230828T1732459183_d_img_d32_013.png",
+    "bytes": 457344,
+    "sha256": "6e2d5c0d783d410fc7048e846debf77b1c8ae0f6972de94a39d2a6f32f82b6a0",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 58.7767219543457,
+    "dark_fraction": 0.4480314254760742,
+    "saturated_fraction": 0.00054168701171875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230828T2026475822_d_img_gnh_014.png",
+    "bytes": 618943,
+    "sha256": "711f8f8d26e78b744e4beae07c972228ac6fe494a85b3c71cd4f5e6916d3d217",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 104.58714008331299,
+    "dark_fraction": 0.2579526901245117,
+    "saturated_fraction": 0.032235145568847656
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230829T0100242219_d_img_kru_013.png",
+    "bytes": 603539,
+    "sha256": "e5c36977fefa5287cfc90f697549bd4bbbffcab1edf14949ee592980deb52b64",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 83.89473342895508,
+    "dark_fraction": 0.2702178955078125,
+    "saturated_fraction": 0.0034265518188476562
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230829T0528513579_d_img_nno_015.png",
+    "bytes": 596713,
+    "sha256": "80f662f0543c5afc01292e93cb6b0053e861092129122d9c72e084c77914e02e",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 114.16587543487549,
+    "dark_fraction": 0.03348255157470703,
+    "saturated_fraction": 0.12480926513671875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230829T0538419499_d_img_d32_015.png",
+    "bytes": 547814,
+    "sha256": "e6748e5fbeac1ca874b61aeab96d7be1d9f41cc58380925a348ef6b9e1f1a4ed",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 53.848541259765625,
+    "dark_fraction": 0.3559255599975586,
+    "saturated_fraction": 0.0030527114868164062
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230829T1712461102_d_img_d32_016.png",
+    "bytes": 632199,
+    "sha256": "e189beb70c847ad088ecd312678dda353977ab1967dc2d74f7cb7e35553ea497",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 61.14235496520996,
+    "dark_fraction": 0.24815082550048828,
+    "saturated_fraction": 9.250640869140625e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230829T1712461102_d_img_d32_021.png",
+    "bytes": 526517,
+    "sha256": "809f8e1a6ba5c60f85c991cc4c86fec2a7db6342abff7337085c7f1dc976035f",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 45.48995113372803,
+    "dark_fraction": 0.41207122802734375,
+    "saturated_fraction": 5.14984130859375e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230829T1916352939_d_img_d32_021.png",
+    "bytes": 668678,
+    "sha256": "1b66196aa0af7b00dc79bd8c630d123353ec8f8ef4cc6f10f1892423ffa56857",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 81.29337787628174,
+    "dark_fraction": 0.19229888916015625,
+    "saturated_fraction": 0.00031185150146484375
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230829T2211446062_d_img_d32_022.png",
+    "bytes": 655144,
+    "sha256": "fd7e6f0e52ec6c163fd0d407b8e97eca9590601239451cf67c42e3b47a27d983",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 95.59331321716309,
+    "dark_fraction": 0.2385082244873047,
+    "saturated_fraction": 0.011019706726074219
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230829T2326417583_d_img_gnh_025.png",
+    "bytes": 619834,
+    "sha256": "2655be983894518e3d4023fa647bb6c6a83bfac0526b24aaa677f35b1de8b097",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 60.60468006134033,
+    "dark_fraction": 0.3469123840332031,
+    "saturated_fraction": 0.0017185211181640625
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230830T0201566228_d_img_gnh_024.png",
+    "bytes": 667465,
+    "sha256": "ca91bdaa0c25fee2e1aca2b2b073065db786d27aa897d78a103045e0fb884eaf",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 63.10162925720215,
+    "dark_fraction": 0.2668952941894531,
+    "saturated_fraction": 0.005733489990234375
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230830T0412211503_d_img_kru_027.png",
+    "bytes": 608961,
+    "sha256": "c47500ee6403c562ef5bcbc976e777b83464ec2d0c9365181e79804983efdb8b",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 53.004700660705566,
+    "dark_fraction": 0.37743091583251953,
+    "saturated_fraction": 0.002635955810546875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230830T0501145903_d_img_nno_026.png",
+    "bytes": 552935,
+    "sha256": "a241cb6d4c230074f2681ed1dd8e9b08c4c311800661be911fb23153e879b822",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 63.905951499938965,
+    "dark_fraction": 0.3732576370239258,
+    "saturated_fraction": 0.004261970520019531
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230830T1143393582_d_img_nno_029.png",
+    "bytes": 537380,
+    "sha256": "520a6396cfc313564f405c7137c97541dfc3a32cf7ec79c2bfa5c197174dd5bf",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 51.19101333618164,
+    "dark_fraction": 0.44725704193115234,
+    "saturated_fraction": 0.0011119842529296875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230830T1431298859_d_img_d32_024.png",
+    "bytes": 576760,
+    "sha256": "e75827b6b20fd4f5a74c36fa1208c1b560fc830d1535f6b044504359a091c3af",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 53.81121063232422,
+    "dark_fraction": 0.3616294860839844,
+    "saturated_fraction": 0.001453399658203125
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230830T1444101423_d_img_d32_031.png",
+    "bytes": 630753,
+    "sha256": "4e0c05ed137c34e194398053189675cdf3e9a90bba77562853dee7078e74d16d",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 63.89680480957031,
+    "dark_fraction": 0.29085826873779297,
+    "saturated_fraction": 0.000324249267578125
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230830T1929359663_d_img_d32_032.png",
+    "bytes": 608012,
+    "sha256": "6c17054dcb6493ad314d7aa94218b14a1b715beecea6cdba530dbfa6e81901d0",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 70.66008281707764,
+    "dark_fraction": 0.3548402786254883,
+    "saturated_fraction": 0.0048370361328125
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230830T2301563822_d_img_gnh_030.png",
+    "bytes": 617725,
+    "sha256": "8cbe391682b8dd2a8ff15d9a7f0371ff4e3fdcf49815d9d8a99c70d94c2841a7",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 93.15948581695557,
+    "dark_fraction": 0.3090991973876953,
+    "saturated_fraction": 0.013087272644042969
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230831T0101223983_d_img_gnh_024.png",
+    "bytes": 632061,
+    "sha256": "d490ce75cb5a4fd1cc61e3cf9430ebbe35d35979fc868161ecbc1c6f5f834647",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 105.86416625976562,
+    "dark_fraction": 0.2969827651977539,
+    "saturated_fraction": 0.0411224365234375
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230831T0101223983_d_img_gnh_031.png",
+    "bytes": 632354,
+    "sha256": "1dc1b2ff936203e1c566346dcc7d5568ceded62fc184a8de8d3dac7b424bcd59",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 105.86416625976562,
+    "dark_fraction": 0.2969827651977539,
+    "saturated_fraction": 0.0411224365234375
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230831T0506086702_d_img_kru_035.png",
+    "bytes": 153643,
+    "sha256": "f641ef3fa89049ceff612fb21319804909a3fafe392607b87837a7c355c9c09c",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 241.570725440979,
+    "dark_fraction": 2.288818359375e-05,
+    "saturated_fraction": 0.8051624298095703
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230831T0813451179_d_img_kru_036.png",
+    "bytes": 744450,
+    "sha256": "553689735195dae0ef5270433f909ba4a766fd027c3f99f0e287867d6d9e3f11",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 85.78582096099854,
+    "dark_fraction": 0.181732177734375,
+    "saturated_fraction": 0.007300376892089844
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230831T1305142699_d_img_nno_037.png",
+    "bytes": 728099,
+    "sha256": "e92520fde7a784436bc0484d9d2d3bca326604a62966bb476e6df92531a4e40d",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 110.8239631652832,
+    "dark_fraction": 0.1591634750366211,
+    "saturated_fraction": 0.02199077606201172
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230831T1648537902_d_img_d32_038.png",
+    "bytes": 713819,
+    "sha256": "3e31346733f0dc79bbcc999d0aa0556869b145a30d15cb9122635f040030802b",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 128.4760160446167,
+    "dark_fraction": 0.17546749114990234,
+    "saturated_fraction": 0.0636606216430664
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230831T2136473900_d_img_d32_039.png",
+    "bytes": 224416,
+    "sha256": "4c8013c3d95c96784c44b6fb721a7d5c409146b7b97c133099c9509b867a0c67",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 126.81814479827881,
+    "dark_fraction": 0.45172119140625,
+    "saturated_fraction": 0.3533754348754883
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230831T2142431659_d_img_d32_029.png",
+    "bytes": 148087,
+    "sha256": "45781d0f8cf226d729371f5495deeba6a446fa4eff7af43c65d3fd2f16ca83f5",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 103.88214302062988,
+    "dark_fraction": 0.5598211288452148,
+    "saturated_fraction": 0.30751609802246094
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230831T2147517102_d_img_d32_031.png",
+    "bytes": 318007,
+    "sha256": "b247c86e554cf0986d68d0fdf8a4fc117686d5d0b6c968e56d32058a140c4d0c",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 87.91793918609619,
+    "dark_fraction": 0.5470123291015625,
+    "saturated_fraction": 0.13870716094970703
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230901T0130375979_d_img_gnh_040.png",
+    "bytes": 338162,
+    "sha256": "0ebfab4a51d0e84b3b05987e5e2de7c6f348fe88e02996ed543de66c1cfaf1da",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 80.60970973968506,
+    "dark_fraction": 0.5524234771728516,
+    "saturated_fraction": 0.10451889038085938
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230901T0136046379_d_img_gnh_040.png",
+    "bytes": 535978,
+    "sha256": "5983ee2a83d042ecb1d17148b899f58f59d33ed015e450c38c7fcd1b065661be",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 88.58458614349365,
+    "dark_fraction": 0.39258575439453125,
+    "saturated_fraction": 0.011904716491699219
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230901T0214218628_d_img_gnh_040.png",
+    "bytes": 560081,
+    "sha256": "5a6218be3d4f96dfbcb20eb6c6810e05c8c2c049812f0fe19fc66c2fdd929bb6",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 75.12134170532227,
+    "dark_fraction": 0.3574657440185547,
+    "saturated_fraction": 0.012639045715332031
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230901T0550487983_d_img_gnh_041.png",
+    "bytes": 703074,
+    "sha256": "c276cf0cb0e49feef342b4f5f93cebe3472d38b7bde22ce5a9a249ae81119525",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 70.17703628540039,
+    "dark_fraction": 0.20087528228759766,
+    "saturated_fraction": 0.001911163330078125
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230901T0554406703_d_img_nno_042.png",
+    "bytes": 682422,
+    "sha256": "cf05a9d57b2f2cdf4fb2549c16702291118034c89554031372181a6df38327af",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 69.7345085144043,
+    "dark_fraction": 0.25641536712646484,
+    "saturated_fraction": 0.004342079162597656
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230901T1302209583_d_img_d32_042.png",
+    "bytes": 560039,
+    "sha256": "feb7af02a5df856a330625d374fee9c02bdc5d65fd9b57d6e1c947ed651500ce",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 63.13230895996094,
+    "dark_fraction": 0.34181976318359375,
+    "saturated_fraction": 0.002071380615234375
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230901T1313351983_d_img_nno_041.png",
+    "bytes": 452588,
+    "sha256": "1ed96ea48f206480a78deef2ec8db2fa2fdeb42ca56d0bfaa272aa5d94975044",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 39.06710243225098,
+    "dark_fraction": 0.4754810333251953,
+    "saturated_fraction": 0.0017118453979492188
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230901T1834116143_d_img_d32_043.png",
+    "bytes": 655435,
+    "sha256": "8b9b320056d8b034ce230f4cfce511afe900102775bff2b0fccdc8053a0db058",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 94.52904319763184,
+    "dark_fraction": 0.2360982894897461,
+    "saturated_fraction": 0.015819549560546875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230901T1841561263_d_img_d32_034.png",
+    "bytes": 661288,
+    "sha256": "593e5e6e8a2c1761f22a0f25176db051c0f08d781d3f6a27ab856a3ee2733f58",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 75.83154392242432,
+    "dark_fraction": 0.23438262939453125,
+    "saturated_fraction": 0.00305938720703125
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230901T1847202223_d_img_d32_044.png",
+    "bytes": 510289,
+    "sha256": "b60e8396e2f91b47099930df716080137bbd7f7074790baef552b21bce32dbe1",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 40.54016971588135,
+    "dark_fraction": 0.4276409149169922,
+    "saturated_fraction": 0.0003948211669921875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230901T2226391343_d_img_d32_044.png",
+    "bytes": 546410,
+    "sha256": "3aaf54a93420189c9674f73dc18f79b6e1bbdc7e0df749cdab0368492863f630",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 62.35604763031006,
+    "dark_fraction": 0.3717308044433594,
+    "saturated_fraction": 0.0025796890258789062
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230901T2233572231_d_img_d32_044.png",
+    "bytes": 444147,
+    "sha256": "9f0672a39e4d382992cbbf9af043421dac111aa6c66839ff998e60d16c96a9d1",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 60.8253755569458,
+    "dark_fraction": 0.4811067581176758,
+    "saturated_fraction": 0.00302886962890625
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230902T0157401903_d_img_gnh_045.png",
+    "bytes": 598133,
+    "sha256": "aeccf600e2af04787d27c57a1e0d7cd1a4834d9e65f4d41f4739d5db8681c6e9",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 51.730539321899414,
+    "dark_fraction": 0.35535621643066406,
+    "saturated_fraction": 0.00049591064453125
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230902T0203387831_d_img_gnh_037.png",
+    "bytes": 638664,
+    "sha256": "911de16e3066d9027332ec8b54d851b58a8f885b772f856fb04c4e7cce3f173a",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 83.39705562591553,
+    "dark_fraction": 0.29183387756347656,
+    "saturated_fraction": 0.0082244873046875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230902T0203387831_d_img_gnh_045.png",
+    "bytes": 617714,
+    "sha256": "c4b881eecc0dc6c07fb8e92946b814e9201ae8df2f964c3c8aaa00e6f7588458",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 70.35551452636719,
+    "dark_fraction": 0.3020009994506836,
+    "saturated_fraction": 0.0010213851928710938
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230902T0603378862_d_img_gnh_046.png",
+    "bytes": 332124,
+    "sha256": "aa92ee46469c527c5e3b4d916b8446a3b2e183c6d12dd36906e66897642473f7",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 63.869916915893555,
+    "dark_fraction": 0.5794076919555664,
+    "saturated_fraction": 0.05499839782714844
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230902T0618343982_d_img_gnh_038.png",
+    "bytes": 427434,
+    "sha256": "fba3b32c42af9aa08e40540493fcc2bfd5685d4e563b0f76145b41b4afb855d0",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 16.15504550933838,
+    "dark_fraction": 0.6256637573242188,
+    "saturated_fraction": 2.6702880859375e-05
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230902T0859039663_d_img_nno_047.png",
+    "bytes": 593308,
+    "sha256": "037a0c13a0e1f390f060e01a9af60ff2debd5e27e0663aa941b03d5e2ecceed1",
+    "size": [
+      1024,
+      1024
+    ],
+    "mode": "L",
+    "metadata": {},
+    "min": 0,
+    "max": 255,
+    "mean": 67.46566104888916,
+    "dark_fraction": 0.3479576110839844,
+    "saturated_fraction": 0.0004863739013671875
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/README.txt",
+    "bytes": 1819,
+    "sha256": "027709d1e4d2f0dca2beae4f17a3708c852d2d4a9b6cba2ce20094dc50d8f1b8"
+  },
+  {
+    "path": "chandrayaan-3-navcam-sorted/stereo_pairs.csv",
+    "bytes": 19370,
+    "sha256": "35b32b2e6ddbf350f7007dcb069a9f9cf2a06c665bcc366f8709613a1d6ba1b7"
+  },
+  {
+    "path": "chandrayaan-3-documentation/ch3_nav_pds4_data_products_users_guide_v1_0.pdf",
+    "bytes": 687035,
+    "sha256": "493013f4450915cb92bc5760d7446cae336c2c6fded885e2395bb2cc744e06c8"
+  },
+  {
+    "path": "chandrayaan-3-documentation/ch3_nav_pds_dp_archive_sis.pdf",
+    "bytes": 3575493,
+    "sha256": "5a05a7f33ce53c95004e5857ca290b462d0aab1a0c716fbb5e3d792706f52c1c"
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/bundle_nav.xml",
+    "bytes": 4129,
+    "sha256": "2fde1998658f43eef2dd23c806a8d2523fb276688c84fe333bcda5042d8a06f0",
+    "xml_root": "{http://pds.nasa.gov/pds4/pds/v1}Product_Bundle",
+    "xml_fields": {
+      "logical_identifier": "urn:isro:isda:ch3_chr.nav",
+      "version_id": "1.0",
+      "title": "Chandrayaan-3 Rover NavCam Mobility Experiment",
+      "information_model_version": "1.11.0.0",
+      "product_class": "Product_Bundle",
+      "author_list": "isro,issdc,sac",
+      "publication_year": "2024",
+      "description": "Peer reviewed version of the Chandrayaan-3 Rover NavCam instrument data products bundle",
+      "modification_date": "2024-01-24",
+      "start_date_time": "2023-08-23Z",
+      "stop_date_time": "2023-09-02Z",
+      "name": "Moon",
+      "type": "Satellite",
+      "lid_reference": "urn:isro:isda:ch3_chr.nav:document",
+      "reference_type": "bundle_has_document_collection",
+      "bundle_type": "Archive",
+      "member_status": "Primary"
+    }
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_left_cahv.txt",
+    "bytes": 251,
+    "sha256": "e36ca5c08fe73be5e18a7d05f0b35ed0cb320e1598ac9cc7a59af152357d944d"
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_left_cahv.xml",
+    "bytes": 1623,
+    "sha256": "f9806338abd89b9a30247ae28164c159e69183dd7c017f490c1358d52137e260",
+    "xml_root": "{http://pds.nasa.gov/pds4/pds/v1}Product_File_Text",
+    "xml_fields": {
+      "logical_identifier": "urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_left_cahv",
+      "version_id": "1.0",
+      "title": "NavCam left camera model file",
+      "information_model_version": "1.11.0.0",
+      "product_class": "Product_File_Text",
+      "publication_year": "2024",
+      "description": "NavCam left camera model file",
+      "lid_reference": "urn:isro:isda:ch3_chr.nav:document:ch3_nav_pds_dp_archive_sis",
+      "reference_type": "collection_to_document",
+      "file_name": "ch3_nav_left_cahv.txt",
+      "offset": "0",
+      "parsing_standard_id": "7-Bit ASCII Text",
+      "record_delimiter": "Carriage-Return Line-Feed"
+    }
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_left_gain.txt",
+    "bytes": 26214400,
+    "sha256": "872a13235b92970a2f18700e8bc989e2c47c2f81d5096761d3a0d3999fe2062a",
+    "shape": [
+      1024,
+      1024
+    ],
+    "min": 0.348733127117157,
+    "max": 0.7757198810577393,
+    "finite": true
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_left_gain.xml",
+    "bytes": 1613,
+    "sha256": "7fdb61b358fbd2b8f61146de034c1ba3a2e363aa47cebc77f5c5c3670a68e780",
+    "xml_root": "{http://pds.nasa.gov/pds4/pds/v1}Product_File_Text",
+    "xml_fields": {
+      "logical_identifier": "urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_left_gain",
+      "version_id": "1.0",
+      "title": "NavCam lookup table file",
+      "information_model_version": "1.11.0.0",
+      "product_class": "Product_File_Text",
+      "publication_year": "2023",
+      "description": "NavCam lookup table file",
+      "lid_reference": "urn:isro:isda:ch3_chr.nav:document:ch3_nav_pds_dp_archive_sis",
+      "reference_type": "collection_to_document",
+      "file_name": "ch3_nav_left_gain.txt",
+      "offset": "0",
+      "parsing_standard_id": "7-Bit ASCII Text",
+      "record_delimiter": "Carriage-Return Line-Feed"
+    }
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_left_gain_offset.txt",
+    "bytes": 27255359,
+    "sha256": "56e16d0199288fff20376c13af1f9efb7a9128fb0ae556c39b663bbf184fa64d",
+    "shape": [
+      1024,
+      1024
+    ],
+    "min": -0.14063934981822968,
+    "max": 0.051989588886499405,
+    "finite": true
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_left_gain_offset.xml",
+    "bytes": 1627,
+    "sha256": "d4640665fe830837726f988043185440de5d160b6263b73b6d4f11f22a650b15",
+    "xml_root": "{http://pds.nasa.gov/pds4/pds/v1}Product_File_Text",
+    "xml_fields": {
+      "logical_identifier": "urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_left_gain_offset",
+      "version_id": "1.0",
+      "title": "NavCam lookup table file",
+      "information_model_version": "1.11.0.0",
+      "product_class": "Product_File_Text",
+      "publication_year": "2023",
+      "description": "NavCam lookup table file",
+      "lid_reference": "urn:isro:isda:ch3_chr.nav:document:ch3_nav_pds_dp_archive_sis",
+      "reference_type": "collection_to_document",
+      "file_name": "ch3_nav_left_gain_offset.txt",
+      "offset": "0",
+      "parsing_standard_id": "7-Bit ASCII Text",
+      "record_delimiter": "Carriage-Return Line-Feed"
+    }
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_left_offset.txt",
+    "bytes": 27262976,
+    "sha256": "9e89dd739a19985f1726d425bced8cf6f1c4251a895e4feb2b57f9058118ef9c",
+    "shape": [
+      1024,
+      1024
+    ],
+    "min": -67.73023223876953,
+    "max": -30.03115463256836,
+    "finite": true
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_left_offset.xml",
+    "bytes": 1617,
+    "sha256": "e6d512bd22673b3c79d3c600918fd45d27a4d4808fbbb0b5f4d93862f46526cf",
+    "xml_root": "{http://pds.nasa.gov/pds4/pds/v1}Product_File_Text",
+    "xml_fields": {
+      "logical_identifier": "urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_left_offset",
+      "version_id": "1.0",
+      "title": "NavCam lookup table file",
+      "information_model_version": "1.11.0.0",
+      "product_class": "Product_File_Text",
+      "publication_year": "2023",
+      "description": "NavCam lookup table file",
+      "lid_reference": "urn:isro:isda:ch3_chr.nav:document:ch3_nav_pds_dp_archive_sis",
+      "reference_type": "collection_to_document",
+      "file_name": "ch3_nav_left_offset.txt",
+      "offset": "0",
+      "parsing_standard_id": "7-Bit ASCII Text",
+      "record_delimiter": "Carriage-Return Line-Feed"
+    }
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_right_cahv.txt",
+    "bytes": 252,
+    "sha256": "a48df75cc9a9288e5399db3dca9a2bd96d3944844412e568047ec5bf7f461b43"
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_right_cahv.xml",
+    "bytes": 1627,
+    "sha256": "2a9da1ef19531d60238cb876bebe8e74c1ec65191b46d8dc2207d9817d77d1e1",
+    "xml_root": "{http://pds.nasa.gov/pds4/pds/v1}Product_File_Text",
+    "xml_fields": {
+      "logical_identifier": "urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_right_cahv",
+      "version_id": "1.0",
+      "title": "NavCam right camera model file",
+      "information_model_version": "1.11.0.0",
+      "product_class": "Product_File_Text",
+      "publication_year": "2024",
+      "description": "NavCam right camera model file",
+      "lid_reference": "urn:isro:isda:ch3_chr.nav:document:ch3_nav_pds_dp_archive_sis",
+      "reference_type": "collection_to_document",
+      "file_name": "ch3_nav_right_cahv.txt",
+      "offset": "0",
+      "parsing_standard_id": "7-Bit ASCII Text",
+      "record_delimiter": "Carriage-Return Line-Feed"
+    }
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_right_gain.txt",
+    "bytes": 26214400,
+    "sha256": "ba4fbbc9204c0f3562496d0426c6bc4ecc9028b3b593436a3db27a5ab01f758c",
+    "shape": [
+      1024,
+      1024
+    ],
+    "min": 0.40441057085990906,
+    "max": 0.8058580160140991,
+    "finite": true
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_right_gain.xml",
+    "bytes": 1615,
+    "sha256": "084a85101e1b43d817998c19fc3e0ad0acb9831915d43137381b287b7cfdc6f7",
+    "xml_root": "{http://pds.nasa.gov/pds4/pds/v1}Product_File_Text",
+    "xml_fields": {
+      "logical_identifier": "urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_right_gain",
+      "version_id": "1.0",
+      "title": "NavCam lookup table file",
+      "information_model_version": "1.11.0.0",
+      "product_class": "Product_File_Text",
+      "publication_year": "2023",
+      "description": "NavCam lookup table file",
+      "lid_reference": "urn:isro:isda:ch3_chr.nav:document:ch3_nav_pds_dp_archive_sis",
+      "reference_type": "collection_to_document",
+      "file_name": "ch3_nav_right_gain.txt",
+      "offset": "0",
+      "parsing_standard_id": "7-Bit ASCII Text",
+      "record_delimiter": "Carriage-Return Line-Feed"
+    }
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_right_gain_offset.txt",
+    "bytes": 27261478,
+    "sha256": "7a0f4c24d101b7346427606d200433c7c73b5514361b8bee8ed880d8363e6f0a",
+    "shape": [
+      1024,
+      1024
+    ],
+    "min": -0.15563951432704926,
+    "max": 0.03328732028603554,
+    "finite": true
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_right_gain_offset.xml",
+    "bytes": 1629,
+    "sha256": "a42e573d42d62a01a577304d079875770924af911ab097bd827e0047b34a2556",
+    "xml_root": "{http://pds.nasa.gov/pds4/pds/v1}Product_File_Text",
+    "xml_fields": {
+      "logical_identifier": "urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_right_gain_offset",
+      "version_id": "1.0",
+      "title": "NavCam lookup table file",
+      "information_model_version": "1.11.0.0",
+      "product_class": "Product_File_Text",
+      "publication_year": "2023",
+      "description": "NavCam lookup table file",
+      "lid_reference": "urn:isro:isda:ch3_chr.nav:document:ch3_nav_pds_dp_archive_sis",
+      "reference_type": "collection_to_document",
+      "file_name": "ch3_nav_right_gain_offset.txt",
+      "offset": "0",
+      "parsing_standard_id": "7-Bit ASCII Text",
+      "record_delimiter": "Carriage-Return Line-Feed"
+    }
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_right_offset.txt",
+    "bytes": 27262976,
+    "sha256": "c4555bc6b135c1754a99c66e6b33246551457933befe90510502ca99b03e37a6",
+    "shape": [
+      1024,
+      1024
+    ],
+    "min": -61.77286911010742,
+    "max": -21.612003326416016,
+    "finite": true
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/ch3_nav_right_offset.xml",
+    "bytes": 1619,
+    "sha256": "2c6a551ef0cfec3dc9f6655506fcf8c98cf4f1d1251f9a7eeed3e88d04efc39a",
+    "xml_root": "{http://pds.nasa.gov/pds4/pds/v1}Product_File_Text",
+    "xml_fields": {
+      "logical_identifier": "urn:isro:isda:ch3_chr.nav:calibration:ch3_nav_right_offset",
+      "version_id": "1.0",
+      "title": "NavCam lookup table file",
+      "information_model_version": "1.11.0.0",
+      "product_class": "Product_File_Text",
+      "publication_year": "2023",
+      "description": "NavCam lookup table file",
+      "lid_reference": "urn:isro:isda:ch3_chr.nav:document:ch3_nav_pds_dp_archive_sis",
+      "reference_type": "collection_to_document",
+      "file_name": "ch3_nav_right_offset.txt",
+      "offset": "0",
+      "parsing_standard_id": "7-Bit ASCII Text",
+      "record_delimiter": "Carriage-Return Line-Feed"
+    }
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/collection_calibration_inventory.csv",
+    "bytes": 566,
+    "sha256": "4574011b1c9a350ef75feb364c2c7be84e19156ff50f2dfb0a6a9f31385124ad"
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/collection_calibration_inventory.xml",
+    "bytes": 5872,
+    "sha256": "27b0c10593e6fffd3ad9a24fda0f71f2d8c0928bce7bdd14e54fbfb701a7357d",
+    "xml_root": "{http://pds.nasa.gov/pds4/pds/v1}Product_Collection",
+    "xml_fields": {
+      "logical_identifier": "urn:isro:isda:ch3_chr.nav:calibration",
+      "version_id": "1.0",
+      "title": "Chandrayaan-3 Rover NavCam calibration file collection",
+      "information_model_version": "1.11.0.0",
+      "product_class": "Product_Collection",
+      "author_list": "Chandrayaan-3 SAC DP Team",
+      "editor_list": "Chandreayaan-3 SAC DP Team",
+      "publication_year": "2024",
+      "description": "This column specifies the LIDVID of the files that comprise the collection.",
+      "modification_date": "2024-01-24",
+      "start_date_time": "2024-01-24Z",
+      "purpose": "Calibration",
+      "processing_level": "Calibrated",
+      "name": "LIDVID_LID",
+      "type": "Satellite",
+      "lidvid_reference": "urn:isro:isda:context:investigation:mission.chandrayaan3::1.0",
+      "reference_type": "inventory_has_member_product",
+      "lid_reference": "urn:isro:isda:ch3_chr.nav:document:ch3_nav_pds_dp_archive_sis",
+      "collection_type": "Calibration",
+      "file_name": "collection_calibration_inventory.csv",
+      "local_identifier": "collection_calibration_inventory.csv",
+      "creation_date_time": "2024-01-24",
+      "file_size": "429",
+      "records": "8",
+      "md5_checksum": "4337a2d47c068b268995ba574c5a84a3",
+      "offset": "0",
+      "parsing_standard_id": "PDS DSV 1",
+      "record_delimiter": "Carriage-Return Line-Feed",
+      "field_delimiter": "Comma",
+      "fields": "2",
+      "groups": "0",
+      "maximum_record_length": "76",
+      "field_number": "2",
+      "data_type": "ASCII_LIDVID_LID",
+      "maximum_field_length": "255"
+    }
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/calibration/validation_report.txt",
+    "bytes": 2691,
+    "sha256": "998909438fc214a7f52e35c0463ec8b35fc36d7a29fadb583c657654a6a3ca96"
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/document/ch3_nav_pds_dp_archive_sis.pdf",
+    "bytes": 2075012,
+    "sha256": "6abe9f56526942d8f623bb3bcaf4c54dec850e6149eea4b908f0152dd6aac43a"
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/document/ch3_nav_pds_dp_archive_sis.xml",
+    "bytes": 3587,
+    "sha256": "732a2b1efd117f965271fb486ced60085b40db0863d99a08d4350fe9384ab74d",
+    "xml_root": "{http://pds.nasa.gov/pds4/pds/v1}Product_Document",
+    "xml_fields": {
+      "logical_identifier": "urn:isro:isda:ch3_chr.nav:document:ch3_nav_pds_dp_archive_sis",
+      "version_id": "1.0",
+      "title": "Chandrayaan-3 Rover NavCam Mobility Experiment",
+      "information_model_version": "1.11.0.0",
+      "product_class": "Product_Document",
+      "author_list": "SAC DP Team",
+      "publication_year": "2024",
+      "description": "Navigational Camera (NavCam) is one of the engineering instrument hosted \n                    on the Chandrayaan-3 Rover Module. This instrument is used for rover mobility\n                    on lunar surface.",
+      "modification_date": "2024-01-24",
+      "name": "Navigational Camera",
+      "type": "Instrument",
+      "lidvid_reference": "urn:isro:isda:context:investigation:mission.chandrayaan3::1.0",
+      "reference_type": "document_to_investigation",
+      "copyright": "Space Applications Centre",
+      "publication_date": "2024-01-23",
+      "edition_name": "PDF version",
+      "language": "English",
+      "files": "1",
+      "file_name": "ch3_nav_pds_dp_archive_sis.pdf",
+      "document_standard_id": "PDF/A"
+    }
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/document/collection_document_inventory.csv",
+    "bytes": 74,
+    "sha256": "25fce7c6069d42909895b2fa3234725941d6d5af1a397e74b82dd2f113e090d3"
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/document/collection_document_inventory.xml",
+    "bytes": 5320,
+    "sha256": "946201347edb2f69d02d2df515f0c618d60457b10cee3e5862fb4414478fb96b",
+    "xml_root": "{http://pds.nasa.gov/pds4/pds/v1}Product_Collection",
+    "xml_fields": {
+      "logical_identifier": "urn:isro:isda:ch3_chr.nav:document",
+      "version_id": "1.0",
+      "title": "Chandrayaan-3 Rover NavCam document file collection",
+      "information_model_version": "1.11.0.0",
+      "product_class": "Product_Collection",
+      "author_list": "Chandrayaan-3 SAC DP Team",
+      "editor_list": "Chandrayaan-3 SAC DP Team",
+      "publication_year": "2024",
+      "description": "This column specifies the LIDVID of the files that comprise the collection.",
+      "modification_date": "2024-01-24",
+      "name": "LIDVID_LID",
+      "type": "Satellite",
+      "lidvid_reference": "urn:isro:isda:context:investigation:mission.chandrayaan3::1.0",
+      "reference_type": "inventory_has_member_product",
+      "collection_type": "Document",
+      "file_name": "collection_document_inventory.csv",
+      "local_identifier": "collection_document_inventory.csv",
+      "creation_date_time": "2024-01-24",
+      "file_size": "75",
+      "records": "1",
+      "md5_checksum": "1dd59d7189042fedd6ac97e80dadf89f",
+      "offset": "0",
+      "parsing_standard_id": "PDS DSV 1",
+      "record_delimiter": "Carriage-Return Line-Feed",
+      "field_delimiter": "Comma",
+      "fields": "2",
+      "groups": "0",
+      "maximum_record_length": "75",
+      "field_number": "2",
+      "data_type": "ASCII_LIDVID_LID",
+      "maximum_field_length": "255"
+    }
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/document/validation_report.txt",
+    "bytes": 1121,
+    "sha256": "d855e2be1e942d99af8fdaf956af864c8de42ca9bb278fe4d48d06f1afa481a0"
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/readme.txt",
+    "bytes": 3446,
+    "sha256": "f56e514d2675acb103cc3008863ae7bea5d1be8aab82d2fbafde63aec42d5f78"
+  },
+  {
+    "path": "chandrayaan-3-documentation/nav/validation_report.txt",
+    "bytes": 835,
+    "sha256": "317d63ca3de4279367d831644704fa5f18eb8ab40d065e2f79dafa142207dabc"
+  }
+]

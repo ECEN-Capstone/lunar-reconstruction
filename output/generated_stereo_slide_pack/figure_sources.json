@@ -1,0 +1,46 @@
+{
+  "01_input_trial_1.png": "output/generated_stereo_trial/stereo_trial_1/original_canvas.png",
+  "01_input_trial_2.png": "output/generated_stereo_trial/stereo_trial_2/original_canvas.png",
+  "02_mesh_comparison_trial_1.png": "output/uber_relaxed/stereo_trial_1/mesh_comparison.png",
+  "backup_all_seven_meshes.png": "output/uber_relaxed/stereo_trial_1/renders/all_seven_meshes.png",
+  "backup_all_seven_matching_results.png": "output/uber_relaxed/stereo_trial_1/comparison.png",
+  "backup_real_obs034_completion.png": "artifacts/runs/r15_terrain_completion/obs_034/mesh_comparison.png",
+  "source_generated_stereo_report.md": "output/generated_stereo_trial/REPORT.md",
+  "source_uber_relaxed_report.md": "output/uber_relaxed/REPORT.md",
+  "backup_trial_1_strict_diagnostic.png": "output/generated_stereo_trial/stereo_trial_1/diagnostic_strict/dense_diagnostic.png",
+  "backup_trial_1_relaxed_diagnostic.png": "output/generated_stereo_trial/stereo_trial_1/diagnostic_relaxed/dense_diagnostic.png",
+  "backup_trial_2_strict_diagnostic.png": "output/generated_stereo_trial/stereo_trial_2/diagnostic_strict/dense_diagnostic.png",
+  "backup_trial_2_relaxed_diagnostic.png": "output/generated_stereo_trial/stereo_trial_2/diagnostic_relaxed/dense_diagnostic.png",
+  "01_strict_vs_relaxed_trial_1.png": {
+    "folder": "output\\generated_stereo_trial\\stereo_trial_1",
+    "files": [
+      "diagnostic_strict/rectified_left.png",
+      "diagnostic_strict/validity_mask.png",
+      "diagnostic_relaxed/validity_mask.png",
+      "diagnostic_strict/metrics.json",
+      "diagnostic_relaxed/metrics.json"
+    ],
+    "note": "Scientific comparison of saved pixel masks. No matching rerun or changes to estimates."
+  },
+  "01_strict_vs_relaxed_trial_2.png": {
+    "folder": "output\\generated_stereo_trial\\stereo_trial_2",
+    "files": [
+      "diagnostic_strict/rectified_left.png",
+      "diagnostic_strict/validity_mask.png",
+      "diagnostic_relaxed/validity_mask.png",
+      "diagnostic_strict/metrics.json",
+      "diagnostic_relaxed/metrics.json"
+    ],
+    "note": "Scientific comparison of saved pixel masks. No matching rerun or changes to estimates."
+  },
+  "03_alignment_and_filtering_trial_1.png": {
+    "source": "output/uber_relaxed/stereo_trial_1/<profile>/arrays.npz",
+    "profiles": [
+      "uber_relaxed",
+      "uber_relaxed_row_adjusted",
+      "row_adjusted_tighter"
+    ],
+    "field": "validity",
+    "note": "New scientific plot of saved masks. No matching rerun or changes to estimates."
+  }
+}

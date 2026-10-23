@@ -1,0 +1,26 @@
+{
+  "component": "component_obs_003",
+  "vertices": 19005,
+  "triangles": 17666,
+  "sources": [
+    {
+      "observation": "obs_003",
+      "vertex_start": 0,
+      "vertex_count": 7783,
+      "face_count": 6671
+    },
+    {
+      "observation": "obs_004",
+      "vertex_start": 7783,
+      "vertex_count": 11222,
+      "face_count": 10995
+    }
+  ],
+  "limitations": [
+    "overlapping triangles retained",
+    "holes unfilled",
+    "not watertight",
+    "not metric certified",
+    "not collision ready"
+  ]
+}

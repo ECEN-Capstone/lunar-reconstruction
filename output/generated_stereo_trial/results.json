@@ -1,0 +1,624 @@
+{
+  "pairs": [
+    {
+      "name": "real_A",
+      "observation": "obs_049",
+      "geometry": {
+        "reciprocal_sift_matches": 73,
+        "symmetric_fixed_cahv_error_px": {
+          "count": 73,
+          "median": 0.45436755605758267,
+          "p90": 0.8980598921096714,
+          "p95": 1.0621028087391715
+        },
+        "fraction_within_2_px": 0.9863013698630136,
+        "rectified_vertical_error_px": {
+          "count": 73,
+          "median": 0.45340005926220783,
+          "p90": 0.8936512134667964,
+          "p95": 1.0556863807855505
+        },
+        "alternate_geometry": {
+          "training_matches": 58,
+          "heldout_matches": 15,
+          "training_f_inliers": 57,
+          "calibration_reused": false,
+          "metric_scale_available": false,
+          "heldout_homography_transfer_error_px": {
+            "count": 15,
+            "median": 4.094471271495102,
+            "p90": 44.90487145574287,
+            "p95": 48.038133683950605
+          },
+          "training_homography_inlier_fraction": 0.46551724137931033,
+          "status": "exploratory_fit_only",
+          "heldout_rectified_vertical_error_px": {
+            "count": 15,
+            "median": 0.1743636782870226,
+            "p90": 0.43968330979412257,
+            "p95": 0.5209638332322126
+          },
+          "homographies": [
+            [
+              [
+                0.0785081922901106,
+                -0.06799808377622517,
+                23.387707726725807
+              ],
+              [
+                0.004497299109657696,
+                0.06539318002233091,
+                -1.3841768736089222
+              ],
+              [
+                6.479940648700808e-06,
+                -4.99625622366001e-06,
+                0.06717867394851584
+              ]
+            ],
+            [
+              [
+                1.0481033026590938,
+                -0.019789925894603752,
+                -14.496448903418923
+              ],
+              [
+                0.06715980444514505,
+                0.9989101542623483,
+                -33.82781885823658
+              ],
+              [
+                9.429983100320982e-05,
+                -1.7805369591838562e-06,
+                0.9526301214494587
+              ]
+            ]
+          ],
+          "caveat": "A fitted projective geometry does not validate the intended cameras, parallax, or depth"
+        },
+        "analysis_image_gate": {
+          "count": 64,
+          "median": 0.40489648304668435,
+          "p90": 0.8512030320669169,
+          "p95": 0.8936512134667964,
+          "passed": true
+        },
+        "gate_input_note": "Analysis image criterion; actual real-control pipeline uses raw counterparts"
+      },
+      "pipeline": {
+        "status": "accepted",
+        "metrics": {
+          "observation": "obs_049",
+          "valid_points": 107824,
+          "valid_fraction": 0.1028289794921875,
+          "filter_pass_fractions": {
+            "inside_rectification": 0.9017858505249023,
+            "disparity_range": 0.27793216705322266,
+            "left_right_consistent": 0.18356609344482422,
+            "illuminated": 0.9044218063354492,
+            "textured": 0.5961837768554688,
+            "raw_information_present": 0.4190635681152344
+          },
+          "depth_percentiles_calibration_units": [
+            737.1174926757812,
+            4347.69384765625,
+            17390.775390625
+          ],
+          "lr_error_median_px": 0.0625,
+          "feature_matches": 64,
+          "feature_vertical_median_px": 0.3433087047249046,
+          "feature_disparity_comparisons": 39,
+          "feature_disparity_error_median_px": 0.21722006343986777,
+          "feature_disparity_error_p90_px": 0.4542188712306599,
+          "mesh_vertices": 11899,
+          "mesh_faces": 4631,
+          "runtime_seconds": 11.939908266067505
+        }
+      }
+    },
+    {
+      "name": "real_C",
+      "observation": "obs_050",
+      "geometry": {
+        "reciprocal_sift_matches": 40,
+        "symmetric_fixed_cahv_error_px": {
+          "count": 40,
+          "median": 0.7039414361110251,
+          "p90": 1.4565406867223267,
+          "p95": 46.30341560747084
+        },
+        "fraction_within_2_px": 0.925,
+        "rectified_vertical_error_px": {
+          "count": 40,
+          "median": 0.7018676236793908,
+          "p90": 1.444502007841669,
+          "p95": 46.35014221483108
+        },
+        "alternate_geometry": {
+          "training_matches": 32,
+          "heldout_matches": 8,
+          "training_f_inliers": 29,
+          "calibration_reused": false,
+          "metric_scale_available": false,
+          "heldout_homography_transfer_error_px": {
+            "count": 8,
+            "median": 92.6646046236628,
+            "p90": 349.52698252458777,
+            "p95": 483.6287968599073
+          },
+          "training_homography_inlier_fraction": 0.3125,
+          "status": "exploratory_fit_only",
+          "heldout_rectified_vertical_error_px": {
+            "count": 8,
+            "median": 0.370179047607877,
+            "p90": 106.26346245859419,
+            "p95": 229.4428934957866
+          },
+          "homographies": [
+            [
+              [
+                0.021033310357144536,
+                -0.009124644396141812,
+                5.84864060255888
+              ],
+              [
+                -0.0020042703396157026,
+                0.02726635694320107,
+                -0.18257028890654814
+              ],
+              [
+                -3.891034977247045e-06,
+                3.914844277177646e-06,
+                0.025091671196769107
+              ]
+            ],
+            [
+              [
+                0.9293659289886337,
+                -0.0020306897604871264,
+                37.204357515188974
+              ],
+              [
+                -0.0684466619428326,
+                1.0001519449816212,
+                34.96689508414022
+              ],
+              [
+                -0.00013795250751592514,
+                3.0142997037880294e-07,
+                1.0704773517033197
+              ]
+            ]
+          ],
+          "caveat": "A fitted projective geometry does not validate the intended cameras, parallax, or depth"
+        },
+        "analysis_image_gate": {
+          "count": 26,
+          "median": 0.3878965582451315,
+          "p90": 1.2926543310435363,
+          "p95": 1.3214682462376715,
+          "passed": false
+        },
+        "gate_input_note": "Analysis image criterion; actual real-control pipeline uses raw counterparts"
+      },
+      "pipeline": {
+        "observation": "obs_050",
+        "status": "rejected",
+        "matches": 24,
+        "reason": "Fixed-rig geometry not supported by sufficient subpixel matches"
+      }
+    },
+    {
+      "name": "stereo_trial_1",
+      "split": {
+        "source": "C:\\Users\\rhunt\\Downloads\\NavCam-Imagegen-Reproducibility\\NavCam-Imagegen-Reproducibility\\generated\\stereo_trial_1.png",
+        "source_sha256": "140a71af3ccd0f2656d27d1432dc05f5b5e7fcde686e13841d1544126d8156d3",
+        "canvas_wh": [
+          1774,
+          887
+        ],
+        "native_panel_wh": [
+          887,
+          887
+        ],
+        "split_x": 887,
+        "split_pixels_lossless": true,
+        "analysis_wh": [
+          1024,
+          1024
+        ],
+        "normalization": "OpenCV grayscale then INTER_AREA resize; assumed same framing, not verified camera intrinsics"
+      },
+      "geometry": {
+        "reciprocal_sift_matches": 1956,
+        "symmetric_fixed_cahv_error_px": {
+          "count": 1956,
+          "median": 8.461196962197342,
+          "p90": 11.075279027295753,
+          "p95": 11.609230649053238
+        },
+        "fraction_within_2_px": 0.0,
+        "rectified_vertical_error_px": {
+          "count": 1956,
+          "median": 8.44771133178682,
+          "p90": 11.037415661824696,
+          "p95": 11.544760643733127
+        },
+        "alternate_geometry": {
+          "training_matches": 1564,
+          "heldout_matches": 392,
+          "training_f_inliers": 1161,
+          "calibration_reused": false,
+          "metric_scale_available": false,
+          "heldout_homography_transfer_error_px": {
+            "count": 392,
+            "median": 1.117750860746782,
+            "p90": 11.229642401596458,
+            "p95": 17.821491369592948
+          },
+          "training_homography_inlier_fraction": 0.6726342710997443,
+          "status": "exploratory_fit_only",
+          "heldout_rectified_vertical_error_px": {
+            "count": 392,
+            "median": 0.7391801597618155,
+            "p90": 2.40521266683426,
+            "p95": 3.442961487788828
+          },
+          "homographies": [
+            [
+              [
+                -0.005142490353155071,
+                -0.0009294936148873723,
+                -9.084421374631589
+              ],
+              [
+                0.021591960311998004,
+                -0.01694749560808817,
+                -15.004198674763531
+              ],
+              [
+                3.314274054186839e-05,
+                1.0517643479692742e-05,
+                -0.046659418441238186
+              ]
+            ],
+            [
+              [
+                0.24126710916785965,
+                0.048211805648198575,
+                363.7867956141781
+              ],
+              [
+                -0.9352995731239062,
+                0.8328715039384494,
+                564.4431714229538
+              ],
+              [
+                -0.0014440353146936498,
+                -0.0002885579811573417,
+                1.8870877674757076
+              ]
+            ]
+          ],
+          "caveat": "A fitted projective geometry does not validate the intended cameras, parallax, or depth"
+        },
+        "analysis_image_gate": {
+          "count": 1313,
+          "median": 8.060512881535374,
+          "p90": 10.361070979575766,
+          "p95": 10.756789172436036,
+          "passed": false
+        },
+        "gate_input_note": "Analysis image criterion; actual real-control pipeline uses raw counterparts"
+      },
+      "pipeline": {
+        "observation": "stereo_trial_1",
+        "status": "rejected",
+        "matches": 1313,
+        "reason": "Fixed-rig geometry not supported by sufficient subpixel matches"
+      },
+      "dense_diagnostics": [
+        {
+          "profile": "strict",
+          "status": "diagnostic_only_geometry_gate_failed",
+          "config": {
+            "family": "NC",
+            "preprocessing": "none",
+            "interpretation": "literal",
+            "min_disparity": 0,
+            "num_disparities": 512,
+            "pad_search": true,
+            "raw_quality_mask": false,
+            "block_size": 5,
+            "uniqueness_ratio": 15,
+            "speckle_window_size": 100,
+            "speckle_range": 2,
+            "lr_threshold_px": 1.0,
+            "min_valid_disparity_px": 16.0,
+            "dark_threshold": 5,
+            "saturated_threshold": 250,
+            "texture_std_threshold": 2.0,
+            "texture_window": 7,
+            "mesh_stride": 3,
+            "mesh_max_relative_depth_jump": 0.02,
+            "mesh_max_edge_baselines": 0.25,
+            "clahe_clip_limit": 2.0,
+            "clahe_grid": 8,
+            "random_seed": 42,
+            "source_kind": "image_generated_synthetic"
+          },
+          "valid_pixels": 5742,
+          "whole_image_valid_fraction": 0.0054759979248046875,
+          "pass_fractions": {
+            "inside_rectification": 0.9015846252441406,
+            "disparity_range": 0.1016998291015625,
+            "left_right_consistent": 0.058124542236328125,
+            "illuminated": 0.9043664932250977,
+            "textured": 0.6189126968383789
+          },
+          "left_right_error_px": {
+            "count": 5742,
+            "median": 0.1875,
+            "p90": 0.6640625,
+            "p95": 0.8083972930908203
+          },
+          "disparity_px": {
+            "count": 5742,
+            "median": 95.1875,
+            "p90": 148.125,
+            "p95": 225.875
+          },
+          "vertices": 609,
+          "triangles": 289,
+          "unit_baseline": 1,
+          "physical_scale_available": false,
+          "raw_sensor_data_available": false,
+          "raw_quality_mask_applied": false,
+          "note": "Valid mask means numerical matching/filter acceptance only; cannot override failed scene geometry"
+        },
+        {
+          "profile": "relaxed",
+          "status": "diagnostic_only_geometry_gate_failed",
+          "config": {
+            "family": "NC",
+            "preprocessing": "none",
+            "interpretation": "literal",
+            "min_disparity": 0,
+            "num_disparities": 512,
+            "pad_search": true,
+            "raw_quality_mask": false,
+            "block_size": 7,
+            "uniqueness_ratio": 5,
+            "speckle_window_size": 50,
+            "speckle_range": 2,
+            "lr_threshold_px": 2.0,
+            "min_valid_disparity_px": 16.0,
+            "dark_threshold": 5,
+            "saturated_threshold": 250,
+            "texture_std_threshold": 1.0,
+            "texture_window": 7,
+            "mesh_stride": 3,
+            "mesh_max_relative_depth_jump": 0.05,
+            "mesh_max_edge_baselines": 0.5,
+            "clahe_clip_limit": 2.0,
+            "clahe_grid": 8,
+            "random_seed": 42,
+            "source_kind": "image_generated_synthetic"
+          },
+          "valid_pixels": 43178,
+          "whole_image_valid_fraction": 0.04117774963378906,
+          "pass_fractions": {
+            "inside_rectification": 0.9016246795654297,
+            "disparity_range": 0.24862098693847656,
+            "left_right_consistent": 0.12323856353759766,
+            "illuminated": 0.9042701721191406,
+            "textured": 0.6218538284301758
+          },
+          "left_right_error_px": {
+            "count": 43178,
+            "median": 0.125,
+            "p90": 0.5625,
+            "p95": 0.796875
+          },
+          "disparity_px": {
+            "count": 43178,
+            "median": 98.9375,
+            "p90": 303.2626953125,
+            "p95": 369.9375
+          },
+          "vertices": 4831,
+          "triangles": 2334,
+          "unit_baseline": 1,
+          "physical_scale_available": false,
+          "raw_sensor_data_available": false,
+          "raw_quality_mask_applied": false,
+          "note": "Valid mask means numerical matching/filter acceptance only; cannot override failed scene geometry"
+        }
+      ],
+      "source_unchanged": true
+    },
+    {
+      "name": "stereo_trial_2",
+      "split": {
+        "source": "C:\\Users\\rhunt\\Downloads\\NavCam-Imagegen-Reproducibility\\NavCam-Imagegen-Reproducibility\\generated\\stereo_trial_2.png",
+        "source_sha256": "d5a6972bf59de1093ad7203cf4a8179b5017d9300bd3c23979791b03e04a1c7d",
+        "canvas_wh": [
+          1774,
+          887
+        ],
+        "native_panel_wh": [
+          887,
+          887
+        ],
+        "split_x": 887,
+        "split_pixels_lossless": true,
+        "analysis_wh": [
+          1024,
+          1024
+        ],
+        "normalization": "OpenCV grayscale then INTER_AREA resize; assumed same framing, not verified camera intrinsics"
+      },
+      "geometry": {
+        "reciprocal_sift_matches": 34,
+        "symmetric_fixed_cahv_error_px": {
+          "count": 34,
+          "median": 25.92812594685572,
+          "p90": 48.91679914663196,
+          "p95": 84.81428087950016
+        },
+        "fraction_within_2_px": 0.0,
+        "rectified_vertical_error_px": {
+          "count": 34,
+          "median": 25.940711596944283,
+          "p90": 49.285983390130184,
+          "p95": 85.00171783720629
+        },
+        "alternate_geometry": {
+          "status": "insufficient_matches",
+          "matches": 34,
+          "minimum": 40
+        },
+        "analysis_image_gate": {
+          "count": 19,
+          "median": 26.614938812478556,
+          "p90": 28.36233261361108,
+          "p95": 28.579060428451395,
+          "passed": false
+        },
+        "gate_input_note": "Analysis image criterion; actual real-control pipeline uses raw counterparts"
+      },
+      "pipeline": {
+        "observation": "stereo_trial_2",
+        "status": "rejected",
+        "matches": 19,
+        "reason": "Fixed-rig geometry not supported by sufficient subpixel matches"
+      },
+      "dense_diagnostics": [
+        {
+          "profile": "strict",
+          "status": "diagnostic_only_geometry_gate_failed",
+          "config": {
+            "family": "NC",
+            "preprocessing": "none",
+            "interpretation": "literal",
+            "min_disparity": 0,
+            "num_disparities": 512,
+            "pad_search": true,
+            "raw_quality_mask": false,
+            "block_size": 5,
+            "uniqueness_ratio": 15,
+            "speckle_window_size": 100,
+            "speckle_range": 2,
+            "lr_threshold_px": 1.0,
+            "min_valid_disparity_px": 16.0,
+            "dark_threshold": 5,
+            "saturated_threshold": 250,
+            "texture_std_threshold": 2.0,
+            "texture_window": 7,
+            "mesh_stride": 3,
+            "mesh_max_relative_depth_jump": 0.02,
+            "mesh_max_edge_baselines": 0.25,
+            "clahe_clip_limit": 2.0,
+            "clahe_grid": 8,
+            "random_seed": 42,
+            "source_kind": "image_generated_synthetic"
+          },
+          "valid_pixels": 6417,
+          "whole_image_valid_fraction": 0.006119728088378906,
+          "pass_fractions": {
+            "inside_rectification": 0.9016485214233398,
+            "disparity_range": 0.09225082397460938,
+            "left_right_consistent": 0.051751136779785156,
+            "illuminated": 0.9043827056884766,
+            "textured": 0.624476432800293
+          },
+          "left_right_error_px": {
+            "count": 6417,
+            "median": 0.1328125,
+            "p90": 0.625,
+            "p95": 0.765625
+          },
+          "disparity_px": {
+            "count": 6417,
+            "median": 152.9375,
+            "p90": 483.25,
+            "p95": 489.3125
+          },
+          "vertices": 711,
+          "triangles": 343,
+          "unit_baseline": 1,
+          "physical_scale_available": false,
+          "raw_sensor_data_available": false,
+          "raw_quality_mask_applied": false,
+          "note": "Valid mask means numerical matching/filter acceptance only; cannot override failed scene geometry"
+        },
+        {
+          "profile": "relaxed",
+          "status": "diagnostic_only_geometry_gate_failed",
+          "config": {
+            "family": "NC",
+            "preprocessing": "none",
+            "interpretation": "literal",
+            "min_disparity": 0,
+            "num_disparities": 512,
+            "pad_search": true,
+            "raw_quality_mask": false,
+            "block_size": 7,
+            "uniqueness_ratio": 5,
+            "speckle_window_size": 50,
+            "speckle_range": 2,
+            "lr_threshold_px": 2.0,
+            "min_valid_disparity_px": 16.0,
+            "dark_threshold": 5,
+            "saturated_threshold": 250,
+            "texture_std_threshold": 1.0,
+            "texture_window": 7,
+            "mesh_stride": 3,
+            "mesh_max_relative_depth_jump": 0.05,
+            "mesh_max_edge_baselines": 0.5,
+            "clahe_clip_limit": 2.0,
+            "clahe_grid": 8,
+            "random_seed": 42,
+            "source_kind": "image_generated_synthetic"
+          },
+          "valid_pixels": 41904,
+          "whole_image_valid_fraction": 0.0399627685546875,
+          "pass_fractions": {
+            "inside_rectification": 0.9017267227172852,
+            "disparity_range": 0.23080730438232422,
+            "left_right_consistent": 0.10722732543945312,
+            "illuminated": 0.9043464660644531,
+            "textured": 0.6280117034912109
+          },
+          "left_right_error_px": {
+            "count": 41904,
+            "median": 0.125,
+            "p90": 0.5546875,
+            "p95": 0.8125
+          },
+          "disparity_px": {
+            "count": 41904,
+            "median": 156.875,
+            "p90": 432.25,
+            "p95": 477.25
+          },
+          "vertices": 4645,
+          "triangles": 2381,
+          "unit_baseline": 1,
+          "physical_scale_available": false,
+          "raw_sensor_data_available": false,
+          "raw_quality_mask_applied": false,
+          "note": "Valid mask means numerical matching/filter acceptance only; cannot override failed scene geometry"
+        }
+      ],
+      "source_unchanged": true
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "opencv": "5.0.0",
+    "numpy": "2.3.5"
+  },
+  "calibration_matches_package": true,
+  "physical_scale_for_generated_images_verified": false
+}

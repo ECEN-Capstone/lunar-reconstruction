@@ -1,0 +1,25 @@
+{
+  "pair_count": 56,
+  "interval_seconds": [
+    29.9602,
+    40.5689,
+    43.2644
+  ],
+  "obs003_radiometry": [
+    {
+      "side": "left",
+      "floor_MAE": 6.884929656982422,
+      "round_MAE": 7.384902000427246,
+      "floor_exact_fraction": 2.86102294921875e-06,
+      "round_exact_fraction": 1.9073486328125e-06
+    },
+    {
+      "side": "right",
+      "floor_MAE": 7.027318000793457,
+      "round_MAE": 7.526874542236328,
+      "floor_exact_fraction": 2.86102294921875e-06,
+      "round_exact_fraction": 1.9073486328125e-06
+    }
+  ],
+  "obs003_sample_label_md5_verified": "981e24e50057fc4c1b5cc06196fe5550"
+}

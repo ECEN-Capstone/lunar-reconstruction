@@ -1,0 +1,13 @@
+{
+  "observation": "obs_019",
+  "input_points": 222166,
+  "valid_points": 187766,
+  "valid_fraction": 0.17906761169433594,
+  "mesh_vertices": 20905,
+  "mesh_faces": 19105,
+  "depth_percentiles_calibration_units": [
+    986.1726684570312,
+    3648.9052734375,
+    9290.9619140625
+  ]
+}

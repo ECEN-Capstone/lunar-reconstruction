@@ -1,0 +1,99 @@
+{
+  "geometry_gate": {
+    "minimum_matches": 16,
+    "median_row_error_px": 30,
+    "p90_row_error_px": 60
+  },
+  "note": "Exploratory only. Coordinates use arbitrary baseline=1. Production defaults are not changed.",
+  "profiles": [
+    {
+      "name": "more_relaxed",
+      "block_size": 9,
+      "uniqueness_ratio": 2,
+      "internal_lr_px": 4,
+      "external_lr_px": 4,
+      "min_disparity_px": 8,
+      "texture_std": 0.5,
+      "light_min": 1,
+      "relative_depth_jump": 0.1,
+      "edge_baselines": 1.0
+    },
+    {
+      "name": "uber_relaxed",
+      "block_size": 11,
+      "uniqueness_ratio": 0,
+      "internal_lr_px": 16,
+      "external_lr_px": 16,
+      "min_disparity_px": 4,
+      "texture_std": 0.0,
+      "light_min": 0,
+      "relative_depth_jump": 0.5,
+      "edge_baselines": 10.0
+    },
+    {
+      "name": "uber_relaxed_no_checks",
+      "block_size": 11,
+      "uniqueness_ratio": 0,
+      "internal_lr_px": 512,
+      "external_lr_px": null,
+      "min_disparity_px": 1,
+      "texture_std": 0.0,
+      "light_min": -1,
+      "relative_depth_jump": 1000000000.0,
+      "edge_baselines": 1000000000.0
+    },
+    {
+      "name": "uber_relaxed_wide_window",
+      "block_size": 21,
+      "uniqueness_ratio": 0,
+      "internal_lr_px": 512,
+      "external_lr_px": null,
+      "min_disparity_px": 1,
+      "texture_std": 0.0,
+      "light_min": -1,
+      "relative_depth_jump": 1000000000.0,
+      "edge_baselines": 1000000000.0
+    },
+    {
+      "name": "uber_relaxed_row_adjusted",
+      "block_size": 11,
+      "uniqueness_ratio": 0,
+      "internal_lr_px": 16,
+      "external_lr_px": 16,
+      "min_disparity_px": 4,
+      "texture_std": 0.0,
+      "light_min": 0,
+      "relative_depth_jump": 0.5,
+      "edge_baselines": 10.0,
+      "row_adjustment": true
+    },
+    {
+      "name": "row_adjusted_tighter",
+      "block_size": 7,
+      "uniqueness_ratio": 5,
+      "internal_lr_px": 1,
+      "external_lr_px": 2,
+      "min_disparity_px": 4,
+      "texture_std": 1.0,
+      "light_min": 4,
+      "relative_depth_jump": 0.05,
+      "edge_baselines": 0.5,
+      "speckle_window": 50,
+      "row_adjustment": true
+    },
+    {
+      "name": "row_adjusted_strict_matching",
+      "block_size": 5,
+      "uniqueness_ratio": 15,
+      "internal_lr_px": 1,
+      "external_lr_px": 1,
+      "min_disparity_px": 4,
+      "texture_std": 2.0,
+      "light_min": 4,
+      "relative_depth_jump": 0.02,
+      "edge_baselines": 0.25,
+      "speckle_window": 100,
+      "row_adjustment": true
+    }
+  ]
+}

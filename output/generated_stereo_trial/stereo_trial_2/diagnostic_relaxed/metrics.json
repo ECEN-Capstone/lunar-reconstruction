@@ -1,0 +1,58 @@
+{
+  "profile": "relaxed",
+  "status": "diagnostic_only_geometry_gate_failed",
+  "config": {
+    "family": "NC",
+    "preprocessing": "none",
+    "interpretation": "literal",
+    "min_disparity": 0,
+    "num_disparities": 512,
+    "pad_search": true,
+    "raw_quality_mask": false,
+    "block_size": 7,
+    "uniqueness_ratio": 5,
+    "speckle_window_size": 50,
+    "speckle_range": 2,
+    "lr_threshold_px": 2.0,
+    "min_valid_disparity_px": 16.0,
+    "dark_threshold": 5,
+    "saturated_threshold": 250,
+    "texture_std_threshold": 1.0,
+    "texture_window": 7,
+    "mesh_stride": 3,
+    "mesh_max_relative_depth_jump": 0.05,
+    "mesh_max_edge_baselines": 0.5,
+    "clahe_clip_limit": 2.0,
+    "clahe_grid": 8,
+    "random_seed": 42,
+    "source_kind": "image_generated_synthetic"
+  },
+  "valid_pixels": 41904,
+  "whole_image_valid_fraction": 0.0399627685546875,
+  "pass_fractions": {
+    "inside_rectification": 0.9017267227172852,
+    "disparity_range": 0.23080730438232422,
+    "left_right_consistent": 0.10722732543945312,
+    "illuminated": 0.9043464660644531,
+    "textured": 0.6280117034912109
+  },
+  "left_right_error_px": {
+    "count": 41904,
+    "median": 0.125,
+    "p90": 0.5546875,
+    "p95": 0.8125
+  },
+  "disparity_px": {
+    "count": 41904,
+    "median": 156.875,
+    "p90": 432.25,
+    "p95": 477.25
+  },
+  "vertices": 4645,
+  "triangles": 2381,
+  "unit_baseline": 1,
+  "physical_scale_available": false,
+  "raw_sensor_data_available": false,
+  "raw_quality_mask_applied": false,
+  "note": "Valid mask means numerical matching/filter acceptance only; cannot override failed scene geometry"
+}

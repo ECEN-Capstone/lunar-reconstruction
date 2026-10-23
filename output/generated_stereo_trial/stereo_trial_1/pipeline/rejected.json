@@ -1,0 +1,6 @@
+{
+  "observation": "stereo_trial_1",
+  "status": "rejected",
+  "matches": 1313,
+  "reason": "Fixed-rig geometry not supported by sufficient subpixel matches"
+}

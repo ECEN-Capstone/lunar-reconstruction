@@ -1,0 +1,2736 @@
+PAGE 1
+NavCam PDS4 Data Products and Archive Software Interface Specification  
+ 
+Chandrayaan-3 
+Navigational Camera (NavCam) 
+PDS4 Data Products  
+and  
+Archive Software Interface Specification 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Planetary and Space Science Data Processing Division 
+Planetary and Meteorology Data Processing Group 
+Signal & Image Processing Area 
+Space Applications Centre, ISRO 
+Ahmedabad – 380 015 
+ 
+ 
+
+PAGE 2
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 2 of 61 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+This page is intentionally left blank 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PAGE 3
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 3 of 61 
+   
+  
+
+PAGE 4
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 4 of 61 
+   
+Chandrayaan-3 
+Rover Navigational Camera (NavCam) 
+PDS4 Data Archive  
+Software Interface Specifications  
+ 
+Document Change History 
+*A: Addition; M: Modification; D: Deletion 
+ 
+Version No. Date Section No. A/M/D * Description of change 
+V 1.0  December, 
+2023 
+All A First Release Version  
+ 
+V 2.0 July 3, 2024 1.5 A Added reference for CAHV 
+algorithm 
+  1.6 A Added CAHV acronym under 
+table 1 
+  3.2 A Added new section on the 
+exposure settings for 
+NavCam payload 
+  6.4.2 A Added CAHV information 
+under the section and added 
+CAHV files under table 17 
+calibration contents products 
+  Appendix-H: 
+CAHV Camera 
+Model 
+A Added details about the 
+CAHV models 
+  Appendix-I: Rover 
+Mobility Summary 
+A Added the table shows the 
+Rover movement as per the 
+commands sequence 
+operated by mission team 
+  Appendix-J: Rover 
+NavCam Exposure 
+Settings 
+A Added the table shows 
+product wise exposure 
+settings configured during 
+the whole mission. 
+  Appendix-K: Rover 
+NavCam Gain 
+Settings 
+A Added the table shows 
+product wise gain settings 
+configured during the whole 
+mission. 
+ 
+ 
+ 
+ 
+ 
+  
+PAGE 5
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 5 of 61 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Acknowledgements 
+ 
+ 
+Authors express their sincere gratitude to Shri. Nilesh M Desai, Director, 
+Space Applications Centre for providing the opportunity to carry out for 
+development of Chandrayaan-3 Rover Navigational Camera (NavCam) 
+Data Products Software Interface Specifications & Archive. Special thanks 
+to Shri. Debajyoti Dhar, Deputy Director, SIPA and for his constant 
+motivation and guidance. Thanks are also due to Dr. Nitant Dube, Group 
+Director, PMPG for his guidance and support during this work. Last but not 
+the least we would like to extend our thanks to PDS4 working group 
+members and All the PI’s of Chandrayaan-3 for their support. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PAGE 6
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 6 of 61 
+   
+ 
+ 
+ 
+Technical Content Approvals 
+ 
+  Name & Function 
+ Reviewed & 
+Approved by 
+Amitabh 
+DPD (DP) 
+Chandrayaan-3 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+PAGE 7
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 7 of 61 
+   
+Content 
+Document Change History ............................................................................................. 4 
+Acknowledgements ........................................................................................................ 5 
+Technical Content Approvals .......................................................................................... 6 
+Content........................................................................................................................... 7 
+1. Introduction ......................................................................................................... 10 
+1.1 Purpose.......................................................................................................... 10 
+1.2 Scope ............................................................................................................. 10 
+1.3 Data Products and Archive SIS Content Overview ........................................ 10 
+1.4 Audience ........................................................................................................ 10 
+1.5 Applicable Documents .................................................................................. 11 
+1.6 Abbreviations Acronyms, and Description .................................................... 13 
+1.7 Glossary ......................................................................................................... 14 
+2. Mission Overview ................................................................................................. 16 
+2.1 Mission Objective .......................................................................................... 16 
+2.2 Payload Objective .......................................................................................... 17 
+3. Instrument Overview ........................................................................................... 18 
+3.1 Specifications ............................................................................................. 18 
+3.2 Exposure Settings....................................................................................... 19 
+4. Data Overview ...................................................................................................... 20 
+4.1 Data Processing Levels .................................................................................. 20 
+4.2 Data Products ................................................................................................ 21 
+4.2.1 Raw Data Products ................................................................................. 21 
+4.2.2 Calibrated Data Products ....................................................................... 23 
+4.3 Data Products Bundle .................................................................................... 24 
+4.4 Data Flow ....................................................................................................... 24 
+5. Archive Generation .............................................................................................. 25 
+5.1 Data Processing and Production Software .................................................... 25 
+5.2 Data Validation .............................................................................................. 25 
+5.3 Data Transfer Methods and Delivery Schedule ............................................. 25 
+5.4 Data Product and Archive Volume Size Estimates ......................................... 26 
+5.5 Backups and duplicates ................................................................................. 26 
+6. Archive Organization and File Naming Conventions ............................................ 27 
+6.1 Namespace Registration ................................................................................ 27 
+6.2 Logical Identifiers .......................................................................................... 27 
+PAGE 8
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 8 of 61 
+   
+6.3 Mission Archive Structure at Bundle Level.................................................... 28 
+6.4 Instruments Collection .................................................................................. 29 
+6.4.1 Root directory content ........................................................................... 30 
+6.4.2 Calibration directory content ................................................................. 30 
+6.4.3 Context directory content ...................................................................... 31 
+6.4.4 Document directory content .................................................................. 32 
+6.4.5 Data directory content ........................................................................... 32 
+6.4.6 Xml_schema directory content .............................................................. 33 
+6.5 File Naming Conventions & Formats ............................................................. 34 
+7. Archive Products formats ..................................................................................... 36 
+7.1 Data File Formats ........................................................................................... 36 
+7.2 Document Product File Formats.................................................................... 36 
+7.3 PDS Labels ..................................................................................................... 36 
+7.3.1 XML Documents ..................................................................................... 36 
+7.4 Delivery Package ............................................................................................ 37 
+Appendix A Support staff and cognizant Persons ........................................................ 38 
+Appendix B Sample Bundle Product Label ................................................................... 39 
+Appendix C Sample Collection Product Label .............................................................. 41 
+Appendix D Sample Data Product Labels ..................................................................... 44 
+Appendix E Local Data Dictionary ................................................................................ 47 
+Appendix F Data Disclaimer ......................................................................................... 49 
+Appendix-G: Raw to Calibrated Data Conversion ........................................................ 50 
+Appendix-H: CAHV Camera Model ............................................................................... 51 
+Appendix-I: Rover Mobility Summary .......................................................................... 52 
+Appendix-J: Rover NavCam Exposure Settings ............................................................ 55 
+Appendix-K: Rover NavCam Gain Settings ................................................................... 59 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+PAGE 9
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 9 of 61 
+   
+ 
+ 
+ 
+List of Figures 
+ 
+Figure 1 Mission Profile ................................................................................................ 17 
+Figure 2 NavCam Left and Right on Rover ................................................................... 18 
+Figure 3 NavCam Raw Data Archive ............................................................................. 22 
+Figure 4 NavCam Calibrated Data Archive ................................................................... 23 
+Figure 5 Chandrayaan-3 Mission Level Archive Organization ...................................... 29 
+Figure 6 Chandrayaan-3 nav Instrument wise collection structure ............................. 29 
+ 
+List of Tables 
+ 
+Table 1 Acronym, Abbreviations and Description ........................................................ 13 
+Table 2 PDS4 Glossary .................................................................................................. 14 
+Table 3 Specification of NavCam .................................................................................. 18 
+Table 4 Chandrayaan-3 NavCam Archive Schema and Schematron ............................ 20 
+Table 5 Chandrayaan-3 NavCam Data Processing Levels ............................................. 20 
+Table 6 Chandrayaan-3 NavCam Data Products Definitions ........................................ 21 
+Table 7 NavCam Raw Data Products ............................................................................ 22 
+Table 8 NavCam Calibrated Data Products .................................................................. 23 
+Table 9 NavCam Data Products Bundles ...................................................................... 24 
+Table 10 Data Release Schedule Plan ........................................................................... 26 
+Table 11 ISDA Namespace for PDS4 ............................................................................. 27 
+Table 12 LID for Chandrayaan-3 mission ...................................................................... 27 
+Table 13 LID for Chandrayaan-3 mission instruments ................................................. 28 
+Table 14 Mission Attributes defined at structure level ................................................ 28 
+Table 15 Collection product types ............................................................................... 30 
+Table 16 Root directory content products ................................................................... 30 
+Table 17 Calibration directory content products ......................................................... 31 
+Table 18 Context directory content products .............................................................. 32 
+Table 19 Document directory content products .......................................................... 32 
+Table 20 Xml_schema directory content products ...................................................... 33 
+Table 21 File Naming Conventions ............................................................................... 34 
+Table 22 PDS4 File Names and Data Formats .............................................................. 35 
+Table 23 NavCam PDS4 Data Products ......................................................................... 36 
+Table 24 Chandrayaan-3 Team staff ............................................................................. 38 
+Table 25 ISDA Local Data Dictionary Class and Attributes List ..................................... 47 
+ 
+ 
+  
+PAGE 10
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 10 of 61 
+   
+1. Introduction 
+1.1 Purpose 
+ 
+The Data Products and Archive software interface specifications describes the data 
+products, format and content of the Navigational Camera (NavCam) Planetary Data 
+System (PDS) data archive  bundles in which data products  with associated meta 
+data, documentation, and supporting materials are stored.  This document is 
+intended to provide enough information to enable users to read and understand 
+the NavCam data products stored in PDS. 
+1.2 Scope 
+ 
+The specifications in this document apply to all NavCam data products submitted 
+for archival to the ISRO Science Data Archive (ISDA), for all the mission phases of 
+the Chandrayaan-3. 
+1.3  Data Products and Archive SIS Content Overview 
+ 
+Section 2 of this document describes the Mission overview  while Section 3 
+provides the characteristics of the Navigational Camera (NavCam). Section 4 gives 
+an overview of data organization and data flow  while Section 5 describes data 
+archive generation, delivery, and validation. Section 6  describes the archive 
+structure and arch ive production responsibilities. Section 7 describes the file 
+formats used in the archive, including the data product record structures. 
+Individuals involved with generating the archive volumes are listed in Appendix-A 
+While Appendix-B contains sample bundle label, Appendix-C, contains sample 
+calibration collection label  Appendix-D contains sample data product label , and 
+Appendix-E contain visualization of PDS4 data products. 
+1.4  Audience 
+ 
+This document serves both as a SIS and Interface Control Document (ICD). It 
+describes both the archiving procedure and responsibilities, and data archive 
+conventions and format. It is designed to be used both by the instrument data 
+processing team in generating the archive, and by those wishing to unders tand 
+the format and content of the NavCam PDS data product archive collection. 
+Typically, these individuals would include scientists, data analysts, and software 
+engineers. 
+ 
+PAGE 11
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 11 of 61 
+   
+1.5  Applicable Documents 
+ 
+[1] Chandrayaan-3 SAC DP Design Review Document for  Data Products Generation 
+System and Archival (Chandrayaan-3/DP/SAC/SIPG/HRDPD/TR-05/Sep. 2022) 
+ 
+[2] Chandrayaan-3 SAC DPGS and Archival ICD for MOX/ISSDC (Chandrayaan-
+3/DP/SAC/SIPG/HRDPD/TR-04/Apr 2023) 
+ 
+[3] Handbook of Sensors (Navigational Camera) Chandrayaan-3, (LEOS -SSA-VSID-
+CHN3-DOC23-02-00 Issue 0 and Version 1) 
+ 
+[4] Radiometric Characterization of Chandrayaan -3 Rover Navigational Camera 
+(NavCam), (Chandrayaan-3/DP/SAC/SIPG/HRDPD/TR-06/Aug 2021) 
+ 
+[5] Chandrayaan-3 Science Data Management and Archive Plan. Chandrayaan -
+3/HRDPD/SIPA/SAC/TR-16/September 2023 
+ 
+[6] PDS4 Concepts Data Design Working Group October 1, 2018 version 1.11.0 
+ 
+[7] Planetary Data System Standards Reference Version 1.11.0  October 1, 2018, Jet 
+Propulsion Laboratory 
+ 
+[8] The PDS4 Data Provider’s Handbook Guide to Archiving Planetary Data Using the 
+PDS4 Standard Version 1.11.0 October 1, 2018 
+ 
+[9] PDS4 Data Dictionary Abridged – Version 1.11.0.0 
+ 
+[10] List of Supplemental Formats (Approved by PDS Management Council: 2017 -08-
+30)  
+ 
+[11] Algorithm for Using CAHV to Determine SGI Graphics Viewpoint and Perspective, 
+B. Bon, JPL IOM 3472-91-057, August 6, 1991. 
+ 
+ 
+ 
+ 
+ 
+ 
+PAGE 12
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 12 of 61 
+   
+ 
+  
+PAGE 13
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 13 of 61 
+   
+1.6  Abbreviations Acronyms, and Description 
+Following Table 1 brings out the list of definitions, acronyms & abbreviations used in 
+this document. 
+Table 1 Acronym, Abbreviations and Description 
+ 
+Acronym Abbreviations/Description 
+PDS Planetary Data System 
+ISRO Indian Space Research Organization 
+ISTRAC ISRO Telemetry Tracking and Command Network 
+ISSDC Indian Space Data Centre 
+ISDA ISRO Science Data archive 
+SAC Space Applications Centre 
+URSC U.R. Rao Satellite Centre 
+LEOS Laboratory for Electro Optics System 
+DP Data Processing 
+NavCam Navigational Camera 
+ICD Interface Control Document 
+DPD Deputy Project Director 
+CAHV Center, Axis, Horizontal, Vertical (camera model) 
+Archive Team Collection of teams from science (PI), Payload, Data Processing 
+and ISSDC Operations 
+ 
+  
+PAGE 14
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 14 of 61 
+   
+1.7  Glossary 
+Table 2 shows glossary of terms used in PDS4 domain. 
+Table 2 PDS4 Glossary 
+Terms Definition 
+Archive A place in which public records or historical documents are 
+preserved; also the material preserved – often used in plural. The 
+term may be capitalized when referring to all of PDS holdings – the 
+PDS Archive. 
+Basic Product The simplest product in PDS4; one or more data objects (and their 
+description objects), which constitute (typically) a single 
+observation, document, etc. The only PDS4 products that are not 
+basic products are collection and bundle products 
+Bundle Product A list of related collections. For example, a bundle could list a 
+collection of raw data obtained by an instrument during its mission 
+lifetime, a collection of the calibration products associated with the 
+instrument, and a collection of all documentation relevant to the 
+first two collections. 
+Class The set of attributes (including a name and identifier) which 
+describes an item defined in the PDS Information Model. A class is 
+generic – a template from which individual items may be 
+constructed. 
+Collection Product A list of closely related basic products of a single type (e.g. 
+observational data, browse, documents, etc.). A collection is itself 
+a product (because it is simply a list, with its label), but it is not a 
+basic product. 
+Data Object A generic term for an object that is described by a description 
+object. Data objects include both digital and non-digital objects. 
+Description Object An object that describes another object. As appropriate, it will 
+have structural and descriptive components. In PDS4 a ‘description 
+object’ is a digital object – a string of bits with a predefined 
+structure. 
+Digital Object An object which consists of real electronically stored (digital) data. 
+Identifier A unique character string by which a product, object, or other entity 
+may be identified and located. Identifiers can be global, in which 
+case they are unique across all of PDS (and its federation partners). 
+A local identifier must be unique within a label. 
+Label The aggregation of one or more description objects such that the 
+aggregation describes a single PDS product. In the PDS4 
+implementation, labels are constructed using XML. <say what it 
+contains> 
+PAGE 15
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 15 of 61 
+   
+Logical Identifier (LID) An identifier which identifies the set of all versions of a product. 
+Versioned Logical 
+Identifier (LIDVID) 
+The concatenation of a logical identifier with a version identifier, 
+providing a unique identifier for each version of product. 
+Manifest A list of contents. 
+Metadata Data about data – for example, a ‘description object’ contains 
+information (metadata) about an ‘object.’ 
+Non-Digital Object An object which does not consist of digital data. Non-digital objects 
+include both physical objects like instruments, spacecraft, and 
+planets, and non -physical objects like missions, and institutions. 
+Non-digital objects are labeled in PDS in order to define a unique 
+identifier (LID) by which they may be referenced across the system. 
+Object A single instance of a class defined in the PDS Information Model. 
+PDS Information Model The set of rules governing the structure and content of PDS 
+metadata. While the Information Model (IM) has been 
+implemented in X ML for PDS4, the model itself is implementation 
+independent. 
+Product One or more tagged objects (digital, non -digital, or both) grouped 
+together and having a single PDS -unique identifier. In the PDS4 
+implementation, the descriptions are combined into a si ngle XML 
+label. Although it may be possible to locate individual objects within 
+PDS (and to find specific bit strings within digital objects), PDS4 
+defines ‘products’ to be the smallest granular unit of addressable 
+data within its complete holdings. 
+Tagged Object An entity categorized by the PDS Information Model, and 
+described by a PDS label. 
+Registry A data base that provides services for sharing content and 
+metadata. 
+Repository A place, room, or container where something is deposited or 
+stored (often for safety). 
+XML eXtensible Markup Language. 
+XML schema The definition of an XML document, specifying required and 
+optional XML elements, their order, and parent-child relationships. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PAGE 16
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 16 of 61 
+   
+2. Mission Overview 
+ 
+Chandrayaan-3 is the third spacecraft in its series of Lunar exploration. It carries 
+Propulsion Module (PM), Lander Module (LM) and Rover. Chandrayaan -3 composite 
+module mass of 3900 kg, got injected into the Earth Parking Orbit (EPO) of 170 x 36505 
+(nominal) dispersion ±500 km with command cut -off. In EPO, several Earth -Bound 
+Maneuvers (EBN) were performed to increase the apogee of the orbit and the 
+combined stack is injected into the Lunar Transfer Trajectory (LTT).  
+ 
+The Propulsion Module carried  the combined stack to moon through a Lunar Orbit 
+Insertion (LOI) maneuver. It is shown pictorially in Figure1. Subsequently, the 
+combined stack was lowered into a lunar orbit of 125 km x 160km with Lunar Burns 
+(LBNs). 
+ 
+The Chandrayaan-3 mission carried PM & LM as composite until reaching Moon Bound 
+Orbit of 125 km x 160km. Further, Propulsion Module and Lander module got 
+separated as two independent satellites at pre -defined time and remain ed in same 
+orbit for about one day. Further a de -boost maneuver was performed on lander to 
+attain a orbit o f 100 km x 30 km. Lander remained  in this orbit for ~6 days to verify 
+and validate the performance of all sub-systems followed by powered descent.  
+ 
+The total maneuver strategy was designed such that the orbit plane contains  the 
+desired landing site at powered descent start. At Perilune point, the powered descent 
+got initiated through an Autonomous Landing Sequencer (ALS) and achieved a soft 
+landing on the specified landing site located near lunar southern polar region. The 
+mission profile is shown in Figure-1.  
+ 
+2.1 Mission Objective 
+ 
+ Expanding the technologies inherited fro m Chandrayaan -2 spacecraft and 
+Develop and Demonstrate’ newer technologies that will be useful for future 
+planetary missions. 
+ 
+ To design, realize and deploy Lander capable of soft landing on a specified lunar 
+site and deploy a Rover to carry out in-situ analysis of chemicals. 
+ 
+ 
+PAGE 17
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 17 of 61 
+   
+ 
+2.2  Payload Objective 
+ 
+The Indian Rover landed on Moon through Chandrayaan-3 was a simple system to have 
+the basic mobility and scientific operations on the lunar soil. The mobility of the Rover 
+was planned to be semi -autonomous. A pair of Navigation Sensors was required to 
+provide the imagery of the terrain ahead and a ground based image analysis and path 
+planning system used these images to construct a three dimensional digital elevation 
+model of the surface  features imaged. The useful stereo based DEM generation and 
+photogrammetric depth  measurement demands that the field of views of both 
+Navigation Sensors must overlap on each  other for more than 60%. Hence the 
+Navigation Sensors are to be oriented on the Rover deck in such a way that the above 
+requirements are met. NAV Sensor has to detect 20mm object from 5-meter distance 
+and power requirement should be less than 2 watts. 
+Figure 1 Mission Profile 
+
+PAGE 18
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 18 of 61 
+   
+3. Instrument Overview 
+ 
+A pair of Rad Hard Stereo Vision Navigation Sensors was proposed for Vision based 
+navigation and path planning for the Indian Lunar Rover on board Chandrayaan -3. 
+These Navigation Sensors proposed to be mounted at the front face of the Rover, give 
+information of obstacles like boulders/ craters/ pits on the pat h ahead. By analyzing 
+the scene captured by these Navigation Sensors, the trajectory of the Rover was 
+planned and executed. The figure shows the mounting location of Left and Right 
+NavCam on the rover. 
+3.1  Specifications 
+ 
+The NavCam Payload specifications are tabulated in the table given below. 
+Table 3 Specification of NavCam 
+PARAMETER VALUE 
+Detector STAR 1000 APS (Monochrome)     
+No: of pixels 1024x1024      
+Pixel dimension 15 µm x 15 µm 
+Spectrum Visible 
+Power < 0.9 watt      
+Figure 2 NavCam Left and Right on Rover 
+PAGE 19
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 19 of 61 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3.2  Exposure Settings 
+ 
+The NavCam datasets were acquired by level-0 during the RPP operations at MOX. For 
+every mobility data sets were acquired with gain 2 and three exposure settings. Three 
+exposure settings were set in terms of integration lines:  
+ 
+ To avoid the getting dark image or oversaturated images.  
+ Due to terrain difference and presence of obstacle, local surface normal will be 
+different which will make integration time setting as terrain specific.  
+Based on the sun illumination condition and NavCam viewing angle, the corresponding 
+gain and exposure settings were selected and data was processed. The NavCams (left 
+and right camera)  were operated with gain as 2. During the initial days different 
+exposure settings were attempted and later go t finalized.  The finalized expo sure 
+setting for the left image were the nominal integration line = 25 (25*0.35 = 8.75 msec) 
+and for the right image, the nominal int egration line = 27 (27*0.35 = 9.45 msec). 
+Integration time is expressed as integration line which is con figurable parameter got 
+set during payload data acquisition. To derived the integration time in  msec, 
+integration line needs to be multiplied with 0.35 factor. Further more details about the 
+gain and exposure settings done throughout the mission is tabulated under Appendix 
+J (Rover NavCam Exposure Settings) and Appendix K (Rover NavCam Gain Settings. 
+ 
+Frame Rate 3 fps     
+Data rate 24 Mbps     
+Interface Serial Digital (LVDS)  
+Image size on sensor 8.5 x 8.5 mm     
+Supply Voltage 5V ± 150mv      
+FOV 39º (H) x 39º (V)     
+Focal length 21 mm 
+Size of camera 55 x 50 x 75 mm(including lens projection)     
+Weight 180 gm including optics       
+Operating Temperature -25 º C  to +65 º C   
+Storage Temperature -60 º C  to +70 º C          
+ 
+PAGE 20
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 20 of 61 
+   
+4. Data Overview 
+ 
+This section provides a high level description of archive organization under the PDS4 
+Information Model (IM) as well as the flow of the data from the spacecraft through 
+delivery to PDS. Unless specified elsew here in this document, the Chandrayaan -3 
+NavCam archive confirms with version 1.11.0.0 of the PDS4 IM [4] and version 1.11 of 
+the Chandrayaan-3 mission schema. A list of the XML Schema and Schematron 
+documents associated with this archive are provided in Table 4 below. 
+ 
+Table 4 Chandrayaan-3 NavCam Archive Schema and Schematron 
+XML Document Steward Product LID 
+PDS Master Schema, 
+v.1.0.0.0 
+ISDA urn:isro:isda:system_bundle:xml_sche
+ma:pds-xml_schema 
+ 
+ 
+4.1  Data Processing Levels 
+A number of different systems may be used to describe data processing level. This 
+document refers to data by their PDS4 reduction level . Three different types of data 
+products are envisaged for NavCam payload of Chandrayaan -3. Table 5 provides a 
+description of these levels along with the equivalent designations used in other 
+systems. 
+Table 5 Chandrayaan-3 NavCam Data Processing Levels 
+PDS4 Level PDS4 Level Description ISRO 
+Level 
+CODMAC 
+Level 
+Raw Original data from  an instrument. If 
+compression, reformatting, packetization, or 
+other translation has been applied to 
+facilitate data transmission or storage, those 
+processes will be reversed so that the 
+archived data are in a PDS approved archive 
+format. 
+0 2 
+Calibrated Data converted to physical units, which 
+makes values independent of the 
+instrument. 
+1 3 
+ 
+  
+PAGE 21
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 21 of 61 
+   
+4.2  Data Products 
+ 
+A PDS product consists of one or more digital and/or non -digital objects, and an 
+accompanying PDS label file. Labeled digital objects are data products (i.e. 
+electronically stored files). Labeled non -digital objects are physical and conceptual 
+entities which have been described by a PDS label. PDS labels provide identification 
+and description information for labeled objects. The PDS label defines a Logical 
+Identifier (LID) by which any PDS labeled product is referenced throughout the system. 
+In PDS4 labels are XML formatted ASCII files. More information on the formatting of 
+PDS labels is provided in Section 6.3. More information on the usage of LIDs and the 
+formation of Chandrayaan-3 LIDs is provided in Section 6 .1. The PDS4 Data Products 
+for NavCam defined based on the defi ned data processing levels (L0 and L1) as Raw  
+and Calibrated data products. Table 6 shows the data products definitions for each 
+levels of data processing. To visualize the data products please refer Annexure E. more 
+details shown in next sub sections. 
+Table 6 Chandrayaan-3 NavCam Data Products Definitions 
+Data Products Levels Level-0 Level-1 
+Data Products Definition Raw data without any data 
+processing correction  
+Radiometrcially corrected  
+image data 
+PDS4 Level Raw Calibrated 
+ 
+4.2.1 Raw Data Products 
+ 
+For each payload observation, PDS4 data products are generated (based on product id 
+& sensor id derived from file name (section 6.5)) and organized under year month day 
+wise collection directory defined under instrument collection structure shown in 
+section 6.4. Figure 4 shows structure of NavCam Raw Data Product file. 
+ 
+PAGE 22
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 22 of 61 
+   
+ 
+Figure 3 NavCam Raw Data Archive 
+Raw Data Products contains raw data without any correction. Table 7 shows the 
+details of individual data products (with the data formats). 
+Table 7 NavCam Raw Data Products 
+PDS4 Data 
+Product 
+Levels 
+PDS4 Data 
+Products 
+Data 
+Formats 
+Description Visualization tools 
+available 
+ 
+ 
+ 
+Raw 
+Data Raw 
+Image 
+PNG  The PDS Raw data 
+in png format 
+Any image viewer  
+can be used to load 
+the png file, so no 
+need to load label 
+file using PDS4 
+Viewer 
+Data Raw 
+Label 
+XML The PDS Label 
+Product contains 
+description about 
+the Raw Product. 
+PDS4 Viewer 
+ 
+  
+
+PAGE 23
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 23 of 61 
+   
+4.2.2 Calibrated Data Products 
+ 
+For each payload observation, PDS4 data products are generated (based on product id 
+derived from file name (section 6.5)), zipped and organized under year month day wise 
+collection directory defined under instrument collection structure shown in section 
+6.4. Figure 4 shows unzipped structure of NavCam Calibrated Data Product zip file at 
+user end.  
+ 
+Figure 4 NavCam Calibrated Data Archive 
+Calibrated Data Products contains radiometrically corrected data along with the 
+refined corner coordinates. Table 8 shows the details of  individual data products 
+(with the data formats) present inside the zip product. 
+ 
+Table 8 NavCam Calibrated Data Products 
+PDS4 
+Data 
+Product 
+Levels 
+PDS4 Data 
+Products Types 
+Data 
+Formats 
+Description Visualization tools 
+available 
+ 
+ 
+ 
+Calibrated 
+Data Calibrated 
+Image 
+PNG  The PDS Radiometrically 
+corrected data in png 
+format 
+Any image viewer  
+can be used to load 
+the png file, so no 
+need to load label file 
+using PDS4 Viewer 
+Data Calibrated 
+Label 
+XML The PDS Label Product 
+contains description 
+about the Calibrated 
+Product. 
+PDS4 Viewer 
+ 
+
+PAGE 24
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 24 of 61 
+   
+4.3 Data Products Bundle 
+ 
+The NavCam data archive is organized into two bundles at data level. A description of 
+each bundle is provided in Table 9. A more detailed description of the contents and 
+format of each bundle is provided in Section 6.2. 
+Table 9 NavCam Data Products Bundles 
+Bundle Logical 
+Identifier 
+PDS4 
+Reduction 
+Level 
+Description Data 
+Provider 
+urn:isro:isda:ch3_chr.
+nav.raw 
+Raw Original data from an instrument. If 
+compression, reformatting, packetization, or 
+other translation has been applied to facilitate 
+data transmission or storage, those processes 
+will be reversed so that the archived data are in 
+a PDS approved archive format 
+ISSDC 
+urn:isro:isda:ch3_chr.
+nav.calibrated 
+Calibrated Data converted to physical units, which makes 
+values independent of the instrument. 
+ISSDC 
+ 
+ 
+4.4  Data Flow 
+ 
+This section describes only those portions of the Chandrayaan-3 data flow from SAC 
+POC to ISSDC that are directly connected to archiving. The ISSDC will maintain a long 
+term archive of all Chandrayaan-3 science data, and be the sole long-term archive for 
+all public Chandrayaan-3 data. 
+  
+PAGE 25
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 25 of 61 
+   
+5. Archive Generation 
+ 
+The NavCam archive products are produced by the SAC DP team at SAC POC. The 
+archive volume creation process  will be described in this section . Archived data 
+established at ISSDC by transferring the LTA data sets from the SAC POC, are made 
+available to users electronically as soon as it qualifies as a science product but not 
+later than lock in period after the delivery and validation of the data. 
+5.1 Data Processing and Production Software 
+ 
+After receiving Level 0 data from the level-0 software at SAC POC via NKN, SAC DP 
+Software will take level-0 data as input and generate Level 0/1 raw and calibrated 
+science data products. The science data products that the SAC DP Software delivers 
+to the ISSDC will be stored by the ISSDC and will be made available to the PI team 
+or as per the ISRO data distribution policy. The SAC POC will deliver archival-quality 
+science data products to the ISDA for distribution to the public and long -term 
+archiving in accordance with the NavCam Data Products  & Archive SIS (t his 
+document).  
+5.2 Data Validation 
+ 
+There are two types of data validation. The first is validation of the science data 
+and the second one is validation of the compliance of the archive with PDS 
+archiving and distribution requirements. The first type of validation is carried  out 
+by the PI Team, and the second is overseen by the ISDA, in coordination with the 
+PI Team. The formal validation of data content, adequacy of documentation, and 
+adherence to PDS archiving and distribution requirements is scheduled and 
+coordinated by th e ISDA. This review include s peer review from the science 
+community, at the ISDA’s discretion. The review process may result in “liens,” which 
+are actions that are recommended by the reviewers or by PDS personnel to correct 
+the archive. All liens must be resolved by the data-set provider. Once the liens are 
+cleared, the ISDA completes a final validation before release. 
+5.3 Data Transfer Methods and Delivery Schedule 
+ 
+The Data Processing & Archival Software is running at SAC POC; products are 
+generated at SAC POC. Initially active archive is established data will be collected 
+as per mission operation plan . The products are available for the P I as initial 
+validation of data . Table 10 shows NavCam data release  schedule plan for 
+Chandrayaan-3 mission. 
+PAGE 26
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 26 of 61 
+   
+Table 10 Data Release Schedule Plan 
+Payload Release* Data 
+Collection 
+Period (from 
+date to date) 
+Lock-in-period 
+(as per SSPO 
+ISRO HQ)** 
+Date 
+Released to 
+Public*** 
+Products 
+ 
+NavCam 
+First  
+Version 
+24 Aug. 2023 
+to 02 Sept. 
+2023 
+6 month April 2024 Raw and 
+Calibrated 
+ 
+* Archive for the duration of Aug 2023 and Sept. 2023 will be released to the user. 
+** The lock in period duration will be required  for initial data verification and 
+validation and finally peer review process of the PDS data sets which will be going 
+to release. 
+** Release dates are dates that  the ISDA releases Chandrayaan -3 archives to the 
+public. Chandrayaan-3 delivers archives to the ISDA at least two weeks before the 
+date of release to the public. 
+5.4 Data Product and Archive Volume Size Estimates 
+The total Archive Volume Size is worked out based on the data size, no. of orbits 
+per day, mission life. 
+5.5 Backups and duplicates 
+The ISDA is responsible for maintaining at least three copies of its science archives 
+and for delivering one copy of the data to the ISSDC for archive. As archives are 
+released, ISSDC generate at least three copies on appropriate physical media for 
+long-term storage. 
+  
+PAGE 27
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 27 of 61 
+   
+6. Archive Organization and File Naming Conventions 
+6.1 Namespace Registration 
+PDS4 archive stand ard is adopted for Chandrayaan -3 mission. PDS4 is international 
+archive standard being adopted by various space agencies across globe. There is 
+International Planetary Data Alliance (IPDA), where all space agencies are members, 
+ISRO is also one of them. IPDA has adopted PDS4.  First step towards starting archive 
+activities for any space agency is to register namespace via IPDA. ISRO has submitted 
+namespace to IPDA. T he namespace will be used as root to the archive of ISRO’s 
+upcoming and future planetary missions. For Chandrayaan-3 mission following name 
+space will be used which is shown in the Table 11. 
+Table 11 ISDA Namespace for PDS4 
+Namespace 
+ID 
+Logical 
+Identifier 
+prefix 
+Authority Steward Steward_ID Provider/contact 
+Point 
+isda urn:isro:isda ISRO 
+Science 
+Data 
+Archive 
+ISRO isda Ajay Kumar Prashar 
+Amitabh 
+B.N. Ramakrishna 
+6.2 Logical Identifiers 
+Logical Identifier(LID) is unique to the product. Versioned Identifier (VID) indicates the 
+versions improvements with respect to the products. All LIDs consist of a series of 
+colon-separated segments. 
+ 
+Namespace:{BundleID}_{SubBundleID}:[{CollectionID}_PDS4DataProductLevel:[{Prod
+uctID}]]. Table 12 shows values for LID construction. 
+Table 12 LID for Chandrayaan-3 mission 
+Namespace Bundle 
+Id 
+Sub 
+Bundle 
+Id 
+Collection Id PDS4 Data 
+Product 
+Level 
+Product Id 
+urn:isro:isda ch3 
+ 
+chr nav 
+ 
+raw 
+calibrated 
+ 
+Address Data 
+Products SIS 
+document or EAICD 
+ 
+ 
+ 
+ 
+ 
+ 
+PAGE 28
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 28 of 61 
+   
+The following table 13 shows the construction of LID to be used for all the scie ntific 
+payloads of Chandrayaan-3 mission.  
+Table 13 LID for Chandrayaan-3 mission instruments 
+Instrument id Logical Identifier 
+nav urn:isro:isda:ch3_chr.nav:data_raw:productId 
+urn:isro:isda:ch3_chr.nav:data_calibrated:productId 
+ 
+Products, collections, and bundles may evolve over time as calibration or other 
+processing changes lead to improved versions. PDS appends a VID (version Identifiers) 
+of the form M.n to LID to indicate different versions. The suffix is separated from LID 
+by double colon Archive structure is designed both at mission phase level and 
+instrument level.  
+6.3 Mission Archive Structure at Bundle Level 
+At mission level, data is organized as mission id wise bundle. The mission id wise 
+bundle at next level is organized based on the instrument host id wise bundle. The 
+instrument host id bundle at next level is organized based on the mission phase id. 
+Each m ission phase id is having instrument id wise collection.  All these mission 
+attributes - mission id, instrument host id, mission phase id and instrument id are 
+defined under archive conventions. For NavCam instrument, table 14 shows values 
+defined for mission attributes in archive conventions. 
+Table 14 Mission Attributes defined at structure level 
+Mission Attributes Values Defined at structure level 
+mission id ch3 ch3 
+instrument host id chr chr 
+mission phase id nop nop  (normal operation phase) 
+instrument id nav  nav 
+ 
+All these attributes mentioned in above table are used in designing the archive 
+structure at mission level. The figure 5 shows the mission level data products archive 
+organization. 
+ 
+ 
+PAGE 29
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 29 of 61 
+   
+ 
+Figure 5 Chandrayaan-3 Mission Level Archive Organization 
+6.4 Instruments Collection 
+Under each instrument wise data collection, data is organized under each directory 
+defined by PDS4. Data is organized based on the levels of data processing and data 
+products definitions. Data products is organized into year, month and day wise as 
+yyyymmdd. The year month and day wise directory contains PDS4 data products 
+including PDS4 Label products . Figures 6 shows the detail of nav instrument wise 
+collection structure.  
+ 
+ 
+Figure 6 Chandrayaan-3 nav Instrument wise collection structure 
+ 
+isda_archive
+ch3
+chr
+context xml_schema nop
+nav
+nav
+data
+raw yyyymmdd Data 
+Product
+calibrated yyyymmdd Data 
+Product
+calibration
+document
+PAGE 30
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 30 of 61 
+   
+At instrument level, collection of different product types is defined as per standard 
+PDS4 conventions. Table 15 defined in detail about collection types. 
+Table 15 Collection product types 
+File or Directory Name Description 
+root Root directory describing full nav collection data sets 
+calibration Contains data and files necessary for the calibration of basic 
+products. 
+context Contains list of products comprising various objects, identified 
+with in the PDS4 registry, that are specific to the science 
+bundle. These include physical objects such as instruments, 
+spacecraft, and planets and con ceptual objects such as 
+missions. 
+document Contains all components (figure, tables, text, etc.) of one or 
+more related documents. The document include software 
+interface specifications (SISs), calibration reports. 
+data Contains observational products, often separated according to 
+processing level, target, instrument mode, etc.  
+xml_schema Contains XML schemas and related products which may be 
+used for generating and validating PDS4 labels. 
+6.4.1 Root directory content 
+Files i n the r oot directory include an overview of the archive, a description of the 
+collection for the PDS4 data set. The following files are contained in the Root Directory 
+shown in Table 16. 
+Table 16 Root directory content products 
+File Name File Contents  File Provided By 
+bundle.xml Collection content and format 
+information  
+Archive Team 
+readme.txt Collection content and format 
+information 
+Archive Team 
+6.4.2 Calibration directory content 
+The calibration directory contains calibration files used to process the data products, 
+or calibration data needed to use the data products. This calibration files are the look 
+up table files that got generated during ground calibration exercise. All these lookup 
+table fil es naming convention is based on the parameters - mission (ch3 ), 
+instrument_id ( nav), image (left/right), gain  (gain), offset (offset) and gain offset 
+(gain_offset). Apart from Look up table files, two more files got added as part of CAHV 
+PAGE 31
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 31 of 61 
+   
+camera model based on the file naming convention which is based on the parameters 
+- mission (ch3), instrument_id (nav), image (left/right), CAHV (cahv). For more details 
+on CAHV please refer Appendix J.  The following files are containe d in the calibration 
+directory shown in table 17. 
+Table 17 Calibration directory content products 
+File Name File Contents  File Provided By 
+collection_calibration_inventor
+y.csv 
+Contains about the list of calibration 
+data products in the collection 
+inventory 
+Archive Team 
+collection_calibration_inventor
+y.xml 
+XML Label defining the inventory csv 
+file 
+Archive Team 
+Calibration files (Look Up Table) Look up table files 
+(ch3_nav_left_offset.txt, 
+ch3_nav_right_offset.txt, 
+ch3_nav_left_gain.txt, 
+ch3_nav_right_gain.txt, 
+ch3_nav_left_gain_offset.txt, 
+ch3_nav_right_gain_offset.txt) 
+Archive Team 
+Calibration xml files (Look Up 
+Table) 
+XML label defining the look up table Archive Team 
+Calibration files (camera model 
+- CAHV) 
+Camera Model CAHV files 
+(ch3_nav_left_cahv.txt, 
+ch3_nav_right_cahv.txt) 
+Archive Team 
+Calibration xml files (camera 
+model - CAHV) 
+XML label defining the cahv files Archive Team 
+6.4.3 Context directory content 
+The context directory c ontains the list of products comprising various objects, 
+identified with in the PDS4 registry, that are specific to the science bundle. These 
+include physical objects such as instruments, spacecraft, and planets and conceptual 
+objects such as missions . The following files are contained in the context directory 
+shown in table 18. 
+ 
+ 
+ 
+ 
+PAGE 32
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 32 of 61 
+   
+Table 18 Context directory content products 
+File Name File Contents  File Provided By 
+collection_context_inventory.csv Contains about the list of 
+context data products in the 
+collection inventory 
+Archive Team 
+collection_context_inventory.xml XML Label defining the 
+inventory csv file 
+Archive Team 
+ 
+6.4.4 Document directory content 
+The document directory contains documentation to help the user understand and use 
+the archive data. The following files are contained in the document directory shown in 
+the table 19. 
+Table 19 Document directory content products 
+File Name File Contents  File Provided By 
+collection_document_inventory.xml Label to define the 
+inventory 
+Archive Team 
+collection_document_inventory.csv A description of the 
+contents of this 
+directory 
+Archive Team 
+ch3_nav_pds_dp_archive_sis.pdf Description of 
+instrument and PDS 
+data products and 
+Archive Structure 
+Archive Team 
+ch3_nav_pds_dp_archive_sis.xml XML label defining 
+nav pds sis pdf 
+Archive Team 
+6.4.5 Data directory content 
+Under the data directory there are three separate subdirectory based on the defined 
+PDS4 data products levels – raw and calibrated. Under each sub directories, there are 
+again sub directory based on year, month and day wise. The year, month and day wise 
+subdirectory contains PDS4 data products mainly image and associated label files in 
+XML format. All the browse binary images are named as per file naming co nventions 
+mentioned under section 6.5. 
+ 
+ 
+ 
+PAGE 33
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 33 of 61 
+   
+6.4.6 Xml_schema directory content 
+This directory  contains XML schemas and related products which may be used for 
+generating and validating PDS4 labels . The following files are contained in the 
+xml_schema directory shown in table 20. 
+Table 20 Xml_schema directory content products 
+File Name File Contents  File Provided By 
+collection 
+_xml_schema_inventory.csv 
+Contains about the list of xml 
+schema in the collection inventory 
+Archive Team 
+collection 
+_xml_schema_inventory.xml 
+XML Label defining the xml schema 
+csv file 
+Archive Team 
+ 
+  
+PAGE 34
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 34 of 61 
+   
+6.5 File Naming Conventions & Formats 
+This section describes the naming convention used for science data file s for the 
+Chandrayaan-3 mission. Table 22 shows the detail description about the following file 
+naming conventions designed for the data products. 
+ch3_<nav>_<mtc>_<YYYYMMDDTHHMMSSsss>_<p>_<prd>_<stn>_mob.fff 
+Table 21 File Naming Conventions 
+Code Description 
+ch3 It denotes the Mission name whose value is fixed as ch3 
+nav It denotes the Instrument id whose value is fixed as nav 
+m It denotes the mission phase name, it can have following 
+value 
+= e (refers to the Earth Bound Phase - ebp) 
+= n (refers to the Normal Operations Phase - nop) 
+t It denotes the data type; it can have following values: 
+= r (it denotes raw data) 
+= c (It denotes calibrated data) 
+= d (It denotes derived data) 
+c It denotes the imaging mode/camera id/band. It can be one of 
+the 
+following: 
+= l (it denotes left camera of NavCam) 
+= r (it denotes right camera of NavCam) 
+YYYYMMDDTHHMMSSssss It denotes the observation/imaging start time in format 
+[YYYYMMDDTHHMMSSsss] 
+YYYY = stand for year 
+MM = stand for month in MM format 
+DD = stand for day in DD format 
+T = stand for time. 
+HH = stand for hour in HH format 
+MM = stand for minute in MM format 
+SSS = stand for seconds in SS format 
+ssss = stand for nanosecond in ssss format 
+p It denotes the PDS Data Products categories. It value can be 
+any 
+of the following: 
+= d (It denotes data products under data directory) 
+= b (it denotes browse data products under browse directory) 
+= g (it denotes gridded data products under geometry 
+directory) 
+PAGE 35
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 35 of 61 
+   
+prd It denotes the PDS Data Product Name. It value can be any 
+of the following: 
+= img (It denotes the image data product) 
+= brw (It denotes the browse data product) 
+= grd (It denotes the gridded data product) 
+= dtm (it denotes DTM derived product) 
+= orh (it denotes Ortho derived product) 
+stn It denotes the station id from which data was acquired. It 
+value 
+can be any of the following: 
+= d32 (ISSDC Bangalore) 
+= d18 (ISSDC Bangalore) 
+= gds (Gold Stone USA) 
+= cnb (Canberra, Australia ) 
+mob 
+ 
+Rover mobility id given by the mission team 
+fff It denotes the standard file type extension. It can have any 
+one of 
+the following values: 
+= png (PDS Image Data File) 
+= xml (PDS Detached Label File) 
+= png (PDS Browse Data File) 
+= csv (PDS Geometry Data File) 
+= tif (PDS Geo tiff data) 
+ 
+Below table shows sample file naming, data formats for the instruments mentioned 
+in the above table.  
+Table 22 PDS4 File Names and Data Formats 
+Instrument File Name Data 
+Formats 
+NAV Left ch3_nav_ncl_20190628T1645300000_d_img_d32_001.png 
+ch3_nav_ncl_20190628T1645300000_d_img_d32_001.xml 
+PNG 
+XML 
+NAV Right ch3_nav_ncr_20190628T1645300000_d_img_d32_001.png 
+ch3_nav_ncr_20190628T1645300000_d_img_d32_001.xml 
+PNG 
+XML 
+ 
+ 
+ 
+ 
+PAGE 36
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 36 of 61 
+   
+7. Archive Products formats 
+ 
+Data that comprises the NavCam archives are formatted in accordance with PDS 
+specifications. This section provides details on the formats used for each of the 
+products included in the archive. The detailed file formats for the defined data 
+products based on PDS4 data types have been defined shown in next sub section. 
+7.1 Data File Formats 
+Nav instrument is an imaging payload. The primary data collected from instrument is 
+in image format. The primary data collected from instrument is raw image. It is a 
+panchromatic camera. Both primary as well as secondary data sets are defined that 
+contains data product levels, types and formats shown in the table 23. 
+Table 23 NavCam PDS4 Data Products 
+Sensors PDS4 Data 
+Product 
+Levels 
+PDS4 Data 
+Products 
+Types 
+Data 
+Formats 
+Data type* 
+Panchromatic Raw Image PNG  UnsignedByte  
+Calibrated Image PNG UnsignedByte 
+ 
+Note*:  
+ 
+Unsigned Byte is 8 bit
+  
+7.2 Document Product File Formats 
+All the files under document collection will be written in text format, csv, png, xml 
+and pdf 
+7.3 PDS Labels 
+PDS labels are ASCII text files written, in the eXtensible Markup Language (XML). All 
+product labels are detached from the digital files (if any) containing the data objects 
+they de scribe (except Product_Bundle) . There is one label for every product. Each 
+product, however, may contain one more data objects. The data objects of a given 
+product may all reside in a single file, or they may be stored in multiple separate files. 
+PDS4 label files must end with the file extension “.xml”. 
+7.3.1 XML Documents 
+For the C handrayaan-3 mission PDS labels will conform to the PDS master based 
+schema based upon the 1.11.0.0 version of the PDS Information Model for structure, 
+and the   1.11.0.0 version of the PDS schematron for content. By use of an XML editor 
+PAGE 37
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 37 of 61 
+   
+these documents may be used to validate the structure and content of the product 
+labels.   
+ 
+The PDS master sc hema and schematron documents are produced, managed, and 
+supplied to Chandrayaan-3 by the ISDA Archive Working Group. In addition to th ese 
+documents, the Chandrayaan-3 Archive Working Group has produced Chandrayaan-3 
+Archive conventions containing the additional XML attribute and parameter 
+definitions specific to Chandrayaan-3 mission. 
+ 
+Examples of PDS labels required for the NavCam archive are shown in Appendix B 
+(bundle products), Append ix C (collection products), Appendix D (basic products) , 
+Appendix E (Local Data Dictionary). 
+ 
+7.4 Delivery Package 
+Data transfers, from ISDA to the data users, are accomplished using delivery packages. 
+Delivery packages include the following required elements: 
+ The package which consists of a compressed bundle of the products being 
+transferred. 
+ A transfer manifest which maps each product’s LID/VID to the physical location of 
+the product label in the package after uncompressing. 
+ A checksum manifest which lists the MD5 checksum of each file included in the 
+package after uncompressing.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+PAGE 38
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 38 of 61 
+   
+ 
+Appendix A Support staff and cognizant Persons 
+ 
+Table 24 Chandrayaan-3 Team staff 
+ 
+Name Contact Person Contact Email Id 
+Indian Space 
+Science Data Center 
+IDSN Bylalu, 
+Bengaluru 
+ISSDC team +91-80-2202-9566/9567 issdc@istrac.gov.in 
+Space Applications 
+Centre (SAC), 
+Ahmedabad  
+Data 
+Processing (DP) 
+Team 
++91-79-26914727/63/64 
+ 
+amitabh@sac.isro.gov.in 
+ 
+  
+PAGE 39
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 39 of 61 
+   
+Appendix B Sample Bundle Product Label 
+<Product_Bundle xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 
+https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1700.xsd"> 
+  <Identification_Area> 
+    <logical_identifier>urn:isro:isda:ch3_chr</logical_identifier> 
+    <version_id>1.0</version_id> 
+    <title>Chandrayaan-3 Rover NavCam Data Archive Products Bundle</title> 
+    <information_model_version>1.11.0.0</information_model_version> 
+    <product_class>Product_Bundle</product_class> 
+    <Citation_Information> 
+      <author_list>isro,issdc,sac</author_list> 
+      <publication_year>2024</publication_year> 
+      <description>Chandrayaan-3 Rover NavCam Payload Data Products</description> 
+    </Citation_Information> 
+    <Modification_History> 
+      <Modification_Detail> 
+        <modification_date>2023-11-02</modification_date> 
+        <version_id>1.0</version_id> 
+        <description>Peer reviewed version of the Chandrayaan-3 Rover NavCam payload data 
+products bundle</description> 
+      </Modification_Detail> 
+    </Modification_History> 
+  </Identification_Area> 
+  <Context_Area> 
+    <Time_Coordinates> 
+      <start_date_time>2023-08-24Z</start_date_time> 
+      <stop_date_time>2023-09-02Z</stop_date_time> 
+    </Time_Coordinates> 
+    <Investigation_Area> 
+      <name>Chandrayaan-3</name> 
+      <type>Mission</type> 
+      <Internal_Reference> 
+        <lid_reference>urn:isro:isda:ch3_chr.nav:context:mission</lid_reference> 
+        <reference_type>bundle_to_investigation</reference_type> 
+      </Internal_Reference> 
+    </Investigation_Area> 
+    <Observing_System> 
+      <name>Chandrayaan-3</name> 
+      <Observing_System_Component> 
+        <name>Chandrayaan-3 Rover</name> 
+        <type>Spacecraft</type> 
+        <Internal_Reference>          
+<lid_reference>urn:isro:isda:ch3_chr.nav:context:inst_host_spacecraft</lid_reference> 
+          <reference_type>is_instrument_host</reference_type> 
+        </Internal_Reference> 
+      </Observing_System_Component> 
+      <Observing_System_Component> 
+        <name>orbiter high resolution camera</name> 
+        <type>Instrument</type> 
+PAGE 40
+NavCam PDS4 Data Products and Archive Software Interface Specifications        Page 40 of 61 
+   
+        <Internal_Reference> 
+          <lid_reference>urn:isro:isda:ch3_chr.nav:context:inst_nav</lid_reference> 
+          <reference_type>is_instrument</reference_type> 
+        </Internal_Reference> 
+      </Observing_System_Component> 
+    </Observing_System> 
+    <Target_Identification> 
+      <name>Moon</name> 
+      <type>Satellite</type> 
+      <Internal_Reference> 
+        <lid_reference>urn:isro:isda:context:target:satellite.moon</lid_reference> 
+        <reference_type>data_to_target</reference_type> 
+      </Internal_Reference> 
+    </Target_Identification> 
+  </Context_Area> 
+  <Bundle> 
+    <bundle_type>Archive</bundle_type> 
+  </Bundle> 
+  <Bundle_Member_Entry> 
+    <lid_reference>urn:isro:isda:ch3_chr.nav:calibration</lid_reference> 
+    <member_status>Primary</member_status> 
+    <reference_type>bundle_has_calibration_collection</reference_type> 
+  </Bundle_Member_Entry> 
+  <Bundle_Member_Entry> 
+    <lid_reference>urn:isro:isda:ch3_chr.nav:data</lid_reference> 
+    <member_status>Primary</member_status> 
+    <reference_type>bundle_has_data_collection</reference_type> 
+  </Bundle_Member_Entry> 
+  <Bundle_Member_Entry> 
+    <lid_reference>urn:isro:isda:ch3_chr.nav:document</lid_reference> 
+    <member_status>Primary</member_status> 
+    <reference_type>bundle_has_document_collection</reference_type> 
+  </Bundle_Member_Entry> 
+  <Bundle_Member_Entry> 
+    <lid_reference>urn:isro:isda:ch3_chr.nav:context</lid_reference> 
+    <member_status>Primary</member_status> 
+    <reference_type>bundle_has_context_collection</reference_type> 
+  </Bundle_Member_Entry> 
+  <Bundle_Member_Entry> 
+    <lid_reference>urn:isro:isda:ch3_chr.nav:schema</lid_reference> 
+    <member_status>Primary</member_status> 
+    <reference_type>bundle_has_schema_collection</reference_type> 
+  </Bundle_Member_Entry> 
+</Product_Bundle> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PAGE 41
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 41 of 61 
+   
+Appendix C Sample Collection Product Label 
+<Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 
+http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1400.xsd       
+http://pds.nasa.gov/pds4/disp/v1 
+http://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1301.xsd      
+http://pds.nasa.gov/pds4/sp/v1 
+http://pds.nasa.gov/pds4/sp/v1/PDS4_SP_1100.xsd"> 
+ 
+  <Identification_Area> 
+    <logical_identifier>urn:isro:isda:ch3_chr.nav:document</logical_identifier> 
+    <version_id>1.0</version_id> 
+    <title>Chandrayaan-3 Rover NavCam document file collection</title> 
+    <information_model_version>1.11.0.0</information_model_version> 
+    <product_class>Product_Collection</product_class> 
+    <Citation_Information> 
+      <author_list>Chandrayaan-3 DP Team</author_list> 
+      <editor_list>Chandreayaan-3 DP Team</editor_list> 
+      <publication_year>2024</publication_year> 
+      <description>collection of document products.</description> 
+    </Citation_Information> 
+    <Modification_History> 
+      <Modification_Detail> 
+        <modification_date>2023-11-02</modification_date> 
+        <version_id>1.0</version_id> 
+        <description>Initial version</description> 
+      </Modification_Detail> 
+    </Modification_History> 
+  </Identification_Area> 
+  <Context_Area> 
+    <Investigation_Area> 
+      <name>Chandrayaan-3</name> 
+      <type>Mission</type> 
+      <Internal_Reference> 
+        
+<lidvid_reference>urn:isro:isda:context:investigation:mission.chandrayaan3::1.0</lid
+vid_reference> 
+        <reference_type>collection_to_investigation</reference_type> 
+      </Internal_Reference> 
+    </Investigation_Area> 
+    <Observing_System> 
+      <Observing_System_Component> 
+        <name> Chandrayaan-3 Rover Module </name> 
+        <type>Spacecraft</type> 
+        <description> 
+             Chandrayaan-3 Rover Module is a rover craft consists of various scientific 
+PAGE 42
+NavCam PDS4 Data Products and Archive Software Interface Specifications        Page 42 of 61 
+   
+instruments. 
+        </description> 
+      </Observing_System_Component> 
+      <Observing_System_Component> 
+        <name>orbiter high resolution camera</name> 
+        <type>Instrument</type> 
+        <description> 
+             Navigational Camera (NavCam) is one of the engineering instrument hosted  
+             on the Chandrayaan-3 Rover Module. This instrument is used for rover mobility 
+        </description> 
+      </Observing_System_Component> 
+    </Observing_System> 
+    <Target_Identification> 
+      <name>Moon</name> 
+      <type>Satellite</type> 
+      <description>Moon is a natural satellite of Earth</description> 
+    </Target_Identification> 
+  </Context_Area> 
+  <Collection> 
+    <collection_type>Document</collection_type> 
+  </Collection> 
+  <File_Area_Inventory> 
+    <File> 
+      <file_name>collection_document_inventory.csv</file_name> 
+      <local_identifier>collection_document_inventory.csv</local_identifier> 
+      <creation_date_time>2020-07-28</creation_date_time> 
+      <file_size unit="byte">73</file_size> 
+      <records>1</records> 
+      <md5_checksum>09a718293d7ee74abaafa2722619865f</md5_checksum> 
+    </File> 
+    <Inventory> 
+      <offset unit="byte">0</offset> 
+      <parsing_standard_id>PDS DSV 1</parsing_standard_id> 
+      <records>1</records> 
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter> 
+      <field_delimiter>Comma</field_delimiter> 
+      <Record_Delimited> 
+        <fields>2</fields> 
+        <groups>0</groups> 
+        <maximum_record_length unit="byte">259</maximum_record_length> 
+        <Field_Delimited> 
+          <name>Member Status</name> 
+          <field_number>1</field_number> 
+          <data_type>ASCII_String</data_type> 
+          <maximum_field_length unit="byte">1</maximum_field_length> 
+          <description>This column specifies the member status</description> 
+        </Field_Delimited> 
+PAGE 43
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 43 of 61 
+   
+        <Field_Delimited> 
+          <name>LIDVID_LID</name> 
+          <field_number>2</field_number> 
+          <data_type>ASCII_LIDVID_LID</data_type> 
+          <maximum_field_length unit="byte">255</maximum_field_length> 
+          <description>This column specifies the LIDVID of the files that comprise the 
+collection.</description> 
+        </Field_Delimited> 
+      </Record_Delimited> 
+      <reference_type>inventory_has_member_product</reference_type> 
+    </Inventory> 
+  </File_Area_Inventory> 
+ 
+</Product_Collection> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+PAGE 44
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 44 of 61 
+   
+Appendix D Sample Data Product Labels 
+ 
+<Product_Ancillary xmlns="http://pds.nasa.gov/pds4/pds/v1" 
+xmlns:isda="http://pds.nasa.gov/pds4/isda/v1" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 
+http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd                  
+http://pds.nasa.gov/pds4/disp/v1 
+http://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1301.xsd                 
+http://pds.nasa.gov/pds4/sp/v1 http://pds.nasa.gov/pds4/sp/v1/PDS4_SP_1100.xsd           
+https://isda.issdc.gov.in/pds4/isda/v1 
+https://isda.issdc.gov.in/pds4/isda/v1/ch3_ldd_ISDA_1000.xsd"> 
+ 
+  <Identification_Area> 
+    
+<logical_identifier>urn:isro:isda:ch3_chr.nav:data_raw:ch3_nav_nrl_20230825t1040
+153807_d_img_d32_003</logical_identifier> 
+    <version_id>1.0</version_id> 
+    <title>Chandrayaan-3 Rover NavCam Mobility Experiment</title> 
+    <information_model_version>1.11.0.0</information_model_version> 
+    <product_class>Product_Ancillary</product_class> 
+    <Modification_History> 
+      <Modification_Detail> 
+        <modification_date>2024-06-11</modification_date> 
+        <version_id>1.0</version_id> 
+        <description>PDS4 product label created by SAC DP Team</description> 
+      </Modification_Detail> 
+    </Modification_History> 
+  </Identification_Area> 
+  <Context_Area> 
+    <Time_Coordinates> 
+      <start_date_time>2023-08-25T10:40:15.3807Z</start_date_time> 
+      <stop_date_time>2023-08-25T10:40:16.1058Z</stop_date_time> 
+    </Time_Coordinates> 
+    <Primary_Result_Summary> 
+      <purpose>Navigation</purpose> 
+      <processing_level>Raw</processing_level> 
+      <description>Raw Processing Level describes the raw data without any correction 
+applied.</description> 
+    </Primary_Result_Summary> 
+    <Investigation_Area> 
+      <name>Chandrayaan-3</name> 
+      <type>Mission</type> 
+      <Internal_Reference> 
+        
+<lidvid_reference>urn:isro:isda:context:investigation:mission.chandrayaan3::1.0</lid
+vid_reference> 
+PAGE 45
+NavCam PDS4 Data Products and Archive Software Interface Specifications        Page 45 of 61 
+   
+        <reference_type>data_to_investigation</reference_type> 
+      </Internal_Reference> 
+    </Investigation_Area> 
+    <Observing_System> 
+      <Observing_System_Component> 
+        <name>Chandrayaan-3 Rover Module</name> 
+        <type>Spacecraft</type> 
+        <description> 
+              Chandrayaan-3 Rover module is a rover craft consists of various scientific 
+instruments. 
+        </description> 
+      </Observing_System_Component> 
+      <Observing_System_Component> 
+        <name>Navigational Camera</name> 
+        <type>Instrument</type> 
+        <description> 
+             Navigational Camera (NavCam) is one of the engineering instrument hosted  
+             on the Chandrayaan-3 Rover Module. This instrument is used for rover 
+mobility 
+             on lunar surface. 
+        </description> 
+      </Observing_System_Component> 
+    </Observing_System> 
+    <Target_Identification> 
+      <name>Moon</name> 
+      <type>Satellite</type> 
+      <description>Moon is a natural satellite of Earth</description> 
+    </Target_Identification> 
+    <Mission_Area> 
+      <isda:Product_Parameters> 
+        
+<isda:job_id>NCBXXD32C3R0018000NNNN23237113106000_V2_1</isda:job_id> 
+        <isda:dumping_orbit_number>180</isda:dumping_orbit_number> 
+        <isda:dop>20230825</isda:dop> 
+        <isda:frame_number>3</isda:frame_number> 
+        <isda:current_mobility_id>002</isda:current_mobility_id> 
+        <isda:future_mobility_id>003</isda:future_mobility_id> 
+        <isda:operation_id>000001</isda:operation_id> 
+        <isda:day_no>237</isda:day_no> 
+        <isda:year>2023</isda:year> 
+        
+<isda:inclinometer_utc>2023:237:10:49:00:7082023:237:10:49:00:578</isda:inclino
+meter_utc> 
+        <isda:inclinometer_x_angle>-0.907</isda:inclinometer_x_angle> 
+        <isda:inclinometer_y_angle>-4.672</isda:inclinometer_y_angle> 
+        <isda:inclinometer_roll_angle>0.0</isda:inclinometer_roll_angle> 
+        <isda:inclinometer_pitch_angle>0.0</isda:inclinometer_pitch_angle> 
+PAGE 46
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 46 of 61 
+   
+        <isda:sensor_id>left camera</isda:sensor_id> 
+        <isda:gain>2</isda:gain> 
+        <isda:integration_time>20</isda:integration_time> 
+      </isda:Product_Parameters> 
+    </Mission_Area> 
+  </Context_Area> 
+  <File_Area_Ancillary> 
+    <File> 
+      
+<file_name>ch3_nav_nrl_20230825T1040153807_d_img_d32_003.png</file_name> 
+      <creation_date_time>2024-06-12T15:36:55</creation_date_time> 
+      <file_size unit="byte">538421</file_size> 
+      <md5_checksum>981e24e50057fc4c1b5cc06196fe5550</md5_checksum> 
+      <comment> 
+           This File contains the count raw image in png format.  
+           md5_checksum is provided for ensuring data integrity when users are 
+downloading the data. 
+      </comment> 
+    </File> 
+    <Encoded_Image> 
+      <name>ch3_nav_nrl_20230825T1040153807_d_img_d32_003</name> 
+      <offset unit="byte">0</offset> 
+      <encoding_standard_id>PNG</encoding_standard_id> 
+    </Encoded_Image> 
+  </File_Area_Ancillary> 
+</Product_Ancillary> 
+  
+PAGE 47
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 47 of 61 
+   
+Appendix E Local Data Dictionary 
+Every mission has some conditions based on the events that needs to be handle as 
+an information at output p roduct level. Some information is common to every 
+planetary mission launched by ISRO. There is an ISRO Science Data Archive 
+established during Chandrayaan -1 mission in 2008. All the products hosted for 
+users under ISDA are PDS co mpliance. For Chandrayaan-3 mission, PDS4 Archive 
+standard was adopted. PDS4 is currently next and future generation archive 
+standard adopted by all the space agencies including NASA, ESA and JAXA for their 
+current and future mission. To handle the ISRO planetary mission’s specific 
+parameters, there is a concept in PDS4 called Local Data Dictionary i.e. LDD. In LDD 
+one can define all the parameters and that can be used as a reference for future 
+planetary missions in India. LDD takes basic data dictionary of PDS4 and then top 
+of it bu ilds loc al dictionary. For Chandrayaan -3 mission and future planetary 
+missions of ISRO, list of parameters is identified shown in details in table 25. 
+Table 25 ISDA Local Data Dictionary Class and Attributes List 
+Class/Sub Class Hierarchy Attribute Name Description/Value 
+ 
+ 
+ 
+ 
+Mission_Area 
+ Product_Parameters 
+job_id  Unique id assign by DP 
+Scheduler when the 
+product is ingested  
+dumping_orbit_number Dumping Orbit Number is 
+assigned based on the 
+data collected on ground 
+station 
+dop Date of Pass on which 
+data got acquired 
+frame_number Frame number indicates 
+selected frame out of 
+three frames acquired 
+during data acquisition 
+current_mobility_id Current rover mobility id 
+assigned during the RPP 
+Operations 
+future_mobility_id Future rover mobility id 
+assigned during the RPP 
+Operations 
+operation_id Unique identifier assigned 
+during RPP Operations 
+day_no Julian day number on 
+which RPP Operations 
+carried out 
+year year on which RPP 
+Operations carried out 
+inclinometer_utc Inclinometer time reading 
+as per UTC format 
+ inclinometer_x_angle Inclinometer x angle 
+PAGE 48
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 48 of 61 
+   
+ inclinometer_y_angle Inclinometer y angle 
+ inclinometer_roll_angle Inclinometer Roll angle if 
+not available value will be 
+n/a means not available 
+ inclinometer_pitch_angle Inclinometer Pitch angle if 
+not available value will be 
+n/a means not available 
+ gain Angle between the 
+projection of sun rays and 
+a line due south or north 
+and value is expressed in 
+degree 
+ integration_time Integration time is 
+expressed as integration 
+line which is configurable 
+parameter got set during 
+payload data acquisition. 
+To derived the integration 
+time  in msec, integration 
+line needs to be multiplied 
+with 0.35 factor 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+PAGE 49
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 49 of 61 
+   
+Appendix F Data Disclaimer 
+ 
+ 
+The Rover NavCam was the engineering payload consisting of left camera and right 
+camera. The main payload objective was to enable the rover movement on the moon 
+surface. The payload was operated based on different gain and exposure settings and 
+acquired the left camera image and right image . For some of the data products (left 
+and right image)  as expected saturation was observed due to the sun illumination 
+condition and NavCam viewing angle. 
+ 
+It is to bring to the notice of the user that the Department of Space/Indian Space 
+Research Organization (DOS/ISRO) is not responsible for any dispute/disrepute that 
+may arise due to the use of this dataset. The user should neither redistribute the data 
+to third party nor it be used for any commercial purpose without t he knowledge of 
+Department of Space/Indian Space Research Organization (DOS/ISRO). 
+ 
+  
+PAGE 50
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 50 of 61 
+   
+Appendix-G: Raw to Calibrated Data Conversion 
+ 
+The step wise procedure for converting raw image data to calibrated image data image 
+raw count to rad cunt is as follows: 
+ 
+(1) Raw Count Data Extraction - Read the raw data (left camera or right camera) 
+get the raw count data. Subtract the offset from the raw count data using 
+following formula. 
+Raw count = Raw Image Count - offset 
+Where, 
+           Raw Image Count is raw image pixel value 
+           Offset is Look up table  under calibration directory (table 17) based on 
+the left or right camera data processing. 
+ ch3_nav_left_offset.txt  
+ ch3_nav_right_offset.txt 
+(2) Get Raw Minimum and Maximum Pixel Value - After the subtraction (step 1), 
+get the minimum and maximum count value stored as raw_min and raw_max. 
+(3) LUT Application - Look up table is applied to the Raw Count data using 
+following formula 
+Radiance value     =   Raw count * multiplicative factor (gain) + gain_offset 
+where, 
+Raw Count is the raw image data values obtained from step (1), 
+multiplicative factor (gain) is obtained from the Look up table based on left or 
+right camera data processing, 
+ ch3_nav_left_gain.txt  
+ ch3_nav_right_gain.txt 
+gain_offset is obtained from the Look up table based on the left or right camera 
+data processing, 
+ ch3_nav_left_gain_offset.txt 
+ ch3_nav_right_gain_offset.txt 
+(4) Get Rad Minimum and Maximum Pixel Value - after the LUT application (step 
+3), get the minimum and maximum count value stored as rad_min and 
+rad_max. 
+(5) Radiance Data Generation – Final step the radiance data is generated using 
+following formula 
+Radiance value =   Radiance value * (raw_max - raw_ min)/ (rad_ max - 
+rad_min) where, 
+Radiance value is the rad image data values obtained from step (3), 
+raw_ max is from step (2), raw_ min is from step (2) 
+rad_ max is from step (4), rad_ min is from step (4) 
+  
+PAGE 51
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 51 of 61 
+   
+Appendix-H: CAHV Camera Model 
+ 
+The CAHV model is a linear, perspective -projection camera model (equivalent to a 
+pinhole camera). It consists of four 3 -vectors (C,A,H,V) that describe the internal and 
+external camera model parameters needed to translate between 2D image 
+coordinates and 3D world coordinates. C (Vector_Center) is the 3D position of the 
+pinhole (center of the e ntrance pupil). A (Vector_Axis) is a unit vector normal to the 
+image plane pointing outward. H (Vector_Horizontal) is a composite vector encoding 
+three quantities: H' (a vector in the image plane perpendicular to the vertical columns), 
+Hs (the distance bet ween the lens center and image plane, measured in horizontal 
+pixels), and Hc (the horizontal image coordinate directly under C when moving parallel 
+to A). V (Vector_Vertical) similarly composites the analogous V', Vs, and Vc in the 
+vertical direction. 
+ 
+C - The 3D position of the entrance pupil. 
+ 
+A - A unit vector normal to the image plane pointing outward (towards C). 
+ 
+H - A vector pointing roughly rightward in the image; it is a composite of the 
+orientation of the CCD rows, the horizontal scale, the horizontal center. 
+ 
+V - A vector pointing roughly downward in the image; it is a composite of the 
+orientation of the CCD columns, the vertical scale, the vertical center, and A. 
+ 
+If P is a point in the scene, then the corresponding image locations x and y can be  
+computed from: 
+ 
+              (P-C) H 
+x      = ------------- 
+              (P-C) A 
+ 
+              (P-C) V 
+y       = ------------- 
+              (P-C) A 
+ 
+ 
+For details on the camera model math and calibration and more description of the 
+CAHV-model family, see references [Ref 11]. 
+ 
+ 
+  
+PAGE 52
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 52 of 61 
+   
+Appendix-I: Rover Mobility Summary 
+ 
+Timeline 
+(Mobility) MID Path Description 
+23.08.2023 
+236:19:06:36 
+001 2.3m on 12deg ramp, 
+0.7m 
+Roll down 
+24.08.2023 
+236:21:03:52 
+002 2.499m, 1deg CW, 
+1.587m, 45.138deg CCW 
+ 
+25.08.2023 
+237:18:59:06 
+003 2.76m, 12.713deg CW , 
+2.283m, 24.465deg CCW 
+ 
+26.08.2023 
+238:17:43:00 
+004 30deg CCW VO=31.5 deg,  
+Slip=(40-31.5)/40=21.25% 
+27.08.2023 
+239:03:40:00 
+005 25deg CCW , 25deg CW Decided to retrace because of 
+crater 
+27.08.2023 
+239:16:00:50 
+006 30deg CW  
+27.08.2023 
+239:16:20:54 
+007 24.465deg CW , 2.283m 
+Rev., 12.713deg CCW , 
+2.76m Rev. 
+Retrace of MID3 
+27.08.2023 
+239:21:04:11 
+008 36deg CCW  
+28.08.2023 
+240:05:39:13 
+009 2..754m, 12.168deg CCW , 
+1.258m, 12.168deg CW 
+4 mm DEM 
+ 010 
+ 
+ Commanding issue 
+ 011 
+ 
+ Commanding issue 
+28.08.2023 
+240:17:15:00 
+012 
+ 
+2.754 m Rev., 12.168deg 
+CCW, 1.758m, 12.1680 CW 
+Retrace of MID9 with overshoot of 
+0.5m towards west to avoid Lander 
+shadow 
+28.08.2023 
+240:20:20:09 
+013 
+ 
+0.5m Rev.  
+29.08.2023 
+241:05:20:00 
+014 
+ 
+180deg CW, 0.5m, 90deg 
+CW ,90deg CW 
+ 
+29.08.2023 
+241:08:39:30 
+015 
+ 
+35 deg CW To compensate for slip during 
+MID14 
+29.08.2023 
+241:15:43:00 
+016 1m Rev. Movement w/o DEM based on LI 
+image 
+29.08.2023 
+241:16:37:00 
+017 
+ 
+1m Rev. Movement w/o DEM based on LI 
+image 
+29.08.2023 
+241:16:45:00 
+018 
+ 
+1m Rev. Movement w/o DEM based on LI 
+image 
+29.08.2023 
+241:16:58:30 
+019 
+ 
+1m Rev. Movement w/o DEM based on LI 
+image 
+29.08.2023 
+241:18:46:03 
+020 
+ 
+180 deg CW, 0.5 m, 180 
+deg CCW 
+Imaging for movement towards 
+west crater  
+29.08.2023 
+241:21:51:00 
+021 
+ 
+2.587m Rev. 16.361deg 
+CW , 3.557m Rev. 
+16.361deg CCW 
+Reverse movement based on 
+MID20 image 
+29.08.2023 
+241:23:18:00 
+022 
+ 
+180 deg CW 
+(NavCam),0.5m, 180deg 
+CCW 
+Imaging for movement towards 
+west crater 
+30.08.2023 
+242:01:58:00 
+023 
+ 
+30deg CCW (NavCam), 
+30deg CW 
+To capture Lander 
+30.08.2023 024 2.933m Rev. 2.231 deg Reverse mobility based on MID22 
+PAGE 53
+NavCam PDS4 Data Products and Archive Software Interface Specifications        Page 53 of 61 
+   
+242:03:14:00  CW , 2.568m Rev., 2.231 
+deg CCW   
+image 
+30.08.2023 
+242:04:06:00 
+025 
+ 
+180deg CW, 0.5m, 180deg 
+CCW (NavCam) 
+Imaging for movement towards 
+west crater 
+30.08.2023 
+242:04:59:00 
+026 
+ 
+20deg CCW , 20deg CW For Lander Pic-2 
+30.08.2023 
+242:10:43:00 
+027 
+ 
+2.456m Rev, 8.031deg 
+CCW, 3.579m Rev., 
+8.031deg CCW 
+Reverse movement based on 
+MID25 image 
+30.08.2023 
+242:11:38:30 
+028 
+ 
+170deg CW, 0.5m, 170deg 
+CCW 
+Imaging for movement towards 
+west crater 
+30.08.2023 
+242:14:09:00 
+029 
+ 
+2.591m Rev., 16.604deg 
+CW , 2.379m Rev., 
+39.812deg CCW, 2.382m 
+Rev., 10.975 deg CCW 
+Reverse movement based on 
+MID28 image 
+30.08.2023 
+242:14:37:00 
+030 
+ 
+180deg CW, 0.5m Rev., 
+180deg CCW 
+Imaging for movement towards 
+west crater 
+30.08.2023 
+242:18:36:00 
+031 2.545m Rev.,8.381deg CW , 
+2.037m Rev., 
+23.724degCW, 1.699m 
+Rev., 32.105deg CCW 
+Reverse mobility based on MID30 
+Max.Roll -12.5 deg, max. pitch -9.5 
+deg (downhill) 
+30.08.2023 
+242:19:23:07 
+032 180deg CW, 0.5m, 180 deg 
+CCW 
+For Imaging 
+31.08.2023 
+243:00:52:00 
+033 10deg CW, 1m Rev. Mobility w/o DEM based on visual 
+inspection of Nav Cam image, tot. 
+dist.64m, dis.40m 
+31.08.2023 
+243:05:00:00 
+034 150deg CCW 
+(NavCam),0.5m, 150deg 
+CW 
+Tried to take image for westward 
+movement but  
+Sun on NavCam 
+31.08.2023 
+243:08:07:30 
+035 0.5m Rev., 40deg CCW 
+(NavCam) 
+image taken for movement towards 
+north-east 
+31.08.2023 
+243:12:20:00 
+036 10deg CCW , 4m Mobility w/o DEM based on visual 
+inspection of Nav Cam image 
+1m @0.5cm/s for RI + 3m @ 1cm/s 
+31.08.2023 
+243:16:39:00 
+037 4m Rev., 40deg CW 
+(NavCam), 40deg CCW 
+Decided to retrace due to entry into 
+rim of a crater. This was due to 
+absence of DEM at the end of 
+previous mobility. 
+At -7 deg Roll 
+01.08.2023 
+243:21:28:00 
+038 40deg CW, 1m, 50deg CW , 
+2m (NavCam), 20deg CCW 
+(NavCam), 20deg CCW 
+(NavCam), 50deg CCW 
+Mobility w/o DEM based on visual 
+inspection of Nav Cam images 
+ 
+01.09.2023 
+244:01:20:00 
+039 700 CW, 2m, 25deg CCW 
+(NavCam), 20deg CCW 
+(NavCam), 25deg CCW 
+(NavCam) 
+Mobility w/o DEM based on visual 
+inspection of Nav Cam images. Pixel 
+saturation observed in images as a 
+result DEM was not generated.  
+25 deg CCW obs. as 16 deg in VO 
+01.09.2023 
+244:05:40:00 
+040 35deg CW, 3m, 70deg 
+CCW (NavCam), 20deg 
+CCW (NavCam),20deg 
+CCW (NavCam),30deg CW 
+Due to absence of DEM, entered 
+rim of carter. 3 sets of images taken 
+for panoramic image and DEM 
+01.09.2023 
+244:12:55:00 
+041 20deg CW, 2m 
+(NavCam),20deg CCW 
+(NavCam) 
+Mobility w/o DEM based on visual 
+inspection of Nav Cam images. 
+Encountered high variation in roll & 
+pitch & max value of -22 deg & -16 
+PAGE 54
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 54 of 61 
+   
+deg observed in roll & picth axis 
+respectively.  
+At -11 deg Roll 
+02.09.2023 
+244:18:30:31 
+042 40deg CW, 1m 
+(NavCam,RI),20deg CCW 
+(NavCam), 20deg CCW 
+(NavCam) 
+Mobility w/o DEM based on visual 
+inspection of Nav Cam images. 
+At -13.8 deg Roll 
+ATC logic changed to 50deg C to 
+60degC for W4 sensor as W6 is <0 
+deg C 
+02.09.2023 
+244:22:13:00 
+043 44.5deg CW , 6.02m 
+(NavCam,RI), 20deg CW 
+(NavCam), 64.5deg CCW 
+DEM was generated by SAC team. 
+Roll angle computed for the given 
+DEM was coming around 20 deg 
+across 1st & 2nd segment. Collective 
+decision taken to go ahead as 
+retrace back would bring to MID 42 
+origin where DEM generation is not 
+possible.  
+Observed roll of -20 deg for 2-3m 
+traverse 
+02.09.2023 
+245:01:47:00 
+044 50.2deg CW , 5.02m 
+(NavCam), 20deg CW 
+(NavCam), 40deg CCW 
+(NavCam), 30.2deg CCW 
+ 
+Mobility carried out based on DEM.  
+Global slope of -12 deg along roll 
+axis is observed.  This path was 
+selected so as to clear the crater 
+rim by next mobility.  
+02.09.2023 
+245:05:51:00 
+045 50.2deg CW , 5m, 50deg 
+CW , 100.2deg CCW 
+Cleared rim of crater and reached 
+flat terrain at end of mobility.  
+Image taken after 50 deg CW turn 
+to get lander in FOV. This was done 
+to get sense of east direction from 
+current location. Completion of 100 
+m total distance in this mobility  
+ 046  Commanding issue, uploaded as 
+MID047 
+02.09.2023 
+245:08:42:00 
+047 50.2deg CW , 1m Rev., 
+50deg CW (NavCam, 
+assuming true East), 
+80deg CW (NavCam), 
+20deg CW (NavCam), 
+10deg CCW (NavCam) 
+Final mobility End of mIssion.  50 
+deg CW turn in 3rd segment to get 
+Lander in FOV to get sense of east 
+direction from current location.  
+Additional 90 deg turn CW turn 
+taken to park rover facing south.  
+ 
+ 
+ 
+  
+PAGE 55
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 55 of 61 
+   
+Appendix-J: Rover NavCam Exposure Settings 
+ 
+PDS Product Id 
+Exposure 
+Settings 1 
+(integration 
+lines) 
+Exposure 
+Settings 1 
+(integration 
+time ms) 
+Exposure 
+Settings 2 
+(integration 
+lines) 
+Exposure 
+Settings 2 
+(integration 
+time ms) 
+Exposure 
+Settings 3 
+(integration 
+lines) 
+Exposure 
+Settings 3 
+(integration 
+time ms) 
+ 
+ch3_nav_ncl_20230823T1801171121_d_img_d32_001  100 35 0 0 320 112 
+ 
+ch3_nav_ncr_20230823T1801572401_d_img_d32_001  100 35 148 51.8 180 63 
+ 
+ch3_nav_ncl_20230824T1415115229_d_img_d32_002  40 14 40 14 40 14 
+ 
+ch3_nav_ncr_20230824T1415423708_d_img_d32_002  40 14 40 14 40 14 
+ 
+ch3_nav_ncl_20230825T1040153807_d_img_d32_003  20 7 20 7 20 7 
+ 
+ch3_nav_ncr_20230825T1040453409_d_img_d32_003  23 8.05 23 8.05 23 8.05 
+ 
+ch3_nav_ncl_20230825T1429025593_d_img_d32_003  30 10.5 30 10.5 30 10.5 
+ 
+ch3_nav_ncr_20230825T1429334084_d_img_d32_003  33 11.55 33 11.55 33 11.55 
+ ch3_nav_ncl_20230825T1951116473_d_img_kru_003  30 10.5 30 10.5 30 10.5 
+ ch3_nav_ncr_20230825T1951424965_d_img_kru_003  33 11.55 33 11.55 33 11.55 
+ 
+ch3_nav_ncl_20230826T1415013468_d_img_d32_004  40 14 40 14 40 14 
+ 
+ch3_nav_ncr_20230826T1415321959_d_img_d32_004  43 15.05 43 15.05 43 15.05 
+ 
+ch3_nav_ncl_20230826T1910175356_d_img_gnh_005  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230826T1910571826_d_img_gnh_005  28 9.8 33 11.55 38 13.3 
+ ch3_nav_ncl_20230827T0344528296_d_img_bl1_006  25 8.75 30 10.5 35 12.25 
+ ch3_nav_ncr_20230827T0345344591_d_img_bl1_006  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230827T1810173096_d_img_d32_008  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230827T1810585259_d_img_d32_008  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230827T2210172456_d_img_gnh_008  25 8.75 30 10.5 0 0 
+ 
+ch3_nav_ncr_20230827T2210573742_d_img_gnh_008  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230828T0555552932_d_img_d32_010  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230828T0556384939_d_img_d32_010  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230828T1732047656_d_img_d32_013  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230828T1732459183_d_img_d32_013  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230828T2026064296_d_img_gnh_014  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230828T2026475822_d_img_gnh_014  27 9.45 32 11.2 37 12.95 
+ ch3_nav_ncl_20230829T0059424569_d_img_kru_013  25 8.75 30 10.5 35 12.25 
+ ch3_nav_ncr_20230829T0100242219_d_img_kru_013  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230829T0528081571_d_img_nno_015  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230829T0528513579_d_img_nno_015  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230829T0537587495_d_img_d32_015  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230829T0538419499_d_img_d32_015  27 9.45 32 11.2 37 12.95 
+PAGE 56
+NavCam PDS4 Data Products and Archive Software Interface Specifications        Page 56 of 61 
+   
+ 
+ch3_nav_ncl_20230829T1712052122_d_img_d32_016  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230829T1712461102_d_img_d32_016  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230829T1712052122_d_img_d32_021  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230829T1712461102_d_img_d32_021  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230829T1915529319_d_img_d32_021  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230829T1916352939_d_img_d32_021  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230829T2211041576_d_img_d32_022  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230829T2211446062_d_img_d32_022  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230829T2326016296_d_img_gnh_025  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230829T2326417583_d_img_gnh_025  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230830T0201159336_d_img_gnh_024  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230830T0201566228_d_img_gnh_024  27 9.45 32 11.2 37 12.95 
+ ch3_nav_ncl_20230830T0411412160_d_img_kru_027  25 8.75 30 10.5 35 12.25 
+ ch3_nav_ncr_20230830T0412211503_d_img_kru_027  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230830T0500344616_d_img_nno_026  30 10.5 30 10.5 30 10.5 
+ 
+ch3_nav_ncr_20230830T0501145903_d_img_nno_026  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230830T1142592296_d_img_nno_029  25 8.75 30 10.5 0 0 
+ 
+ch3_nav_ncr_20230830T1143393582_d_img_nno_029  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230830T1430486696_d_img_d32_024  896 313.6 896 313.6 896 313.6 
+ 
+ch3_nav_ncr_20230830T1431298859_d_img_d32_024  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230830T1443301356_d_img_d32_031  30 10.5 30 10.5 30 10.5 
+ 
+ch3_nav_ncr_20230830T1444101423_d_img_d32_031  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230830T1928548136_d_img_d32_032  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230830T1929359663_d_img_d32_032  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230830T2301162535_d_img_gnh_030  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230830T2301563822_d_img_gnh_030  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230831T0100412456_d_img_gnh_024  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230831T0101223983_d_img_gnh_024  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230831T0100412456_d_img_gnh_031  25 8.75 30 10.5 0 0 
+ 
+ch3_nav_ncr_20230831T0101223983_d_img_gnh_031  27 9.45 32 11.2 37 12.95 
+ ch3_nav_ncl_20230831T0505275813_d_img_kru_035  25 8.75 30 10.5 35 12.25 
+ ch3_nav_ncr_20230831T0506086702_d_img_kru_035  27 9.45 32 11.2 37 12.95 
+ ch3_nav_ncl_20230831T0813019172_d_img_kru_036  25 8.75 30 10.5 35 12.25 
+ ch3_nav_ncr_20230831T0813451179_d_img_kru_036  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230831T1304316922_d_img_nno_037  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230831T1305142699_d_img_nno_037  27 9.45 32 11.2 37 12.95 
+PAGE 57
+NavCam PDS4 Data Products and Archive Software Interface Specifications        Page 57 of 61 
+   
+ 
+ch3_nav_ncl_20230831T1648126376_d_img_d32_038  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230831T1648537902_d_img_d32_038  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230831T2136041891_d_img_d32_039  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230831T2136473900_d_img_d32_039  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230831T2142009893_d_img_d32_029  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230831T2142431659_d_img_d32_029  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230831T2147105576_d_img_d32_031  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230831T2147517102_d_img_d32_031  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230901T0129543336_d_img_gnh_040  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230901T0130375979_d_img_gnh_040  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230901T0135213735_d_img_gnh_040  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230901T0136046379_d_img_gnh_040  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230901T0213409576_d_img_gnh_040  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230901T0214218628_d_img_gnh_040  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230901T0550086695_d_img_gnh_041  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230901T0550487983_d_img_gnh_041  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230901T0554005416_d_img_nno_042  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230901T0554406703_d_img_nno_042  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230901T1301408296_d_img_d32_042  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230901T1302209583_d_img_d32_042  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230901T1312556972_d_img_nno_041  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230901T1313351983_d_img_nno_041  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230901T1833314856_d_img_d32_043  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230901T1834116143_d_img_d32_043  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230901T1841159976_d_img_d32_034  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230901T1841561263_d_img_d32_034  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230901T1846409360_d_img_d32_044  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230901T1847202223_d_img_d32_044  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230901T2225595662_d_img_d32_044  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230901T2226391343_d_img_d32_044  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230901T2233168936_d_img_d32_044  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230901T2233572231_d_img_d32_044  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230902T0157006160_d_img_gnh_045  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230902T0157401903_d_img_gnh_045  27 9.45 32 11.2 37 12.95 
+PAGE 58
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 58 of 61 
+   
+ 
+ch3_nav_ncl_20230902T0202579496_d_img_gnh_037  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230902T0203387831_d_img_gnh_037  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230902T0202579496_d_img_gnh_045  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230902T0203387831_d_img_gnh_045  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230902T0602577575_d_img_gnh_046  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230902T0603378862_d_img_gnh_046  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230902T0617542696_d_img_gnh_038  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230902T0618343982_d_img_gnh_038  27 9.45 32 11.2 37 12.95 
+ 
+ch3_nav_ncl_20230902T0858238377_d_img_nno_047  25 8.75 30 10.5 35 12.25 
+ 
+ch3_nav_ncr_20230902T0859039663_d_img_nno_047  27 9.45 32 11.2 37 12.95 
+ 
+  
+PAGE 59
+NavCam PDS4 Data Products and Archive Software Interface Specifications         Page 59 of 61 
+   
+Appendix-K: Rover NavCam Gain Settings 
+PDS Product Id Gain 1 Gain 2 Gain 3 
+ ch3_nav_ncl_20230823T1801171121_d_img_d32_001  2 0 3 
+ ch3_nav_ncr_20230823T1801572401_d_img_d32_001  2 2 2 
+ ch3_nav_ncl_20230824T1415115229_d_img_d32_002  2 2 2 
+ ch3_nav_ncr_20230824T1415423708_d_img_d32_002  2 2 2 
+ ch3_nav_ncl_20230825T1040153807_d_img_d32_003  2 2 2 
+ ch3_nav_ncr_20230825T1040453409_d_img_d32_003  2 2 2 
+ ch3_nav_ncl_20230825T1429025593_d_img_d32_003  2 2 2 
+ ch3_nav_ncr_20230825T1429334084_d_img_d32_003  2 2 2 
+ ch3_nav_ncl_20230825T1951116473_d_img_kru_003  2 2 2 
+ ch3_nav_ncr_20230825T1951424965_d_img_kru_003  2 2 2 
+ ch3_nav_ncl_20230826T1415013468_d_img_d32_004  2 2 2 
+ ch3_nav_ncr_20230826T1415321959_d_img_d32_004  2 2 2 
+ ch3_nav_ncl_20230826T1910175356_d_img_gnh_005  2 2 2 
+ ch3_nav_ncr_20230826T1910571826_d_img_gnh_005  2 2 2 
+ ch3_nav_ncl_20230827T0344528296_d_img_bl1_006  2 2 2 
+ ch3_nav_ncr_20230827T0345344591_d_img_bl1_006  2 2 2 
+ ch3_nav_ncl_20230827T1810173096_d_img_d32_008  2 2 2 
+ ch3_nav_ncr_20230827T1810585259_d_img_d32_008  2 2 2 
+ ch3_nav_ncl_20230827T2210172456_d_img_gnh_008  2 2 0 
+ ch3_nav_ncr_20230827T2210573742_d_img_gnh_008  2 2 2 
+ ch3_nav_ncl_20230828T0555552932_d_img_d32_010  2 2 2 
+ ch3_nav_ncr_20230828T0556384939_d_img_d32_010  2 2 2 
+ ch3_nav_ncl_20230828T1732047656_d_img_d32_013  2 2 2 
+ ch3_nav_ncr_20230828T1732459183_d_img_d32_013  2 2 2 
+ ch3_nav_ncl_20230828T2026064296_d_img_gnh_014  2 2 2 
+ ch3_nav_ncr_20230828T2026475822_d_img_gnh_014  2 2 2 
+ ch3_nav_ncl_20230829T0059424569_d_img_kru_013  2 2 2 
+ ch3_nav_ncr_20230829T0100242219_d_img_kru_013  2 2 2 
+ ch3_nav_ncl_20230829T0528081571_d_img_nno_015  2 2 2 
+ ch3_nav_ncr_20230829T0528513579_d_img_nno_015  2 2 2 
+ ch3_nav_ncl_20230829T0537587495_d_img_d32_015  2 2 2 
+ ch3_nav_ncr_20230829T0538419499_d_img_d32_015  2 2 2 
+ ch3_nav_ncl_20230829T1712052122_d_img_d32_016  2 2 2 
+ ch3_nav_ncr_20230829T1712461102_d_img_d32_016  2 2 2 
+ ch3_nav_ncl_20230829T1712052122_d_img_d32_021  2 2 2 
+ ch3_nav_ncr_20230829T1712461102_d_img_d32_021  2 2 2 
+ ch3_nav_ncl_20230829T1915529319_d_img_d32_021  2 2 2 
+ ch3_nav_ncr_20230829T1916352939_d_img_d32_021  2 2 2 
+ ch3_nav_ncl_20230829T2211041576_d_img_d32_022  2 2 2 
+ ch3_nav_ncr_20230829T2211446062_d_img_d32_022  2 2 2 
+ ch3_nav_ncl_20230829T2326016296_d_img_gnh_025  2 2 2 
+ ch3_nav_ncr_20230829T2326417583_d_img_gnh_025  2 2 2 
+ ch3_nav_ncl_20230830T0201159336_d_img_gnh_024  2 2 2 
+PAGE 60
+NavCam PDS4 Data Products and Archive Software Interface Specifications        Page 60 of 61 
+   
+ ch3_nav_ncr_20230830T0201566228_d_img_gnh_024  2 2 2 
+ ch3_nav_ncl_20230830T0411412160_d_img_kru_027  2 2 2 
+ ch3_nav_ncr_20230830T0412211503_d_img_kru_027  2 2 2 
+ ch3_nav_ncl_20230830T0500344616_d_img_nno_026  2 2 2 
+ ch3_nav_ncr_20230830T0501145903_d_img_nno_026  2 2 2 
+ ch3_nav_ncl_20230830T1142592296_d_img_nno_029  2 2 0 
+ ch3_nav_ncr_20230830T1143393582_d_img_nno_029  2 2 2 
+ ch3_nav_ncl_20230830T1430486696_d_img_d32_024  1 3 3 
+ ch3_nav_ncr_20230830T1431298859_d_img_d32_024  2 2 2 
+ ch3_nav_ncl_20230830T1443301356_d_img_d32_031  2 2 2 
+ ch3_nav_ncr_20230830T1444101423_d_img_d32_031  2 2 2 
+ ch3_nav_ncl_20230830T1928548136_d_img_d32_032  2 2 2 
+ ch3_nav_ncr_20230830T1929359663_d_img_d32_032  2 2 2 
+ ch3_nav_ncl_20230830T2301162535_d_img_gnh_030  2 2 2 
+ ch3_nav_ncr_20230830T2301563822_d_img_gnh_030  2 2 2 
+ ch3_nav_ncl_20230831T0100412456_d_img_gnh_024  2 2 2 
+ ch3_nav_ncr_20230831T0101223983_d_img_gnh_024  2 2 2 
+ ch3_nav_ncl_20230831T0100412456_d_img_gnh_031  2 2 0 
+ ch3_nav_ncr_20230831T0101223983_d_img_gnh_031  2 2 2 
+ ch3_nav_ncl_20230831T0505275813_d_img_kru_035  2 2 2 
+ ch3_nav_ncr_20230831T0506086702_d_img_kru_035  2 2 2 
+ ch3_nav_ncl_20230831T0813019172_d_img_kru_036  2 2 2 
+ ch3_nav_ncr_20230831T0813451179_d_img_kru_036  2 2 2 
+ ch3_nav_ncl_20230831T1304316922_d_img_nno_037  2 2 2 
+ ch3_nav_ncr_20230831T1305142699_d_img_nno_037  2 2 2 
+ ch3_nav_ncl_20230831T1648126376_d_img_d32_038  2 2 2 
+ ch3_nav_ncr_20230831T1648537902_d_img_d32_038  2 2 2 
+ ch3_nav_ncl_20230831T2136041891_d_img_d32_039  2 2 2 
+ ch3_nav_ncr_20230831T2136473900_d_img_d32_039  2 2 2 
+ ch3_nav_ncl_20230831T2142009893_d_img_d32_029  2 2 2 
+ ch3_nav_ncr_20230831T2142431659_d_img_d32_029  2 2 2 
+ ch3_nav_ncl_20230831T2147105576_d_img_d32_031  2 2 2 
+ ch3_nav_ncr_20230831T2147517102_d_img_d32_031  2 2 2 
+ ch3_nav_ncl_20230901T0129543336_d_img_gnh_040  2 2 2 
+ ch3_nav_ncr_20230901T0130375979_d_img_gnh_040  2 2 2 
+ ch3_nav_ncl_20230901T0135213735_d_img_gnh_040  2 2 2 
+ ch3_nav_ncr_20230901T0136046379_d_img_gnh_040  2 2 2 
+ ch3_nav_ncl_20230901T0213409576_d_img_gnh_040  2 2 2 
+ ch3_nav_ncr_20230901T0214218628_d_img_gnh_040  2 2 2 
+ ch3_nav_ncl_20230901T0550086695_d_img_gnh_041  2 2 2 
+ ch3_nav_ncr_20230901T0550487983_d_img_gnh_041  2 2 2 
+ ch3_nav_ncl_20230901T0554005416_d_img_nno_042  2 2 2 
+ ch3_nav_ncr_20230901T0554406703_d_img_nno_042  2 2 2 
+ ch3_nav_ncl_20230901T1301408296_d_img_d32_042  2 2 2 
+ ch3_nav_ncr_20230901T1302209583_d_img_d32_042  2 2 2 
+ ch3_nav_ncl_20230901T1312556972_d_img_nno_041  2 2 2 
+PAGE 61
+NavCam PDS4 Data Products and Archive Software Interface Specifications        Page 61 of 61 
+   
+ ch3_nav_ncr_20230901T1313351983_d_img_nno_041  2 2 2 
+ ch3_nav_ncl_20230901T1833314856_d_img_d32_043  2 2 2 
+ ch3_nav_ncr_20230901T1834116143_d_img_d32_043  2 2 2 
+ ch3_nav_ncl_20230901T1841159976_d_img_d32_034  2 2 2 
+ ch3_nav_ncr_20230901T1841561263_d_img_d32_034  2 2 2 
+ ch3_nav_ncl_20230901T1846409360_d_img_d32_044  2 2 2 
+ ch3_nav_ncr_20230901T1847202223_d_img_d32_044  2 2 2 
+ ch3_nav_ncl_20230901T2225595662_d_img_d32_044  2 2 2 
+ ch3_nav_ncr_20230901T2226391343_d_img_d32_044  2 2 2 
+ ch3_nav_ncl_20230901T2233168936_d_img_d32_044  2 2 2 
+ ch3_nav_ncr_20230901T2233572231_d_img_d32_044  2 2 2 
+ ch3_nav_ncl_20230902T0157006160_d_img_gnh_045  2 2 2 
+ ch3_nav_ncr_20230902T0157401903_d_img_gnh_045  2 2 2 
+ ch3_nav_ncl_20230902T0202579496_d_img_gnh_037  2 2 2 
+ ch3_nav_ncr_20230902T0203387831_d_img_gnh_037  2 2 2 
+ ch3_nav_ncl_20230902T0202579496_d_img_gnh_045  2 2 2 
+ ch3_nav_ncr_20230902T0203387831_d_img_gnh_045  2 2 2 
+ ch3_nav_ncl_20230902T0602577575_d_img_gnh_046  2 2 2 
+ ch3_nav_ncr_20230902T0603378862_d_img_gnh_046  2 2 2 
+ ch3_nav_ncl_20230902T0617542696_d_img_gnh_038  2 2 2 
+ ch3_nav_ncr_20230902T0618343982_d_img_gnh_038  2 2 2 
+ ch3_nav_ncl_20230902T0858238377_d_img_nno_047  2 2 2 
+ ch3_nav_ncr_20230902T0859039663_d_img_nno_047  2 2 2 
+ 

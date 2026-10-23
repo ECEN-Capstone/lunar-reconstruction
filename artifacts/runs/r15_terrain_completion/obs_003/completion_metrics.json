@@ -1,0 +1,136 @@
+{
+  "observation": "obs_003",
+  "strict_pixel_count": 69844,
+  "relaxed_filtered_pixel_count": 96777,
+  "original_grid_cells": 1507,
+  "added_gated_stereo_cells": 353,
+  "rejected_new_stereo_cells": 43,
+  "hull_cells": 3518,
+  "original_mesh_projected_area_in_crop_m2": 0.392869670417152,
+  "original_grid_coverage": 0.42836839113132463,
+  "meshes": {
+    "balanced": {
+      "vertices": 3469,
+      "triangles": 6639,
+      "projected_surface_area_m2": 8.298750000000002,
+      "slopes_deg": {
+        "count": 6639,
+        "median": 5.715111352490766,
+        "p90": 11.403462436327116,
+        "p95": 14.144676015164839,
+        "maximum": 63.09198251563973,
+        "rmse": 7.9062621910960695
+      },
+      "area_with_inferred_vertices_m2": 5.170000000000001,
+      "obj_readback_verified": true,
+      "filled_cells": 1609,
+      "covered_cells": 3469,
+      "convex_hull_cell_coverage": 0.9860716316088687
+    },
+    "extended": {
+      "vertices": 3518,
+      "triangles": 6763,
+      "projected_surface_area_m2": 8.453750000000001,
+      "slopes_deg": {
+        "count": 6763,
+        "median": 5.6610053738313555,
+        "p90": 11.38757440614757,
+        "p95": 14.119736637208906,
+        "maximum": 63.09198251563973,
+        "rmse": 7.869600389824572
+      },
+      "area_with_inferred_vertices_m2": 5.325000000000001,
+      "obj_readback_verified": true,
+      "filled_cells": 1658,
+      "covered_cells": 3518,
+      "convex_hull_cell_coverage": 1.0
+    },
+    "simulation": {
+      "vertices": 3518,
+      "triangles": 6763,
+      "projected_surface_area_m2": 8.453750000000001,
+      "slopes_deg": {
+        "count": 6763,
+        "median": 5.6610053738313555,
+        "p90": 11.38757440614757,
+        "p95": 14.119736637208906,
+        "maximum": 63.09198251563973,
+        "rmse": 7.869600389824572
+      },
+      "area_with_inferred_vertices_m2": 5.325000000000001,
+      "obj_readback_verified": true,
+      "filled_cells": 1658,
+      "covered_cells": 3518,
+      "convex_hull_cell_coverage": 1.0
+    }
+  },
+  "max_fill_support_distance_m": 0.3535533905932739,
+  "strict_height_preservation_max_m": 0.0,
+  "stereo": {
+    "observation": "obs_003",
+    "valid_points": 112819,
+    "valid_fraction": 0.10759258270263672,
+    "filter_pass_fractions": {
+      "inside_rectification": 0.9015178680419922,
+      "disparity_range": 0.41457271575927734,
+      "left_right_consistent": 0.27318382263183594,
+      "illuminated": 0.9040975570678711,
+      "textured": 0.6906652450561523,
+      "raw_information_present": 0.2835865020751953
+    },
+    "depth_percentiles_calibration_units": [
+      878.6918334960938,
+      2151.436279296875,
+      4937.14453125
+    ],
+    "lr_error_median_px": 0.0625,
+    "feature_matches": 239,
+    "feature_vertical_median_px": 0.5859892776510947,
+    "feature_disparity_comparisons": 75,
+    "feature_disparity_error_median_px": 0.23314956070140624,
+    "feature_disparity_error_p90_px": 0.6066949052125212,
+    "mesh_vertices": 12586,
+    "mesh_faces": 10487,
+    "runtime_seconds": 8.92377495765686
+  },
+  "filtered": {
+    "observation": "relaxed_stereo",
+    "input_points": 112819,
+    "valid_points": 96777,
+    "valid_fraction": 0.09229373931884766,
+    "mesh_vertices": 10791,
+    "mesh_faces": 10193,
+    "depth_percentiles_calibration_units": [
+      895.2189331054688,
+      2202.972900390625,
+      4910.3369140625
+    ]
+  },
+  "stereo_consistency": {
+    "all_relaxed_feature_error_px": {
+      "count": 75,
+      "median": 0.23314956070140624,
+      "p90": 0.6066949052125212,
+      "p95": 0.8131733364601246,
+      "maximum": 1.0018811116342476,
+      "rmse": 0.383981005747394
+    },
+    "added_feature_error_px": {
+      "count": 15,
+      "median": 0.27223944995603233,
+      "p90": 0.5899074538657487,
+      "p95": 0.6892296749309932,
+      "maximum": 0.9209815240832313,
+      "rmse": 0.40426074735102624
+    },
+    "common_depth_relative_change": {
+      "count": 66461,
+      "median": 0.0006332916921059084,
+      "p90": 0.0028436018060000734,
+      "p95": 0.004431350012054858,
+      "maximum": 2.527559237967403,
+      "rmse": 0.01950751914575081
+    },
+    "common_depth_change_over_10_percent_fraction": 0.00015046418200147455
+  }
+}

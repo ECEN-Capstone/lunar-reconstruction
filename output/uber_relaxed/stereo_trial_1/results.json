@@ -1,0 +1,427 @@
+{
+  "name": "stereo_trial_1",
+  "row_adjustment": {
+    "training_matches": 1564,
+    "heldout_matches": 392,
+    "matrix": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0055054459794337705,
+        0.9886125740300835,
+        -0.9499484140632681
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "before_heldout_error_px": {
+      "count": 392,
+      "median": 8.477603360861792,
+      "p90": 10.982793934724487,
+      "p95": 11.454177950983876
+    },
+    "after_heldout_error_px": {
+      "count": 392,
+      "median": 0.6722827797637478,
+      "p90": 2.2751754840789213,
+      "p95": 2.6849605964760483
+    },
+    "note": "Empirical right-row warp; changes camera model and does not establish metric depth"
+  },
+  "original_gate_measurements": {
+    "count": 1313,
+    "median": 8.060512881535374,
+    "p90": 10.361070979575766,
+    "p95": 10.756789172436036,
+    "passed": false
+  },
+  "uber_relaxed_gate_passed": true,
+  "profiles": [
+    {
+      "profile": {
+        "name": "more_relaxed",
+        "block_size": 9,
+        "uniqueness_ratio": 2,
+        "internal_lr_px": 4,
+        "external_lr_px": 4,
+        "min_disparity_px": 8,
+        "texture_std": 0.5,
+        "light_min": 1,
+        "relative_depth_jump": 0.1,
+        "edge_baselines": 1.0
+      },
+      "accepted_pixels": 199541,
+      "whole_image_fraction": 0.19029712677001953,
+      "fraction_also_passing_2px_lr": 0.9847600242556668,
+      "lr_error_px": {
+        "count": 199541,
+        "median": 0.09375,
+        "p90": 0.43359375,
+        "p95": 0.703125
+      },
+      "disparity_px": {
+        "count": 199541,
+        "median": 84.875,
+        "p90": 320.1875,
+        "p95": 398.1875
+      },
+      "heldout_feature_count": 392,
+      "heldout_features_accepted": 68,
+      "heldout_disparity_error_px": {
+        "count": 68,
+        "median": 100.65943792145876,
+        "p90": 366.34737917864425,
+        "p95": 386.41361608818295
+      },
+      "photometric_difference_dn": {
+        "count": 199541,
+        "median": 6.0,
+        "p90": 30.0,
+        "p95": 39.0
+      },
+      "mesh_vertices": 9926,
+      "mesh_triangles": 7104,
+      "mesh_topology": {
+        "components": 1632,
+        "largest_component_face_fraction": 0.05067567567567568,
+        "used_vertices": 9926
+      },
+      "triangle_fraction_over_10pct_depth_jump": 0.0,
+      "units": "arbitrary baseline=1; no physical scale",
+      "obj_readback_verified": true
+    },
+    {
+      "profile": {
+        "name": "uber_relaxed",
+        "block_size": 11,
+        "uniqueness_ratio": 0,
+        "internal_lr_px": 16,
+        "external_lr_px": 16,
+        "min_disparity_px": 4,
+        "texture_std": 0.0,
+        "light_min": 0,
+        "relative_depth_jump": 0.5,
+        "edge_baselines": 10.0
+      },
+      "accepted_pixels": 315230,
+      "whole_image_fraction": 0.3006267547607422,
+      "fraction_also_passing_2px_lr": 0.8835929321447832,
+      "lr_error_px": {
+        "count": 315230,
+        "median": 0.125,
+        "p90": 4.015625,
+        "p95": 9.9591064453125
+      },
+      "disparity_px": {
+        "count": 315230,
+        "median": 64.875,
+        "p90": 278.25,
+        "p95": 363.8125
+      },
+      "heldout_feature_count": 392,
+      "heldout_features_accepted": 104,
+      "heldout_disparity_error_px": {
+        "count": 104,
+        "median": 81.70086319621171,
+        "p90": 373.0138242732166,
+        "p95": 444.6142661144354
+      },
+      "photometric_difference_dn": {
+        "count": 315230,
+        "median": 3.0,
+        "p90": 31.0,
+        "p95": 41.0
+      },
+      "mesh_vertices": 25305,
+      "mesh_triangles": 28197,
+      "mesh_topology": {
+        "components": 1974,
+        "largest_component_face_fraction": 0.40302159804234494,
+        "used_vertices": 25305
+      },
+      "triangle_fraction_over_10pct_depth_jump": 0.049757066354576725,
+      "units": "arbitrary baseline=1; no physical scale",
+      "obj_readback_verified": true
+    },
+    {
+      "profile": {
+        "name": "uber_relaxed_no_checks",
+        "block_size": 11,
+        "uniqueness_ratio": 0,
+        "internal_lr_px": 512,
+        "external_lr_px": null,
+        "min_disparity_px": 1,
+        "texture_std": 0.0,
+        "light_min": -1,
+        "relative_depth_jump": 1000000000.0,
+        "edge_baselines": 1000000000.0
+      },
+      "accepted_pixels": 896878,
+      "whole_image_fraction": 0.8553295135498047,
+      "fraction_also_passing_2px_lr": 0.4001581040007671,
+      "lr_error_px": {
+        "count": 896878,
+        "median": 21.75,
+        "p90": 237.5,
+        "p95": 312.1875
+      },
+      "disparity_px": {
+        "count": 896878,
+        "median": 83.875,
+        "p90": 313.0625,
+        "p95": 389.625
+      },
+      "heldout_feature_count": 392,
+      "heldout_features_accepted": 361,
+      "heldout_disparity_error_px": {
+        "count": 361,
+        "median": 127.34172643080785,
+        "p90": 379.68762676918027,
+        "p95": 441.5298704243113
+      },
+      "photometric_difference_dn": {
+        "count": 896878,
+        "median": 7.0,
+        "p90": 37.0,
+        "p95": 48.0
+      },
+      "mesh_vertices": 99513,
+      "mesh_triangles": 192479,
+      "mesh_topology": {
+        "components": 35,
+        "largest_component_face_fraction": 0.9957138181308091,
+        "used_vertices": 99513
+      },
+      "triangle_fraction_over_10pct_depth_jump": 0.5948233313764099,
+      "units": "arbitrary baseline=1; no physical scale",
+      "obj_readback_verified": true
+    },
+    {
+      "profile": {
+        "name": "uber_relaxed_wide_window",
+        "block_size": 21,
+        "uniqueness_ratio": 0,
+        "internal_lr_px": 512,
+        "external_lr_px": null,
+        "min_disparity_px": 1,
+        "texture_std": 0.0,
+        "light_min": -1,
+        "relative_depth_jump": 1000000000.0,
+        "edge_baselines": 1000000000.0
+      },
+      "accepted_pixels": 636243,
+      "whole_image_fraction": 0.6067686080932617,
+      "fraction_also_passing_2px_lr": 0.3626790392978783,
+      "lr_error_px": {
+        "count": 636243,
+        "median": 45.0625,
+        "p90": 497.0,
+        "p95": 497.0
+      },
+      "disparity_px": {
+        "count": 636243,
+        "median": 93.0,
+        "p90": 504.0,
+        "p95": 504.0
+      },
+      "heldout_feature_count": 392,
+      "heldout_features_accepted": 200,
+      "heldout_disparity_error_px": {
+        "count": 200,
+        "median": 485.6549286884117,
+        "p90": 495.11706630682124,
+        "p95": 495.6427035267568
+      },
+      "photometric_difference_dn": {
+        "count": 636243,
+        "median": 5.0,
+        "p90": 56.0,
+        "p95": 75.0
+      },
+      "mesh_vertices": 69276,
+      "mesh_triangles": 126686,
+      "mesh_topology": {
+        "components": 538,
+        "largest_component_face_fraction": 0.9429297633519095,
+        "used_vertices": 69276
+      },
+      "triangle_fraction_over_10pct_depth_jump": 0.25621615648137913,
+      "units": "arbitrary baseline=1; no physical scale",
+      "obj_readback_verified": true
+    },
+    {
+      "profile": {
+        "name": "uber_relaxed_row_adjusted",
+        "block_size": 11,
+        "uniqueness_ratio": 0,
+        "internal_lr_px": 16,
+        "external_lr_px": 16,
+        "min_disparity_px": 4,
+        "texture_std": 0.0,
+        "light_min": 0,
+        "relative_depth_jump": 0.5,
+        "edge_baselines": 10.0,
+        "row_adjustment": true
+      },
+      "accepted_pixels": 471417,
+      "whole_image_fraction": 0.44957828521728516,
+      "fraction_also_passing_2px_lr": 0.9335238228574702,
+      "lr_error_px": {
+        "count": 471417,
+        "median": 0.0625,
+        "p90": 0.5703125,
+        "p95": 4.9453125
+      },
+      "disparity_px": {
+        "count": 471417,
+        "median": 16.8125,
+        "p90": 87.1875,
+        "p95": 108.875
+      },
+      "heldout_feature_count": 392,
+      "heldout_features_accepted": 279,
+      "heldout_disparity_error_px": {
+        "count": 279,
+        "median": 0.28667321800395484,
+        "p90": 0.8817265107743653,
+        "p95": 1.19839447635291
+      },
+      "photometric_difference_dn": {
+        "count": 471417,
+        "median": 6.0,
+        "p90": 27.0,
+        "p95": 35.0
+      },
+      "mesh_vertices": 46223,
+      "mesh_triangles": 71473,
+      "mesh_topology": {
+        "components": 1100,
+        "largest_component_face_fraction": 0.6613266548207015,
+        "used_vertices": 46223
+      },
+      "triangle_fraction_over_10pct_depth_jump": 0.017167321925762175,
+      "units": "arbitrary baseline=1; no physical scale",
+      "obj_readback_verified": true
+    },
+    {
+      "profile": {
+        "name": "row_adjusted_tighter",
+        "block_size": 7,
+        "uniqueness_ratio": 5,
+        "internal_lr_px": 1,
+        "external_lr_px": 2,
+        "min_disparity_px": 4,
+        "texture_std": 1.0,
+        "light_min": 4,
+        "relative_depth_jump": 0.05,
+        "edge_baselines": 0.5,
+        "speckle_window": 50,
+        "row_adjustment": true
+      },
+      "accepted_pixels": 262704,
+      "whole_image_fraction": 0.2505340576171875,
+      "fraction_also_passing_2px_lr": 1.0,
+      "lr_error_px": {
+        "count": 262704,
+        "median": 0.0625,
+        "p90": 0.25,
+        "p95": 0.375
+      },
+      "disparity_px": {
+        "count": 262704,
+        "median": 10.75,
+        "p90": 38.125,
+        "p95": 83.1875
+      },
+      "heldout_feature_count": 392,
+      "heldout_features_accepted": 257,
+      "heldout_disparity_error_px": {
+        "count": 257,
+        "median": 0.23582487707653854,
+        "p90": 0.738745096270634,
+        "p95": 0.8701184860010585
+      },
+      "photometric_difference_dn": {
+        "count": 262704,
+        "median": 9.0,
+        "p90": 26.0,
+        "p95": 33.0
+      },
+      "mesh_vertices": 6918,
+      "mesh_triangles": 5397,
+      "mesh_topology": {
+        "components": 920,
+        "largest_component_face_fraction": 0.05076894571057995,
+        "used_vertices": 6918
+      },
+      "triangle_fraction_over_10pct_depth_jump": 0.0,
+      "units": "arbitrary baseline=1; no physical scale",
+      "obj_readback_verified": true
+    },
+    {
+      "profile": {
+        "name": "row_adjusted_strict_matching",
+        "block_size": 5,
+        "uniqueness_ratio": 15,
+        "internal_lr_px": 1,
+        "external_lr_px": 1,
+        "min_disparity_px": 4,
+        "texture_std": 2.0,
+        "light_min": 4,
+        "relative_depth_jump": 0.02,
+        "edge_baselines": 0.25,
+        "speckle_window": 100,
+        "row_adjustment": true
+      },
+      "accepted_pixels": 200409,
+      "whole_image_fraction": 0.19112491607666016,
+      "fraction_also_passing_2px_lr": 1.0,
+      "lr_error_px": {
+        "count": 200409,
+        "median": 0.0625,
+        "p90": 0.25,
+        "p95": 0.375
+      },
+      "disparity_px": {
+        "count": 200409,
+        "median": 9.875,
+        "p90": 30.4375,
+        "p95": 35.0
+      },
+      "heldout_feature_count": 392,
+      "heldout_features_accepted": 234,
+      "heldout_disparity_error_px": {
+        "count": 234,
+        "median": 0.25486977346417916,
+        "p90": 0.6829794983595434,
+        "p95": 0.8245377416979691
+      },
+      "photometric_difference_dn": {
+        "count": 200409,
+        "median": 8.0,
+        "p90": 23.0,
+        "p95": 29.0
+      },
+      "mesh_vertices": 1388,
+      "mesh_triangles": 899,
+      "mesh_topology": {
+        "components": 244,
+        "largest_component_face_fraction": 0.10122358175750834,
+        "used_vertices": 1388
+      },
+      "triangle_fraction_over_10pct_depth_jump": 0.0,
+      "units": "arbitrary baseline=1; no physical scale",
+      "obj_readback_verified": true
+    }
+  ],
+  "input_sha256": [
+    "9b17e0f63bcd308a354a54e24cbf8e18cac3421b1f7523353c83faa9c410a279",
+    "f93c519f03e60517e8614cd2ef04d44e17c811745a42867c7a4329d4977cf28e"
+  ]
+}

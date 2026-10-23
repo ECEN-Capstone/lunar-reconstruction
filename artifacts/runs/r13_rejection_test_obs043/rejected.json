@@ -1,0 +1,6 @@
+{
+  "observation": "obs_043",
+  "status": "rejected",
+  "matches": 1811,
+  "reason": "Fixed-rig geometry not supported by sufficient subpixel matches"
+}

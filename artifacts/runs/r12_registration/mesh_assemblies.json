@@ -1,0 +1,200 @@
+[
+  {
+    "component": "component_obs_003",
+    "vertices": 19005,
+    "triangles": 17666,
+    "sources": [
+      {
+        "observation": "obs_003",
+        "vertex_start": 0,
+        "vertex_count": 7783,
+        "face_count": 6671
+      },
+      {
+        "observation": "obs_004",
+        "vertex_start": 7783,
+        "vertex_count": 11222,
+        "face_count": 10995
+      }
+    ],
+    "limitations": [
+      "overlapping triangles retained",
+      "holes unfilled",
+      "not watertight",
+      "not metric certified",
+      "not collision ready"
+    ]
+  },
+  {
+    "component": "component_obs_005",
+    "vertices": 26772,
+    "triangles": 23633,
+    "sources": [
+      {
+        "observation": "obs_005",
+        "vertex_start": 0,
+        "vertex_count": 17269,
+        "face_count": 16038
+      },
+      {
+        "observation": "obs_006",
+        "vertex_start": 17269,
+        "vertex_count": 9503,
+        "face_count": 7595
+      }
+    ],
+    "limitations": [
+      "overlapping triangles retained",
+      "holes unfilled",
+      "not watertight",
+      "not metric certified",
+      "not collision ready"
+    ]
+  },
+  {
+    "component": "component_obs_010",
+    "vertices": 59024,
+    "triangles": 42640,
+    "sources": [
+      {
+        "observation": "obs_010",
+        "vertex_start": 0,
+        "vertex_count": 20175,
+        "face_count": 16879
+      },
+      {
+        "observation": "obs_012",
+        "vertex_start": 20175,
+        "vertex_count": 15222,
+        "face_count": 11229
+      },
+      {
+        "observation": "obs_014",
+        "vertex_start": 35397,
+        "vertex_count": 12192,
+        "face_count": 7664
+      },
+      {
+        "observation": "obs_013",
+        "vertex_start": 47589,
+        "vertex_count": 11435,
+        "face_count": 6868
+      }
+    ],
+    "limitations": [
+      "overlapping triangles retained",
+      "holes unfilled",
+      "not watertight",
+      "not metric certified",
+      "not collision ready"
+    ]
+  },
+  {
+    "component": "component_obs_029",
+    "vertices": 45244,
+    "triangles": 53665,
+    "sources": [
+      {
+        "observation": "obs_029",
+        "vertex_start": 0,
+        "vertex_count": 12141,
+        "face_count": 15729
+      },
+      {
+        "observation": "obs_031",
+        "vertex_start": 12141,
+        "vertex_count": 16784,
+        "face_count": 19242
+      },
+      {
+        "observation": "obs_030",
+        "vertex_start": 28925,
+        "vertex_count": 16319,
+        "face_count": 18694
+      }
+    ],
+    "limitations": [
+      "overlapping triangles retained",
+      "holes unfilled",
+      "not watertight",
+      "not metric certified",
+      "not collision ready"
+    ]
+  },
+  {
+    "component": "component_obs_044",
+    "vertices": 65792,
+    "triangles": 55682,
+    "sources": [
+      {
+        "observation": "obs_044",
+        "vertex_start": 0,
+        "vertex_count": 13835,
+        "face_count": 8764
+      },
+      {
+        "observation": "obs_047",
+        "vertex_start": 13835,
+        "vertex_count": 19871,
+        "face_count": 19653
+      },
+      {
+        "observation": "obs_046",
+        "vertex_start": 33706,
+        "vertex_count": 13646,
+        "face_count": 10825
+      },
+      {
+        "observation": "obs_048",
+        "vertex_start": 47352,
+        "vertex_count": 11015,
+        "face_count": 11794
+      },
+      {
+        "observation": "obs_045",
+        "vertex_start": 58367,
+        "vertex_count": 7425,
+        "face_count": 4646
+      }
+    ],
+    "limitations": [
+      "overlapping triangles retained",
+      "holes unfilled",
+      "not watertight",
+      "not metric certified",
+      "not collision ready"
+    ]
+  },
+  {
+    "component": "component_obs_051",
+    "vertices": 39531,
+    "triangles": 25051,
+    "sources": [
+      {
+        "observation": "obs_051",
+        "vertex_start": 0,
+        "vertex_count": 14496,
+        "face_count": 8447
+      },
+      {
+        "observation": "obs_053",
+        "vertex_start": 14496,
+        "vertex_count": 13671,
+        "face_count": 9385
+      },
+      {
+        "observation": "obs_052",
+        "vertex_start": 28167,
+        "vertex_count": 11364,
+        "face_count": 7219
+      }
+    ],
+    "limitations": [
+      "overlapping triangles retained",
+      "holes unfilled",
+      "not watertight",
+      "not metric certified",
+      "not collision ready"
+    ]
+  }
+]

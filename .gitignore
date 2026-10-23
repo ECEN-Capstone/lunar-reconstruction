@@ -1,4 +1,10 @@
-chandrayaan-3-navcam-sorted/
 .venv/
 __pycache__/
-artifacts/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+/tmp/
+.env
+.env.*
+!.env.example

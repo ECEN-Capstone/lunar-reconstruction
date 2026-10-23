@@ -1,0 +1,27 @@
+{
+  "observation": "obs_018",
+  "valid_points": 145338,
+  "valid_fraction": 0.13860511779785156,
+  "filter_pass_fractions": {
+    "inside_rectification": 0.901728630065918,
+    "disparity_range": 0.37575340270996094,
+    "left_right_consistent": 0.24545001983642578,
+    "illuminated": 0.9044370651245117,
+    "textured": 0.5863790512084961,
+    "raw_information_present": 0.37157726287841797
+  },
+  "depth_percentiles_calibration_units": [
+    796.056640625,
+    1524.1353759765625,
+    7932.634765625
+  ],
+  "lr_error_median_px": 0.06640625,
+  "feature_matches": 153,
+  "feature_vertical_median_px": 0.4548927464008159,
+  "feature_disparity_comparisons": 62,
+  "feature_disparity_error_median_px": 0.17093444368023825,
+  "feature_disparity_error_p90_px": 0.38521008342347046,
+  "mesh_vertices": 16188,
+  "mesh_faces": 11976,
+  "runtime_seconds": 9.153974056243896
+}

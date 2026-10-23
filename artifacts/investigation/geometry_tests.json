@@ -1,0 +1,6 @@
+{
+  "max_vertical_roundtrip_error_px": 5.684341886080801e-13,
+  "max_3d_roundtrip_error_calibration_units": 2.1827872842550278e-11,
+  "synthetic_disparity_left_px": 24,
+  "synthetic_disparity_right_px": -24
+}

@@ -1,0 +1,873 @@
+[
+  {
+    "name": "component_obs_044",
+    "kind": "registered_component",
+    "path": "artifacts/runs/r12_registration/component_obs_044/cloud_all_observed_calibration_units.ply",
+    "reference_observation": "obs_044",
+    "observations": [
+      "obs_044",
+      "obs_047",
+      "obs_046",
+      "obs_048",
+      "obs_045"
+    ],
+    "point_count": 136699,
+    "dimensions_xy_m": [
+      11.449125486273415,
+      11.758957097050455
+    ],
+    "raw_convex_hull_m2": 78.09411603023274,
+    "occupied_5cm_cells": 9573,
+    "occupied_5cm_cell_area_m2": 23.932500000000005,
+    "supported_cell_hull_m2": 77.20125000000002
+  },
+  {
+    "name": "component_obs_051",
+    "kind": "registered_component",
+    "path": "artifacts/runs/r12_registration/component_obs_051/cloud_all_observed_calibration_units.ply",
+    "reference_observation": "obs_051",
+    "observations": [
+      "obs_051",
+      "obs_053",
+      "obs_052"
+    ],
+    "point_count": 67831,
+    "dimensions_xy_m": [
+      10.30079975640965,
+      7.034358005080893
+    ],
+    "raw_convex_hull_m2": 47.06857679926251,
+    "occupied_5cm_cells": 7830,
+    "occupied_5cm_cell_area_m2": 19.575000000000003,
+    "supported_cell_hull_m2": 46.55750000000001
+  },
+  {
+    "name": "obs_020",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_020/points_calibration_units.ply",
+    "reference_observation": "obs_020",
+    "point_count": 107236,
+    "dimensions_xy_m": [
+      10.113965180572347,
+      6.853538657002149
+    ],
+    "raw_convex_hull_m2": 36.19794173980608,
+    "occupied_5cm_cells": 4686,
+    "occupied_5cm_cell_area_m2": 11.715000000000002,
+    "supported_cell_hull_m2": 36.512499999999996
+  },
+  {
+    "name": "obs_045",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_045/points_calibration_units.ply",
+    "reference_observation": "obs_045",
+    "point_count": 66899,
+    "dimensions_xy_m": [
+      9.846130374665664,
+      6.467859418574665
+    ],
+    "raw_convex_hull_m2": 35.321765718625244,
+    "occupied_5cm_cells": 3549,
+    "occupied_5cm_cell_area_m2": 8.872500000000002,
+    "supported_cell_hull_m2": 35.41875
+  },
+  {
+    "name": "obs_019",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_019/points_calibration_units.ply",
+    "reference_observation": "obs_019",
+    "point_count": 187766,
+    "dimensions_xy_m": [
+      10.262325651611665,
+      6.0511648487015295
+    ],
+    "raw_convex_hull_m2": 34.352964117462854,
+    "occupied_5cm_cells": 7028,
+    "occupied_5cm_cell_area_m2": 17.570000000000004,
+    "supported_cell_hull_m2": 34.64500000000001
+  },
+  {
+    "name": "obs_051",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_051/points_calibration_units.ply",
+    "reference_observation": "obs_051",
+    "point_count": 130791,
+    "dimensions_xy_m": [
+      10.05289486333682,
+      5.868538332262489
+    ],
+    "raw_convex_hull_m2": 34.167721913931885,
+    "occupied_5cm_cells": 7527,
+    "occupied_5cm_cell_area_m2": 18.817500000000003,
+    "supported_cell_hull_m2": 34.34
+  },
+  {
+    "name": "obs_046",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_046/points_calibration_units.ply",
+    "reference_observation": "obs_046",
+    "point_count": 122839,
+    "dimensions_xy_m": [
+      9.943965290476152,
+      5.60639000996391
+    ],
+    "raw_convex_hull_m2": 31.739634723492237,
+    "occupied_5cm_cells": 4997,
+    "occupied_5cm_cell_area_m2": 12.492500000000003,
+    "supported_cell_hull_m2": 32.06249999999999
+  },
+  {
+    "name": "obs_024",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_024/points_calibration_units.ply",
+    "reference_observation": "obs_024",
+    "point_count": 72020,
+    "dimensions_xy_m": [
+      9.337268149467256,
+      5.931189091698864
+    ],
+    "raw_convex_hull_m2": 31.280101364257167,
+    "occupied_5cm_cells": 3348,
+    "occupied_5cm_cell_area_m2": 8.370000000000001,
+    "supported_cell_hull_m2": 31.501250000000006
+  },
+  {
+    "name": "obs_026",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_026/points_calibration_units.ply",
+    "reference_observation": "obs_026",
+    "point_count": 68614,
+    "dimensions_xy_m": [
+      9.56896071340073,
+      5.946934303338712
+    ],
+    "raw_convex_hull_m2": 31.023210710880868,
+    "occupied_5cm_cells": 2548,
+    "occupied_5cm_cell_area_m2": 6.370000000000001,
+    "supported_cell_hull_m2": 31.07625
+  },
+  {
+    "name": "obs_022",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_022/points_calibration_units.ply",
+    "reference_observation": "obs_022",
+    "point_count": 85894,
+    "dimensions_xy_m": [
+      10.13614974349496,
+      5.414714403457186
+    ],
+    "raw_convex_hull_m2": 30.833006005461566,
+    "occupied_5cm_cells": 5135,
+    "occupied_5cm_cell_area_m2": 12.837500000000002,
+    "supported_cell_hull_m2": 30.976250000000007
+  },
+  {
+    "name": "obs_023",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_023/points_calibration_units.ply",
+    "reference_observation": "obs_023",
+    "point_count": 122017,
+    "dimensions_xy_m": [
+      10.106805182741473,
+      5.859436065853444
+    ],
+    "raw_convex_hull_m2": 30.66928200737994,
+    "occupied_5cm_cells": 5202,
+    "occupied_5cm_cell_area_m2": 13.005000000000003,
+    "supported_cell_hull_m2": 30.907500000000006
+  },
+  {
+    "name": "obs_049",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_049/points_calibration_units.ply",
+    "reference_observation": "obs_049",
+    "point_count": 50421,
+    "dimensions_xy_m": [
+      9.86071722729711,
+      5.809408390495111
+    ],
+    "raw_convex_hull_m2": 30.615941611083482,
+    "occupied_5cm_cells": 2771,
+    "occupied_5cm_cell_area_m2": 6.927500000000001,
+    "supported_cell_hull_m2": 30.703750000000007
+  },
+  {
+    "name": "obs_033",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_033/points_calibration_units.ply",
+    "reference_observation": "obs_033",
+    "point_count": 116766,
+    "dimensions_xy_m": [
+      10.338824479973983,
+      5.271951160383862
+    ],
+    "raw_convex_hull_m2": 30.27300336491302,
+    "occupied_5cm_cells": 3484,
+    "occupied_5cm_cell_area_m2": 8.71,
+    "supported_cell_hull_m2": 30.29125
+  },
+  {
+    "name": "obs_017",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_017/points_calibration_units.ply",
+    "reference_observation": "obs_017",
+    "point_count": 167836,
+    "dimensions_xy_m": [
+      10.224456419700898,
+      5.066693832166354
+    ],
+    "raw_convex_hull_m2": 29.894735123990625,
+    "occupied_5cm_cells": 5290,
+    "occupied_5cm_cell_area_m2": 13.225000000000003,
+    "supported_cell_hull_m2": 30.087500000000006
+  },
+  {
+    "name": "component_obs_005",
+    "kind": "registered_component",
+    "path": "artifacts/runs/r12_registration/component_obs_005/cloud_all_observed_calibration_units.ply",
+    "reference_observation": "obs_005",
+    "observations": [
+      "obs_005",
+      "obs_006"
+    ],
+    "point_count": 55830,
+    "dimensions_xy_m": [
+      9.54664636129077,
+      5.952544779969554
+    ],
+    "raw_convex_hull_m2": 29.958829583831722,
+    "occupied_5cm_cells": 6915,
+    "occupied_5cm_cell_area_m2": 17.287500000000005,
+    "supported_cell_hull_m2": 29.96125
+  },
+  {
+    "name": "obs_005",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_005/points_calibration_units.ply",
+    "reference_observation": "obs_005",
+    "point_count": 155546,
+    "dimensions_xy_m": [
+      9.547115665413349,
+      5.882624291105225
+    ],
+    "raw_convex_hull_m2": 29.893612278826133,
+    "occupied_5cm_cells": 7113,
+    "occupied_5cm_cell_area_m2": 17.782500000000002,
+    "supported_cell_hull_m2": 29.945
+  },
+  {
+    "name": "obs_018",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_018/points_calibration_units.ply",
+    "reference_observation": "obs_018",
+    "point_count": 108384,
+    "dimensions_xy_m": [
+      9.784918097957936,
+      5.168715154017752
+    ],
+    "raw_convex_hull_m2": 29.488383442895056,
+    "occupied_5cm_cells": 2574,
+    "occupied_5cm_cell_area_m2": 6.435000000000001,
+    "supported_cell_hull_m2": 29.536250000000006
+  },
+  {
+    "name": "obs_053",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_053/points_calibration_units.ply",
+    "reference_observation": "obs_053",
+    "point_count": 122953,
+    "dimensions_xy_m": [
+      10.013219646542227,
+      5.018636088955827
+    ],
+    "raw_convex_hull_m2": 27.626440475730462,
+    "occupied_5cm_cells": 5561,
+    "occupied_5cm_cell_area_m2": 13.902500000000003,
+    "supported_cell_hull_m2": 27.626250000000002
+  },
+  {
+    "name": "obs_052",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_052/points_calibration_units.ply",
+    "reference_observation": "obs_052",
+    "point_count": 102259,
+    "dimensions_xy_m": [
+      10.014095786052962,
+      5.013023180602143
+    ],
+    "raw_convex_hull_m2": 27.37919652425499,
+    "occupied_5cm_cells": 5255,
+    "occupied_5cm_cell_area_m2": 13.137500000000003,
+    "supported_cell_hull_m2": 27.05625
+  },
+  {
+    "name": "obs_042",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_042/points_calibration_units.ply",
+    "reference_observation": "obs_042",
+    "point_count": 44993,
+    "dimensions_xy_m": [
+      10.0336171535853,
+      4.465469646216693
+    ],
+    "raw_convex_hull_m2": 27.070041687915776,
+    "occupied_5cm_cells": 2798,
+    "occupied_5cm_cell_area_m2": 6.995000000000001,
+    "supported_cell_hull_m2": 26.986250000000005
+  },
+  {
+    "name": "obs_035",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_035/points_calibration_units.ply",
+    "reference_observation": "obs_035",
+    "point_count": 142576,
+    "dimensions_xy_m": [
+      9.057619958460116,
+      5.4902180072579965
+    ],
+    "raw_convex_hull_m2": 26.54882857433095,
+    "occupied_5cm_cells": 2701,
+    "occupied_5cm_cell_area_m2": 6.752500000000001,
+    "supported_cell_hull_m2": 26.61
+  },
+  {
+    "name": "obs_044",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_044/points_calibration_units.ply",
+    "reference_observation": "obs_044",
+    "point_count": 124564,
+    "dimensions_xy_m": [
+      9.756713694705432,
+      4.371624646112061
+    ],
+    "raw_convex_hull_m2": 26.388556162244537,
+    "occupied_5cm_cells": 6544,
+    "occupied_5cm_cell_area_m2": 16.360000000000003,
+    "supported_cell_hull_m2": 26.403750000000006
+  },
+  {
+    "name": "obs_047",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_047/points_calibration_units.ply",
+    "reference_observation": "obs_047",
+    "point_count": 178900,
+    "dimensions_xy_m": [
+      10.038331291558356,
+      3.6955498098904105
+    ],
+    "raw_convex_hull_m2": 26.229286369472007,
+    "occupied_5cm_cells": 6753,
+    "occupied_5cm_cell_area_m2": 16.882500000000004,
+    "supported_cell_hull_m2": 26.39125
+  },
+  {
+    "name": "obs_027",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_027/points_calibration_units.ply",
+    "reference_observation": "obs_027",
+    "point_count": 143195,
+    "dimensions_xy_m": [
+      10.251133110758065,
+      4.8543095990731935
+    ],
+    "raw_convex_hull_m2": 25.8168259332242,
+    "occupied_5cm_cells": 1949,
+    "occupied_5cm_cell_area_m2": 4.872500000000001,
+    "supported_cell_hull_m2": 26.070000000000007
+  },
+  {
+    "name": "obs_025",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_025/points_calibration_units.ply",
+    "reference_observation": "obs_025",
+    "point_count": 100072,
+    "dimensions_xy_m": [
+      9.99806746916858,
+      3.997646032272378
+    ],
+    "raw_convex_hull_m2": 25.438706682433903,
+    "occupied_5cm_cells": 2082,
+    "occupied_5cm_cell_area_m2": 5.205000000000001,
+    "supported_cell_hull_m2": 25.488750000000007
+  },
+  {
+    "name": "obs_056",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_056/points_calibration_units.ply",
+    "reference_observation": "obs_056",
+    "point_count": 115796,
+    "dimensions_xy_m": [
+      10.274292543147745,
+      5.472260695152033
+    ],
+    "raw_convex_hull_m2": 25.27195798683155,
+    "occupied_5cm_cells": 2229,
+    "occupied_5cm_cell_area_m2": 5.572500000000001,
+    "supported_cell_hull_m2": 25.408749999999994
+  },
+  {
+    "name": "obs_007",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_007/points_calibration_units.ply",
+    "reference_observation": "obs_007",
+    "point_count": 61289,
+    "dimensions_xy_m": [
+      9.857846047846822,
+      4.6425389636453644
+    ],
+    "raw_convex_hull_m2": 24.72270444059869,
+    "occupied_5cm_cells": 3177,
+    "occupied_5cm_cell_area_m2": 7.942500000000002,
+    "supported_cell_hull_m2": 24.76875000000001
+  },
+  {
+    "name": "obs_034",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_034/points_calibration_units.ply",
+    "reference_observation": "obs_034",
+    "point_count": 257590,
+    "dimensions_xy_m": [
+      9.565864806462267,
+      5.019883560640085
+    ],
+    "raw_convex_hull_m2": 24.565599743745114,
+    "occupied_5cm_cells": 6829,
+    "occupied_5cm_cell_area_m2": 17.0725,
+    "supported_cell_hull_m2": 24.673750000000002
+  },
+  {
+    "name": "obs_021",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_021/points_calibration_units.ply",
+    "reference_observation": "obs_021",
+    "point_count": 79716,
+    "dimensions_xy_m": [
+      10.164741417125434,
+      5.097790020936663
+    ],
+    "raw_convex_hull_m2": 24.28328706403071,
+    "occupied_5cm_cells": 1750,
+    "occupied_5cm_cell_area_m2": 4.375000000000001,
+    "supported_cell_hull_m2": 24.45500000000001
+  },
+  {
+    "name": "component_obs_029",
+    "kind": "registered_component",
+    "path": "artifacts/runs/r12_registration/component_obs_029/cloud_all_observed_calibration_units.ply",
+    "reference_observation": "obs_029",
+    "observations": [
+      "obs_029",
+      "obs_031",
+      "obs_030"
+    ],
+    "point_count": 51544,
+    "dimensions_xy_m": [
+      8.447446597443644,
+      5.212498460266671
+    ],
+    "raw_convex_hull_m2": 24.38777977538952,
+    "occupied_5cm_cells": 2935,
+    "occupied_5cm_cell_area_m2": 7.337500000000001,
+    "supported_cell_hull_m2": 24.0025
+  },
+  {
+    "name": "obs_031",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_031/points_calibration_units.ply",
+    "reference_observation": "obs_031",
+    "point_count": 150684,
+    "dimensions_xy_m": [
+      8.667214062256019,
+      5.027180340565042
+    ],
+    "raw_convex_hull_m2": 23.63399991616555,
+    "occupied_5cm_cells": 3004,
+    "occupied_5cm_cell_area_m2": 7.510000000000002,
+    "supported_cell_hull_m2": 23.771250000000002
+  },
+  {
+    "name": "obs_030",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_030/points_calibration_units.ply",
+    "reference_observation": "obs_030",
+    "point_count": 146589,
+    "dimensions_xy_m": [
+      8.667214062256019,
+      5.0214631143766315
+    ],
+    "raw_convex_hull_m2": 23.60634558877726,
+    "occupied_5cm_cells": 2954,
+    "occupied_5cm_cell_area_m2": 7.385000000000002,
+    "supported_cell_hull_m2": 23.735000000000003
+  },
+  {
+    "name": "obs_028",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_028/points_calibration_units.ply",
+    "reference_observation": "obs_028",
+    "point_count": 164417,
+    "dimensions_xy_m": [
+      8.751531731107912,
+      4.784249832123548
+    ],
+    "raw_convex_hull_m2": 23.647434202598706,
+    "occupied_5cm_cells": 2191,
+    "occupied_5cm_cell_area_m2": 5.477500000000001,
+    "supported_cell_hull_m2": 23.340000000000007
+  },
+  {
+    "name": "obs_048",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_048/points_calibration_units.ply",
+    "reference_observation": "obs_048",
+    "point_count": 99196,
+    "dimensions_xy_m": [
+      10.18088430891419,
+      3.5685703908763085
+    ],
+    "raw_convex_hull_m2": 21.772771643640013,
+    "occupied_5cm_cells": 2882,
+    "occupied_5cm_cell_area_m2": 7.205000000000001,
+    "supported_cell_hull_m2": 22.055
+  },
+  {
+    "name": "component_obs_010",
+    "kind": "registered_component",
+    "path": "artifacts/runs/r12_registration/component_obs_010/cloud_all_observed_calibration_units.ply",
+    "reference_observation": "obs_010",
+    "observations": [
+      "obs_010",
+      "obs_012",
+      "obs_014",
+      "obs_013"
+    ],
+    "point_count": 90954,
+    "dimensions_xy_m": [
+      7.995171686400897,
+      4.312040244229557
+    ],
+    "raw_convex_hull_m2": 19.973819952143565,
+    "occupied_5cm_cells": 5338,
+    "occupied_5cm_cell_area_m2": 13.345000000000002,
+    "supported_cell_hull_m2": 19.9875
+  },
+  {
+    "name": "obs_014",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_014/points_calibration_units.ply",
+    "reference_observation": "obs_014",
+    "point_count": 109123,
+    "dimensions_xy_m": [
+      7.955733167447992,
+      4.253035775969349
+    ],
+    "raw_convex_hull_m2": 19.788834638629385,
+    "occupied_5cm_cells": 4235,
+    "occupied_5cm_cell_area_m2": 10.587500000000002,
+    "supported_cell_hull_m2": 19.7775
+  },
+  {
+    "name": "obs_013",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_013/points_calibration_units.ply",
+    "reference_observation": "obs_013",
+    "point_count": 103023,
+    "dimensions_xy_m": [
+      7.913114017142574,
+      4.270951277072901
+    ],
+    "raw_convex_hull_m2": 19.579730349108896,
+    "occupied_5cm_cells": 4308,
+    "occupied_5cm_cell_area_m2": 10.770000000000001,
+    "supported_cell_hull_m2": 19.76375
+  },
+  {
+    "name": "obs_006",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_006/points_calibration_units.ply",
+    "reference_observation": "obs_006",
+    "point_count": 85296,
+    "dimensions_xy_m": [
+      4.395600032125516,
+      5.9427492612200385
+    ],
+    "raw_convex_hull_m2": 18.358713535337813,
+    "occupied_5cm_cells": 4435,
+    "occupied_5cm_cell_area_m2": 11.087500000000002,
+    "supported_cell_hull_m2": 18.177500000000006
+  },
+  {
+    "name": "obs_029",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_029/points_calibration_units.ply",
+    "reference_observation": "obs_029",
+    "point_count": 109175,
+    "dimensions_xy_m": [
+      7.190702365671626,
+      4.107706605431063
+    ],
+    "raw_convex_hull_m2": 17.387032576547963,
+    "occupied_5cm_cells": 1749,
+    "occupied_5cm_cell_area_m2": 4.3725000000000005,
+    "supported_cell_hull_m2": 17.394999999999996
+  },
+  {
+    "name": "obs_012",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_012/points_calibration_units.ply",
+    "reference_observation": "obs_012",
+    "point_count": 136851,
+    "dimensions_xy_m": [
+      7.086765562025339,
+      4.2989985008559
+    ],
+    "raw_convex_hull_m2": 16.74357016686196,
+    "occupied_5cm_cells": 4224,
+    "occupied_5cm_cell_area_m2": 10.560000000000002,
+    "supported_cell_hull_m2": 16.79125
+  },
+  {
+    "name": "obs_010",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_010/points_calibration_units.ply",
+    "reference_observation": "obs_010",
+    "point_count": 181768,
+    "dimensions_xy_m": [
+      7.126637947077209,
+      4.138888244237593
+    ],
+    "raw_convex_hull_m2": 15.920848178471552,
+    "occupied_5cm_cells": 4167,
+    "occupied_5cm_cell_area_m2": 10.417500000000002,
+    "supported_cell_hull_m2": 16.07375
+  },
+  {
+    "name": "obs_055",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_055/points_calibration_units.ply",
+    "reference_observation": "obs_055",
+    "point_count": 9666,
+    "dimensions_xy_m": [
+      8.916952101212033,
+      3.7080803688308
+    ],
+    "raw_convex_hull_m2": 13.671348849481838,
+    "occupied_5cm_cells": 513,
+    "occupied_5cm_cell_area_m2": 1.2825000000000002,
+    "supported_cell_hull_m2": 13.718750000000002
+  },
+  {
+    "name": "obs_041",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_041/points_calibration_units.ply",
+    "reference_observation": "obs_041",
+    "point_count": 124936,
+    "dimensions_xy_m": [
+      6.41398856014881,
+      4.021140686215713
+    ],
+    "raw_convex_hull_m2": 13.093951746088218,
+    "occupied_5cm_cells": 1277,
+    "occupied_5cm_cell_area_m2": 3.192500000000001,
+    "supported_cell_hull_m2": 13.34875
+  },
+  {
+    "name": "obs_002",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_002/points_calibration_units.ply",
+    "reference_observation": "obs_002",
+    "point_count": 14890,
+    "dimensions_xy_m": [
+      8.462524748439092,
+      2.397761287185713
+    ],
+    "raw_convex_hull_m2": 12.14539696826096,
+    "occupied_5cm_cells": 1263,
+    "occupied_5cm_cell_area_m2": 3.1575000000000006,
+    "supported_cell_hull_m2": 12.139999999999999
+  },
+  {
+    "name": "obs_009",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_009/points_calibration_units.ply",
+    "reference_observation": "obs_009",
+    "point_count": 107405,
+    "dimensions_xy_m": [
+      5.231275438272895,
+      3.5964944228705953
+    ],
+    "raw_convex_hull_m2": 10.384085760872685,
+    "occupied_5cm_cells": 1983,
+    "occupied_5cm_cell_area_m2": 4.957500000000001,
+    "supported_cell_hull_m2": 10.472500000000002
+  },
+  {
+    "name": "obs_054",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_054/points_calibration_units.ply",
+    "reference_observation": "obs_054",
+    "point_count": 20653,
+    "dimensions_xy_m": [
+      9.81900540515284,
+      3.9388360034971814
+    ],
+    "raw_convex_hull_m2": 9.389112915962711,
+    "occupied_5cm_cells": 515,
+    "occupied_5cm_cell_area_m2": 1.2875000000000003,
+    "supported_cell_hull_m2": 9.416250000000002
+  },
+  {
+    "name": "obs_008",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_008/points_calibration_units.ply",
+    "reference_observation": "obs_008",
+    "point_count": 36778,
+    "dimensions_xy_m": [
+      8.522912191162233,
+      3.6251800068707922
+    ],
+    "raw_convex_hull_m2": 9.200205489079181,
+    "occupied_5cm_cells": 347,
+    "occupied_5cm_cell_area_m2": 0.8675000000000002,
+    "supported_cell_hull_m2": 9.155000000000003
+  },
+  {
+    "name": "obs_040",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_040/points_calibration_units.ply",
+    "reference_observation": "obs_040",
+    "point_count": 65423,
+    "dimensions_xy_m": [
+      5.3152553553226785,
+      2.829414527764321
+    ],
+    "raw_convex_hull_m2": 8.868620043220897,
+    "occupied_5cm_cells": 1078,
+    "occupied_5cm_cell_area_m2": 2.6950000000000007,
+    "supported_cell_hull_m2": 9.006250000000001
+  },
+  {
+    "name": "component_obs_003",
+    "kind": "registered_component",
+    "path": "artifacts/runs/r12_registration/component_obs_003/cloud_all_observed_calibration_units.ply",
+    "reference_observation": "obs_003",
+    "observations": [
+      "obs_003",
+      "obs_004"
+    ],
+    "point_count": 24019,
+    "dimensions_xy_m": [
+      5.1237434155123225,
+      3.1506010916159077
+    ],
+    "raw_convex_hull_m2": 8.624525173365447,
+    "occupied_5cm_cells": 1761,
+    "occupied_5cm_cell_area_m2": 4.402500000000001,
+    "supported_cell_hull_m2": 8.705
+  },
+  {
+    "name": "obs_003",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_003/points_calibration_units.ply",
+    "reference_observation": "obs_003",
+    "point_count": 69844,
+    "dimensions_xy_m": [
+      5.187202171415664,
+      3.1188971049928265
+    ],
+    "raw_convex_hull_m2": 8.511401356661928,
+    "occupied_5cm_cells": 1508,
+    "occupied_5cm_cell_area_m2": 3.770000000000001,
+    "supported_cell_hull_m2": 8.61375
+  },
+  {
+    "name": "obs_004",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_004/points_calibration_units.ply",
+    "reference_observation": "obs_004",
+    "point_count": 100634,
+    "dimensions_xy_m": [
+      5.095718109314883,
+      3.086758208894942
+    ],
+    "raw_convex_hull_m2": 8.413169418383369,
+    "occupied_5cm_cells": 1729,
+    "occupied_5cm_cell_area_m2": 4.322500000000001,
+    "supported_cell_hull_m2": 8.52
+  },
+  {
+    "name": "obs_038",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_038/points_calibration_units.ply",
+    "reference_observation": "obs_038",
+    "point_count": 15770,
+    "dimensions_xy_m": [
+      6.084016198070472,
+      2.2367021445932473
+    ],
+    "raw_convex_hull_m2": 7.798470580794411,
+    "occupied_5cm_cells": 522,
+    "occupied_5cm_cell_area_m2": 1.3050000000000002,
+    "supported_cell_hull_m2": 7.75125
+  },
+  {
+    "name": "obs_039",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_039/points_calibration_units.ply",
+    "reference_observation": "obs_039",
+    "point_count": 23207,
+    "dimensions_xy_m": [
+      5.705212308235895,
+      1.7531663344167328
+    ],
+    "raw_convex_hull_m2": 5.348347315746255,
+    "occupied_5cm_cells": 503,
+    "occupied_5cm_cell_area_m2": 1.2575000000000003,
+    "supported_cell_hull_m2": 5.411250000000002
+  },
+  {
+    "name": "obs_011",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_011/points_calibration_units.ply",
+    "reference_observation": "obs_011",
+    "point_count": 27707,
+    "dimensions_xy_m": [
+      3.207728780180161,
+      1.7173146179671253
+    ],
+    "raw_convex_hull_m2": 2.535089694128697,
+    "occupied_5cm_cells": 308,
+    "occupied_5cm_cell_area_m2": 0.7700000000000001,
+    "supported_cell_hull_m2": 2.58875
+  },
+  {
+    "name": "obs_001",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_001/points_calibration_units.ply",
+    "reference_observation": "obs_001",
+    "point_count": 18045,
+    "dimensions_xy_m": [
+      2.5415608423282787,
+      1.3695653011592606
+    ],
+    "raw_convex_hull_m2": 1.6859067653673259,
+    "occupied_5cm_cells": 121,
+    "occupied_5cm_cell_area_m2": 0.30250000000000005,
+    "supported_cell_hull_m2": 1.7562500000000005
+  },
+  {
+    "name": "obs_016",
+    "kind": "single_frame",
+    "path": "artifacts/runs/r11_filtered_batch/obs_016/points_calibration_units.ply",
+    "reference_observation": "obs_016",
+    "point_count": 11562,
+    "dimensions_xy_m": [
+      0.8404501307258838,
+      0.42934736546407853
+    ],
+    "raw_convex_hull_m2": 0.22300652597105208,
+    "occupied_5cm_cells": 58,
+    "occupied_5cm_cell_area_m2": 0.14500000000000002,
+    "supported_cell_hull_m2": 0.24375000000000002
+  }
+]

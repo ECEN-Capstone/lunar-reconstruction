@@ -1,0 +1,53 @@
+{
+  "profile": {
+    "name": "uber_relaxed",
+    "block_size": 11,
+    "uniqueness_ratio": 0,
+    "internal_lr_px": 16,
+    "external_lr_px": 16,
+    "min_disparity_px": 4,
+    "texture_std": 0.0,
+    "light_min": 0,
+    "relative_depth_jump": 0.5,
+    "edge_baselines": 10.0
+  },
+  "accepted_pixels": 315230,
+  "whole_image_fraction": 0.3006267547607422,
+  "fraction_also_passing_2px_lr": 0.8835929321447832,
+  "lr_error_px": {
+    "count": 315230,
+    "median": 0.125,
+    "p90": 4.015625,
+    "p95": 9.9591064453125
+  },
+  "disparity_px": {
+    "count": 315230,
+    "median": 64.875,
+    "p90": 278.25,
+    "p95": 363.8125
+  },
+  "heldout_feature_count": 392,
+  "heldout_features_accepted": 104,
+  "heldout_disparity_error_px": {
+    "count": 104,
+    "median": 81.70086319621171,
+    "p90": 373.0138242732166,
+    "p95": 444.6142661144354
+  },
+  "photometric_difference_dn": {
+    "count": 315230,
+    "median": 3.0,
+    "p90": 31.0,
+    "p95": 41.0
+  },
+  "mesh_vertices": 25305,
+  "mesh_triangles": 28197,
+  "mesh_topology": {
+    "components": 1974,
+    "largest_component_face_fraction": 0.40302159804234494,
+    "used_vertices": 25305
+  },
+  "triangle_fraction_over_10pct_depth_jump": 0.049757066354576725,
+  "units": "arbitrary baseline=1; no physical scale",
+  "obj_readback_verified": true
+}

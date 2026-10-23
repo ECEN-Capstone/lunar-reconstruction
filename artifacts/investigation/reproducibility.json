@@ -1,0 +1,6 @@
+{
+  "disparity_left_px.npy": true,
+  "disparity_right_px.npy": true,
+  "depth_calibration_units.npy": true,
+  "xyz_rectified_calibration_units.npy": true
+}

@@ -1,0 +1,54 @@
+{
+  "profile": {
+    "name": "uber_relaxed_row_adjusted",
+    "block_size": 11,
+    "uniqueness_ratio": 0,
+    "internal_lr_px": 16,
+    "external_lr_px": 16,
+    "min_disparity_px": 4,
+    "texture_std": 0.0,
+    "light_min": 0,
+    "relative_depth_jump": 0.5,
+    "edge_baselines": 10.0,
+    "row_adjustment": true
+  },
+  "accepted_pixels": 471417,
+  "whole_image_fraction": 0.44957828521728516,
+  "fraction_also_passing_2px_lr": 0.9335238228574702,
+  "lr_error_px": {
+    "count": 471417,
+    "median": 0.0625,
+    "p90": 0.5703125,
+    "p95": 4.9453125
+  },
+  "disparity_px": {
+    "count": 471417,
+    "median": 16.8125,
+    "p90": 87.1875,
+    "p95": 108.875
+  },
+  "heldout_feature_count": 392,
+  "heldout_features_accepted": 279,
+  "heldout_disparity_error_px": {
+    "count": 279,
+    "median": 0.28667321800395484,
+    "p90": 0.8817265107743653,
+    "p95": 1.19839447635291
+  },
+  "photometric_difference_dn": {
+    "count": 471417,
+    "median": 6.0,
+    "p90": 27.0,
+    "p95": 35.0
+  },
+  "mesh_vertices": 46223,
+  "mesh_triangles": 71473,
+  "mesh_topology": {
+    "components": 1100,
+    "largest_component_face_fraction": 0.6613266548207015,
+    "used_vertices": 46223
+  },
+  "triangle_fraction_over_10pct_depth_jump": 0.017167321925762175,
+  "units": "arbitrary baseline=1; no physical scale",
+  "obj_readback_verified": true
+}

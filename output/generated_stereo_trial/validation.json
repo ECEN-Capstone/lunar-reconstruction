@@ -1,0 +1,43 @@
+{
+  "diagnostic_checks": [
+    {
+      "pair": "stereo_trial_1",
+      "profile": "strict",
+      "split_lossless": true,
+      "source_unchanged": true,
+      "arrays_match_metrics": true,
+      "obj_readback_valid": true
+    },
+    {
+      "pair": "stereo_trial_1",
+      "profile": "relaxed",
+      "split_lossless": true,
+      "source_unchanged": true,
+      "arrays_match_metrics": true,
+      "obj_readback_valid": true
+    },
+    {
+      "pair": "stereo_trial_2",
+      "profile": "strict",
+      "split_lossless": true,
+      "source_unchanged": true,
+      "arrays_match_metrics": true,
+      "obj_readback_valid": true
+    },
+    {
+      "pair": "stereo_trial_2",
+      "profile": "relaxed",
+      "split_lossless": true,
+      "source_unchanged": true,
+      "arrays_match_metrics": true,
+      "obj_readback_valid": true
+    }
+  ],
+  "real_control_bitwise_reproduction": [
+    "disparity_left_px.npy",
+    "disparity_right_px.npy",
+    "xyz_rectified_calibration_units.npy"
+  ],
+  "split_zip_integrity": true,
+  "production_gate_unchanged": true
+}

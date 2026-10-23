@@ -1,0 +1,33 @@
+{
+  "generation_environment": "ChatGPT built-in image generation",
+  "model_version_exposed": false,
+  "generation_seed_exposed": false,
+  "generation_parameters": {
+    "transparent_background": false
+  },
+  "input_order": [
+    "inputs/ch3_nav_ncl_20230901T2225595662_d_img_d32_044.png",
+    "inputs/ch3_nav_ncl_20230901T2233168936_d_img_d32_044.png"
+  ],
+  "stereo_input_order": [
+    "inputs/ch3_nav_ncl_20230901T2225595662_d_img_d32_044.png",
+    "inputs/ch3_nav_ncr_20230901T2226391343_d_img_d32_044.png",
+    "inputs/ch3_nav_ncl_20230901T2233168936_d_img_d32_044.png",
+    "inputs/ch3_nav_ncr_20230901T2233572231_d_img_d32_044.png"
+  ],
+  "requested_viewpoint_fraction": 0.5,
+  "temporal_prompt": "prompts/temporal_prompt.txt",
+  "stereo_prompt": "prompts/stereo_prompt.txt",
+  "generated_file_original_names": {
+    "temporal_trial_1.png": "exec-f100a90c-7e99-4ad6-b47d-b3c82c08d52a.png",
+    "temporal_trial_2.png": "exec-28d1fa95-53de-41e8-a4d6-cf7d2ec8927f.png",
+    "stereo_trial_1.png": "exec-c1fb9bb7-bb66-4712-9d5d-3d56f1dd7547.png",
+    "stereo_trial_2.png": "exec-34b361ee-0ec4-44e5-937d-cbe068326c36.png"
+  },
+  "source_archive": "08-navcam_2026Aug01T024119586.zip",
+  "calibration_archive": "07-nav.zip",
+  "recorded_stereo_acquisition_offsets_s": {
+    "real_A": 39.5681,
+    "real_C": 40.3295
+  }
+}
