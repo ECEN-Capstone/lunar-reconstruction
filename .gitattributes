@@ -22,3 +22,15 @@ output/**/*.pdf filter=lfs diff=lfs merge=lfs -text
 # Per-pixel calibration tables are large text arrays; CAHV camera files stay readable.
 chandrayaan-3-documentation/nav/calibration/*_gain.txt filter=lfs diff=lfs merge=lfs -text
 chandrayaan-3-documentation/nav/calibration/*_offset.txt filter=lfs diff=lfs merge=lfs -text
+output/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+output/**/*.docx filter=lfs diff=lfs merge=lfs -text
+output/chronological_video/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
+
+# Published evidence and input bundles include byte-level SHA-256 records.
+# Preserve their original line endings across Windows and Unix checkouts.
+output/detailed_progress_2026-11-10/** -text
+output/collaboration_review/** -text
+output/chronological_video/** -text
+output/all_observations_overlay/** -text
+output/progress_presentation/** -text
+output/pose_explanation/** -text

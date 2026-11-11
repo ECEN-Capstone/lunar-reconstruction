@@ -1,0 +1,522 @@
+{
+  "stereo_observations": 50,
+  "adjacent_intervals": 49,
+  "counts": {
+    "conditional mobility prior": 1,
+    "registered stereo pose": 7,
+    "registered; insufficient translation": 3,
+    "relative pose unavailable": 35,
+    "same timestamp; not a chronological motion interval": 3
+  },
+  "scope": "Adjacent supported stereo observations by timestamp, not every archive image.",
+  "caveats": [
+    "Registration paths may include other observations; a heldout test must exclude its validation observation.",
+    "Mobility commands are conditional priors, not achieved pose measurements.",
+    "No connection is created for an unavailable relative pose."
+  ],
+  "intervals": [
+    {
+      "start": "obs_001",
+      "end": "obs_002",
+      "utc": [
+        "20230823T1801171121",
+        "20230824T1415115229"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_002",
+      "end": "obs_003",
+      "utc": [
+        "20230824T1415115229",
+        "20230825T1040153807"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_003",
+      "end": "obs_004",
+      "utc": [
+        "20230825T1040153807",
+        "20230825T1429025593"
+      ],
+      "status": "registered; insufficient translation",
+      "displacement_m": 0.00044340590830636595,
+      "registration_path": [
+        "obs_003",
+        "obs_004"
+      ]
+    },
+    {
+      "start": "obs_004",
+      "end": "obs_005",
+      "utc": [
+        "20230825T1429025593",
+        "20230825T1951116473"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_005",
+      "end": "obs_006",
+      "utc": [
+        "20230825T1951116473",
+        "20230826T1415013468"
+      ],
+      "status": "registered; insufficient translation",
+      "displacement_m": 0.0003916969263981658,
+      "registration_path": [
+        "obs_005",
+        "obs_006"
+      ]
+    },
+    {
+      "start": "obs_006",
+      "end": "obs_007",
+      "utc": [
+        "20230826T1415013468",
+        "20230826T1910175356"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_007",
+      "end": "obs_008",
+      "utc": [
+        "20230826T1910175356",
+        "20230827T0344528296"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_008",
+      "end": "obs_009",
+      "utc": [
+        "20230827T0344528296",
+        "20230827T1810173096"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_009",
+      "end": "obs_010",
+      "utc": [
+        "20230827T1810173096",
+        "20230827T2210172456"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_010",
+      "end": "obs_011",
+      "utc": [
+        "20230827T2210172456",
+        "20230828T0555552932"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_011",
+      "end": "obs_012",
+      "utc": [
+        "20230828T0555552932",
+        "20230828T1732047656"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_012",
+      "end": "obs_013",
+      "utc": [
+        "20230828T1732047656",
+        "20230828T2026064296"
+      ],
+      "status": "registered stereo pose",
+      "displacement_m": 0.45700622613118314,
+      "registration_path": [
+        "obs_012",
+        "obs_013"
+      ]
+    },
+    {
+      "start": "obs_013",
+      "end": "obs_014",
+      "utc": [
+        "20230828T2026064296",
+        "20230829T0059424569"
+      ],
+      "status": "registered; insufficient translation",
+      "displacement_m": 7.598682592935472e-05,
+      "registration_path": [
+        "obs_013",
+        "obs_014"
+      ]
+    },
+    {
+      "start": "obs_014",
+      "end": "obs_016",
+      "utc": [
+        "20230829T0059424569",
+        "20230829T0537587495"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_016",
+      "end": "obs_017",
+      "utc": [
+        "20230829T0537587495",
+        "20230829T1712052122"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_017",
+      "end": "obs_018",
+      "utc": [
+        "20230829T1712052122",
+        "20230829T1712052122"
+      ],
+      "status": "same timestamp; not a chronological motion interval"
+    },
+    {
+      "start": "obs_018",
+      "end": "obs_019",
+      "utc": [
+        "20230829T1712052122",
+        "20230829T1915529319"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_019",
+      "end": "obs_020",
+      "utc": [
+        "20230829T1915529319",
+        "20230829T2211041576"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_020",
+      "end": "obs_021",
+      "utc": [
+        "20230829T2211041576",
+        "20230829T2326016296"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_021",
+      "end": "obs_022",
+      "utc": [
+        "20230829T2326016296",
+        "20230830T0201159336"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_022",
+      "end": "obs_023",
+      "utc": [
+        "20230830T0201159336",
+        "20230830T0411412160"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_023",
+      "end": "obs_024",
+      "utc": [
+        "20230830T0411412160",
+        "20230830T0500344616"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_024",
+      "end": "obs_025",
+      "utc": [
+        "20230830T0500344616",
+        "20230830T1142592296"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_025",
+      "end": "obs_026",
+      "utc": [
+        "20230830T1142592296",
+        "20230830T1430486696"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_026",
+      "end": "obs_027",
+      "utc": [
+        "20230830T1430486696",
+        "20230830T1443301356"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_027",
+      "end": "obs_028",
+      "utc": [
+        "20230830T1443301356",
+        "20230830T1928548136"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_028",
+      "end": "obs_029",
+      "utc": [
+        "20230830T1928548136",
+        "20230830T2301162535"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_029",
+      "end": "obs_030",
+      "utc": [
+        "20230830T2301162535",
+        "20230831T0100412456"
+      ],
+      "status": "registered stereo pose",
+      "displacement_m": 0.9601852662237816,
+      "registration_path": [
+        "obs_029",
+        "obs_030"
+      ]
+    },
+    {
+      "start": "obs_030",
+      "end": "obs_031",
+      "utc": [
+        "20230831T0100412456",
+        "20230831T0100412456"
+      ],
+      "status": "same timestamp; not a chronological motion interval"
+    },
+    {
+      "start": "obs_031",
+      "end": "obs_033",
+      "utc": [
+        "20230831T0100412456",
+        "20230831T0813019172"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_033",
+      "end": "obs_034",
+      "utc": [
+        "20230831T0813019172",
+        "20230831T1304316922"
+      ],
+      "status": "conditional mobility prior",
+      "prior": {
+        "reference": "NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m",
+        "event_utc": "20230831T1220000000",
+        "distance_m": 4.0,
+        "turn_deg_ccw": 10.0,
+        "ordering": "turn_then_drive",
+        "assumptions": "The images bracket the complete maneuver. Wheel slip, actual heading and achieved translation are unknown."
+      }
+    },
+    {
+      "start": "obs_034",
+      "end": "obs_035",
+      "utc": [
+        "20230831T1304316922",
+        "20230831T1648126376"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_035",
+      "end": "obs_038",
+      "utc": [
+        "20230831T1648126376",
+        "20230831T2147105576"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_038",
+      "end": "obs_039",
+      "utc": [
+        "20230831T2147105576",
+        "20230901T0129543336"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_039",
+      "end": "obs_040",
+      "utc": [
+        "20230901T0129543336",
+        "20230901T0135213735"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_040",
+      "end": "obs_041",
+      "utc": [
+        "20230901T0135213735",
+        "20230901T0213409576"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_041",
+      "end": "obs_042",
+      "utc": [
+        "20230901T0213409576",
+        "20230901T0550086695"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_042",
+      "end": "obs_044",
+      "utc": [
+        "20230901T0550086695",
+        "20230901T1301408296"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_044",
+      "end": "obs_045",
+      "utc": [
+        "20230901T1301408296",
+        "20230901T1312556972"
+      ],
+      "status": "registered stereo pose",
+      "displacement_m": 0.24707844892275665,
+      "registration_path": [
+        "obs_044",
+        "obs_047",
+        "obs_048",
+        "obs_045"
+      ]
+    },
+    {
+      "start": "obs_045",
+      "end": "obs_046",
+      "utc": [
+        "20230901T1312556972",
+        "20230901T1833314856"
+      ],
+      "status": "registered stereo pose",
+      "displacement_m": 1.0630196592123864,
+      "registration_path": [
+        "obs_045",
+        "obs_048",
+        "obs_047",
+        "obs_046"
+      ]
+    },
+    {
+      "start": "obs_046",
+      "end": "obs_047",
+      "utc": [
+        "20230901T1833314856",
+        "20230901T1841159976"
+      ],
+      "status": "registered stereo pose",
+      "displacement_m": 0.17894183990972543,
+      "registration_path": [
+        "obs_046",
+        "obs_047"
+      ]
+    },
+    {
+      "start": "obs_047",
+      "end": "obs_048",
+      "utc": [
+        "20230901T1841159976",
+        "20230901T1846409360"
+      ],
+      "status": "registered stereo pose",
+      "displacement_m": 0.15056491406414008,
+      "registration_path": [
+        "obs_047",
+        "obs_048"
+      ]
+    },
+    {
+      "start": "obs_048",
+      "end": "obs_049",
+      "utc": [
+        "20230901T1846409360",
+        "20230901T2225595662"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_049",
+      "end": "obs_051",
+      "utc": [
+        "20230901T2225595662",
+        "20230902T0157006160"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_051",
+      "end": "obs_052",
+      "utc": [
+        "20230902T0157006160",
+        "20230902T0202579496"
+      ],
+      "status": "registered stereo pose",
+      "displacement_m": 0.13232391963067758,
+      "registration_path": [
+        "obs_051",
+        "obs_052"
+      ]
+    },
+    {
+      "start": "obs_052",
+      "end": "obs_053",
+      "utc": [
+        "20230902T0202579496",
+        "20230902T0202579496"
+      ],
+      "status": "same timestamp; not a chronological motion interval"
+    },
+    {
+      "start": "obs_053",
+      "end": "obs_054",
+      "utc": [
+        "20230902T0202579496",
+        "20230902T0602577575"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_054",
+      "end": "obs_055",
+      "utc": [
+        "20230902T0602577575",
+        "20230902T0617542696"
+      ],
+      "status": "relative pose unavailable"
+    },
+    {
+      "start": "obs_055",
+      "end": "obs_056",
+      "utc": [
+        "20230902T0617542696",
+        "20230902T0858238377"
+      ],
+      "status": "relative pose unavailable"
+    }
+  ]
+}

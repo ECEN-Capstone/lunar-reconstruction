@@ -1,0 +1,3498 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lunar terrain — complete results atlas</title><style>
+    body{font:16px/1.5 system-ui,sans-serif;background:#f7f9fc;color:#183149;margin:0;padding:28px}header{max-width:1120px}h1{font-size:36px;line-height:1.1}h2{margin-top:48px;border-bottom:2px solid #087e8b;padding-bottom:12px}h3{font-size:18px}nav{display:flex;gap:18px;flex-wrap:wrap;margin:26px 0}a{color:#087e8b}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}article{background:white;border:1px solid #ccd7e0;padding:18px;min-width:0}img{display:block;width:100%;height:225px;object-fit:contain;background:#fff}.input{height:170px}video{width:100%;margin:10px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}details{overflow-wrap:anywhere}summary{cursor:pointer;color:#087e8b}.notice{border-left:5px solid #b7472a;padding:12px 18px;background:#fff}footer{margin:48px 0}button{font:inherit;padding:8px 14px} @media print{body{padding:0}.grid{grid-template-columns:repeat(2,1fr)}article{break-inside:avoid}video{display:none}}
+    </style><header><h1>Lunar reconstruction: complete result atlas</h1><p>Evidence snapshot: 10 November 2026. These are renders of actual saved OBJ files, not illustrative generated terrain images. Click a model to open its full-size figure. Open each metrics panel for exact values and source hashes.</p><p class="notice">Local and generated meshes use independent full extents and relative-height colors; apparent size/color cannot rank accuracy. Video surfaces use source-provenance colors. No geometry was smoothed, clipped, filled or decimated for these renders. Nominal rover up is unverified. Generated stereo has arbitrary scale. All video results here are procedural; no learned-generator output has been evaluated.</p><p><a href="DETAILED_METHODS_AND_RESULTS.md">Detailed slide notes and methodology</a> · <a href="local_observation_results.csv">50-observation table</a> · <a href="atlas_manifest.json">Full numeric evidence and hashes</a></p></header><nav><a href="#local">All 50 accepted local reconstructions</a><a href="#registered">All six registered groups</a><a href="#completion">All nine completion variants</a><a href="#generated">Both generated stereo trials: 18 settings</a><a href="#video">All 15 saved video terrain results</a><a href="#negative">Invalid temporal controls</a><a href="#closed">Actual closed video terrain</a></nav><section id="local"><h2>All 50 accepted local reconstructions</h2><div class="grid"><article><h3>obs_001</h3><a href="figures/obs_001_mesh.png" target="_blank"><img src="figures/obs_001_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_001"></a><p>2,020 vertices · 1,856 triangles<br>Extent X × Y × Z: 2.536 × 1.364 × 0.787 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_001_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_001&quot;,
+  &quot;input_points&quot;: 30228,
+  &quot;valid_points&quot;: 18045,
+  &quot;valid_fraction&quot;: 0.01720905303955078,
+  &quot;mesh_vertices&quot;: 2020,
+  &quot;mesh_faces&quot;: 1856,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    778.2446899414062,
+    1801.4349365234375,
+    2668.661376953124
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_001\local_mesh_calibration_units.obj<br>SHA256: 35d8c63da4292057e46f36a04c631ba4fd7a9fe72fd9d9042fbe60d7ead7935f</p></details></article><article><h3>obs_002</h3><a href="figures/obs_002_mesh.png" target="_blank"><img src="figures/obs_002_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_002"></a><p>1,625 vertices · 503 triangles<br>Extent X × Y × Z: 8.410 × 2.348 × 0.140 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_002_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_002&quot;,
+  &quot;input_points&quot;: 25327,
+  &quot;valid_points&quot;: 14890,
+  &quot;valid_fraction&quot;: 0.014200210571289062,
+  &quot;mesh_vertices&quot;: 1625,
+  &quot;mesh_faces&quot;: 503,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    3507.38330078125,
+    5846.89892578125,
+    9637.5166015625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_002\local_mesh_calibration_units.obj<br>SHA256: 62639f56a2c3435144ef16df41c11bb59301f1f58ba24d35ce8b8e20a48d9121</p></details></article><article><h3>obs_003</h3><a href="figures/obs_003_mesh.png" target="_blank"><img src="figures/obs_003_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_003"></a><p>7,783 vertices · 6,671 triangles<br>Extent X × Y × Z: 5.112 × 3.111 × 0.195 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_003_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_003&quot;,
+  &quot;input_points&quot;: 99934,
+  &quot;valid_points&quot;: 69844,
+  &quot;valid_fraction&quot;: 0.06660842895507812,
+  &quot;mesh_vertices&quot;: 7783,
+  &quot;mesh_faces&quot;: 6671,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    966.8428344726562,
+    2329.7216796875,
+    4914.78466796875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_003\local_mesh_calibration_units.obj<br>SHA256: 12c642163050b8de40c18327db45e357f6771547be5413b14a96676dd015328d</p></details></article><article><h3>obs_004</h3><a href="figures/obs_004_mesh.png" target="_blank"><img src="figures/obs_004_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_004"></a><p>11,222 vertices · 10,995 triangles<br>Extent X × Y × Z: 5.057 × 3.074 × 0.214 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_004_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_004&quot;,
+  &quot;input_points&quot;: 127472,
+  &quot;valid_points&quot;: 100634,
+  &quot;valid_fraction&quot;: 0.09597206115722656,
+  &quot;mesh_vertices&quot;: 11222,
+  &quot;mesh_faces&quot;: 10995,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1009.2860717773438,
+    2266.467041015625,
+    4844.5732421875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_004\local_mesh_calibration_units.obj<br>SHA256: 16a9f08efcd5a8018b65a92e5db30123913dd2a5b15f62dbcd98d4c13eee040a</p></details></article><article><h3>obs_005</h3><a href="figures/obs_005_mesh.png" target="_blank"><img src="figures/obs_005_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_005"></a><p>17,269 vertices · 16,038 triangles<br>Extent X × Y × Z: 9.516 × 5.875 × 1.534 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_005_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_005&quot;,
+  &quot;input_points&quot;: 188387,
+  &quot;valid_points&quot;: 155546,
+  &quot;valid_fraction&quot;: 0.14834022521972656,
+  &quot;mesh_vertices&quot;: 17269,
+  &quot;mesh_faces&quot;: 16038,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    5133.32275390625,
+    7392.26416015625,
+    9452.826171875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_005\local_mesh_calibration_units.obj<br>SHA256: d02d6318912da3376aa6b853331a87a96fe0448245ee2e3c011c136e8054faae</p></details></article><article><h3>obs_006</h3><a href="figures/obs_006_mesh.png" target="_blank"><img src="figures/obs_006_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_006"></a><p>9,503 vertices · 7,595 triangles<br>Extent X × Y × Z: 4.388 × 5.908 × 0.881 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_006_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_006&quot;,
+  &quot;input_points&quot;: 117624,
+  &quot;valid_points&quot;: 85296,
+  &quot;valid_fraction&quot;: 0.0813446044921875,
+  &quot;mesh_vertices&quot;: 9503,
+  &quot;mesh_faces&quot;: 7595,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    6773.93505859375,
+    8233.5693359375,
+    9706.4794921875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_006\local_mesh_calibration_units.obj<br>SHA256: 36264274a8f42c9debb2f0ec2ead8d18f123c5f2c771999ded8c4f196510a60d</p></details></article><article><h3>obs_007</h3><a href="figures/obs_007_mesh.png" target="_blank"><img src="figures/obs_007_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_007"></a><p>6,811 vertices · 6,732 triangles<br>Extent X × Y × Z: 9.856 × 4.637 × 1.609 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_007_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_007&quot;,
+  &quot;input_points&quot;: 90092,
+  &quot;valid_points&quot;: 61289,
+  &quot;valid_fraction&quot;: 0.058449745178222656,
+  &quot;mesh_vertices&quot;: 6811,
+  &quot;mesh_faces&quot;: 6732,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    6825.05908203125,
+    8271.22265625,
+    9723.875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_007\local_mesh_calibration_units.obj<br>SHA256: 4c25b43ab553d58cdc0e797160c008a004faee11e37bd15890a63225caab8889</p></details></article><article><h3>obs_008</h3><a href="figures/obs_008_mesh.png" target="_blank"><img src="figures/obs_008_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_008"></a><p>4,085 vertices · 4,546 triangles<br>Extent X × Y × Z: 8.522 × 3.593 × 0.769 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_008_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_008&quot;,
+  &quot;input_points&quot;: 64600,
+  &quot;valid_points&quot;: 36778,
+  &quot;valid_fraction&quot;: 0.03507423400878906,
+  &quot;mesh_vertices&quot;: 4085,
+  &quot;mesh_faces&quot;: 4546,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    869.378582763672,
+    2220.09912109375,
+    2709.1006591796895
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_008\local_mesh_calibration_units.obj<br>SHA256: effefb1439f8f3ea7855300f626edca2072ea6aee89b2f7aee7e96cefa84bb34</p></details></article><article><h3>obs_009</h3><a href="figures/obs_009_mesh.png" target="_blank"><img src="figures/obs_009_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_009"></a><p>11,953 vertices · 12,662 triangles<br>Extent X × Y × Z: 5.200 × 3.577 × 0.154 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_009_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_009&quot;,
+  &quot;input_points&quot;: 125376,
+  &quot;valid_points&quot;: 107405,
+  &quot;valid_fraction&quot;: 0.10242938995361328,
+  &quot;mesh_vertices&quot;: 11953,
+  &quot;mesh_faces&quot;: 12662,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1319.5335693359375,
+    3007.71728515625,
+    5047.369140625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_009\local_mesh_calibration_units.obj<br>SHA256: 9212420c482d45f07543d204edd5afa7e678b196d46c125d8ff47f7e0b564aed</p></details></article><article><h3>obs_010</h3><a href="figures/obs_010_mesh.png" target="_blank"><img src="figures/obs_010_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_010"></a><p>20,175 vertices · 16,879 triangles<br>Extent X × Y × Z: 7.126 × 4.129 × 0.348 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_010_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_010&quot;,
+  &quot;input_points&quot;: 208190,
+  &quot;valid_points&quot;: 181768,
+  &quot;valid_fraction&quot;: 0.17334747314453125,
+  &quot;mesh_vertices&quot;: 20175,
+  &quot;mesh_faces&quot;: 16879,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    807.7894897460938,
+    2667.611572265625,
+    6186.912109375
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_010\local_mesh_calibration_units.obj<br>SHA256: 7b6abc9870a5f7baea9a757a2fce76a9ee535c5f07733f4b293e614e5a41e227</p></details></article><article><h3>obs_011</h3><a href="figures/obs_011_mesh.png" target="_blank"><img src="figures/obs_011_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_011"></a><p>3,073 vertices · 2,617 triangles<br>Extent X × Y × Z: 3.204 × 1.704 × 0.061 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_011_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_011&quot;,
+  &quot;input_points&quot;: 61403,
+  &quot;valid_points&quot;: 27707,
+  &quot;valid_fraction&quot;: 0.02642345428466797,
+  &quot;mesh_vertices&quot;: 3073,
+  &quot;mesh_faces&quot;: 2617,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    933.9418457031251,
+    1880.735595703125,
+    3024.482666015625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_011\local_mesh_calibration_units.obj<br>SHA256: 2d15086464d9c645c5840a8ff8f2ded500342a4b57870caa1796ac3a3c6a0fe1</p></details></article><article><h3>obs_012</h3><a href="figures/obs_012_mesh.png" target="_blank"><img src="figures/obs_012_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_012"></a><p>15,222 vertices · 11,229 triangles<br>Extent X × Y × Z: 7.086 × 4.294 × 0.680 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_012_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_012&quot;,
+  &quot;input_points&quot;: 156028,
+  &quot;valid_points&quot;: 136851,
+  &quot;valid_fraction&quot;: 0.13051128387451172,
+  &quot;mesh_vertices&quot;: 15222,
+  &quot;mesh_faces&quot;: 11229,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1098.1424560546875,
+    3386.967529296875,
+    6698.6689453125
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_012\local_mesh_calibration_units.obj<br>SHA256: 426a10c36b6c08c501e6f6037d0518657603838c103d75813ecb55ab6ed89620</p></details></article><article><h3>obs_013</h3><a href="figures/obs_013_mesh.png" target="_blank"><img src="figures/obs_013_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_013"></a><p>11,435 vertices · 6,868 triangles<br>Extent X × Y × Z: 7.913 × 4.231 × 0.508 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_013_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_013&quot;,
+  &quot;input_points&quot;: 124319,
+  &quot;valid_points&quot;: 103023,
+  &quot;valid_fraction&quot;: 0.0982503890991211,
+  &quot;mesh_vertices&quot;: 11435,
+  &quot;mesh_faces&quot;: 6868,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1269.2215576171875,
+    4186.66845703125,
+    7273.35400390625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_013\local_mesh_calibration_units.obj<br>SHA256: 4e66471abc6489b38eda24587cc754b9cbf1bd729eecbb43baf427be5d14ca56</p></details></article><article><h3>obs_014</h3><a href="figures/obs_014_mesh.png" target="_blank"><img src="figures/obs_014_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_014"></a><p>12,192 vertices · 7,664 triangles<br>Extent X × Y × Z: 7.953 × 4.233 × 0.508 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_014_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_014&quot;,
+  &quot;input_points&quot;: 131230,
+  &quot;valid_points&quot;: 109123,
+  &quot;valid_fraction&quot;: 0.10406780242919922,
+  &quot;mesh_vertices&quot;: 12192,
+  &quot;mesh_faces&quot;: 7664,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    939.71630859375,
+    3768.00146484375,
+    7244.2216796875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_014\local_mesh_calibration_units.obj<br>SHA256: fa2f786fd467398e3591a4f7b0055763251b48001310fd311d94d8b8c9809aaa</p></details></article><article><h3>obs_016</h3><a href="figures/obs_016_mesh.png" target="_blank"><img src="figures/obs_016_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_016"></a><p>1,294 vertices · 1,168 triangles<br>Extent X × Y × Z: 0.838 × 0.426 × 0.121 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_016_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_016&quot;,
+  &quot;input_points&quot;: 43050,
+  &quot;valid_points&quot;: 11562,
+  &quot;valid_fraction&quot;: 0.011026382446289062,
+  &quot;mesh_vertices&quot;: 1294,
+  &quot;mesh_faces&quot;: 1168,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    750.058349609375,
+    1174.4420166015625,
+    1500.11669921875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_016\local_mesh_calibration_units.obj<br>SHA256: 7e71b4d83ad910ea56a37a34e60af14014fbaebe8190897b44cb01d5bf504bf2</p></details></article><article><h3>obs_017</h3><a href="figures/obs_017_mesh.png" target="_blank"><img src="figures/obs_017_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_017"></a><p>18,640 vertices · 18,065 triangles<br>Extent X × Y × Z: 10.219 × 5.019 × 0.425 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_017_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_017&quot;,
+  &quot;input_points&quot;: 213383,
+  &quot;valid_points&quot;: 167836,
+  &quot;valid_fraction&quot;: 0.16006088256835938,
+  &quot;mesh_vertices&quot;: 18640,
+  &quot;mesh_faces&quot;: 18065,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    982.4229736328125,
+    3161.959228515625,
+    8709.3447265625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_017\local_mesh_calibration_units.obj<br>SHA256: b67d9471c368aeb4c39c11320fa31f6c47727c59b3301448af0a4fb1baf2754f</p></details></article><article><h3>obs_018</h3><a href="figures/obs_018_mesh.png" target="_blank"><img src="figures/obs_018_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_018"></a><p>12,094 vertices · 10,370 triangles<br>Extent X × Y × Z: 9.723 × 5.162 × 0.540 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_018_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_018&quot;,
+  &quot;input_points&quot;: 145338,
+  &quot;valid_points&quot;: 108384,
+  &quot;valid_fraction&quot;: 0.103363037109375,
+  &quot;mesh_vertices&quot;: 12094,
+  &quot;mesh_faces&quot;: 10370,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    844.7644653320312,
+    1794.8798828125,
+    7886.5146484375
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_018\local_mesh_calibration_units.obj<br>SHA256: 8d32ed0e3c141b42127c75021bf0fd38f9bfa2c8a92c1acfdc919a82c93e9670</p></details></article><article><h3>obs_019</h3><a href="figures/obs_019_mesh.png" target="_blank"><img src="figures/obs_019_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_019"></a><p>20,905 vertices · 19,105 triangles<br>Extent X × Y × Z: 10.257 × 6.038 × 0.699 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_019_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_019&quot;,
+  &quot;input_points&quot;: 222166,
+  &quot;valid_points&quot;: 187766,
+  &quot;valid_fraction&quot;: 0.17906761169433594,
+  &quot;mesh_vertices&quot;: 20905,
+  &quot;mesh_faces&quot;: 19105,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    986.1726684570312,
+    3648.9052734375,
+    9290.9619140625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_019\local_mesh_calibration_units.obj<br>SHA256: 856b92c310c2f23751887e8025cb5b23bf6a6bda73e3e7c91d34038021d92159</p></details></article><article><h3>obs_020</h3><a href="figures/obs_020_mesh.png" target="_blank"><img src="figures/obs_020_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_020"></a><p>11,868 vertices · 9,639 triangles<br>Extent X × Y × Z: 10.103 × 6.854 × 0.693 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_020_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_020&quot;,
+  &quot;input_points&quot;: 154227,
+  &quot;valid_points&quot;: 107236,
+  &quot;valid_fraction&quot;: 0.10226821899414062,
+  &quot;mesh_vertices&quot;: 11868,
+  &quot;mesh_faces&quot;: 9639,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    817.1569213867188,
+    2307.9208984375,
+    9974.12109375
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_020\local_mesh_calibration_units.obj<br>SHA256: 72213fc59795ffe4a8de6a668fe967706701d25a70f32dde1a64d5664974e6bd</p></details></article><article><h3>obs_021</h3><a href="figures/obs_021_mesh.png" target="_blank"><img src="figures/obs_021_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_021"></a><p>8,835 vertices · 7,104 triangles<br>Extent X × Y × Z: 10.158 × 5.096 × 0.255 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_021_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_021&quot;,
+  &quot;input_points&quot;: 127437,
+  &quot;valid_points&quot;: 79716,
+  &quot;valid_fraction&quot;: 0.07602310180664062,
+  &quot;mesh_vertices&quot;: 8835,
+  &quot;mesh_faces&quot;: 7104,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    775.9076538085938,
+    1591.646240234375,
+    6748.6591796875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_021\local_mesh_calibration_units.obj<br>SHA256: 79b806512b982442d4d1c44456faf1483ecc1f8feba9674f62b77571f007e408</p></details></article><article><h3>obs_022</h3><a href="figures/obs_022_mesh.png" target="_blank"><img src="figures/obs_022_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_022"></a><p>9,512 vertices · 5,540 triangles<br>Extent X × Y × Z: 10.131 × 5.317 × 0.206 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_022_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_022&quot;,
+  &quot;input_points&quot;: 137654,
+  &quot;valid_points&quot;: 85894,
+  &quot;valid_fraction&quot;: 0.08191490173339844,
+  &quot;mesh_vertices&quot;: 9512,
+  &quot;mesh_faces&quot;: 5540,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1269.5184326171875,
+    3826.461181640625,
+    9371.1953125
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_022\local_mesh_calibration_units.obj<br>SHA256: 91346bfabffb6b127132d8d15e80ef6bfdcf2a407366640408f432a0fb2385a4</p></details></article><article><h3>obs_023</h3><a href="figures/obs_023_mesh.png" target="_blank"><img src="figures/obs_023_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_023"></a><p>13,571 vertices · 8,791 triangles<br>Extent X × Y × Z: 10.106 × 5.843 × 0.769 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_023_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_023&quot;,
+  &quot;input_points&quot;: 162606,
+  &quot;valid_points&quot;: 122017,
+  &quot;valid_fraction&quot;: 0.1163644790649414,
+  &quot;mesh_vertices&quot;: 13571,
+  &quot;mesh_faces&quot;: 8791,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    785.1138916015625,
+    3007.71728515625,
+    8014.65576171875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_023\local_mesh_calibration_units.obj<br>SHA256: 100643d8e6ca4c626fa67917cb0bb3945de0cdbc94b4d7ef340963ae8beb6ca9</p></details></article><article><h3>obs_024</h3><a href="figures/obs_024_mesh.png" target="_blank"><img src="figures/obs_024_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_024"></a><p>8,021 vertices · 6,128 triangles<br>Extent X × Y × Z: 9.311 × 5.890 × 1.179 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_024_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_024&quot;,
+  &quot;input_points&quot;: 118171,
+  &quot;valid_points&quot;: 72020,
+  &quot;valid_fraction&quot;: 0.06868362426757812,
+  &quot;mesh_vertices&quot;: 8021,
+  &quot;mesh_faces&quot;: 6128,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1967.33935546875,
+    3676.098876953125,
+    8681.4755859375
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_024\local_mesh_calibration_units.obj<br>SHA256: b0197bf3c44d287b640d5dc63755fdd8d801793df2b408e3129710f5b15e5d6d</p></details></article><article><h3>obs_025</h3><a href="figures/obs_025_mesh.png" target="_blank"><img src="figures/obs_025_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_025"></a><p>11,078 vertices · 9,140 triangles<br>Extent X × Y × Z: 9.998 × 3.983 × 0.603 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_025_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_025&quot;,
+  &quot;input_points&quot;: 141266,
+  &quot;valid_points&quot;: 100072,
+  &quot;valid_fraction&quot;: 0.09543609619140625,
+  &quot;mesh_vertices&quot;: 11078,
+  &quot;mesh_faces&quot;: 9140,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    715.7264404296875,
+    1824.45263671875,
+    7055.8154296875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_025\local_mesh_calibration_units.obj<br>SHA256: 2d8c288e4ddab0705135fb2fc5b198386722f7daf30aed9b81ba9204f6f65201</p></details></article><article><h3>obs_026</h3><a href="figures/obs_026_mesh.png" target="_blank"><img src="figures/obs_026_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_026"></a><p>7,584 vertices · 5,622 triangles<br>Extent X × Y × Z: 9.435 × 5.918 × 0.672 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_026_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_026&quot;,
+  &quot;input_points&quot;: 99240,
+  &quot;valid_points&quot;: 68614,
+  &quot;valid_fraction&quot;: 0.06543540954589844,
+  &quot;mesh_vertices&quot;: 7584,
+  &quot;mesh_faces&quot;: 5622,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    810.9284057617188,
+    3498.337890625,
+    8983.314453125
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_026\local_mesh_calibration_units.obj<br>SHA256: 7d6728206e4e8897e2be5c9450f3eae5f3b7743337ed73055db5c071ce4760c2</p></details></article><article><h3>obs_027</h3><a href="figures/obs_027_mesh.png" target="_blank"><img src="figures/obs_027_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_027"></a><p>16,025 vertices · 17,012 triangles<br>Extent X × Y × Z: 10.250 × 4.773 × 0.471 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_027_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_027&quot;,
+  &quot;input_points&quot;: 178298,
+  &quot;valid_points&quot;: 143195,
+  &quot;valid_fraction&quot;: 0.13656139373779297,
+  &quot;mesh_vertices&quot;: 16025,
+  &quot;mesh_faces&quot;: 17012,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    732.935546875,
+    1787.783203125,
+    6346.107421875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_027\local_mesh_calibration_units.obj<br>SHA256: 058085beb99bdfe21266d3ba5b8fca4d33cc702fae000f6ff97cd56256c9baac</p></details></article><article><h3>obs_028</h3><a href="figures/obs_028_mesh.png" target="_blank"><img src="figures/obs_028_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_028"></a><p>18,274 vertices · 20,367 triangles<br>Extent X × Y × Z: 8.716 × 4.768 × 0.647 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_028_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_028&quot;,
+  &quot;input_points&quot;: 189926,
+  &quot;valid_points&quot;: 164417,
+  &quot;valid_fraction&quot;: 0.1568002700805664,
+  &quot;mesh_vertices&quot;: 18274,
+  &quot;mesh_faces&quot;: 20367,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    806.7086181640625,
+    2052.1640625,
+    4848.90283203125
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_028\local_mesh_calibration_units.obj<br>SHA256: cf48714132b11e694c21e47d219acc92f31eb815992b682d8937bc4dd9064d74</p></details></article><article><h3>obs_029</h3><a href="figures/obs_029_mesh.png" target="_blank"><img src="figures/obs_029_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_029"></a><p>12,141 vertices · 15,729 triangles<br>Extent X × Y × Z: 7.146 × 4.100 × 0.403 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_029_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_029&quot;,
+  &quot;input_points&quot;: 126396,
+  &quot;valid_points&quot;: 109175,
+  &quot;valid_fraction&quot;: 0.10411739349365234,
+  &quot;mesh_vertices&quot;: 12141,
+  &quot;mesh_faces&quot;: 15729,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1051.33154296875,
+    3423.294677734375,
+    5834.32470703125
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_029\local_mesh_calibration_units.obj<br>SHA256: 54f94a78fc3b4ade5a6501fd227a3b7a8105bc98730dc9352e64eea52dd6f8c8</p></details></article><article><h3>obs_030</h3><a href="figures/obs_030_mesh.png" target="_blank"><img src="figures/obs_030_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_030"></a><p>16,319 vertices · 18,694 triangles<br>Extent X × Y × Z: 8.468 × 5.013 × 0.740 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_030_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_030&quot;,
+  &quot;input_points&quot;: 169284,
+  &quot;valid_points&quot;: 146589,
+  &quot;valid_fraction&quot;: 0.13979816436767578,
+  &quot;mesh_vertices&quot;: 16319,
+  &quot;mesh_faces&quot;: 18694,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1283.0272216796875,
+    2872.3779296875,
+    6474.84716796875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_030\local_mesh_calibration_units.obj<br>SHA256: 357d83a891b55baf21de211266c1902cba44e6fdbaf8a0f1a9cd1aca916472eb</p></details></article><article><h3>obs_031</h3><a href="figures/obs_031_mesh.png" target="_blank"><img src="figures/obs_031_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_031"></a><p>16,784 vertices · 19,242 triangles<br>Extent X × Y × Z: 8.483 × 5.017 × 0.741 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_031_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_031&quot;,
+  &quot;input_points&quot;: 172819,
+  &quot;valid_points&quot;: 150684,
+  &quot;valid_fraction&quot;: 0.14370346069335938,
+  &quot;mesh_vertices&quot;: 16784,
+  &quot;mesh_faces&quot;: 19242,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1282.11767578125,
+    2854.24609375,
+    6421.20947265625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_031\local_mesh_calibration_units.obj<br>SHA256: ea87004141b87bde90b75bfe37cd542c9dd7cb5c416a7802dc95cb3f0b8dab1c</p></details></article><article><h3>obs_033</h3><a href="figures/obs_033_mesh.png" target="_blank"><img src="figures/obs_033_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_033"></a><p>12,997 vertices · 13,213 triangles<br>Extent X × Y × Z: 10.329 × 5.252 × 1.273 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_033_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_033&quot;,
+  &quot;input_points&quot;: 164258,
+  &quot;valid_points&quot;: 116766,
+  &quot;valid_fraction&quot;: 0.11135673522949219,
+  &quot;mesh_vertices&quot;: 12997,
+  &quot;mesh_faces&quot;: 13213,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    807.6692504882812,
+    2661.070068359375,
+    9689.146484375
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_033\local_mesh_calibration_units.obj<br>SHA256: 11c4fae7839836fb0790bc35da35d980742e4ee2eb6e5bc2626091c19211509a</p></details></article><article><h3>obs_034</h3><a href="figures/obs_034_mesh.png" target="_blank"><img src="figures/obs_034_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_034"></a><p>28,637 vertices · 31,359 triangles<br>Extent X × Y × Z: 9.374 × 4.993 × 0.985 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_034_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_034&quot;,
+  &quot;input_points&quot;: 289122,
+  &quot;valid_points&quot;: 257590,
+  &quot;valid_fraction&quot;: 0.24565696716308594,
+  &quot;mesh_vertices&quot;: 28637,
+  &quot;mesh_faces&quot;: 31359,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    846.2136840820312,
+    4582.70458984375,
+    7663.7314453125
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_034\local_mesh_calibration_units.obj<br>SHA256: 0a9d8aa085715243cd1aaa6ed06e8790c7bb6bc9243bbc3826dca2282e28bbd6</p></details></article><article><h3>obs_035</h3><a href="figures/obs_035_mesh.png" target="_blank"><img src="figures/obs_035_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_035"></a><p>15,855 vertices · 20,479 triangles<br>Extent X × Y × Z: 9.009 × 5.468 × 1.427 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_035_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_035&quot;,
+  &quot;input_points&quot;: 161602,
+  &quot;valid_points&quot;: 142576,
+  &quot;valid_fraction&quot;: 0.1359710693359375,
+  &quot;mesh_vertices&quot;: 15855,
+  &quot;mesh_faces&quot;: 20479,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1636.7789306640625,
+    3114.765869140625,
+    6280.00244140625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_035\local_mesh_calibration_units.obj<br>SHA256: 386120edad3360e295969518457893fa6cacc2e59359cc8a3e20f2e25b7a5051</p></details></article><article><h3>obs_038</h3><a href="figures/obs_038_mesh.png" target="_blank"><img src="figures/obs_038_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_038"></a><p>1,727 vertices · 1,636 triangles<br>Extent X × Y × Z: 5.956 × 2.228 × 0.197 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_038_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_038&quot;,
+  &quot;input_points&quot;: 24381,
+  &quot;valid_points&quot;: 15770,
+  &quot;valid_fraction&quot;: 0.015039443969726562,
+  &quot;mesh_vertices&quot;: 1727,
+  &quot;mesh_faces&quot;: 1636,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1905.169189453125,
+    4788.98681640625,
+    6360.9873046875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_038\local_mesh_calibration_units.obj<br>SHA256: 4baec44a7ee3dc91a1d50a77d2cb6adf38d53acf47e1d90ff5f5a8304d6626b8</p></details></article><article><h3>obs_039</h3><a href="figures/obs_039_mesh.png" target="_blank"><img src="figures/obs_039_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_039"></a><p>2,582 vertices · 2,961 triangles<br>Extent X × Y × Z: 5.687 × 1.749 × 0.262 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_039_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_039&quot;,
+  &quot;input_points&quot;: 31608,
+  &quot;valid_points&quot;: 23207,
+  &quot;valid_fraction&quot;: 0.022131919860839844,
+  &quot;mesh_vertices&quot;: 2582,
+  &quot;mesh_faces&quot;: 2961,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    2120.3291015625,
+    3564.994873046875,
+    5061.49462890625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_039\local_mesh_calibration_units.obj<br>SHA256: 1c28b51d0f147c728667092896d940925c7f57f6a88734c96f32fec680b0594d</p></details></article><article><h3>obs_040</h3><a href="figures/obs_040_mesh.png" target="_blank"><img src="figures/obs_040_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_040"></a><p>7,305 vertices · 8,622 triangles<br>Extent X × Y × Z: 5.308 × 2.826 × 0.172 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_040_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_040&quot;,
+  &quot;input_points&quot;: 77024,
+  &quot;valid_points&quot;: 65423,
+  &quot;valid_fraction&quot;: 0.062392234802246094,
+  &quot;mesh_vertices&quot;: 7305,
+  &quot;mesh_faces&quot;: 8622,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1314.737548828125,
+    2852.74560546875,
+    5212.22119140625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_040\local_mesh_calibration_units.obj<br>SHA256: f7524693f064fb5aeae6db8b43a9da517720f0169d5fe8e430314ea1ce64538e</p></details></article><article><h3>obs_041</h3><a href="figures/obs_041_mesh.png" target="_blank"><img src="figures/obs_041_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_041"></a><p>13,924 vertices · 21,854 triangles<br>Extent X × Y × Z: 6.414 × 3.997 × 0.348 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_041_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_041&quot;,
+  &quot;input_points&quot;: 138596,
+  &quot;valid_points&quot;: 124936,
+  &quot;valid_fraction&quot;: 0.11914825439453125,
+  &quot;mesh_vertices&quot;: 13924,
+  &quot;mesh_faces&quot;: 21854,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    2078.10107421875,
+    2626.293212890625,
+    4532.93408203125
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_041\local_mesh_calibration_units.obj<br>SHA256: e71fca808ea46397c7157f1cb0139665faf637271776b60530f3b980950435a5</p></details></article><article><h3>obs_042</h3><a href="figures/obs_042_mesh.png" target="_blank"><img src="figures/obs_042_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_042"></a><p>5,024 vertices · 2,634 triangles<br>Extent X × Y × Z: 10.021 × 4.450 × 0.372 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_042_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_042&quot;,
+  &quot;input_points&quot;: 80838,
+  &quot;valid_points&quot;: 44993,
+  &quot;valid_fraction&quot;: 0.042908668518066406,
+  &quot;mesh_vertices&quot;: 5024,
+  &quot;mesh_faces&quot;: 2634,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    934.8590698242188,
+    7302.72119140625,
+    10029.4306640625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_042\local_mesh_calibration_units.obj<br>SHA256: f320265d384178a7c335b979133652ae1d7b7676192996691a5fc83b58885560</p></details></article><article><h3>obs_044</h3><a href="figures/obs_044_mesh.png" target="_blank"><img src="figures/obs_044_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_044"></a><p>13,835 vertices · 8,764 triangles<br>Extent X × Y × Z: 9.756 × 4.332 × 1.062 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_044_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_044&quot;,
+  &quot;input_points&quot;: 169290,
+  &quot;valid_points&quot;: 124564,
+  &quot;valid_fraction&quot;: 0.11879348754882812,
+  &quot;mesh_vertices&quot;: 13835,
+  &quot;mesh_faces&quot;: 8764,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    3100.7927612304698,
+    5781.48486328125,
+    9103.896484375
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_044\local_mesh_calibration_units.obj<br>SHA256: 187058a5acccf288095c68cd1508c7c4dbc686d2a6369ff1972b1409fb1dc48e</p></details></article><article><h3>obs_045</h3><a href="figures/obs_045_mesh.png" target="_blank"><img src="figures/obs_045_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_045"></a><p>7,425 vertices · 4,646 triangles<br>Extent X × Y × Z: 9.844 × 6.395 × 2.141 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_045_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_045&quot;,
+  &quot;input_points&quot;: 96678,
+  &quot;valid_points&quot;: 66899,
+  &quot;valid_fraction&quot;: 0.06379985809326172,
+  &quot;mesh_vertices&quot;: 7425,
+  &quot;mesh_faces&quot;: 4646,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    2546.066357421875,
+    6272.7421875,
+    9847.408203125
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_045\local_mesh_calibration_units.obj<br>SHA256: 9eae20ca6fb9ec31ab23db013c975c79fdc58a7cf367e7c7b951768f04944369</p></details></article><article><h3>obs_046</h3><a href="figures/obs_046_mesh.png" target="_blank"><img src="figures/obs_046_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_046"></a><p>13,646 vertices · 10,825 triangles<br>Extent X × Y × Z: 9.942 × 5.582 × 0.718 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_046_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_046&quot;,
+  &quot;input_points&quot;: 168888,
+  &quot;valid_points&quot;: 122839,
+  &quot;valid_fraction&quot;: 0.11714839935302734,
+  &quot;mesh_vertices&quot;: 13646,
+  &quot;mesh_faces&quot;: 10825,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    2895.369384765625,
+    4870.666015625,
+    7897.994140625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_046\local_mesh_calibration_units.obj<br>SHA256: 3b1c51450938699885dcc4a9b92e8a3367daaf6e878b9f07ab2ee63311d5082e</p></details></article><article><h3>obs_047</h3><a href="figures/obs_047_mesh.png" target="_blank"><img src="figures/obs_047_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_047"></a><p>19,871 vertices · 19,653 triangles<br>Extent X × Y × Z: 10.031 × 3.649 × 0.851 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_047_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_047&quot;,
+  &quot;input_points&quot;: 228349,
+  &quot;valid_points&quot;: 178900,
+  &quot;valid_fraction&quot;: 0.17061233520507812,
+  &quot;mesh_vertices&quot;: 19871,
+  &quot;mesh_faces&quot;: 19653,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    2628.838134765625,
+    4681.5546875,
+    8653.783203125
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_047\local_mesh_calibration_units.obj<br>SHA256: 2488858b5079e05dab57cd3866115cbb67c54c6b8134c5eaf107a26415b4ad73</p></details></article><article><h3>obs_048</h3><a href="figures/obs_048_mesh.png" target="_blank"><img src="figures/obs_048_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_048"></a><p>11,015 vertices · 11,794 triangles<br>Extent X × Y × Z: 10.179 × 3.544 × 1.408 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_048_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_048&quot;,
+  &quot;input_points&quot;: 122418,
+  &quot;valid_points&quot;: 99196,
+  &quot;valid_fraction&quot;: 0.09460067749023438,
+  &quot;mesh_vertices&quot;: 11015,
+  &quot;mesh_faces&quot;: 11794,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1558.2774658203125,
+    3845.4443359375,
+    8271.22265625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_048\local_mesh_calibration_units.obj<br>SHA256: 007c466045ed5d464d1dcf5a7c5bc9004120db1d81031fd374a7d67fae80edc8</p></details></article><article><h3>obs_049</h3><a href="figures/obs_049_mesh.png" target="_blank"><img src="figures/obs_049_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_049"></a><p>5,590 vertices · 3,559 triangles<br>Extent X × Y × Z: 9.843 × 5.745 × 1.972 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_049_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_049&quot;,
+  &quot;input_points&quot;: 107824,
+  &quot;valid_points&quot;: 50421,
+  &quot;valid_fraction&quot;: 0.04808521270751953,
+  &quot;mesh_vertices&quot;: 5590,
+  &quot;mesh_faces&quot;: 3559,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    719.7137451171875,
+    1853.115478515625,
+    10029.4306640625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_049\local_mesh_calibration_units.obj<br>SHA256: 9599e33771ab84df5d7a0231ad8914ea694cd7979dd86640e202635382a53a2a</p></details></article><article><h3>obs_051</h3><a href="figures/obs_051_mesh.png" target="_blank"><img src="figures/obs_051_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_051"></a><p>14,496 vertices · 8,447 triangles<br>Extent X × Y × Z: 10.051 × 5.824 × 0.404 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_051_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_051&quot;,
+  &quot;input_points&quot;: 171806,
+  &quot;valid_points&quot;: 130791,
+  &quot;valid_fraction&quot;: 0.12473201751708984,
+  &quot;mesh_vertices&quot;: 14496,
+  &quot;mesh_faces&quot;: 8447,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1704.388916015625,
+    4987.060546875,
+    9306.8984375
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_051\local_mesh_calibration_units.obj<br>SHA256: 29fd54c7f4209e8d1870b5c62d739270f5ca8a209b064b5071818afa01b9f863</p></details></article><article><h3>obs_052</h3><a href="figures/obs_052_mesh.png" target="_blank"><img src="figures/obs_052_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_052"></a><p>11,364 vertices · 7,219 triangles<br>Extent X × Y × Z: 10.005 × 4.962 × 0.370 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_052_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_052&quot;,
+  &quot;input_points&quot;: 146310,
+  &quot;valid_points&quot;: 102259,
+  &quot;valid_fraction&quot;: 0.09752178192138672,
+  &quot;mesh_vertices&quot;: 11364,
+  &quot;mesh_faces&quot;: 7219,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1667.462158203125,
+    4861.9375,
+    9058.30078125
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_052\local_mesh_calibration_units.obj<br>SHA256: c2299fa92668c6bfa1a195df6fc413259152492a8498d8f332f86aced0363a35</p></details></article><article><h3>obs_053</h3><a href="figures/obs_053_mesh.png" target="_blank"><img src="figures/obs_053_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_053"></a><p>13,671 vertices · 9,385 triangles<br>Extent X × Y × Z: 10.005 × 4.965 × 0.361 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_053_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_053&quot;,
+  &quot;input_points&quot;: 168937,
+  &quot;valid_points&quot;: 122953,
+  &quot;valid_fraction&quot;: 0.11725711822509766,
+  &quot;mesh_vertices&quot;: 13671,
+  &quot;mesh_faces&quot;: 9385,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    1079.3558349609375,
+    4525.373046875,
+    8865.8857421875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_053\local_mesh_calibration_units.obj<br>SHA256: 09f97dd2b451a2d0ffe2f47337d3b9a7316e9c4532ba6761dbb7afc6e3a12293</p></details></article><article><h3>obs_054</h3><a href="figures/obs_054_mesh.png" target="_blank"><img src="figures/obs_054_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_054"></a><p>2,283 vertices · 1,789 triangles<br>Extent X × Y × Z: 9.817 × 3.919 × 0.723 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_054_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_054&quot;,
+  &quot;input_points&quot;: 53956,
+  &quot;valid_points&quot;: 20653,
+  &quot;valid_fraction&quot;: 0.01969623565673828,
+  &quot;mesh_vertices&quot;: 2283,
+  &quot;mesh_faces&quot;: 1789,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    756.8590087890625,
+    1260.3768310546875,
+    9992.490234375
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_054\local_mesh_calibration_units.obj<br>SHA256: 0c9dcfd122de1db6a9ac72be535437bae8286c9c7231752f3623c106ac881112</p></details></article><article><h3>obs_055</h3><a href="figures/obs_055_mesh.png" target="_blank"><img src="figures/obs_055_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_055"></a><p>1,055 vertices · 683 triangles<br>Extent X × Y × Z: 8.910 × 3.693 × 0.540 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_055_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_055&quot;,
+  &quot;input_points&quot;: 29469,
+  &quot;valid_points&quot;: 9666,
+  &quot;valid_fraction&quot;: 0.009218215942382812,
+  &quot;mesh_vertices&quot;: 1055,
+  &quot;mesh_faces&quot;: 683,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    2077.305419921875,
+    2549.775390625,
+    10276.3671875
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_055\local_mesh_calibration_units.obj<br>SHA256: 390ef52933f14fe40c9131d759a17dc554d79144f0f1fb087332ccb2782adc40</p></details></article><article><h3>obs_056</h3><a href="figures/obs_056_mesh.png" target="_blank"><img src="figures/obs_056_mesh.png" loading="lazy" alt="Actual saved OBJ: obs_056"></a><p>12,917 vertices · 14,002 triangles<br>Extent X × Y × Z: 10.274 × 5.468 × 0.387 m</p><p>Actual rectified left input</p><img class="input" src="figures/obs_056_input.png" alt="Actual input"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;observation&quot;: &quot;obs_056&quot;,
+  &quot;input_points&quot;: 141147,
+  &quot;valid_points&quot;: 115796,
+  &quot;valid_fraction&quot;: 0.11043167114257812,
+  &quot;mesh_vertices&quot;: 12917,
+  &quot;mesh_faces&quot;: 14002,
+  &quot;depth_percentiles_calibration_units&quot;: [
+    786.1376342773438,
+    2388.169921875,
+    6413.61962890625
+  ]
+}</pre><p>Saved OBJ: artifacts\runs\r11_filtered_batch\obs_056\local_mesh_calibration_units.obj<br>SHA256: 588c1363ffe34a5d16de316f239d669801c91feaba5dd7819a6b807bc9f0e48e</p></details></article></div></section><section id="registered"><h2>All six registered groups</h2><div class="grid"><article><h3>component_obs_003</h3><a href="figures/component_obs_003.png" target="_blank"><img src="figures/component_obs_003.png" loading="lazy" alt="Actual saved OBJ: component_obs_003"></a><p>19,005 vertices · 17,666 triangles<br>Extent X × Y × Z: 5.112 × 3.138 × 0.219 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;frames&quot;: [
+    &quot;obs_003&quot;,
+    &quot;obs_004&quot;
+  ],
+  &quot;input_points&quot;: 42634,
+  &quot;voxel_size_calibration_units&quot;: 6.051484979626846,
+  &quot;fused_voxels&quot;: 24019,
+  &quot;multiview_supported_voxels&quot;: 6234,
+  &quot;metric_certified&quot;: false
+}</pre><p>Saved OBJ: artifacts\runs\r12_registration\component_obs_003\mesh_observed_union_calibration_units.obj<br>SHA256: 2a3dc81306f68a18e3cb1d8f2691fff684abdfef1183e2f9e1a02ffa4d9bcf96</p></details></article><article><h3>component_obs_005</h3><a href="figures/component_obs_005.png" target="_blank"><img src="figures/component_obs_005.png" loading="lazy" alt="Actual saved OBJ: component_obs_005"></a><p>26,772 vertices · 23,633 triangles<br>Extent X × Y × Z: 9.524 × 5.931 × 1.534 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;frames&quot;: [
+    &quot;obs_005&quot;,
+    &quot;obs_006&quot;
+  ],
+  &quot;input_points&quot;: 60170,
+  &quot;voxel_size_calibration_units&quot;: 6.051484979626846,
+  &quot;fused_voxels&quot;: 55830,
+  &quot;multiview_supported_voxels&quot;: 3895,
+  &quot;metric_certified&quot;: false
+}</pre><p>Saved OBJ: artifacts\runs\r12_registration\component_obs_005\mesh_observed_union_calibration_units.obj<br>SHA256: 8c443cdd09ac4ce6e41e375372a5a1c2b8fd549c8b9ccb8d4d6495d5237d8012</p></details></article><article><h3>component_obs_010</h3><a href="figures/component_obs_010.png" target="_blank"><img src="figures/component_obs_010.png" loading="lazy" alt="Actual saved OBJ: component_obs_010"></a><p>59,024 vertices · 42,640 triangles<br>Extent X × Y × Z: 7.997 × 4.312 × 0.367 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;frames&quot;: [
+    &quot;obs_010&quot;,
+    &quot;obs_012&quot;,
+    &quot;obs_014&quot;,
+    &quot;obs_013&quot;
+  ],
+  &quot;input_points&quot;: 132680,
+  &quot;voxel_size_calibration_units&quot;: 6.051484979626846,
+  &quot;fused_voxels&quot;: 90954,
+  &quot;multiview_supported_voxels&quot;: 8659,
+  &quot;metric_certified&quot;: false
+}</pre><p>Saved OBJ: artifacts\runs\r12_registration\component_obs_010\mesh_observed_union_calibration_units.obj<br>SHA256: ff3ab62fa4dc75163dd71374186fb50b379c7e26694a9d29122dcce9fb0addaa</p></details></article><article><h3>component_obs_029</h3><a href="figures/component_obs_029.png" target="_blank"><img src="figures/component_obs_029.png" loading="lazy" alt="Actual saved OBJ: component_obs_029"></a><p>45,244 vertices · 53,665 triangles<br>Extent X × Y × Z: 8.285 × 5.198 × 0.403 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;frames&quot;: [
+    &quot;obs_029&quot;,
+    &quot;obs_031&quot;,
+    &quot;obs_030&quot;
+  ],
+  &quot;input_points&quot;: 101527,
+  &quot;voxel_size_calibration_units&quot;: 6.051484979626846,
+  &quot;fused_voxels&quot;: 51544,
+  &quot;multiview_supported_voxels&quot;: 21591,
+  &quot;metric_certified&quot;: false
+}</pre><p>Saved OBJ: artifacts\runs\r12_registration\component_obs_029\mesh_observed_union_calibration_units.obj<br>SHA256: 4c6221900ce16b7300b815c223170e6676a87438486a40388aa6513bf6e36cf3</p></details></article><article><h3>component_obs_044</h3><a href="figures/component_obs_044.png" target="_blank"><img src="figures/component_obs_044.png" loading="lazy" alt="Actual saved OBJ: component_obs_044"></a><p>65,792 vertices · 55,682 triangles<br>Extent X × Y × Z: 11.448 × 11.678 × 2.902 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;frames&quot;: [
+    &quot;obs_044&quot;,
+    &quot;obs_047&quot;,
+    &quot;obs_046&quot;,
+    &quot;obs_048&quot;,
+    &quot;obs_045&quot;
+  ],
+  &quot;input_points&quot;: 148171,
+  &quot;voxel_size_calibration_units&quot;: 6.051484979626846,
+  &quot;fused_voxels&quot;: 136699,
+  &quot;multiview_supported_voxels&quot;: 2277,
+  &quot;metric_certified&quot;: false
+}</pre><p>Saved OBJ: artifacts\runs\r12_registration\component_obs_044\mesh_observed_union_calibration_units.obj<br>SHA256: 8ae6b3d353925e31edd3206426e241eafc9f9f3b77278036b244f55099b7a952</p></details></article><article><h3>component_obs_051</h3><a href="figures/component_obs_051.png" target="_blank"><img src="figures/component_obs_051.png" loading="lazy" alt="Actual saved OBJ: component_obs_051"></a><p>39,531 vertices · 25,051 triangles<br>Extent X × Y × Z: 10.300 × 7.012 × 0.427 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;frames&quot;: [
+    &quot;obs_051&quot;,
+    &quot;obs_053&quot;,
+    &quot;obs_052&quot;
+  ],
+  &quot;input_points&quot;: 89015,
+  &quot;voxel_size_calibration_units&quot;: 6.051484979626846,
+  &quot;fused_voxels&quot;: 67831,
+  &quot;multiview_supported_voxels&quot;: 11134,
+  &quot;metric_certified&quot;: false
+}</pre><p>Saved OBJ: artifacts\runs\r12_registration\component_obs_051\mesh_observed_union_calibration_units.obj<br>SHA256: e7a9da5ebbb71b7b1d6fa668a332fdced8a9be9401ed2f8d63e7eff5fdafa8c1</p></details></article></div></section><section id="completion"><h2>All nine completion variants</h2><div class="grid"><article><h3>obs_003 / balanced</h3><a href="figures/obs_003_balanced.png" target="_blank"><img src="figures/obs_003_balanced.png" loading="lazy" alt="Actual saved OBJ: obs_003 / balanced"></a><p>3,469 vertices · 6,639 triangles<br>Extent X × Y × Z: 5.100 × 3.100 × 0.217 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;vertices&quot;: 3469,
+  &quot;triangles&quot;: 6639,
+  &quot;projected_surface_area_m2&quot;: 8.298750000000002,
+  &quot;slopes_deg&quot;: {
+    &quot;count&quot;: 6639,
+    &quot;median&quot;: 5.715111352490766,
+    &quot;p90&quot;: 11.403462436327116,
+    &quot;p95&quot;: 14.144676015164839,
+    &quot;maximum&quot;: 63.09198251563973,
+    &quot;rmse&quot;: 7.9062621910960695
+  },
+  &quot;area_with_inferred_vertices_m2&quot;: 5.170000000000001,
+  &quot;obj_readback_verified&quot;: true,
+  &quot;filled_cells&quot;: 1609,
+  &quot;covered_cells&quot;: 3469,
+  &quot;convex_hull_cell_coverage&quot;: 0.9860716316088687
+}</pre><p>Saved OBJ: artifacts\runs\r15_terrain_completion\obs_003\terrain_balanced_m.obj<br>SHA256: 26de13e1d2faa830f8722e348f61cd9dee143c73670c84d019203c045e936384</p></details></article><article><h3>obs_003 / extended</h3><a href="figures/obs_003_extended.png" target="_blank"><img src="figures/obs_003_extended.png" loading="lazy" alt="Actual saved OBJ: obs_003 / extended"></a><p>3,518 vertices · 6,763 triangles<br>Extent X × Y × Z: 5.100 × 3.100 × 0.217 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;vertices&quot;: 3518,
+  &quot;triangles&quot;: 6763,
+  &quot;projected_surface_area_m2&quot;: 8.453750000000001,
+  &quot;slopes_deg&quot;: {
+    &quot;count&quot;: 6763,
+    &quot;median&quot;: 5.6610053738313555,
+    &quot;p90&quot;: 11.38757440614757,
+    &quot;p95&quot;: 14.119736637208906,
+    &quot;maximum&quot;: 63.09198251563973,
+    &quot;rmse&quot;: 7.869600389824572
+  },
+  &quot;area_with_inferred_vertices_m2&quot;: 5.325000000000001,
+  &quot;obj_readback_verified&quot;: true,
+  &quot;filled_cells&quot;: 1658,
+  &quot;covered_cells&quot;: 3518,
+  &quot;convex_hull_cell_coverage&quot;: 1.0
+}</pre><p>Saved OBJ: artifacts\runs\r15_terrain_completion\obs_003\terrain_extended_m.obj<br>SHA256: 024f81fe2767fc77d7499aacf38ee20ad04bd11f2b99d6b611ad511b0ccecd5f</p></details></article><article><h3>obs_003 / simulation</h3><a href="figures/obs_003_simulation.png" target="_blank"><img src="figures/obs_003_simulation.png" loading="lazy" alt="Actual saved OBJ: obs_003 / simulation"></a><p>3,518 vertices · 6,763 triangles<br>Extent X × Y × Z: 5.100 × 3.100 × 0.217 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;vertices&quot;: 3518,
+  &quot;triangles&quot;: 6763,
+  &quot;projected_surface_area_m2&quot;: 8.453750000000001,
+  &quot;slopes_deg&quot;: {
+    &quot;count&quot;: 6763,
+    &quot;median&quot;: 5.6610053738313555,
+    &quot;p90&quot;: 11.38757440614757,
+    &quot;p95&quot;: 14.119736637208906,
+    &quot;maximum&quot;: 63.09198251563973,
+    &quot;rmse&quot;: 7.869600389824572
+  },
+  &quot;area_with_inferred_vertices_m2&quot;: 5.325000000000001,
+  &quot;obj_readback_verified&quot;: true,
+  &quot;filled_cells&quot;: 1658,
+  &quot;covered_cells&quot;: 3518,
+  &quot;convex_hull_cell_coverage&quot;: 1.0
+}</pre><p>Saved OBJ: artifacts\runs\r15_terrain_completion\obs_003\terrain_simulation_m.obj<br>SHA256: 024f81fe2767fc77d7499aacf38ee20ad04bd11f2b99d6b611ad511b0ccecd5f</p></details></article><article><h3>obs_029 / balanced</h3><a href="figures/obs_029_balanced.png" target="_blank"><img src="figures/obs_029_balanced.png" loading="lazy" alt="Actual saved OBJ: obs_029 / balanced"></a><p>3,637 vertices · 6,811 triangles<br>Extent X × Y × Z: 5.200 × 3.100 × 0.437 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;vertices&quot;: 3637,
+  &quot;triangles&quot;: 6811,
+  &quot;projected_surface_area_m2&quot;: 8.51375,
+  &quot;slopes_deg&quot;: {
+    &quot;count&quot;: 6811,
+    &quot;median&quot;: 6.215484136576466,
+    &quot;p90&quot;: 17.15848465794437,
+    &quot;p95&quot;: 19.766410358973413,
+    &quot;maximum&quot;: 70.23333504577278,
+    &quot;rmse&quot;: 11.284693993469437
+  },
+  &quot;area_with_inferred_vertices_m2&quot;: 5.869999999999999,
+  &quot;obj_readback_verified&quot;: true,
+  &quot;filled_cells&quot;: 2078,
+  &quot;covered_cells&quot;: 3637,
+  &quot;convex_hull_cell_coverage&quot;: 0.8778662804730871
+}</pre><p>Saved OBJ: artifacts\runs\r15_terrain_completion\obs_029\terrain_balanced_m.obj<br>SHA256: 5da8d7a740ae7bd7c37a0336dcf70c7795b21d50d9124878f042d6aea31724b3</p></details></article><article><h3>obs_029 / extended</h3><a href="figures/obs_029_extended.png" target="_blank"><img src="figures/obs_029_extended.png" loading="lazy" alt="Actual saved OBJ: obs_029 / extended"></a><p>4,136 vertices · 7,966 triangles<br>Extent X × Y × Z: 5.200 × 3.100 × 0.437 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;vertices&quot;: 4136,
+  &quot;triangles&quot;: 7966,
+  &quot;projected_surface_area_m2&quot;: 9.9575,
+  &quot;slopes_deg&quot;: {
+    &quot;count&quot;: 7966,
+    &quot;median&quot;: 5.864475655047765,
+    &quot;p90&quot;: 16.484811193717057,
+    &quot;p95&quot;: 19.24146149573955,
+    &quot;maximum&quot;: 70.23333504577278,
+    &quot;rmse&quot;: 10.699922713019657
+  },
+  &quot;area_with_inferred_vertices_m2&quot;: 7.313750000000001,
+  &quot;obj_readback_verified&quot;: true,
+  &quot;filled_cells&quot;: 2577,
+  &quot;covered_cells&quot;: 4136,
+  &quot;convex_hull_cell_coverage&quot;: 0.9983104030895487
+}</pre><p>Saved OBJ: artifacts\runs\r15_terrain_completion\obs_029\terrain_extended_m.obj<br>SHA256: b15c77952166107f3138b9b1c6de2eced9bc4162bf83251abdef3e79daeaa273</p></details></article><article><h3>obs_029 / simulation</h3><a href="figures/obs_029_simulation.png" target="_blank"><img src="figures/obs_029_simulation.png" loading="lazy" alt="Actual saved OBJ: obs_029 / simulation"></a><p>4,143 vertices · 7,981 triangles<br>Extent X × Y × Z: 5.200 × 3.100 × 0.437 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;vertices&quot;: 4143,
+  &quot;triangles&quot;: 7981,
+  &quot;projected_surface_area_m2&quot;: 9.97625,
+  &quot;slopes_deg&quot;: {
+    &quot;count&quot;: 7981,
+    &quot;median&quot;: 5.866075443050553,
+    &quot;p90&quot;: 16.484811193717057,
+    &quot;p95&quot;: 19.23594837466486,
+    &quot;maximum&quot;: 70.23333504577278,
+    &quot;rmse&quot;: 10.695661715458906
+  },
+  &quot;area_with_inferred_vertices_m2&quot;: 7.3325000000000005,
+  &quot;obj_readback_verified&quot;: true,
+  &quot;filled_cells&quot;: 2584,
+  &quot;covered_cells&quot;: 4143,
+  &quot;convex_hull_cell_coverage&quot;: 1.0
+}</pre><p>Saved OBJ: artifacts\runs\r15_terrain_completion\obs_029\terrain_simulation_m.obj<br>SHA256: 3abca65cf0d65ed4288e856ce1fea8cbe69701101d3ea23ba8b2e096584b40c2</p></details></article><article><h3>obs_034 / balanced</h3><a href="figures/obs_034_balanced.png" target="_blank"><img src="figures/obs_034_balanced.png" loading="lazy" alt="Actual saved OBJ: obs_034 / balanced"></a><p>4,436 vertices · 8,546 triangles<br>Extent X × Y × Z: 5.200 × 3.700 × 0.706 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;vertices&quot;: 4436,
+  &quot;triangles&quot;: 8546,
+  &quot;projected_surface_area_m2&quot;: 10.682500000000001,
+  &quot;slopes_deg&quot;: {
+    &quot;count&quot;: 8546,
+    &quot;median&quot;: 11.422666964768183,
+    &quot;p90&quot;: 17.992614892560564,
+    &quot;p95&quot;: 20.187573342282878,
+    &quot;maximum&quot;: 48.60683124111425,
+    &quot;rmse&quot;: 12.76570588278733
+  },
+  &quot;area_with_inferred_vertices_m2&quot;: 2.95125,
+  &quot;obj_readback_verified&quot;: true,
+  &quot;filled_cells&quot;: 846,
+  &quot;covered_cells&quot;: 4436,
+  &quot;convex_hull_cell_coverage&quot;: 0.9988741274487728
+}</pre><p>Saved OBJ: artifacts\runs\r15_terrain_completion\obs_034\terrain_balanced_m.obj<br>SHA256: 67260d04bf320a9ca24f512e720941bd3f9d6dbb348c04f370e65b51a1cbe2b4</p></details></article><article><h3>obs_034 / extended</h3><a href="figures/obs_034_extended.png" target="_blank"><img src="figures/obs_034_extended.png" loading="lazy" alt="Actual saved OBJ: obs_034 / extended"></a><p>4,441 vertices · 8,556 triangles<br>Extent X × Y × Z: 5.200 × 3.700 × 0.706 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;vertices&quot;: 4441,
+  &quot;triangles&quot;: 8556,
+  &quot;projected_surface_area_m2&quot;: 10.695,
+  &quot;slopes_deg&quot;: {
+    &quot;count&quot;: 8556,
+    &quot;median&quot;: 11.422666964768183,
+    &quot;p90&quot;: 17.9907978143421,
+    &quot;p95&quot;: 20.18436138972004,
+    &quot;maximum&quot;: 48.60683124111425,
+    &quot;rmse&quot;: 12.763842226567634
+  },
+  &quot;area_with_inferred_vertices_m2&quot;: 2.96375,
+  &quot;obj_readback_verified&quot;: true,
+  &quot;filled_cells&quot;: 851,
+  &quot;covered_cells&quot;: 4441,
+  &quot;convex_hull_cell_coverage&quot;: 1.0
+}</pre><p>Saved OBJ: artifacts\runs\r15_terrain_completion\obs_034\terrain_extended_m.obj<br>SHA256: 44862e08735d87cc41bcd66fd7ffe566a0539a3f7a2fc4687a85f3624d3f5684</p></details></article><article><h3>obs_034 / simulation</h3><a href="figures/obs_034_simulation.png" target="_blank"><img src="figures/obs_034_simulation.png" loading="lazy" alt="Actual saved OBJ: obs_034 / simulation"></a><p>4,441 vertices · 8,556 triangles<br>Extent X × Y × Z: 5.200 × 3.700 × 0.706 m</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;vertices&quot;: 4441,
+  &quot;triangles&quot;: 8556,
+  &quot;projected_surface_area_m2&quot;: 10.695,
+  &quot;slopes_deg&quot;: {
+    &quot;count&quot;: 8556,
+    &quot;median&quot;: 11.422666964768183,
+    &quot;p90&quot;: 17.9907978143421,
+    &quot;p95&quot;: 20.18436138972004,
+    &quot;maximum&quot;: 48.60683124111425,
+    &quot;rmse&quot;: 12.763842226567634
+  },
+  &quot;area_with_inferred_vertices_m2&quot;: 2.96375,
+  &quot;obj_readback_verified&quot;: true,
+  &quot;filled_cells&quot;: 851,
+  &quot;covered_cells&quot;: 4441,
+  &quot;convex_hull_cell_coverage&quot;: 1.0
+}</pre><p>Saved OBJ: artifacts\runs\r15_terrain_completion\obs_034\terrain_simulation_m.obj<br>SHA256: 44862e08735d87cc41bcd66fd7ffe566a0539a3f7a2fc4687a85f3624d3f5684</p></details></article></div></section><section id="generated"><h2>Both generated stereo trials: 18 settings</h2><div class="grid"><article><h3>stereo_trial_1 / strict</h3><a href="figures/stereo_trial_1_strict.png" target="_blank"><img src="figures/stereo_trial_1_strict.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_1 / strict"></a><p>609 vertices · 289 triangles<br>Extent X × Y × Z: 37.573 × 83.658 × 45.157 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: &quot;strict&quot;,
+  &quot;status&quot;: &quot;diagnostic_only_geometry_gate_failed&quot;,
+  &quot;config&quot;: {
+    &quot;family&quot;: &quot;NC&quot;,
+    &quot;preprocessing&quot;: &quot;none&quot;,
+    &quot;interpretation&quot;: &quot;literal&quot;,
+    &quot;min_disparity&quot;: 0,
+    &quot;num_disparities&quot;: 512,
+    &quot;pad_search&quot;: true,
+    &quot;raw_quality_mask&quot;: false,
+    &quot;block_size&quot;: 5,
+    &quot;uniqueness_ratio&quot;: 15,
+    &quot;speckle_window_size&quot;: 100,
+    &quot;speckle_range&quot;: 2,
+    &quot;lr_threshold_px&quot;: 1.0,
+    &quot;min_valid_disparity_px&quot;: 16.0,
+    &quot;dark_threshold&quot;: 5,
+    &quot;saturated_threshold&quot;: 250,
+    &quot;texture_std_threshold&quot;: 2.0,
+    &quot;texture_window&quot;: 7,
+    &quot;mesh_stride&quot;: 3,
+    &quot;mesh_max_relative_depth_jump&quot;: 0.02,
+    &quot;mesh_max_edge_baselines&quot;: 0.25,
+    &quot;clahe_clip_limit&quot;: 2.0,
+    &quot;clahe_grid&quot;: 8,
+    &quot;random_seed&quot;: 42,
+    &quot;source_kind&quot;: &quot;image_generated_synthetic&quot;
+  },
+  &quot;valid_pixels&quot;: 5742,
+  &quot;whole_image_valid_fraction&quot;: 0.0054759979248046875,
+  &quot;pass_fractions&quot;: {
+    &quot;inside_rectification&quot;: 0.9015846252441406,
+    &quot;disparity_range&quot;: 0.1016998291015625,
+    &quot;left_right_consistent&quot;: 0.058124542236328125,
+    &quot;illuminated&quot;: 0.9043664932250977,
+    &quot;textured&quot;: 0.6189126968383789
+  },
+  &quot;left_right_error_px&quot;: {
+    &quot;count&quot;: 5742,
+    &quot;median&quot;: 0.1875,
+    &quot;p90&quot;: 0.6640625,
+    &quot;p95&quot;: 0.8083972930908203
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 5742,
+    &quot;median&quot;: 95.1875,
+    &quot;p90&quot;: 148.125,
+    &quot;p95&quot;: 225.875
+  },
+  &quot;vertices&quot;: 609,
+  &quot;triangles&quot;: 289,
+  &quot;unit_baseline&quot;: 1,
+  &quot;physical_scale_available&quot;: false,
+  &quot;raw_sensor_data_available&quot;: false,
+  &quot;raw_quality_mask_applied&quot;: false,
+  &quot;note&quot;: &quot;Valid mask means numerical matching/filter acceptance only; cannot override failed scene geometry&quot;
+}</pre><p>Saved OBJ: output\generated_stereo_trial\stereo_trial_1\diagnostic_strict\INVALID_GEOMETRY_mesh_baseline_units.obj<br>SHA256: 0a06074d9dd69a7ab20cc1c035f63bbab8036b3f09069f029ea9ddf6d227918e</p></details></article><article><h3>stereo_trial_1 / relaxed</h3><a href="figures/stereo_trial_1_relaxed.png" target="_blank"><img src="figures/stereo_trial_1_relaxed.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_1 / relaxed"></a><p>4,831 vertices · 2,334 triangles<br>Extent X × Y × Z: 56.041 × 84.793 × 55.464 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: &quot;relaxed&quot;,
+  &quot;status&quot;: &quot;diagnostic_only_geometry_gate_failed&quot;,
+  &quot;config&quot;: {
+    &quot;family&quot;: &quot;NC&quot;,
+    &quot;preprocessing&quot;: &quot;none&quot;,
+    &quot;interpretation&quot;: &quot;literal&quot;,
+    &quot;min_disparity&quot;: 0,
+    &quot;num_disparities&quot;: 512,
+    &quot;pad_search&quot;: true,
+    &quot;raw_quality_mask&quot;: false,
+    &quot;block_size&quot;: 7,
+    &quot;uniqueness_ratio&quot;: 5,
+    &quot;speckle_window_size&quot;: 50,
+    &quot;speckle_range&quot;: 2,
+    &quot;lr_threshold_px&quot;: 2.0,
+    &quot;min_valid_disparity_px&quot;: 16.0,
+    &quot;dark_threshold&quot;: 5,
+    &quot;saturated_threshold&quot;: 250,
+    &quot;texture_std_threshold&quot;: 1.0,
+    &quot;texture_window&quot;: 7,
+    &quot;mesh_stride&quot;: 3,
+    &quot;mesh_max_relative_depth_jump&quot;: 0.05,
+    &quot;mesh_max_edge_baselines&quot;: 0.5,
+    &quot;clahe_clip_limit&quot;: 2.0,
+    &quot;clahe_grid&quot;: 8,
+    &quot;random_seed&quot;: 42,
+    &quot;source_kind&quot;: &quot;image_generated_synthetic&quot;
+  },
+  &quot;valid_pixels&quot;: 43178,
+  &quot;whole_image_valid_fraction&quot;: 0.04117774963378906,
+  &quot;pass_fractions&quot;: {
+    &quot;inside_rectification&quot;: 0.9016246795654297,
+    &quot;disparity_range&quot;: 0.24862098693847656,
+    &quot;left_right_consistent&quot;: 0.12323856353759766,
+    &quot;illuminated&quot;: 0.9042701721191406,
+    &quot;textured&quot;: 0.6218538284301758
+  },
+  &quot;left_right_error_px&quot;: {
+    &quot;count&quot;: 43178,
+    &quot;median&quot;: 0.125,
+    &quot;p90&quot;: 0.5625,
+    &quot;p95&quot;: 0.796875
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 43178,
+    &quot;median&quot;: 98.9375,
+    &quot;p90&quot;: 303.2626953125,
+    &quot;p95&quot;: 369.9375
+  },
+  &quot;vertices&quot;: 4831,
+  &quot;triangles&quot;: 2334,
+  &quot;unit_baseline&quot;: 1,
+  &quot;physical_scale_available&quot;: false,
+  &quot;raw_sensor_data_available&quot;: false,
+  &quot;raw_quality_mask_applied&quot;: false,
+  &quot;note&quot;: &quot;Valid mask means numerical matching/filter acceptance only; cannot override failed scene geometry&quot;
+}</pre><p>Saved OBJ: output\generated_stereo_trial\stereo_trial_1\diagnostic_relaxed\INVALID_GEOMETRY_mesh_baseline_units.obj<br>SHA256: 20b2aa68d07fde10cc73b521b2f51a7a3f55902d5990130ce375c431595c8b7e</p></details></article><article><h3>stereo_trial_2 / strict</h3><a href="figures/stereo_trial_2_strict.png" target="_blank"><img src="figures/stereo_trial_2_strict.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_2 / strict"></a><p>711 vertices · 343 triangles<br>Extent X × Y × Z: 46.079 × 84.721 × 47.084 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: &quot;strict&quot;,
+  &quot;status&quot;: &quot;diagnostic_only_geometry_gate_failed&quot;,
+  &quot;config&quot;: {
+    &quot;family&quot;: &quot;NC&quot;,
+    &quot;preprocessing&quot;: &quot;none&quot;,
+    &quot;interpretation&quot;: &quot;literal&quot;,
+    &quot;min_disparity&quot;: 0,
+    &quot;num_disparities&quot;: 512,
+    &quot;pad_search&quot;: true,
+    &quot;raw_quality_mask&quot;: false,
+    &quot;block_size&quot;: 5,
+    &quot;uniqueness_ratio&quot;: 15,
+    &quot;speckle_window_size&quot;: 100,
+    &quot;speckle_range&quot;: 2,
+    &quot;lr_threshold_px&quot;: 1.0,
+    &quot;min_valid_disparity_px&quot;: 16.0,
+    &quot;dark_threshold&quot;: 5,
+    &quot;saturated_threshold&quot;: 250,
+    &quot;texture_std_threshold&quot;: 2.0,
+    &quot;texture_window&quot;: 7,
+    &quot;mesh_stride&quot;: 3,
+    &quot;mesh_max_relative_depth_jump&quot;: 0.02,
+    &quot;mesh_max_edge_baselines&quot;: 0.25,
+    &quot;clahe_clip_limit&quot;: 2.0,
+    &quot;clahe_grid&quot;: 8,
+    &quot;random_seed&quot;: 42,
+    &quot;source_kind&quot;: &quot;image_generated_synthetic&quot;
+  },
+  &quot;valid_pixels&quot;: 6417,
+  &quot;whole_image_valid_fraction&quot;: 0.006119728088378906,
+  &quot;pass_fractions&quot;: {
+    &quot;inside_rectification&quot;: 0.9016485214233398,
+    &quot;disparity_range&quot;: 0.09225082397460938,
+    &quot;left_right_consistent&quot;: 0.051751136779785156,
+    &quot;illuminated&quot;: 0.9043827056884766,
+    &quot;textured&quot;: 0.624476432800293
+  },
+  &quot;left_right_error_px&quot;: {
+    &quot;count&quot;: 6417,
+    &quot;median&quot;: 0.1328125,
+    &quot;p90&quot;: 0.625,
+    &quot;p95&quot;: 0.765625
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 6417,
+    &quot;median&quot;: 152.9375,
+    &quot;p90&quot;: 483.25,
+    &quot;p95&quot;: 489.3125
+  },
+  &quot;vertices&quot;: 711,
+  &quot;triangles&quot;: 343,
+  &quot;unit_baseline&quot;: 1,
+  &quot;physical_scale_available&quot;: false,
+  &quot;raw_sensor_data_available&quot;: false,
+  &quot;raw_quality_mask_applied&quot;: false,
+  &quot;note&quot;: &quot;Valid mask means numerical matching/filter acceptance only; cannot override failed scene geometry&quot;
+}</pre><p>Saved OBJ: output\generated_stereo_trial\stereo_trial_2\diagnostic_strict\INVALID_GEOMETRY_mesh_baseline_units.obj<br>SHA256: 4b9adca39657a2f93925ca5d78d552decdc27b730a2f500eb8feef5469e5e3af</p></details></article><article><h3>stereo_trial_2 / relaxed</h3><a href="figures/stereo_trial_2_relaxed.png" target="_blank"><img src="figures/stereo_trial_2_relaxed.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_2 / relaxed"></a><p>4,645 vertices · 2,381 triangles<br>Extent X × Y × Z: 57.073 × 84.791 × 49.972 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: &quot;relaxed&quot;,
+  &quot;status&quot;: &quot;diagnostic_only_geometry_gate_failed&quot;,
+  &quot;config&quot;: {
+    &quot;family&quot;: &quot;NC&quot;,
+    &quot;preprocessing&quot;: &quot;none&quot;,
+    &quot;interpretation&quot;: &quot;literal&quot;,
+    &quot;min_disparity&quot;: 0,
+    &quot;num_disparities&quot;: 512,
+    &quot;pad_search&quot;: true,
+    &quot;raw_quality_mask&quot;: false,
+    &quot;block_size&quot;: 7,
+    &quot;uniqueness_ratio&quot;: 5,
+    &quot;speckle_window_size&quot;: 50,
+    &quot;speckle_range&quot;: 2,
+    &quot;lr_threshold_px&quot;: 2.0,
+    &quot;min_valid_disparity_px&quot;: 16.0,
+    &quot;dark_threshold&quot;: 5,
+    &quot;saturated_threshold&quot;: 250,
+    &quot;texture_std_threshold&quot;: 1.0,
+    &quot;texture_window&quot;: 7,
+    &quot;mesh_stride&quot;: 3,
+    &quot;mesh_max_relative_depth_jump&quot;: 0.05,
+    &quot;mesh_max_edge_baselines&quot;: 0.5,
+    &quot;clahe_clip_limit&quot;: 2.0,
+    &quot;clahe_grid&quot;: 8,
+    &quot;random_seed&quot;: 42,
+    &quot;source_kind&quot;: &quot;image_generated_synthetic&quot;
+  },
+  &quot;valid_pixels&quot;: 41904,
+  &quot;whole_image_valid_fraction&quot;: 0.0399627685546875,
+  &quot;pass_fractions&quot;: {
+    &quot;inside_rectification&quot;: 0.9017267227172852,
+    &quot;disparity_range&quot;: 0.23080730438232422,
+    &quot;left_right_consistent&quot;: 0.10722732543945312,
+    &quot;illuminated&quot;: 0.9043464660644531,
+    &quot;textured&quot;: 0.6280117034912109
+  },
+  &quot;left_right_error_px&quot;: {
+    &quot;count&quot;: 41904,
+    &quot;median&quot;: 0.125,
+    &quot;p90&quot;: 0.5546875,
+    &quot;p95&quot;: 0.8125
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 41904,
+    &quot;median&quot;: 156.875,
+    &quot;p90&quot;: 432.25,
+    &quot;p95&quot;: 477.25
+  },
+  &quot;vertices&quot;: 4645,
+  &quot;triangles&quot;: 2381,
+  &quot;unit_baseline&quot;: 1,
+  &quot;physical_scale_available&quot;: false,
+  &quot;raw_sensor_data_available&quot;: false,
+  &quot;raw_quality_mask_applied&quot;: false,
+  &quot;note&quot;: &quot;Valid mask means numerical matching/filter acceptance only; cannot override failed scene geometry&quot;
+}</pre><p>Saved OBJ: output\generated_stereo_trial\stereo_trial_2\diagnostic_relaxed\INVALID_GEOMETRY_mesh_baseline_units.obj<br>SHA256: 446194b2c520c59ea2110148e6be81114695891a9a3b0b5920cee3030dd045f6</p></details></article><article><h3>stereo_trial_1 / more_relaxed</h3><a href="figures/stereo_trial_1_more_relaxed.png" target="_blank"><img src="figures/stereo_trial_1_more_relaxed.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_1 / more_relaxed"></a><p>9,926 vertices · 7,104 triangles<br>Extent X × Y × Z: 70.886 × 135.623 × 69.427 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;more_relaxed&quot;,
+    &quot;block_size&quot;: 9,
+    &quot;uniqueness_ratio&quot;: 2,
+    &quot;internal_lr_px&quot;: 4,
+    &quot;external_lr_px&quot;: 4,
+    &quot;min_disparity_px&quot;: 8,
+    &quot;texture_std&quot;: 0.5,
+    &quot;light_min&quot;: 1,
+    &quot;relative_depth_jump&quot;: 0.1,
+    &quot;edge_baselines&quot;: 1.0
+  },
+  &quot;accepted_pixels&quot;: 199541,
+  &quot;whole_image_fraction&quot;: 0.19029712677001953,
+  &quot;fraction_also_passing_2px_lr&quot;: 0.9847600242556668,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 199541,
+    &quot;median&quot;: 0.09375,
+    &quot;p90&quot;: 0.43359375,
+    &quot;p95&quot;: 0.703125
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 199541,
+    &quot;median&quot;: 84.875,
+    &quot;p90&quot;: 320.1875,
+    &quot;p95&quot;: 398.1875
+  },
+  &quot;heldout_feature_count&quot;: 392,
+  &quot;heldout_features_accepted&quot;: 68,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 68,
+    &quot;median&quot;: 100.65943792145876,
+    &quot;p90&quot;: 366.34737917864425,
+    &quot;p95&quot;: 386.41361608818295
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 199541,
+    &quot;median&quot;: 6.0,
+    &quot;p90&quot;: 30.0,
+    &quot;p95&quot;: 39.0
+  },
+  &quot;mesh_vertices&quot;: 9926,
+  &quot;mesh_triangles&quot;: 7104,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 1632,
+    &quot;largest_component_face_fraction&quot;: 0.05067567567567568,
+    &quot;used_vertices&quot;: 9926
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.0,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_1\more_relaxed\uber_relaxed.obj<br>SHA256: 558010efd977431856b3cc5baa79c992eaf4458f20a7dd882a045d4e3a271898</p></details></article><article><h3>stereo_trial_1 / uber_relaxed</h3><a href="figures/stereo_trial_1_uber_relaxed.png" target="_blank"><img src="figures/stereo_trial_1_uber_relaxed.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_1 / uber_relaxed"></a><p>25,305 vertices · 28,197 triangles<br>Extent X × Y × Z: 178.708 × 347.498 × 196.806 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;uber_relaxed&quot;,
+    &quot;block_size&quot;: 11,
+    &quot;uniqueness_ratio&quot;: 0,
+    &quot;internal_lr_px&quot;: 16,
+    &quot;external_lr_px&quot;: 16,
+    &quot;min_disparity_px&quot;: 4,
+    &quot;texture_std&quot;: 0.0,
+    &quot;light_min&quot;: 0,
+    &quot;relative_depth_jump&quot;: 0.5,
+    &quot;edge_baselines&quot;: 10.0
+  },
+  &quot;accepted_pixels&quot;: 315230,
+  &quot;whole_image_fraction&quot;: 0.3006267547607422,
+  &quot;fraction_also_passing_2px_lr&quot;: 0.8835929321447832,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 315230,
+    &quot;median&quot;: 0.125,
+    &quot;p90&quot;: 4.015625,
+    &quot;p95&quot;: 9.9591064453125
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 315230,
+    &quot;median&quot;: 64.875,
+    &quot;p90&quot;: 278.25,
+    &quot;p95&quot;: 363.8125
+  },
+  &quot;heldout_feature_count&quot;: 392,
+  &quot;heldout_features_accepted&quot;: 104,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 104,
+    &quot;median&quot;: 81.70086319621171,
+    &quot;p90&quot;: 373.0138242732166,
+    &quot;p95&quot;: 444.6142661144354
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 315230,
+    &quot;median&quot;: 3.0,
+    &quot;p90&quot;: 31.0,
+    &quot;p95&quot;: 41.0
+  },
+  &quot;mesh_vertices&quot;: 25305,
+  &quot;mesh_triangles&quot;: 28197,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 1974,
+    &quot;largest_component_face_fraction&quot;: 0.40302159804234494,
+    &quot;used_vertices&quot;: 25305
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.049757066354576725,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_1\uber_relaxed\uber_relaxed.obj<br>SHA256: ff1da74e68c4d1d5d4ca7b7f2663b5cab1f818e97948bddfc065cc89d81f3a13</p></details></article><article><h3>stereo_trial_1 / uber_relaxed_no_checks</h3><a href="figures/stereo_trial_1_uber_relaxed_no_checks.png" target="_blank"><img src="figures/stereo_trial_1_uber_relaxed_no_checks.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_1 / uber_relaxed_no_checks"></a><p>99,513 vertices · 192,479 triangles<br>Extent X × Y × Z: 942.000 × 1398.234 × 957.000 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;uber_relaxed_no_checks&quot;,
+    &quot;block_size&quot;: 11,
+    &quot;uniqueness_ratio&quot;: 0,
+    &quot;internal_lr_px&quot;: 512,
+    &quot;external_lr_px&quot;: null,
+    &quot;min_disparity_px&quot;: 1,
+    &quot;texture_std&quot;: 0.0,
+    &quot;light_min&quot;: -1,
+    &quot;relative_depth_jump&quot;: 1000000000.0,
+    &quot;edge_baselines&quot;: 1000000000.0
+  },
+  &quot;accepted_pixels&quot;: 896878,
+  &quot;whole_image_fraction&quot;: 0.8553295135498047,
+  &quot;fraction_also_passing_2px_lr&quot;: 0.4001581040007671,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 896878,
+    &quot;median&quot;: 21.75,
+    &quot;p90&quot;: 237.5,
+    &quot;p95&quot;: 312.1875
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 896878,
+    &quot;median&quot;: 83.875,
+    &quot;p90&quot;: 313.0625,
+    &quot;p95&quot;: 389.625
+  },
+  &quot;heldout_feature_count&quot;: 392,
+  &quot;heldout_features_accepted&quot;: 361,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 361,
+    &quot;median&quot;: 127.34172643080785,
+    &quot;p90&quot;: 379.68762676918027,
+    &quot;p95&quot;: 441.5298704243113
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 896878,
+    &quot;median&quot;: 7.0,
+    &quot;p90&quot;: 37.0,
+    &quot;p95&quot;: 48.0
+  },
+  &quot;mesh_vertices&quot;: 99513,
+  &quot;mesh_triangles&quot;: 192479,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 35,
+    &quot;largest_component_face_fraction&quot;: 0.9957138181308091,
+    &quot;used_vertices&quot;: 99513
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.5948233313764099,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_1\uber_relaxed_no_checks\uber_relaxed.obj<br>SHA256: 0341e5502824845ef534dff6cdd9f2a2a6b19c0739fcd9d875084be50efdfacf</p></details></article><article><h3>stereo_trial_1 / uber_relaxed_wide_window</h3><a href="figures/stereo_trial_1_uber_relaxed_wide_window.png" target="_blank"><img src="figures/stereo_trial_1_uber_relaxed_wide_window.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_1 / uber_relaxed_wide_window"></a><p>69,276 vertices · 126,686 triangles<br>Extent X × Y × Z: 918.000 × 1398.232 × 881.447 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;uber_relaxed_wide_window&quot;,
+    &quot;block_size&quot;: 21,
+    &quot;uniqueness_ratio&quot;: 0,
+    &quot;internal_lr_px&quot;: 512,
+    &quot;external_lr_px&quot;: null,
+    &quot;min_disparity_px&quot;: 1,
+    &quot;texture_std&quot;: 0.0,
+    &quot;light_min&quot;: -1,
+    &quot;relative_depth_jump&quot;: 1000000000.0,
+    &quot;edge_baselines&quot;: 1000000000.0
+  },
+  &quot;accepted_pixels&quot;: 636243,
+  &quot;whole_image_fraction&quot;: 0.6067686080932617,
+  &quot;fraction_also_passing_2px_lr&quot;: 0.3626790392978783,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 636243,
+    &quot;median&quot;: 45.0625,
+    &quot;p90&quot;: 497.0,
+    &quot;p95&quot;: 497.0
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 636243,
+    &quot;median&quot;: 93.0,
+    &quot;p90&quot;: 504.0,
+    &quot;p95&quot;: 504.0
+  },
+  &quot;heldout_feature_count&quot;: 392,
+  &quot;heldout_features_accepted&quot;: 200,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 200,
+    &quot;median&quot;: 485.6549286884117,
+    &quot;p90&quot;: 495.11706630682124,
+    &quot;p95&quot;: 495.6427035267568
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 636243,
+    &quot;median&quot;: 5.0,
+    &quot;p90&quot;: 56.0,
+    &quot;p95&quot;: 75.0
+  },
+  &quot;mesh_vertices&quot;: 69276,
+  &quot;mesh_triangles&quot;: 126686,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 538,
+    &quot;largest_component_face_fraction&quot;: 0.9429297633519095,
+    &quot;used_vertices&quot;: 69276
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.25621615648137913,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_1\uber_relaxed_wide_window\uber_relaxed.obj<br>SHA256: 7a23f5ed51b234976d9a247fe25cb531eddcf58aab0d6a5095f442385c84b43e</p></details></article><article><h3>stereo_trial_1 / uber_relaxed_row_adjusted</h3><a href="figures/stereo_trial_1_uber_relaxed_row_adjusted.png" target="_blank"><img src="figures/stereo_trial_1_uber_relaxed_row_adjusted.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_1 / uber_relaxed_row_adjusted"></a><p>46,223 vertices · 71,473 triangles<br>Extent X × Y × Z: 151.208 × 347.477 × 198.329 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;uber_relaxed_row_adjusted&quot;,
+    &quot;block_size&quot;: 11,
+    &quot;uniqueness_ratio&quot;: 0,
+    &quot;internal_lr_px&quot;: 16,
+    &quot;external_lr_px&quot;: 16,
+    &quot;min_disparity_px&quot;: 4,
+    &quot;texture_std&quot;: 0.0,
+    &quot;light_min&quot;: 0,
+    &quot;relative_depth_jump&quot;: 0.5,
+    &quot;edge_baselines&quot;: 10.0,
+    &quot;row_adjustment&quot;: true
+  },
+  &quot;accepted_pixels&quot;: 471417,
+  &quot;whole_image_fraction&quot;: 0.44957828521728516,
+  &quot;fraction_also_passing_2px_lr&quot;: 0.9335238228574702,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 471417,
+    &quot;median&quot;: 0.0625,
+    &quot;p90&quot;: 0.5703125,
+    &quot;p95&quot;: 4.9453125
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 471417,
+    &quot;median&quot;: 16.8125,
+    &quot;p90&quot;: 87.1875,
+    &quot;p95&quot;: 108.875
+  },
+  &quot;heldout_feature_count&quot;: 392,
+  &quot;heldout_features_accepted&quot;: 279,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 279,
+    &quot;median&quot;: 0.28667321800395484,
+    &quot;p90&quot;: 0.8817265107743653,
+    &quot;p95&quot;: 1.19839447635291
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 471417,
+    &quot;median&quot;: 6.0,
+    &quot;p90&quot;: 27.0,
+    &quot;p95&quot;: 35.0
+  },
+  &quot;mesh_vertices&quot;: 46223,
+  &quot;mesh_triangles&quot;: 71473,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 1100,
+    &quot;largest_component_face_fraction&quot;: 0.6613266548207015,
+    &quot;used_vertices&quot;: 46223
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.017167321925762175,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_1\uber_relaxed_row_adjusted\uber_relaxed.obj<br>SHA256: c485d6846f178118748bb495bf82a2f21191cde3dab823d74ef524ef077a24cd</p></details></article><article><h3>stereo_trial_1 / row_adjusted_tighter</h3><a href="figures/stereo_trial_1_row_adjusted_tighter.png" target="_blank"><img src="figures/stereo_trial_1_row_adjusted_tighter.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_1 / row_adjusted_tighter"></a><p>6,918 vertices · 5,397 triangles<br>Extent X × Y × Z: 70.831 × 158.500 × 73.179 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;row_adjusted_tighter&quot;,
+    &quot;block_size&quot;: 7,
+    &quot;uniqueness_ratio&quot;: 5,
+    &quot;internal_lr_px&quot;: 1,
+    &quot;external_lr_px&quot;: 2,
+    &quot;min_disparity_px&quot;: 4,
+    &quot;texture_std&quot;: 1.0,
+    &quot;light_min&quot;: 4,
+    &quot;relative_depth_jump&quot;: 0.05,
+    &quot;edge_baselines&quot;: 0.5,
+    &quot;speckle_window&quot;: 50,
+    &quot;row_adjustment&quot;: true
+  },
+  &quot;accepted_pixels&quot;: 262704,
+  &quot;whole_image_fraction&quot;: 0.2505340576171875,
+  &quot;fraction_also_passing_2px_lr&quot;: 1.0,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 262704,
+    &quot;median&quot;: 0.0625,
+    &quot;p90&quot;: 0.25,
+    &quot;p95&quot;: 0.375
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 262704,
+    &quot;median&quot;: 10.75,
+    &quot;p90&quot;: 38.125,
+    &quot;p95&quot;: 83.1875
+  },
+  &quot;heldout_feature_count&quot;: 392,
+  &quot;heldout_features_accepted&quot;: 257,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 257,
+    &quot;median&quot;: 0.23582487707653854,
+    &quot;p90&quot;: 0.738745096270634,
+    &quot;p95&quot;: 0.8701184860010585
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 262704,
+    &quot;median&quot;: 9.0,
+    &quot;p90&quot;: 26.0,
+    &quot;p95&quot;: 33.0
+  },
+  &quot;mesh_vertices&quot;: 6918,
+  &quot;mesh_triangles&quot;: 5397,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 920,
+    &quot;largest_component_face_fraction&quot;: 0.05076894571057995,
+    &quot;used_vertices&quot;: 6918
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.0,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_1\row_adjusted_tighter\uber_relaxed.obj<br>SHA256: 07e1e12b86477a3e3555b94a850b22d354be64453bf2a2199b8656806e434d46</p></details></article><article><h3>stereo_trial_1 / row_adjusted_strict_matching</h3><a href="figures/stereo_trial_1_row_adjusted_strict_matching.png" target="_blank"><img src="figures/stereo_trial_1_row_adjusted_strict_matching.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_1 / row_adjusted_strict_matching"></a><p>1,388 vertices · 899 triangles<br>Extent X × Y × Z: 50.744 × 70.235 × 33.501 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;row_adjusted_strict_matching&quot;,
+    &quot;block_size&quot;: 5,
+    &quot;uniqueness_ratio&quot;: 15,
+    &quot;internal_lr_px&quot;: 1,
+    &quot;external_lr_px&quot;: 1,
+    &quot;min_disparity_px&quot;: 4,
+    &quot;texture_std&quot;: 2.0,
+    &quot;light_min&quot;: 4,
+    &quot;relative_depth_jump&quot;: 0.02,
+    &quot;edge_baselines&quot;: 0.25,
+    &quot;speckle_window&quot;: 100,
+    &quot;row_adjustment&quot;: true
+  },
+  &quot;accepted_pixels&quot;: 200409,
+  &quot;whole_image_fraction&quot;: 0.19112491607666016,
+  &quot;fraction_also_passing_2px_lr&quot;: 1.0,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 200409,
+    &quot;median&quot;: 0.0625,
+    &quot;p90&quot;: 0.25,
+    &quot;p95&quot;: 0.375
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 200409,
+    &quot;median&quot;: 9.875,
+    &quot;p90&quot;: 30.4375,
+    &quot;p95&quot;: 35.0
+  },
+  &quot;heldout_feature_count&quot;: 392,
+  &quot;heldout_features_accepted&quot;: 234,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 234,
+    &quot;median&quot;: 0.25486977346417916,
+    &quot;p90&quot;: 0.6829794983595434,
+    &quot;p95&quot;: 0.8245377416979691
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 200409,
+    &quot;median&quot;: 8.0,
+    &quot;p90&quot;: 23.0,
+    &quot;p95&quot;: 29.0
+  },
+  &quot;mesh_vertices&quot;: 1388,
+  &quot;mesh_triangles&quot;: 899,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 244,
+    &quot;largest_component_face_fraction&quot;: 0.10122358175750834,
+    &quot;used_vertices&quot;: 1388
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.0,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_1\row_adjusted_strict_matching\uber_relaxed.obj<br>SHA256: 8cb056756596a31147298226b53f7d03600beb3a0be728e9bb76384a2d765d63</p></details></article><article><h3>stereo_trial_2 / more_relaxed</h3><a href="figures/stereo_trial_2_more_relaxed.png" target="_blank"><img src="figures/stereo_trial_2_more_relaxed.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_2 / more_relaxed"></a><p>8,776 vertices · 6,419 triangles<br>Extent X × Y × Z: 66.181 × 138.222 × 62.214 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;more_relaxed&quot;,
+    &quot;block_size&quot;: 9,
+    &quot;uniqueness_ratio&quot;: 2,
+    &quot;internal_lr_px&quot;: 4,
+    &quot;external_lr_px&quot;: 4,
+    &quot;min_disparity_px&quot;: 8,
+    &quot;texture_std&quot;: 0.5,
+    &quot;light_min&quot;: 1,
+    &quot;relative_depth_jump&quot;: 0.1,
+    &quot;edge_baselines&quot;: 1.0
+  },
+  &quot;accepted_pixels&quot;: 174524,
+  &quot;whole_image_fraction&quot;: 0.16643905639648438,
+  &quot;fraction_also_passing_2px_lr&quot;: 0.9832859664000366,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 174524,
+    &quot;median&quot;: 0.1015625,
+    &quot;p90&quot;: 0.4375,
+    &quot;p95&quot;: 0.75
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 174524,
+    &quot;median&quot;: 140.0,
+    &quot;p90&quot;: 390.9375,
+    &quot;p95&quot;: 450.0625
+  },
+  &quot;heldout_feature_count&quot;: 7,
+  &quot;heldout_features_accepted&quot;: 3,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 3,
+    &quot;median&quot;: 95.17485944008376,
+    &quot;p90&quot;: 253.62263463972033,
+    &quot;p95&quot;: 273.4286065396749
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 174524,
+    &quot;median&quot;: 7.0,
+    &quot;p90&quot;: 29.0,
+    &quot;p95&quot;: 38.0
+  },
+  &quot;mesh_vertices&quot;: 8776,
+  &quot;mesh_triangles&quot;: 6419,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 1391,
+    &quot;largest_component_face_fraction&quot;: 0.043932076647452876,
+    &quot;used_vertices&quot;: 8776
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.0,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_2\more_relaxed\uber_relaxed.obj<br>SHA256: fbe5dff9770fab7b0a58f9879ecaa53b0014f56e0861eea5f90ed16d63fad051</p></details></article><article><h3>stereo_trial_2 / uber_relaxed</h3><a href="figures/stereo_trial_2_uber_relaxed.png" target="_blank"><img src="figures/stereo_trial_2_uber_relaxed.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_2 / uber_relaxed"></a><p>19,513 vertices · 19,615 triangles<br>Extent X × Y × Z: 188.171 × 347.498 × 205.775 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;uber_relaxed&quot;,
+    &quot;block_size&quot;: 11,
+    &quot;uniqueness_ratio&quot;: 0,
+    &quot;internal_lr_px&quot;: 16,
+    &quot;external_lr_px&quot;: 16,
+    &quot;min_disparity_px&quot;: 4,
+    &quot;texture_std&quot;: 0.0,
+    &quot;light_min&quot;: 0,
+    &quot;relative_depth_jump&quot;: 0.5,
+    &quot;edge_baselines&quot;: 10.0
+  },
+  &quot;accepted_pixels&quot;: 257417,
+  &quot;whole_image_fraction&quot;: 0.24549198150634766,
+  &quot;fraction_also_passing_2px_lr&quot;: 0.8887719148307999,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 257417,
+    &quot;median&quot;: 0.125,
+    &quot;p90&quot;: 3.1875,
+    &quot;p95&quot;: 9.21875
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 257417,
+    &quot;median&quot;: 122.3125,
+    &quot;p90&quot;: 362.125,
+    &quot;p95&quot;: 438.75
+  },
+  &quot;heldout_feature_count&quot;: 7,
+  &quot;heldout_features_accepted&quot;: 4,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 4,
+    &quot;median&quot;: 174.27036842931628,
+    &quot;p90&quot;: 281.38646813330524,
+    &quot;p95&quot;: 287.31052328646734
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 257417,
+    &quot;median&quot;: 4.0,
+    &quot;p90&quot;: 30.0,
+    &quot;p95&quot;: 40.0
+  },
+  &quot;mesh_vertices&quot;: 19513,
+  &quot;mesh_triangles&quot;: 19615,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 1819,
+    &quot;largest_component_face_fraction&quot;: 0.2714249299005863,
+    &quot;used_vertices&quot;: 19513
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.042416517970940606,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_2\uber_relaxed\uber_relaxed.obj<br>SHA256: d503ea02ec716ea71943b5436812d732db45777ef11c199157a89b151a3e62f5</p></details></article><article><h3>stereo_trial_2 / uber_relaxed_no_checks</h3><a href="figures/stereo_trial_2_uber_relaxed_no_checks.png" target="_blank"><img src="figures/stereo_trial_2_uber_relaxed_no_checks.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_2 / uber_relaxed_no_checks"></a><p>99,187 vertices · 191,854 triangles<br>Extent X × Y × Z: 921.000 × 1398.235 × 954.088 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;uber_relaxed_no_checks&quot;,
+    &quot;block_size&quot;: 11,
+    &quot;uniqueness_ratio&quot;: 0,
+    &quot;internal_lr_px&quot;: 512,
+    &quot;external_lr_px&quot;: null,
+    &quot;min_disparity_px&quot;: 1,
+    &quot;texture_std&quot;: 0.0,
+    &quot;light_min&quot;: -1,
+    &quot;relative_depth_jump&quot;: 1000000000.0,
+    &quot;edge_baselines&quot;: 1000000000.0
+  },
+  &quot;accepted_pixels&quot;: 893529,
+  &quot;whole_image_fraction&quot;: 0.8521356582641602,
+  &quot;fraction_also_passing_2px_lr&quot;: 0.3387220784104377,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 893529,
+    &quot;median&quot;: 45.5625,
+    &quot;p90&quot;: 266.66015625,
+    &quot;p95&quot;: 335.2265625
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 893529,
+    &quot;median&quot;: 123.0,
+    &quot;p90&quot;: 348.0625,
+    &quot;p95&quot;: 422.1875
+  },
+  &quot;heldout_feature_count&quot;: 7,
+  &quot;heldout_features_accepted&quot;: 7,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 7,
+    &quot;median&quot;: 94.91520446376978,
+    &quot;p90&quot;: 269.53835782698104,
+    &quot;p95&quot;: 281.38646813330524
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 893529,
+    &quot;median&quot;: 7.0,
+    &quot;p90&quot;: 35.0,
+    &quot;p95&quot;: 45.0
+  },
+  &quot;mesh_vertices&quot;: 99187,
+  &quot;mesh_triangles&quot;: 191854,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 34,
+    &quot;largest_component_face_fraction&quot;: 0.9956894305044461,
+    &quot;used_vertices&quot;: 99187
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.612319784836386,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_2\uber_relaxed_no_checks\uber_relaxed.obj<br>SHA256: 7c3dc0a9ed5b229a36b95b93199f326b62b27c1d0cb3067419e553b0e811aa5a</p></details></article><article><h3>stereo_trial_2 / uber_relaxed_wide_window</h3><a href="figures/stereo_trial_2_uber_relaxed_wide_window.png" target="_blank"><img src="figures/stereo_trial_2_uber_relaxed_wide_window.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_2 / uber_relaxed_wide_window"></a><p>67,319 vertices · 121,324 triangles<br>Extent X × Y × Z: 927.000 × 1398.227 × 707.250 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;uber_relaxed_wide_window&quot;,
+    &quot;block_size&quot;: 21,
+    &quot;uniqueness_ratio&quot;: 0,
+    &quot;internal_lr_px&quot;: 512,
+    &quot;external_lr_px&quot;: null,
+    &quot;min_disparity_px&quot;: 1,
+    &quot;texture_std&quot;: 0.0,
+    &quot;light_min&quot;: -1,
+    &quot;relative_depth_jump&quot;: 1000000000.0,
+    &quot;edge_baselines&quot;: 1000000000.0
+  },
+  &quot;accepted_pixels&quot;: 619812,
+  &quot;whole_image_fraction&quot;: 0.5910987854003906,
+  &quot;fraction_also_passing_2px_lr&quot;: 0.3086726297651546,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 619812,
+    &quot;median&quot;: 81.248046875,
+    &quot;p90&quot;: 497.0,
+    &quot;p95&quot;: 497.0
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 619812,
+    &quot;median&quot;: 154.6875,
+    &quot;p90&quot;: 504.0,
+    &quot;p95&quot;: 504.0
+  },
+  &quot;heldout_feature_count&quot;: 7,
+  &quot;heldout_features_accepted&quot;: 5,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 5,
+    &quot;median&quot;: 212.05878463687304,
+    &quot;p90&quot;: 460.75842825492424,
+    &quot;p95&quot;: 463.5163781933559
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 619812,
+    &quot;median&quot;: 7.0,
+    &quot;p90&quot;: 53.0,
+    &quot;p95&quot;: 71.0
+  },
+  &quot;mesh_vertices&quot;: 67319,
+  &quot;mesh_triangles&quot;: 121324,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 605,
+    &quot;largest_component_face_fraction&quot;: 0.9360555207543437,
+    &quot;used_vertices&quot;: 67319
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.29765751211631664,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_2\uber_relaxed_wide_window\uber_relaxed.obj<br>SHA256: 17b7a9d8ccb59c78460222f7940f2f9a31614b551238a60bbcd07a8c12418d3d</p></details></article><article><h3>stereo_trial_2 / uber_relaxed_row_adjusted</h3><a href="figures/stereo_trial_2_uber_relaxed_row_adjusted.png" target="_blank"><img src="figures/stereo_trial_2_uber_relaxed_row_adjusted.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_2 / uber_relaxed_row_adjusted"></a><p>24,982 vertices · 29,043 triangles<br>Extent X × Y × Z: 162.068 × 347.500 × 196.454 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;uber_relaxed_row_adjusted&quot;,
+    &quot;block_size&quot;: 11,
+    &quot;uniqueness_ratio&quot;: 0,
+    &quot;internal_lr_px&quot;: 16,
+    &quot;external_lr_px&quot;: 16,
+    &quot;min_disparity_px&quot;: 4,
+    &quot;texture_std&quot;: 0.0,
+    &quot;light_min&quot;: 0,
+    &quot;relative_depth_jump&quot;: 0.5,
+    &quot;edge_baselines&quot;: 10.0,
+    &quot;row_adjustment&quot;: true
+  },
+  &quot;accepted_pixels&quot;: 300493,
+  &quot;whole_image_fraction&quot;: 0.2865724563598633,
+  &quot;fraction_also_passing_2px_lr&quot;: 0.9042040912766687,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 300493,
+    &quot;median&quot;: 0.125,
+    &quot;p90&quot;: 1.63671875,
+    &quot;p95&quot;: 8.33203125
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 300493,
+    &quot;median&quot;: 69.0,
+    &quot;p90&quot;: 348.6875,
+    &quot;p95&quot;: 381.0
+  },
+  &quot;heldout_feature_count&quot;: 7,
+  &quot;heldout_features_accepted&quot;: 5,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 5,
+    &quot;median&quot;: 0.2743281317874562,
+    &quot;p90&quot;: 163.35085782698107,
+    &quot;p95&quot;: 217.7021176227649
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 300493,
+    &quot;median&quot;: 5.0,
+    &quot;p90&quot;: 28.0,
+    &quot;p95&quot;: 38.0
+  },
+  &quot;mesh_vertices&quot;: 24982,
+  &quot;mesh_triangles&quot;: 29043,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 1744,
+    &quot;largest_component_face_fraction&quot;: 0.4303963089212547,
+    &quot;used_vertices&quot;: 24982
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.06652205350686913,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_2\uber_relaxed_row_adjusted\uber_relaxed.obj<br>SHA256: 1af512fe6fe3c4a8a1dad548f7462b07cc296e129bcce2a91e854590427832bf</p></details></article><article><h3>stereo_trial_2 / row_adjusted_tighter</h3><a href="figures/stereo_trial_2_row_adjusted_tighter.png" target="_blank"><img src="figures/stereo_trial_2_row_adjusted_tighter.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_2 / row_adjusted_tighter"></a><p>7,949 vertices · 8,254 triangles<br>Extent X × Y × Z: 76.596 × 140.918 × 35.304 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;row_adjusted_tighter&quot;,
+    &quot;block_size&quot;: 7,
+    &quot;uniqueness_ratio&quot;: 5,
+    &quot;internal_lr_px&quot;: 1,
+    &quot;external_lr_px&quot;: 2,
+    &quot;min_disparity_px&quot;: 4,
+    &quot;texture_std&quot;: 1.0,
+    &quot;light_min&quot;: 4,
+    &quot;relative_depth_jump&quot;: 0.05,
+    &quot;edge_baselines&quot;: 0.5,
+    &quot;speckle_window&quot;: 50,
+    &quot;row_adjustment&quot;: true
+  },
+  &quot;accepted_pixels&quot;: 92073,
+  &quot;whole_image_fraction&quot;: 0.08780765533447266,
+  &quot;fraction_also_passing_2px_lr&quot;: 1.0,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 92073,
+    &quot;median&quot;: 0.1171875,
+    &quot;p90&quot;: 0.48046875,
+    &quot;p95&quot;: 0.7109375
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 92073,
+    &quot;median&quot;: 71.6875,
+    &quot;p90&quot;: 350.875,
+    &quot;p95&quot;: 365.9375
+  },
+  &quot;heldout_feature_count&quot;: 7,
+  &quot;heldout_features_accepted&quot;: 3,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 3,
+    &quot;median&quot;: 0.1404215603705552,
+    &quot;p90&quot;: 0.147546817504076,
+    &quot;p95&quot;: 0.1484374746457661
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 92073,
+    &quot;median&quot;: 6.0,
+    &quot;p90&quot;: 22.0,
+    &quot;p95&quot;: 29.0
+  },
+  &quot;mesh_vertices&quot;: 7949,
+  &quot;mesh_triangles&quot;: 8254,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 641,
+    &quot;largest_component_face_fraction&quot;: 0.13557063242064454,
+    &quot;used_vertices&quot;: 7949
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.0,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_2\row_adjusted_tighter\uber_relaxed.obj<br>SHA256: 6e638a8030bc442edf91c1c14d1003bd74393a246f274b262b9773b870ad01ce</p></details></article><article><h3>stereo_trial_2 / row_adjusted_strict_matching</h3><a href="figures/stereo_trial_2_row_adjusted_strict_matching.png" target="_blank"><img src="figures/stereo_trial_2_row_adjusted_strict_matching.png" loading="lazy" alt="Actual saved OBJ: stereo_trial_2 / row_adjusted_strict_matching"></a><p>2,724 vertices · 2,542 triangles<br>Extent X × Y × Z: 18.830 × 37.914 × 7.261 baseline=1</p><details><summary>Exact metrics and source</summary><pre>{
+  &quot;profile&quot;: {
+    &quot;name&quot;: &quot;row_adjusted_strict_matching&quot;,
+    &quot;block_size&quot;: 5,
+    &quot;uniqueness_ratio&quot;: 15,
+    &quot;internal_lr_px&quot;: 1,
+    &quot;external_lr_px&quot;: 1,
+    &quot;min_disparity_px&quot;: 4,
+    &quot;texture_std&quot;: 2.0,
+    &quot;light_min&quot;: 4,
+    &quot;relative_depth_jump&quot;: 0.02,
+    &quot;edge_baselines&quot;: 0.25,
+    &quot;speckle_window&quot;: 100,
+    &quot;row_adjustment&quot;: true
+  },
+  &quot;accepted_pixels&quot;: 35935,
+  &quot;whole_image_fraction&quot;: 0.034270286560058594,
+  &quot;fraction_also_passing_2px_lr&quot;: 1.0,
+  &quot;lr_error_px&quot;: {
+    &quot;count&quot;: 35935,
+    &quot;median&quot;: 0.12109375,
+    &quot;p90&quot;: 0.4375,
+    &quot;p95&quot;: 0.625
+  },
+  &quot;disparity_px&quot;: {
+    &quot;count&quot;: 35935,
+    &quot;median&quot;: 59.875,
+    &quot;p90&quot;: 349.1875,
+    &quot;p95&quot;: 358.0
+  },
+  &quot;heldout_feature_count&quot;: 7,
+  &quot;heldout_features_accepted&quot;: 3,
+  &quot;heldout_disparity_error_px&quot;: {
+    &quot;count&quot;: 3,
+    &quot;median&quot;: 0.16072867242343136,
+    &quot;p90&quot;: 0.24448298278113043,
+    &quot;p95&quot;: 0.2549522715758428
+  },
+  &quot;photometric_difference_dn&quot;: {
+    &quot;count&quot;: 35935,
+    &quot;median&quot;: 4.0,
+    &quot;p90&quot;: 14.0,
+    &quot;p95&quot;: 20.0
+  },
+  &quot;mesh_vertices&quot;: 2724,
+  &quot;mesh_triangles&quot;: 2542,
+  &quot;mesh_topology&quot;: {
+    &quot;components&quot;: 226,
+    &quot;largest_component_face_fraction&quot;: 0.07002360346184107,
+    &quot;used_vertices&quot;: 2724
+  },
+  &quot;triangle_fraction_over_10pct_depth_jump&quot;: 0.0,
+  &quot;units&quot;: &quot;arbitrary baseline=1; no physical scale&quot;,
+  &quot;obj_readback_verified&quot;: true
+}</pre><p>Saved OBJ: output\uber_relaxed\stereo_trial_2\row_adjusted_strict_matching\uber_relaxed.obj<br>SHA256: 21aace0166c0f1bbab6125078d45c26cae8eee10baf92ddd734c18a57c3a9fd7</p></details></article></div></section><section id="video"><h2>All 15 saved video terrain results</h2><div class="grid"><article><h3>baseline_unconditioned_eval</h3><a href="figures/baseline_unconditioned_eval_model.png" target="_blank"><img src="figures/baseline_unconditioned_eval_model.png" loading="lazy" alt="Actual saved OBJ: baseline_unconditioned_eval"></a><p>9,023 vertices · 15,375 triangles<br>Extent X × Y × Z: 10.850 × 4.450 × 1.286 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/baseline_unconditioned_eval_provenance.png" alt="Terrain source provenance"><video controls preload="none" src="videos/baseline_unconditioned_eval.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_044&quot;,
+    &quot;obs_047&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;stereo registration&quot;,
+    &quot;path&quot;: [
+      &quot;obs_044&quot;,
+      &quot;obs_047&quot;
+    ]
+  },
+  &quot;seed&quot;: 7,
+  &quot;generator&quot;: &quot;procedural_control&quot;,
+  &quot;input_movie_sha256&quot;: &quot;ce6bee7ee1511c6f0a2137e14bc7abbeff0670fa22326d76a6fe83640dc10305&quot;,
+  &quot;bundle_sha256&quot;: &quot;822f49b34826059cad199401137de9e101a56f4bbfd19d49c690b98e56013326&quot;,
+  &quot;pose_check_sha256&quot;: &quot;19f78e8213327c10a7b460d4ecc44788738c6a28e7257e2f596c06f985d818f6&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;reconstruction&quot;: &quot;real-anchor PnP; unconditioned accepted frames only&quot;,
+  &quot;used_frame_indices&quot;: [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    17,
+    18,
+    19,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    29,
+    30,
+    31
+  ],
+  &quot;video_tracks&quot;: 16752,
+  &quot;triangulation_windows&quot;: 10,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 16752,
+    &quot;median&quot;: 0.322133856416183,
+    &quot;p90&quot;: 0.7041733881362698,
+    &quot;p95&quot;: 0.7787038471680624,
+    &quot;maximum&quot;: 0.8499848254415244,
+    &quot;rmse&quot;: 0.4245014752506444
+  },
+  &quot;stereo_cells&quot;: 8385,
+  &quot;new_video_cells&quot;: 638,
+  &quot;new_cell_area_m2&quot;: 1.5950000000000004,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 9023,
+    &quot;triangles&quot;: 15375,
+    &quot;projected_surface_area_m2&quot;: 19.218749999999947,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 15375,
+      &quot;median&quot;: 12.333883243917315,
+      &quot;p90&quot;: 39.51076178964878,
+      &quot;p95&quot;: 47.91512871909091,
+      &quot;maximum&quot;: 78.5319425800253,
+      &quot;rmse&quot;: 22.25366255985236
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 1.233749999999997,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;status&quot;: &quot;experimental synthetic terrain; not independently surveyed&quot;,
+  &quot;validation&quot;: {
+    &quot;holdout&quot;: &quot;obs_046&quot;,
+    &quot;reference&quot;: &quot;withheld registered stereo; not survey ground truth&quot;,
+    &quot;measurable_gap_cells&quot;: 561,
+    &quot;tested_added_cells&quot;: 21,
+    &quot;reference_coverage&quot;: 0.0374331550802139,
+    &quot;video_abs_height_error_m&quot;: {
+      &quot;count&quot;: 21,
+      &quot;median&quot;: 0.015607924510932514,
+      &quot;p90&quot;: 0.056280799122276015,
+      &quot;p95&quot;: 0.05664801547591103,
+      &quot;maximum&quot;: 0.18797754919820875,
+      &quot;rmse&quot;: 0.049000866132236566
+    },
+    &quot;matched_idw_abs_height_error_m&quot;: {
+      &quot;count&quot;: 21,
+      &quot;median&quot;: 0.005545238302725908,
+      &quot;p90&quot;: 0.012178922363344058,
+      &quot;p95&quot;: 0.01406715915141099,
+      &quot;maximum&quot;: 0.019784701673736638,
+      &quot;rmse&quot;: 0.007655775720655787
+    },
+    &quot;linear_comparison_cells&quot;: 21,
+    &quot;matched_linear_abs_height_error_m&quot;: {
+      &quot;count&quot;: 21,
+      &quot;median&quot;: 0.007924940733549657,
+      &quot;p90&quot;: 0.012321607599166451,
+      &quot;p95&quot;: 0.014007932164498249,
+      &quot;maximum&quot;: 0.014298679475821308,
+      &quot;rmse&quot;: 0.008542299758154612
+    },
+    &quot;video_on_linear_comparison_m&quot;: {
+      &quot;count&quot;: 21,
+      &quot;median&quot;: 0.015607924510932514,
+      &quot;p90&quot;: 0.056280799122276015,
+      &quot;p95&quot;: 0.05664801547591103,
+      &quot;maximum&quot;: 0.18797754919820875,
+      &quot;rmse&quot;: 0.049000866132236566
+    },
+    &quot;raw_before_envelope_m&quot;: {
+      &quot;count&quot;: 47,
+      &quot;median&quot;: 0.43790546382361173,
+      &quot;p90&quot;: 0.9645453723373733,
+      &quot;p95&quot;: 0.982049027409342,
+      &quot;maximum&quot;: 1.166126743756752,
+      &quot;rmse&quot;: 0.6029490647999199
+    }
+  }
+}</pre><p>Saved OBJ: output\chronological_video\baseline_unconditioned_eval\candidate_stereo_plus_video_m.obj<br>SHA256: 958d1d886218321268cf9ef325cb4f68a625a9c0a9d4e9ad4e71164db6279d35</p></details></article><article><h3>disk_0.25</h3><a href="figures/disk_0.25_model.png" target="_blank"><img src="figures/disk_0.25_model.png" loading="lazy" alt="Actual saved OBJ: disk_0.25"></a><p>9,214 vertices · 13,584 triangles<br>Extent X × Y × Z: 12.900 × 8.150 × 1.336 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/disk_0.25_provenance.png" alt="Terrain source provenance"><video controls preload="none" src="videos/disk_0.25.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_033&quot;,
+    &quot;obs_034&quot;
+  ],
+  &quot;utc&quot;: [
+    &quot;20230831T0813019172&quot;,
+    &quot;20230831T1304316922&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;conditional mobility prior&quot;,
+    &quot;height_refinement&quot;: {
+      &quot;accepted&quot;: true,
+      &quot;shared_cells&quot;: 160,
+      &quot;validation_cells&quot;: 27,
+      &quot;reference&quot;: &quot;stereo A vs B under assumed XY/yaw, spatial block holdout&quot;,
+      &quot;prior_median_height_residual_m&quot;: 0.47876295749385483,
+      &quot;adjusted_median_height_residual_m&quot;: 0.04386276486667651,
+      &quot;adjusted_p90_m&quot;: 0.06874387649724097,
+      &quot;clearance_prior_dz_m&quot;: 0.5094447263860148,
+      &quot;allowed_dz_m&quot;: [
+        0.4094447263860148,
+        0.6094447263860148
+      ],
+      &quot;nearest_anchor_to_B_m&quot;: [
+        0.2791957370578848,
+        0.7438655569622572
+      ],
+      &quot;tilt_rotvec_deg&quot;: [
+        -2.871167241545284,
+        -0.9129308602988928
+      ],
+      &quot;elevation_change_m&quot;: 0.40944472638601503
+    },
+    &quot;reference&quot;: &quot;NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m&quot;,
+    &quot;distance_m&quot;: 4.0,
+    &quot;turn_deg&quot;: 10.0,
+    &quot;achieved_pose_verified&quot;: false,
+    &quot;assumptions&quot;: &quot;images bracket complete maneuver; planar initial pose; optional footprint-based tilt/elevation; achieved XY and yaw unverified&quot;
+  },
+  &quot;endpoint_displacement_m&quot;: 3.9992165692639174,
+  &quot;seed&quot;: 7,
+  &quot;generator&quot;: &quot;pose-conditioned textured stochastic elevation field&quot;,
+  &quot;camera_frame&quot;: &quot;T_world_from_rectified_left; nominal rover axes at A; metres&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;relief_scale_m&quot;: 0.005059485977441467,
+  &quot;frames&quot;: 33,
+  &quot;plane_sweep_cells&quot;: 4923,
+  &quot;triangulation_windows&quot;: 16,
+  &quot;video_tracks&quot;: 6331,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 6331,
+    &quot;median&quot;: 0.24624898496557285,
+    &quot;p90&quot;: 0.6701358836532878,
+    &quot;p95&quot;: 0.7554218265889197,
+    &quot;maximum&quot;: 0.8497749814411119,
+    &quot;rmse&quot;: 0.38601785667779576
+  },
+  &quot;stereo_cells&quot;: 7325,
+  &quot;new_video_cells&quot;: 1889,
+  &quot;new_cell_area_m2&quot;: 4.722500000000001,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 9214,
+    &quot;triangles&quot;: 13584,
+    &quot;projected_surface_area_m2&quot;: 16.979999999999954,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 13584,
+      &quot;median&quot;: 15.131820468503218,
+      &quot;p90&quot;: 28.47594825367714,
+      &quot;p95&quot;: 50.122556362158804,
+      &quot;maximum&quot;: 79.87534843832059,
+      &quot;rmse&quot;: 22.23641291040961
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 3.0437499999999926,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;endpoint stereo&quot;,
+    &quot;3&quot;: &quot;synthetic video&quot;
+  },
+  &quot;status&quot;: &quot;conditional candidate; unverified spatial placement&quot;,
+  &quot;spatial_holdout&quot;: {
+    &quot;radius_m&quot;: 0.25,
+    &quot;reference&quot;: &quot;withheld real stereo depth; endpoint poses fixed and photos available&quot;,
+    &quot;eligible_cells&quot;: 2377,
+    &quot;scored_cells&quot;: 675,
+    &quot;coverage&quot;: 0.2839713925115692,
+    &quot;video_abs_height_error_m&quot;: {
+      &quot;count&quot;: 675,
+      &quot;median&quot;: 0.03474941352247926,
+      &quot;p90&quot;: 0.1556343285574124,
+      &quot;p95&quot;: 0.17834382168536614,
+      &quot;maximum&quot;: 0.223453756147998,
+      &quot;rmse&quot;: 0.08064010158003028
+    },
+    &quot;matched_idw_abs_height_error_m&quot;: {
+      &quot;count&quot;: 675,
+      &quot;median&quot;: 0.01804320125850367,
+      &quot;p90&quot;: 0.04026925423910459,
+      &quot;p95&quot;: 0.048111276389260216,
+      &quot;maximum&quot;: 0.06983812223389241,
+      &quot;rmse&quot;: 0.024798782532858943
+    }
+  }
+}</pre><p>Saved OBJ: output\chronological_video\disk_0.25\candidate_stereo_plus_video_m.obj<br>SHA256: 970a14525bad1807854f664dcb78d2e46a7e45a4a8bbb81042b6681aa94a98d8</p></details></article><article><h3>disk_0.5</h3><a href="figures/disk_0.5_model.png" target="_blank"><img src="figures/disk_0.5_model.png" loading="lazy" alt="Actual saved OBJ: disk_0.5"></a><p>8,622 vertices · 12,157 triangles<br>Extent X × Y × Z: 12.900 × 7.750 × 1.280 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/disk_0.5_provenance.png" alt="Terrain source provenance"><video controls preload="none" src="videos/disk_0.5.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_033&quot;,
+    &quot;obs_034&quot;
+  ],
+  &quot;utc&quot;: [
+    &quot;20230831T0813019172&quot;,
+    &quot;20230831T1304316922&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;conditional mobility prior&quot;,
+    &quot;height_refinement&quot;: {
+      &quot;accepted&quot;: true,
+      &quot;shared_cells&quot;: 160,
+      &quot;validation_cells&quot;: 27,
+      &quot;reference&quot;: &quot;stereo A vs B under assumed XY/yaw, spatial block holdout&quot;,
+      &quot;prior_median_height_residual_m&quot;: 0.47876295749385483,
+      &quot;adjusted_median_height_residual_m&quot;: 0.04386276486667651,
+      &quot;adjusted_p90_m&quot;: 0.06874387649724097,
+      &quot;clearance_prior_dz_m&quot;: 0.5094447263860148,
+      &quot;allowed_dz_m&quot;: [
+        0.4094447263860148,
+        0.6094447263860148
+      ],
+      &quot;nearest_anchor_to_B_m&quot;: [
+        0.2791957370578848,
+        0.7438655569622572
+      ],
+      &quot;tilt_rotvec_deg&quot;: [
+        -2.871167241545284,
+        -0.9129308602988928
+      ],
+      &quot;elevation_change_m&quot;: 0.40944472638601503
+    },
+    &quot;reference&quot;: &quot;NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m&quot;,
+    &quot;distance_m&quot;: 4.0,
+    &quot;turn_deg&quot;: 10.0,
+    &quot;achieved_pose_verified&quot;: false,
+    &quot;assumptions&quot;: &quot;images bracket complete maneuver; planar initial pose; optional footprint-based tilt/elevation; achieved XY and yaw unverified&quot;
+  },
+  &quot;endpoint_displacement_m&quot;: 3.9992165692639174,
+  &quot;seed&quot;: 7,
+  &quot;generator&quot;: &quot;pose-conditioned textured stochastic elevation field&quot;,
+  &quot;camera_frame&quot;: &quot;T_world_from_rectified_left; nominal rover axes at A; metres&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;relief_scale_m&quot;: 0.00515578091428745,
+  &quot;frames&quot;: 33,
+  &quot;plane_sweep_cells&quot;: 5047,
+  &quot;triangulation_windows&quot;: 16,
+  &quot;video_tracks&quot;: 6724,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 6724,
+    &quot;median&quot;: 0.2682194499669076,
+    &quot;p90&quot;: 0.6836581353150312,
+    &quot;p95&quot;: 0.7605298627161101,
+    &quot;maximum&quot;: 0.8491220999471073,
+    &quot;rmse&quot;: 0.3984963923480288
+  },
+  &quot;stereo_cells&quot;: 5873,
+  &quot;new_video_cells&quot;: 2749,
+  &quot;new_cell_area_m2&quot;: 6.872500000000001,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 8622,
+    &quot;triangles&quot;: 12157,
+    &quot;projected_surface_area_m2&quot;: 15.19624999999996,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 12157,
+      &quot;median&quot;: 15.343655629506113,
+      &quot;p90&quot;: 34.37793921686155,
+      &quot;p95&quot;: 54.756818823042224,
+      &quot;maximum&quot;: 84.06337392314477,
+      &quot;rmse&quot;: 23.482802591076506
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 4.068749999999989,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;endpoint stereo&quot;,
+    &quot;3&quot;: &quot;synthetic video&quot;
+  },
+  &quot;status&quot;: &quot;conditional candidate; unverified spatial placement&quot;,
+  &quot;spatial_holdout&quot;: {
+    &quot;radius_m&quot;: 0.5,
+    &quot;reference&quot;: &quot;withheld real stereo depth; endpoint poses fixed and photos available&quot;,
+    &quot;eligible_cells&quot;: 3814,
+    &quot;scored_cells&quot;: 1245,
+    &quot;coverage&quot;: 0.32642894598846356,
+    &quot;video_abs_height_error_m&quot;: {
+      &quot;count&quot;: 1245,
+      &quot;median&quot;: 0.03599047779310971,
+      &quot;p90&quot;: 0.14050936638133807,
+      &quot;p95&quot;: 0.17685073533758314,
+      &quot;maximum&quot;: 0.2541487401309974,
+      &quot;rmse&quot;: 0.07372462218012427
+    },
+    &quot;matched_idw_abs_height_error_m&quot;: {
+      &quot;count&quot;: 1245,
+      &quot;median&quot;: 0.027665998716669082,
+      &quot;p90&quot;: 0.06599896846732908,
+      &quot;p95&quot;: 0.08012770802412805,
+      &quot;maximum&quot;: 0.11449991255873138,
+      &quot;rmse&quot;: 0.04021650936835718
+    }
+  }
+}</pre><p>Saved OBJ: output\chronological_video\disk_0.5\candidate_stereo_plus_video_m.obj<br>SHA256: 673732874cc996421ce2daabb53f0e8a9499e99dbd6bfc15aa496e8d2eb60436</p></details></article><article><h3>holdout046_17</h3><a href="figures/holdout046_17_model.png" target="_blank"><img src="figures/holdout046_17_model.png" loading="lazy" alt="Actual saved OBJ: holdout046_17"></a><p>9,925 vertices · 16,962 triangles<br>Extent X × Y × Z: 10.850 × 4.450 × 1.350 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/holdout046_17_provenance.png" alt="Terrain source provenance"><video controls preload="none" src="videos/holdout046_17.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_044&quot;,
+    &quot;obs_047&quot;
+  ],
+  &quot;utc&quot;: [
+    &quot;20230901T1301408296&quot;,
+    &quot;20230901T1841159976&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;stereo registration&quot;,
+    &quot;path&quot;: [
+      &quot;obs_044&quot;,
+      &quot;obs_047&quot;
+    ]
+  },
+  &quot;endpoint_displacement_m&quot;: 0.8896113590956353,
+  &quot;seed&quot;: 17,
+  &quot;generator&quot;: &quot;pose-conditioned textured stochastic elevation field&quot;,
+  &quot;camera_frame&quot;: &quot;T_world_from_rectified_left; nominal rover axes at A; metres&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;relief_scale_m&quot;: 0.00911198386811282,
+  &quot;frames&quot;: 33,
+  &quot;plane_sweep_cells&quot;: 5648,
+  &quot;triangulation_windows&quot;: 16,
+  &quot;video_tracks&quot;: 35341,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 35341,
+    &quot;median&quot;: 0.1477547714883446,
+    &quot;p90&quot;: 0.49142101255101134,
+    &quot;p95&quot;: 0.6264151550440238,
+    &quot;maximum&quot;: 0.8498988522223423,
+    &quot;rmse&quot;: 0.2807154399148165
+  },
+  &quot;stereo_cells&quot;: 8385,
+  &quot;new_video_cells&quot;: 1540,
+  &quot;new_cell_area_m2&quot;: 3.8500000000000005,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 9925,
+    &quot;triangles&quot;: 16962,
+    &quot;projected_surface_area_m2&quot;: 21.202499999999944,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 16962,
+      &quot;median&quot;: 12.815128618602927,
+      &quot;p90&quot;: 41.94101125115172,
+      &quot;p95&quot;: 51.13924401887359,
+      &quot;maximum&quot;: 79.61670085384003,
+      &quot;rmse&quot;: 23.860519262649664
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 3.217499999999992,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;endpoint stereo&quot;,
+    &quot;3&quot;: &quot;synthetic video&quot;
+  },
+  &quot;status&quot;: &quot;holdout passes exploratory height tolerances&quot;,
+  &quot;validation&quot;: {
+    &quot;holdout&quot;: &quot;obs_046&quot;,
+    &quot;eval_pose_path&quot;: [
+      &quot;obs_044&quot;,
+      &quot;obs_046&quot;
+    ],
+    &quot;reference&quot;: &quot;independent stereo cell median; not survey truth&quot;,
+    &quot;measurable_gap_cells&quot;: 561,
+    &quot;tested_added_cells&quot;: 106,
+    &quot;reference_coverage&quot;: 0.1889483065953654,
+    &quot;video_abs_height_error_m&quot;: {
+      &quot;count&quot;: 106,
+      &quot;median&quot;: 0.04942802177719591,
+      &quot;p90&quot;: 0.12027255005222531,
+      &quot;p95&quot;: 0.17141416623590416,
+      &quot;maximum&quot;: 0.1951863407081328,
+      &quot;rmse&quot;: 0.07576338336867508
+    },
+    &quot;matched_idw_abs_height_error_m&quot;: {
+      &quot;count&quot;: 106,
+      &quot;median&quot;: 0.010582100221190549,
+      &quot;p90&quot;: 0.06667816491119083,
+      &quot;p95&quot;: 0.07399365730560836,
+      &quot;maximum&quot;: 0.10988455685696441,
+      &quot;rmse&quot;: 0.03715672298298249
+    },
+    &quot;raw_before_envelope_m&quot;: {
+      &quot;count&quot;: 211,
+      &quot;median&quot;: 0.19092723697101288,
+      &quot;p90&quot;: 0.442946013102139,
+      &quot;p95&quot;: 0.4705279322722504,
+      &quot;maximum&quot;: 0.6873400313269309,
+      &quot;rmse&quot;: 0.24893127260286846
+    },
+    &quot;measured_overlap_abs_height_error_m&quot;: {
+      &quot;count&quot;: 3851,
+      &quot;median&quot;: 0.006957987355066919,
+      &quot;p90&quot;: 0.017892343426418655,
+      &quot;p95&quot;: 0.021297240846471055,
+      &quot;maximum&quot;: 0.05603126140445791,
+      &quot;rmse&quot;: 0.010952167067474736
+    },
+    &quot;passes_experimental_tolerance&quot;: true,
+    &quot;better_than_matched_idw_rmse&quot;: false
+  }
+}</pre><p>Saved OBJ: output\chronological_video\holdout046_17\candidate_stereo_plus_video_m.obj<br>SHA256: 6b7bb43d56785159884f0f2b4f21383c7096e1f62c290c8937af8c94601b6db1</p></details></article><article><h3>holdout046_27</h3><a href="figures/holdout046_27_model.png" target="_blank"><img src="figures/holdout046_27_model.png" loading="lazy" alt="Actual saved OBJ: holdout046_27"></a><p>10,152 vertices · 17,490 triangles<br>Extent X × Y × Z: 10.850 × 4.450 × 1.400 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/holdout046_27_provenance.png" alt="Terrain source provenance"><video controls preload="none" src="videos/holdout046_27.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_044&quot;,
+    &quot;obs_047&quot;
+  ],
+  &quot;utc&quot;: [
+    &quot;20230901T1301408296&quot;,
+    &quot;20230901T1841159976&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;stereo registration&quot;,
+    &quot;path&quot;: [
+      &quot;obs_044&quot;,
+      &quot;obs_047&quot;
+    ]
+  },
+  &quot;endpoint_displacement_m&quot;: 0.8896113590956353,
+  &quot;seed&quot;: 27,
+  &quot;generator&quot;: &quot;pose-conditioned textured stochastic elevation field&quot;,
+  &quot;camera_frame&quot;: &quot;T_world_from_rectified_left; nominal rover axes at A; metres&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;relief_scale_m&quot;: 0.00911198386811282,
+  &quot;frames&quot;: 33,
+  &quot;plane_sweep_cells&quot;: 5795,
+  &quot;triangulation_windows&quot;: 16,
+  &quot;video_tracks&quot;: 33066,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 33066,
+    &quot;median&quot;: 0.14447160234127907,
+    &quot;p90&quot;: 0.4869460002592092,
+    &quot;p95&quot;: 0.6182540932766128,
+    &quot;maximum&quot;: 0.8497029540912192,
+    &quot;rmse&quot;: 0.2773165361324116
+  },
+  &quot;stereo_cells&quot;: 8385,
+  &quot;new_video_cells&quot;: 1767,
+  &quot;new_cell_area_m2&quot;: 4.4175,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 10152,
+    &quot;triangles&quot;: 17490,
+    &quot;projected_surface_area_m2&quot;: 21.86249999999994,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 17490,
+      &quot;median&quot;: 12.876426428374153,
+      &quot;p90&quot;: 42.41972372066873,
+      &quot;p95&quot;: 52.01480619484085,
+      &quot;maximum&quot;: 79.61670085384003,
+      &quot;rmse&quot;: 24.264640345464112
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 3.8774999999999897,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;endpoint stereo&quot;,
+    &quot;3&quot;: &quot;synthetic video&quot;
+  },
+  &quot;status&quot;: &quot;holdout fails exploratory height tolerances&quot;,
+  &quot;validation&quot;: {
+    &quot;holdout&quot;: &quot;obs_046&quot;,
+    &quot;eval_pose_path&quot;: [
+      &quot;obs_044&quot;,
+      &quot;obs_046&quot;
+    ],
+    &quot;reference&quot;: &quot;independent stereo cell median; not survey truth&quot;,
+    &quot;measurable_gap_cells&quot;: 561,
+    &quot;tested_added_cells&quot;: 136,
+    &quot;reference_coverage&quot;: 0.24242424242424243,
+    &quot;video_abs_height_error_m&quot;: {
+      &quot;count&quot;: 136,
+      &quot;median&quot;: 0.0628906804185127,
+      &quot;p90&quot;: 0.14560409878374897,
+      &quot;p95&quot;: 0.1704882214580098,
+      &quot;maximum&quot;: 0.1951863407081328,
+      &quot;rmse&quot;: 0.08607828024498325
+    },
+    &quot;matched_idw_abs_height_error_m&quot;: {
+      &quot;count&quot;: 136,
+      &quot;median&quot;: 0.01232837535018294,
+      &quot;p90&quot;: 0.0692916807365076,
+      &quot;p95&quot;: 0.07746748748674204,
+      &quot;maximum&quot;: 0.10988455685696441,
+      &quot;rmse&quot;: 0.038064846262541224
+    },
+    &quot;raw_before_envelope_m&quot;: {
+      &quot;count&quot;: 240,
+      &quot;median&quot;: 0.1403166353997971,
+      &quot;p90&quot;: 0.3885569821756435,
+      &quot;p95&quot;: 0.4706745925820988,
+      &quot;maximum&quot;: 0.6873400313269309,
+      &quot;rmse&quot;: 0.2369927066399116
+    },
+    &quot;measured_overlap_abs_height_error_m&quot;: {
+      &quot;count&quot;: 3851,
+      &quot;median&quot;: 0.006957987355066919,
+      &quot;p90&quot;: 0.017892343426418655,
+      &quot;p95&quot;: 0.021297240846471055,
+      &quot;maximum&quot;: 0.05603126140445791,
+      &quot;rmse&quot;: 0.010952167067474736
+    },
+    &quot;passes_experimental_tolerance&quot;: false,
+    &quot;better_than_matched_idw_rmse&quot;: false
+  }
+}</pre><p>Saved OBJ: output\chronological_video\holdout046_27\candidate_stereo_plus_video_m.obj<br>SHA256: 919b6cccdc12ac4c7a36c5ade2b5d7afce71ec3170f179db0f1a208c29fd8c5e</p></details></article><article><h3>holdout046_7</h3><a href="figures/holdout046_7_model.png" target="_blank"><img src="figures/holdout046_7_model.png" loading="lazy" alt="Actual saved OBJ: holdout046_7"></a><p>10,196 vertices · 17,454 triangles<br>Extent X × Y × Z: 10.850 × 4.450 × 1.400 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/holdout046_7_provenance.png" alt="Terrain source provenance"><video controls preload="none" src="videos/holdout046_7.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_044&quot;,
+    &quot;obs_047&quot;
+  ],
+  &quot;utc&quot;: [
+    &quot;20230901T1301408296&quot;,
+    &quot;20230901T1841159976&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;stereo registration&quot;,
+    &quot;path&quot;: [
+      &quot;obs_044&quot;,
+      &quot;obs_047&quot;
+    ]
+  },
+  &quot;endpoint_displacement_m&quot;: 0.8896113590956353,
+  &quot;seed&quot;: 7,
+  &quot;generator&quot;: &quot;pose-conditioned textured stochastic elevation field&quot;,
+  &quot;camera_frame&quot;: &quot;T_world_from_rectified_left; nominal rover axes at A; metres&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;relief_scale_m&quot;: 0.00911198386811282,
+  &quot;frames&quot;: 33,
+  &quot;plane_sweep_cells&quot;: 5795,
+  &quot;triangulation_windows&quot;: 16,
+  &quot;video_tracks&quot;: 35135,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 35135,
+    &quot;median&quot;: 0.145319743584147,
+    &quot;p90&quot;: 0.48216241823206496,
+    &quot;p95&quot;: 0.6181378991967481,
+    &quot;maximum&quot;: 0.8499860679143991,
+    &quot;rmse&quot;: 0.27687518587669463
+  },
+  &quot;stereo_cells&quot;: 8385,
+  &quot;new_video_cells&quot;: 1811,
+  &quot;new_cell_area_m2&quot;: 4.527500000000001,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 10196,
+    &quot;triangles&quot;: 17454,
+    &quot;projected_surface_area_m2&quot;: 21.817499999999942,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 17454,
+      &quot;median&quot;: 12.700966308689818,
+      &quot;p90&quot;: 42.09000803346462,
+      &quot;p95&quot;: 51.21034219809224,
+      &quot;maximum&quot;: 80.9113865276043,
+      &quot;rmse&quot;: 24.016611157044753
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 3.8324999999999902,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;endpoint stereo&quot;,
+    &quot;3&quot;: &quot;synthetic video&quot;
+  },
+  &quot;status&quot;: &quot;holdout passes exploratory height tolerances&quot;,
+  &quot;validation&quot;: {
+    &quot;holdout&quot;: &quot;obs_046&quot;,
+    &quot;eval_pose_path&quot;: [
+      &quot;obs_044&quot;,
+      &quot;obs_046&quot;
+    ],
+    &quot;reference&quot;: &quot;independent stereo cell median; not survey truth&quot;,
+    &quot;measurable_gap_cells&quot;: 561,
+    &quot;tested_added_cells&quot;: 143,
+    &quot;reference_coverage&quot;: 0.2549019607843137,
+    &quot;video_abs_height_error_m&quot;: {
+      &quot;count&quot;: 143,
+      &quot;median&quot;: 0.03848490066703247,
+      &quot;p90&quot;: 0.12627694280605833,
+      &quot;p95&quot;: 0.16948102803243634,
+      &quot;maximum&quot;: 0.19709299409848446,
+      &quot;rmse&quot;: 0.07161103719960435
+    },
+    &quot;matched_idw_abs_height_error_m&quot;: {
+      &quot;count&quot;: 143,
+      &quot;median&quot;: 0.013311075459911503,
+      &quot;p90&quot;: 0.06908959871805224,
+      &quot;p95&quot;: 0.07903094808340787,
+      &quot;maximum&quot;: 0.10988455685696441,
+      &quot;rmse&quot;: 0.03780520071487921
+    },
+    &quot;raw_before_envelope_m&quot;: {
+      &quot;count&quot;: 234,
+      &quot;median&quot;: 0.08855857898557734,
+      &quot;p90&quot;: 0.36989798021861675,
+      &quot;p95&quot;: 0.4722480322233537,
+      &quot;maximum&quot;: 0.6873400313269309,
+      &quot;rmse&quot;: 0.2204454137012133
+    },
+    &quot;measured_overlap_abs_height_error_m&quot;: {
+      &quot;count&quot;: 3851,
+      &quot;median&quot;: 0.006957987355066919,
+      &quot;p90&quot;: 0.017892343426418655,
+      &quot;p95&quot;: 0.021297240846471055,
+      &quot;maximum&quot;: 0.05603126140445791,
+      &quot;rmse&quot;: 0.010952167067474736
+    },
+    &quot;passes_experimental_tolerance&quot;: true,
+    &quot;better_than_matched_idw_rmse&quot;: false
+  }
+}</pre><p>Saved OBJ: output\chronological_video\holdout046_7\candidate_stereo_plus_video_m.obj<br>SHA256: ac1e55bb00f286e055ce96bc950d0ef14b3ed8335a4b3a2bc601e929e4f6d1d7</p></details></article><article><h3>holdout046_model</h3><a href="figures/holdout046_model_model.png" target="_blank"><img src="figures/holdout046_model_model.png" loading="lazy" alt="Actual saved OBJ: holdout046_model"></a><p>12,718 vertices · 25,371 triangles<br>Extent X × Y × Z: 10.850 × 4.450 × 1.315 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/holdout046_model_provenance.png" alt="Terrain source provenance"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_044&quot;,
+    &quot;obs_047&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;stereo registration&quot;,
+    &quot;path&quot;: [
+      &quot;obs_044&quot;,
+      &quot;obs_047&quot;
+    ]
+  },
+  &quot;seeds&quot;: [
+    7,
+    17,
+    27
+  ],
+  &quot;grid_m&quot;: 0.05,
+  &quot;top_area_m2&quot;: 31.713749999999912,
+  &quot;units&quot;: &quot;metres&quot;,
+  &quot;frame&quot;: &quot;start rover local; nominal up&quot;,
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;strict endpoint stereo&quot;,
+    &quot;2&quot;: &quot;first-pipeline gated relaxed stereo&quot;,
+    &quot;3&quot;: &quot;video consensus (synthetic)&quot;,
+    &quot;4&quot;: &quot;first-pipeline linear interpolation (synthetic)&quot;
+  },
+  &quot;cell_counts&quot;: {
+    &quot;1&quot;: 8385,
+    &quot;2&quot;: 0,
+    &quot;3&quot;: 1364,
+    &quot;4&quot;: 2969
+  },
+  &quot;relaxed_sources&quot;: [],
+  &quot;new_video_cell_area_m2&quot;: 3.4100000000000006,
+  &quot;between_footprints_video_cells&quot;: 179,
+  &quot;between_footprints_total_cells&quot;: 472,
+  &quot;unchanged_strict_cells&quot;: 8385,
+  &quot;closure&quot;: {
+    &quot;source&quot;: &quot;output\\chronological_video\\holdout046_model\\terrain_top_m.obj&quot;,
+    &quot;source_sha256&quot;: &quot;f75c84865ba81f2f2b5cc7fbbfca6e8289494f8a88584e0bab16d10dfcc47186&quot;,
+    &quot;original_boundary_edges&quot;: 63,
+    &quot;artificial_base_z_m&quot;: -1.642565846,
+    &quot;base_clearance_m&quot;: 0.25,
+    &quot;original_top_geometry_unchanged&quot;: true,
+    &quot;obj&quot;: {
+      &quot;vertices&quot;: 25436,
+      &quot;triangles&quot;: 50868,
+      &quot;boundary_edges&quot;: 0,
+      &quot;nonmanifold_edges&quot;: 0,
+      &quot;nonmanifold_vertices&quot;: 0,
+      &quot;connected_components&quot;: 1,
+      &quot;euler_characteristic&quot;: 2,
+      &quot;consistent_outward_winding&quot;: true,
+      &quot;enclosed_volume_m3&quot;: 25.007055816520865,
+      &quot;dimensions_m&quot;: [
+        10.85,
+        4.45,
+        1.56493268
+      ]
+    },
+    &quot;stl&quot;: {
+      &quot;vertices&quot;: 25436,
+      &quot;triangles&quot;: 50868,
+      &quot;boundary_edges&quot;: 0,
+      &quot;nonmanifold_edges&quot;: 0,
+      &quot;nonmanifold_vertices&quot;: 0,
+      &quot;connected_components&quot;: 1,
+      &quot;euler_characteristic&quot;: 2,
+      &quot;consistent_outward_winding&quot;: true,
+      &quot;enclosed_volume_m3&quot;: 25.007055785525704,
+      &quot;dimensions_m&quot;: [
+        10.850000381469727,
+        4.449999809265137,
+        1.564932681620121
+      ]
+    },
+    &quot;added_geometry&quot;: &quot;Vertical walls on every perimeter edge and planar underside&quot;,
+    &quot;limitations&quot;: [
+      &quot;Top still includes previously inferred terrain&quot;,
+      &quot;Units are metres; STL format itself has no standard unit field&quot;,
+      &quot;Nominal rover-local frame, gravity unverified&quot;,
+      &quot;No validation in the user viewer or Gazebo&quot;
+    ]
+  },
+  &quot;caveats&quot;: [
+    &quot;Spatial footprint is a convex envelope, not a surveyed traverse.&quot;,
+    &quot;Seed agreement is repeatability, not ground truth.&quot;,
+    &quot;Interior cells without video support fall back to interpolation and are separately labelled.&quot;
+  ],
+  &quot;holdout&quot;: {
+    &quot;name&quot;: &quot;obs_046&quot;,
+    &quot;consensus_video_m&quot;: {
+      &quot;count&quot;: 85,
+      &quot;median&quot;: 0.05086846743014872,
+      &quot;p90&quot;: 0.1608985761700555,
+      &quot;p95&quot;: 0.17471675562755565,
+      &quot;maximum&quot;: 0.1951863407081328,
+      &quot;rmse&quot;: 0.08449559572152433
+    },
+    &quot;same_cell_linear_m&quot;: {
+      &quot;count&quot;: 85,
+      &quot;median&quot;: 0.00737170312611557,
+      &quot;p90&quot;: 0.02197582384876894,
+      &quot;p95&quot;: 0.026185237644697153,
+      &quot;maximum&quot;: 0.03819587075133768,
+      &quot;rmse&quot;: 0.012495541036813855
+    },
+    &quot;same_cell_idw_m&quot;: {
+      &quot;count&quot;: 85,
+      &quot;median&quot;: 0.0103139655364064,
+      &quot;p90&quot;: 0.06343646760524733,
+      &quot;p95&quot;: 0.07899933928565005,
+      &quot;maximum&quot;: 0.10988455685696441,
+      &quot;rmse&quot;: 0.035175701357185785
+    },
+    &quot;eligible_gap_cells&quot;: 561
+  },
+  &quot;strict_to_video_max_change_m&quot;: 0.0
+}</pre><p>Saved OBJ: output\chronological_video\holdout046_model\terrain_top_m.obj<br>SHA256: f75c84865ba81f2f2b5cc7fbbfca6e8289494f8a88584e0bab16d10dfcc47186</p></details></article><article><h3>holdout047_7</h3><a href="figures/holdout047_7_model.png" target="_blank"><img src="figures/holdout047_7_model.png" loading="lazy" alt="Actual saved OBJ: holdout047_7"></a><p>9,566 vertices · 13,903 triangles<br>Extent X × Y × Z: 11.050 × 6.500 × 2.171 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/holdout047_7_provenance.png" alt="Terrain source provenance"><video controls preload="none" src="videos/holdout047_7.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_045&quot;,
+    &quot;obs_048&quot;
+  ],
+  &quot;utc&quot;: [
+    &quot;20230901T1312556972&quot;,
+    &quot;20230901T1846409360&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;stereo registration&quot;,
+    &quot;path&quot;: [
+      &quot;obs_045&quot;,
+      &quot;obs_048&quot;
+    ]
+  },
+  &quot;endpoint_displacement_m&quot;: 1.0221272660184912,
+  &quot;seed&quot;: 7,
+  &quot;generator&quot;: &quot;pose-conditioned textured stochastic elevation field&quot;,
+  &quot;camera_frame&quot;: &quot;T_world_from_rectified_left; nominal rover axes at A; metres&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;relief_scale_m&quot;: 0.011672614465058033,
+  &quot;frames&quot;: 33,
+  &quot;plane_sweep_cells&quot;: 6286,
+  &quot;triangulation_windows&quot;: 16,
+  &quot;video_tracks&quot;: 44288,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 44288,
+    &quot;median&quot;: 0.1893000833747347,
+    &quot;p90&quot;: 0.5728992523191834,
+    &quot;p95&quot;: 0.6895313733568316,
+    &quot;maximum&quot;: 0.8497530681014741,
+    &quot;rmse&quot;: 0.32416353617333077
+  },
+  &quot;stereo_cells&quot;: 4270,
+  &quot;new_video_cells&quot;: 5296,
+  &quot;new_cell_area_m2&quot;: 13.240000000000002,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 9566,
+    &quot;triangles&quot;: 13903,
+    &quot;projected_surface_area_m2&quot;: 17.378749999999954,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 13903,
+      &quot;median&quot;: 17.493291495926,
+      &quot;p90&quot;: 51.67148760476223,
+      &quot;p95&quot;: 63.66941495360064,
+      &quot;maximum&quot;: 81.8732576513647,
+      &quot;rmse&quot;: 29.689557241130508
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 8.729999999999977,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;endpoint stereo&quot;,
+    &quot;3&quot;: &quot;synthetic video&quot;
+  },
+  &quot;status&quot;: &quot;holdout fails exploratory height tolerances&quot;,
+  &quot;validation&quot;: {
+    &quot;holdout&quot;: &quot;obs_047&quot;,
+    &quot;eval_pose_path&quot;: [
+      &quot;obs_045&quot;,
+      &quot;obs_048&quot;,
+      &quot;obs_047&quot;
+    ],
+    &quot;reference&quot;: &quot;independent stereo cell median; not survey truth&quot;,
+    &quot;measurable_gap_cells&quot;: 141,
+    &quot;tested_added_cells&quot;: 4,
+    &quot;reference_coverage&quot;: 0.028368794326241134,
+    &quot;video_abs_height_error_m&quot;: {
+      &quot;count&quot;: 4,
+      &quot;median&quot;: 0.03873263359919421,
+      &quot;p90&quot;: 0.08808917152615056,
+      &quot;p95&quot;: 0.09762372518772851,
+      &quot;maximum&quot;: 0.10715827884930651,
+      &quot;rmse&quot;: 0.06031919980453334
+    },
+    &quot;matched_idw_abs_height_error_m&quot;: {
+      &quot;count&quot;: 4,
+      &quot;median&quot;: 0.0010667979613295797,
+      &quot;p90&quot;: 0.006574969844719493,
+      &quot;p95&quot;: 0.007742828031376761,
+      &quot;maximum&quot;: 0.008910686218034036,
+      &quot;rmse&quot;: 0.00452075396854594
+    },
+    &quot;raw_before_envelope_m&quot;: {
+      &quot;count&quot;: 10,
+      &quot;median&quot;: 0.2660880513264984,
+      &quot;p90&quot;: 0.3951381536363599,
+      &quot;p95&quot;: 0.4554887640754971,
+      &quot;maximum&quot;: 0.5158393745146346,
+      &quot;rmse&quot;: 0.2877574419609135
+    },
+    &quot;measured_overlap_abs_height_error_m&quot;: {
+      &quot;count&quot;: 2147,
+      &quot;median&quot;: 0.016102391185856213,
+      &quot;p90&quot;: 0.051764170413180155,
+      &quot;p95&quot;: 0.058760100120529755,
+      &quot;maximum&quot;: 0.08899940414766672,
+      &quot;rmse&quot;: 0.02855506701372062
+    },
+    &quot;passes_experimental_tolerance&quot;: false,
+    &quot;better_than_matched_idw_rmse&quot;: false
+  }
+}</pre><p>Saved OBJ: output\chronological_video\holdout047_7\candidate_stereo_plus_video_m.obj<br>SHA256: d61ab07ed3996392a33d0a2630c1553554a12226020c145f447f3f094ed2e833</p></details></article><article><h3>long_7</h3><a href="figures/long_7_model.png" target="_blank"><img src="figures/long_7_model.png" loading="lazy" alt="Actual saved OBJ: long_7"></a><p>10,882 vertices · 17,252 triangles<br>Extent X × Y × Z: 12.950 × 9.500 × 1.704 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/long_7_provenance.png" alt="Terrain source provenance"><video controls preload="none" src="videos/long_7.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_033&quot;,
+    &quot;obs_034&quot;
+  ],
+  &quot;utc&quot;: [
+    &quot;20230831T0813019172&quot;,
+    &quot;20230831T1304316922&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;conditional mobility prior&quot;,
+    &quot;height_refinement&quot;: {
+      &quot;accepted&quot;: false,
+      &quot;reason&quot;: &quot;insufficient shared footprint&quot;,
+      &quot;cells&quot;: 41
+    },
+    &quot;reference&quot;: &quot;NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m&quot;,
+    &quot;distance_m&quot;: 4.6,
+    &quot;turn_deg&quot;: 15.0,
+    &quot;achieved_pose_verified&quot;: false,
+    &quot;assumptions&quot;: &quot;images bracket complete maneuver; planar initial pose; optional footprint-based tilt/elevation; achieved XY and yaw unverified&quot;
+  },
+  &quot;endpoint_displacement_m&quot;: 4.5673412387573284,
+  &quot;seed&quot;: 7,
+  &quot;generator&quot;: &quot;pose-conditioned textured stochastic elevation field&quot;,
+  &quot;camera_frame&quot;: &quot;T_world_from_rectified_left; nominal rover axes at A; metres&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;relief_scale_m&quot;: 0.0045304293642544164,
+  &quot;frames&quot;: 33,
+  &quot;plane_sweep_cells&quot;: 2487,
+  &quot;triangulation_windows&quot;: 16,
+  &quot;video_tracks&quot;: 2782,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 2782,
+    &quot;median&quot;: 0.22902895770687215,
+    &quot;p90&quot;: 0.653721436062504,
+    &quot;p95&quot;: 0.7551803598830217,
+    &quot;maximum&quot;: 0.8483843204565905,
+    &quot;rmse&quot;: 0.37518653720949235
+  },
+  &quot;stereo_cells&quot;: 10227,
+  &quot;new_video_cells&quot;: 655,
+  &quot;new_cell_area_m2&quot;: 1.6375000000000004,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 10882,
+    &quot;triangles&quot;: 17252,
+    &quot;projected_surface_area_m2&quot;: 21.56499999999994,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 17252,
+      &quot;median&quot;: 13.52704764037096,
+      &quot;p90&quot;: 22.037505760599377,
+      &quot;p95&quot;: 25.28040208815578,
+      &quot;maximum&quot;: 86.03842481530535,
+      &quot;rmse&quot;: 17.21203165350647
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 0.9499999999999977,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;endpoint stereo&quot;,
+    &quot;3&quot;: &quot;synthetic video&quot;
+  },
+  &quot;status&quot;: &quot;conditional candidate; unverified spatial placement&quot;
+}</pre><p>Saved OBJ: output\chronological_video\long_7\candidate_stereo_plus_video_m.obj<br>SHA256: 9cb34b55f65fd3158d274e8c3708c760eaebfc71a794bbd7361bdaf775e78919</p></details></article><article><h3>longer046_7</h3><a href="figures/longer046_7_model.png" target="_blank"><img src="figures/longer046_7_model.png" loading="lazy" alt="Actual saved OBJ: longer046_7"></a><p>10,596 vertices · 17,411 triangles<br>Extent X × Y × Z: 11.250 × 6.600 × 1.322 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/longer046_7_provenance.png" alt="Terrain source provenance"><video controls preload="none" src="videos/longer046_7.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_044&quot;,
+    &quot;obs_048&quot;
+  ],
+  &quot;utc&quot;: [
+    &quot;20230901T1301408296&quot;,
+    &quot;20230901T1846409360&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;stereo registration&quot;,
+    &quot;path&quot;: [
+      &quot;obs_044&quot;,
+      &quot;obs_047&quot;,
+      &quot;obs_048&quot;
+    ]
+  },
+  &quot;endpoint_displacement_m&quot;: 0.8931833424613222,
+  &quot;seed&quot;: 7,
+  &quot;generator&quot;: &quot;pose-conditioned textured stochastic elevation field&quot;,
+  &quot;camera_frame&quot;: &quot;T_world_from_rectified_left; nominal rover axes at A; metres&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;relief_scale_m&quot;: 0.0057514422841068655,
+  &quot;frames&quot;: 33,
+  &quot;plane_sweep_cells&quot;: 6112,
+  &quot;triangulation_windows&quot;: 16,
+  &quot;video_tracks&quot;: 24867,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 24867,
+    &quot;median&quot;: 0.20026559260833446,
+    &quot;p90&quot;: 0.569490094569449,
+    &quot;p95&quot;: 0.682919082568361,
+    &quot;maximum&quot;: 0.8499366487503377,
+    &quot;rmse&quot;: 0.32636327371141394
+  },
+  &quot;stereo_cells&quot;: 7967,
+  &quot;new_video_cells&quot;: 2629,
+  &quot;new_cell_area_m2&quot;: 6.572500000000002,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 10596,
+    &quot;triangles&quot;: 17411,
+    &quot;projected_surface_area_m2&quot;: 21.76374999999994,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 17411,
+      &quot;median&quot;: 10.796564160601665,
+      &quot;p90&quot;: 44.14371662839342,
+      &quot;p95&quot;: 60.74122017833379,
+      &quot;maximum&quot;: 80.00360877847054,
+      &quot;rmse&quot;: 24.418026727967785
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 5.426249999999985,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;endpoint stereo&quot;,
+    &quot;3&quot;: &quot;synthetic video&quot;
+  },
+  &quot;status&quot;: &quot;holdout fails exploratory height tolerances&quot;,
+  &quot;validation&quot;: {
+    &quot;holdout&quot;: &quot;obs_046&quot;,
+    &quot;eval_pose_path&quot;: [
+      &quot;obs_044&quot;,
+      &quot;obs_046&quot;
+    ],
+    &quot;reference&quot;: &quot;independent stereo cell median; not survey truth&quot;,
+    &quot;measurable_gap_cells&quot;: 763,
+    &quot;tested_added_cells&quot;: 210,
+    &quot;reference_coverage&quot;: 0.27522935779816515,
+    &quot;video_abs_height_error_m&quot;: {
+      &quot;count&quot;: 210,
+      &quot;median&quot;: 0.09759670805451948,
+      &quot;p90&quot;: 0.16885928824984942,
+      &quot;p95&quot;: 0.17623775797724026,
+      &quot;maximum&quot;: 0.1935692369727049,
+      &quot;rmse&quot;: 0.110809720648489
+    },
+    &quot;matched_idw_abs_height_error_m&quot;: {
+      &quot;count&quot;: 210,
+      &quot;median&quot;: 0.016299959493969174,
+      &quot;p90&quot;: 0.028045738698813372,
+      &quot;p95&quot;: 0.03209614707104894,
+      &quot;maximum&quot;: 0.13997083768843588,
+      &quot;rmse&quot;: 0.028303786409226102
+    },
+    &quot;raw_before_envelope_m&quot;: {
+      &quot;count&quot;: 295,
+      &quot;median&quot;: 0.12352543176497188,
+      &quot;p90&quot;: 0.2448142405012447,
+      &quot;p95&quot;: 0.2870448199156974,
+      &quot;maximum&quot;: 0.441147867441535,
+      &quot;rmse&quot;: 0.16484081201664766
+    },
+    &quot;measured_overlap_abs_height_error_m&quot;: {
+      &quot;count&quot;: 3407,
+      &quot;median&quot;: 0.009877769308786921,
+      &quot;p90&quot;: 0.022361345901026168,
+      &quot;p95&quot;: 0.027240164563057837,
+      &quot;maximum&quot;: 0.05604360215325921,
+      &quot;rmse&quot;: 0.013857168004067397
+    },
+    &quot;passes_experimental_tolerance&quot;: false,
+    &quot;better_than_matched_idw_rmse&quot;: false
+  }
+}</pre><p>Saved OBJ: output\chronological_video\longer046_7\candidate_stereo_plus_video_m.obj<br>SHA256: af3c41ba92a94fb6db12863ecb25e027511015024a4d5f880a673a80583b7f77</p></details></article><article><h3>mid036_17</h3><a href="figures/mid036_17_model.png" target="_blank"><img src="figures/mid036_17_model.png" loading="lazy" alt="Actual saved OBJ: mid036_17"></a><p>11,241 vertices · 18,037 triangles<br>Extent X × Y × Z: 12.900 × 8.250 × 1.278 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/mid036_17_provenance.png" alt="Terrain source provenance"><video controls preload="none" src="videos/mid036_17.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_033&quot;,
+    &quot;obs_034&quot;
+  ],
+  &quot;utc&quot;: [
+    &quot;20230831T0813019172&quot;,
+    &quot;20230831T1304316922&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;conditional mobility prior&quot;,
+    &quot;height_refinement&quot;: {
+      &quot;accepted&quot;: true,
+      &quot;shared_cells&quot;: 160,
+      &quot;validation_cells&quot;: 27,
+      &quot;reference&quot;: &quot;stereo A vs B under assumed XY/yaw, spatial block holdout&quot;,
+      &quot;prior_median_height_residual_m&quot;: 0.47876295749385483,
+      &quot;adjusted_median_height_residual_m&quot;: 0.04386276486667651,
+      &quot;adjusted_p90_m&quot;: 0.06874387649724097,
+      &quot;clearance_prior_dz_m&quot;: 0.5094447263860148,
+      &quot;allowed_dz_m&quot;: [
+        0.4094447263860148,
+        0.6094447263860148
+      ],
+      &quot;nearest_anchor_to_B_m&quot;: [
+        0.2791957370578848,
+        0.7438655569622572
+      ],
+      &quot;tilt_rotvec_deg&quot;: [
+        -2.871167241545284,
+        -0.9129308602988928
+      ],
+      &quot;elevation_change_m&quot;: 0.40944472638601503
+    },
+    &quot;reference&quot;: &quot;NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m&quot;,
+    &quot;distance_m&quot;: 4.0,
+    &quot;turn_deg&quot;: 10.0,
+    &quot;achieved_pose_verified&quot;: false,
+    &quot;assumptions&quot;: &quot;images bracket complete maneuver; planar initial pose; optional footprint-based tilt/elevation; achieved XY and yaw unverified&quot;
+  },
+  &quot;endpoint_displacement_m&quot;: 3.9992165692639174,
+  &quot;seed&quot;: 17,
+  &quot;generator&quot;: &quot;pose-conditioned textured stochastic elevation field&quot;,
+  &quot;camera_frame&quot;: &quot;T_world_from_rectified_left; nominal rover axes at A; metres&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;relief_scale_m&quot;: 0.004560046629617566,
+  &quot;frames&quot;: 33,
+  &quot;plane_sweep_cells&quot;: 4780,
+  &quot;triangulation_windows&quot;: 16,
+  &quot;video_tracks&quot;: 6995,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 6995,
+    &quot;median&quot;: 0.2267221327260826,
+    &quot;p90&quot;: 0.6511461067365113,
+    &quot;p95&quot;: 0.7441469910877835,
+    &quot;maximum&quot;: 0.8496435520331225,
+    &quot;rmse&quot;: 0.36928032633631325
+  },
+  &quot;stereo_cells&quot;: 9872,
+  &quot;new_video_cells&quot;: 1369,
+  &quot;new_cell_area_m2&quot;: 3.4225000000000008,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 11241,
+    &quot;triangles&quot;: 18037,
+    &quot;projected_surface_area_m2&quot;: 22.546249999999937,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 18037,
+      &quot;median&quot;: 15.012007183367452,
+      &quot;p90&quot;: 25.120348319007846,
+      &quot;p95&quot;: 37.00350833019052,
+      &quot;maximum&quot;: 79.91678134055186,
+      &quot;rmse&quot;: 20.628029467897967
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 2.387499999999995,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;endpoint stereo&quot;,
+    &quot;3&quot;: &quot;synthetic video&quot;
+  },
+  &quot;status&quot;: &quot;conditional candidate; unverified spatial placement&quot;
+}</pre><p>Saved OBJ: output\chronological_video\mid036_17\candidate_stereo_plus_video_m.obj<br>SHA256: 480b0f8a7c84468ab2c06ff855d1fcde23f1b332385b162c5fbb55753295475f</p></details></article><article><h3>mid036_27</h3><a href="figures/mid036_27_model.png" target="_blank"><img src="figures/mid036_27_model.png" loading="lazy" alt="Actual saved OBJ: mid036_27"></a><p>11,237 vertices · 18,083 triangles<br>Extent X × Y × Z: 12.900 × 8.250 × 1.328 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/mid036_27_provenance.png" alt="Terrain source provenance"><video controls preload="none" src="videos/mid036_27.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_033&quot;,
+    &quot;obs_034&quot;
+  ],
+  &quot;utc&quot;: [
+    &quot;20230831T0813019172&quot;,
+    &quot;20230831T1304316922&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;conditional mobility prior&quot;,
+    &quot;height_refinement&quot;: {
+      &quot;accepted&quot;: true,
+      &quot;shared_cells&quot;: 160,
+      &quot;validation_cells&quot;: 27,
+      &quot;reference&quot;: &quot;stereo A vs B under assumed XY/yaw, spatial block holdout&quot;,
+      &quot;prior_median_height_residual_m&quot;: 0.47876295749385483,
+      &quot;adjusted_median_height_residual_m&quot;: 0.04386276486667651,
+      &quot;adjusted_p90_m&quot;: 0.06874387649724097,
+      &quot;clearance_prior_dz_m&quot;: 0.5094447263860148,
+      &quot;allowed_dz_m&quot;: [
+        0.4094447263860148,
+        0.6094447263860148
+      ],
+      &quot;nearest_anchor_to_B_m&quot;: [
+        0.2791957370578848,
+        0.7438655569622572
+      ],
+      &quot;tilt_rotvec_deg&quot;: [
+        -2.871167241545284,
+        -0.9129308602988928
+      ],
+      &quot;elevation_change_m&quot;: 0.40944472638601503
+    },
+    &quot;reference&quot;: &quot;NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m&quot;,
+    &quot;distance_m&quot;: 4.0,
+    &quot;turn_deg&quot;: 10.0,
+    &quot;achieved_pose_verified&quot;: false,
+    &quot;assumptions&quot;: &quot;images bracket complete maneuver; planar initial pose; optional footprint-based tilt/elevation; achieved XY and yaw unverified&quot;
+  },
+  &quot;endpoint_displacement_m&quot;: 3.9992165692639174,
+  &quot;seed&quot;: 27,
+  &quot;generator&quot;: &quot;pose-conditioned textured stochastic elevation field&quot;,
+  &quot;camera_frame&quot;: &quot;T_world_from_rectified_left; nominal rover axes at A; metres&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;relief_scale_m&quot;: 0.004560046629617566,
+  &quot;frames&quot;: 33,
+  &quot;plane_sweep_cells&quot;: 4669,
+  &quot;triangulation_windows&quot;: 16,
+  &quot;video_tracks&quot;: 7189,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 7189,
+    &quot;median&quot;: 0.22177845855390158,
+    &quot;p90&quot;: 0.6362543805919699,
+    &quot;p95&quot;: 0.7327218208033784,
+    &quot;maximum&quot;: 0.8494839132484207,
+    &quot;rmse&quot;: 0.3615449037158295
+  },
+  &quot;stereo_cells&quot;: 9872,
+  &quot;new_video_cells&quot;: 1365,
+  &quot;new_cell_area_m2&quot;: 3.4125000000000005,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 11237,
+    &quot;triangles&quot;: 18083,
+    &quot;projected_surface_area_m2&quot;: 22.603749999999938,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 18083,
+      &quot;median&quot;: 15.046785418312636,
+      &quot;p90&quot;: 25.556164711625577,
+      &quot;p95&quot;: 41.191702153012514,
+      &quot;maximum&quot;: 83.01403676256861,
+      &quot;rmse&quot;: 21.15247901442677
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 2.4449999999999936,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;endpoint stereo&quot;,
+    &quot;3&quot;: &quot;synthetic video&quot;
+  },
+  &quot;status&quot;: &quot;conditional candidate; unverified spatial placement&quot;
+}</pre><p>Saved OBJ: output\chronological_video\mid036_27\candidate_stereo_plus_video_m.obj<br>SHA256: f160d35d72031207a0748a4feebd01c6b38af1381b5892e3cc6014ec8bee8f2a</p></details></article><article><h3>mid036_7</h3><a href="figures/mid036_7_model.png" target="_blank"><img src="figures/mid036_7_model.png" loading="lazy" alt="Actual saved OBJ: mid036_7"></a><p>11,224 vertices · 18,071 triangles<br>Extent X × Y × Z: 12.900 × 8.250 × 1.338 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/mid036_7_provenance.png" alt="Terrain source provenance"><video controls preload="none" src="videos/mid036_7.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_033&quot;,
+    &quot;obs_034&quot;
+  ],
+  &quot;utc&quot;: [
+    &quot;20230831T0813019172&quot;,
+    &quot;20230831T1304316922&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;conditional mobility prior&quot;,
+    &quot;height_refinement&quot;: {
+      &quot;accepted&quot;: true,
+      &quot;shared_cells&quot;: 160,
+      &quot;validation_cells&quot;: 27,
+      &quot;reference&quot;: &quot;stereo A vs B under assumed XY/yaw, spatial block holdout&quot;,
+      &quot;prior_median_height_residual_m&quot;: 0.47876295749385483,
+      &quot;adjusted_median_height_residual_m&quot;: 0.04386276486667651,
+      &quot;adjusted_p90_m&quot;: 0.06874387649724097,
+      &quot;clearance_prior_dz_m&quot;: 0.5094447263860148,
+      &quot;allowed_dz_m&quot;: [
+        0.4094447263860148,
+        0.6094447263860148
+      ],
+      &quot;nearest_anchor_to_B_m&quot;: [
+        0.2791957370578848,
+        0.7438655569622572
+      ],
+      &quot;tilt_rotvec_deg&quot;: [
+        -2.871167241545284,
+        -0.9129308602988928
+      ],
+      &quot;elevation_change_m&quot;: 0.40944472638601503
+    },
+    &quot;reference&quot;: &quot;NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m&quot;,
+    &quot;distance_m&quot;: 4.0,
+    &quot;turn_deg&quot;: 10.0,
+    &quot;achieved_pose_verified&quot;: false,
+    &quot;assumptions&quot;: &quot;images bracket complete maneuver; planar initial pose; optional footprint-based tilt/elevation; achieved XY and yaw unverified&quot;
+  },
+  &quot;endpoint_displacement_m&quot;: 3.9992165692639174,
+  &quot;seed&quot;: 7,
+  &quot;generator&quot;: &quot;pose-conditioned textured stochastic elevation field&quot;,
+  &quot;camera_frame&quot;: &quot;T_world_from_rectified_left; nominal rover axes at A; metres&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;relief_scale_m&quot;: 0.004560046629617566,
+  &quot;frames&quot;: 33,
+  &quot;plane_sweep_cells&quot;: 4623,
+  &quot;triangulation_windows&quot;: 16,
+  &quot;video_tracks&quot;: 7300,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 7300,
+    &quot;median&quot;: 0.23290101288177054,
+    &quot;p90&quot;: 0.6508915844364525,
+    &quot;p95&quot;: 0.7397065415266663,
+    &quot;maximum&quot;: 0.8499388696517508,
+    &quot;rmse&quot;: 0.37174229341891496
+  },
+  &quot;stereo_cells&quot;: 9872,
+  &quot;new_video_cells&quot;: 1352,
+  &quot;new_cell_area_m2&quot;: 3.380000000000001,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 11224,
+    &quot;triangles&quot;: 18071,
+    &quot;projected_surface_area_m2&quot;: 22.588749999999937,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 18071,
+      &quot;median&quot;: 14.99214805025487,
+      &quot;p90&quot;: 25.12286505545277,
+      &quot;p95&quot;: 37.077005181385815,
+      &quot;maximum&quot;: 79.50851320436459,
+      &quot;rmse&quot;: 20.68905071414269
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 2.429999999999993,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;endpoint stereo&quot;,
+    &quot;3&quot;: &quot;synthetic video&quot;
+  },
+  &quot;status&quot;: &quot;conditional candidate; unverified spatial placement&quot;
+}</pre><p>Saved OBJ: output\chronological_video\mid036_7\candidate_stereo_plus_video_m.obj<br>SHA256: 8b0edba951e77cbf91c49fbfbe36a093b63742c0c29795e1150de28a1f44b1dc</p></details></article><article><h3>mid036_model</h3><a href="figures/mid036_model_model.png" target="_blank"><img src="figures/mid036_model_model.png" loading="lazy" alt="Actual saved OBJ: mid036_model"></a><p>20,007 vertices · 39,984 triangles<br>Extent X × Y × Z: 12.900 × 8.250 × 1.293 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/mid036_model_provenance.png" alt="Terrain source provenance"><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_033&quot;,
+    &quot;obs_034&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;conditional mobility prior&quot;,
+    &quot;height_refinement&quot;: {
+      &quot;accepted&quot;: true,
+      &quot;shared_cells&quot;: 160,
+      &quot;validation_cells&quot;: 27,
+      &quot;reference&quot;: &quot;stereo A vs B under assumed XY/yaw, spatial block holdout&quot;,
+      &quot;prior_median_height_residual_m&quot;: 0.47876295749385483,
+      &quot;adjusted_median_height_residual_m&quot;: 0.04386276486667651,
+      &quot;adjusted_p90_m&quot;: 0.06874387649724097,
+      &quot;clearance_prior_dz_m&quot;: 0.5094447263860148,
+      &quot;allowed_dz_m&quot;: [
+        0.4094447263860148,
+        0.6094447263860148
+      ],
+      &quot;nearest_anchor_to_B_m&quot;: [
+        0.2791957370578848,
+        0.7438655569622572
+      ],
+      &quot;tilt_rotvec_deg&quot;: [
+        -2.871167241545284,
+        -0.9129308602988928
+      ],
+      &quot;elevation_change_m&quot;: 0.40944472638601503
+    },
+    &quot;reference&quot;: &quot;NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m&quot;,
+    &quot;distance_m&quot;: 4.0,
+    &quot;turn_deg&quot;: 10.0,
+    &quot;achieved_pose_verified&quot;: false,
+    &quot;assumptions&quot;: &quot;images bracket complete maneuver; planar initial pose; optional footprint-based tilt/elevation; achieved XY and yaw unverified&quot;
+  },
+  &quot;seeds&quot;: [
+    7,
+    17,
+    27
+  ],
+  &quot;grid_m&quot;: 0.05,
+  &quot;top_area_m2&quot;: 49.98124999999987,
+  &quot;units&quot;: &quot;metres&quot;,
+  &quot;frame&quot;: &quot;start rover local; nominal up&quot;,
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;strict endpoint stereo&quot;,
+    &quot;2&quot;: &quot;first-pipeline gated relaxed stereo&quot;,
+    &quot;3&quot;: &quot;video consensus (synthetic)&quot;,
+    &quot;4&quot;: &quot;first-pipeline linear interpolation (synthetic)&quot;
+  },
+  &quot;cell_counts&quot;: {
+    &quot;1&quot;: 9872,
+    &quot;2&quot;: 253,
+    &quot;3&quot;: 994,
+    &quot;4&quot;: 8888
+  },
+  &quot;relaxed_sources&quot;: [
+    {
+      &quot;name&quot;: &quot;obs_034&quot;,
+      &quot;source&quot;: &quot;r15_terrain_completion\\obs_034\\terrain_grids.npz&quot;,
+      &quot;added_cells&quot;: 253
+    }
+  ],
+  &quot;new_video_cell_area_m2&quot;: 2.4850000000000003,
+  &quot;between_footprints_video_cells&quot;: 250,
+  &quot;between_footprints_total_cells&quot;: 2375,
+  &quot;unchanged_strict_cells&quot;: 9872,
+  &quot;closure&quot;: {
+    &quot;source&quot;: &quot;output\\chronological_video\\mid036_model\\terrain_top_m.obj&quot;,
+    &quot;source_sha256&quot;: &quot;b28918f25e4022a7c0534b64f888e6fbc123ecd75f5b4e0a915ceb4453638e90&quot;,
+    &quot;original_boundary_edges&quot;: 28,
+    &quot;artificial_base_z_m&quot;: -0.230197102,
+    &quot;base_clearance_m&quot;: 0.25,
+    &quot;original_top_geometry_unchanged&quot;: true,
+    &quot;obj&quot;: {
+      &quot;vertices&quot;: 40014,
+      &quot;triangles&quot;: 80024,
+      &quot;boundary_edges&quot;: 0,
+      &quot;nonmanifold_edges&quot;: 0,
+      &quot;nonmanifold_vertices&quot;: 0,
+      &quot;connected_components&quot;: 1,
+      &quot;euler_characteristic&quot;: 2,
+      &quot;consistent_outward_winding&quot;: true,
+      &quot;enclosed_volume_m3&quot;: 45.02382068768122,
+      &quot;dimensions_m&quot;: [
+        12.9,
+        8.25,
+        1.543094892
+      ]
+    },
+    &quot;stl&quot;: {
+      &quot;vertices&quot;: 40014,
+      &quot;triangles&quot;: 80024,
+      &quot;boundary_edges&quot;: 0,
+      &quot;nonmanifold_edges&quot;: 0,
+      &quot;nonmanifold_vertices&quot;: 0,
+      &quot;connected_components&quot;: 1,
+      &quot;euler_characteristic&quot;: 2,
+      &quot;consistent_outward_winding&quot;: true,
+      &quot;enclosed_volume_m3&quot;: 45.02382254377391,
+      &quot;dimensions_m&quot;: [
+        12.899999976158142,
+        8.249999761581421,
+        1.5430949032306671
+      ]
+    },
+    &quot;added_geometry&quot;: &quot;Vertical walls on every perimeter edge and planar underside&quot;,
+    &quot;limitations&quot;: [
+      &quot;Top still includes previously inferred terrain&quot;,
+      &quot;Units are metres; STL format itself has no standard unit field&quot;,
+      &quot;Nominal rover-local frame, gravity unverified&quot;,
+      &quot;No validation in the user viewer or Gazebo&quot;
+    ]
+  },
+  &quot;caveats&quot;: [
+    &quot;Spatial footprint is a convex envelope, not a surveyed traverse.&quot;,
+    &quot;Seed agreement is repeatability, not ground truth.&quot;,
+    &quot;Interior cells without video support fall back to interpolation and are separately labelled.&quot;
+  ],
+  &quot;strict_to_video_max_change_m&quot;: 0.0
+}</pre><p>Saved OBJ: output\chronological_video\mid036_model\terrain_top_m.obj<br>SHA256: b28918f25e4022a7c0534b64f888e6fbc123ecd75f5b4e0a915ceb4453638e90</p></details></article><article><h3>short_7</h3><a href="figures/short_7_model.png" target="_blank"><img src="figures/short_7_model.png" loading="lazy" alt="Actual saved OBJ: short_7"></a><p>10,536 vertices · 17,366 triangles<br>Extent X × Y × Z: 12.700 × 7.050 × 1.314 m</p><p>Strict = blue; relaxed = green; video = orange; linear = gray.</p><img src="figures/short_7_provenance.png" alt="Terrain source provenance"><video controls preload="none" src="videos/short_7.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_033&quot;,
+    &quot;obs_034&quot;
+  ],
+  &quot;utc&quot;: [
+    &quot;20230831T0813019172&quot;,
+    &quot;20230831T1304316922&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;conditional mobility prior&quot;,
+    &quot;height_refinement&quot;: {
+      &quot;accepted&quot;: true,
+      &quot;shared_cells&quot;: 342,
+      &quot;validation_cells&quot;: 79,
+      &quot;reference&quot;: &quot;stereo A vs B under assumed XY/yaw, spatial block holdout&quot;,
+      &quot;prior_median_height_residual_m&quot;: 0.538534365654981,
+      &quot;adjusted_median_height_residual_m&quot;: 0.020710070654534007,
+      &quot;adjusted_p90_m&quot;: 0.045725914770347,
+      &quot;clearance_prior_dz_m&quot;: 0.4452529700684398,
+      &quot;allowed_dz_m&quot;: [
+        0.3452529700684398,
+        0.5452529700684398
+      ],
+      &quot;nearest_anchor_to_B_m&quot;: [
+        0.04547260710800409,
+        0.7195704747460248
+      ],
+      &quot;tilt_rotvec_deg&quot;: [
+        -5.296474095502166,
+        -1.7438978417955076
+      ],
+      &quot;elevation_change_m&quot;: 0.34525297006843986
+    },
+    &quot;reference&quot;: &quot;NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m&quot;,
+    &quot;distance_m&quot;: 3.4,
+    &quot;turn_deg&quot;: 5.0,
+    &quot;achieved_pose_verified&quot;: false,
+    &quot;assumptions&quot;: &quot;images bracket complete maneuver; planar initial pose; optional footprint-based tilt/elevation; achieved XY and yaw unverified&quot;
+  },
+  &quot;endpoint_displacement_m&quot;: 3.406655876585483,
+  &quot;seed&quot;: 7,
+  &quot;generator&quot;: &quot;pose-conditioned textured stochastic elevation field&quot;,
+  &quot;camera_frame&quot;: &quot;T_world_from_rectified_left; nominal rover axes at A; metres&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;relief_scale_m&quot;: 0.004706528356996091,
+  &quot;frames&quot;: 33,
+  &quot;plane_sweep_cells&quot;: 5082,
+  &quot;triangulation_windows&quot;: 16,
+  &quot;video_tracks&quot;: 9010,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 9010,
+    &quot;median&quot;: 0.2748848566031398,
+    &quot;p90&quot;: 0.6921080006301644,
+    &quot;p95&quot;: 0.7601086644091721,
+    &quot;maximum&quot;: 0.8499217543043326,
+    &quot;rmse&quot;: 0.40112093089528583
+  },
+  &quot;stereo_cells&quot;: 9201,
+  &quot;new_video_cells&quot;: 1335,
+  &quot;new_cell_area_m2&quot;: 3.337500000000001,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 10536,
+    &quot;triangles&quot;: 17366,
+    &quot;projected_surface_area_m2&quot;: 21.70749999999994,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 17366,
+      &quot;median&quot;: 16.561191902948757,
+      &quot;p90&quot;: 28.556197165102276,
+      &quot;p95&quot;: 50.342335915101884,
+      &quot;maximum&quot;: 79.87531888870735,
+      &quot;rmse&quot;: 23.038670990276525
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 2.896249999999992,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;labels&quot;: {
+    &quot;0&quot;: &quot;unsupported&quot;,
+    &quot;1&quot;: &quot;endpoint stereo&quot;,
+    &quot;3&quot;: &quot;synthetic video&quot;
+  },
+  &quot;status&quot;: &quot;conditional candidate; unverified spatial placement&quot;
+}</pre><p>Saved OBJ: output\chronological_video\short_7\candidate_stereo_plus_video_m.obj<br>SHA256: 3052c1833a8f2d2b5355ff30d564db89348217c36866fed3921def64370229ee</p></details></article></div></section><section id="negative"><h2>Invalid temporal controls</h2><div class="grid"><article><h3>frozen_first_endpoint</h3><a href="figures/frozen_first_endpoint_model.png" target="_blank"><img src="figures/frozen_first_endpoint_model.png" loading="lazy" alt="Actual saved OBJ: frozen_first_endpoint"></a><p>8,389 vertices · 14,388 triangles<br>Extent X × Y × Z: 10.850 × 4.450 × 1.286 m</p><video controls preload="none" src="videos/frozen_first_endpoint.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_044&quot;,
+    &quot;obs_047&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;stereo registration&quot;,
+    &quot;path&quot;: [
+      &quot;obs_044&quot;,
+      &quot;obs_047&quot;
+    ]
+  },
+  &quot;seed&quot;: 7,
+  &quot;generator&quot;: &quot;procedural_control&quot;,
+  &quot;input_movie_sha256&quot;: &quot;98f82e98f6fa757287a69491dada2415fad33212b1773a3c82473f889b6d4971&quot;,
+  &quot;bundle_sha256&quot;: &quot;1975be6845038a5353545f50b9ce950d0c72cee93e7a7ce6b2f232b6f9493855&quot;,
+  &quot;pose_check_sha256&quot;: &quot;170a3c86f4a2b227c279ad01555b310a592371cd87d42e24386124bcf56a7cf2&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;reconstruction&quot;: &quot;real-anchor PnP; unconditioned accepted frames only&quot;,
+  &quot;used_frame_indices&quot;: [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  &quot;video_tracks&quot;: 0,
+  &quot;triangulation_windows&quot;: 0,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 0
+  },
+  &quot;stereo_cells&quot;: 8385,
+  &quot;new_video_cells&quot;: 4,
+  &quot;new_cell_area_m2&quot;: 0.010000000000000002,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 8389,
+    &quot;triangles&quot;: 14388,
+    &quot;projected_surface_area_m2&quot;: 17.98499999999995,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 14388,
+      &quot;median&quot;: 11.973319268872196,
+      &quot;p90&quot;: 39.13144895193304,
+      &quot;p95&quot;: 47.28564379512128,
+      &quot;maximum&quot;: 69.76715206681465,
+      &quot;rmse&quot;: 21.842827977956723
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 0.0,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;status&quot;: &quot;experimental synthetic terrain; not independently surveyed&quot;,
+  &quot;validation&quot;: {
+    &quot;holdout&quot;: &quot;obs_046&quot;,
+    &quot;reference&quot;: &quot;withheld registered stereo; not survey ground truth&quot;,
+    &quot;measurable_gap_cells&quot;: 561,
+    &quot;tested_added_cells&quot;: 0,
+    &quot;reference_coverage&quot;: 0.0,
+    &quot;video_abs_height_error_m&quot;: {
+      &quot;count&quot;: 0
+    },
+    &quot;matched_idw_abs_height_error_m&quot;: {
+      &quot;count&quot;: 0
+    },
+    &quot;linear_comparison_cells&quot;: 0,
+    &quot;matched_linear_abs_height_error_m&quot;: {
+      &quot;count&quot;: 0
+    },
+    &quot;video_on_linear_comparison_m&quot;: {
+      &quot;count&quot;: 0
+    },
+    &quot;raw_before_envelope_m&quot;: {
+      &quot;count&quot;: 4,
+      &quot;median&quot;: 0.49472101755180287,
+      &quot;p90&quot;: 0.5517288062762165,
+      &quot;p95&quot;: 0.5577632260551494,
+      &quot;maximum&quot;: 0.5637976458340823,
+      &quot;rmse&quot;: 0.5004986733748201
+    }
+  }
+}</pre><p>Saved OBJ: output\collaboration_review\negative_controls_2026-11-09\frozen_first_endpoint\evaluation\candidate_stereo_plus_video_m.obj<br>SHA256: bcad8dd043d55ccf1d6c837fc664de9c06a233ab726426b17b12da27efac6cd6</p></details></article><article><h3>linear_endpoint_crossfade</h3><a href="figures/linear_endpoint_crossfade_model.png" target="_blank"><img src="figures/linear_endpoint_crossfade_model.png" loading="lazy" alt="Actual saved OBJ: linear_endpoint_crossfade"></a><p>8,434 vertices · 14,420 triangles<br>Extent X × Y × Z: 10.850 × 4.450 × 1.286 m</p><video controls preload="none" src="videos/linear_endpoint_crossfade.mp4"></video><details><summary>Exact metrics and source</summary><pre>{
+  &quot;endpoints&quot;: [
+    &quot;obs_044&quot;,
+    &quot;obs_047&quot;
+  ],
+  &quot;pose&quot;: {
+    &quot;source&quot;: &quot;stereo registration&quot;,
+    &quot;path&quot;: [
+      &quot;obs_044&quot;,
+      &quot;obs_047&quot;
+    ]
+  },
+  &quot;seed&quot;: 7,
+  &quot;generator&quot;: &quot;procedural_control&quot;,
+  &quot;input_movie_sha256&quot;: &quot;42ca36366b0020d4eecef732a5430dc3980139bcae11cf2ea7237f91d6918c7e&quot;,
+  &quot;bundle_sha256&quot;: &quot;1975be6845038a5353545f50b9ce950d0c72cee93e7a7ce6b2f232b6f9493855&quot;,
+  &quot;pose_check_sha256&quot;: &quot;6972e81e2bb23eabbe89c12d3a0519f60e7bdd9ba9ccc7daafc6635761a8f55c&quot;,
+  &quot;grid_m&quot;: 0.05,
+  &quot;reconstruction&quot;: &quot;real-anchor PnP; unconditioned accepted frames only&quot;,
+  &quot;used_frame_indices&quot;: [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  &quot;video_tracks&quot;: 292,
+  &quot;triangulation_windows&quot;: 6,
+  &quot;reprojection_px&quot;: {
+    &quot;count&quot;: 292,
+    &quot;median&quot;: 0.587542578593208,
+    &quot;p90&quot;: 0.8016895616785014,
+    &quot;p95&quot;: 0.8247077524286514,
+    &quot;maximum&quot;: 0.8460950200832192,
+    &quot;rmse&quot;: 0.5927317504147178
+  },
+  &quot;stereo_cells&quot;: 8385,
+  &quot;new_video_cells&quot;: 49,
+  &quot;new_cell_area_m2&quot;: 0.12250000000000003,
+  &quot;mesh&quot;: {
+    &quot;vertices&quot;: 8434,
+    &quot;triangles&quot;: 14420,
+    &quot;projected_surface_area_m2&quot;: 18.024999999999952,
+    &quot;slopes_deg&quot;: {
+      &quot;count&quot;: 14420,
+      &quot;median&quot;: 11.989035050021158,
+      &quot;p90&quot;: 39.271341337685506,
+      &quot;p95&quot;: 47.60520880974563,
+      &quot;maximum&quot;: 78.22570612554522,
+      &quot;rmse&quot;: 21.966078509213965
+    },
+    &quot;area_with_inferred_vertices_m2&quot;: 0.03999999999999994,
+    &quot;obj_readback_verified&quot;: true
+  },
+  &quot;status&quot;: &quot;experimental synthetic terrain; not independently surveyed&quot;,
+  &quot;validation&quot;: {
+    &quot;holdout&quot;: &quot;obs_046&quot;,
+    &quot;reference&quot;: &quot;withheld registered stereo; not survey ground truth&quot;,
+    &quot;measurable_gap_cells&quot;: 561,
+    &quot;tested_added_cells&quot;: 1,
+    &quot;reference_coverage&quot;: 0.0017825311942959,
+    &quot;video_abs_height_error_m&quot;: {
+      &quot;count&quot;: 1,
+      &quot;median&quot;: 0.008575530968172096,
+      &quot;p90&quot;: 0.008575530968172096,
+      &quot;p95&quot;: 0.008575530968172096,
+      &quot;maximum&quot;: 0.008575530968172096,
+      &quot;rmse&quot;: 0.008575530968172096
+    },
+    &quot;matched_idw_abs_height_error_m&quot;: {
+      &quot;count&quot;: 1,
+      &quot;median&quot;: 0.0077488986385299,
+      &quot;p90&quot;: 0.0077488986385299,
+      &quot;p95&quot;: 0.0077488986385299,
+      &quot;maximum&quot;: 0.0077488986385299,
+      &quot;rmse&quot;: 0.0077488986385299
+    },
+    &quot;linear_comparison_cells&quot;: 1,
+    &quot;matched_linear_abs_height_error_m&quot;: {
+      &quot;count&quot;: 1,
+      &quot;median&quot;: 0.005376524296325957,
+      &quot;p90&quot;: 0.005376524296325957,
+      &quot;p95&quot;: 0.005376524296325957,
+      &quot;maximum&quot;: 0.005376524296325957,
+      &quot;rmse&quot;: 0.005376524296325957
+    },
+    &quot;video_on_linear_comparison_m&quot;: {
+      &quot;count&quot;: 1,
+      &quot;median&quot;: 0.008575530968172096,
+      &quot;p90&quot;: 0.008575530968172096,
+      &quot;p95&quot;: 0.008575530968172096,
+      &quot;maximum&quot;: 0.008575530968172096,
+      &quot;rmse&quot;: 0.008575530968172096
+    },
+    &quot;raw_before_envelope_m&quot;: {
+      &quot;count&quot;: 28,
+      &quot;median&quot;: 0.81099341297067,
+      &quot;p90&quot;: 1.0486825306106766,
+      &quot;p95&quot;: 1.0574659723049236,
+      &quot;maximum&quot;: 1.1206511201744183,
+      &quot;rmse&quot;: 0.8566141205102519
+    }
+  }
+}</pre><p>Saved OBJ: output\collaboration_review\negative_controls_2026-11-09\linear_endpoint_crossfade\evaluation\candidate_stereo_plus_video_m.obj<br>SHA256: 9f1c4e622a0e6b6c0857d125e70e8266f13e4ff291197baf5bf2be9fa27bed82</p></details></article></div></section><section id="closed"><h2>Actual closed video terrain</h2><div class="grid"><article><h3>holdout046_model</h3><a href="figures/holdout046_model_closed.png" target="_blank"><img src="figures/holdout046_model_closed.png" loading="lazy" alt="Actual saved OBJ: holdout046_model"></a><p>25,436 vertices · 50,868 triangles<br>Extent X × Y × Z: 10.850 × 4.450 × 1.565 m</p><details><summary>Exact metrics and source</summary><pre>{}</pre><p>Saved OBJ: output\chronological_video\holdout046_model\closed\terrain_closed_m.obj<br>SHA256: 16c156bc1a24654af81eda314458281197cc0f8febc42f24962eb493b204d5c2</p></details></article><article><h3>mid036_model</h3><a href="figures/mid036_model_closed.png" target="_blank"><img src="figures/mid036_model_closed.png" loading="lazy" alt="Actual saved OBJ: mid036_model"></a><p>40,014 vertices · 80,024 triangles<br>Extent X × Y × Z: 12.900 × 8.250 × 1.543 m</p><details><summary>Exact metrics and source</summary><pre>{}</pre><p>Saved OBJ: output\chronological_video\mid036_model\closed\terrain_closed_m.obj<br>SHA256: 06b3ad6a8e651d5b7446338e8f0b269bb0b0fd91f56d08abb6a00149a8d093cd</p></details></article></div></section><footer>Closed topology is not an accuracy certificate. Withheld registered stereo is a noisy reference, not survey ground truth. Read the slide notes for each experiment’s split and limitations.</footer></html>

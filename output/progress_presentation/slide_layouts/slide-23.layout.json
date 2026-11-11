@@ -1,0 +1,9 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/ua1jx5","index":22,"layout":{"id":"ly/t8z21cn6","name":"Blank"},"backgroundColor":"rgba(247,249,252,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/rql07m5o","kind":"textbox","name":"text-0","position":{"left":50,"top":23,"width":1160,"height":24},"text":"APPENDIX · POSE SENSITIVITY","style":{"fontSize":15,"typeface":"Arial","color":"#087E8B","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/qpczeho3","kind":"textbox","name":"text-1","position":{"left":50,"top":60,"width":1180,"height":88},"text":"A good height fit can coexist with wrong placement","style":{"fontSize":39,"typeface":"Arial","color":"#183149","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/dsni9cnu","kind":"textbox","name":"text-2","position":{"left":50,"top":681,"width":1100,"height":22},"text":"Chandrayaan-3 terrain reconstruction  |  Evidence snapshot: 9 Nov 2026","style":{"fontSize":14,"typeface":"Arial","color":"#52687B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/sre1gr69","kind":"textbox","name":"text-3","position":{"left":1180,"top":676,"width":50,"height":30},"text":"23","style":{"fontSize":19,"typeface":"Arial","color":"#52687B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"im/obyh8jm9","kind":"image","position":{"left":45,"top":155,"width":1190,"height":420},"fit":"contain","alt":"Sensitivity of terrain alignment to assumed drive distance and turn angle"},
+{"id":"sh/etwjihof","kind":"textbox","name":"text-4","position":{"left":50,"top":612,"width":1180,"height":55},"text":"Example: 1.13 cm height residual, yet about 1.00 m spatial displacement from nominal","style":{"fontSize":24,"typeface":"Arial","color":"#B7472A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

@@ -1,0 +1,242 @@
+{
+  "status": "completed diagnostic; see per-control outcomes, not an accuracy certification",
+  "kind": "Explicit negative controls; not learned generation",
+  "source_sha256": {
+    "reconstruction\\assemble_meshes.py": "a216112ad1f0aec9f3074e556ed1c2aaf48b38a59db6a75523ec747801040603",
+    "reconstruction\\audit_metadata.py": "e0a51d2fa668461076ccc3d7c71a858c7503190958b1ae754083b872938dd3d8",
+    "reconstruction\\batch.py": "65cf6a856109509ae3241fda85a59449e800695ee8e62b144baf66b7cc94c6d8",
+    "reconstruction\\check_completion.py": "61e206e01c4b7ca70d3764f3b9d3e662aaf166a92f23a8e8a8f2ac403e68e82e",
+    "reconstruction\\check_generated_trial.py": "ee8af7c2e4a404372a4f1139b2c76894341967e42d02d74250938b5047e3dc8c",
+    "reconstruction\\check_geometry.py": "d19d913b09b204cb2d8273f468921b6a49dabb19f761080e2e67c3b49d7b2d5f",
+    "reconstruction\\check_video_bridge.py": "205f25819994e59771cc6aa21f8dc4f85471218a8c13710f6813ccaa24224291",
+    "reconstruction\\chronological_catalog.py": "9fec6a26451b41cb556a85d1b4b489859712cad275750357d31c0bb12a5a7f92",
+    "reconstruction\\close_terrain.py": "3ba9b10d594bbb118c203b87374e17a09db76c1146f35af1416effdc2d83d7bd",
+    "reconstruction\\complete_terrain.py": "793f6e1b63ba89617dcf3167ac55234fa59c2c1709c4b355caa3e4775f38ebf8",
+    "reconstruction\\evaluate_video.py": "f8d854f7cc289d337d0c74f5fc247cf1cfe6552cc93b80f67486e0a78e091826",
+    "reconstruction\\filter_clouds.py": "2ae3cc44c1e6d2443051969d6b97c09e283e8bba32bf38d8587f8cbed682919f",
+    "reconstruction\\generated_stereo_trial.py": "5f286aa4494e50482778060bf853bc36f1c3a77d7699a60e979edc95ddf7e6c7",
+    "reconstruction\\geometry.py": "7560d3c77230dd5cb30041833f58c7132680d069e5ae7d9507d7f7d8c82323a7",
+    "reconstruction\\gpu_probe.py": "7dca6c44b651bbb18e8cef4fcaeb5e4adfc809af30a007e6dda7c696f30ef83e",
+    "reconstruction\\inspect_outputs.py": "3ff06dac0806c186f63e9b5a9c04319996f8f97568fd3fb41b41938e07f23b92",
+    "reconstruction\\investigate.py": "b3e6a398a91be46edd299a25f87068772902dda9ee6390d3420e3aff492b35f3",
+    "reconstruction\\jetson_smoke.py": "6c5e88b5a486019134562c738dee00346a4bcefcd7da5d56f7a0ff85b972aab1",
+    "reconstruction\\largest_terrain.py": "6ec2072a6f8e9589119db000f5deb0f3078687b465163a8a9cfe0da24680ee11",
+    "reconstruction\\learned_video.py": "51021060c14c9e35540f03f82c23bc4b00e7bca36c5f8710688e23819a934d09",
+    "reconstruction\\model_fetch.py": "fe06c40c8ad62658b1b4cbb2f2c9bf449e058b3d8018e142c25bf5d374410af9",
+    "reconstruction\\prepare_generated_slide_pack.py": "44c22f6bfbe3ebb5596ddbdacec243054cfd51cf2bc0ff8312d72af679fd56f4",
+    "reconstruction\\register.py": "8c349186a99887e5036eecc55f41d347bcc5745f8e33e1cd54b049cd2ed1628f",
+    "reconstruction\\render_uber_relaxed.py": "825631260dfdac54adc54411d6afde679ea4c59983abef0f1d5c341e1bc04d80",
+    "reconstruction\\stereo.py": "38b6009850cc8c434728b35474d39fc59d49c98583ab9ea68f2153cfe87e36d2",
+    "reconstruction\\summarize.py": "29df2c32aba4b53412e97e4389577e58d76b11d96336735e9ac79cedc7aee0f7",
+    "reconstruction\\uber_relaxed.py": "db3bcbf3004d1b4695fa6c19cc9737618b4d3f5f35ff0c8cd1f677edb4dfce18",
+    "reconstruction\\video_bridge.py": "28207110d33996d311d720b65ff9c78cadd893e464a57c9e87aad1f9168f7ffa",
+    "reconstruction\\video_figures.py": "59c74e8a48f82fec995324eb474de08a5a2d6926d0ee2a9ae1dc4e59550c658b",
+    "reconstruction\\video_integrate.py": "0913468860ec0bfec1bb88f2d64c973ab82cb8a2e8d3c08f5d7f3f4334356189",
+    "reconstruction\\video_pose.py": "99b4cd5ebd390e51c095f4e6a48e38977145085c3015ae57f7ce81efc09ce3c7",
+    "reconstruction\\video_pose_check.py": "583e7fe2008e17c9f37d5b7031388710b1c600414236ccb978543bdb9fd9eb53",
+    "reconstruction\\video_triangulate.py": "2c81e5720ded7c065b8b01b41a63302bfe83a20bc02a0d2288ff2f4ad6d6272d",
+    "reconstruction\\__init__.py": "cb0f7fe92e88635f1255d800b2d2cd49be7a855f2c47a35c0fc42c078992b21f",
+    "output\\chronological_video\\learned_inputs\\holdout046_endpoints_v2\\commanded_trajectory.npz": "610b38c7b23aabfa193eccfc9e0c4cc0924b00c8c378334a6375631bb10bacd8",
+    "output\\chronological_video\\learned_inputs\\holdout046_endpoints_v2\\manifest.json": "1975be6845038a5353545f50b9ce950d0c72cee93e7a7ce6b2f232b6f9493855",
+    "output\\chronological_video\\holdout046_7\\metrics.json": "1769fe072e1abf1f996824eeeeefefd608ece5505e0f30a0934513562a5a2c13",
+    "output\\chronological_video\\holdout046_7\\surfaces.npz": "fe9e3e43ef1db1a0c90d13a6c7f750eb2a0f37258d3bb3ee36d01958a1ad8921",
+    "output\\chronological_video\\holdout046_7\\validation.npz": "3aa8f8351d00f3fb7f0ac7c2491604d99faa161a710c397325e26894fc2402bf"
+  },
+  "reviewer_sha256": "547696ffb4e1c3b2d5bce87e1020df810fe48067a330daf7fd89119ba213e8e1",
+  "runs": {
+    "frozen_first_endpoint": {
+      "movie_sha256": "98f82e98f6fa757287a69491dada2415fad33212b1773a3c82473f889b6d4971",
+      "commands": [
+        {
+          "argv": [
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\.venv\\Scripts\\python.exe",
+            "-m",
+            "reconstruction.video_pose_check",
+            "--bundle",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\learned_inputs\\holdout046_endpoints_v2",
+            "--movie",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\negative_controls_2026-11-09\\frozen_first_endpoint\\negative_control.mp4",
+            "--out",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\negative_controls_2026-11-09\\frozen_first_endpoint\\pose_check"
+          ],
+          "exit_code": 0,
+          "seconds": 12.093999999997322
+        },
+        {
+          "argv": [
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\.venv\\Scripts\\python.exe",
+            "-m",
+            "reconstruction.evaluate_video",
+            "--source",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\holdout046_7",
+            "--bundle",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\learned_inputs\\holdout046_endpoints_v2",
+            "--pose-check",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\negative_controls_2026-11-09\\frozen_first_endpoint\\pose_check",
+            "--movie",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\negative_controls_2026-11-09\\frozen_first_endpoint\\negative_control.mp4",
+            "--kind",
+            "procedural_control",
+            "--seed",
+            "7",
+            "--out",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\negative_controls_2026-11-09\\frozen_first_endpoint\\evaluation"
+          ],
+          "exit_code": 0,
+          "seconds": 5.01600000000326
+        }
+      ],
+      "construction": "First real endpoint repeated",
+      "expected_interpretation": "No physical translation in frozen clip; crossfade is not a rigid-scene camera traversal",
+      "accepted_frames": 33,
+      "accepted_unconditioned_frames": 31,
+      "total_unconditioned_frames": 31,
+      "pose_check_sha256": "170a3c86f4a2b227c279ad01555b310a592371cd87d42e24386124bcf56a7cf2",
+      "pose_array_sha256": "ded5a4b83ee54a734073b101f639b78e9446a2537a214529bcb38a14ee11c58d",
+      "accepted_pose_extent_m": [
+        0.016911787568890668,
+        0.0019808390749365273,
+        0.0037706225530402815
+      ],
+      "accepted_pose_path_length_m": 0.022757876515303234,
+      "new_video_cells": 4,
+      "validation": {
+        "holdout": "obs_046",
+        "reference": "withheld registered stereo; not survey ground truth",
+        "measurable_gap_cells": 561,
+        "tested_added_cells": 0,
+        "reference_coverage": 0.0,
+        "video_abs_height_error_m": {
+          "count": 0
+        },
+        "matched_idw_abs_height_error_m": {
+          "count": 0
+        },
+        "linear_comparison_cells": 0,
+        "matched_linear_abs_height_error_m": {
+          "count": 0
+        },
+        "video_on_linear_comparison_m": {
+          "count": 0
+        },
+        "raw_before_envelope_m": {
+          "count": 4,
+          "median": 0.49472101755180287,
+          "p90": 0.5517288062762165,
+          "p95": 0.5577632260551494,
+          "maximum": 0.5637976458340823,
+          "rmse": 0.5004986733748201
+        }
+      },
+      "evaluation_sha256": "01ef99ace9fa7ca32f6d49d68ad06437df0299e0ce443bf8ca4ebd30e660e52f",
+      "outcome": "Evaluator produced candidate; inspect coverage and errors before acceptance"
+    },
+    "linear_endpoint_crossfade": {
+      "movie_sha256": "42ca36366b0020d4eecef732a5430dc3980139bcae11cf2ea7237f91d6918c7e",
+      "commands": [
+        {
+          "argv": [
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\.venv\\Scripts\\python.exe",
+            "-m",
+            "reconstruction.video_pose_check",
+            "--bundle",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\learned_inputs\\holdout046_endpoints_v2",
+            "--movie",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\negative_controls_2026-11-09\\linear_endpoint_crossfade\\negative_control.mp4",
+            "--out",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\negative_controls_2026-11-09\\linear_endpoint_crossfade\\pose_check"
+          ],
+          "exit_code": 0,
+          "seconds": 12.593000000008033
+        },
+        {
+          "argv": [
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\.venv\\Scripts\\python.exe",
+            "-m",
+            "reconstruction.evaluate_video",
+            "--source",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\holdout046_7",
+            "--bundle",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\learned_inputs\\holdout046_endpoints_v2",
+            "--pose-check",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\negative_controls_2026-11-09\\linear_endpoint_crossfade\\pose_check",
+            "--movie",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\negative_controls_2026-11-09\\linear_endpoint_crossfade\\negative_control.mp4",
+            "--kind",
+            "procedural_control",
+            "--seed",
+            "7",
+            "--out",
+            "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\negative_controls_2026-11-09\\linear_endpoint_crossfade\\evaluation"
+          ],
+          "exit_code": 0,
+          "seconds": 9.702999999994063
+        }
+      ],
+      "construction": "Pixelwise linear blend of real endpoints; no 3D rendering",
+      "expected_interpretation": "No physical translation in frozen clip; crossfade is not a rigid-scene camera traversal",
+      "accepted_frames": 26,
+      "accepted_unconditioned_frames": 24,
+      "total_unconditioned_frames": 31,
+      "pose_check_sha256": "6972e81e2bb23eabbe89c12d3a0519f60e7bdd9ba9ccc7daafc6635761a8f55c",
+      "pose_array_sha256": "2f3934170ffdefa19e0ea0343f1934c9982024da09d1fdcebaed05dacffb0ae3",
+      "accepted_pose_extent_m": [
+        0.8905753645292104,
+        0.07741691204306676,
+        0.09071307784275479
+      ],
+      "accepted_pose_path_length_m": 0.9865224337817355,
+      "new_video_cells": 49,
+      "validation": {
+        "holdout": "obs_046",
+        "reference": "withheld registered stereo; not survey ground truth",
+        "measurable_gap_cells": 561,
+        "tested_added_cells": 1,
+        "reference_coverage": 0.0017825311942959,
+        "video_abs_height_error_m": {
+          "count": 1,
+          "median": 0.008575530968172096,
+          "p90": 0.008575530968172096,
+          "p95": 0.008575530968172096,
+          "maximum": 0.008575530968172096,
+          "rmse": 0.008575530968172096
+        },
+        "matched_idw_abs_height_error_m": {
+          "count": 1,
+          "median": 0.0077488986385299,
+          "p90": 0.0077488986385299,
+          "p95": 0.0077488986385299,
+          "maximum": 0.0077488986385299,
+          "rmse": 0.0077488986385299
+        },
+        "linear_comparison_cells": 1,
+        "matched_linear_abs_height_error_m": {
+          "count": 1,
+          "median": 0.005376524296325957,
+          "p90": 0.005376524296325957,
+          "p95": 0.005376524296325957,
+          "maximum": 0.005376524296325957,
+          "rmse": 0.005376524296325957
+        },
+        "video_on_linear_comparison_m": {
+          "count": 1,
+          "median": 0.008575530968172096,
+          "p90": 0.008575530968172096,
+          "p95": 0.008575530968172096,
+          "maximum": 0.008575530968172096,
+          "rmse": 0.008575530968172096
+        },
+        "raw_before_envelope_m": {
+          "count": 28,
+          "median": 0.81099341297067,
+          "p90": 1.0486825306106766,
+          "p95": 1.0574659723049236,
+          "maximum": 1.1206511201744183,
+          "rmse": 0.8566141205102519
+        }
+      },
+      "evaluation_sha256": "8d1524e361dce88eb4fbd322954a22af9e68d9f8ea2bfc1e6349e1eba1b83acb",
+      "outcome": "Evaluator produced candidate; inspect coverage and errors before acceptance"
+    }
+  }
+}

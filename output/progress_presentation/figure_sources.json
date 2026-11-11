@@ -1,0 +1,97 @@
+[
+  {
+    "slide": 2,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r08_quality_batch/obs_034/rectified_left.png",
+    "alt": "Actual obs_034 rectified left image"
+  },
+  {
+    "slide": 2,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r08_quality_batch/obs_034/rectified_right.png",
+    "alt": "Actual obs_034 rectified right image"
+  },
+  {
+    "slide": 3,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_034/mesh_views.png",
+    "alt": "Strict obs_034 mesh render"
+  },
+  {
+    "slide": 3,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/completed_terrain_renders/obs_034_closed_obj.png",
+    "alt": "Actual closed obs_034 OBJ render"
+  },
+  {
+    "slide": 4,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/completed_terrain_renders/component_obs_044_closed_obj.png",
+    "alt": "Full completed OBJ for registered observations 044–048"
+  },
+  {
+    "slide": 5,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/all_observations_overlay/traverse_plot_for_slides.png",
+    "alt": "All 56 observations and 50 terrain reconstructions on a command-derived approximate path"
+  },
+  {
+    "slide": 6,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/generated_stereo_trial/stereo_trial_1/original_canvas.png",
+    "alt": "Generated stereo trial 1 with left and right views"
+  },
+  {
+    "slide": 7,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/generated_stereo_slide_pack/02_mesh_comparison_trial_1.png",
+    "alt": "Actual generated stereo mesh comparison with visible spikes and fragments"
+  },
+  {
+    "slide": 8,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/figures/video_contact_sheet.png",
+    "alt": "Contact sheet of actual procedural video outputs and real endpoints"
+  },
+  {
+    "slide": 11,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/pose_explanation/03_reconstructions_with_rover_path.png",
+    "alt": "Two real reconstructions placed with a conditional rover motion prior"
+  },
+  {
+    "slide": 18,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/comparison.png",
+    "alt": "Seven trial-1 acceptance masks and disparity maps"
+  },
+  {
+    "slide": 19,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/renders/all_seven_meshes.png",
+    "alt": "All seven full experimental mesh renders"
+  },
+  {
+    "slide": 22,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/collaboration_review/negative_controls_2026-11-09/pose_progression.png",
+    "alt": "Estimated camera progress for frozen and crossfade negative controls"
+  },
+  {
+    "slide": 23,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/collaboration_review/pose_sensitivity_2026-11-09/pose_sensitivity.png",
+    "alt": "Sensitivity of terrain alignment to assumed drive distance and turn angle"
+  },
+  {
+    "slide": 24,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/pose_explanation/01_documentation_to_pose.png",
+    "alt": "Source mobility entry and documented derivation of the conditional pose"
+  },
+  {
+    "slide": 26,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/largest_terrain/component_obs_044/preview.png",
+    "alt": "Existing terrain support and completion preview for the largest mesh"
+  },
+  {
+    "slide": 27,
+    "source": "C:\\Users\\rhunt\\Documents\\Capstone\\lunar_detection\\workspace\\outputs\\NC_family\\left_NCL\\ch3_nav_ncl_20230901T1301408296_d_img_d32_042\\preview.png",
+    "alt": "Existing SAM2 mask proposal preview from actual lunar imagery"
+  },
+  {
+    "slide": 31,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_034/filtered_diagnostics.png",
+    "alt": "Actual obs_034 image, valid-pixel, disparity and depth diagnostics"
+  },
+  {
+    "slide": 32,
+    "source": "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/figures/terrain_surface.png",
+    "alt": "Actual completed terrain upper surface with source attribution"
+  }
+]

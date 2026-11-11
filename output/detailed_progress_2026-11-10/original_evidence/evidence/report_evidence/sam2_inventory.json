@@ -1,0 +1,45 @@
+{
+  "input_images": 224,
+  "input_by_folder": {
+    "NC_family\\left_NCL": 56,
+    "NC_family\\right_NCR": 56,
+    "NR_family\\left_NRL": 56,
+    "NR_family\\right_NRR": 56
+  },
+  "label_csv_files": 224,
+  "csvs_by_folder": {
+    "NC_family\\left_NCL": 56,
+    "NC_family\\right_NCR": 56,
+    "NR_family\\left_NRL": 56,
+    "NR_family\\right_NRR": 56
+  },
+  "mask_rows": 843,
+  "mask_rows_by_folder": {
+    "NC_family\\left_NCL": 234,
+    "NC_family\\right_NCR": 211,
+    "NR_family\\left_NRL": 205,
+    "NR_family\\right_NRR": 193
+  },
+  "manual_class_counts": {
+    "": 843
+  },
+  "missing_referenced_masks": [],
+  "previews": 224,
+  "examples": [
+    {
+      "path": "C:\\Users\\rhunt\\Documents\\Capstone\\lunar_detection\\workspace\\outputs\\NC_family\\left_NCL\\ch3_nav_ncl_20230901T1301408296_d_img_d32_042\\labels.csv",
+      "rows": 11,
+      "preview": "C:\\Users\\rhunt\\Documents\\Capstone\\lunar_detection\\workspace\\outputs\\NC_family\\left_NCL\\ch3_nav_ncl_20230901T1301408296_d_img_d32_042\\preview.png"
+    },
+    {
+      "path": "C:\\Users\\rhunt\\Documents\\Capstone\\lunar_detection\\workspace\\outputs\\NC_family\\left_NCL\\ch3_nav_ncl_20230831T0100412456_d_img_gnh_031\\labels.csv",
+      "rows": 10,
+      "preview": "C:\\Users\\rhunt\\Documents\\Capstone\\lunar_detection\\workspace\\outputs\\NC_family\\left_NCL\\ch3_nav_ncl_20230831T0100412456_d_img_gnh_031\\preview.png"
+    },
+    {
+      "path": "C:\\Users\\rhunt\\Documents\\Capstone\\lunar_detection\\workspace\\outputs\\NC_family\\left_NCL\\ch3_nav_ncl_20230831T0100412456_d_img_gnh_024\\labels.csv",
+      "rows": 9,
+      "preview": "C:\\Users\\rhunt\\Documents\\Capstone\\lunar_detection\\workspace\\outputs\\NC_family\\left_NCL\\ch3_nav_ncl_20230831T0100412456_d_img_gnh_024\\preview.png"
+    }
+  ]
+}

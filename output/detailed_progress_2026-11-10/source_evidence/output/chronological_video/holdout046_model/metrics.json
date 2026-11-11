@@ -1,0 +1,121 @@
+{
+  "endpoints": [
+    "obs_044",
+    "obs_047"
+  ],
+  "pose": {
+    "source": "stereo registration",
+    "path": [
+      "obs_044",
+      "obs_047"
+    ]
+  },
+  "seeds": [
+    7,
+    17,
+    27
+  ],
+  "grid_m": 0.05,
+  "top_area_m2": 31.713749999999912,
+  "units": "metres",
+  "frame": "start rover local; nominal up",
+  "labels": {
+    "0": "unsupported",
+    "1": "strict endpoint stereo",
+    "2": "first-pipeline gated relaxed stereo",
+    "3": "video consensus (synthetic)",
+    "4": "first-pipeline linear interpolation (synthetic)"
+  },
+  "cell_counts": {
+    "1": 8385,
+    "2": 0,
+    "3": 1364,
+    "4": 2969
+  },
+  "relaxed_sources": [],
+  "new_video_cell_area_m2": 3.4100000000000006,
+  "between_footprints_video_cells": 179,
+  "between_footprints_total_cells": 472,
+  "unchanged_strict_cells": 8385,
+  "closure": {
+    "source": "output\\chronological_video\\holdout046_model\\terrain_top_m.obj",
+    "source_sha256": "f75c84865ba81f2f2b5cc7fbbfca6e8289494f8a88584e0bab16d10dfcc47186",
+    "original_boundary_edges": 63,
+    "artificial_base_z_m": -1.642565846,
+    "base_clearance_m": 0.25,
+    "original_top_geometry_unchanged": true,
+    "obj": {
+      "vertices": 25436,
+      "triangles": 50868,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "nonmanifold_vertices": 0,
+      "connected_components": 1,
+      "euler_characteristic": 2,
+      "consistent_outward_winding": true,
+      "enclosed_volume_m3": 25.007055816520865,
+      "dimensions_m": [
+        10.85,
+        4.45,
+        1.56493268
+      ]
+    },
+    "stl": {
+      "vertices": 25436,
+      "triangles": 50868,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "nonmanifold_vertices": 0,
+      "connected_components": 1,
+      "euler_characteristic": 2,
+      "consistent_outward_winding": true,
+      "enclosed_volume_m3": 25.007055785525704,
+      "dimensions_m": [
+        10.850000381469727,
+        4.449999809265137,
+        1.564932681620121
+      ]
+    },
+    "added_geometry": "Vertical walls on every perimeter edge and planar underside",
+    "limitations": [
+      "Top still includes previously inferred terrain",
+      "Units are metres; STL format itself has no standard unit field",
+      "Nominal rover-local frame, gravity unverified",
+      "No validation in the user viewer or Gazebo"
+    ]
+  },
+  "caveats": [
+    "Spatial footprint is a convex envelope, not a surveyed traverse.",
+    "Seed agreement is repeatability, not ground truth.",
+    "Interior cells without video support fall back to interpolation and are separately labelled."
+  ],
+  "holdout": {
+    "name": "obs_046",
+    "consensus_video_m": {
+      "count": 85,
+      "median": 0.05086846743014872,
+      "p90": 0.1608985761700555,
+      "p95": 0.17471675562755565,
+      "maximum": 0.1951863407081328,
+      "rmse": 0.08449559572152433
+    },
+    "same_cell_linear_m": {
+      "count": 85,
+      "median": 0.00737170312611557,
+      "p90": 0.02197582384876894,
+      "p95": 0.026185237644697153,
+      "maximum": 0.03819587075133768,
+      "rmse": 0.012495541036813855
+    },
+    "same_cell_idw_m": {
+      "count": 85,
+      "median": 0.0103139655364064,
+      "p90": 0.06343646760524733,
+      "p95": 0.07899933928565005,
+      "maximum": 0.10988455685696441,
+      "rmse": 0.035175701357185785
+    },
+    "eligible_gap_cells": 561
+  },
+  "strict_to_video_max_change_m": 0.0
+}

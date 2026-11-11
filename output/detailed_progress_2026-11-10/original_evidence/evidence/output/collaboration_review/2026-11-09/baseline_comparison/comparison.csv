@@ -1,0 +1,4 @@
+run,native_scored_cells,eligible_cells,native_video_rmse_cm,common_scored_cells,common_video_rmse_cm,fixed_region_cells,hybrid_rmse_cm
+holdout046_7,143,561,7.161103719960435,12,5.104984828271284,561,3.709904949486266
+holdout046_model,85,561,8.449559572152433,12,5.060250597664699,561,3.4187199328224063
+baseline_unconditioned_eval,21,561,4.900086613223657,12,2.757445493778204,561,1.406510996352909

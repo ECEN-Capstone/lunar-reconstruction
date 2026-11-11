@@ -1,0 +1,8 @@
+{
+  "source_border_px": 16,
+  "minimum_disparity_px": 32,
+  "median_window": 5,
+  "maximum_median_disparity_difference_px": 2,
+  "minimum_valid_neighbors": 8,
+  "minimum_component_pixels": 200
+}

@@ -1,0 +1,83 @@
+{
+  "endpoints": [
+    "obs_033",
+    "obs_034"
+  ],
+  "utc": [
+    "20230831T0813019172",
+    "20230831T1304316922"
+  ],
+  "pose": {
+    "source": "conditional mobility prior",
+    "height_refinement": {
+      "accepted": true,
+      "shared_cells": 342,
+      "validation_cells": 79,
+      "reference": "stereo A vs B under assumed XY/yaw, spatial block holdout",
+      "prior_median_height_residual_m": 0.538534365654981,
+      "adjusted_median_height_residual_m": 0.020710070654534007,
+      "adjusted_p90_m": 0.045725914770347,
+      "clearance_prior_dz_m": 0.4452529700684398,
+      "allowed_dz_m": [
+        0.3452529700684398,
+        0.5452529700684398
+      ],
+      "nearest_anchor_to_B_m": [
+        0.04547260710800409,
+        0.7195704747460248
+      ],
+      "tilt_rotvec_deg": [
+        -5.296474095502166,
+        -1.7438978417955076
+      ],
+      "elevation_change_m": 0.34525297006843986
+    },
+    "reference": "NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m",
+    "distance_m": 3.4,
+    "turn_deg": 5.0,
+    "achieved_pose_verified": false,
+    "assumptions": "images bracket complete maneuver; planar initial pose; optional footprint-based tilt/elevation; achieved XY and yaw unverified"
+  },
+  "endpoint_displacement_m": 3.406655876585483,
+  "seed": 7,
+  "generator": "pose-conditioned textured stochastic elevation field",
+  "camera_frame": "T_world_from_rectified_left; nominal rover axes at A; metres",
+  "grid_m": 0.05,
+  "relief_scale_m": 0.004706528356996091,
+  "frames": 33,
+  "plane_sweep_cells": 5082,
+  "triangulation_windows": 16,
+  "video_tracks": 9010,
+  "reprojection_px": {
+    "count": 9010,
+    "median": 0.2748848566031398,
+    "p90": 0.6921080006301644,
+    "p95": 0.7601086644091721,
+    "maximum": 0.8499217543043326,
+    "rmse": 0.40112093089528583
+  },
+  "stereo_cells": 9201,
+  "new_video_cells": 1335,
+  "new_cell_area_m2": 3.337500000000001,
+  "mesh": {
+    "vertices": 10536,
+    "triangles": 17366,
+    "projected_surface_area_m2": 21.70749999999994,
+    "slopes_deg": {
+      "count": 17366,
+      "median": 16.561191902948757,
+      "p90": 28.556197165102276,
+      "p95": 50.342335915101884,
+      "maximum": 79.87531888870735,
+      "rmse": 23.038670990276525
+    },
+    "area_with_inferred_vertices_m2": 2.896249999999992,
+    "obj_readback_verified": true
+  },
+  "labels": {
+    "0": "unsupported",
+    "1": "endpoint stereo",
+    "3": "synthetic video"
+  },
+  "status": "conditional candidate; unverified spatial placement"
+}

@@ -1,0 +1,64 @@
+Create a polished, detailed scientific workflow infographic for an engineering capstone presentation. Landscape 16:9 high resolution, ideally 3840 x 2160. White/off-white background, dark navy typography, crisp large readable text, sophisticated technical editorial layout, ample spacing, restrained blue/amber/teal colors. Use illustrative miniature grayscale lunar terrain images and beautiful small isometric terrain meshes, not generic clipart. All terrain depictions must be understood as schematic illustrations, not actual experimental results. No logos.
+
+TITLE, exact: "Generating terrain between lunar observations"
+SUBTITLE, exact: "Proposed experiment: real stereo endpoints → synthetic monocular video → validated terrain completion"
+
+Design a coherent six-stage diagram in two rows of three large numbered cards. Row one reads left to right 1,2,3. Row two reads left to right 4,5,6. Use clear arrows between adjacent cards, plus a neat routed arrow from card 3 down through the gap between rows and to card 4, without crossing text. Every card has a short bold title, a rich illustrative mini-diagram, and 2–3 concise supporting lines. Color legend: BLUE = real observations, AMBER = inferred / generated, TEAL = validation. Distinguish assumption from measurement.
+
+CARD 1, "1  Anchor the endpoints"
+Illustration: two separated grayscale lunar patches labeled "Observation A" and "Observation B", each with small paired images marked L and R. A visible empty gap between the terrain patches. Blue observed patches.
+Exact supporting copy:
+"Reconstruct A and B from real stereo pairs"
+"Keep calibrated depth and metric scale"
+"Use left-camera images as video endpoints"
+
+CARD 2, "2  Estimate camera motion"
+Illustration: camera A and camera B above disconnected observed patches; dashed amber curved path with several camera frustums. A translucent uncertainty band around the path. Small data tags "Image registration", "Rover poses", "Mobility log".
+Exact supporting copy:
+"Estimate relative position and orientation"
+"Use distances, turns and known geometry"
+"If uncertain, test several plausible paths"
+Small amber badge: "Motion estimate ≠ measured trajectory"
+
+CARD 3, "3  Generate candidate videos"
+Illustration: horizontal filmstrip beginning blue A, three amber intermediate lunar frames, ending blue B. Visually distinguish authentic endpoints from synthetic middle. Static rocks under changing viewpoint. Small alternative-seed stacked strips behind.
+Exact supporting copy:
+"Condition on first and last real images"
+"Generate 3–5 versions of a static scene"
+"Seek continuous motion, parallax and stable lighting"
+Compact two-line note, legible:
+"Baseline: first/last-frame video"
+"Extension: explicit camera-path control"
+Do not imply both controls are already supported together by one model.
+
+CARD 4, "4  Reconstruct the sequence"
+Illustration: overlapping camera frustums along a path pointing to amber point cloud transitioning into triangular mesh, anchored by blue patches at both ends.
+Exact supporting copy:
+"Match features across video frames"
+"Estimate and refine poses, depth and surface"
+"Constrain scale using real stereo endpoints"
+Small note: "One reconstruction must fit both endpoints"
+
+CARD 5, "5  Validate before merging"
+Illustration: a teal evaluation gate with two miniature comparison panels labeled "Generated surface" and "Withheld real depth", and a compact list of checks. Show a small branching output: "Pass → merge" and "Fail → revise / reject". No fake numeric results or checks implying tests already passed.
+Exact supporting copy:
+"Start with a known scene; hide an intermediate view"
+"Check endpoint fit, depth error and terrain plausibility"
+"Compare seeds and a simple interpolation baseline"
+Small note: "Withheld imagery is used only for evaluation"
+This is a proposed validation step, not completed.
+
+CARD 6, "6  Export a labeled terrain model"
+Illustration: a beautiful continuous isometric lunar terrain slab with triangulated surface, blue real terrain at left and right and amber inferred terrain in the connecting center; closed sides and bottom of the slab. Small labels directly on patches "Observed A", "Synthetic gap", "Observed B".
+Exact supporting copy:
+"Preserve trustworthy observed geometry"
+"Merge accepted synthetic terrain with a provenance mask"
+"Export OBJ + collision mesh; check closed geometry"
+
+Below the cards a clean full-width takeaway band with exact text:
+"Goal: a plausible, testable terrain completion — not recovery of unseen ground truth."
+And a small but readable footer:
+"First trial: one endpoint pair • one withheld observation • 3–5 generated sequences"
+"All terrain illustrations are schematic. Workflow proposed; results not yet established."
+
+Ensure meticulous spelling, consistent typography, restrained line weights, no unreadably tiny labels, no busy background, no huge decorative lunar horizon. Main workflow must dominate. No claims of accuracy, success, or measured terrain in generated gap. Keep all requested text concise and visibly legible.

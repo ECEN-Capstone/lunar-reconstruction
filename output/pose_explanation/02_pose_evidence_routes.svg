@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="648pt" viewBox="0 0 1152 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-09T19:14:02.873225</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 1152 648 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #f5f7fa"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 68.33664 400.04928 
+L 532.54656 400.04928 
+Q 551.62368 400.04928 551.62368 390.95136 
+L 551.62368 144.29664 
+Q 551.62368 135.19872 532.54656 135.19872 
+L 68.33664 135.19872 
+Q 49.25952 135.19872 49.25952 144.29664 
+L 49.25952 390.95136 
+Q 49.25952 400.04928 68.33664 400.04928 
+z
+" clip-path="url(#p125e70f23b)" style="fill: #ffffff; stroke: #227b9d; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 608.85504 400.04928 
+L 1073.06496 400.04928 
+Q 1092.14208 400.04928 1092.14208 390.95136 
+L 1092.14208 144.29664 
+Q 1092.14208 135.19872 1073.06496 135.19872 
+L 608.85504 135.19872 
+Q 589.77792 135.19872 589.77792 144.29664 
+L 589.77792 390.95136 
+Q 589.77792 400.04928 608.85504 400.04928 
+z
+" clip-path="url(#p125e70f23b)" style="fill: #ffffff; stroke: #ac376c; stroke-width: 1.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 61.9776 571.89888 
+L 1079.424 571.89888 
+Q 1092.14208 571.89888 1092.14208 565.8336 
+L 1092.14208 444.528 
+Q 1092.14208 438.46272 1079.424 438.46272 
+L 61.9776 438.46272 
+Q 49.25952 438.46272 49.25952 444.528 
+L 49.25952 565.8336 
+Q 49.25952 571.89888 61.9776 571.89888 
+z
+" clip-path="url(#p125e70f23b)" style="fill: #e8eef3"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #227b9d" x="88.4736" y="172.879256" transform="rotate(-0 88.4736 172.879256)">Overlapping views: estimate from imagery</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(88.4736 208.853637)">Example: obs_044 → obs_047</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(88.4736 226.8852)"/>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(88.4736 252.448325)">Match image features + use stereo 3D points.</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(88.4736 274.148325)">Fit a relative pose and test held-out features.</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(88.4736 291.9852)"/>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(88.4736 318.190356)">135 feature matches; 44 PnP inliers.</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(88.4736 339.248325)">11 held-out matches: median 0.49 px.</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(88.4736 360.948325)">Endpoint camera displacement ≈ 0.89 m.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #ac376c" x="628.992" y="172.879256" transform="rotate(-0 628.992 172.879256)">No accepted registration: use a prior</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(628.992 208.853637)">Example: obs_033 → obs_034</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(628.992 226.8852)"/>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(628.992 252.448325)">Associate images with MID 036 by timing.</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(628.992 274.790356)">Assume turn 10° CCW, then drive 4 m.</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(628.992 291.9852)"/>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(628.992 317.548325)">Fit height + tilt to shared terrain conditionally.</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(628.992 339.248325)">Nominal fit: +0.409 m elevation adjustment.</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(628.992 362.304575)">Actual horizontal motion remains unverified.</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #213347" x="88.4736" y="476.9031" transform="rotate(-0 88.4736 476.9031)">Intermediate path: a model in both cases</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(88.4736 512.662325)">Registered endpoints use position/orientation interpolation. The mobility prior uses turn-then-drive.</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(88.4736 535.062325)">The video path is sampled at 33 poses; it is not recovered rover telemetry or real maneuver timing.</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #213347" transform="translate(88.4736 557.462325)">Generated video must have its own output poses checked before any terrain is accepted.</text>
+   </g>
+  </g>
+  <g id="text_7">
+   <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #213347" x="46.08" y="38.88" transform="rotate(-0 46.08 38.88)">Two sources of relative pose — different levels of evidence</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #617181" x="46.08" y="71.28" transform="rotate(-0 46.08 71.28)">Camera calibration defines the viewing geometry. It does not supply the rover trajectory.</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #617181" x="63.36" y="622.08" transform="rotate(-0 63.36 622.08)">Sources: registration_edges.json; video_bridge.py; video_pose.py; saved experiment metrics. No global lunar pose track is claimed.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p125e70f23b">
+   <rect x="46.08" y="90.72" width="1059.84" height="505.44"/>
+  </clipPath>
+ </defs>
+</svg>

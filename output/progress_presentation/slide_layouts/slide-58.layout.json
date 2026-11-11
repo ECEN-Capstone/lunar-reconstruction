@@ -1,0 +1,16 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/i9gkdu","index":57,"layout":{"id":"ly/t8z21cn6","name":"Blank"},"backgroundColor":"rgba(247,249,252,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/e18va90n","kind":"textbox","position":{"left":50,"top":23,"width":1170,"height":25},"text":"ALL 50 ACCEPTED LOCAL RECONSTRUCTIONS","style":{"fontSize":15,"typeface":"Arial","color":"#087E8B","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/f2hwje18","kind":"textbox","position":{"left":50,"top":59,"width":1180,"height":89},"text":"Observed terrain atlas: 055–056","style":{"fontSize":37,"typeface":"Arial","color":"#183149","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/o7qdg3ip","kind":"textbox","position":{"left":50,"top":693,"width":1110,"height":20},"text":"Chandrayaan-3 terrain reconstruction  |  Detailed evidence: 10 Nov 2026","style":{"fontSize":12,"typeface":"Arial","color":"#52687B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/p8jep8ja","kind":"textbox","position":{"left":1190,"top":689,"width":45,"height":25},"text":"58","style":{"fontSize":15,"typeface":"Arial","color":"#52687B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/xofe9obe","kind":"textbox","position":{"left":50,"top":152,"width":580,"height":30},"text":"obs_055","style":{"fontSize":25,"typeface":"Arial","color":"#087E8B","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"im/76p4nq9o","kind":"image","position":{"left":50,"top":190,"width":142,"height":142},"fit":"contain","alt":"obs_055 actual rectified left input"},
+{"id":"im/s7y5wvat","kind":"image","position":{"left":208,"top":187,"width":420,"height":151},"fit":"contain","alt":"obs_055 full observed OBJ; no filling"},
+{"id":"sh/al4vyts3","kind":"textbox","position":{"left":50,"top":338,"width":585,"height":32},"text":"9,666 points · 0.9% pixels · 683 triangles","style":{"fontSize":19,"typeface":"Arial","color":"#183149","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/lsfed8bq","kind":"textbox","position":{"left":660,"top":152,"width":580,"height":30},"text":"obs_056","style":{"fontSize":25,"typeface":"Arial","color":"#087E8B","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"im/j254j69c","kind":"image","position":{"left":660,"top":190,"width":142,"height":142},"fit":"contain","alt":"obs_056 actual rectified left input"},
+{"id":"im/k3e5sbax","kind":"image","position":{"left":818,"top":187,"width":420,"height":151},"fit":"contain","alt":"obs_056 full observed OBJ; no filling"},
+{"id":"sh/ypov2tsz","kind":"textbox","position":{"left":660,"top":338,"width":585,"height":32},"text":"115,796 points · 11.0% pixels · 14,002 triangles","style":{"fontSize":19,"typeface":"Arial","color":"#183149","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/1wvu14b6","kind":"textbox","position":{"left":50,"top":622,"width":1180,"height":44},"text":"Actual input → open observed mesh. Independent full extents; color shows relative height per panel.","style":{"fontSize":21,"typeface":"Arial","color":"#B7472A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

@@ -1,0 +1,409 @@
+{
+  "status": "completed sensitivity review; adopted prior unchanged",
+  "source_sha256": {
+    "reconstruction\\assemble_meshes.py": "a216112ad1f0aec9f3074e556ed1c2aaf48b38a59db6a75523ec747801040603",
+    "reconstruction\\audit_metadata.py": "e0a51d2fa668461076ccc3d7c71a858c7503190958b1ae754083b872938dd3d8",
+    "reconstruction\\batch.py": "65cf6a856109509ae3241fda85a59449e800695ee8e62b144baf66b7cc94c6d8",
+    "reconstruction\\check_completion.py": "61e206e01c4b7ca70d3764f3b9d3e662aaf166a92f23a8e8a8f2ac403e68e82e",
+    "reconstruction\\check_generated_trial.py": "ee8af7c2e4a404372a4f1139b2c76894341967e42d02d74250938b5047e3dc8c",
+    "reconstruction\\check_geometry.py": "d19d913b09b204cb2d8273f468921b6a49dabb19f761080e2e67c3b49d7b2d5f",
+    "reconstruction\\check_video_bridge.py": "205f25819994e59771cc6aa21f8dc4f85471218a8c13710f6813ccaa24224291",
+    "reconstruction\\chronological_catalog.py": "9fec6a26451b41cb556a85d1b4b489859712cad275750357d31c0bb12a5a7f92",
+    "reconstruction\\close_terrain.py": "3ba9b10d594bbb118c203b87374e17a09db76c1146f35af1416effdc2d83d7bd",
+    "reconstruction\\complete_terrain.py": "793f6e1b63ba89617dcf3167ac55234fa59c2c1709c4b355caa3e4775f38ebf8",
+    "reconstruction\\evaluate_video.py": "f8d854f7cc289d337d0c74f5fc247cf1cfe6552cc93b80f67486e0a78e091826",
+    "reconstruction\\filter_clouds.py": "2ae3cc44c1e6d2443051969d6b97c09e283e8bba32bf38d8587f8cbed682919f",
+    "reconstruction\\generated_stereo_trial.py": "5f286aa4494e50482778060bf853bc36f1c3a77d7699a60e979edc95ddf7e6c7",
+    "reconstruction\\geometry.py": "7560d3c77230dd5cb30041833f58c7132680d069e5ae7d9507d7f7d8c82323a7",
+    "reconstruction\\gpu_probe.py": "7dca6c44b651bbb18e8cef4fcaeb5e4adfc809af30a007e6dda7c696f30ef83e",
+    "reconstruction\\inspect_outputs.py": "3ff06dac0806c186f63e9b5a9c04319996f8f97568fd3fb41b41938e07f23b92",
+    "reconstruction\\investigate.py": "b3e6a398a91be46edd299a25f87068772902dda9ee6390d3420e3aff492b35f3",
+    "reconstruction\\jetson_smoke.py": "6c5e88b5a486019134562c738dee00346a4bcefcd7da5d56f7a0ff85b972aab1",
+    "reconstruction\\largest_terrain.py": "6ec2072a6f8e9589119db000f5deb0f3078687b465163a8a9cfe0da24680ee11",
+    "reconstruction\\learned_video.py": "51021060c14c9e35540f03f82c23bc4b00e7bca36c5f8710688e23819a934d09",
+    "reconstruction\\model_fetch.py": "fe06c40c8ad62658b1b4cbb2f2c9bf449e058b3d8018e142c25bf5d374410af9",
+    "reconstruction\\prepare_generated_slide_pack.py": "44c22f6bfbe3ebb5596ddbdacec243054cfd51cf2bc0ff8312d72af679fd56f4",
+    "reconstruction\\register.py": "8c349186a99887e5036eecc55f41d347bcc5745f8e33e1cd54b049cd2ed1628f",
+    "reconstruction\\render_uber_relaxed.py": "825631260dfdac54adc54411d6afde679ea4c59983abef0f1d5c341e1bc04d80",
+    "reconstruction\\stereo.py": "38b6009850cc8c434728b35474d39fc59d49c98583ab9ea68f2153cfe87e36d2",
+    "reconstruction\\summarize.py": "29df2c32aba4b53412e97e4389577e58d76b11d96336735e9ac79cedc7aee0f7",
+    "reconstruction\\uber_relaxed.py": "db3bcbf3004d1b4695fa6c19cc9737618b4d3f5f35ff0c8cd1f677edb4dfce18",
+    "reconstruction\\video_bridge.py": "28207110d33996d311d720b65ff9c78cadd893e464a57c9e87aad1f9168f7ffa",
+    "reconstruction\\video_figures.py": "59c74e8a48f82fec995324eb474de08a5a2d6926d0ee2a9ae1dc4e59550c658b",
+    "reconstruction\\video_integrate.py": "0913468860ec0bfec1bb88f2d64c973ab82cb8a2e8d3c08f5d7f3f4334356189",
+    "reconstruction\\video_pose.py": "99b4cd5ebd390e51c095f4e6a48e38977145085c3015ae57f7ce81efc09ce3c7",
+    "reconstruction\\video_pose_check.py": "583e7fe2008e17c9f37d5b7031388710b1c600414236ccb978543bdb9fd9eb53",
+    "reconstruction\\video_triangulate.py": "2c81e5720ded7c065b8b01b41a63302bfe83a20bc02a0d2288ff2f4ad6d6272d",
+    "reconstruction\\__init__.py": "cb0f7fe92e88635f1255d800b2d2cd49be7a855f2c47a35c0fc42c078992b21f",
+    "configs\\video_mobility_priors.json": "afb073e937383b598988e86a913697206c500fdb57042660b5ed1513fbd2c83a",
+    "output\\chronological_video\\mid036_7\\trajectory.npz": "16a553d2cacb22438acc2786f65cbf484215d0a7a4b3dfd1a7dc2db93542570e",
+    "output\\chronological_video\\mid036_7\\metrics.json": "8ff583f1278bff53b4b8f066a77df462b7a91871f9172b4c4ac038280b41ded8",
+    "artifacts\\runs\\r11_filtered_batch\\obs_033\\provenance.json": "f83b653b3124fa55cf5abb8af6c4ee7404724170a8e70f50968762f5ed6fb5cd",
+    "artifacts\\runs\\r11_filtered_batch\\obs_033\\xyz_rectified_calibration_units.npy": "abc79161d70ab026abc841c0621d3fef264da57759b14418ffb0cd417f685146",
+    "artifacts\\runs\\r11_filtered_batch\\obs_034\\provenance.json": "147b05445be8091e3fdbd1bbde1bafced395a4f1d7c78fd791846523ee474b61",
+    "artifacts\\runs\\r11_filtered_batch\\obs_034\\xyz_rectified_calibration_units.npy": "145911aca1b49b7d7bc2f31198aa650882e2a28cb8af7f2811576fd840cded4a",
+    "artifacts\\runs\\r12_registration\\registration_edges.json": "f7048a88894f25185dc61ef9cde638585e4cb0756708438e7bf290a609b50310"
+  },
+  "reviewer_sha256": "fe4b99b739b18642ac41cce4d503ed79a1810d0fdf1acf809d15a5a38fa00c4b",
+  "endpoints": [
+    "obs_033",
+    "obs_034"
+  ],
+  "nominal_distance_m": 4.0,
+  "nominal_turn_deg": 10.0,
+  "scenario_definition": "Illustrative distance +/-0.5 m and yaw +/-5 degrees; not measured errors, confidence bounds or probabilities",
+  "sample_points": 5152,
+  "sampling": "Every 50th finite endpoint B stereo point with rectified-camera Z below 11 m",
+  "reference": "Saved conditional nominal pose, not true rover placement",
+  "limitations": [
+    "Each height fit has different overlap correspondences and validation cells; residuals cannot rank XY/yaw hypotheses fairly.",
+    "Displacement uses identical B stereo points in every scenario and is relative to the nominal model, not ground-truth error.",
+    "Failed refinement keeps the unrefined assumed pose, as the existing pipeline does; separate these from accepted fits.",
+    "No scenario is selected to replace the documented maneuver; no synthetic terrain is regenerated."
+  ],
+  "scenarios": [
+    {
+      "distance_m": 3.5,
+      "turn_deg": 5.0,
+      "refinement": {
+        "accepted": true,
+        "shared_cells": 337,
+        "validation_cells": 83,
+        "reference": "stereo A vs B under assumed XY/yaw, spatial block holdout",
+        "prior_median_height_residual_m": 0.5478158203073509,
+        "adjusted_median_height_residual_m": 0.020838161594388893,
+        "adjusted_p90_m": 0.049137233321573236,
+        "clearance_prior_dz_m": 0.4573597197247673,
+        "allowed_dz_m": [
+          0.3573597197247673,
+          0.5573597197247673
+        ],
+        "nearest_anchor_to_B_m": [
+          0.060144473987321236,
+          0.727240656852197
+        ],
+        "tilt_rotvec_deg": [
+          -4.883273144232461,
+          -1.779786115438093
+        ],
+        "elevation_change_m": 0.3573597197247681
+      },
+      "vertical_fit_at_bound": true,
+      "camera_position_change_m": 0.5896692635205167,
+      "same_points_displacement_3d_m": {
+        "median": 0.890871136918696,
+        "p90": 1.048692914606068,
+        "maximum": 1.2110270794143831
+      },
+      "same_points_displacement_xy_m": {
+        "median": 0.8903441741907433,
+        "p90": 1.047617039375092,
+        "maximum": 1.2068715937648131
+      },
+      "same_points_abs_height_change_m": {
+        "median": 0.02761619607941404,
+        "p90": 0.06887366026132291,
+        "maximum": 0.1271757604659518
+      }
+    },
+    {
+      "distance_m": 3.5,
+      "turn_deg": 10.0,
+      "refinement": {
+        "accepted": true,
+        "shared_cells": 140,
+        "validation_cells": 32,
+        "reference": "stereo A vs B under assumed XY/yaw, spatial block holdout",
+        "prior_median_height_residual_m": 0.410996407759486,
+        "adjusted_median_height_residual_m": 0.06619000957652288,
+        "adjusted_p90_m": 0.10089382951335901,
+        "clearance_prior_dz_m": 0.44890909008839774,
+        "allowed_dz_m": [
+          0.34890909008839777,
+          0.5489090900883977
+        ],
+        "nearest_anchor_to_B_m": [
+          0.08838861806299143,
+          0.7627151301803493
+        ],
+        "tilt_rotvec_deg": [
+          -4.810827134399303,
+          -0.9453228106050112
+        ],
+        "elevation_change_m": 0.3489090900883978
+      },
+      "vertical_fit_at_bound": true,
+      "camera_position_change_m": 0.50365123176853,
+      "same_points_displacement_3d_m": {
+        "median": 0.5072174789504632,
+        "p90": 0.5193061609882775,
+        "maximum": 0.5436231775646639
+      },
+      "same_points_displacement_xy_m": {
+        "median": 0.5019406909852552,
+        "p90": 0.502814752645566,
+        "maximum": 0.5035947574215487
+      },
+      "same_points_abs_height_change_m": {
+        "median": 0.07475354730658773,
+        "p90": 0.13542348833609774,
+        "maximum": 0.217633715185646
+      }
+    },
+    {
+      "distance_m": 3.5,
+      "turn_deg": 15.0,
+      "refinement": {
+        "accepted": false,
+        "reason": "insufficient shared footprint",
+        "cells": 36
+      },
+      "vertical_fit_at_bound": null,
+      "camera_position_change_m": 0.7309573455631572,
+      "same_points_displacement_3d_m": {
+        "median": 1.0031044422453919,
+        "p90": 1.1949755709113716,
+        "maximum": 1.4420252765950856
+      },
+      "same_points_displacement_xy_m": {
+        "median": 0.8897550579687132,
+        "p90": 1.1199001122226033,
+        "maximum": 1.4069594458444294
+      },
+      "same_points_abs_height_change_m": {
+        "median": 0.43015641722817843,
+        "p90": 0.49418120057071424,
+        "maximum": 0.5498805132100765
+      }
+    },
+    {
+      "distance_m": 4.0,
+      "turn_deg": 5.0,
+      "refinement": {
+        "accepted": true,
+        "shared_cells": 350,
+        "validation_cells": 74,
+        "reference": "stereo A vs B under assumed XY/yaw, spatial block holdout",
+        "prior_median_height_residual_m": 0.6317526528931259,
+        "adjusted_median_height_residual_m": 0.011269861008195492,
+        "adjusted_p90_m": 0.04187863760893406,
+        "clearance_prior_dz_m": 0.516746286062257,
+        "allowed_dz_m": [
+          0.41674628606225705,
+          0.616746286062257
+        ],
+        "nearest_anchor_to_B_m": [
+          0.10388626439491823,
+          0.7307307340879334
+        ],
+        "tilt_rotvec_deg": [
+          -3.56452387992495,
+          -2.112119467427196
+        ],
+        "elevation_change_m": 0.41674628606226594
+      },
+      "vertical_fit_at_bound": true,
+      "camera_position_change_m": 0.34791334315423394,
+      "same_points_displacement_3d_m": {
+        "median": 0.7631047944852154,
+        "p90": 0.9970459022767008,
+        "maximum": 1.246266254634977
+      },
+      "same_points_displacement_xy_m": {
+        "median": 0.7530439265222373,
+        "p90": 0.9819080640811656,
+        "maximum": 1.2290673812135855
+      },
+      "same_points_abs_height_change_m": {
+        "median": 0.12044191390530276,
+        "p90": 0.17413128533686298,
+        "maximum": 0.22872875680243854
+      }
+    },
+    {
+      "distance_m": 4.0,
+      "turn_deg": 10.0,
+      "refinement": {
+        "accepted": true,
+        "shared_cells": 160,
+        "validation_cells": 27,
+        "reference": "stereo A vs B under assumed XY/yaw, spatial block holdout",
+        "prior_median_height_residual_m": 0.47876295749385483,
+        "adjusted_median_height_residual_m": 0.04386276486667651,
+        "adjusted_p90_m": 0.06874387649724097,
+        "clearance_prior_dz_m": 0.5094447263860148,
+        "allowed_dz_m": [
+          0.4094447263860148,
+          0.6094447263860148
+        ],
+        "nearest_anchor_to_B_m": [
+          0.2791957370578848,
+          0.7438655569622572
+        ],
+        "tilt_rotvec_deg": [
+          -2.871167241545284,
+          -0.9129308602988928
+        ],
+        "elevation_change_m": 0.40944472638601503
+      },
+      "vertical_fit_at_bound": true,
+      "camera_position_change_m": 0.0,
+      "same_points_displacement_3d_m": {
+        "median": 1.3517848686956847e-15,
+        "p90": 2.5219419200973697e-15,
+        "maximum": 3.1480255910393996e-15
+      },
+      "same_points_displacement_xy_m": {
+        "median": 4.440892098500626e-16,
+        "p90": 1.9860273225978185e-15,
+        "maximum": 2.5121479338940403e-15
+      },
+      "same_points_abs_height_change_m": {
+        "median": 1.1657341758564144e-15,
+        "p90": 1.7763568394002505e-15,
+        "maximum": 2.4424906541753444e-15
+      },
+      "nominal_saved_pose_reproduced": true
+    },
+    {
+      "distance_m": 4.0,
+      "turn_deg": 15.0,
+      "refinement": {
+        "accepted": false,
+        "reason": "insufficient shared footprint",
+        "cells": 32
+      },
+      "vertical_fit_at_bound": null,
+      "camera_position_change_m": 0.5372479553580161,
+      "same_points_displacement_3d_m": {
+        "median": 0.8918940380679439,
+        "p90": 1.0729158860504684,
+        "maximum": 1.2654200398640891
+      },
+      "same_points_displacement_xy_m": {
+        "median": 0.768391750293847,
+        "p90": 0.985478401067651,
+        "maximum": 1.2253105162371551
+      },
+      "same_points_abs_height_change_m": {
+        "median": 0.43015641722817843,
+        "p90": 0.49418120057071424,
+        "maximum": 0.5498805132100765
+      }
+    },
+    {
+      "distance_m": 4.5,
+      "turn_deg": 5.0,
+      "refinement": {
+        "accepted": true,
+        "shared_cells": 346,
+        "validation_cells": 83,
+        "reference": "stereo A vs B under assumed XY/yaw, spatial block holdout",
+        "prior_median_height_residual_m": 0.7251929194531856,
+        "adjusted_median_height_residual_m": 0.007054376517328764,
+        "adjusted_p90_m": 0.028672123958350327,
+        "clearance_prior_dz_m": 0.567772118915722,
+        "allowed_dz_m": [
+          0.467772118915722,
+          0.667772118915722
+        ],
+        "nearest_anchor_to_B_m": [
+          0.5657874219449142,
+          0.7211956256031709
+        ],
+        "tilt_rotvec_deg": [
+          -2.3923726829967578,
+          -1.479743039633093
+        ],
+        "elevation_change_m": 0.5786201835999034
+      },
+      "vertical_fit_at_bound": false,
+      "camera_position_change_m": 0.6523834041755678,
+      "same_points_displacement_3d_m": {
+        "median": 0.9420367049736815,
+        "p90": 1.1879958482748865,
+        "maximum": 1.494544899853004
+      },
+      "same_points_displacement_xy_m": {
+        "median": 0.9119690705989676,
+        "p90": 1.1533355725665628,
+        "maximum": 1.454397262623702
+      },
+      "same_points_abs_height_change_m": {
+        "median": 0.23610731149596562,
+        "p90": 0.2843482918463057,
+        "maximum": 0.34408292626822945
+      }
+    },
+    {
+      "distance_m": 4.5,
+      "turn_deg": 10.0,
+      "refinement": {
+        "accepted": true,
+        "shared_cells": 167,
+        "validation_cells": 40,
+        "reference": "stereo A vs B under assumed XY/yaw, spatial block holdout",
+        "prior_median_height_residual_m": 0.5553790038196406,
+        "adjusted_median_height_residual_m": 0.023946558153307984,
+        "adjusted_p90_m": 0.05588243058382431,
+        "clearance_prior_dz_m": 0.5615962204533841,
+        "allowed_dz_m": [
+          0.4615962204533841,
+          0.6615962204533841
+        ],
+        "nearest_anchor_to_B_m": [
+          0.6829868906888831,
+          0.7149276641261774
+        ],
+        "tilt_rotvec_deg": [
+          -1.1071846199151387,
+          -1.0592461309619798
+        ],
+        "elevation_change_m": 0.46159622045338455
+      },
+      "vertical_fit_at_bound": true,
+      "camera_position_change_m": 0.5027124211052079,
+      "same_points_displacement_3d_m": {
+        "median": 0.5082768042319572,
+        "p90": 0.5200966346817864,
+        "maximum": 0.5440520221846741
+      },
+      "same_points_displacement_xy_m": {
+        "median": 0.5026025898673728,
+        "p90": 0.5036440904780842,
+        "maximum": 0.5046185771377729
+      },
+      "same_points_abs_height_change_m": {
+        "median": 0.0796254925239879,
+        "p90": 0.13977527112518476,
+        "maximum": 0.2230193891304697
+      }
+    },
+    {
+      "distance_m": 4.5,
+      "turn_deg": 15.0,
+      "refinement": {
+        "accepted": false,
+        "reason": "insufficient shared footprint",
+        "cells": 41
+      },
+      "vertical_fit_at_bound": null,
+      "camera_position_change_m": 0.7368663990439518,
+      "same_points_displacement_3d_m": {
+        "median": 1.0322493949909561,
+        "p90": 1.1748518019483107,
+        "maximum": 1.3341875026823717
+      },
+      "same_points_displacement_xy_m": {
+        "median": 0.934651163197247,
+        "p90": 1.0898354090905042,
+        "maximum": 1.2458213104931641
+      },
+      "same_points_abs_height_change_m": {
+        "median": 0.43015641722817843,
+        "p90": 0.49418120057071424,
+        "maximum": 0.5498805132100765
+      }
+    }
+  ]
+}

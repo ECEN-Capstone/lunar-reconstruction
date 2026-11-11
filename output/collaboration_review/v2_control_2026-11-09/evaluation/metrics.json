@@ -1,0 +1,123 @@
+{
+  "endpoints": [
+    "obs_044",
+    "obs_047"
+  ],
+  "pose": {
+    "source": "stereo registration",
+    "path": [
+      "obs_044",
+      "obs_047"
+    ]
+  },
+  "seed": 7,
+  "generator": "procedural_control",
+  "input_movie_sha256": "ce6bee7ee1511c6f0a2137e14bc7abbeff0670fa22326d76a6fe83640dc10305",
+  "bundle_sha256": "7f418722d4db410a65221923427c7a93bcadc883064045f210d6fae9cad2a0ae",
+  "pose_check_sha256": "d8925fc7b99d5832990f0ea011960ee02224b31b1db6fb68bb23f2cca1b0b7e0",
+  "grid_m": 0.05,
+  "reconstruction": "real-anchor PnP; unconditioned accepted frames only",
+  "used_frame_indices": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    17,
+    18,
+    19,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    29,
+    30,
+    31
+  ],
+  "video_tracks": 16752,
+  "triangulation_windows": 10,
+  "reprojection_px": {
+    "count": 16752,
+    "median": 0.322133856416183,
+    "p90": 0.7041733881362698,
+    "p95": 0.7787038471680624,
+    "maximum": 0.8499848254415244,
+    "rmse": 0.4245014752506444
+  },
+  "stereo_cells": 8385,
+  "new_video_cells": 638,
+  "new_cell_area_m2": 1.5950000000000004,
+  "mesh": {
+    "vertices": 9023,
+    "triangles": 15375,
+    "projected_surface_area_m2": 19.218749999999947,
+    "slopes_deg": {
+      "count": 15375,
+      "median": 12.333883243917315,
+      "p90": 39.51076178964878,
+      "p95": 47.91512871909091,
+      "maximum": 78.5319425800253,
+      "rmse": 22.25366255985236
+    },
+    "area_with_inferred_vertices_m2": 1.233749999999997,
+    "obj_readback_verified": true
+  },
+  "status": "experimental synthetic terrain; not independently surveyed",
+  "validation": {
+    "holdout": "obs_046",
+    "reference": "withheld registered stereo; not survey ground truth",
+    "measurable_gap_cells": 561,
+    "tested_added_cells": 21,
+    "reference_coverage": 0.0374331550802139,
+    "video_abs_height_error_m": {
+      "count": 21,
+      "median": 0.015607924510932514,
+      "p90": 0.056280799122276015,
+      "p95": 0.05664801547591103,
+      "maximum": 0.18797754919820875,
+      "rmse": 0.049000866132236566
+    },
+    "matched_idw_abs_height_error_m": {
+      "count": 21,
+      "median": 0.005545238302725908,
+      "p90": 0.012178922363344058,
+      "p95": 0.01406715915141099,
+      "maximum": 0.019784701673736638,
+      "rmse": 0.007655775720655787
+    },
+    "linear_comparison_cells": 21,
+    "matched_linear_abs_height_error_m": {
+      "count": 21,
+      "median": 0.007924940733549657,
+      "p90": 0.012321607599166451,
+      "p95": 0.014007932164498249,
+      "maximum": 0.014298679475821308,
+      "rmse": 0.008542299758154612
+    },
+    "video_on_linear_comparison_m": {
+      "count": 21,
+      "median": 0.015607924510932514,
+      "p90": 0.056280799122276015,
+      "p95": 0.05664801547591103,
+      "maximum": 0.18797754919820875,
+      "rmse": 0.049000866132236566
+    },
+    "raw_before_envelope_m": {
+      "count": 47,
+      "median": 0.43790546382361173,
+      "p90": 0.9645453723373733,
+      "p95": 0.982049027409342,
+      "maximum": 1.166126743756752,
+      "rmse": 0.6029490647999199
+    }
+  }
+}

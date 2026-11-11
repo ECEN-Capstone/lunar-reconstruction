@@ -1,0 +1,123 @@
+{
+  "endpoints": [
+    "obs_033",
+    "obs_034"
+  ],
+  "pose": {
+    "source": "conditional mobility prior",
+    "height_refinement": {
+      "accepted": true,
+      "shared_cells": 160,
+      "validation_cells": 27,
+      "reference": "stereo A vs B under assumed XY/yaw, spatial block holdout",
+      "prior_median_height_residual_m": 0.47876295749385483,
+      "adjusted_median_height_residual_m": 0.04386276486667651,
+      "adjusted_p90_m": 0.06874387649724097,
+      "clearance_prior_dz_m": 0.5094447263860148,
+      "allowed_dz_m": [
+        0.4094447263860148,
+        0.6094447263860148
+      ],
+      "nearest_anchor_to_B_m": [
+        0.2791957370578848,
+        0.7438655569622572
+      ],
+      "tilt_rotvec_deg": [
+        -2.871167241545284,
+        -0.9129308602988928
+      ],
+      "elevation_change_m": 0.40944472638601503
+    },
+    "reference": "NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m",
+    "distance_m": 4.0,
+    "turn_deg": 10.0,
+    "achieved_pose_verified": false,
+    "assumptions": "images bracket complete maneuver; planar initial pose; optional footprint-based tilt/elevation; achieved XY and yaw unverified"
+  },
+  "seeds": [
+    7,
+    17,
+    27
+  ],
+  "grid_m": 0.05,
+  "top_area_m2": 49.98124999999987,
+  "units": "metres",
+  "frame": "start rover local; nominal up",
+  "labels": {
+    "0": "unsupported",
+    "1": "strict endpoint stereo",
+    "2": "first-pipeline gated relaxed stereo",
+    "3": "video consensus (synthetic)",
+    "4": "first-pipeline linear interpolation (synthetic)"
+  },
+  "cell_counts": {
+    "1": 9872,
+    "2": 253,
+    "3": 994,
+    "4": 8888
+  },
+  "relaxed_sources": [
+    {
+      "name": "obs_034",
+      "source": "r15_terrain_completion\\obs_034\\terrain_grids.npz",
+      "added_cells": 253
+    }
+  ],
+  "new_video_cell_area_m2": 2.4850000000000003,
+  "between_footprints_video_cells": 250,
+  "between_footprints_total_cells": 2375,
+  "unchanged_strict_cells": 9872,
+  "closure": {
+    "source": "output\\chronological_video\\mid036_model\\terrain_top_m.obj",
+    "source_sha256": "b28918f25e4022a7c0534b64f888e6fbc123ecd75f5b4e0a915ceb4453638e90",
+    "original_boundary_edges": 28,
+    "artificial_base_z_m": -0.230197102,
+    "base_clearance_m": 0.25,
+    "original_top_geometry_unchanged": true,
+    "obj": {
+      "vertices": 40014,
+      "triangles": 80024,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "nonmanifold_vertices": 0,
+      "connected_components": 1,
+      "euler_characteristic": 2,
+      "consistent_outward_winding": true,
+      "enclosed_volume_m3": 45.02382068768122,
+      "dimensions_m": [
+        12.9,
+        8.25,
+        1.543094892
+      ]
+    },
+    "stl": {
+      "vertices": 40014,
+      "triangles": 80024,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "nonmanifold_vertices": 0,
+      "connected_components": 1,
+      "euler_characteristic": 2,
+      "consistent_outward_winding": true,
+      "enclosed_volume_m3": 45.02382254377391,
+      "dimensions_m": [
+        12.899999976158142,
+        8.249999761581421,
+        1.5430949032306671
+      ]
+    },
+    "added_geometry": "Vertical walls on every perimeter edge and planar underside",
+    "limitations": [
+      "Top still includes previously inferred terrain",
+      "Units are metres; STL format itself has no standard unit field",
+      "Nominal rover-local frame, gravity unverified",
+      "No validation in the user viewer or Gazebo"
+    ]
+  },
+  "caveats": [
+    "Spatial footprint is a convex envelope, not a surveyed traverse.",
+    "Seed agreement is repeatability, not ground truth.",
+    "Interior cells without video support fall back to interpolation and are separately labelled."
+  ],
+  "strict_to_video_max_change_m": 0.0
+}

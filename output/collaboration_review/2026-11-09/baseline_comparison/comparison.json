@@ -1,0 +1,298 @@
+{
+  "reference_run": "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\holdout046_7",
+  "endpoints": [
+    "obs_044",
+    "obs_047"
+  ],
+  "holdout": "obs_046",
+  "grid_m": 0.05,
+  "reference": "Registered withheld stereo; not surveyed ground truth",
+  "eligible_reference_cells": 561,
+  "fixed_completion_cells": 561,
+  "common_video_cells": 12,
+  "excluded_relaxed_union_cells": 0,
+  "baseline_origin": "Strict endpoint stereo only, fixed across candidates",
+  "baselines_on_common": {
+    "linear": {
+      "count": 12,
+      "rmse_m": 0.007567336382780883,
+      "bias_m": 0.0037913639361345044,
+      "median_absolute_m": 0.004215763671425177,
+      "p95_absolute_m": 0.01308045365356576,
+      "maximum_absolute_m": 0.014007932164498249
+    },
+    "idw": {
+      "count": 12,
+      "rmse_m": 0.005907557179839665,
+      "bias_m": 0.002914430402116345,
+      "median_absolute_m": 0.004609766961706785,
+      "p95_absolute_m": 0.01030650716930934,
+      "maximum_absolute_m": 0.012178922363344058
+    }
+  },
+  "baselines_on_fixed_region": {
+    "linear": {
+      "count": 561,
+      "rmse_m": 0.010520392863807305,
+      "bias_m": 0.002712118063565034,
+      "median_absolute_m": 0.006603962509296846,
+      "p95_absolute_m": 0.020935432369210583,
+      "maximum_absolute_m": 0.03819587075133768
+    },
+    "idw": {
+      "count": 561,
+      "rmse_m": 0.024940797072973166,
+      "bias_m": 0.010895868093100614,
+      "median_absolute_m": 0.009882099116173215,
+      "p95_absolute_m": 0.060794477844080985,
+      "maximum_absolute_m": 0.10988455685696441
+    }
+  },
+  "runs": [
+    {
+      "name": "holdout046_7",
+      "path": "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\holdout046_7",
+      "generator": "pose-conditioned textured stochastic elevation field",
+      "seed": 7,
+      "seeds": null,
+      "integrated": false,
+      "supplied_reference_array": true,
+      "used_frame_indices": null,
+      "strict_cells_preserved": 8385,
+      "video_cells_total": 1811,
+      "native_reference_coverage": 0.2549019607843137,
+      "native_video": {
+        "count": 143,
+        "rmse_m": 0.07161103719960435,
+        "bias_m": -0.0066346133311769445,
+        "median_absolute_m": 0.03848490066703247,
+        "p95_absolute_m": 0.16948102803243634,
+        "maximum_absolute_m": 0.19709299409848446
+      },
+      "native_idw": {
+        "count": 143,
+        "rmse_m": 0.03780520071487921,
+        "bias_m": 0.023555458665574514,
+        "median_absolute_m": 0.013311075459911503,
+        "p95_absolute_m": 0.07903094808340787,
+        "maximum_absolute_m": 0.10988455685696441
+      },
+      "native_linear": {
+        "count": 143,
+        "rmse_m": 0.01276150237223724,
+        "bias_m": 0.007669265609538419,
+        "median_absolute_m": 0.008054378215988756,
+        "p95_absolute_m": 0.025205513372309793,
+        "maximum_absolute_m": 0.03819587075133768
+      },
+      "native_video_on_linear": {
+        "count": 143,
+        "rmse_m": 0.07161103719960435,
+        "bias_m": -0.0066346133311769445,
+        "median_absolute_m": 0.03848490066703247,
+        "p95_absolute_m": 0.16948102803243634,
+        "maximum_absolute_m": 0.19709299409848446
+      },
+      "common_video": {
+        "count": 12,
+        "rmse_m": 0.05104984828271285,
+        "bias_m": -0.017110598752105882,
+        "median_absolute_m": 0.018211901891131033,
+        "p95_absolute_m": 0.0975511180046835,
+        "maximum_absolute_m": 0.15621616631536406
+      },
+      "fixed_region_video_plus_linear": {
+        "count": 561,
+        "rmse_m": 0.03709904949486266,
+        "bias_m": -0.000933968725244764,
+        "median_absolute_m": 0.007924940733549657,
+        "p95_absolute_m": 0.0845955417231361,
+        "maximum_absolute_m": 0.19709299409848446
+      },
+      "fixed_region_video_cells": 143,
+      "improved_cells_vs_linear": 20,
+      "worsened_cells_vs_linear": 123,
+      "unchanged_cells_vs_linear": 418,
+      "display_name": "Procedural seed 7"
+    },
+    {
+      "name": "holdout046_model",
+      "path": "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\holdout046_model",
+      "generator": "integrated seed consensus",
+      "seed": null,
+      "seeds": [
+        7,
+        17,
+        27
+      ],
+      "integrated": true,
+      "supplied_reference_array": false,
+      "used_frame_indices": null,
+      "strict_cells_preserved": 8385,
+      "video_cells_total": 1364,
+      "native_reference_coverage": 0.15151515151515152,
+      "native_video": {
+        "count": 85,
+        "rmse_m": 0.08449559572152433,
+        "bias_m": -0.017021943346972285,
+        "median_absolute_m": 0.05086846743014872,
+        "p95_absolute_m": 0.17471675562755565,
+        "maximum_absolute_m": 0.1951863407081328
+      },
+      "native_idw": {
+        "count": 85,
+        "rmse_m": 0.035175701357185785,
+        "bias_m": 0.02054730554044853,
+        "median_absolute_m": 0.0103139655364064,
+        "p95_absolute_m": 0.07899933928565005,
+        "maximum_absolute_m": 0.10988455685696441
+      },
+      "native_linear": {
+        "count": 85,
+        "rmse_m": 0.012495541036813855,
+        "bias_m": 0.006096761195902127,
+        "median_absolute_m": 0.00737170312611557,
+        "p95_absolute_m": 0.026185237644697153,
+        "maximum_absolute_m": 0.03819587075133768
+      },
+      "native_video_on_linear": {
+        "count": 85,
+        "rmse_m": 0.08449559572152433,
+        "bias_m": -0.017021943346972285,
+        "median_absolute_m": 0.05086846743014872,
+        "p95_absolute_m": 0.17471675562755565,
+        "maximum_absolute_m": 0.1951863407081328
+      },
+      "common_video": {
+        "count": 12,
+        "rmse_m": 0.05060250597664699,
+        "bias_m": -0.017423645030907386,
+        "median_absolute_m": 0.013775045554621224,
+        "p95_absolute_m": 0.0975511180046835,
+        "maximum_absolute_m": 0.15621616631536406
+      },
+      "fixed_region_video_plus_linear": {
+        "count": 561,
+        "rmse_m": 0.03418719932822406,
+        "bias_m": -0.0007907159580826045,
+        "median_absolute_m": 0.007389003614107326,
+        "p95_absolute_m": 0.07800778441034029,
+        "maximum_absolute_m": 0.1951863407081328
+      },
+      "fixed_region_video_cells": 85,
+      "improved_cells_vs_linear": 12,
+      "worsened_cells_vs_linear": 73,
+      "unchanged_cells_vs_linear": 476,
+      "display_name": "Three-seed consensus"
+    },
+    {
+      "name": "baseline_unconditioned_eval",
+      "path": "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\baseline_unconditioned_eval",
+      "generator": "procedural_control",
+      "seed": 7,
+      "seeds": null,
+      "integrated": false,
+      "supplied_reference_array": true,
+      "used_frame_indices": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        25,
+        26,
+        27,
+        29,
+        30,
+        31
+      ],
+      "strict_cells_preserved": 8385,
+      "video_cells_total": 638,
+      "native_reference_coverage": 0.0374331550802139,
+      "native_video": {
+        "count": 21,
+        "rmse_m": 0.049000866132236566,
+        "bias_m": 0.017262875973070285,
+        "median_absolute_m": 0.015607924510932514,
+        "p95_absolute_m": 0.05664801547591103,
+        "maximum_absolute_m": 0.18797754919820875
+      },
+      "native_idw": {
+        "count": 21,
+        "rmse_m": 0.007655775720655787,
+        "bias_m": 0.002808396237318801,
+        "median_absolute_m": 0.005545238302725908,
+        "p95_absolute_m": 0.01406715915141099,
+        "maximum_absolute_m": 0.019784701673736638
+      },
+      "native_linear": {
+        "count": 21,
+        "rmse_m": 0.008542299758154612,
+        "bias_m": 0.004152563503527561,
+        "median_absolute_m": 0.007924940733549657,
+        "p95_absolute_m": 0.014007932164498249,
+        "maximum_absolute_m": 0.014298679475821308
+      },
+      "native_video_on_linear": {
+        "count": 21,
+        "rmse_m": 0.049000866132236566,
+        "bias_m": 0.017262875973070285,
+        "median_absolute_m": 0.015607924510932514,
+        "p95_absolute_m": 0.05664801547591103,
+        "maximum_absolute_m": 0.18797754919820875
+      },
+      "common_video": {
+        "count": 12,
+        "rmse_m": 0.027574454937782038,
+        "bias_m": 0.006456521863837013,
+        "median_absolute_m": 0.01838014035112273,
+        "p95_absolute_m": 0.048240074710039146,
+        "maximum_absolute_m": 0.056280799122276015
+      },
+      "fixed_region_video_plus_linear": {
+        "count": 561,
+        "rmse_m": 0.01406510996352909,
+        "bias_m": 0.0032028784233874893,
+        "median_absolute_m": 0.0067201482496141995,
+        "p95_absolute_m": 0.0233640462902982,
+        "maximum_absolute_m": 0.18797754919820875
+      },
+      "fixed_region_video_cells": 21,
+      "improved_cells_vs_linear": 4,
+      "worsened_cells_vs_linear": 17,
+      "unchanged_cells_vs_linear": 540,
+      "display_name": "Estimated-pose control"
+    }
+  ],
+  "input_sha256": {
+    "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\holdout046_7\\metrics.json": "1769fe072e1abf1f996824eeeeefefd608ece5505e0f30a0934513562a5a2c13",
+    "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\holdout046_7\\surfaces.npz": "fe9e3e43ef1db1a0c90d13a6c7f750eb2a0f37258d3bb3ee36d01958a1ad8921",
+    "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\holdout046_7\\validation.npz": "3aa8f8351d00f3fb7f0ac7c2491604d99faa161a710c397325e26894fc2402bf",
+    "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\holdout046_model\\metrics.json": "ffbec9691fe1579f080808eba6438ef4bd1a874e5fd9cb0236faac5e69ee5cdd",
+    "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\holdout046_model\\integrated_grid.npz": "1129db6dedbf51ea8f36366ee8e2f0e7fc6a496c34e7e30c4d4f1ad2c94abd2e",
+    "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\baseline_unconditioned_eval\\validation.npz": "2f2eebc05e09a7262ee7aa300ac5c158a705836dfd86285316f458e9e6859617",
+    "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\baseline_unconditioned_eval\\metrics.json": "b1f617e94e2eca1387a1beafd7a3a8a8b08e0a0eadfb6571557c2e7653010dd3",
+    "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\baseline_unconditioned_eval\\surfaces.npz": "c849d0d024ac61ca4e08db691a2e30dd89d302e19d75dd4122b323a74de2a5bc"
+  },
+  "limitations": [
+    "Read-only terrain audit does not certify inference provenance or output camera poses.",
+    "Common terrain cells do not make different frame/conditioning protocols equivalent.",
+    "Fixed-region hybrid is a diagnostic: accepted video where available, otherwise strict-only linear interpolation.",
+    "Cells are spatially correlated; no independence assumption or statistical significance claim.",
+    "Missing or failed reconstruction attempts must also be reported; this tool only sees supplied arrays."
+  ],
+  "reviewer_sha256": "b772e88de9b9ef3d0af7068eedb0b15568cb2bd27832d623fb447b6bc0cb1c11"
+}

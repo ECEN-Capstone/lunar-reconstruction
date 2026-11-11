@@ -1,0 +1,97 @@
+{
+  "source_sha256": {
+    "chandrayaan-3-documentation\\nav\\document\\ch3_nav_pds_dp_archive_sis.pdf": "6abe9f56526942d8f623bb3bcaf4c54dec850e6149eea4b908f0152dd6aac43a",
+    "configs\\video_mobility_priors.json": "afb073e937383b598988e86a913697206c500fdb57042660b5ed1513fbd2c83a",
+    "output\\chronological_video\\mid036_model\\terrain_top_m.obj": "b28918f25e4022a7c0534b64f888e6fbc123ecd75f5b4e0a915ceb4453638e90",
+    "output\\chronological_video\\mid036_model\\integrated_grid.npz": "0133499ec5c8a33fdfc49dee9d005522ac6964a8f42ddcb67a8b3b359b5904c2",
+    "output\\chronological_video\\mid036_7\\trajectory.npz": "16a553d2cacb22438acc2786f65cbf484215d0a7a4b3dfd1a7dc2db93542570e",
+    "output\\chronological_video\\mid036_7\\metrics.json": "8ff583f1278bff53b4b8f066a77df462b7a91871f9172b4c4ac038280b41ded8",
+    "artifacts\\runs\\r12_registration\\registration_edges.json": "f7048a88894f25185dc61ef9cde638585e4cb0756708438e7bf290a609b50310",
+    "artifacts\\runs\\r11_filtered_batch\\obs_033\\local_mesh_calibration_units.obj": "11c4fae7839836fb0790bc35da35d980742e4ee2eb6e5bc2626091c19211509a",
+    "artifacts\\runs\\r11_filtered_batch\\obs_033\\xyz_rectified_calibration_units.npy": "abc79161d70ab026abc841c0621d3fef264da57759b14418ffb0cd417f685146",
+    "artifacts\\runs\\r11_filtered_batch\\obs_033\\provenance.json": "f83b653b3124fa55cf5abb8af6c4ee7404724170a8e70f50968762f5ed6fb5cd",
+    "artifacts\\runs\\r11_filtered_batch\\obs_033\\rectified_left.png": "04d741b7a535dd71e0c798721304c269c2a0ee19f30d2fa723cb8add81e99cf9",
+    "artifacts\\runs\\r11_filtered_batch\\obs_034\\local_mesh_calibration_units.obj": "0a9d8aa085715243cd1aaa6ed06e8790c7bb6bc9243bbc3826dca2282e28bbd6",
+    "artifacts\\runs\\r11_filtered_batch\\obs_034\\xyz_rectified_calibration_units.npy": "145911aca1b49b7d7bc2f31198aa650882e2a28cb8af7f2811576fd840cded4a",
+    "artifacts\\runs\\r11_filtered_batch\\obs_034\\provenance.json": "147b05445be8091e3fdbd1bbde1bafced395a4f1d7c78fd791846523ee474b61",
+    "artifacts\\runs\\r11_filtered_batch\\obs_034\\rectified_left.png": "4d33084cfd6a8a7101f80b787d760f4026fb1e6251f5c21e293eb34d4eded51e"
+  },
+  "script_sha256": "14b490c29eb06b794fab6b1d2761676ec6a76e5516efdff4e411e6c4b2d37c01",
+  "source_pdf_page_1based": 53,
+  "endpoint_camera_poses": [
+    [
+      [
+        0.03450797625756921,
+        -0.1706138729818122,
+        0.9847335202585283,
+        -0.014755939999999948
+      ],
+      [
+        -0.9993922186638112,
+        -0.0010216658318114857,
+        0.03484464769736223,
+        0.12424118000000003
+      ],
+      [
+        -0.004938911705246185,
+        -0.9853374358792395,
+        -0.17054543267438627,
+        0.32607168000000003
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.20718823954781918,
+        -0.1521425927793375,
+        0.9663982951430823,
+        3.9031249934356604
+      ],
+      [
+        -0.9771535690130438,
+        -0.08001528218777382,
+        0.19689707255691113,
+        0.8143840458843441
+      ],
+      [
+        0.04737020116218743,
+        -0.9851143010223694,
+        -0.16524490298663458,
+        0.7355164063860151
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "route": "Idealized body-reference turn-then-drive path; XY from documented maneuver; Z interpolated from fitted elevation adjustment",
+  "nominal_route_start_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "nominal_route_end_m": [
+    3.939231012048832,
+    0.6945927106677213,
+    0.40944472638601503
+  ],
+  "mesh_counts": {
+    "obs_033": {
+      "vertices": 12997,
+      "displayed_triangles": 13213
+    },
+    "obs_034": {
+      "vertices": 28637,
+      "displayed_triangles": 31359
+    }
+  },
+  "limits": "Display uses existing conditional pose, calibration-unit-to-metre factor 0.001, observed points/source triangles with camera depth below 11 m. Figure 05 also displays the existing inferred completion in gray. No new hole filling or global position recovery."
+}

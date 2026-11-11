@@ -1,0 +1,29 @@
+{
+  "observations": ["obs_003", "obs_029", "obs_034"],
+  "grid_m": 0.05,
+  "forward_bounds_m": [0.75, 6.0],
+  "lateral_bounds_m": [-2.0, 2.0],
+  "minimum_points_per_cell": 2,
+  "relaxed_anchor_distance_m": 0.20,
+  "relaxed_height_tolerance_m": 0.04,
+  "relaxed_slope_envelope_deg": 35.0,
+  "balanced_fill_distance_m": 0.25,
+  "extended_fill_distance_m": 0.50,
+  "holdout_radii_m": [0.05, 0.125, 0.25, 0.50],
+  "holdout_patches_per_radius": 16,
+  "seed": 42,
+  "stereo_overrides": {
+    "block_size": 7,
+    "uniqueness_ratio": 5,
+    "speckle_window_size": 50,
+    "lr_threshold_px": 2.0,
+    "texture_std_threshold": 1.0,
+    "mesh_max_relative_depth_jump": 0.05,
+    "mesh_max_edge_baselines": 0.5
+  },
+  "support_overrides": {
+    "maximum_median_disparity_difference_px": 3.0,
+    "minimum_valid_neighbors": 5,
+    "minimum_component_pixels": 50
+  }
+}

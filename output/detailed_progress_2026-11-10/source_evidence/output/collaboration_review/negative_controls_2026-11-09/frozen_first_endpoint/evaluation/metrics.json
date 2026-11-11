@@ -1,0 +1,105 @@
+{
+  "endpoints": [
+    "obs_044",
+    "obs_047"
+  ],
+  "pose": {
+    "source": "stereo registration",
+    "path": [
+      "obs_044",
+      "obs_047"
+    ]
+  },
+  "seed": 7,
+  "generator": "procedural_control",
+  "input_movie_sha256": "98f82e98f6fa757287a69491dada2415fad33212b1773a3c82473f889b6d4971",
+  "bundle_sha256": "1975be6845038a5353545f50b9ce950d0c72cee93e7a7ce6b2f232b6f9493855",
+  "pose_check_sha256": "170a3c86f4a2b227c279ad01555b310a592371cd87d42e24386124bcf56a7cf2",
+  "grid_m": 0.05,
+  "reconstruction": "real-anchor PnP; unconditioned accepted frames only",
+  "used_frame_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "video_tracks": 0,
+  "triangulation_windows": 0,
+  "reprojection_px": {
+    "count": 0
+  },
+  "stereo_cells": 8385,
+  "new_video_cells": 4,
+  "new_cell_area_m2": 0.010000000000000002,
+  "mesh": {
+    "vertices": 8389,
+    "triangles": 14388,
+    "projected_surface_area_m2": 17.98499999999995,
+    "slopes_deg": {
+      "count": 14388,
+      "median": 11.973319268872196,
+      "p90": 39.13144895193304,
+      "p95": 47.28564379512128,
+      "maximum": 69.76715206681465,
+      "rmse": 21.842827977956723
+    },
+    "area_with_inferred_vertices_m2": 0.0,
+    "obj_readback_verified": true
+  },
+  "status": "experimental synthetic terrain; not independently surveyed",
+  "validation": {
+    "holdout": "obs_046",
+    "reference": "withheld registered stereo; not survey ground truth",
+    "measurable_gap_cells": 561,
+    "tested_added_cells": 0,
+    "reference_coverage": 0.0,
+    "video_abs_height_error_m": {
+      "count": 0
+    },
+    "matched_idw_abs_height_error_m": {
+      "count": 0
+    },
+    "linear_comparison_cells": 0,
+    "matched_linear_abs_height_error_m": {
+      "count": 0
+    },
+    "video_on_linear_comparison_m": {
+      "count": 0
+    },
+    "raw_before_envelope_m": {
+      "count": 4,
+      "median": 0.49472101755180287,
+      "p90": 0.5517288062762165,
+      "p95": 0.5577632260551494,
+      "maximum": 0.5637976458340823,
+      "rmse": 0.5004986733748201
+    }
+  }
+}

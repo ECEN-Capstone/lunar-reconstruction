@@ -1,0 +1,283 @@
+# Reconstruction and video progress — 9 November 2026
+
+Main talk: slides 1–13 (~14 minutes plus questions). Slides 14–32 are the detailed appendix.
+
+## 1. Lunar terrain reconstruction
+
+Lead with the results. We have a reproducible real-stereo pipeline and local terrain exports. The largest completed footprint is about 77.2 square metres, but much of it is inferred. The procedural video experiments close the evaluation loop and expose weaknesses, yet do not beat interpolation. No learned video model output has been received in this workspace. Slides 1–13 are the 15-minute talk; the appendix contains parameters, additional experiments and the benchmark plan.
+
+Sources:
+- RECONSTRUCTION_REPORT.md
+- output/largest_terrain/component_obs_044/metrics.json
+- output/collaboration_review/2026-11-09/COMPARISON_FINDINGS.md
+
+## 2. Inputs and the established reconstruction pipeline
+
+These are the actual rectified left/right inputs for obs_034, not generated images. Each image is 1024 by 1024. There are 56 candidate stereo observations, not 56 video frames. Left and right exposure times are often separated by roughly 30–43 seconds, so fixed-rig reconstruction assumes the rover did not move materially between the exposures. The pipeline uses CAHV calibration, rectification, SGBM, support filtering, local triangulation, and registration only when overlap supports it. Totals are per-frame, with overlap, not unique globally mapped terrain.
+
+Sources:
+- artifacts/runs/r08_quality_batch/obs_034/rectified_left.png
+- artifacts/runs/r08_quality_batch/obs_034/rectified_right.png
+- RECONSTRUCTION_REPORT.md
+
+## 3. Closing holes increases coverage, not measured evidence
+
+For obs_034 the 5 cm grid is cropped to 0.75–6 m forward and ±2 m sideways. Strict support occupies 73.8% of the chosen hull. Gated relaxed stereo adds 314 cells; interpolation fills 851. The completed top has 10.695 m² projected triangle area. The later closed OBJ adds walls and a base without changing the top: 8,882 vertices and 17,760 triangles, with no open/nonmanifold edges. This is a topological property, not an accuracy certificate. Grid spacing is not accuracy. The current metric convention interprets the calibrated baseline as 242.0594 mm, consistent with the paper’s nominal 240 mm; gravity remains unverified.
+
+Sources:
+- artifacts/runs/r15_terrain_completion/obs_034/completion_metrics.json
+- output/closed_terrain/obs_034/validation.json
+- TERRAIN_COMPLETION.md
+
+## 4. Largest completed terrain: five registered observations
+
+The component anchored at obs_044 includes observations 044,045,046,047,048. Five stereo pairs supply ten input images. The completed top spans 11.4 by 11.6 metres in its bounding rectangle, with 77.20125 m² projected footprint. Observed support is 9,573 of 30,900 grid cells, or 30.98%; 21,327 are filled. Maximum fill distance is 2.42 m. The closed OBJ has 61,800 vertices and 123,596 triangles, one connected component and no boundary/nonmanifold edges or vertices. It has not been validated as a Blender/Gazebo collision or navigation asset in this evidence set. The figure is a render of the actual OBJ, not a Blender validation screenshot.
+
+Sources:
+- output/largest_terrain/component_obs_044/metrics.json
+- output/completed_terrain_renders/component_obs_044_closed_obj.png
+
+## 5. All observations on an approximate rover traverse
+
+This new overlay superimposes real stereo samples from all 50 accepted observations, and labels all 56 observations. The route integrates turn/drive commands from the revised SIS Appendix I, pages 52–54. Existing registered groups keep their internal relative poses, then are anchored to the approximate route. Global heading is arbitrary, and slip, exact timing, gravity and some command directions are unresolved. Asterisks mark six additional image/checkpoint ambiguities. The plot is an illustrative scenario and is not installed in the production pose graph. Overlap on this plot does not prove correspondence or global alignment.
+
+Sources:
+- output/all_observations_overlay/README.md
+- output/all_observations_overlay/overlay_provenance.json
+- chandrayaan-3-documentation/nav/document/ch3_nav_pds_dp_archive_sis.pdf
+
+## 6. Two generated stereo pairs failed the camera checks
+
+The original generated side-by-side canvases were split losslessly, with separate 1024-square analysis copies. These are two generated pairs, not tests of multiple learned video models. The fixed CAHV camera relationship fails. The production gate requires at least 40 matches, median row error ≤1 pixel and p90 ≤2 pixels. Gate statistics shown use the production feature selection; the independent reciprocal-match report has different counts and should not be mixed with this table. Dense diagnostics bypassed the failed pair gate but still retained almost no support. The generated meshes use arbitrary baseline units, not metres.
+
+Sources:
+- output/generated_stereo_trial/REPORT.md
+- output/uber_relaxed/REPORT.md
+
+## 7. Relaxing checks creates density and severe artifacts
+
+Trial 1 illustrates why coverage is not correctness. Uber accepts 30.1% of all pixels; no-checks accepts 85.5%, but its median held-out disparity disagreement is 127.34 pixels. The row-adjusted test fits a vertical affine warp on 80% of image matches and checks the remaining 20%; it is a changed camera model, not only a loose threshold. It reaches 45% acceptance with 0.29 pixel median disparity disagreement on 279 accepted held-out features. That selected-feature result does not certify physical camera pose, metric scale, or the unseen pixels. The displayed meshes preserve the experimental geometry and remain open surfaces.
+
+Sources:
+- output/uber_relaxed/REPORT.md
+- output/generated_stereo_slide_pack/SLIDE_COPY_AND_FIGURE_GUIDE.md
+
+## 8. The procedural video loop runs end to end
+
+This contact sheet shows real endpoint observations plus procedural intermediate views. The procedural generator renders a textured heightfield along 33 camera poses; it is not Wan, VACE or MarsGen. The independent reconstruction route decodes video pixels and uses tracking/triangulation plus dense height-plane matching. It does not read rendered ground-truth depths. However the experiment is still prior-conditioned: endpoint terrain and the support/height envelope constrain the result. Original runs used rendering poses at 512 resolution; the external control uses estimated PnP poses at 480 resolution. Do not compare those runs as a controlled model ablation. Learned-video input bundles are prepared, but a learned output ZIP has not been received.
+
+Sources:
+- output/chronological_video/REPORT.md
+- output/chronological_video/figures/video_contact_sheet.png
+
+## 9. Cross-frame checks are implemented, with limits
+
+For the 480-pixel procedural control, anchor features with stereo depth establish per-frame PnP poses. Separate held-out features and agreement between endpoint anchors check pose consistency. Sparse three-view tracks are triangulated from the outer views and reprojected into the middle view. Accepted sparse points have median reprojection residual 0.322 px, p90 0.704 px and p95 0.779 px. These statistics are after filtering and are internal consistency measures, not ground-truth lunar errors. All 33 camera poses were accepted; 24 unconditioned frames were used for terrain reconstruction. Shared calibration and anchor depth can bias both checks. PnP acceptance does not show that a clip has useful parallax.
+
+Sources:
+- output/collaboration_review/v2_control_2026-11-09/pose_check/metrics.json
+- output/collaboration_review/v2_control_2026-11-09/evaluation/metrics.json
+- reconstruction/video_pose_check.py
+- reconstruction/video_triangulate.py
+
+## 10. Video completion has not beaten interpolation
+
+The reference region is fixed at 561 eligible cells from withheld real stereo obs_046. It is not a surveyed ground truth. The baseline completes the region using strict-stereo linear interpolation. For each video result, replace only accepted video cells, leaving linear interpolation everywhere else, then evaluate the whole same region. The linear baseline is 1.052 cm RMSE; IDW is 2.494 cm. Video plus linear fallback produces 3.710, 3.419 and 1.407 cm for the listed variants. Only 12 cells are shared by all three video support masks, and protocols/resolutions differ, so this is evidence against benefit in these tests, not a learned-model ranking. Retain both coverage and fixed-region error when testing learned outputs.
+
+Sources:
+- output/collaboration_review/2026-11-09/COMPARISON_FINDINGS.md
+- output/collaboration_review/2026-11-09/baseline_comparison/comparison.json
+
+## 11. The non-overlapping bridge is a conditional hypothesis
+
+The plot connects actual terrain from obs_033 and obs_034 using the documented command: 10° CCW then 4 m forward. The ideal planar translation is (3.939, 0.695) m in the assumed initial body frame. Image registration does not establish this relative pose. Shared height fitting estimates elevation and tilt conditional on the horizontal assumption, and the vertical fit reaches a search bound. The closed completion covers 49.98 m²: 9,872 strict cells, 253 relaxed cells, 994 consensus-video cells and 8,888 linear cells. Only 250 video-supported cells lie outside both endpoint hulls, or 0.625 m² of a 5.94 m² between-footprint region. This is a terrain hypothesis, not measured gap recovery.
+
+Sources:
+- output/pose_explanation/REPORT.md
+- output/chronological_video/mid036_model/metrics.json
+- output/chronological_video/REPORT.md
+
+## 12. Progress against the October 28 requests
+
+This table maps the provided October 28 meeting requests to the available evidence. Cross-frame reprojection exists but the negative controls expose missing dense-parallax acceptance. The actual reconstructed OBJ has been rendered for inspection, but there is no verified Blender import/real-versus-sim/navigation run in this evidence set. Earlier SAM2 masks exist, but no reviewed semantic priors are integrated. Twelve candidate generation families are listed in the appendix, but listing is not testing; more than ten completed method evaluations and an evidence-based choice remain outstanding. The status refers to artifacts available here and does not claim the colleague has done no work elsewhere.
+
+Sources:
+- output/collaboration_review/README.md
+- report_evidence/sam2_inventory.json
+- https://app.notion.com/p/Capstone-Meeting-w-Dr-Fan-4145a3b3d36181a5acd7c14988a2c0a8
+
+## 13. Next experiments and decision criteria
+
+The first priority is to harden the evaluation before accepting learned outputs: require per-cell geometric parallax and preserve temporal gaps; frozen images and crossfades must not be promoted as valid bridges. The colleague runs learned generators on their own GPU and returns a ZIP of videos, exact model/config/seed details and hashes. Independent review checks those results with the same evaluator and fixed reference split. Jarvis is available but not a dependency for that GPU work. Run more than ten distinct methods across both open and closed families with explicit conditioning tiers. Wan/VACE is an implementation candidate, not a benchmark winner. Independently, the navigation owner should import the actual closed mesh in Blender and reproduce the traversability failure. Only after the generator comparison should a reconstruction-model ablation change the current baseline.
+
+Sources:
+- output/collaboration_review/negative_controls_2026-11-09/FINDINGS.md
+- output/collaboration_handoff
+- output/chronological_video/REPORT.md
+
+## 14. Camera calibration, units and acquisition assumptions
+
+The current working scale follows the LPSC abstract’s nominal 240 mm camera baseline and the calibration baseline of 242.0594 units interpreted as mm. New terrain_*_m.obj exports already use metres and should not be scaled by 0.001 again. Older per-frame files named calibration_units require the documented conversion. The calibration is a fixed rig model; differing timestamps create an unverified stationary-rover assumption. Absolute lunar position and gravity are not recovered from these records.
+
+Sources:
+- TERRAIN_COMPLETION.md
+- RECONSTRUCTION_REPORT.md
+- C:/Users/rhunt/Downloads/1180 Digital Elevation Model Generation from Navigation Cameras.pdf
+
+## 15. Strict stereo and the gated relaxed completion
+
+These are the real-imagery completion settings, separate from the generated-image sweep. Both retain the fixed-camera geometry admission and real raw-information mask. Relaxed candidates may only add empty grid cells after spatial and height gating. Strict occupied medians remain unchanged. The baseline dense disparity floor of 16 px differs from the 32 px floor in the final support-filtered batch; name the stage when reporting it.
+
+Sources:
+- TERRAIN_COMPLETION.md
+- RECONSTRUCTION_REPORT.md
+
+## 16. Registration supports local groups, not a global map
+
+The 50 accepted local frames form 37 disconnected components: six multi-image groups and 31 singletons. Mutual SIFT matches use a 0.75 ratio threshold. Correspondences with valid depth enter PnP; 20% are held out. Gates require at least 30 depth correspondences, 20 inliers, 50% inlier fraction, held-out median error ≤2 px and p90 ≤4 px, 120 px span in both axes, positive depth, eight target-depth checks and median relative 3D discrepancy ≤3%. Example 044→047 has 135 matches, 55 depth correspondences, 44 inliers and 11 held-out points. Its median 0.489 px, p90 0.761 px and 1.85% median relative 3D discrepancy measure consistency, not external accuracy.
+
+Sources:
+- RECONSTRUCTION_REPORT.md
+- output/pose_explanation/figure_provenance.json
+- artifacts/runs/r12_registration/component_obs_044/camera_trajectory.json
+
+## 17. Generated stereo: what each relaxation changes
+
+The generated diagnostic gate was deliberately relaxed to at least 16 matches, median row error ≤30 px and p90 ≤60 px. The production gate remains at least 40 matches, median ≤1 px and p90 ≤2 px. These settings admit a computation; they cannot make horizontal SGBM search different image rows. No-checks still requires positive disparity, image bounds, rectification overlap and the search range. Row adjustment changes alignment through a fitted vertical warp. All generated meshes remain in arbitrary baseline units.
+
+Sources:
+- output/uber_relaxed/REPORT.md
+
+## 18. Generated stereo: accepted pixels and disparity
+
+Trial 1, full seven-profile comparison. Top: white pixels are accepted; black pixels rejected. Bottom: disparity is shown from 0–512 px, with white indicating invalid pixels. Percentages divide by the whole image, including sky. They are not terrain coverage or accuracy. Thick bands and regions near the disparity limits indicate failures. Row adjustment materially improves held-out feature disparity on these images, but provides no 3D ground truth.
+
+Sources:
+- output/uber_relaxed/REPORT.md
+- output/uber_relaxed/stereo_trial_1/comparison.png
+
+## 19. Generated stereo: full geometry from all seven tests
+
+These are actual renders of the experimental OBJ geometry for all seven trial-1 profiles. No outlier cropping, hole filling or manual smoothing was used to improve the previews. Keep OBJ, MTL and texture files together when viewing. The geometry is in arbitrary baseline units and consists of open experimental surfaces. Dense coverage and largest-component fraction should be interpreted alongside held-out image agreement.
+
+Sources:
+- output/uber_relaxed/REPORT.md
+- output/uber_relaxed/stereo_trial_1/renders/all_seven_meshes.png
+
+## 20. Procedural generation and independent reconstruction
+
+Generation begins with accepted endpoint stereo and a relative pose or conditional prior. A 5 cm textured heightfield with stochastic relief in holes is rendered along 33 poses. Reconstruction uses decoded frames, intrinsics, estimated or provided poses and support, not generator depths. Sparse outer-view triangulation with middle-view reprojection and dense height-plane sweeps supply candidate heights. A ±0.20 m envelope around endpoint interpolation limits outliers. Consensus requires at least two of three seeds to agree within 4 cm. Strict stereo wins; gated real relaxed stereo can add cells; consensus video fills unmeasured cells; linear interpolation fills the remainder. This is image-driven but still prior-conditioned.
+
+Sources:
+- output/chronological_video/REPORT.md
+- reconstruction/video_bridge.py
+- reconstruction/video_triangulate.py
+- reconstruction/video_integrate.py
+
+## 21. Video reconstruction: additional controlled tests
+
+All results are procedural, not learned. Height RMSE compares video and baselines on the same scored cells within each row. Rows use different splits and cannot rank methods directly. The 0.5 m and 1 m depth-hole cases retain photographs and poses estimated before masking depth; they are not whole-observation holdouts. The 045→048 case had only four scored cells and is not included as an accuracy claim. The reference is noisy stereo reconstruction, not survey truth.
+
+Sources:
+- output/chronological_video/REPORT.md
+- output/collaboration_review/v2_control_2026-11-09/evaluation/metrics.json
+
+## 22. Negative controls expose an acceptance gap
+
+A 33-frame frozen clip repeats the first endpoint, including its final frame. All 31 unconditioned poses pass PnP, but there are zero sparse triangulated points. The dense route adds four cells, none overlapping the reference. A crossfade has 24/31 accepted poses, 292 sparse points, 49 candidate cells and just one of 561 scored reference cells. Its estimated camera jumps 0.887 m over an eight-frame index gap. The current pipeline can export candidate meshes with success status, so downstream checks must prevent promotion of these invalid traversal controls. Add per-cell parallax and ray-geometry checks and retain original indices. A valid stationary-camera pose does not imply useful triangulation.
+
+Sources:
+- output/collaboration_review/negative_controls_2026-11-09/FINDINGS.md
+- output/collaboration_review/negative_controls_2026-11-09/negative_control_review.json
+
+## 23. A good height fit can coexist with wrong placement
+
+Independent review examined nine illustrative command variants: distances of 3.5, 4 and 4.5 m, each at turns of 5, 10 and 15 degrees. These are sensitivity cases, not measured confidence intervals. Six height fits pass and five hit vertical bounds. The 4 m / 5° case has 1.13 cm median height residual but 0.997 m p90 displacement from nominal placement. The 4.5 m / 5° case has 0.71 cm residual and 1.188 m displacement. The 15° cases lack shared support. Height agreement alone cannot identify horizontal pose or yaw. Choosing the best surface fit would require independent constraints.
+
+Sources:
+- output/collaboration_review/pose_sensitivity_2026-11-09/FINDINGS.md
+- output/collaboration_review/pose_sensitivity_2026-11-09/pose_sensitivity.csv
+
+## 24. How the documentary pose prior was constructed
+
+Revised SIS Appendix I places MID 036 at day 243, 12:20:00 on 31 August 2023: turn 10° CCW and drive 4 m. The obs_033 left timestamp is 08:13:01.9172; obs_034 is 13:04:31.6922. Their ordering brackets the command but does not prove achieved odometry. Ideal planar translation is (4 cos10°, 4 sin10°). The conditional terrain fit gives a +0.409444726 m vertical offset and tilt rotation-vector components (-2.871°, -0.913°); its vertical parameter reaches a lower bound. Camera mounting offset and rectification are included when converting body to camera poses. Intermediate turn/drive timing is assumed.
+
+Sources:
+- output/pose_explanation/REPORT.md
+- chandrayaan-3-documentation/nav/document/ch3_nav_pds_dp_archive_sis.pdf
+
+## 25. Completion validation with hidden terrain disks
+
+Remove physical disks from strict observed height cells, exclude relaxed stereo, interpolate from the remaining strict cells and compare against withheld heights. Test up to 16 random and 16 relief-targeted centers per diameter, spaced at least 30 cm. Patches can overlap and are not independent samples. Predictions outside the training hull are excluded. Error ranges across obs_003, 029 and 034 show agreement on small gaps in observed terrain, but do not bound errors for inherently hidden rocks or craters. The largest discrepancy, 14.77 cm, occurred in a relief-targeted 1 m disk in obs_029.
+
+Sources:
+- TERRAIN_COMPLETION.md
+- artifacts/runs/r15_terrain_completion/summary.json
+
+## 26. Blender and traversability: evidence and diagnosis plan
+
+There is no verified Blender import or planner output in this workspace evidence set. The reported lack of valid traversability still needs to be reproduced with the actual mesh. The largest obs_044 top has p95 slope 30.2069° and maximum 78.5150°, relative to nominal rover-up rather than measured gravity. Artificial walls and undersides are closure geometry and should not be treated as drivable terrain. Long fill distances can hide obstacles. Import terrain_closed_m.obj at scale 1, verify its 11.4 × 11.6 × 3.109 m bounding box, isolate the top, check normals and degenerate faces, then apply actual planner parameters incrementally and count rejection reasons. These are diagnostic hypotheses, not a confirmed root cause.
+
+Sources:
+- output/largest_terrain/component_obs_044/metrics.json
+- output/closed_terrain/obs_034/validation.json
+
+## 27. SAM2 proposals exist; geometric priors remain a plan
+
+The September 30 inventory found 224 CSV files and previews with 843 binary mask proposals across calibrated/raw left/right products. These are 224 image products from 56 stereo observations, not independent new views. Every manual-class field was blank; six image products had no retained masks. Binary geometry and CSV checks passed, but semantic quality was not evaluated. The current script uses SAM2.1 Hiera Tiny, 16 points per side, batch size 8, predicted IoU 0.8, stability 0.95 and minimum area 25 pixels; historical configuration hashes are unavailable. Next review classes and missed small rocks, associate reliable stereo depth and deduplicate objects. Statistical priors in unknown regions must remain distinguished from measured obstacles.
+
+Sources:
+- report_evidence/sam2_inventory.json
+- report_evidence/sam2_output_checks.json
+- MIDTERM_REVISION_NOTES.md
+
+## 28. Open-model candidates for the required broad evaluation
+
+This is a screening slate, not completed experiments or a ranking. Count distinct generator families rather than multiple checkpoints as distinct methods. Wan/VACE is the first configured candidate and has no returned evaluated result yet. Open-weight/code terms and conditioning capabilities vary by checkpoint. Pin exact versions, licenses and adapters before testing. Some families may lack matched endpoint conditioning and belong in a separate qualitative tier. Replace ineligible candidates until more than ten methods have actual completed tests.
+
+Sources:
+- https://github.com/ali-vilab/VACE
+- https://github.com/Lightricks/LTX-Video
+- https://github.com/Tencent-Hunyuan/HunyuanVideo-I2V
+- https://github.com/zai-org/CogVideo
+- https://github.com/Stability-AI/generative-models
+- https://github.com/hpcaitech/Open-Sora
+- https://github.com/genmoai/mochi
+
+## 29. Closed-model candidates and a fair comparison
+
+These five families make twelve screening candidates in total. Verify the exact offering, endpoint conditioning and account access at test time. Public documentation confirms the families, not availability on our accounts. Replace ineligible methods, then complete more than ten distinct method tests including open and closed models. Use identical real inputs and prompts where possible. Separate one-endpoint, two-endpoint and pose-anchor tiers; preserve original outputs and define common decoded frame sets. Run three trials per method and scenario, with seeds when available and recorded nondeterminism otherwise. Record cost, runtime and failures alongside visual quality, pose consistency, coverage and error. Wan is not preferred until the evidence supports it.
+
+Sources:
+- https://runway.com/
+- https://deepmind.google/models/veo/
+- https://ir.kuaishou.com/node/11216/pdf
+- https://docs.lumalabs.ai/reference/creategeneration
+- https://www.adobe.com/products/firefly/features/ai-video-generator.html
+
+## 30. Promotion gates and division of remaining work
+
+Ownership reflects the agreed arrangement: the colleague uses their GPU for learned generation and owns implementation; independent review handles returned ZIP metrics, fixtures and reporting. No navigation owner is assigned by name. The ZIP should include original videos, exact model revision, configuration, prompt, seeds, input hashes, conditioned frame indices, inference environment and logs. Verify per-cell support, common frames, unique-seed fusion, hash binding and unchanged strict stereo. Require adequate reference coverage and no degradation against the fixed-region baseline; a numeric minimum coverage threshold has not yet been validated. Reprojection alone cannot separate pose and depth error: hold one fixed and perturb the other, first with known synthetic geometry and then a real holdout. Unobserved regions remain hypotheses even if checks pass.
+
+Sources:
+- output/collaboration_review/README.md
+- output/collaboration_review/2026-11-09/REVIEW.md
+- output/collaboration_review/negative_controls_2026-11-09/FINDINGS.md
+
+## 31. Stereo depth and the support-filtered output
+
+Rectification aligns epipolar search along image rows using the calibrated cameras. SGBM estimates horizontal disparity d. In the rectified pinhole model, depth Z = fB/d, with focal length f in pixels and baseline B in consistent length units. Small disparities are particularly sensitive to disparity error. Brightness, texture, raw-information and left–right checks reject unreliable pixels. The later support filter removes weak local agreement and small components; neighbouring accepted samples form triangles only when depth jumps and edge lengths are sufficiently small. The figure is the actual final filtered obs_034 diagnostic, not a fabricated depth map. It shows why high-density-looking source imagery can still yield disconnected geometry.
+
+Sources:
+- artifacts/runs/r11_filtered_batch/obs_034/filtered_diagnostics.png
+- artifacts/runs/r11_filtered_batch/obs_034/metrics.json
+- RECONSTRUCTION_REPORT.md
+
+## 32. Completed bridge: observed and inferred terrain
+
+This is the actual integrated upper surface for the conditional 033→034 bridge. The grid retains explicit provenance: 9,872 strict stereo cells, 253 gated relaxed stereo cells, 994 consensus-video cells and 8,888 linear-interpolation cells. Those counts sum to 20,007 cells; the projected top-triangle area is 49.98125 m² and differs from simply multiplying every vertex cell by grid-cell area. An artificial base and sidewalls yield a closed OBJ with 40,014 vertices and 80,024 triangles. Topological checks find one component and zero boundary/nonmanifold edges or vertices. It remains a conditional, largely inferred terrain hypothesis. The grey completed path illustration elsewhere must not be mistaken for a recovered video surface.
+
+Sources:
+- output/chronological_video/mid036_model/metrics.json
+- output/chronological_video/figures/terrain_surface.png
+- output/chronological_video/REPORT.md

@@ -1,0 +1,2795 @@
+{
+  "observations": 56,
+  "reconstructions": 50,
+  "registered_component_count": 6,
+  "date_range": [
+    "20230823T1801171121",
+    "20230902T0858238377"
+  ],
+  "interpretations": [
+    "All positions are illustrative global placements, not solved rover telemetry or a surveyed lunar map.",
+    "MID001 date conflicts with DOY: use calendar 23 Aug, 19:06:36 (DOY235), not printed DOY236.",
+    "Other events use DOY/time; inconsistent calendar dates in MID038/042/043 are not used.",
+    "MID009 2..754m read as 2.754m; MID039 superscript-degree typography read as 70 degrees CW.",
+    "MID004 uses 30 degrees from Path; conflicting 40-degree slip formula and 31.5-degree VO are not substituted.",
+    "MID012 uses positive 1.758m as printed despite the retrace description; this is a known direction ambiguity.",
+    "MID010/011/046 have no executed path/time entries and add no separate motion; MID046 refers to MID047.",
+    "No extra final 90-degree parking turn is added beyond the listed MID047 imaging turns.",
+    "All motion planar, initial heading arbitrary +X, no slip; ramp projected horizontally. No global north or elevation is inferred.",
+    "Each image is associated with latest prior mobility timestamp; suffix IDs are not used as pose identifiers.",
+    "Within an event, distinct image times are associated in order with explicit NavCam checkpoints. If counts differ, a single time uses first checkpoint; multiple times evenly sample checkpoint indices. This is an acknowledged illustrative assignment.",
+    "Events without imaging checkpoints use assumed final pose; event times do not provide maneuver durations.",
+    "Existing registered components retain their internal relative transforms, but their global anchors inherit command uncertainty.",
+    "Only finite source stereo points 0.4-11m camera depth are displayed, up to 3500 points per reconstruction; six failed/absent reconstructions appear as hollow site markers.",
+    "This scenario is not installed as a reconstruction pose graph and must not be used as metric ground truth."
+  ],
+  "events": [
+    {
+      "mid": 1,
+      "time": "2023-08-23T19:06:36",
+      "start": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "end": [
+        2.949739481687753,
+        0.0,
+        0.0
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          2.2497394816877527
+        ],
+        [
+          "D",
+          0.7
+        ]
+      ]
+    },
+    {
+      "mid": 2,
+      "time": "2023-08-24T21:03:52",
+      "start": [
+        2.949739481687753,
+        0.0,
+        0.0
+      ],
+      "end": [
+        7.035497773900945,
+        -0.027696969015968933,
+        44.138
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          2.499
+        ],
+        [
+          "T",
+          -1
+        ],
+        [
+          "D",
+          1.587
+        ],
+        [
+          "T",
+          45.138
+        ]
+      ]
+    },
+    {
+      "mid": 3,
+      "time": "2023-08-25T18:59:06",
+      "start": [
+        7.035497773900945,
+        -0.027696969015968933,
+        44.138
+      ],
+      "end": [
+        10.964389333300907,
+        3.0846515962082837,
+        55.89
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          2.76
+        ],
+        [
+          "T",
+          -12.713
+        ],
+        [
+          "D",
+          2.283
+        ],
+        [
+          "T",
+          24.465
+        ]
+      ]
+    },
+    {
+      "mid": 4,
+      "time": "2023-08-26T17:43:00",
+      "start": [
+        10.964389333300907,
+        3.0846515962082837,
+        55.89
+      ],
+      "end": [
+        10.964389333300907,
+        3.0846515962082837,
+        85.89
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "T",
+          30
+        ]
+      ]
+    },
+    {
+      "mid": 5,
+      "time": "2023-08-27T03:40:00",
+      "start": [
+        10.964389333300907,
+        3.0846515962082837,
+        85.89
+      ],
+      "end": [
+        10.964389333300907,
+        3.0846515962082837,
+        85.89
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "T",
+          25
+        ],
+        [
+          "T",
+          -25
+        ]
+      ]
+    },
+    {
+      "mid": 6,
+      "time": "2023-08-27T16:00:50",
+      "start": [
+        10.964389333300907,
+        3.0846515962082837,
+        85.89
+      ],
+      "end": [
+        10.964389333300907,
+        3.0846515962082837,
+        55.89
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "T",
+          -30
+        ]
+      ]
+    },
+    {
+      "mid": 7,
+      "time": "2023-08-27T16:20:54",
+      "start": [
+        10.964389333300907,
+        3.0846515962082837,
+        55.89
+      ],
+      "end": [
+        10.729606729681922,
+        -1.9221217765354464,
+        93.068
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "T",
+          24.465
+        ],
+        [
+          "D",
+          -2.283
+        ],
+        [
+          "T",
+          12.713
+        ],
+        [
+          "D",
+          -2.76
+        ]
+      ]
+    },
+    {
+      "mid": 8,
+      "time": "2023-08-27T21:04:11",
+      "start": [
+        10.729606729681922,
+        -1.9221217765354464,
+        93.068
+      ],
+      "end": [
+        10.729606729681922,
+        -1.9221217765354464,
+        129.06799999999998
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "T",
+          36
+        ]
+      ]
+    },
+    {
+      "mid": 9,
+      "time": "2023-08-28T05:39:13",
+      "start": [
+        10.729606729681922,
+        -1.9221217765354464,
+        129.06799999999998
+      ],
+      "end": [
+        8.013017232801785,
+        1.0037311837432452,
+        129.06799999999998
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          2.754
+        ],
+        [
+          "T",
+          12.168
+        ],
+        [
+          "D",
+          1.258
+        ],
+        [
+          "T",
+          -12.168
+        ]
+      ]
+    },
+    {
+      "mid": 12,
+      "time": "2023-08-28T17:15:00",
+      "start": [
+        8.013017232801785,
+        1.0037311837432452,
+        129.06799999999998
+      ],
+      "end": [
+        8.377936471826644,
+        -0.03376190661687484,
+        129.06799999999998
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          -2.754
+        ],
+        [
+          "T",
+          12.168
+        ],
+        [
+          "D",
+          1.758
+        ],
+        [
+          "T",
+          -12.168
+        ]
+      ]
+    },
+    {
+      "mid": 13,
+      "time": "2023-08-28T20:20:09",
+      "start": [
+        8.377936471826644,
+        -0.03376190661687484,
+        129.06799999999998
+      ],
+      "end": [
+        8.69305761333293,
+        -0.42196116753293395,
+        129.06799999999998
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          -0.5
+        ]
+      ]
+    },
+    {
+      "mid": 14,
+      "time": "2023-08-29T05:20:00",
+      "start": [
+        8.69305761333293,
+        -0.42196116753293395,
+        129.06799999999998
+      ],
+      "end": [
+        9.008178754839218,
+        -0.8101604284489932,
+        -230.93200000000002
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "T",
+          -180
+        ],
+        [
+          "D",
+          0.5
+        ],
+        [
+          "T",
+          -90
+        ],
+        [
+          "T",
+          -90
+        ]
+      ]
+    },
+    {
+      "mid": 15,
+      "time": "2023-08-29T08:39:30",
+      "start": [
+        9.008178754839218,
+        -0.8101604284489932,
+        -230.93200000000002
+      ],
+      "end": [
+        9.008178754839218,
+        -0.8101604284489932,
+        -195.93200000000002
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "T",
+          35
+        ]
+      ]
+    },
+    {
+      "mid": 16,
+      "time": "2023-08-29T15:43:00",
+      "start": [
+        9.008178754839218,
+        -0.8101604284489932,
+        -195.93200000000002
+      ],
+      "end": [
+        9.969766906707015,
+        -1.0846567420626245,
+        -195.93200000000002
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          -1
+        ]
+      ]
+    },
+    {
+      "mid": 17,
+      "time": "2023-08-29T16:37:00",
+      "start": [
+        9.969766906707015,
+        -1.0846567420626245,
+        -195.93200000000002
+      ],
+      "end": [
+        10.931355058574812,
+        -1.3591530556762559,
+        -195.93200000000002
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          -1
+        ]
+      ]
+    },
+    {
+      "mid": 18,
+      "time": "2023-08-29T16:45:00",
+      "start": [
+        10.931355058574812,
+        -1.3591530556762559,
+        -195.93200000000002
+      ],
+      "end": [
+        11.89294321044261,
+        -1.6336493692898872,
+        -195.93200000000002
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          -1
+        ]
+      ]
+    },
+    {
+      "mid": 19,
+      "time": "2023-08-29T16:58:30",
+      "start": [
+        11.89294321044261,
+        -1.6336493692898872,
+        -195.93200000000002
+      ],
+      "end": [
+        12.854531362310407,
+        -1.9081456829035186,
+        -195.93200000000002
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          -1
+        ]
+      ]
+    },
+    {
+      "mid": 20,
+      "time": "2023-08-29T18:46:03",
+      "start": [
+        12.854531362310407,
+        -1.9081456829035186,
+        -195.93200000000002
+      ],
+      "end": [
+        13.335325438244306,
+        -2.0453938397103344,
+        -195.93200000000002
+      ],
+      "navcam_checkpoints": [
+        [
+          12.854531362310407,
+          -1.9081456829035186,
+          -375.932
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          -180
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "D",
+          0.5
+        ],
+        [
+          "T",
+          180
+        ]
+      ]
+    },
+    {
+      "mid": 21,
+      "time": "2023-08-29T21:51:00",
+      "start": [
+        13.335325438244306,
+        -2.0453938397103344,
+        -195.93200000000002
+      ],
+      "end": [
+        18.829782518706825,
+        -4.655839770586251,
+        -195.93200000000002
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          -2.587
+        ],
+        [
+          "T",
+          -16.361
+        ],
+        [
+          "D",
+          -3.557
+        ],
+        [
+          "T",
+          16.361
+        ]
+      ]
+    },
+    {
+      "mid": 22,
+      "time": "2023-08-29T23:18:00",
+      "start": [
+        18.829782518706825,
+        -4.655839770586251,
+        -195.93200000000002
+      ],
+      "end": [
+        19.310576594640725,
+        -4.793087927393067,
+        -195.93200000000002
+      ],
+      "navcam_checkpoints": [
+        [
+          18.829782518706825,
+          -4.655839770586251,
+          -375.932
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          -180
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "D",
+          0.5
+        ],
+        [
+          "T",
+          180
+        ]
+      ]
+    },
+    {
+      "mid": 23,
+      "time": "2023-08-30T01:58:00",
+      "start": [
+        19.310576594640725,
+        -4.793087927393067,
+        -195.93200000000002
+      ],
+      "end": [
+        19.310576594640725,
+        -4.793087927393067,
+        -195.93200000000002
+      ],
+      "navcam_checkpoints": [
+        [
+          19.310576594640725,
+          -4.793087927393067,
+          -225.93200000000002
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          -30
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          30
+        ]
+      ]
+    },
+    {
+      "mid": 24,
+      "time": "2023-08-30T03:14:00",
+      "start": [
+        19.310576594640725,
+        -4.793087927393067,
+        -195.93200000000002
+      ],
+      "end": [
+        24.570960321807327,
+        -6.39868614023754,
+        -195.93200000000002
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          -2.933
+        ],
+        [
+          "T",
+          -2.231
+        ],
+        [
+          "D",
+          -2.568
+        ],
+        [
+          "T",
+          2.231
+        ]
+      ]
+    },
+    {
+      "mid": 25,
+      "time": "2023-08-30T04:06:00",
+      "start": [
+        24.570960321807327,
+        -6.39868614023754,
+        -195.93200000000002
+      ],
+      "end": [
+        25.051754397741227,
+        -6.535934297044356,
+        -195.93200000000002
+      ],
+      "navcam_checkpoints": [
+        [
+          25.051754397741227,
+          -6.535934297044356,
+          -195.93200000000002
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          -180
+        ],
+        [
+          "D",
+          0.5
+        ],
+        [
+          "T",
+          180
+        ],
+        [
+          "N",
+          0
+        ]
+      ]
+    },
+    {
+      "mid": 26,
+      "time": "2023-08-30T04:59:00",
+      "start": [
+        25.051754397741227,
+        -6.535934297044356,
+        -195.93200000000002
+      ],
+      "end": [
+        25.051754397741227,
+        -6.535934297044356,
+        -195.93200000000002
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "T",
+          20
+        ],
+        [
+          "T",
+          -20
+        ]
+      ]
+    },
+    {
+      "mid": 27,
+      "time": "2023-08-30T10:43:00",
+      "start": [
+        25.051754397741227,
+        -6.535934297044356,
+        -195.93200000000002
+      ],
+      "end": [
+        30.958439681599042,
+        -7.702073145975838,
+        -179.87
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          -2.456
+        ],
+        [
+          "T",
+          8.031
+        ],
+        [
+          "D",
+          -3.579
+        ],
+        [
+          "T",
+          8.031
+        ]
+      ]
+    },
+    {
+      "mid": 28,
+      "time": "2023-08-30T11:38:30",
+      "start": [
+        30.958439681599042,
+        -7.702073145975838,
+        -179.87
+      ],
+      "end": [
+        31.450645293210044,
+        -7.6141320526312635,
+        -179.87
+      ],
+      "navcam_checkpoints": [
+        [
+          31.450645293210044,
+          -7.6141320526312635,
+          -179.87
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          -170
+        ],
+        [
+          "D",
+          0.5
+        ],
+        [
+          "T",
+          170
+        ],
+        [
+          "N",
+          0
+        ]
+      ]
+    },
+    {
+      "mid": 29,
+      "time": "2023-08-30T14:09:00",
+      "start": [
+        31.450645293210044,
+        -7.6141320526312635,
+        -179.87
+      ],
+      "end": [
+        37.6330110221408,
+        -4.935899617125366,
+        -112.47900000000003
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          -2.591
+        ],
+        [
+          "T",
+          16.604
+        ],
+        [
+          "D",
+          -2.379
+        ],
+        [
+          "T",
+          39.812
+        ],
+        [
+          "D",
+          -2.382
+        ],
+        [
+          "T",
+          10.975
+        ]
+      ]
+    },
+    {
+      "mid": 30,
+      "time": "2023-08-30T14:37:00",
+      "start": [
+        37.6330110221408,
+        -4.935899617125366,
+        -112.47900000000003
+      ],
+      "end": [
+        37.44183862857374,
+        -5.397909482753624,
+        -112.47900000000004
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "T",
+          -180
+        ],
+        [
+          "D",
+          -0.5
+        ],
+        [
+          "T",
+          180
+        ]
+      ]
+    },
+    {
+      "mid": 31,
+      "time": "2023-08-30T18:36:00",
+      "start": [
+        37.44183862857374,
+        -5.397909482753624,
+        -112.47900000000004
+      ],
+      "end": [
+        40.84439636907728,
+        -0.31308576461843785,
+        -112.47900000000004
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "D",
+          -2.545
+        ],
+        [
+          "T",
+          -8.381
+        ],
+        [
+          "D",
+          -2.037
+        ],
+        [
+          "T",
+          -23.724
+        ],
+        [
+          "D",
+          -1.699
+        ],
+        [
+          "T",
+          32.105
+        ]
+      ]
+    },
+    {
+      "mid": 32,
+      "time": "2023-08-30T19:23:07",
+      "start": [
+        40.84439636907728,
+        -0.31308576461843785,
+        -112.47900000000004
+      ],
+      "end": [
+        41.03556876264434,
+        0.14892410100982006,
+        -112.47900000000004
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "T",
+          -180
+        ],
+        [
+          "D",
+          0.5
+        ],
+        [
+          "T",
+          180
+        ]
+      ]
+    },
+    {
+      "mid": 33,
+      "time": "2023-08-31T00:52:00",
+      "start": [
+        41.03556876264434,
+        0.14892410100982006,
+        -112.47900000000004
+      ],
+      "end": [
+        41.572559215798805,
+        0.992512420761203,
+        -122.47900000000004
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "T",
+          -10
+        ],
+        [
+          "D",
+          -1
+        ]
+      ]
+    },
+    {
+      "mid": 34,
+      "time": "2023-08-31T05:00:00",
+      "start": [
+        41.572559215798805,
+        0.992512420761203,
+        -122.47900000000004
+      ],
+      "end": [
+        42.015979982747396,
+        1.2235492650928506,
+        -122.47900000000004
+      ],
+      "navcam_checkpoints": [
+        [
+          41.572559215798805,
+          0.992512420761203,
+          27.520999999999958
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          150
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "D",
+          0.5
+        ],
+        [
+          "T",
+          -150
+        ]
+      ]
+    },
+    {
+      "mid": 35,
+      "time": "2023-08-31T08:07:30",
+      "start": [
+        42.015979982747396,
+        1.2235492650928506,
+        -122.47900000000004
+      ],
+      "end": [
+        42.284475209324626,
+        1.6453434249685421,
+        -82.47900000000004
+      ],
+      "navcam_checkpoints": [
+        [
+          42.284475209324626,
+          1.6453434249685421,
+          -82.47900000000004
+        ]
+      ],
+      "commands": [
+        [
+          "D",
+          -0.5
+        ],
+        [
+          "T",
+          40
+        ],
+        [
+          "N",
+          0
+        ]
+      ]
+    },
+    {
+      "mid": 36,
+      "time": "2023-08-31T12:20:00",
+      "start": [
+        42.284475209324626,
+        1.6453434249685421,
+        -82.47900000000004
+      ],
+      "end": [
+        43.488696548596515,
+        -2.169083264069041,
+        -72.47900000000004
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "T",
+          10
+        ],
+        [
+          "D",
+          4
+        ]
+      ]
+    },
+    {
+      "mid": 37,
+      "time": "2023-08-31T16:39:00",
+      "start": [
+        43.488696548596515,
+        -2.169083264069041,
+        -72.47900000000004
+      ],
+      "end": [
+        42.284475209324626,
+        1.6453434249685421,
+        -72.47900000000004
+      ],
+      "navcam_checkpoints": [
+        [
+          42.284475209324626,
+          1.6453434249685421,
+          -112.47900000000004
+        ]
+      ],
+      "commands": [
+        [
+          "D",
+          -4
+        ],
+        [
+          "T",
+          -40
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          40
+        ]
+      ]
+    },
+    {
+      "mid": 38,
+      "time": "2023-08-31T21:28:00",
+      "start": [
+        42.284475209324626,
+        1.6453434249685421,
+        -72.47900000000004
+      ],
+      "end": [
+        39.99491707767171,
+        0.11921302407608181,
+        -72.47900000000004
+      ],
+      "navcam_checkpoints": [
+        [
+          39.99491707767171,
+          0.11921302407608181,
+          -162.47900000000004
+        ],
+        [
+          39.99491707767171,
+          0.11921302407608181,
+          -142.47900000000004
+        ],
+        [
+          39.99491707767171,
+          0.11921302407608181,
+          -122.47900000000004
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          -40
+        ],
+        [
+          "D",
+          1
+        ],
+        [
+          "T",
+          -50
+        ],
+        [
+          "D",
+          2
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          20
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          20
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          50
+        ]
+      ]
+    },
+    {
+      "mid": 39,
+      "time": "2023-09-01T01:20:00",
+      "start": [
+        39.99491707767171,
+        0.11921302407608181,
+        -72.47900000000004
+      ],
+      "end": [
+        38.408656749089786,
+        -1.0988913105222224,
+        -72.47900000000004
+      ],
+      "navcam_checkpoints": [
+        [
+          38.408656749089786,
+          -1.0988913105222224,
+          -117.47900000000004
+        ],
+        [
+          38.408656749089786,
+          -1.0988913105222224,
+          -97.47900000000004
+        ],
+        [
+          38.408656749089786,
+          -1.0988913105222224,
+          -72.47900000000004
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          -70
+        ],
+        [
+          "D",
+          2
+        ],
+        [
+          "T",
+          25
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          20
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          25
+        ],
+        [
+          "N",
+          0
+        ]
+      ]
+    },
+    {
+      "mid": 40,
+      "time": "2023-09-01T05:40:00",
+      "start": [
+        38.408656749089786,
+        -1.0988913105222224,
+        -72.47900000000004
+      ],
+      "end": [
+        37.50758807770516,
+        -3.9603726138770323,
+        -27.479000000000042
+      ],
+      "navcam_checkpoints": [
+        [
+          37.50758807770516,
+          -3.9603726138770323,
+          -37.47900000000004
+        ],
+        [
+          37.50758807770516,
+          -3.9603726138770323,
+          -17.479000000000042
+        ],
+        [
+          37.50758807770516,
+          -3.9603726138770323,
+          2.520999999999958
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          -35
+        ],
+        [
+          "D",
+          3
+        ],
+        [
+          "T",
+          70
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          20
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          20
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          -30
+        ]
+      ]
+    },
+    {
+      "mid": 41,
+      "time": "2023-09-01T12:55:00",
+      "start": [
+        37.50758807770516,
+        -3.9603726138770323,
+        -27.479000000000042
+      ],
+      "end": [
+        38.85930885468326,
+        -5.434431954977555,
+        -27.479000000000042
+      ],
+      "navcam_checkpoints": [
+        [
+          38.85930885468326,
+          -5.434431954977555,
+          -47.47900000000004
+        ],
+        [
+          38.85930885468326,
+          -5.434431954977555,
+          -27.479000000000042
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          -20
+        ],
+        [
+          "D",
+          2
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          20
+        ],
+        [
+          "N",
+          0
+        ]
+      ]
+    },
+    {
+      "mid": 42,
+      "time": "2023-09-01T18:30:31",
+      "start": [
+        38.85930885468326,
+        -5.434431954977555,
+        -27.479000000000042
+      ],
+      "end": [
+        39.24233088087105,
+        -6.358171164633072,
+        -27.479000000000042
+      ],
+      "navcam_checkpoints": [
+        [
+          39.24233088087105,
+          -6.358171164633072,
+          -67.47900000000004
+        ],
+        [
+          39.24233088087105,
+          -6.358171164633072,
+          -47.47900000000004
+        ],
+        [
+          39.24233088087105,
+          -6.358171164633072,
+          -27.479000000000042
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          -40
+        ],
+        [
+          "D",
+          1
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          20
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          20
+        ],
+        [
+          "N",
+          0
+        ]
+      ]
+    },
+    {
+      "mid": 43,
+      "time": "2023-09-01T22:13:00",
+      "start": [
+        39.24233088087105,
+        -6.358171164633072,
+        -27.479000000000042
+      ],
+      "end": [
+        41.10471151613325,
+        -12.082849179106931,
+        -27.479000000000042
+      ],
+      "navcam_checkpoints": [
+        [
+          41.10471151613325,
+          -12.082849179106931,
+          -71.97900000000004
+        ],
+        [
+          41.10471151613325,
+          -12.082849179106931,
+          -91.97900000000004
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          -44.5
+        ],
+        [
+          "D",
+          6.02
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          -20
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          64.5
+        ]
+      ]
+    },
+    {
+      "mid": 44,
+      "time": "2023-09-02T01:47:00",
+      "start": [
+        41.10471151613325,
+        -12.082849179106931,
+        -27.479000000000042
+      ],
+      "end": [
+        42.17592167501373,
+        -16.987225673169277,
+        -27.479000000000045
+      ],
+      "navcam_checkpoints": [
+        [
+          42.17592167501373,
+          -16.987225673169277,
+          -77.67900000000004
+        ],
+        [
+          42.17592167501373,
+          -16.987225673169277,
+          -97.67900000000004
+        ],
+        [
+          42.17592167501373,
+          -16.987225673169277,
+          -57.679000000000045
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          -50.2
+        ],
+        [
+          "D",
+          5.02
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          -20
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          40
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          30.2
+        ]
+      ]
+    },
+    {
+      "mid": 45,
+      "time": "2023-09-02T05:51:00",
+      "start": [
+        42.17592167501373,
+        -16.987225673169277,
+        -27.479000000000045
+      ],
+      "end": [
+        43.24286406433692,
+        -21.872062818649702,
+        -27.479000000000042
+      ],
+      "navcam_checkpoints": [],
+      "commands": [
+        [
+          "T",
+          -50.2
+        ],
+        [
+          "D",
+          5
+        ],
+        [
+          "T",
+          -50
+        ],
+        [
+          "T",
+          100.2
+        ]
+      ]
+    },
+    {
+      "mid": 47,
+      "time": "2023-09-02T08:42:00",
+      "start": [
+        43.24286406433692,
+        -21.872062818649702,
+        -27.479000000000042
+      ],
+      "end": [
+        43.02947558647228,
+        -20.895095389553617,
+        -217.67900000000003
+      ],
+      "navcam_checkpoints": [
+        [
+          43.02947558647228,
+          -20.895095389553617,
+          -127.67900000000004
+        ],
+        [
+          43.02947558647228,
+          -20.895095389553617,
+          -207.67900000000003
+        ],
+        [
+          43.02947558647228,
+          -20.895095389553617,
+          -227.67900000000003
+        ],
+        [
+          43.02947558647228,
+          -20.895095389553617,
+          -217.67900000000003
+        ]
+      ],
+      "commands": [
+        [
+          "T",
+          -50.2
+        ],
+        [
+          "D",
+          -1
+        ],
+        [
+          "T",
+          -50
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          -80
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          -20
+        ],
+        [
+          "N",
+          0
+        ],
+        [
+          "T",
+          10
+        ],
+        [
+          "N",
+          0
+        ]
+      ]
+    }
+  ],
+  "observations_detail": [
+    {
+      "observation": "obs_001",
+      "timestamp": "20230823T1801171121",
+      "file_sequence": "001",
+      "associated_mid": null,
+      "command_state": [
+        0,
+        0,
+        0
+      ],
+      "association": "Before first maneuver; arbitrary local origin",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        -0.01475594,
+        0.12424118
+      ]
+    },
+    {
+      "observation": "obs_002",
+      "timestamp": "20230824T1415115229",
+      "file_sequence": "002",
+      "associated_mid": 1,
+      "command_state": [
+        2.949739481687753,
+        0.0,
+        0.0
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        2.9349835416877528,
+        0.12424118
+      ]
+    },
+    {
+      "observation": "obs_003",
+      "timestamp": "20230825T1040153807",
+      "file_sequence": "003",
+      "associated_mid": 2,
+      "command_state": [
+        7.035497773900945,
+        -0.027696969015968933,
+        44.138
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_003",
+      "camera_xy_m": [
+        6.93838777670636,
+        0.05119065370105587
+      ]
+    },
+    {
+      "observation": "obs_004",
+      "timestamp": "20230825T1429025593",
+      "file_sequence": "003",
+      "associated_mid": 2,
+      "command_state": [
+        7.035497773900945,
+        -0.027696969015968933,
+        44.138
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_003",
+      "camera_xy_m": [
+        6.938640505120309,
+        0.0514258108359517
+      ]
+    },
+    {
+      "observation": "obs_005",
+      "timestamp": "20230825T1951116473",
+      "file_sequence": "003",
+      "associated_mid": 3,
+      "command_state": [
+        10.964389333300907,
+        3.0846515962082837,
+        55.89
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_005",
+      "camera_xy_m": [
+        10.853247410954213,
+        3.142106636632576
+      ]
+    },
+    {
+      "observation": "obs_006",
+      "timestamp": "20230826T1415013468",
+      "file_sequence": "004",
+      "associated_mid": 3,
+      "command_state": [
+        10.964389333300907,
+        3.0846515962082837,
+        55.89
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_005",
+      "camera_xy_m": [
+        10.852865296001978,
+        3.1420227349140877
+      ]
+    },
+    {
+      "observation": "obs_007",
+      "timestamp": "20230826T1910175356",
+      "file_sequence": "005",
+      "associated_mid": 4,
+      "command_state": [
+        10.964389333300907,
+        3.0846515962082837,
+        85.89
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        10.839410084911085,
+        3.078838159617835
+      ]
+    },
+    {
+      "observation": "obs_008",
+      "timestamp": "20230827T0344528296",
+      "file_sequence": "006",
+      "associated_mid": 5,
+      "command_state": [
+        10.964389333300907,
+        3.0846515962082837,
+        85.89
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        10.839410084911085,
+        3.078838159617835
+      ]
+    },
+    {
+      "observation": "obs_009",
+      "timestamp": "20230827T1810173096",
+      "file_sequence": "008",
+      "associated_mid": 7,
+      "command_state": [
+        10.729606729681922,
+        -1.9221217765354464,
+        93.068
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        10.606333376725585,
+        -1.943506093779123
+      ]
+    },
+    {
+      "observation": "obs_010",
+      "timestamp": "20230827T2210172456",
+      "file_sequence": "008",
+      "associated_mid": 8,
+      "command_state": [
+        10.729606729681922,
+        -1.9221217765354464,
+        129.06799999999998
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_010",
+      "camera_xy_m": [
+        10.642445878492842,
+        -2.011880311467066
+      ]
+    },
+    {
+      "observation": "obs_011",
+      "timestamp": "20230828T0555552932",
+      "file_sequence": "010",
+      "associated_mid": 9,
+      "command_state": [
+        8.013017232801785,
+        1.0037311837432452,
+        129.06799999999998
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        7.925856381612703,
+        0.9139726488116257
+      ]
+    },
+    {
+      "observation": "obs_012",
+      "timestamp": "20230828T1732047656",
+      "file_sequence": "013",
+      "associated_mid": 12,
+      "command_state": [
+        8.377936471826644,
+        -0.03376190661687484,
+        129.06799999999998
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_010",
+      "camera_xy_m": [
+        10.861211255841287,
+        -2.4620191732332173
+      ]
+    },
+    {
+      "observation": "obs_013",
+      "timestamp": "20230828T2026064296",
+      "file_sequence": "014",
+      "associated_mid": 13,
+      "command_state": [
+        8.69305761333293,
+        -0.42196116753293395,
+        129.06799999999998
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_010",
+      "camera_xy_m": [
+        11.1344955996378,
+        -2.8264180183364163
+      ]
+    },
+    {
+      "observation": "obs_014",
+      "timestamp": "20230829T0059424569",
+      "file_sequence": "013",
+      "associated_mid": 13,
+      "command_state": [
+        8.69305761333293,
+        -0.42196116753293395,
+        129.06799999999998
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_010",
+      "camera_xy_m": [
+        11.131458208655596,
+        -2.8241093191863484
+      ]
+    },
+    {
+      "observation": "obs_015",
+      "timestamp": "20230829T0528081571",
+      "file_sequence": "015",
+      "associated_mid": 14,
+      "command_state": [
+        9.008178754839218,
+        -0.8101604284489932,
+        -230.93200000000002
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": false,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        9.008178754839218,
+        -0.8101604284489932
+      ]
+    },
+    {
+      "observation": "obs_016",
+      "timestamp": "20230829T0537587495",
+      "file_sequence": "015",
+      "associated_mid": 14,
+      "command_state": [
+        9.008178754839218,
+        -0.8101604284489932,
+        -230.93200000000002
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        8.921017903650137,
+        -0.8999189633806128
+      ]
+    },
+    {
+      "observation": "obs_017",
+      "timestamp": "20230829T1712052122",
+      "file_sequence": "016",
+      "associated_mid": 19,
+      "command_state": [
+        12.854531362310407,
+        -1.9081456829035186,
+        -195.93200000000002
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        12.834616753475071,
+        -2.031664980699497
+      ]
+    },
+    {
+      "observation": "obs_018",
+      "timestamp": "20230829T1712052122",
+      "file_sequence": "021",
+      "associated_mid": 19,
+      "command_state": [
+        12.854531362310407,
+        -1.9081456829035186,
+        -195.93200000000002
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        12.834616753475071,
+        -2.031664980699497
+      ]
+    },
+    {
+      "observation": "obs_019",
+      "timestamp": "20230829T1915529319",
+      "file_sequence": "021",
+      "associated_mid": 20,
+      "command_state": [
+        12.854531362310407,
+        -1.9081456829035186,
+        -375.932
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        12.874445971145743,
+        -1.7846263851075403
+      ]
+    },
+    {
+      "observation": "obs_020",
+      "timestamp": "20230829T2211041576",
+      "file_sequence": "022",
+      "associated_mid": 21,
+      "command_state": [
+        18.829782518706825,
+        -4.655839770586251,
+        -195.93200000000002
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        18.80986790987149,
+        -4.779359068382229
+      ]
+    },
+    {
+      "observation": "obs_021",
+      "timestamp": "20230829T2326016296",
+      "file_sequence": "025",
+      "associated_mid": 22,
+      "command_state": [
+        18.829782518706825,
+        -4.655839770586251,
+        -375.932
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        18.84969712754216,
+        -4.532320472790273
+      ]
+    },
+    {
+      "observation": "obs_022",
+      "timestamp": "20230830T0201159336",
+      "file_sequence": "024",
+      "associated_mid": 23,
+      "command_state": [
+        19.310576594640725,
+        -4.793087927393067,
+        -225.93200000000002
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        19.231570388584906,
+        -4.890101472724332
+      ]
+    },
+    {
+      "observation": "obs_023",
+      "timestamp": "20230830T0411412160",
+      "file_sequence": "027",
+      "associated_mid": 25,
+      "command_state": [
+        25.051754397741227,
+        -6.535934297044356,
+        -195.93200000000002
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        25.03183978890589,
+        -6.659453594840334
+      ]
+    },
+    {
+      "observation": "obs_024",
+      "timestamp": "20230830T0500344616",
+      "file_sequence": "026",
+      "associated_mid": 26,
+      "command_state": [
+        25.051754397741227,
+        -6.535934297044356,
+        -195.93200000000002
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        25.03183978890589,
+        -6.659453594840334
+      ]
+    },
+    {
+      "observation": "obs_025",
+      "timestamp": "20230830T1142592296",
+      "file_sequence": "029",
+      "associated_mid": 28,
+      "command_state": [
+        31.450645293210044,
+        -7.6141320526312635,
+        -179.87
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        31.465683089281633,
+        -7.738339432695353
+      ]
+    },
+    {
+      "observation": "obs_026",
+      "timestamp": "20230830T1430486696",
+      "file_sequence": "024",
+      "associated_mid": 29,
+      "command_state": [
+        37.6330110221408,
+        -4.935899617125366,
+        -112.47900000000003
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        37.75345418063365,
+        -4.969767804932521
+      ]
+    },
+    {
+      "observation": "obs_027",
+      "timestamp": "20230830T1443301356",
+      "file_sequence": "031",
+      "associated_mid": 30,
+      "command_state": [
+        37.44183862857374,
+        -5.397909482753624,
+        -112.47900000000004
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        37.562281787066595,
+        -5.431777670560779
+      ]
+    },
+    {
+      "observation": "obs_028",
+      "timestamp": "20230830T1928548136",
+      "file_sequence": "032",
+      "associated_mid": 32,
+      "command_state": [
+        41.03556876264434,
+        0.14892410100982006,
+        -112.47900000000004
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        41.15601192113719,
+        0.11505591320266531
+      ]
+    },
+    {
+      "observation": "obs_029",
+      "timestamp": "20230830T2301162535",
+      "file_sequence": "030",
+      "associated_mid": 32,
+      "command_state": [
+        41.03556876264434,
+        0.14892410100982006,
+        -112.47900000000004
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_029",
+      "camera_xy_m": [
+        41.15601192113719,
+        0.11505591320266531
+      ]
+    },
+    {
+      "observation": "obs_030",
+      "timestamp": "20230831T0100412456",
+      "file_sequence": "024",
+      "associated_mid": 33,
+      "command_state": [
+        41.572559215798805,
+        0.992512420761203,
+        -122.47900000000004
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_029",
+      "camera_xy_m": [
+        41.64826479990445,
+        0.9390496122494126
+      ]
+    },
+    {
+      "observation": "obs_031",
+      "timestamp": "20230831T0100412456",
+      "file_sequence": "031",
+      "associated_mid": 33,
+      "command_state": [
+        41.572559215798805,
+        0.992512420761203,
+        -122.47900000000004
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_029",
+      "camera_xy_m": [
+        41.64814180207211,
+        0.9391336944714311
+      ]
+    },
+    {
+      "observation": "obs_032",
+      "timestamp": "20230831T0505275813",
+      "file_sequence": "035",
+      "associated_mid": 34,
+      "command_state": [
+        41.572559215798805,
+        0.992512420761203,
+        27.520999999999958
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": false,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        41.572559215798805,
+        0.992512420761203
+      ]
+    },
+    {
+      "observation": "obs_033",
+      "timestamp": "20230831T0813019172",
+      "file_sequence": "036",
+      "associated_mid": 35,
+      "command_state": [
+        42.284475209324626,
+        1.6453434249685421,
+        -82.47900000000004
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        42.405716138195054,
+        1.6762342931938319
+      ]
+    },
+    {
+      "observation": "obs_034",
+      "timestamp": "20230831T1304316922",
+      "file_sequence": "037",
+      "associated_mid": 36,
+      "command_state": [
+        43.488696548596515,
+        -2.169083264069041,
+        -72.47900000000004
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        43.60273141235664,
+        -2.1176084311865018
+      ]
+    },
+    {
+      "observation": "obs_035",
+      "timestamp": "20230831T1648126376",
+      "file_sequence": "038",
+      "associated_mid": 37,
+      "command_state": [
+        42.284475209324626,
+        1.6453434249685421,
+        -112.47900000000004
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        42.40491836781748,
+        1.6114752371613874
+      ]
+    },
+    {
+      "observation": "obs_036",
+      "timestamp": "20230831T2136041891",
+      "file_sequence": "039",
+      "associated_mid": 38,
+      "command_state": [
+        39.99491707767171,
+        0.11921302407608181,
+        -162.47900000000004
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": false,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        39.99491707767171,
+        0.11921302407608181
+      ]
+    },
+    {
+      "observation": "obs_037",
+      "timestamp": "20230831T2142009893",
+      "file_sequence": "029",
+      "associated_mid": 38,
+      "command_state": [
+        39.99491707767171,
+        0.11921302407608181,
+        -142.47900000000004
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 1,
+      "has_reconstruction": false,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        39.99491707767171,
+        0.11921302407608181
+      ]
+    },
+    {
+      "observation": "obs_038",
+      "timestamp": "20230831T2147105576",
+      "file_sequence": "031",
+      "associated_mid": 38,
+      "command_state": [
+        39.99491707767171,
+        0.11921302407608181,
+        -122.47900000000004
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 2,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        40.10764928485916,
+        0.0649446351583885
+      ]
+    },
+    {
+      "observation": "obs_039",
+      "timestamp": "20230901T0129543336",
+      "file_sequence": "040",
+      "associated_mid": 39,
+      "command_state": [
+        38.408656749089786,
+        -1.0988913105222224,
+        -117.47900000000004
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        38.52568977793794,
+        -1.1431279325870043
+      ]
+    },
+    {
+      "observation": "obs_040",
+      "timestamp": "20230901T0135213735",
+      "file_sequence": "040",
+      "associated_mid": 39,
+      "command_state": [
+        38.408656749089786,
+        -1.0988913105222224,
+        -97.47900000000004
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 1,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        38.53376163850547,
+        -1.100432484544509
+      ]
+    },
+    {
+      "observation": "obs_041",
+      "timestamp": "20230901T0213409576",
+      "file_sequence": "040",
+      "associated_mid": 39,
+      "command_state": [
+        38.408656749089786,
+        -1.0988913105222224,
+        -72.47900000000004
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 2,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        38.52269161284991,
+        -1.0474164776396833
+      ]
+    },
+    {
+      "observation": "obs_042",
+      "timestamp": "20230901T0550086695",
+      "file_sequence": "041",
+      "associated_mid": 40,
+      "command_state": [
+        37.50758807770516,
+        -3.9603726138770323,
+        -37.47900000000004
+      ],
+      "association": "AMBIGUOUS: imaging stages sampled in order; counts differ",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        37.57147521826795,
+        -3.8527991885165553
+      ]
+    },
+    {
+      "observation": "obs_043",
+      "timestamp": "20230901T0554005416",
+      "file_sequence": "042",
+      "associated_mid": 40,
+      "command_state": [
+        37.50758807770516,
+        -3.9603726138770323,
+        2.520999999999958
+      ],
+      "association": "AMBIGUOUS: imaging stages sampled in order; counts differ",
+      "navcam_checkpoint_index": 2,
+      "has_reconstruction": false,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        37.50758807770516,
+        -3.9603726138770323
+      ]
+    },
+    {
+      "observation": "obs_044",
+      "timestamp": "20230901T1301408296",
+      "file_sequence": "042",
+      "associated_mid": 41,
+      "command_state": [
+        38.85930885468326,
+        -5.434431954977555,
+        -47.47900000000004
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_044",
+      "camera_xy_m": [
+        38.94090533530652,
+        -5.339586697199557
+      ]
+    },
+    {
+      "observation": "obs_045",
+      "timestamp": "20230901T1312556972",
+      "file_sequence": "041",
+      "associated_mid": 41,
+      "command_state": [
+        38.85930885468326,
+        -5.434431954977555,
+        -27.479000000000042
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 1,
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_044",
+      "camera_xy_m": [
+        38.97666877326168,
+        -5.095323087848704
+      ]
+    },
+    {
+      "observation": "obs_046",
+      "timestamp": "20230901T1833314856",
+      "file_sequence": "043",
+      "associated_mid": 42,
+      "command_state": [
+        39.24233088087105,
+        -6.358171164633072,
+        -67.47900000000004
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_044",
+      "camera_xy_m": [
+        39.44678358457094,
+        -6.04719420049053
+      ]
+    },
+    {
+      "observation": "obs_047",
+      "timestamp": "20230901T1841159976",
+      "file_sequence": "034",
+      "associated_mid": 42,
+      "command_state": [
+        39.24233088087105,
+        -6.358171164633072,
+        -47.47900000000004
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 1,
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_044",
+      "camera_xy_m": [
+        39.58969060058837,
+        -5.941685378752438
+      ]
+    },
+    {
+      "observation": "obs_048",
+      "timestamp": "20230901T1846409360",
+      "file_sequence": "044",
+      "associated_mid": 42,
+      "command_state": [
+        39.24233088087105,
+        -6.358171164633072,
+        -27.479000000000042
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 2,
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_044",
+      "camera_xy_m": [
+        39.68552087575257,
+        -5.825676996616801
+      ]
+    },
+    {
+      "observation": "obs_049",
+      "timestamp": "20230901T2225595662",
+      "file_sequence": "044",
+      "associated_mid": 43,
+      "command_state": [
+        41.10471151613325,
+        -12.082849179106931,
+        -71.97900000000004
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        41.218292840838764,
+        -12.030381176941646
+      ]
+    },
+    {
+      "observation": "obs_050",
+      "timestamp": "20230901T2233168936",
+      "file_sequence": "044",
+      "associated_mid": 43,
+      "command_state": [
+        41.10471151613325,
+        -12.082849179106931,
+        -91.97900000000004
+      ],
+      "association": "NavCam stages assigned in timestamp order",
+      "navcam_checkpoint_index": 1,
+      "has_reconstruction": false,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        41.10471151613325,
+        -12.082849179106931
+      ]
+    },
+    {
+      "observation": "obs_051",
+      "timestamp": "20230902T0157006160",
+      "file_sequence": "045",
+      "associated_mid": 44,
+      "command_state": [
+        42.17592167501373,
+        -16.987225673169277,
+        -77.67900000000004
+      ],
+      "association": "AMBIGUOUS: imaging stages sampled in order; counts differ",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_051",
+      "camera_xy_m": [
+        42.29415251365013,
+        -16.946297964115274
+      ]
+    },
+    {
+      "observation": "obs_052",
+      "timestamp": "20230902T0202579496",
+      "file_sequence": "037",
+      "associated_mid": 44,
+      "command_state": [
+        42.17592167501373,
+        -16.987225673169277,
+        -57.679000000000045
+      ],
+      "association": "AMBIGUOUS: imaging stages sampled in order; counts differ",
+      "navcam_checkpoint_index": 2,
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_051",
+      "camera_xy_m": [
+        42.17984717353151,
+        -17.01160267602045
+      ]
+    },
+    {
+      "observation": "obs_053",
+      "timestamp": "20230902T0202579496",
+      "file_sequence": "045",
+      "associated_mid": 44,
+      "command_state": [
+        42.17592167501373,
+        -16.987225673169277,
+        -57.679000000000045
+      ],
+      "association": "AMBIGUOUS: imaging stages sampled in order; counts differ",
+      "navcam_checkpoint_index": 2,
+      "has_reconstruction": true,
+      "pose_source": "Registered relative pose within component; command-anchored globally",
+      "component_anchor": "obs_051",
+      "camera_xy_m": [
+        42.17990300672872,
+        -17.01168999103157
+      ]
+    },
+    {
+      "observation": "obs_054",
+      "timestamp": "20230902T0602577575",
+      "file_sequence": "046",
+      "associated_mid": 45,
+      "command_state": [
+        43.24286406433692,
+        -21.872062818649702,
+        -27.479000000000042
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        43.2871006864017,
+        -21.755029789801544
+      ]
+    },
+    {
+      "observation": "obs_055",
+      "timestamp": "20230902T0617542696",
+      "file_sequence": "038",
+      "associated_mid": 45,
+      "command_state": [
+        43.24286406433692,
+        -21.872062818649702,
+        -27.479000000000042
+      ],
+      "association": "Assumed end of latest maneuver; no sub-maneuver pose timestamp",
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        43.2871006864017,
+        -21.755029789801544
+      ]
+    },
+    {
+      "observation": "obs_056",
+      "timestamp": "20230902T0858238377",
+      "file_sequence": "047",
+      "associated_mid": 47,
+      "command_state": [
+        43.02947558647228,
+        -20.895095389553617,
+        -127.67900000000004
+      ],
+      "association": "AMBIGUOUS: imaging stages sampled in order; counts differ",
+      "navcam_checkpoint_index": 0,
+      "has_reconstruction": true,
+      "pose_source": "Command-based illustrative placement",
+      "camera_xy_m": [
+        43.13682534872102,
+        -20.959357642223562
+      ]
+    }
+  ],
+  "source_sha256": {
+    "chandrayaan-3-navcam-sorted\\stereo_pairs.csv": "35b32b2e6ddbf350f7007dcb069a9f9cf2a06c665bcc366f8709613a1d6ba1b7",
+    "artifacts\\runs\\r11_filtered_batch\\obs_001\\provenance.json": "449b794281d19ee426ac06f914d1176357f4dbb52b8b512913a6e3c21d37b92f",
+    "artifacts\\runs\\r11_filtered_batch\\obs_001\\xyz_rectified_calibration_units.npy": "20a0afe3ce927b85908fdf7e805bea3b094ec4c938bcba344cab7d6a240ea3d1",
+    "artifacts\\runs\\r11_filtered_batch\\obs_002\\provenance.json": "25d2275d0f6468be98c615c8ddb8456fc5ace8643505571bdf64a2a8bfeb2267",
+    "artifacts\\runs\\r11_filtered_batch\\obs_002\\xyz_rectified_calibration_units.npy": "22d9d0d6cfeaffd3d5d24e713a606943cb362f1e9cdea699f5fd087ade15ba2a",
+    "artifacts\\runs\\r11_filtered_batch\\obs_003\\provenance.json": "295621444ac532ef9512fcf588655a9427c10c84376f8775e68413fe53109402",
+    "artifacts\\runs\\r11_filtered_batch\\obs_003\\xyz_rectified_calibration_units.npy": "8678b12044f4e28055b149fe17af3935dcca61347a4deca52a435289e32c5ffb",
+    "artifacts\\runs\\r11_filtered_batch\\obs_004\\provenance.json": "57a814422288649d46510c9570ce116dac26b4511f8209f977b2718ffb2b8e4e",
+    "artifacts\\runs\\r11_filtered_batch\\obs_004\\xyz_rectified_calibration_units.npy": "bcd490954df23b5cc10cb991f2f4c4f32746595b910f25c04b6e85db301d2727",
+    "artifacts\\runs\\r11_filtered_batch\\obs_005\\provenance.json": "d5ecdee749fb4bf726cf9d18865d3934df1bf92996813439057015a7acc7f5be",
+    "artifacts\\runs\\r11_filtered_batch\\obs_005\\xyz_rectified_calibration_units.npy": "b537560bfffcc570eccf45cc1616957857a08ba8b93a34fd5911523441f44174",
+    "artifacts\\runs\\r11_filtered_batch\\obs_006\\provenance.json": "5144454b315e5abf2e9d3ff7e344cbc095e0f5379d28247d20707c9c61ce6fc1",
+    "artifacts\\runs\\r11_filtered_batch\\obs_006\\xyz_rectified_calibration_units.npy": "bcc765d0f1defd7df4f8949a30a2159244f62e9cd213a2459c6f41cd1bbcd581",
+    "artifacts\\runs\\r11_filtered_batch\\obs_007\\provenance.json": "be4d1104e92ffbdbc06f97c91faa70c3b9418bea507dca041a789c6edd969c1c",
+    "artifacts\\runs\\r11_filtered_batch\\obs_007\\xyz_rectified_calibration_units.npy": "afe8fcdf39b5ea1e67141796ad9e6759c124840889579bfa188e796545a1eba8",
+    "artifacts\\runs\\r11_filtered_batch\\obs_008\\provenance.json": "05dbb7d6a0c23b6a69ee3d60e679cd75db6aa625e9fd3ad9cd1d97211bda579f",
+    "artifacts\\runs\\r11_filtered_batch\\obs_008\\xyz_rectified_calibration_units.npy": "e1b9a8a0c38c645ce018d275c981c1aa3ef07a6ec2c917078ca33539387b69e0",
+    "artifacts\\runs\\r11_filtered_batch\\obs_009\\provenance.json": "16a197c885dc1f582bf300a2b7d79768606770c2ec08ad5c8f692cb2146be0a9",
+    "artifacts\\runs\\r11_filtered_batch\\obs_009\\xyz_rectified_calibration_units.npy": "bc896b1631e41cbc002f8eeb460a33d3217db257983f43b994dc3ce408888063",
+    "artifacts\\runs\\r11_filtered_batch\\obs_010\\provenance.json": "f0837af8145eeac343f1d29d7ba538931d355f171b70b406472fe6906444cf33",
+    "artifacts\\runs\\r11_filtered_batch\\obs_010\\xyz_rectified_calibration_units.npy": "1bc23e356bb86748a154454a3a6d399ba887f6b2b776d05b3dfff3a685a0f9ae",
+    "artifacts\\runs\\r11_filtered_batch\\obs_011\\provenance.json": "ddff0c9db35549293492367086857f1227969b9a0ed1ca5ddf7f7179f079a1a5",
+    "artifacts\\runs\\r11_filtered_batch\\obs_011\\xyz_rectified_calibration_units.npy": "6425b8cde7c43a969d389ada330762f6e43138de8e5605550c98f3c05aa2a34c",
+    "artifacts\\runs\\r11_filtered_batch\\obs_012\\provenance.json": "a7b7be29c1ce4025243d2a0d1381976fe2299acac6468bf54903c18be931a6b4",
+    "artifacts\\runs\\r11_filtered_batch\\obs_012\\xyz_rectified_calibration_units.npy": "a51f83b1592146f150d4a71a480d919ab4e6c2bdf2529cb360851e2bcf6f62a9",
+    "artifacts\\runs\\r11_filtered_batch\\obs_013\\provenance.json": "22fe00bd2c634ffc7eb8b329005f5de7c4f2c84d18529d3e951c3a58f9aaf9de",
+    "artifacts\\runs\\r11_filtered_batch\\obs_013\\xyz_rectified_calibration_units.npy": "0d74f2c614c03eb12beb245617cae52dca400b7da643d17c0599c8286d17ce8f",
+    "artifacts\\runs\\r11_filtered_batch\\obs_014\\provenance.json": "416f297d32495ce51ff51f7901d353a2e24cf1aab1fa74ce4351acacc81ad0c2",
+    "artifacts\\runs\\r11_filtered_batch\\obs_014\\xyz_rectified_calibration_units.npy": "000a1f88846eb7bca088ed4d8c1cf97413c9b0faf515e20542a929305422c5ec",
+    "artifacts\\runs\\r11_filtered_batch\\obs_016\\provenance.json": "c35a8022f88dbb41705312f444f46532ceb37b0f4b3895ccedba9335055ec936",
+    "artifacts\\runs\\r11_filtered_batch\\obs_016\\xyz_rectified_calibration_units.npy": "2a30ce40301ae5b8b698e29d2f88130a2d140a931472fe7d3538892a77007c21",
+    "artifacts\\runs\\r11_filtered_batch\\obs_017\\provenance.json": "51c58de311db3d6b1dd4741ff520b7c280e2f32dec3218952bc3a1643e5db4b9",
+    "artifacts\\runs\\r11_filtered_batch\\obs_017\\xyz_rectified_calibration_units.npy": "1920fffbe4bb625136aec177a881e167722ac046e6b9ed20f325d003bcbea3ab",
+    "artifacts\\runs\\r11_filtered_batch\\obs_018\\provenance.json": "f2dac05b49550440e210f0246b3b1995ac2b9f6115d38b94a19fba9138f9f564",
+    "artifacts\\runs\\r11_filtered_batch\\obs_018\\xyz_rectified_calibration_units.npy": "a944169e7ace2a52cac58a0057931a2b9876ad5119314d637aadba011e6385b7",
+    "artifacts\\runs\\r11_filtered_batch\\obs_019\\provenance.json": "1e8f47e0f5fb440030ed6c365be2208c1d1dd8e942f77f98b6ac0fd960dda266",
+    "artifacts\\runs\\r11_filtered_batch\\obs_019\\xyz_rectified_calibration_units.npy": "ba809283d8fa28ffc95507a08e2e2f58fb28f134f7aa615c929868847e9930c6",
+    "artifacts\\runs\\r11_filtered_batch\\obs_020\\provenance.json": "1b2dfaf5d2f30bbce8d6f486a65e4cb833e851e49c7d3935c8b1a6f1abbeb69e",
+    "artifacts\\runs\\r11_filtered_batch\\obs_020\\xyz_rectified_calibration_units.npy": "d7df181178c7243f2c0d3b39b883761db5442b065bd130e6a5ad3038e2dc22fa",
+    "artifacts\\runs\\r11_filtered_batch\\obs_021\\provenance.json": "350d30b65520fa5fa43ec90f6a0185c705e7b49d7c3ecab225ec288d724ef404",
+    "artifacts\\runs\\r11_filtered_batch\\obs_021\\xyz_rectified_calibration_units.npy": "fd61f72e613a331c75c5f0dcd86b8efd1fc6ce545ee2de8aafd8522be940c553",
+    "artifacts\\runs\\r11_filtered_batch\\obs_022\\provenance.json": "ac0d1904a4d230af2af6fa8f5e85b4285dd75bb8b350f6844377b6bd47bb1b43",
+    "artifacts\\runs\\r11_filtered_batch\\obs_022\\xyz_rectified_calibration_units.npy": "8d0f43306ae050fa32805d06fa5536b7cac7a225eff795e079ccd539e5510445",
+    "artifacts\\runs\\r11_filtered_batch\\obs_023\\provenance.json": "9f7bc9361e40df2bbe907f5653983791e73eae85afe07de24fe24a618f3728c4",
+    "artifacts\\runs\\r11_filtered_batch\\obs_023\\xyz_rectified_calibration_units.npy": "615dc5e13de529c87e02cb60ecbc7adc8eea70641e4da1481df439098b773013",
+    "artifacts\\runs\\r11_filtered_batch\\obs_024\\provenance.json": "8e24058e47f698b0362f85de4f4c2042b4ea3bb5d5c009bddd0b8546683b7185",
+    "artifacts\\runs\\r11_filtered_batch\\obs_024\\xyz_rectified_calibration_units.npy": "c41fe2dd944c2af1363a9583624efa140ac08b3f330cb5fa091bf9ea030493df",
+    "artifacts\\runs\\r11_filtered_batch\\obs_025\\provenance.json": "60fc8a59f224119bf2044c5a3ce53962602047b8d2ed91d77ba9251695ee85df",
+    "artifacts\\runs\\r11_filtered_batch\\obs_025\\xyz_rectified_calibration_units.npy": "7074a713b5cbd86e883283b35beec929167f143b24d52b31a9e5a075a4b0bacd",
+    "artifacts\\runs\\r11_filtered_batch\\obs_026\\provenance.json": "4bdacca1d616fbc6079f621ccdafe4879e46725abada6d35b9fe0dfd67ef920b",
+    "artifacts\\runs\\r11_filtered_batch\\obs_026\\xyz_rectified_calibration_units.npy": "10154825b5095cc8ef1782c2905a1ec53febcd21e5705942ddc5e97ad5e2b5d0",
+    "artifacts\\runs\\r11_filtered_batch\\obs_027\\provenance.json": "0c427d445665a6d84137ddcefb67c1f64466316e954f9c044b41eb7e308e90b7",
+    "artifacts\\runs\\r11_filtered_batch\\obs_027\\xyz_rectified_calibration_units.npy": "2dd955319278bbb2f8b5b96bf359c44d362a1d11cdfd4c36d39f4dc3a46dc5c5",
+    "artifacts\\runs\\r11_filtered_batch\\obs_028\\provenance.json": "10d07f81763a9b94d136236cc453c917acffc6c9526be70e7c07dbc76f59356b",
+    "artifacts\\runs\\r11_filtered_batch\\obs_028\\xyz_rectified_calibration_units.npy": "497dbba594b8697aa526a58627e9bb667208175a9ebc1df8e8cd43a635df1705",
+    "artifacts\\runs\\r11_filtered_batch\\obs_029\\provenance.json": "9a22591458a877fb6cb42df1a7159d3598464fd9786b9221559378c476f51de4",
+    "artifacts\\runs\\r11_filtered_batch\\obs_029\\xyz_rectified_calibration_units.npy": "a0471fd730072f453027636d129cb790080529bbc55e2ec587f8b84e7d766ca4",
+    "artifacts\\runs\\r11_filtered_batch\\obs_030\\provenance.json": "cb9ff8aa0577cdb77ada9e268795f7bebd4604919fa32bbb088964a01500c81d",
+    "artifacts\\runs\\r11_filtered_batch\\obs_030\\xyz_rectified_calibration_units.npy": "675b31b3cb1ac9a31b00c8d5422d3a2e2d866c9d2e176bc3d19aabf5eeceb908",
+    "artifacts\\runs\\r11_filtered_batch\\obs_031\\provenance.json": "dc8e15b2a0e5832640b346ebaa0d00bbb71a9ebe9ec1cef437ba41c280333506",
+    "artifacts\\runs\\r11_filtered_batch\\obs_031\\xyz_rectified_calibration_units.npy": "082a8c736e22ee086e2a479f866757ea4cf13d0bd4e0b9d3b6c49b7ae80abd72",
+    "artifacts\\runs\\r11_filtered_batch\\obs_033\\provenance.json": "f83b653b3124fa55cf5abb8af6c4ee7404724170a8e70f50968762f5ed6fb5cd",
+    "artifacts\\runs\\r11_filtered_batch\\obs_033\\xyz_rectified_calibration_units.npy": "abc79161d70ab026abc841c0621d3fef264da57759b14418ffb0cd417f685146",
+    "artifacts\\runs\\r11_filtered_batch\\obs_034\\provenance.json": "147b05445be8091e3fdbd1bbde1bafced395a4f1d7c78fd791846523ee474b61",
+    "artifacts\\runs\\r11_filtered_batch\\obs_034\\xyz_rectified_calibration_units.npy": "145911aca1b49b7d7bc2f31198aa650882e2a28cb8af7f2811576fd840cded4a",
+    "artifacts\\runs\\r11_filtered_batch\\obs_035\\provenance.json": "4a9dab358ebe08c720f45cfbaee44363d31dbd9bad3bec5a8ffddf804e62d933",
+    "artifacts\\runs\\r11_filtered_batch\\obs_035\\xyz_rectified_calibration_units.npy": "e0070b15015fb8ac56350076a29b47c8f677e0dedf3c26d1e36034340104a20e",
+    "artifacts\\runs\\r11_filtered_batch\\obs_038\\provenance.json": "ded1eaf7218aa34f0aad93592543318decac960ccd8882c72dd5cf79d726def8",
+    "artifacts\\runs\\r11_filtered_batch\\obs_038\\xyz_rectified_calibration_units.npy": "08f811b65ca3e3025f81299b96026bc180d3f5442b22cf3169f0431d8b4c676f",
+    "artifacts\\runs\\r11_filtered_batch\\obs_039\\provenance.json": "fea0d9d276bda7e9be4491b0f12a00fcd6df102484643983d93d43c7742e7769",
+    "artifacts\\runs\\r11_filtered_batch\\obs_039\\xyz_rectified_calibration_units.npy": "697775ba7eae6c82087383f3883ebec77460d5e27fa17cb09323cf52302b35ad",
+    "artifacts\\runs\\r11_filtered_batch\\obs_040\\provenance.json": "519db6478a194ff1f129fbc4a738d0b73edd076655b184047921250dc63e86c6",
+    "artifacts\\runs\\r11_filtered_batch\\obs_040\\xyz_rectified_calibration_units.npy": "c7cabf29395a1a05d131601d42d7c4382d4b7b040f2a0ef1a70b7c8780b9532b",
+    "artifacts\\runs\\r11_filtered_batch\\obs_041\\provenance.json": "1210feab03d09550ca43b4b4970252d0a1455c4611002c65dff124f30ce9b8c1",
+    "artifacts\\runs\\r11_filtered_batch\\obs_041\\xyz_rectified_calibration_units.npy": "80e11c84b913e0603dc2d3fab019682231a9cd9b439a0fdecf7e7ab8c20c1303",
+    "artifacts\\runs\\r11_filtered_batch\\obs_042\\provenance.json": "b0b4839e488b33980401fbcc511ec3d6a64d5f7169ac510579c41b0dc0da9898",
+    "artifacts\\runs\\r11_filtered_batch\\obs_042\\xyz_rectified_calibration_units.npy": "388971099e039e1af4cbc5ebf7b5e084dc95d536e0c6d98894bf75b13fbdf909",
+    "artifacts\\runs\\r11_filtered_batch\\obs_044\\provenance.json": "6fcb1fd53f5a091f8c5bf8bd9e1bd374ffff09fb911b91bc8f54947cdf1f050f",
+    "artifacts\\runs\\r11_filtered_batch\\obs_044\\xyz_rectified_calibration_units.npy": "373f3d6f663f7d44b17ef398c96fd915246a2e6da56140adb7a901ec1d39dd94",
+    "artifacts\\runs\\r11_filtered_batch\\obs_045\\provenance.json": "f5940ef1631867d66f7e2bdfc82e8762e9fb8a428f465720806f59cf02a0bd4e",
+    "artifacts\\runs\\r11_filtered_batch\\obs_045\\xyz_rectified_calibration_units.npy": "f9d216df04a4ed4c1a5074039714d9c1da05c4991d4f7699190773d93b2e9f87",
+    "artifacts\\runs\\r11_filtered_batch\\obs_046\\provenance.json": "7cbf95dc604ebf74866e934db6a01b95000028e95cc1d0bb5f4e0d64ef42b0a2",
+    "artifacts\\runs\\r11_filtered_batch\\obs_046\\xyz_rectified_calibration_units.npy": "a93649524b8b1f6eb3326124398c9f0ff4188ee6b90ee29fe050b6ab13ea116d",
+    "artifacts\\runs\\r11_filtered_batch\\obs_047\\provenance.json": "4bba7ccccb95b0586b431485de12343e429842137879d36a958ad3a0fb4533bf",
+    "artifacts\\runs\\r11_filtered_batch\\obs_047\\xyz_rectified_calibration_units.npy": "20fbaaa3e3c507b02ac14575f42fbf36f30f473ac7ddc8c7dace7b3aaf02d473",
+    "artifacts\\runs\\r11_filtered_batch\\obs_048\\provenance.json": "0f4ebd8f4e8c4d3c8b33c141807bcd77daa516e223f3f1defeef46d33048f552",
+    "artifacts\\runs\\r11_filtered_batch\\obs_048\\xyz_rectified_calibration_units.npy": "622012c85945f0c5983ead15d3e6c8574a9dedfe03d8a0b4892f7c9a15592ddb",
+    "artifacts\\runs\\r11_filtered_batch\\obs_049\\provenance.json": "0fc6cef7c2119cfcc5e787df7101dc43ab11963c3fc0393204be3a2c7435ab7e",
+    "artifacts\\runs\\r11_filtered_batch\\obs_049\\xyz_rectified_calibration_units.npy": "a6bf6b384781fe068a511d97bbecd98cf228823efce717e64f85c22345fb2eb7",
+    "artifacts\\runs\\r11_filtered_batch\\obs_051\\provenance.json": "c4f9ce274fe3e5981f3679aca31195bc51fa6dc94fc25785a163f51ff165443c",
+    "artifacts\\runs\\r11_filtered_batch\\obs_051\\xyz_rectified_calibration_units.npy": "2191161037731dd3b6cb22c1abbfb238bcc8e3e9ffa04d4fcf1a8349bac744a7",
+    "artifacts\\runs\\r11_filtered_batch\\obs_052\\provenance.json": "bb6568db977501bdc1bb968b32570897f5617881f754d81337f9af9e6014e1bc",
+    "artifacts\\runs\\r11_filtered_batch\\obs_052\\xyz_rectified_calibration_units.npy": "82db452241d740e72e7e7d4d70a42493ab65ab147ff2a5d2b9766ca709ef81e1",
+    "artifacts\\runs\\r11_filtered_batch\\obs_053\\provenance.json": "28d3fc22ff027f78203749d5be8508dc75b5f5753a2c00be0b3f4f5c368cfa91",
+    "artifacts\\runs\\r11_filtered_batch\\obs_053\\xyz_rectified_calibration_units.npy": "991dfbbc5d1313f8637e27fc026907b6151ff2f8051dcefe371769de566b052b",
+    "artifacts\\runs\\r11_filtered_batch\\obs_054\\provenance.json": "b9c2c2eddb1e19ca1e445218e0c798ca59a2d9ef9f7907583be17144b1863229",
+    "artifacts\\runs\\r11_filtered_batch\\obs_054\\xyz_rectified_calibration_units.npy": "572fdc0799aebf86f24657a372752eda86042dab7a639c725ca167dda76d49e5",
+    "artifacts\\runs\\r11_filtered_batch\\obs_055\\provenance.json": "7a7bea213c497e69431f41a784370fadee5e8c4bc2b7be904e3d814a697cd6e5",
+    "artifacts\\runs\\r11_filtered_batch\\obs_055\\xyz_rectified_calibration_units.npy": "94792ff120c75c68df2aabec423f3da8390bc374d41b1ca3a4139fe889df44d2",
+    "artifacts\\runs\\r11_filtered_batch\\obs_056\\provenance.json": "6ee103a23efd41275882b681c2fcdc2cee5287115d5dc22b690c905af49b4939",
+    "artifacts\\runs\\r11_filtered_batch\\obs_056\\xyz_rectified_calibration_units.npy": "4c414e7f73eac125615c3957c477a840cacebd26f0e85abfc14721ab3ca79a06",
+    "artifacts\\runs\\r12_registration\\components.json": "aeabfbc3bf4c482abb03c743b55fd10f79914dbbbe20d612bd9d9d35438667d1",
+    "artifacts\\runs\\r12_registration\\component_obs_003\\camera_trajectory.json": "9a2dfc46a14211c1d3a84ba7f1459e6c18f4294b68a5fe2de1e1be6d7d559769",
+    "artifacts\\runs\\r12_registration\\component_obs_005\\camera_trajectory.json": "76380af32fc66e617c920ba9df2a7f7df29bfd14fa0fb88467af538bd58166c0",
+    "artifacts\\runs\\r12_registration\\component_obs_010\\camera_trajectory.json": "bcef2857241700e9cd217827cd3869fa99ace9e6ec1c65f090e76eb8da3e64a9",
+    "artifacts\\runs\\r12_registration\\component_obs_029\\camera_trajectory.json": "8213b09301a57ff9cf10f4f15eb64411a5473edc7266a0b5d7a25cda422c8047",
+    "artifacts\\runs\\r12_registration\\component_obs_044\\camera_trajectory.json": "dfb1a4eecdbd230bcc7ccac5411c5632462dc18954f1814350e60124ed0db094",
+    "artifacts\\runs\\r12_registration\\component_obs_051\\camera_trajectory.json": "b7d6ded8a86544946976328f9ab68219dc5f505f3c39a464ea3d043c955cee27",
+    "chandrayaan-3-documentation\\nav\\document\\ch3_nav_pds_dp_archive_sis.pdf": "6abe9f56526942d8f623bb3bcaf4c54dec850e6149eea4b908f0152dd6aac43a"
+  },
+  "script_sha256": "218a6a436693b930f5adf521c88214c9abcbc93e7ad401081f21d23b549cecd8"
+}

@@ -1,0 +1,148 @@
+{
+  "review_date": "2026-11-09",
+  "scope": "Local saved procedural results; no Jarvis access or learned inference",
+  "source_sha256": {
+    "reconstruction\\video_bridge.py": "28207110d33996d311d720b65ff9c78cadd893e464a57c9e87aad1f9168f7ffa",
+    "reconstruction\\video_figures.py": "59c74e8a48f82fec995324eb474de08a5a2d6926d0ee2a9ae1dc4e59550c658b",
+    "reconstruction\\video_integrate.py": "0913468860ec0bfec1bb88f2d64c973ab82cb8a2e8d3c08f5d7f3f4334356189",
+    "reconstruction\\video_pose.py": "99b4cd5ebd390e51c095f4e6a48e38977145085c3015ae57f7ce81efc09ce3c7",
+    "reconstruction\\video_pose_check.py": "583e7fe2008e17c9f37d5b7031388710b1c600414236ccb978543bdb9fd9eb53",
+    "reconstruction\\video_triangulate.py": "2c81e5720ded7c065b8b01b41a63302bfe83a20bc02a0d2288ff2f4ad6d6272d",
+    "reconstruction\\evaluate_video.py": "f8d854f7cc289d337d0c74f5fc247cf1cfe6552cc93b80f67486e0a78e091826",
+    "reconstruction\\learned_video.py": "51021060c14c9e35540f03f82c23bc4b00e7bca36c5f8710688e23819a934d09"
+  },
+  "bundles": {
+    "holdout046_endpoints_v2": {
+      "all_file_hashes_verified": true,
+      "neutral_generation_pixels": 7142400,
+      "conditioned_indices": [
+        0,
+        32
+      ],
+      "unconditioned_frames": 31,
+      "manifest_sha256": "1975be6845038a5353545f50b9ce950d0c72cee93e7a7ce6b2f232b6f9493855"
+    },
+    "holdout046_pose_anchors_v2": {
+      "all_file_hashes_verified": true,
+      "neutral_generation_pixels": 6471805,
+      "conditioned_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32
+      ],
+      "unconditioned_frames": 24,
+      "manifest_sha256": "7f418722d4db410a65221923427c7a93bcadc883064045f210d6fae9cad2a0ae"
+    },
+    "smoke256_pose_anchors_v2": {
+      "all_file_hashes_verified": true,
+      "neutral_generation_pixels": 1841368,
+      "conditioned_indices": [
+        0,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32
+      ],
+      "unconditioned_frames": 24,
+      "manifest_sha256": "df09e12d47bcd2f1a22dcab3897fc27d25bd5642878a2a77245866f64d8a0737"
+    }
+  },
+  "integrated": {
+    "holdout046_model": {
+      "strict_cells_unchanged": 8385,
+      "counts": {
+        "1": 8385,
+        "2": 0,
+        "3": 1364,
+        "4": 2969
+      },
+      "between_footprints_video_cells": 179,
+      "between_footprints_video_area_m2": 0.44750000000000006,
+      "between_footprints_total_cells": 472,
+      "top_geometry_preserved_in_closed_obj": true,
+      "closed_obj_validation": {
+        "vertices": 25436,
+        "triangles": 50868,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "nonmanifold_vertices": 0,
+        "connected_components": 1,
+        "euler_characteristic": 2,
+        "consistent_outward_winding": true,
+        "enclosed_volume_m3": 25.007055816520865,
+        "dimensions_m": [
+          10.85,
+          4.45,
+          1.56493268
+        ]
+      },
+      "closed_obj_sha256": "16c156bc1a24654af81eda314458281197cc0f8febc42f24962eb493b204d5c2",
+      "heldout": {
+        "scored_cells": 85,
+        "eligible_cells": 561,
+        "rmse_m": {
+          "video": 0.08449559572152433,
+          "linear": 0.012495541036813855,
+          "idw": 0.035175701357185785
+        }
+      }
+    },
+    "mid036_model": {
+      "strict_cells_unchanged": 9872,
+      "counts": {
+        "1": 9872,
+        "2": 253,
+        "3": 994,
+        "4": 8888
+      },
+      "between_footprints_video_cells": 250,
+      "between_footprints_video_area_m2": 0.6250000000000001,
+      "between_footprints_total_cells": 2375,
+      "top_geometry_preserved_in_closed_obj": true,
+      "closed_obj_validation": {
+        "vertices": 40014,
+        "triangles": 80024,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "nonmanifold_vertices": 0,
+        "connected_components": 1,
+        "euler_characteristic": 2,
+        "consistent_outward_winding": true,
+        "enclosed_volume_m3": 45.02382068768122,
+        "dimensions_m": [
+          12.9,
+          8.25,
+          1.543094892
+        ]
+      },
+      "closed_obj_sha256": "06b3ad6a8e651d5b7446338e8f0b269bb0b0fd91f56d08abb6a00149a8d093cd"
+    }
+  },
+  "external_control": {
+    "scored_cells": 21,
+    "eligible_cells": 561,
+    "raw_before_envelope_cells": 47,
+    "rmse_m": {
+      "video": 0.049000866132236566,
+      "idw": 0.007655775720655787,
+      "linear": 0.008542299758154612,
+      "raw_before_envelope": 0.6029490647999199
+    },
+    "strict_cells_unchanged": 8385,
+    "used_unconditioned_frames": 24,
+    "packaged_pose_check_matches_recorded_hash": false,
+    "matching_pose_check_preserved_at": "output\\collaboration_review\\2026-11-09\\evidence\\baseline_pose_check_hashed",
+    "caveat": "Existing control predates v2 bundles; its pose-check manifest hash is not valid for a new v2 experiment."
+  },
+  "status": "Numerical, mesh and bundle checks passed; missing packaged pose evidence recovered from tmp. See REVIEW.md for design issues."
+}

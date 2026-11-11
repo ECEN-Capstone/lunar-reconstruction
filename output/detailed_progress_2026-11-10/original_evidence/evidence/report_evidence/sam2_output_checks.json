@@ -1,0 +1,13 @@
+{
+  "checked_masks": 843,
+  "errors": [],
+  "zero_mask_images": 6,
+  "zero_mask_paths": [
+    "NC_family\\left_NCL\\ch3_nav_ncl_20230901T1846409360_d_img_d32_044\\labels.csv",
+    "NR_family\\left_NRL\\ch3_nav_nrl_20230831T0505275813_d_img_kru_035\\labels.csv",
+    "NR_family\\left_NRL\\ch3_nav_nrl_20230901T1846409360_d_img_d32_044\\labels.csv",
+    "NR_family\\right_NRR\\ch3_nav_nrr_20230831T0506086702_d_img_kru_035\\labels.csv",
+    "NR_family\\right_NRR\\ch3_nav_nrr_20230901T0554406703_d_img_nno_042\\labels.csv",
+    "NR_family\\right_NRR\\ch3_nav_nrr_20230901T1847202223_d_img_d32_044\\labels.csv"
+  ]
+}

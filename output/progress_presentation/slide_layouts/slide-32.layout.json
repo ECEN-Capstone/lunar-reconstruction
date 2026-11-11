@@ -1,0 +1,10 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/7irq0o","index":31,"layout":{"id":"ly/t8z21cn6","name":"Blank"},"backgroundColor":"rgba(247,249,252,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/zqt4n6lc","kind":"textbox","name":"text-0","position":{"left":50,"top":23,"width":1160,"height":24},"text":"APPENDIX · INTEGRATED VIDEO RESULT","style":{"fontSize":15,"typeface":"Arial","color":"#087E8B","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/epknu1kr","kind":"textbox","name":"text-1","position":{"left":50,"top":60,"width":1180,"height":88},"text":"Completed bridge: observed and inferred terrain","style":{"fontSize":39,"typeface":"Arial","color":"#183149","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/4jyt83ed","kind":"textbox","name":"text-2","position":{"left":50,"top":681,"width":1100,"height":22},"text":"Chandrayaan-3 terrain reconstruction  |  Evidence snapshot: 9 Nov 2026","style":{"fontSize":14,"typeface":"Arial","color":"#52687B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/5k7ah8fy","kind":"textbox","name":"text-3","position":{"left":1180,"top":676,"width":50,"height":30},"text":"32","style":{"fontSize":19,"typeface":"Arial","color":"#52687B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"im/t87axgn2","kind":"image","position":{"left":40,"top":153,"width":765,"height":442},"fit":"contain","alt":"Actual completed terrain upper surface with source attribution"},
+{"id":"tb/kn2p4vux","kind":"table","position":{"left":835,"top":182,"width":395,"height":322},"text":"Source\tGrid cells\nStrict stereo\t9,872\nRelaxed stereo\t253\nVideo consensus\t994\nLinear fill\t8,888","rows":5,"cols":2},
+{"id":"sh/snytcnep","kind":"textbox","name":"text-4","position":{"left":50,"top":612,"width":1180,"height":55},"text":"Video-supported cells are synthetic inference; strict measured cells remain unchanged","style":{"fontSize":24,"typeface":"Arial","color":"#B7472A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

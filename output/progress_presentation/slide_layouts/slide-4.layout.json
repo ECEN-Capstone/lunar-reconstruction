@@ -1,0 +1,10 @@
+{"schema":"openai.presentation.layout/v5","unit":"px","slide":{"id":"sl/dzmpp4","index":3,"layout":{"id":"ly/t8z21cn6","name":"Blank"},"backgroundColor":"rgba(247,249,252,1)","position":{"left":0,"top":0,"width":1280,"height":720}},
+"elements":[
+{"id":"sh/5ona50b6","kind":"textbox","name":"text-0","position":{"left":50,"top":23,"width":1160,"height":24},"text":"REAL TERRAIN RESULT","style":{"fontSize":15,"typeface":"Arial","color":"#087E8B","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/fe9kby1k","kind":"textbox","name":"text-1","position":{"left":50,"top":60,"width":1180,"height":88},"text":"Largest completed terrain: five registered observations","style":{"fontSize":39,"typeface":"Arial","color":"#183149","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/et03it0z","kind":"textbox","name":"text-2","position":{"left":50,"top":681,"width":1100,"height":22},"text":"Chandrayaan-3 terrain reconstruction  |  Evidence snapshot: 9 Nov 2026","style":{"fontSize":14,"typeface":"Arial","color":"#52687B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"sh/1gr2d8jq","kind":"textbox","name":"text-3","position":{"left":1180,"top":676,"width":50,"height":30},"text":"04","style":{"fontSize":19,"typeface":"Arial","color":"#52687B","alignment":"left"},"geometry":"rect","lineWidth":0},
+{"id":"im/rmlg7a1w","kind":"image","position":{"left":40,"top":155,"width":755,"height":455},"fit":"contain","alt":"Full completed OBJ for registered observations 044–048"},
+{"id":"tb/8juxg3at","kind":"table","position":{"left":825,"top":173,"width":405,"height":370},"text":"Quantity\tResult\nInput observations\t5 (044–048)\nCompleted top area\t77.20 m²\nObserved grid fraction\t31.0%\nFilled grid fraction\t69.0%\nClosed OBJ triangles\t123,596","rows":6,"cols":2},
+{"id":"sh/2h03md0b","kind":"textbox","name":"text-4","position":{"left":50,"top":612,"width":1180,"height":55},"text":"A continuous closed surface is available; most of its footprint is inferred","style":{"fontSize":24,"typeface":"Arial","color":"#B7472A","bold":true,"alignment":"left"},"geometry":"rect","lineWidth":0}
+]}

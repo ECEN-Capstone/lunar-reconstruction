@@ -1,0 +1,149 @@
+{
+  "kind": "procedural control, not learned video",
+  "status": "completed",
+  "input_sha256": {
+    "reconstruction\\assemble_meshes.py": "a216112ad1f0aec9f3074e556ed1c2aaf48b38a59db6a75523ec747801040603",
+    "reconstruction\\audit_metadata.py": "e0a51d2fa668461076ccc3d7c71a858c7503190958b1ae754083b872938dd3d8",
+    "reconstruction\\batch.py": "65cf6a856109509ae3241fda85a59449e800695ee8e62b144baf66b7cc94c6d8",
+    "reconstruction\\check_completion.py": "61e206e01c4b7ca70d3764f3b9d3e662aaf166a92f23a8e8a8f2ac403e68e82e",
+    "reconstruction\\check_generated_trial.py": "ee8af7c2e4a404372a4f1139b2c76894341967e42d02d74250938b5047e3dc8c",
+    "reconstruction\\check_geometry.py": "d19d913b09b204cb2d8273f468921b6a49dabb19f761080e2e67c3b49d7b2d5f",
+    "reconstruction\\check_video_bridge.py": "205f25819994e59771cc6aa21f8dc4f85471218a8c13710f6813ccaa24224291",
+    "reconstruction\\chronological_catalog.py": "9fec6a26451b41cb556a85d1b4b489859712cad275750357d31c0bb12a5a7f92",
+    "reconstruction\\close_terrain.py": "3ba9b10d594bbb118c203b87374e17a09db76c1146f35af1416effdc2d83d7bd",
+    "reconstruction\\complete_terrain.py": "793f6e1b63ba89617dcf3167ac55234fa59c2c1709c4b355caa3e4775f38ebf8",
+    "reconstruction\\evaluate_video.py": "f8d854f7cc289d337d0c74f5fc247cf1cfe6552cc93b80f67486e0a78e091826",
+    "reconstruction\\filter_clouds.py": "2ae3cc44c1e6d2443051969d6b97c09e283e8bba32bf38d8587f8cbed682919f",
+    "reconstruction\\generated_stereo_trial.py": "5f286aa4494e50482778060bf853bc36f1c3a77d7699a60e979edc95ddf7e6c7",
+    "reconstruction\\geometry.py": "7560d3c77230dd5cb30041833f58c7132680d069e5ae7d9507d7f7d8c82323a7",
+    "reconstruction\\gpu_probe.py": "7dca6c44b651bbb18e8cef4fcaeb5e4adfc809af30a007e6dda7c696f30ef83e",
+    "reconstruction\\inspect_outputs.py": "3ff06dac0806c186f63e9b5a9c04319996f8f97568fd3fb41b41938e07f23b92",
+    "reconstruction\\investigate.py": "b3e6a398a91be46edd299a25f87068772902dda9ee6390d3420e3aff492b35f3",
+    "reconstruction\\jetson_smoke.py": "6c5e88b5a486019134562c738dee00346a4bcefcd7da5d56f7a0ff85b972aab1",
+    "reconstruction\\largest_terrain.py": "6ec2072a6f8e9589119db000f5deb0f3078687b465163a8a9cfe0da24680ee11",
+    "reconstruction\\learned_video.py": "51021060c14c9e35540f03f82c23bc4b00e7bca36c5f8710688e23819a934d09",
+    "reconstruction\\model_fetch.py": "fe06c40c8ad62658b1b4cbb2f2c9bf449e058b3d8018e142c25bf5d374410af9",
+    "reconstruction\\prepare_generated_slide_pack.py": "44c22f6bfbe3ebb5596ddbdacec243054cfd51cf2bc0ff8312d72af679fd56f4",
+    "reconstruction\\register.py": "8c349186a99887e5036eecc55f41d347bcc5745f8e33e1cd54b049cd2ed1628f",
+    "reconstruction\\render_uber_relaxed.py": "825631260dfdac54adc54411d6afde679ea4c59983abef0f1d5c341e1bc04d80",
+    "reconstruction\\stereo.py": "38b6009850cc8c434728b35474d39fc59d49c98583ab9ea68f2153cfe87e36d2",
+    "reconstruction\\summarize.py": "29df2c32aba4b53412e97e4389577e58d76b11d96336735e9ac79cedc7aee0f7",
+    "reconstruction\\uber_relaxed.py": "db3bcbf3004d1b4695fa6c19cc9737618b4d3f5f35ff0c8cd1f677edb4dfce18",
+    "reconstruction\\video_bridge.py": "28207110d33996d311d720b65ff9c78cadd893e464a57c9e87aad1f9168f7ffa",
+    "reconstruction\\video_figures.py": "59c74e8a48f82fec995324eb474de08a5a2d6926d0ee2a9ae1dc4e59550c658b",
+    "reconstruction\\video_integrate.py": "0913468860ec0bfec1bb88f2d64c973ab82cb8a2e8d3c08f5d7f3f4334356189",
+    "reconstruction\\video_pose.py": "99b4cd5ebd390e51c095f4e6a48e38977145085c3015ae57f7ce81efc09ce3c7",
+    "reconstruction\\video_pose_check.py": "583e7fe2008e17c9f37d5b7031388710b1c600414236ccb978543bdb9fd9eb53",
+    "reconstruction\\video_triangulate.py": "2c81e5720ded7c065b8b01b41a63302bfe83a20bc02a0d2288ff2f4ad6d6272d",
+    "reconstruction\\__init__.py": "cb0f7fe92e88635f1255d800b2d2cd49be7a855f2c47a35c0fc42c078992b21f",
+    "output\\chronological_video\\learned_inputs\\holdout046_pose_anchors_v2\\manifest.json": "7f418722d4db410a65221923427c7a93bcadc883064045f210d6fae9cad2a0ae",
+    "output\\chronological_video\\holdout046_7\\surfaces.npz": "fe9e3e43ef1db1a0c90d13a6c7f750eb2a0f37258d3bb3ee36d01958a1ad8921",
+    "output\\chronological_video\\holdout046_7\\validation.npz": "3aa8f8351d00f3fb7f0ac7c2491604d99faa161a710c397325e26894fc2402bf",
+    "artifacts\\runs\\r11_filtered_batch\\obs_044\\provenance.json": "6fcb1fd53f5a091f8c5bf8bd9e1bd374ffff09fb911b91bc8f54947cdf1f050f",
+    "artifacts\\runs\\r11_filtered_batch\\obs_044\\rectified_left.png": "8fef86d6c6b9bbf876a58a40e7782f16ab2c90dd205f0abd13c4f399c5355b2b",
+    "artifacts\\runs\\r11_filtered_batch\\obs_044\\xyz_rectified_calibration_units.npy": "373f3d6f663f7d44b17ef398c96fd915246a2e6da56140adb7a901ec1d39dd94",
+    "artifacts\\runs\\r11_filtered_batch\\obs_047\\provenance.json": "4bba7ccccb95b0586b431485de12343e429842137879d36a958ad3a0fb4533bf",
+    "artifacts\\runs\\r11_filtered_batch\\obs_047\\rectified_left.png": "3e66b6c530a39a4a13f2cbd48e50f01e47a7cdd31ebb7b9a8b2c3ef80a1e9f45",
+    "artifacts\\runs\\r11_filtered_batch\\obs_047\\xyz_rectified_calibration_units.npy": "20fbaaa3e3c507b02ac14575f42fbf36f30f473ac7ddc8c7dace7b3aaf02d473"
+  },
+  "movie_sha256": "ce6bee7ee1511c6f0a2137e14bc7abbeff0670fa22326d76a6fe83640dc10305",
+  "runner_sha256": "c0be897b705f19ffb53f9ea4d5449c9cdc33873fe06b5b2e5c334d3cc283e702",
+  "commands": [
+    {
+      "argv": [
+        "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\.venv\\Scripts\\python.exe",
+        "-m",
+        "reconstruction.video_pose_check",
+        "--bundle",
+        "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\learned_inputs\\holdout046_pose_anchors_v2",
+        "--movie",
+        "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\v2_control_2026-11-09\\control480.mp4",
+        "--out",
+        "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\v2_control_2026-11-09\\pose_check"
+      ],
+      "exit_code": 0,
+      "seconds": 16.031000000002678
+    },
+    {
+      "argv": [
+        "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\.venv\\Scripts\\python.exe",
+        "-m",
+        "reconstruction.evaluate_video",
+        "--source",
+        "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\holdout046_7",
+        "--bundle",
+        "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\chronological_video\\learned_inputs\\holdout046_pose_anchors_v2",
+        "--pose-check",
+        "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\v2_control_2026-11-09\\pose_check",
+        "--movie",
+        "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\v2_control_2026-11-09\\control480.mp4",
+        "--kind",
+        "procedural_control",
+        "--seed",
+        "7",
+        "--out",
+        "C:\\Users\\rhunt\\Documents\\Capstone\\reconstruction\\output\\collaboration_review\\v2_control_2026-11-09\\evaluation"
+      ],
+      "exit_code": 0,
+      "seconds": 9.125
+    }
+  ],
+  "historical_arrays_exactly_reproduced": {
+    "surfaces.npz": true,
+    "reconstructed_trajectory.npz": true,
+    "validation.npz": true
+  },
+  "pose_check_sha256": "d8925fc7b99d5832990f0ea011960ee02224b31b1db6fb68bb23f2cca1b0b7e0",
+  "pose_array_sha256": "1c397aadeb5262a470064083acd80eb630c46da77fcdcf8b15a99d5dad8dbbe6",
+  "evaluation_sha256": "e2489e007148c7bed24cbf6558555452cfca479ad0eae71836e91bff4ba6c7c1",
+  "accepted_frames": 33,
+  "accepted_unconditioned_frames": 24,
+  "validation": {
+    "holdout": "obs_046",
+    "reference": "withheld registered stereo; not survey ground truth",
+    "measurable_gap_cells": 561,
+    "tested_added_cells": 21,
+    "reference_coverage": 0.0374331550802139,
+    "video_abs_height_error_m": {
+      "count": 21,
+      "median": 0.015607924510932514,
+      "p90": 0.056280799122276015,
+      "p95": 0.05664801547591103,
+      "maximum": 0.18797754919820875,
+      "rmse": 0.049000866132236566
+    },
+    "matched_idw_abs_height_error_m": {
+      "count": 21,
+      "median": 0.005545238302725908,
+      "p90": 0.012178922363344058,
+      "p95": 0.01406715915141099,
+      "maximum": 0.019784701673736638,
+      "rmse": 0.007655775720655787
+    },
+    "linear_comparison_cells": 21,
+    "matched_linear_abs_height_error_m": {
+      "count": 21,
+      "median": 0.007924940733549657,
+      "p90": 0.012321607599166451,
+      "p95": 0.014007932164498249,
+      "maximum": 0.014298679475821308,
+      "rmse": 0.008542299758154612
+    },
+    "video_on_linear_comparison_m": {
+      "count": 21,
+      "median": 0.015607924510932514,
+      "p90": 0.056280799122276015,
+      "p95": 0.05664801547591103,
+      "maximum": 0.18797754919820875,
+      "rmse": 0.049000866132236566
+    },
+    "raw_before_envelope_m": {
+      "count": 47,
+      "median": 0.43790546382361173,
+      "p90": 0.9645453723373733,
+      "p95": 0.982049027409342,
+      "maximum": 1.166126743756752,
+      "rmse": 0.6029490647999199
+    }
+  }
+}

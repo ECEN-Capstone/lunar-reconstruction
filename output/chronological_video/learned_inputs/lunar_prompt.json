@@ -1,0 +1,17 @@
+{
+  "model": "Wan-AI/Wan2.1-VACE-1.3B-diffusers",
+  "revision": "ec4d2cb062b548996b179d493fdd05340de702a1",
+  "prompt": "A continuous grayscale lunar rover navigation camera view moving over a static rocky lunar surface. Fixed lighting, fixed camera optics, black sky. Terrain and rocks remain stationary and geometrically consistent.",
+  "negative_prompt": "camera cuts, crossfade, dissolve, morphing rocks, moving ground, changing lighting, people, text, color",
+  "sha256": "129f8797f64f6e9c9b48e866b9db8cd8ef29b34da25887e0afb1cf45ac1d461d",
+  "torch": "2.11.0+cpu",
+  "diffusers": "0.35.2",
+  "shape": [
+    1,
+    512,
+    4096
+  ],
+  "device": "cpu",
+  "dtype": "bfloat16",
+  "encoded_sequence_length": 64
+}

@@ -1,0 +1,105 @@
+{
+  "endpoints": [
+    "obs_044",
+    "obs_048"
+  ],
+  "utc": [
+    "20230901T1301408296",
+    "20230901T1846409360"
+  ],
+  "pose": {
+    "source": "stereo registration",
+    "path": [
+      "obs_044",
+      "obs_047",
+      "obs_048"
+    ]
+  },
+  "endpoint_displacement_m": 0.8931833424613222,
+  "seed": 7,
+  "generator": "pose-conditioned textured stochastic elevation field",
+  "camera_frame": "T_world_from_rectified_left; nominal rover axes at A; metres",
+  "grid_m": 0.05,
+  "relief_scale_m": 0.0057514422841068655,
+  "frames": 33,
+  "plane_sweep_cells": 6112,
+  "triangulation_windows": 16,
+  "video_tracks": 24867,
+  "reprojection_px": {
+    "count": 24867,
+    "median": 0.20026559260833446,
+    "p90": 0.569490094569449,
+    "p95": 0.682919082568361,
+    "maximum": 0.8499366487503377,
+    "rmse": 0.32636327371141394
+  },
+  "stereo_cells": 7967,
+  "new_video_cells": 2629,
+  "new_cell_area_m2": 6.572500000000002,
+  "mesh": {
+    "vertices": 10596,
+    "triangles": 17411,
+    "projected_surface_area_m2": 21.76374999999994,
+    "slopes_deg": {
+      "count": 17411,
+      "median": 10.796564160601665,
+      "p90": 44.14371662839342,
+      "p95": 60.74122017833379,
+      "maximum": 80.00360877847054,
+      "rmse": 24.418026727967785
+    },
+    "area_with_inferred_vertices_m2": 5.426249999999985,
+    "obj_readback_verified": true
+  },
+  "labels": {
+    "0": "unsupported",
+    "1": "endpoint stereo",
+    "3": "synthetic video"
+  },
+  "status": "holdout fails exploratory height tolerances",
+  "validation": {
+    "holdout": "obs_046",
+    "eval_pose_path": [
+      "obs_044",
+      "obs_046"
+    ],
+    "reference": "independent stereo cell median; not survey truth",
+    "measurable_gap_cells": 763,
+    "tested_added_cells": 210,
+    "reference_coverage": 0.27522935779816515,
+    "video_abs_height_error_m": {
+      "count": 210,
+      "median": 0.09759670805451948,
+      "p90": 0.16885928824984942,
+      "p95": 0.17623775797724026,
+      "maximum": 0.1935692369727049,
+      "rmse": 0.110809720648489
+    },
+    "matched_idw_abs_height_error_m": {
+      "count": 210,
+      "median": 0.016299959493969174,
+      "p90": 0.028045738698813372,
+      "p95": 0.03209614707104894,
+      "maximum": 0.13997083768843588,
+      "rmse": 0.028303786409226102
+    },
+    "raw_before_envelope_m": {
+      "count": 295,
+      "median": 0.12352543176497188,
+      "p90": 0.2448142405012447,
+      "p95": 0.2870448199156974,
+      "maximum": 0.441147867441535,
+      "rmse": 0.16484081201664766
+    },
+    "measured_overlap_abs_height_error_m": {
+      "count": 3407,
+      "median": 0.009877769308786921,
+      "p90": 0.022361345901026168,
+      "p95": 0.027240164563057837,
+      "maximum": 0.05604360215325921,
+      "rmse": 0.013857168004067397
+    },
+    "passes_experimental_tolerance": false,
+    "better_than_matched_idw_rmse": false
+  }
+}

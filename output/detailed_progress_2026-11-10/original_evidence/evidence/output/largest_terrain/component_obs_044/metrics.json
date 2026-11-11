@@ -1,0 +1,96 @@
+{
+  "source": {
+    "name": "component_obs_044",
+    "kind": "registered_component",
+    "path": "artifacts/runs/r12_registration/component_obs_044/cloud_all_observed_calibration_units.ply",
+    "reference_observation": "obs_044",
+    "observations": [
+      "obs_044",
+      "obs_047",
+      "obs_046",
+      "obs_048",
+      "obs_045"
+    ],
+    "point_count": 136699,
+    "dimensions_xy_m": [
+      11.449125486273415,
+      11.758957097050455
+    ],
+    "raw_convex_hull_m2": 78.09411603023274,
+    "occupied_5cm_cells": 9573,
+    "occupied_5cm_cell_area_m2": 23.932500000000005,
+    "supported_cell_hull_m2": 77.20125000000002
+  },
+  "source_sha256": "05424e5232d16b32d73cef8555232c2e4d3d63fdb03c62a4b68ec43da0a9b7c5",
+  "units": "metres",
+  "frame": "nominal rover-local frame of reference observation; gravity unverified",
+  "grid_spacing_m": 0.05,
+  "support_minimum_points_per_cell": 2,
+  "top_projected_area_m2": 77.20125000000002,
+  "top_dimensions_m": [
+    11.400000000000002,
+    11.600000000000001,
+    2.8586215865504188
+  ],
+  "observed_cells": 9573,
+  "filled_cells": 21327,
+  "observed_cell_fraction": 0.30980582524271844,
+  "fill_distance_p95_m": 1.5999999999999996,
+  "maximum_fill_distance_m": 2.423324163210526,
+  "slope_p95_deg": 30.206949369076508,
+  "slope_max_deg": 78.5150431479719,
+  "closure": {
+    "source": "output\\largest_terrain\\component_obs_044\\terrain_top_m.obj",
+    "source_sha256": "26a5d8293fd06b3d6506b3ef76fb0a7e870a91dfede4dcf155fe74296f6a5fa8",
+    "original_boundary_edges": 40,
+    "artificial_base_z_m": -2.0245854139999997,
+    "base_clearance_m": 0.25,
+    "original_top_geometry_unchanged": true,
+    "obj": {
+      "vertices": 61800,
+      "triangles": 123596,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "nonmanifold_vertices": 0,
+      "connected_components": 1,
+      "euler_characteristic": 2,
+      "consistent_outward_winding": true,
+      "enclosed_volume_m3": 109.52975905460454,
+      "dimensions_m": [
+        11.4,
+        11.6,
+        3.108621586
+      ]
+    },
+    "stl": {
+      "vertices": 61800,
+      "triangles": 123596,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "nonmanifold_vertices": 0,
+      "connected_components": 1,
+      "euler_characteristic": 2,
+      "consistent_outward_winding": true,
+      "enclosed_volume_m3": 109.52976640899264,
+      "dimensions_m": [
+        11.400000393390656,
+        11.600000381469727,
+        3.1086217164993286
+      ]
+    },
+    "added_geometry": "Vertical walls on every perimeter edge and planar underside",
+    "limitations": [
+      "Top still includes previously inferred terrain",
+      "Units are metres; STL format itself has no standard unit field",
+      "Nominal rover-local frame, gravity unverified",
+      "No validation in the user viewer or Gazebo"
+    ]
+  },
+  "limitations": [
+    "Convex footprint includes interpolated gaps; area is not wholly measured",
+    "Resampled median height surface replaces overlapping observed triangles",
+    "Single-height terrain cannot represent overhangs or hidden obstacles",
+    "Prior 6 m pilot error estimates do not validate this larger footprint",
+    "No flight, Gazebo collision, or absolute physical accuracy certification"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "source": "output\\chronological_video\\mid036_model\\terrain_top_m.obj",
+  "source_sha256": "b28918f25e4022a7c0534b64f888e6fbc123ecd75f5b4e0a915ceb4453638e90",
+  "original_boundary_edges": 28,
+  "artificial_base_z_m": -0.230197102,
+  "base_clearance_m": 0.25,
+  "original_top_geometry_unchanged": true,
+  "obj": {
+    "vertices": 40014,
+    "triangles": 80024,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "nonmanifold_vertices": 0,
+    "connected_components": 1,
+    "euler_characteristic": 2,
+    "consistent_outward_winding": true,
+    "enclosed_volume_m3": 45.02382068768122,
+    "dimensions_m": [
+      12.9,
+      8.25,
+      1.543094892
+    ]
+  },
+  "stl": {
+    "vertices": 40014,
+    "triangles": 80024,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "nonmanifold_vertices": 0,
+    "connected_components": 1,
+    "euler_characteristic": 2,
+    "consistent_outward_winding": true,
+    "enclosed_volume_m3": 45.02382254377391,
+    "dimensions_m": [
+      12.899999976158142,
+      8.249999761581421,
+      1.5430949032306671
+    ]
+  },
+  "added_geometry": "Vertical walls on every perimeter edge and planar underside",
+  "limitations": [
+    "Top still includes previously inferred terrain",
+    "Units are metres; STL format itself has no standard unit field",
+    "Nominal rover-local frame, gravity unverified",
+    "No validation in the user viewer or Gazebo"
+  ]
+}

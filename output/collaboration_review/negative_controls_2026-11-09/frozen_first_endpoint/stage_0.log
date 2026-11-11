@@ -1,0 +1,15 @@
+{
+  "frames": 33,
+  "accepted_frames": 33,
+  "movie_sha256": "98f82e98f6fa757287a69491dada2415fad33212b1773a3c82473f889b6d4971",
+  "bundle_sha256": "1975be6845038a5353545f50b9ce950d0c72cee93e7a7ce6b2f232b6f9493855",
+  "unconditioned_frames": 31,
+  "accepted_unconditioned_frames": 31,
+  "status": "anchor-conditioned pose diagnostic; not surveyed validation",
+  "limitations": [
+    "Single-anchor PnP lacks independent target depth checks.",
+    "Endpoint relative placement and camera intrinsics are assumed.",
+    "Conditioned frame matches do not show learned geometric recovery.",
+    "Rejected frames have NaN poses; no trajectory is silently interpolated."
+  ]
+}

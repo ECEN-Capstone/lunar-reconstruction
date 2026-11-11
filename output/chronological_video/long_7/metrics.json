@@ -1,0 +1,65 @@
+{
+  "endpoints": [
+    "obs_033",
+    "obs_034"
+  ],
+  "utc": [
+    "20230831T0813019172",
+    "20230831T1304316922"
+  ],
+  "pose": {
+    "source": "conditional mobility prior",
+    "height_refinement": {
+      "accepted": false,
+      "reason": "insufficient shared footprint",
+      "cells": 41
+    },
+    "reference": "NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m",
+    "distance_m": 4.6,
+    "turn_deg": 15.0,
+    "achieved_pose_verified": false,
+    "assumptions": "images bracket complete maneuver; planar initial pose; optional footprint-based tilt/elevation; achieved XY and yaw unverified"
+  },
+  "endpoint_displacement_m": 4.5673412387573284,
+  "seed": 7,
+  "generator": "pose-conditioned textured stochastic elevation field",
+  "camera_frame": "T_world_from_rectified_left; nominal rover axes at A; metres",
+  "grid_m": 0.05,
+  "relief_scale_m": 0.0045304293642544164,
+  "frames": 33,
+  "plane_sweep_cells": 2487,
+  "triangulation_windows": 16,
+  "video_tracks": 2782,
+  "reprojection_px": {
+    "count": 2782,
+    "median": 0.22902895770687215,
+    "p90": 0.653721436062504,
+    "p95": 0.7551803598830217,
+    "maximum": 0.8483843204565905,
+    "rmse": 0.37518653720949235
+  },
+  "stereo_cells": 10227,
+  "new_video_cells": 655,
+  "new_cell_area_m2": 1.6375000000000004,
+  "mesh": {
+    "vertices": 10882,
+    "triangles": 17252,
+    "projected_surface_area_m2": 21.56499999999994,
+    "slopes_deg": {
+      "count": 17252,
+      "median": 13.52704764037096,
+      "p90": 22.037505760599377,
+      "p95": 25.28040208815578,
+      "maximum": 86.03842481530535,
+      "rmse": 17.21203165350647
+    },
+    "area_with_inferred_vertices_m2": 0.9499999999999977,
+    "obj_readback_verified": true
+  },
+  "labels": {
+    "0": "unsupported",
+    "1": "endpoint stereo",
+    "3": "synthetic video"
+  },
+  "status": "conditional candidate; unverified spatial placement"
+}

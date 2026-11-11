@@ -1,0 +1,795 @@
+[
+  {
+    "number": 33,
+    "title": "Detailed evidence atlas: what is actually available",
+    "section": "Read this first",
+    "notes": "Slides 1–13 remain the result-first 15-minute route. Slides 14–32 are the original technical appendix. This expanded atlas documents the actual saved outputs at the 10 November snapshot. It does not count multiple seeds, parameter sweeps or procedural controls as independent learned video methods. The all-observation rendering is an illustrative command-derived placement, not a global reconstruction. Individual mesh panels use independent complete extents, nominal up and no vertical exaggeration. Color on real/generated mesh panels is per-panel relative height; provenance colors on video panels have a different explicit legend. All OBJ faces are drawn; empty image margins are trimmed, geometry is not cropped.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/atlas_manifest.json"
+    ]
+  },
+  {
+    "number": 34,
+    "title": "1. Camera rays and metric convention",
+    "section": "Detailed methodology",
+    "notes": "Source CAHV has non-unit A vectors. Normalizing A alone changes the camera model. Original archival report predates the later nominal-baseline paper; metric outputs use the subsequent mm convention. Absolute scale uncertainty and calibration covariance are unavailable. Nominal rover-local Z is not independently measured lunar vertical.\nRig calibration provides relative rays; it does not provide the rover’s global trajectory.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/geometry.py",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/RECONSTRUCTION_REPORT.md",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/TERRAIN_COMPLETION.md"
+    ]
+  },
+  {
+    "number": 35,
+    "title": "2. Pair admission and dense stereo matching",
+    "section": "Detailed methodology",
+    "notes": "The pair gate checks the fixed calibrated rig, before dense matching. Fundamental-matrix estimation rejects feature mismatches but does not replace calibration. Raw masks prevent corrected gray values from disguising sensor saturation. Thresholds here are the production stereo stage, before the final r11 support filter.\nFailure of the calibrated pair gate cannot be fixed by accepting more dense pixels.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/stereo.py",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_034/provenance.json"
+    ]
+  },
+  {
+    "number": 36,
+    "title": "3. Support filtering, triangulation and open meshes",
+    "section": "Detailed methodology",
+    "notes": "No smoothing, plane fitting or hole filling changes retained observed XYZ. Local coverage is whole-image pixel acceptance, not the fraction of lunar terrain recovered. The atlas converts exported camera coordinates to nominal rover coordinates only for display. Raw SGBM used disparity ≥16 before this support stage tightened it to 32.\nFor small errors, σZ/Z ≈ σd/d; low disparity magnifies error, even with subpixel consistency.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/configs/filtering.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/stereo.py",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/RECONSTRUCTION_REPORT.md"
+    ]
+  },
+  {
+    "number": 37,
+    "title": "4. Register observations only where overlap supports it",
+    "section": "Detailed methodology",
+    "notes": "Target depth is checked after pose fitting, but both views share calibration biases. Non-tree edges are cycle diagnostics. This is not global bundle adjustment or a measured lunar trajectory. There are 37 components: six multi-observation groups and 31 singletons. Duplicated acquisitions can weaken the independence of view counts.\nFused voxel count and multi-view-supported voxel count are different quantities.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/configs/registration.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/register.py",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/RECONSTRUCTION_REPORT.md"
+    ]
+  },
+  {
+    "number": 38,
+    "title": "5. Fill terrain holes while retaining source labels",
+    "section": "Detailed methodology",
+    "notes": "The footprint is a selected projected convex envelope, not surveyed terrain boundaries. Mesh projected area differs from cell count × grid area at boundary triangles. Closure removes open edges but cannot recover hidden craters, rocks, or correct an erroneous upper surface. Large unsupported spans have no terrain accuracy bound.\nMore complete geometry is useful for simulation; inferred areas must remain distinguishable.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/configs/completion.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/close_terrain.py",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/TERRAIN_COMPLETION.md"
+    ]
+  },
+  {
+    "number": 39,
+    "title": "6. Construct a procedural monocular video",
+    "section": "Detailed methodology",
+    "notes": "Noise is fixed in world coordinates and tapers with distance from anchors, rather than changing terrain through time. The two real endpoint images remain actual input photographs. Distant panorama appearance is excluded from geometric support. Playback length is not the rover’s physical travel duration. These clips are procedural, not learned diffusion outputs.\nThis creates a controlled image experiment from an assumed surface; it does not observe unknown terrain.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/video_bridge.py"
+    ]
+  },
+  {
+    "number": 40,
+    "title": "7. Estimate and check poses from output frames",
+    "section": "Detailed methodology",
+    "notes": "Conditioned frames and unconditioned frames are reported separately. A frozen image can yield a valid stationary pose; this is not proof of reconstructable camera motion. Pose-check hashes bind the returned clip and anchor bundle. The current one-anchor path lacks an independent second-anchor depth test.\nPose reprojection tests image consistency; useful triangulation also needs parallax and stable geometry.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/video_pose_check.py",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/evaluate_video.py"
+    ]
+  },
+  {
+    "number": 41,
+    "title": "8. Sparse video reconstruction: three-view geometry",
+    "section": "Detailed methodology",
+    "notes": "The small reported reprojection residuals are after rejection by the 0.85 px gate. They are not an independent 3D accuracy metric. In the external evaluator, selected valid frames are compressed into a new list; original index gaps remain recorded but are not fully retained in tracking-window construction. This is a known evaluation limitation.\nCheck geometry, accepted-cell coverage and withheld terrain error together.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/video_triangulate.py",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/evaluate_video.py"
+    ]
+  },
+  {
+    "number": 42,
+    "title": "9. Dense video reconstruction: height-plane search",
+    "section": "Detailed methodology",
+    "notes": "The search is along height, not a free 3D point search. Best cost uniqueness excludes nearby levels by eight 1 cm steps. Dense reconstruction currently has no explicit per-cell ray-angle/parallax gate; frozen-video candidates demonstrate the resulting acceptance weakness.\n1 cm height search spacing is numerical resolution, not achieved terrain accuracy.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/video_triangulate.py"
+    ]
+  },
+  {
+    "number": 43,
+    "title": "10. Merge candidates, compare seeds, close the surface",
+    "section": "Detailed methodology",
+    "notes": "Seed agreement measures repeatability under this prior, not external correctness. The seed integration audit also found that duplicate run entries can count as extra votes despite the unique-seed precondition; inputs must be de-duplicated before promotion. Height gates can improve surviving error by selecting a small subset and bias results toward the interpolation prior.\nThe visible completed mesh mixes evidence and inference; source proportions must accompany it.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/video_bridge.py",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/video_integrate.py",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/close_terrain.py"
+    ]
+  },
+  {
+    "number": 44,
+    "title": "11. Evaluate pose and depth without survey truth",
+    "section": "Detailed methodology",
+    "notes": "Registered stereo is a noisy reference with shared calibration and possible pose bias, not ground truth. Spatial depth-mask tests retain endpoint photographs and already-estimated poses: they are easier than withholding an entire observation. The original exploratory rule requires ≥100 scored cells, median≤5 cm and p90≤15 cm, but passing this rule does not establish improvement over a baseline.\nCompare methods on fixed data and matched protocols; do not rank different subsets or resolutions.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/reconstruction/video_bridge.py",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/collaboration_review/2026-11-09/COMPARISON_FINDINGS.md"
+    ]
+  },
+  {
+    "number": 45,
+    "title": "12. Separate pose error from depth error",
+    "section": "Detailed methodology",
+    "notes": "The existing sensitivity experiment illustrates non-identifiability; its variants are not confidence intervals. Six of nine variants passed the height fit and five reached vertical bounds. The additional ablations listed are proposed next work, not completed evidence. Keep rendering truth separate and use it only for controlled synthetic evaluation.\nA smooth surface or good height fit alone cannot validate horizontal pose.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/collaboration_review/pose_sensitivity_2026-11-09/FINDINGS.md"
+    ]
+  },
+  {
+    "number": 46,
+    "title": "Observed terrain atlas: 001–004",
+    "section": "All 50 accepted local reconstructions",
+    "notes": "Each panel uses the actual saved r11 OBJ and left rectified image. All exported faces are rendered at true XYZ aspect, in nominal rover-local coordinates using the working millimetre convention. Panels have independent extents and independent relative-elevation colors; colors and apparent sizes cannot be compared quantitatively. Whole-image acceptance includes sky in the denominator. These are open observed surfaces, before completion or registration. Exact paths, extents, hashes and metrics are in atlas_manifest.json.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_001/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_001/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_001/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_002/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_002/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_002/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_003/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_003/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_003/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_004/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_004/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_004/rectified_left.png"
+    ]
+  },
+  {
+    "number": 47,
+    "title": "Observed terrain atlas: 005–008",
+    "section": "All 50 accepted local reconstructions",
+    "notes": "Each panel uses the actual saved r11 OBJ and left rectified image. All exported faces are rendered at true XYZ aspect, in nominal rover-local coordinates using the working millimetre convention. Panels have independent extents and independent relative-elevation colors; colors and apparent sizes cannot be compared quantitatively. Whole-image acceptance includes sky in the denominator. These are open observed surfaces, before completion or registration. Exact paths, extents, hashes and metrics are in atlas_manifest.json.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_005/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_005/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_005/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_006/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_006/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_006/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_007/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_007/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_007/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_008/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_008/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_008/rectified_left.png"
+    ]
+  },
+  {
+    "number": 48,
+    "title": "Observed terrain atlas: 009–012",
+    "section": "All 50 accepted local reconstructions",
+    "notes": "Each panel uses the actual saved r11 OBJ and left rectified image. All exported faces are rendered at true XYZ aspect, in nominal rover-local coordinates using the working millimetre convention. Panels have independent extents and independent relative-elevation colors; colors and apparent sizes cannot be compared quantitatively. Whole-image acceptance includes sky in the denominator. These are open observed surfaces, before completion or registration. Exact paths, extents, hashes and metrics are in atlas_manifest.json.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_009/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_009/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_009/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_010/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_010/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_010/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_011/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_011/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_011/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_012/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_012/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_012/rectified_left.png"
+    ]
+  },
+  {
+    "number": 49,
+    "title": "Observed terrain atlas: 013–017",
+    "section": "All 50 accepted local reconstructions",
+    "notes": "Each panel uses the actual saved r11 OBJ and left rectified image. All exported faces are rendered at true XYZ aspect, in nominal rover-local coordinates using the working millimetre convention. Panels have independent extents and independent relative-elevation colors; colors and apparent sizes cannot be compared quantitatively. Whole-image acceptance includes sky in the denominator. These are open observed surfaces, before completion or registration. Exact paths, extents, hashes and metrics are in atlas_manifest.json.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_013/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_013/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_013/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_014/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_014/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_014/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_016/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_016/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_016/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_017/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_017/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_017/rectified_left.png"
+    ]
+  },
+  {
+    "number": 50,
+    "title": "Observed terrain atlas: 018–021",
+    "section": "All 50 accepted local reconstructions",
+    "notes": "Each panel uses the actual saved r11 OBJ and left rectified image. All exported faces are rendered at true XYZ aspect, in nominal rover-local coordinates using the working millimetre convention. Panels have independent extents and independent relative-elevation colors; colors and apparent sizes cannot be compared quantitatively. Whole-image acceptance includes sky in the denominator. These are open observed surfaces, before completion or registration. Exact paths, extents, hashes and metrics are in atlas_manifest.json.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_018/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_018/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_018/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_019/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_019/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_019/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_020/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_020/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_020/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_021/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_021/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_021/rectified_left.png"
+    ]
+  },
+  {
+    "number": 51,
+    "title": "Observed terrain atlas: 022–025",
+    "section": "All 50 accepted local reconstructions",
+    "notes": "Each panel uses the actual saved r11 OBJ and left rectified image. All exported faces are rendered at true XYZ aspect, in nominal rover-local coordinates using the working millimetre convention. Panels have independent extents and independent relative-elevation colors; colors and apparent sizes cannot be compared quantitatively. Whole-image acceptance includes sky in the denominator. These are open observed surfaces, before completion or registration. Exact paths, extents, hashes and metrics are in atlas_manifest.json.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_022/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_022/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_022/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_023/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_023/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_023/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_024/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_024/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_024/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_025/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_025/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_025/rectified_left.png"
+    ]
+  },
+  {
+    "number": 52,
+    "title": "Observed terrain atlas: 026–029",
+    "section": "All 50 accepted local reconstructions",
+    "notes": "Each panel uses the actual saved r11 OBJ and left rectified image. All exported faces are rendered at true XYZ aspect, in nominal rover-local coordinates using the working millimetre convention. Panels have independent extents and independent relative-elevation colors; colors and apparent sizes cannot be compared quantitatively. Whole-image acceptance includes sky in the denominator. These are open observed surfaces, before completion or registration. Exact paths, extents, hashes and metrics are in atlas_manifest.json.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_026/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_026/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_026/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_027/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_027/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_027/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_028/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_028/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_028/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_029/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_029/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_029/rectified_left.png"
+    ]
+  },
+  {
+    "number": 53,
+    "title": "Observed terrain atlas: 030–034",
+    "section": "All 50 accepted local reconstructions",
+    "notes": "Each panel uses the actual saved r11 OBJ and left rectified image. All exported faces are rendered at true XYZ aspect, in nominal rover-local coordinates using the working millimetre convention. Panels have independent extents and independent relative-elevation colors; colors and apparent sizes cannot be compared quantitatively. Whole-image acceptance includes sky in the denominator. These are open observed surfaces, before completion or registration. Exact paths, extents, hashes and metrics are in atlas_manifest.json.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_030/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_030/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_030/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_031/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_031/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_031/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_033/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_033/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_033/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_034/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_034/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_034/rectified_left.png"
+    ]
+  },
+  {
+    "number": 54,
+    "title": "Observed terrain atlas: 035–040",
+    "section": "All 50 accepted local reconstructions",
+    "notes": "Each panel uses the actual saved r11 OBJ and left rectified image. All exported faces are rendered at true XYZ aspect, in nominal rover-local coordinates using the working millimetre convention. Panels have independent extents and independent relative-elevation colors; colors and apparent sizes cannot be compared quantitatively. Whole-image acceptance includes sky in the denominator. These are open observed surfaces, before completion or registration. Exact paths, extents, hashes and metrics are in atlas_manifest.json.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_035/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_035/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_035/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_038/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_038/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_038/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_039/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_039/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_039/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_040/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_040/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_040/rectified_left.png"
+    ]
+  },
+  {
+    "number": 55,
+    "title": "Observed terrain atlas: 041–045",
+    "section": "All 50 accepted local reconstructions",
+    "notes": "Each panel uses the actual saved r11 OBJ and left rectified image. All exported faces are rendered at true XYZ aspect, in nominal rover-local coordinates using the working millimetre convention. Panels have independent extents and independent relative-elevation colors; colors and apparent sizes cannot be compared quantitatively. Whole-image acceptance includes sky in the denominator. These are open observed surfaces, before completion or registration. Exact paths, extents, hashes and metrics are in atlas_manifest.json.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_041/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_041/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_041/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_042/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_042/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_042/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_044/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_044/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_044/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_045/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_045/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_045/rectified_left.png"
+    ]
+  },
+  {
+    "number": 56,
+    "title": "Observed terrain atlas: 046–049",
+    "section": "All 50 accepted local reconstructions",
+    "notes": "Each panel uses the actual saved r11 OBJ and left rectified image. All exported faces are rendered at true XYZ aspect, in nominal rover-local coordinates using the working millimetre convention. Panels have independent extents and independent relative-elevation colors; colors and apparent sizes cannot be compared quantitatively. Whole-image acceptance includes sky in the denominator. These are open observed surfaces, before completion or registration. Exact paths, extents, hashes and metrics are in atlas_manifest.json.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_046/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_046/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_046/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_047/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_047/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_047/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_048/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_048/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_048/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_049/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_049/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_049/rectified_left.png"
+    ]
+  },
+  {
+    "number": 57,
+    "title": "Observed terrain atlas: 051–054",
+    "section": "All 50 accepted local reconstructions",
+    "notes": "Each panel uses the actual saved r11 OBJ and left rectified image. All exported faces are rendered at true XYZ aspect, in nominal rover-local coordinates using the working millimetre convention. Panels have independent extents and independent relative-elevation colors; colors and apparent sizes cannot be compared quantitatively. Whole-image acceptance includes sky in the denominator. These are open observed surfaces, before completion or registration. Exact paths, extents, hashes and metrics are in atlas_manifest.json.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_051/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_051/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_051/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_052/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_052/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_052/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_053/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_053/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_053/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_054/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_054/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_054/rectified_left.png"
+    ]
+  },
+  {
+    "number": 58,
+    "title": "Observed terrain atlas: 055–056",
+    "section": "All 50 accepted local reconstructions",
+    "notes": "Each panel uses the actual saved r11 OBJ and left rectified image. All exported faces are rendered at true XYZ aspect, in nominal rover-local coordinates using the working millimetre convention. Panels have independent extents and independent relative-elevation colors; colors and apparent sizes cannot be compared quantitatively. Whole-image acceptance includes sky in the denominator. These are open observed surfaces, before completion or registration. Exact paths, extents, hashes and metrics are in atlas_manifest.json.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_055/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_055/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_055/rectified_left.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_056/local_mesh_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_056/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r11_filtered_batch/obs_056/rectified_left.png"
+    ]
+  },
+  {
+    "number": 59,
+    "title": "Registered groups: 003 / 005 / 010",
+    "section": "All six registered multi-observation groups",
+    "notes": "These are the all-observed union OBJ meshes from r12, not completed terrain. The exported meshes and the voxel cloud counts describe different representations. Report distinct-view support rather than implying all voxels have multiple views. Each panel has its own full spatial extent and elevation color range.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r12_registration/component_obs_003/mesh_observed_union_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r12_registration/component_obs_003/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r12_registration/component_obs_005/mesh_observed_union_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r12_registration/component_obs_005/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r12_registration/component_obs_010/mesh_observed_union_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r12_registration/component_obs_010/metrics.json"
+    ]
+  },
+  {
+    "number": 60,
+    "title": "Registered groups: 029 / 044 / 051",
+    "section": "All six registered multi-observation groups",
+    "notes": "These are the all-observed union OBJ meshes from r12, not completed terrain. The exported meshes and the voxel cloud counts describe different representations. Report distinct-view support rather than implying all voxels have multiple views. Each panel has its own full spatial extent and elevation color range.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r12_registration/component_obs_029/mesh_observed_union_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r12_registration/component_obs_029/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r12_registration/component_obs_044/mesh_observed_union_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r12_registration/component_obs_044/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r12_registration/component_obs_051/mesh_observed_union_calibration_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r12_registration/component_obs_051/metrics.json"
+    ]
+  },
+  {
+    "number": 61,
+    "title": "obs_003: all three completion settings",
+    "section": "Actual completed terrain variants",
+    "notes": "All three models are rendered from their respective saved OBJ exports. Strict input heights are unchanged. Filled hull-cell fraction and projected triangle area have different boundary conventions. Simulation fills the whole hull, regardless of nearest-support distance. These renders show the top surface only; closure is separate.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r15_terrain_completion/obs_003/completion_metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r15_terrain_completion/obs_003/terrain_balanced_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r15_terrain_completion/obs_003/terrain_extended_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r15_terrain_completion/obs_003/terrain_simulation_m.obj"
+    ]
+  },
+  {
+    "number": 62,
+    "title": "obs_029: all three completion settings",
+    "section": "Actual completed terrain variants",
+    "notes": "All three models are rendered from their respective saved OBJ exports. Strict input heights are unchanged. Filled hull-cell fraction and projected triangle area have different boundary conventions. Simulation fills the whole hull, regardless of nearest-support distance. These renders show the top surface only; closure is separate.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r15_terrain_completion/obs_029/completion_metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r15_terrain_completion/obs_029/terrain_balanced_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r15_terrain_completion/obs_029/terrain_extended_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r15_terrain_completion/obs_029/terrain_simulation_m.obj"
+    ]
+  },
+  {
+    "number": 63,
+    "title": "obs_034: all three completion settings",
+    "section": "Actual completed terrain variants",
+    "notes": "All three models are rendered from their respective saved OBJ exports. Strict input heights are unchanged. Filled hull-cell fraction and projected triangle area have different boundary conventions. Simulation fills the whole hull, regardless of nearest-support distance. These renders show the top surface only; closure is separate.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r15_terrain_completion/obs_034/completion_metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r15_terrain_completion/obs_034/terrain_balanced_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r15_terrain_completion/obs_034/terrain_extended_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/artifacts/runs/r15_terrain_completion/obs_034/terrain_simulation_m.obj"
+    ]
+  },
+  {
+    "number": 64,
+    "title": "stereo_trial_1: strict and relaxed diagnostics",
+    "section": "Generated stereo · original camera gate failed",
+    "notes": "The original fixed-rig camera gate failed for this generated pair. These diagnostic runs bypass that gate to reveal what dense matching does. No raw sensor images exist, so raw-quality masking cannot be applied. Meshes use arbitrary baseline=1 scale. Numerical filter acceptance does not validate the geometry.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/generated_stereo_trial/stereo_trial_1/diagnostic_strict/INVALID_GEOMETRY_mesh_baseline_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/generated_stereo_trial/stereo_trial_1/diagnostic_strict/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/generated_stereo_trial/stereo_trial_1/diagnostic_relaxed/INVALID_GEOMETRY_mesh_baseline_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/generated_stereo_trial/stereo_trial_1/diagnostic_relaxed/metrics.json"
+    ]
+  },
+  {
+    "number": 65,
+    "title": "stereo_trial_2: strict and relaxed diagnostics",
+    "section": "Generated stereo · original camera gate failed",
+    "notes": "The original fixed-rig camera gate failed for this generated pair. These diagnostic runs bypass that gate to reveal what dense matching does. No raw sensor images exist, so raw-quality masking cannot be applied. Meshes use arbitrary baseline=1 scale. Numerical filter acceptance does not validate the geometry.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/generated_stereo_trial/stereo_trial_2/diagnostic_strict/INVALID_GEOMETRY_mesh_baseline_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/generated_stereo_trial/stereo_trial_2/diagnostic_strict/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/generated_stereo_trial/stereo_trial_2/diagnostic_relaxed/INVALID_GEOMETRY_mesh_baseline_units.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/generated_stereo_trial/stereo_trial_2/diagnostic_relaxed/metrics.json"
+    ]
+  },
+  {
+    "number": 66,
+    "title": "more relaxed: both trials",
+    "section": "Generated stereo · complete parameter sweep",
+    "notes": "Full saved OBJ geometry for both trials. No smoothing, outlier deletion, face decimation or geometric cropping. All panels retain independent full extents and arbitrary baseline units. Held-out disparity residual is computed only where held-out feature locations also survive dense acceptance; it is not a whole-surface 3D error. The row-adjusted family also changes the image alignment. Exact profile parameters are in the source metrics.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/more_relaxed/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/more_relaxed/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/more_relaxed/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/more_relaxed/metrics.json"
+    ]
+  },
+  {
+    "number": 67,
+    "title": "uber relaxed: both trials",
+    "section": "Generated stereo · complete parameter sweep",
+    "notes": "Full saved OBJ geometry for both trials. No smoothing, outlier deletion, face decimation or geometric cropping. All panels retain independent full extents and arbitrary baseline units. Held-out disparity residual is computed only where held-out feature locations also survive dense acceptance; it is not a whole-surface 3D error. The row-adjusted family also changes the image alignment. Exact profile parameters are in the source metrics.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/uber_relaxed/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/uber_relaxed/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/uber_relaxed/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/uber_relaxed/metrics.json"
+    ]
+  },
+  {
+    "number": 68,
+    "title": "uber relaxed no checks: both trials",
+    "section": "Generated stereo · complete parameter sweep",
+    "notes": "Full saved OBJ geometry for both trials. No smoothing, outlier deletion, face decimation or geometric cropping. All panels retain independent full extents and arbitrary baseline units. Held-out disparity residual is computed only where held-out feature locations also survive dense acceptance; it is not a whole-surface 3D error. The row-adjusted family also changes the image alignment. Exact profile parameters are in the source metrics.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/uber_relaxed_no_checks/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/uber_relaxed_no_checks/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/uber_relaxed_no_checks/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/uber_relaxed_no_checks/metrics.json"
+    ]
+  },
+  {
+    "number": 69,
+    "title": "uber relaxed wide window: both trials",
+    "section": "Generated stereo · complete parameter sweep",
+    "notes": "Full saved OBJ geometry for both trials. No smoothing, outlier deletion, face decimation or geometric cropping. All panels retain independent full extents and arbitrary baseline units. Held-out disparity residual is computed only where held-out feature locations also survive dense acceptance; it is not a whole-surface 3D error. The row-adjusted family also changes the image alignment. Exact profile parameters are in the source metrics.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/uber_relaxed_wide_window/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/uber_relaxed_wide_window/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/uber_relaxed_wide_window/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/uber_relaxed_wide_window/metrics.json"
+    ]
+  },
+  {
+    "number": 70,
+    "title": "uber relaxed row adjusted: both trials",
+    "section": "Generated stereo · complete parameter sweep",
+    "notes": "Full saved OBJ geometry for both trials. No smoothing, outlier deletion, face decimation or geometric cropping. All panels retain independent full extents and arbitrary baseline units. Held-out disparity residual is computed only where held-out feature locations also survive dense acceptance; it is not a whole-surface 3D error. The row-adjusted family also changes the image alignment. Exact profile parameters are in the source metrics.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/uber_relaxed_row_adjusted/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/uber_relaxed_row_adjusted/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/uber_relaxed_row_adjusted/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/uber_relaxed_row_adjusted/metrics.json"
+    ]
+  },
+  {
+    "number": 71,
+    "title": "row adjusted tighter: both trials",
+    "section": "Generated stereo · complete parameter sweep",
+    "notes": "Full saved OBJ geometry for both trials. No smoothing, outlier deletion, face decimation or geometric cropping. All panels retain independent full extents and arbitrary baseline units. Held-out disparity residual is computed only where held-out feature locations also survive dense acceptance; it is not a whole-surface 3D error. The row-adjusted family also changes the image alignment. Exact profile parameters are in the source metrics.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/row_adjusted_tighter/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/row_adjusted_tighter/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/row_adjusted_tighter/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/row_adjusted_tighter/metrics.json"
+    ]
+  },
+  {
+    "number": 72,
+    "title": "row adjusted strict matching: both trials",
+    "section": "Generated stereo · complete parameter sweep",
+    "notes": "Full saved OBJ geometry for both trials. No smoothing, outlier deletion, face decimation or geometric cropping. All panels retain independent full extents and arbitrary baseline units. Held-out disparity residual is computed only where held-out feature locations also survive dense acceptance; it is not a whole-surface 3D error. The row-adjusted family also changes the image alignment. Exact profile parameters are in the source metrics.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/row_adjusted_strict_matching/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_1/row_adjusted_strict_matching/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/row_adjusted_strict_matching/uber_relaxed.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/row_adjusted_strict_matching/metrics.json"
+    ]
+  },
+  {
+    "number": 73,
+    "title": "Trial 2: where relaxed matching accepts pixels",
+    "section": "Generated stereo · matching evidence",
+    "notes": "Trial 2 acceptance masks above, disparity below, for all seven sweep profiles. Percentages divide by the entire image. False sky correspondences and broad disparity plateaus should be inspected with the full geometry. Trial 2 row adjustment has only seven held-out feature matches, so its low residual on a few accepted matches provides limited evidence.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/stereo_trial_2/comparison.png",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/uber_relaxed/REPORT.md"
+    ]
+  },
+  {
+    "number": 74,
+    "title": "Estimated-pose control: 044 → 047",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for baseline_unconditioned_eval. obs_044 to obs_047. Procedural imagery reconstructed from pixels; strict endpoint stereo remains in the candidate surface. Video RMSE 4.90 cm vs matched IDW 0.77 cm / linear 0.85 cm; no demonstrated gain.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/baseline_unconditioned_eval/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/baseline_unconditioned_eval/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/figures/baseline_unconditioned_eval_frames.png"
+    ]
+  },
+  {
+    "number": 75,
+    "title": "Depth-hole control: 0.5 m diameter",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for disk_0.25. obs_033 to obs_034. Procedural imagery reconstructed from pixels; strict endpoint stereo remains in the candidate surface. Video RMSE 8.06 cm vs matched IDW 2.48 cm; no demonstrated gain.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/disk_0.25/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/disk_0.25/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/figures/disk_0.25_frames.png"
+    ]
+  },
+  {
+    "number": 76,
+    "title": "Depth-hole control: 1.0 m diameter",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for disk_0.5. obs_033 to obs_034. Procedural imagery reconstructed from pixels; strict endpoint stereo remains in the candidate surface. Video RMSE 7.37 cm vs matched IDW 4.02 cm; no demonstrated gain.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/disk_0.5/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/disk_0.5/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/figures/disk_0.5_frames.png"
+    ]
+  },
+  {
+    "number": 77,
+    "title": "044 → 047: seed 17, withhold 046",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for holdout046_17. obs_044 to obs_047. Procedural imagery reconstructed from pixels; strict endpoint stereo remains in the candidate surface. Video RMSE 7.58 cm vs matched IDW 3.72 cm; no demonstrated gain.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout046_17/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout046_17/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/figures/holdout046_17_frames.png"
+    ]
+  },
+  {
+    "number": 78,
+    "title": "044 → 047: seed 27, withhold 046",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for holdout046_27. obs_044 to obs_047. Procedural imagery reconstructed from pixels; strict endpoint stereo remains in the candidate surface. Video RMSE 8.61 cm vs matched IDW 3.81 cm; no demonstrated gain.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout046_27/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout046_27/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/figures/holdout046_27_frames.png"
+    ]
+  },
+  {
+    "number": 79,
+    "title": "044 → 047: seed 7, withhold 046",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for holdout046_7. obs_044 to obs_047. Procedural imagery reconstructed from pixels; strict endpoint stereo remains in the candidate surface. Video RMSE 7.16 cm vs matched IDW 3.78 cm; no demonstrated gain.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout046_7/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout046_7/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/figures/holdout046_7_frames.png"
+    ]
+  },
+  {
+    "number": 80,
+    "title": "044 → 047: three-seed consensus, withhold 046",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for holdout046_model. obs_044 to obs_047. Three procedural seeds integrated; remaining holes receive linear interpolation. Video RMSE 8.45 cm vs matched IDW 3.52 cm / linear 1.25 cm; no demonstrated gain.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout046_model/terrain_top_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout046_model/metrics.json"
+    ]
+  },
+  {
+    "number": 81,
+    "title": "045 → 048: seed 7, withhold 047",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for holdout047_7. obs_045 to obs_048. Procedural imagery reconstructed from pixels; strict endpoint stereo remains in the candidate surface. Only 4 reference cells scored; insufficient support for an accuracy conclusion.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout047_7/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout047_7/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/figures/holdout047_7_frames.png"
+    ]
+  },
+  {
+    "number": 82,
+    "title": "Long-path sensitivity: 4.6 m / 15°",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for long_7. obs_033 to obs_034. Procedural imagery reconstructed from pixels; strict endpoint stereo remains in the candidate surface. Conditional model: no independent withheld-terrain error is available for this run.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/long_7/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/long_7/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/figures/long_7_frames.png"
+    ]
+  },
+  {
+    "number": 83,
+    "title": "044 → 048: seed 7, withhold 046",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for longer046_7. obs_044 to obs_048. Procedural imagery reconstructed from pixels; strict endpoint stereo remains in the candidate surface. Video RMSE 11.08 cm vs matched IDW 2.83 cm; no demonstrated gain.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/longer046_7/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/longer046_7/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/figures/longer046_7_frames.png"
+    ]
+  },
+  {
+    "number": 84,
+    "title": "4 m / 10° command prior: seed 17",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for mid036_17. obs_033 to obs_034. Procedural imagery reconstructed from pixels; strict endpoint stereo remains in the candidate surface. Conditional model: no independent withheld-terrain error is available for this run.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/mid036_17/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/mid036_17/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/figures/mid036_17_frames.png"
+    ]
+  },
+  {
+    "number": 85,
+    "title": "4 m / 10° command prior: seed 27",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for mid036_27. obs_033 to obs_034. Procedural imagery reconstructed from pixels; strict endpoint stereo remains in the candidate surface. Conditional model: no independent withheld-terrain error is available for this run.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/mid036_27/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/mid036_27/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/figures/mid036_27_frames.png"
+    ]
+  },
+  {
+    "number": 86,
+    "title": "4 m / 10° command prior: seed 7",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for mid036_7. obs_033 to obs_034. Procedural imagery reconstructed from pixels; strict endpoint stereo remains in the candidate surface. Conditional model: no independent withheld-terrain error is available for this run.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/mid036_7/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/mid036_7/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/figures/mid036_7_frames.png"
+    ]
+  },
+  {
+    "number": 87,
+    "title": "4 m / 10° command prior: integrated model",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for mid036_model. obs_033 to obs_034. Three procedural seeds integrated; remaining holes receive linear interpolation. Conditional model: no independent withheld-terrain error is available for this run.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/mid036_model/terrain_top_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/mid036_model/metrics.json"
+    ]
+  },
+  {
+    "number": 88,
+    "title": "Short-path sensitivity: 3.4 m / 5°",
+    "section": "Video terrain · individual result sheet",
+    "notes": "Actual saved terrain for short_7. obs_033 to obs_034. Procedural imagery reconstructed from pixels; strict endpoint stereo remains in the candidate surface. Conditional model: no independent withheld-terrain error is available for this run.\nAll geometry is shown at true aspect and complete extent; provenance is assigned conservatively per face using its most inferred vertex. Colors distinguish evidence origin, not confidence estimates. Grid is 5 cm. Top area is projected triangle area. Small accepted-reference subsets are not representative of unobserved terrain. Exact raw metrics follow in the companion report.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/short_7/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/short_7/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/detailed_progress_2026-11-10/figures/short_7_frames.png"
+    ]
+  },
+  {
+    "number": 89,
+    "title": "Video result ledger 1 / 2",
+    "section": "Exact saved result comparisons",
+    "notes": "Metrics transcribed directly from each run JSON. RMSE values in centimetres; each row uses its own scored cells. Rows differ in endpoint pair, support, pose protocol, resolution, spatial holdout and seed, so this table cannot rank video-generation methods. Dashes mean no corresponding independent metric, not zero error. All are procedural results.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/baseline_unconditioned_eval/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/disk_0.25/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/disk_0.5/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout046_17/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout046_27/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout046_7/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout046_model/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout047_7/metrics.json"
+    ]
+  },
+  {
+    "number": 90,
+    "title": "Video result ledger 2 / 2",
+    "section": "Exact saved result comparisons",
+    "notes": "Metrics transcribed directly from each run JSON. RMSE values in centimetres; each row uses its own scored cells. Rows differ in endpoint pair, support, pose protocol, resolution, spatial holdout and seed, so this table cannot rank video-generation methods. Dashes mean no corresponding independent metric, not zero error. All are procedural results.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/long_7/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/longer046_7/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/mid036_17/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/mid036_27/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/mid036_7/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/mid036_model/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/short_7/metrics.json"
+    ]
+  },
+  {
+    "number": 91,
+    "title": "Invalid temporal controls still export candidate meshes",
+    "section": "Failure cases · actual exported geometry",
+    "notes": "These are real saved evaluator outputs for a frozen image repeated 33 times and a linear endpoint crossfade. Most visible mesh geometry comes from endpoint stereo; its presence must not be mistaken for video reconstruction success. Frozen has four added dense cells and zero sparse points; crossfade adds 49 cells. Only zero and one reference cells, respectively, are scored. Require negative-control rejection and explicit per-cell parallax before promoting candidate surfaces.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/collaboration_review/negative_controls_2026-11-09/frozen_first_endpoint/evaluation/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/collaboration_review/negative_controls_2026-11-09/frozen_first_endpoint/evaluation/metrics.json",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/collaboration_review/negative_controls_2026-11-09/linear_endpoint_crossfade/evaluation/candidate_stereo_plus_video_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/collaboration_review/negative_controls_2026-11-09/linear_endpoint_crossfade/evaluation/metrics.json"
+    ]
+  },
+  {
+    "number": 92,
+    "title": "Actual closed video-terrain models",
+    "section": "Geometry export · topology is not accuracy",
+    "notes": "Actual closed OBJ exports, showing sides and underside as part of each model. These are Matplotlib mesh renders, not Blender import validation. Closed meshes preserve the existing top and append an artificial base and vertical walls. Both have one connected component, consistent outward winding, and zero boundary or nonmanifold edges/vertices according to saved closure checks. Their upper surfaces still mix observed and inferred cells.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/holdout046_model/closed/terrain_closed_m.obj",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/chronological_video/mid036_model/closed/terrain_closed_m.obj"
+    ]
+  },
+  {
+    "number": 93,
+    "title": "What the results justify doing next",
+    "section": "Research decisions and remaining evidence",
+    "notes": "This is a work plan, not a record of completed experiments. Keep the professor’s request for more than ten methods as an explicit unfulfilled benchmark target. The colleague will return a ZIP from his GPU. No such learned-result ZIP has been evaluated at this snapshot. Fix acceptance controls and establish comparable evaluation before choosing a reconstruction model. Use actual mesh import screenshots and planner diagnostics for the simulation comparison. Image segmentation has proposals but no validated rock/crater prior yet.",
+    "sources": [
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/collaboration_review/2026-11-09/COMPARISON_FINDINGS.md",
+      "C:/Users/rhunt/Documents/Capstone/reconstruction/output/collaboration_review/negative_controls_2026-11-09/FINDINGS.md"
+    ]
+  }
+]

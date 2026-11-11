@@ -1,0 +1,10 @@
+{
+  "obs_033:obs_034": {
+    "reference": "NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m",
+    "event_utc": "20230831T1220000000",
+    "distance_m": 4.0,
+    "turn_deg_ccw": 10.0,
+    "ordering": "turn_then_drive",
+    "assumptions": "The images bracket the complete maneuver. Wheel slip, actual heading and achieved translation are unknown."
+  }
+}

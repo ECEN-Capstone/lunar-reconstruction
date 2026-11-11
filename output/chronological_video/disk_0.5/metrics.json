@@ -1,0 +1,106 @@
+{
+  "endpoints": [
+    "obs_033",
+    "obs_034"
+  ],
+  "utc": [
+    "20230831T0813019172",
+    "20230831T1304316922"
+  ],
+  "pose": {
+    "source": "conditional mobility prior",
+    "height_refinement": {
+      "accepted": true,
+      "shared_cells": 160,
+      "validation_cells": 27,
+      "reference": "stereo A vs B under assumed XY/yaw, spatial block holdout",
+      "prior_median_height_residual_m": 0.47876295749385483,
+      "adjusted_median_height_residual_m": 0.04386276486667651,
+      "adjusted_p90_m": 0.06874387649724097,
+      "clearance_prior_dz_m": 0.5094447263860148,
+      "allowed_dz_m": [
+        0.4094447263860148,
+        0.6094447263860148
+      ],
+      "nearest_anchor_to_B_m": [
+        0.2791957370578848,
+        0.7438655569622572
+      ],
+      "tilt_rotvec_deg": [
+        -2.871167241545284,
+        -0.9129308602988928
+      ],
+      "elevation_change_m": 0.40944472638601503
+    },
+    "reference": "NavCam archive SIS Appendix I, MID 036, 31 Aug 2023 12:20; 10 deg CCW then 4 m",
+    "distance_m": 4.0,
+    "turn_deg": 10.0,
+    "achieved_pose_verified": false,
+    "assumptions": "images bracket complete maneuver; planar initial pose; optional footprint-based tilt/elevation; achieved XY and yaw unverified"
+  },
+  "endpoint_displacement_m": 3.9992165692639174,
+  "seed": 7,
+  "generator": "pose-conditioned textured stochastic elevation field",
+  "camera_frame": "T_world_from_rectified_left; nominal rover axes at A; metres",
+  "grid_m": 0.05,
+  "relief_scale_m": 0.00515578091428745,
+  "frames": 33,
+  "plane_sweep_cells": 5047,
+  "triangulation_windows": 16,
+  "video_tracks": 6724,
+  "reprojection_px": {
+    "count": 6724,
+    "median": 0.2682194499669076,
+    "p90": 0.6836581353150312,
+    "p95": 0.7605298627161101,
+    "maximum": 0.8491220999471073,
+    "rmse": 0.3984963923480288
+  },
+  "stereo_cells": 5873,
+  "new_video_cells": 2749,
+  "new_cell_area_m2": 6.872500000000001,
+  "mesh": {
+    "vertices": 8622,
+    "triangles": 12157,
+    "projected_surface_area_m2": 15.19624999999996,
+    "slopes_deg": {
+      "count": 12157,
+      "median": 15.343655629506113,
+      "p90": 34.37793921686155,
+      "p95": 54.756818823042224,
+      "maximum": 84.06337392314477,
+      "rmse": 23.482802591076506
+    },
+    "area_with_inferred_vertices_m2": 4.068749999999989,
+    "obj_readback_verified": true
+  },
+  "labels": {
+    "0": "unsupported",
+    "1": "endpoint stereo",
+    "3": "synthetic video"
+  },
+  "status": "conditional candidate; unverified spatial placement",
+  "spatial_holdout": {
+    "radius_m": 0.5,
+    "reference": "withheld real stereo depth; endpoint poses fixed and photos available",
+    "eligible_cells": 3814,
+    "scored_cells": 1245,
+    "coverage": 0.32642894598846356,
+    "video_abs_height_error_m": {
+      "count": 1245,
+      "median": 0.03599047779310971,
+      "p90": 0.14050936638133807,
+      "p95": 0.17685073533758314,
+      "maximum": 0.2541487401309974,
+      "rmse": 0.07372462218012427
+    },
+    "matched_idw_abs_height_error_m": {
+      "count": 1245,
+      "median": 0.027665998716669082,
+      "p90": 0.06599896846732908,
+      "p95": 0.08012770802412805,
+      "maximum": 0.11449991255873138,
+      "rmse": 0.04021650936835718
+    }
+  }
+}

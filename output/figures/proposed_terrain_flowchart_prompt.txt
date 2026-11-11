@@ -1,0 +1,15 @@
+Redesign the referenced infographic into a MUCH SIMPLER presentation flowchart. Discard the original busy design completely. Landscape 16:9 white background. Flat vector-style rounded rectangular nodes, thin navy arrows, large crisp sans-serif text, lots of whitespace. No photos, no terrain renders, no illustrations, no icons, no bullet lists, no explanatory paragraphs, no numbered panels. Very minimal academic slide.
+
+Title upper left: "Proposed terrain completion workflow"
+
+Main flow across center in a single straight left-to-right horizontal row of FOUR generous rounded rectangles followed by ONE decision diamond. Use these exact labels, wrapped into 2–3 short lines inside each shape:
+1 light blue rectangle: "Real observations\nA + B"
+2 light blue rectangle: "Estimate relative\ncamera poses"
+3 pale amber rectangle: "Generate video\nbetween A and B"
+4 pale amber rectangle: "Reconstruct\n3D terrain"
+5 pale teal decision diamond: "Fits real data\nand plausible?"
+All four arrows connect correctly in sequence, no crossings. At the lower right beneath decision diamond, a pale teal rounded rectangle reads "Merge + export\nterrain mesh". Arrow downward from diamond into this rectangle labeled "Yes".
+A thin return arrow from the bottom-left edge of diamond routes in whitespace below the main flow back to the bottom of the generate-video rectangle, arrowhead pointing INTO that rectangle. Return arrow label "No — revise". Do not connect the return loop to the final output.
+One small text note below the main row on the left, outside all nodes: "Validate first using a withheld real observation."
+One single footer line near bottom: "Generated gap terrain is inferred, not measured."
+Keep composition sparse, type large enough to read when projected. No other text. This is a proposed workflow, do not imply steps have been completed. Flat colors, no shadows, no gradients. The flowchart should occupy roughly middle 60% of canvas with generous outer margins. Ensure no literal backslash-n strings are shown; use line breaks.

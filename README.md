@@ -6,6 +6,15 @@ Conventional CAHV stereo geometry, OpenCV SGBM, conservative point clouds and lo
 
 ## Get the data and results
 
+### November 10 methods and results
+
+- Read the illustrated methods paper as a [PDF](output/methods_paper/Pragyan_terrain_reconstruction_methods.pdf) or an [editable Word document](output/methods_paper/Pragyan_terrain_reconstruction_methods.docx). Pages 5–6 work through the rover route and timestamp associations. Pages 12–14 quantify what the procedural video contributed and how it compared with withheld real stereo.
+- Open the [results gallery](output/detailed_progress_2026-11-10/RESULTS_GALLERY.html) locally after cloning to inspect renders of 102 saved OBJ products and play the clips. The [atlas manifest](output/detailed_progress_2026-11-10/atlas_manifest.json) identifies the corresponding model files and hashes.
+- Browse [all 93 slide previews](output/detailed_progress_2026-11-10/slide_previews/), [detailed methods and results](output/detailed_progress_2026-11-10/DETAILED_METHODS_AND_RESULTS.md), and [speaker notes](output/progress_presentation/DETAILED_REPORT_AND_SPEAKER_NOTES.md).
+- Trace the [placement of all 56 observations](output/all_observations_overlay/README.md), inspect the [video reconstruction experiments](output/chronological_video/REPORT.md), and compare them against the [fixed-region interpolation baseline](output/collaboration_review/2026-11-09/COMPARISON_FINDINGS.md).
+
+### Clone with Git LFS
+
 This repository includes mission inputs, reconstruction artifacts, and completed terrain outputs using **Git LFS**. Install Git LFS before cloning. The complete working data is approximately **5.4 GiB**; LFS download bandwidth is charged to the repository owner's allowance. Preserve the mission-provider notices and source provenance with any further distribution. See [GitHub's LFS billing documentation](https://docs.github.com/en/billing/concepts/product-billing/git-lfs) for current allowances.
 
 ```powershell
@@ -77,6 +86,8 @@ The existing `.venv` is ready in the execution environment. The recorded complet
 Run names must be new: scripts refuse to overwrite existing experiment directories. Investigation outputs are regenerable summaries. Dense baseline runs save original left/right disparity arrays, rectified and matching images, axial depth, XYZ arrays, individual filtering masks, PLY point clouds, PLY/OBJ local meshes, provenance, metrics and diagnostics. Filtered runs refer back to their baseline for disparity and right imagery. Coordinates are x right, y down, z forward in the rectified left camera. Fused components use their first camera as origin; they are not one globally georeferenced map.
 
 ## Current results
+
+- [Chronological video experiment](output/chronological_video/REPORT.md): procedural monocular-video reconstruction, conditional mobility-based bridging, closed terrain integration, and heldout error comparisons. The procedural video results currently perform worse than interpolation; learned video inference remains a separate experiment.
 
 - [Technical report](RECONSTRUCTION_REPORT.md): calibration provenance, experiment comparisons, all frame metrics, failures and precise blockers.
 - [Largest supported frame preview](artifacts/runs/r11_filtered_batch/obs_034/filtered_diagnostics.png), [PLY cloud](artifacts/runs/r11_filtered_batch/obs_034/points_calibration_units.ply), [OBJ mesh](artifacts/runs/r11_filtered_batch/obs_034/local_mesh_calibration_units.obj).
