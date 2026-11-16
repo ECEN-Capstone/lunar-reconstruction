@@ -50,6 +50,8 @@ Source code, JSON configuration, metadata, and Markdown reports use ordinary Git
 
 ## Python environment
 
+For interactive lunar rock/crater masks, manual contact/rim landmarks, stereo CSV export and a 3D point viewer, see [SAM2 WSL workflow](SAM2_WORKFLOW.md). Start the local labeler with `.\scripts\start-lunar-labeler.ps1` and open <http://localhost:7860>.
+
 Python 3.12 was used. In PowerShell from this repository:
 
 ```powershell

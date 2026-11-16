@@ -1,0 +1,2 @@
+object_id,class,landmark,left_x_px,left_y_px,right_x_px,right_y_px,stereo_status,x_m,y_m,z_m,epipolar_error_px
+1,rock,unknown,,,,,unpaired,,,,

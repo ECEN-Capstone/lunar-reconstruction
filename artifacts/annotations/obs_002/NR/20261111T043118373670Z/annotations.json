@@ -1,0 +1,43 @@
+{
+  "observation": "obs_002",
+  "family": "NR",
+  "objects": [
+    {
+      "id": 1,
+      "class": "rock",
+      "landmark": "unknown",
+      "left": {
+        "prompts": [],
+        "runs": [],
+        "base": null
+      },
+      "right": {
+        "prompts": [],
+        "runs": [],
+        "base": null
+      },
+      "stereo": {
+        "status": "unpaired",
+        "reason": "Mark the same visible physical point in both images"
+      }
+    }
+  ],
+  "schema_version": 1,
+  "coordinate_system": "native pixels, zero-based x right / y down; no resize or rectification",
+  "source_images": {
+    "left": {
+      "path": "chandrayaan-3-navcam-sorted/NR_family/left_NRL/ch3_nav_nrl_20230824T1415115229_d_img_d32_002.png",
+      "sha256": "a2ef03cca0f334effdc9a31f329f578df9e98f2584068e4762cf011a198d9a50"
+    },
+    "right": {
+      "path": "chandrayaan-3-navcam-sorted/NR_family/right_NRR/ch3_nav_nrr_20230824T1415423708_d_img_d32_002.png",
+      "sha256": "7f70386f889d44059568b38b208989d93957ecd5c655151d2368d3328a410982"
+    }
+  },
+  "model": {
+    "checkpoint": "/home/alejo/models/sam2/sam2.1_hiera_tiny.pt",
+    "config": "configs/sam2.1/sam2.1_hiera_t.yaml",
+    "device": "cpu"
+  },
+  "caveat": "Human classifications and correspondences; per-point checks do not establish pair-wide rig validity or acquisition stationarity."
+}
