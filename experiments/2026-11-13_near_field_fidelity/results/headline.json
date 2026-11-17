@@ -1,0 +1,76 @@
+{
+ "r08": {
+  "returned": "11.7\u201327.7",
+  "lr_consistent": "7.7\u201320.0",
+  "after_r08": "3.3\u20137.7",
+  "after_r11": "0.2\u20135.6",
+  "mid_lr_consistent": "38.8\u201379.2"
+ },
+ "half": {
+  "returned": "15.7\u201336.8",
+  "lr_consistent": "7.0\u201323.8",
+  "after_r08": "3.1\u20137.7",
+  "after_r11": "0.5\u20135.9",
+  "mid_lr_consistent": "42.9\u201382.6"
+ },
+ "slant_pass1": {
+  "returned": "41.2\u201354.3",
+  "lr_consistent": "38.1\u201352.1",
+  "after_r08": "21.0\u201335.5",
+  "after_r11": "16.9\u201332.5",
+  "mid_lr_consistent": "43.0\u201380.4"
+ },
+ "relaxed": {
+  "returned": "53.7\u201360.0",
+  "lr_consistent": "22.0\u201331.4",
+  "after_r08": "11.7\u201316.0",
+  "after_r11": "0.5\u20136.9",
+  "near_lr_err_med": "0.6\u201354.3"
+ },
+ "block3": {
+  "returned": "7.7\u201322.1",
+  "lr_consistent": "4.7\u201315.3",
+  "after_r08": "1.8\u20136.0",
+  "after_r11": "0.1\u20134.5",
+  "near_lr_err_med": "0.2\u20130.3"
+ },
+ "block9": {
+  "returned": "13.9\u201330.1",
+  "lr_consistent": "8.1\u201320.9",
+  "after_r08": "3.6\u20138.6",
+  "after_r11": "0.1\u20136.0",
+  "near_lr_err_med": "0.1\u20130.2"
+ },
+ "half_relaxed": {
+  "returned": "58.5\u201363.5",
+  "lr_consistent": "15.1\u201330.2",
+  "after_r08": "7.5\u201312.0",
+  "after_r11": "1.5\u20137.3",
+  "near_lr_err_med": "2.5\u201358.2"
+ },
+ "slant+rawleft": {
+  "after_r08": "37.3\u201349.5",
+  "after_r11": "34.6\u201348.0",
+  "whole_after_r11": "17.8\u201340.8"
+ },
+ "r08_whole_r11": "7.0\u201318.8",
+ "sift_heldout": {
+  "r08": [
+   "0.1\u20130.3",
+   "84.4\u2013100.0"
+  ],
+  "slant_pass1": [
+   "0.3\u20130.4",
+   "82.4\u2013100.0"
+  ]
+ },
+ "sift_r11_slant+rawleft": [
+  "0.3\u20130.4",
+  "85.7\u2013100.0"
+ ],
+ "near_lr_err_med": {
+  "r08": "0.1\u20130.2",
+  "slant_pass1": "0.1\u20130.1"
+ },
+ "mid_lr_err_med_r08": "0.1\u20130.1"
+}
