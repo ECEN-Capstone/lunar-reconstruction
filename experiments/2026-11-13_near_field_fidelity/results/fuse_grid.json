@@ -1,0 +1,26 @@
+{
+ "production": {
+  "fused_voxels": 136697,
+  "observed_cells_in_production_hull": 9573,
+  "observed_fraction_of_hull": 0.30980582524271844,
+  "near_cells_within_2m_of_a_camera": 1673,
+  "near_observed": 0.11655708308427974,
+  "observed_outside_hull": 0
+ },
+ "slant+rawleft": {
+  "fused_voxels": 228668,
+  "observed_cells_in_production_hull": 13724,
+  "observed_fraction_of_hull": 0.44414239482200646,
+  "near_cells_within_2m_of_a_camera": 1673,
+  "near_observed": 0.7196652719665272,
+  "observed_outside_hull": 144
+ },
+ "hybrid": {
+  "fused_voxels": 211871,
+  "observed_cells_in_production_hull": 11410,
+  "observed_fraction_of_hull": 0.3692556634304207,
+  "near_cells_within_2m_of_a_camera": 1673,
+  "near_observed": 0.7196652719665272,
+  "observed_outside_hull": 91
+ }
+}
