@@ -1,0 +1,145 @@
+{
+ "044": {
+  "rock": "obs_044 near rock (lower left)",
+  "box": [
+   255,
+   692,
+   390,
+   752
+  ],
+  "range_m": 1.3850400987466776,
+  "footprint_m": [
+   1.22,
+   0.354
+  ],
+  "measured_relief_mm_p95": 64.07946231150208,
+  "measured_relief_mm_max": 67.2218719727549,
+  "pixel_size_mm_at_range": 0.9886223206231906,
+  "r08": {
+   "r11_pixels_on_rock": 0,
+   "pair_mesh_vertices_on_rock": 0
+  },
+  "slant": {
+   "r11_pixels_on_rock": 0,
+   "pair_mesh_vertices_on_rock": 0
+  },
+  "slant+rawleft": {
+   "r11_pixels_on_rock": 360,
+   "pair_mesh_vertices_on_rock": 39,
+   "relief_mm_max_points": 67.2218719727549,
+   "relief_mm_1cm_grid": 66.45431574677897,
+   "cells_1cm": 27,
+   "relief_mm_2cm_grid": 66.45431574677897,
+   "cells_2cm": 10,
+   "relief_mm_5cm_grid": 65.22033984719242,
+   "cells_5cm": 5
+  },
+  "fused_5cm_grid": {
+   "cells": 200,
+   "observed": 30,
+   "interpolated": 170,
+   "relief_mm_max": 24.55707801648499,
+   "relief_mm_median": -1.4590059202595207
+  }
+ },
+ "047": {
+  "rock": "obs_047 rock (lower right)",
+  "box": [
+   565,
+   840,
+   615,
+   885
+  ],
+  "range_m": 1.9055432784650466,
+  "footprint_m": [
+   0.115,
+   0.043
+  ],
+  "measured_relief_mm_p95": 17.16461937331693,
+  "measured_relief_mm_max": 20.97507280748745,
+  "pixel_size_mm_at_range": 1.360150236595131,
+  "r08": {
+   "r11_pixels_on_rock": 0,
+   "pair_mesh_vertices_on_rock": 0
+  },
+  "slant": {
+   "r11_pixels_on_rock": 204,
+   "pair_mesh_vertices_on_rock": 19,
+   "relief_mm_max_points": 2.5452441899064815,
+   "relief_mm_1cm_grid": 0.31198766392151467,
+   "cells_1cm": 14,
+   "relief_mm_2cm_grid": 0.2519934123241807,
+   "cells_2cm": 8,
+   "relief_mm_5cm_grid": -0.22244844224383886,
+   "cells_5cm": 3
+  },
+  "slant+rawleft": {
+   "r11_pixels_on_rock": 998,
+   "pair_mesh_vertices_on_rock": 104,
+   "relief_mm_max_points": 20.97507280748745,
+   "relief_mm_1cm_grid": 20.766455411082628,
+   "cells_1cm": 31,
+   "relief_mm_2cm_grid": 20.558599495904883,
+   "cells_2cm": 14,
+   "relief_mm_5cm_grid": 20.766455411082628,
+   "cells_5cm": 6
+  },
+  "fused_5cm_grid": {
+   "cells": 6,
+   "observed": 0,
+   "interpolated": 6,
+   "relief_mm_max": -0.6035224563431529,
+   "relief_mm_median": -3.2396217401294
+  }
+ },
+ "048b": {
+  "rock": "obs_048 rock (mid field)",
+  "box": [
+   688,
+   622,
+   722,
+   650
+  ],
+  "range_m": 3.081834821539903,
+  "footprint_m": [
+   0.618,
+   0.222
+  ],
+  "measured_relief_mm_p95": 25.207386273001635,
+  "measured_relief_mm_max": 28.32160583930554,
+  "pixel_size_mm_at_range": 2.1997707472911125,
+  "r08": {
+   "r11_pixels_on_rock": 0,
+   "pair_mesh_vertices_on_rock": 0
+  },
+  "slant": {
+   "r11_pixels_on_rock": 161,
+   "pair_mesh_vertices_on_rock": 12,
+   "relief_mm_max_points": 12.624646500062342,
+   "relief_mm_1cm_grid": 12.588182641714795,
+   "cells_1cm": 45,
+   "relief_mm_2cm_grid": 12.588182641714795,
+   "cells_2cm": 22,
+   "relief_mm_5cm_grid": 11.714991755596094,
+   "cells_5cm": 10
+  },
+  "slant+rawleft": {
+   "r11_pixels_on_rock": 448,
+   "pair_mesh_vertices_on_rock": 46,
+   "relief_mm_max_points": 28.146201237502666,
+   "relief_mm_1cm_grid": 27.888604942659324,
+   "cells_1cm": 78,
+   "relief_mm_2cm_grid": 27.499553004927236,
+   "cells_2cm": 35,
+   "relief_mm_5cm_grid": 18.159444061557007,
+   "cells_5cm": 14
+  },
+  "fused_5cm_grid": {
+   "cells": 78,
+   "observed": 14,
+   "interpolated": 64,
+   "relief_mm_max": 12.768906338518349,
+   "relief_mm_median": -4.1363128357173595
+  }
+ }
+}
